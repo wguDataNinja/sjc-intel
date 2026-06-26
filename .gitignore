@@ -1,0 +1,35 @@
+# SJC_Intel .gitignore
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Environment
+.env
+.env.local
+*.secret*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Generated/source data (committed - these are the repo's data assets)
+# data/ is intentionally tracked
+
+# Logs (committed - needed for session history)
+# logs/ is intentionally tracked
+
+# Large generated files
+*.log
+
+# Node (OpenCode runtime)
+node_modules/

@@ -1,0 +1,274 @@
+monitor_cycle:
+  source_id: sjso_news_stories
+  source_name: SJSO News Stories
+  source_url: https://www.sjso.org/news-stories/
+  checked_at: '2026-06-03T06:00:00Z'
+  checked_by: sjc-intel-architect (pilot)
+  http_status: 200
+  items_extracted: 4
+  new_items: 4
+  duplicates_skipped: 0
+items:
+- item_id: SJC-SJSO-20260603-0001
+  title: St. Johns County inmate charged; woman arrested for executing a contraband
+    drop on restricted law enforcement property
+  summary: 'SJSO inmate Devin Delaney and his girlfriend Jacqueline Mottor, both 20,
+    were charged after planning a contraband drop of nicotine products onto restricted
+    SJSO property. Deputies found Delaney with 14 nicotine pouches; Mottor was arrested
+    for introduction of contraband and trespassing.
+
+    '
+  source_id: sjso_news_stories
+  source_url: https://www.sjso.org/st-johns-county-inmate-charged-woman-arrested-for-executing-a-contraband-drop-on-restricted-law-enforcement-property/
+  source_published_at: '2026-05-21T12:00:00Z'
+  discovered_at: '2026-06-03T06:00:00Z'
+  discovered_by: sjc-intel-architect (pilot)
+  topics:
+  - public_safety
+  - crime
+  communities: []
+  geographic_scope: county_wide
+  urgency: ongoing
+  verification_status: source_confirmed
+  sensitivity: medium
+  recommended_channels:
+  - website_review_queue
+  raw_excerpt: 'On Monday, April 13th, 2026, SJSO Security Threat Intelligence Specialists,
+    conducting reviews of remote video visits, learned of a conversation between inmate,
+    Devin Delaney, and his girlfriend, Jacqueline Mottor, planning to execute a contraband
+    drop on restricted law enforcement property.
+
+    '
+  citation:
+    source_name: St. Johns County Sheriff's Office
+    source_type: government_website
+    accessed_at: '2026-06-03T06:00:00Z'
+    url: https://www.sjso.org/st-johns-county-inmate-charged-woman-arrested-for-executing-a-contraband-drop-on-restricted-law-enforcement-property/
+    additional_sources: []
+  primary_topic: crime
+  interest_tags:
+  - safety_concern
+  resident_relevance:
+    summary: 'Two 20-year-olds were charged for attempting to smuggle nicotine products
+      onto restricted SJSO property. The case highlights security measures at county
+      corrections facilities and the consequences of introducing contraband.
+
+      '
+    affected_audiences:
+    - residents
+    why_it_matters: 'Contraband in correctional facilities poses security risks for
+      staff and inmates. The case demonstrates SJSO''s active monitoring of inmate
+      communications and facility security.
+
+      '
+    confidence: high
+    inference_notes: 'All details directly from SJSO press release. General safety
+      awareness is a standard community-interest inference.
+
+      '
+  taxonomy_gap: null
+  human_review_required: true
+  review_status: verified
+  reviewer_notes: Routine crime press release. Human review done. No active threat.
+  created_at: '2026-06-03T06:15:00Z'
+  updated_at: '2026-06-03T06:15:00Z'
+- item_id: SJC-SJSO-20260603-0002
+  title: Lifesaving rescue highlights the importance of local programs in place to
+    locate vulnerable individuals and prevent future emergencies
+  summary: 'SJSO deputies rescued an autistic juvenile who wandered from his home
+    and was found struggling to stay afloat in a pond. The family subsequently enrolled
+    in Project Lifesaver, K9 Scent Kit, and SAFE Program — free SJSO services for
+    families with vulnerable individuals.
+
+    '
+  source_id: sjso_news_stories
+  source_url: https://www.sjso.org/lifesaving-rescue-highlights-the-importance-of-local-programs-in-place-to-locate-vulnerable-individuals-and-prevent-future-emergencies/
+  source_published_at: '2026-05-05T12:00:00Z'
+  discovered_at: '2026-06-03T06:00:00Z'
+  discovered_by: sjc-intel-architect (pilot)
+  topics:
+  - public_safety
+  - health_wellness
+  communities: []
+  geographic_scope: county_wide
+  urgency: ongoing
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: 'In November 2025, Charlie Ryan, an autistic juvenile, left his home
+    on foot, and was reported missing. SJSO deputies responded and located Charlie
+    struggling to stay afloat in a pond. Deputies rushed in and rescued Charlie, undoubtedly
+    saving his life.
+
+    '
+  citation:
+    source_name: St. Johns County Sheriff's Office
+    source_type: government_website
+    accessed_at: '2026-06-03T06:00:00Z'
+    url: https://www.sjso.org/lifesaving-rescue-highlights-the-importance-of-local-programs-in-place-to-locate-vulnerable-individuals-and-prevent-future-emergencies/
+    additional_sources: []
+  primary_topic: public_safety
+  interest_tags:
+  - community_event
+  - quality_of_life
+  resident_relevance:
+    summary: 'Free SJSO programs — Project Lifesaver, K9 Scent Kits, and the SAFE
+      Program — are available to help families with vulnerable individuals. A rescue
+      earlier this year showed how quickly these resources can make a difference in
+      an emergency.
+
+      '
+    affected_audiences:
+    - residents
+    - parents
+    - retirees
+    why_it_matters: 'Families caring for individuals with autism, Alzheimer''s, or
+      other conditions that may cause wandering can register for free services that
+      help first responders locate them quickly. The programs take only a few minutes
+      to join and can save lives.
+
+      '
+    confidence: high
+    inference_notes: 'Rescue story and program availability directly from SJSO. Community
+      benefit is directly stated.
+
+      '
+  taxonomy_gap: null
+  human_review_required: true
+  review_status: verified
+  reviewer_notes: Positive community story. Human review confirms.
+  created_at: '2026-06-03T06:15:00Z'
+  updated_at: '2026-06-03T06:15:00Z'
+- item_id: SJC-SJSO-20260603-0003
+  title: Nine arrested during SJSOs March 2026 DUI Wolfpack Operation
+  summary: 'SJSO and partner agencies conducted a countywide DUI Wolfpack Operation
+    on March 20-21, 2026, resulting in nine DUI arrests and 173 traffic stops. The
+    operation was dedicated to Mark Sabri, who was killed by an impaired driver in
+    2024.
+
+    '
+  source_id: sjso_news_stories
+  source_url: https://www.sjso.org/nine-arrested-during-sjsos-march-2026-dui-wolfpack-operation/
+  source_published_at: '2026-04-20T12:00:00Z'
+  discovered_at: '2026-06-03T06:00:00Z'
+  discovered_by: sjc-intel-architect (pilot)
+  topics:
+  - public_safety
+  - crime
+  communities: []
+  geographic_scope: county_wide
+  urgency: archival
+  verification_status: source_confirmed
+  sensitivity: medium
+  recommended_channels:
+  - website_review_queue
+  raw_excerpt: 'SJSO and partner law enforcement agencies conducted a countywide DUI
+    Wolfpack Operation in March 2026 to target impaired drivers. Law enforcement countywide
+    made nine DUI arrests and conducted 173 traffic stops between Friday, March 20,
+    and Saturday, March 21.
+
+    '
+  citation:
+    source_name: St. Johns County Sheriff's Office
+    source_type: government_website
+    accessed_at: '2026-06-03T06:00:00Z'
+    url: https://www.sjso.org/nine-arrested-during-sjsos-march-2026-dui-wolfpack-operation/
+    additional_sources: []
+  primary_topic: crime
+  interest_tags:
+  - safety_concern
+  resident_relevance:
+    summary: 'A county-wide DUI enforcement operation resulted in nine arrests and
+      173 traffic stops, serving as a reminder of ongoing efforts to reduce impaired
+      driving in St. Johns County.
+
+      '
+    affected_audiences:
+    - residents
+    - commuters
+    why_it_matters: 'DUI enforcement operations directly impact road safety. The operation
+      was dedicated to a local resident killed by an impaired driver, underscoring
+      the real-world consequences of drunk driving.
+
+      '
+    confidence: high
+    inference_notes: 'Arrest numbers and operation details directly from SJSO. The
+      community safety impact is inherent to the nature of DUI enforcement.
+
+      '
+  taxonomy_gap: null
+  human_review_required: true
+  review_status: archived
+  reviewer_notes: March 2026. 3+ months old. Archival.
+  created_at: '2026-06-03T06:15:00Z'
+  updated_at: '2026-06-03T06:15:00Z'
+- item_id: SJC-SJSO-20260603-0004
+  title: Arrest made in connection to the 2023 double murders of Cody Bennett and
+    Tre' Lyons
+  summary: 'SJSO arrested Derrick Walden, 43, on two counts of first-degree murder
+    for the 2023 shooting deaths of Cody Bennett, 21, and Tre'' Lyons, 22, in West
+    Augustine. Walden was already serving a federal sentence on an unrelated firearm
+    charge and will be transported to Florida to face the murder charges.
+
+    '
+  source_id: sjso_news_stories
+  source_url: https://www.sjso.org/arrest-made-in-connection-to-the-2023-double-murders-of-cody-bennett-and-tre-lyons/
+  source_published_at: '2025-11-25T12:00:00Z'
+  discovered_at: '2026-06-03T06:00:00Z'
+  discovered_by: sjc-intel-architect (pilot)
+  topics:
+  - public_safety
+  - crime
+  communities:
+  - st_augustine
+  geographic_scope: single_community
+  urgency: timely
+  verification_status: source_confirmed
+  sensitivity: high
+  recommended_channels:
+  - website_review_queue
+  raw_excerpt: 'The St. Johns County Sheriff''s Office has made an arrest in the nearly
+    two-year old double murder case. Derrick Walden (43) is behind bars, facing two
+    counts of first-degree murder for the shooting deaths of Cody Bennett (21) and
+    Tre'' Lyons (22) in November 2023.
+
+    '
+  citation:
+    source_name: St. Johns County Sheriff's Office
+    source_type: government_website
+    accessed_at: '2026-06-03T06:00:00Z'
+    url: https://www.sjso.org/arrest-made-in-connection-to-2023-double-murders-of-cody-bennett-and-tre-lyons/
+    additional_sources: []
+  primary_topic: crime
+  interest_tags:
+  - safety_concern
+  - emergency_awareness
+  resident_relevance:
+    summary: 'An arrest has been made in the 2023 double homicide of two young men
+      in West Augustine — a case that has affected the community for nearly two years.
+      The suspect is already in federal custody on an unrelated charge and will be
+      brought back to Florida.
+
+      '
+    affected_audiences:
+    - residents
+    - nearby_residents
+    why_it_matters: 'A nearly two-year-old double homicide case in West Augustine
+      has resulted in an arrest, bringing some closure to the community. SJSO is still
+      seeking additional information from the public.
+
+      '
+    confidence: high
+    inference_notes: 'Arrest details, charges, and case history directly from SJSO.
+      Community impact is directly referenced in the sheriff''s public statement.
+      Investigation is ongoing; additional charges possible.
+
+      '
+  taxonomy_gap: null
+  human_review_required: true
+  review_status: verified
+  reviewer_notes: 2023 double murder arrest. Human review confirms facts.
+  created_at: '2026-06-03T06:15:00Z'
+  updated_at: '2026-06-03T06:15:00Z'

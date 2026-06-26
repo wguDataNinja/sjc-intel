@@ -1,0 +1,1533 @@
+source_id: sjc_nbor_public_notices
+fetched_at: '2026-06-26T07:16:16Z'
+source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+total_items: 25
+items:
+- item_id: SJC-NBOR-20260626-0001
+  title: Comcast
+  summary: 'ROW permit: Comcast — Fiber cable'
+  source_id: sjc_nbor_public_notices
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_published_at: 6/22/2026
+  discovered_at: '2026-06-26T07:16:16Z'
+  discovered_by: hermes-sjc_nbor_public_notices
+  topics:
+  - infrastructure
+  - environment
+  communities: []
+  geographic_scope: county_wide
+  urgency: ongoing
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: Fiber cable
+  citation:
+    source_name: St. Johns County Neighborhood Bill of Rights
+    source_type: government_website
+    accessed_at: '2026-06-26T07:16:16Z'
+    url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  review_status: verified
+  primary_topic: infrastructure
+  interest_tags:
+  - utility_impact
+  - quality_of_life
+  resident_relevance:
+    summary: ROW permit affecting St. Johns County residents.
+    affected_audiences:
+    - residents
+    - homeowners
+    - commuters
+    - nearby_residents
+    why_it_matters: Fiber cable
+    confidence: high
+    inference_notes: Directly from NBOR public notices application.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:16:16Z'
+  _dedupe_key: e1e7b41af72ede8d
+  _category: ROW
+  _beat: utilities_water
+  _app_id: ''
+  _pdf_urls: []
+  _map_url: ''
+  _district: '3'
+  _raw_text: "Comcast   \n\t\t\t\t\t        Fiber cable  \n                      \
+    \          2026-0522.pdf     \n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\
+    \t\t\t\t   \n\t\t\t\t\t     \n                            3 \n\t\t\t\t\t     \n\
+    \t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n                 \
+    \                                       \n                            ROW\n\t\t\
+    \t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n    \
+    \                         6/22/2026"
+  reviewer_notes: 'Batch verified: NBOR utility ROW permit. Public notice with project
+    description, district, date, and PDF evidence.'
+- item_id: SJC-NBOR-20260626-0002
+  title: ZVAR 2026000011 Bargfrede Shed (PRIDE 2601876)
+  summary: 'Public hearing: ZVAR 2026000011 Bargfrede Shed (PRIDE 2601876) — Request
+    for a Zoning Variance to Section 2.02.04.A.1 of the Land Development Code to allow
+    for a detached accessory structure to be 3` in lieu of the '
+  source_id: sjc_nbor_public_notices
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_published_at: 6/18/2026
+  discovered_at: '2026-06-26T07:16:16Z'
+  discovered_by: hermes-sjc_nbor_public_notices
+  topics:
+  - development
+  - county_government
+  - public_notices
+  communities: []
+  geographic_scope: county_wide
+  urgency: timely
+  verification_status: source_confirmed
+  sensitivity: medium
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: Request for a Zoning Variance to Section 2.02.04.A.1 of the Land Development
+    Code to allow for a detached accessory structure to be 3` in lieu of the 8` required
+    side setback in Residential, Single Family (RS-2) zoning. Specifically located
+    at 302 Deerfield Glen Drive.
+  citation:
+    source_name: St. Johns County Neighborhood Bill of Rights
+    source_type: government_website
+    accessed_at: '2026-06-26T07:16:16Z'
+    url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  review_status: verified
+  primary_topic: development
+  interest_tags:
+  - development_watch
+  resident_relevance:
+    summary: Public hearing affecting St. Johns County residents.
+    affected_audiences:
+    - residents
+    - homeowners
+    - homeowners
+    - prospective_movers
+    why_it_matters: Request for a Zoning Variance to Section 2.02.04.A.1 of the Land
+      Development Code to allow for a detached accessory structure to be 3` in lieu
+      of the 8` required side setback in Residential, Single Fa
+    confidence: high
+    inference_notes: Directly from NBOR public notices application.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:16:16Z'
+  _dedupe_key: 0352eee67611e605
+  _category: Meeting
+  _beat: rezoning_comp_plan_dri
+  _app_id: ZVAR 2026000011
+  _pdf_urls: []
+  _map_url: ''
+  _district: '3'
+  _raw_text: "ZVAR 2026000011 Bargfrede Shed (PRIDE 2601876)   \n\t\t\t\t\t      \
+    \  Request for a Zoning Variance to Section 2.02.04.A.1 of the Land Development\
+    \ Code to allow for a detached accessory structure to be 3` in lieu of the 8`\
+    \ required side setback in Residential, Single Family (RS-2) zoning. Specifically\
+    \ located at 302 Deerfield Glen Drive.   View Map   \n                       \
+    \         ZVAR 2026000011 Hearing Notice     \n\t\t\t\t\t     \n\t\t\t\t     \n\
+    \t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n                            3 \n\t\
+    \t\t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n  \
+    \                          Meeting                             \n            \
+    \                \n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\
+    \t\t\t\t\t     \n                             6/18/2026"
+  reviewer_notes: Bargfrede Shed variance. Correct classification.
+- item_id: SJC-NBOR-20260626-0003
+  title: ZVAR 2026000019 Aspinwall Variance
+  summary: 'Public hearing: ZVAR 2026000019 Aspinwall Variance — Request for a Zoning
+    Variance to Section 6.01.03.C.3 & 2.02.04.B.16.E of the Land Development Code
+    to allow for a second Front Yard setback of ten (10'
+  source_id: sjc_nbor_public_notices
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_published_at: 6/18/2026
+  discovered_at: '2026-06-26T07:16:16Z'
+  discovered_by: hermes-sjc_nbor_public_notices
+  topics:
+  - development
+  - county_government
+  - public_notices
+  communities: []
+  geographic_scope: county_wide
+  urgency: timely
+  verification_status: source_confirmed
+  sensitivity: medium
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: Request for a Zoning Variance to Section 6.01.03.C.3 & 2.02.04.B.16.E
+    of the Land Development Code to allow for a second Front Yard setback of ten (10)
+    feet in lieu of the required twenty-five (25) feet for a Through Lot located in
+    Residential, Single-Family (RS-3) zoning to accommodate an Accessory
+  citation:
+    source_name: St. Johns County Neighborhood Bill of Rights
+    source_type: government_website
+    accessed_at: '2026-06-26T07:16:16Z'
+    url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  review_status: verified
+  primary_topic: development
+  interest_tags:
+  - development_watch
+  resident_relevance:
+    summary: Public hearing affecting St. Johns County residents.
+    affected_audiences:
+    - residents
+    - homeowners
+    - homeowners
+    - prospective_movers
+    why_it_matters: Request for a Zoning Variance to Section 6.01.03.C.3 & 2.02.04.B.16.E
+      of the Land Development Code to allow for a second Front Yard setback of ten
+      (10) feet in lieu of the required twenty-five (25) fe
+    confidence: high
+    inference_notes: Directly from NBOR public notices application.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:16:16Z'
+  _dedupe_key: 0f7f485f7206b341
+  _category: Meeting
+  _beat: rezoning_comp_plan_dri
+  _app_id: ZVAR 2026000019
+  _pdf_urls: []
+  _map_url: ''
+  _district: '3'
+  _raw_text: "ZVAR 2026000019 Aspinwall Variance   \n\t\t\t\t\t        Request for\
+    \ a Zoning Variance to Section 6.01.03.C.3 & 2.02.04.B.16.E of the Land Development\
+    \ Code to allow for a second Front Yard setback of ten (10) feet in lieu of the\
+    \ required twenty-five (25) feet for a Through Lot located in Residential, Single-Family\
+    \ (RS-3) zoning to accommodate an Accessory Family Unit (AFU).   View Map   \n\
+    \                                ZVAR 2026000019 Hearing Notice     \n\t\t\t\t\
+    \t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n        \
+    \                    3 \n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\
+    \t   \n\t\t\t\t\t     \n                            Meeting                  \
+    \           \n                            \n\t\t\t\t\t     \n\t\t\t\t     \n\t\
+    \t\t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n                             6/18/2026"
+  reviewer_notes: 'Batch verified: NBOR development hearing notice. Application ID,
+    description, and hearing date present.'
+- item_id: SJC-NBOR-20260626-0004
+  title: ZVAR 2025000027 Tatum Variance
+  summary: 'Public hearing: ZVAR 2025000027 Tatum Variance — Request for a Zoning
+    Variance to Table 6.01 of the Land Development Code to allow for a Front Yard
+    setback of ten (10) feet in lieu of the required tw'
+  source_id: sjc_nbor_public_notices
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_published_at: 6/18/2026
+  discovered_at: '2026-06-26T07:16:16Z'
+  discovered_by: hermes-sjc_nbor_public_notices
+  topics:
+  - development
+  - county_government
+  - public_notices
+  communities: []
+  geographic_scope: county_wide
+  urgency: timely
+  verification_status: source_confirmed
+  sensitivity: medium
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: Request for a Zoning Variance to Table 6.01 of the Land Development
+    Code to allow for a Front Yard setback of ten (10) feet in lieu of the required
+    twenty-five (25) feet along Avenue C for the construction of a duplex in Residential,
+    Single-Family (RS-3) zoning. This request is a companion applicati
+  citation:
+    source_name: St. Johns County Neighborhood Bill of Rights
+    source_type: government_website
+    accessed_at: '2026-06-26T07:16:16Z'
+    url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  review_status: verified
+  primary_topic: development
+  interest_tags:
+  - development_watch
+  resident_relevance:
+    summary: Public hearing affecting St. Johns County residents.
+    affected_audiences:
+    - residents
+    - homeowners
+    - homeowners
+    - prospective_movers
+    why_it_matters: Request for a Zoning Variance to Table 6.01 of the Land Development
+      Code to allow for a Front Yard setback of ten (10) feet in lieu of the required
+      twenty-five (25) feet along Avenue C for the constru
+    confidence: high
+    inference_notes: Directly from NBOR public notices application.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:16:16Z'
+  _dedupe_key: baba40870e646206
+  _category: Meeting
+  _beat: rezoning_comp_plan_dri
+  _app_id: ZVAR 2025000027
+  _pdf_urls: []
+  _map_url: ''
+  _district: '3'
+  _raw_text: "ZVAR 2025000027 Tatum Variance   \n\t\t\t\t\t        Request for a Zoning\
+    \ Variance to Table 6.01 of the Land Development Code to allow for a Front Yard\
+    \ setback of ten (10) feet in lieu of the required twenty-five (25) feet along\
+    \ Avenue C for the construction of a duplex in Residential, Single-Family (RS-3)\
+    \ zoning. This request is a companion application to SUPMIN 2025-11 Tatum Duplex.\
+    \   View Map   \n                                ZVAR 2025000027 Hearing Notice\
+    \     \n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t\
+    \     \n                            3 \n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\
+    \t     \t\t\t\t\t   \n\t\t\t\t\t     \n                            Meeting   \
+    \                          \n                            \n\t\t\t\t\t     \n\t\
+    \t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n                   \
+    \          6/18/2026"
+  reviewer_notes: 'Batch verified: NBOR development hearing notice. Application ID,
+    description, and hearing date present.'
+- item_id: SJC-NBOR-20260626-0005
+  title: Comcast
+  summary: 'ROW permit: Comcast — new power supply'
+  source_id: sjc_nbor_public_notices
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_published_at: 6/16/2026
+  discovered_at: '2026-06-26T07:16:16Z'
+  discovered_by: hermes-sjc_nbor_public_notices
+  topics:
+  - infrastructure
+  - environment
+  communities: []
+  geographic_scope: county_wide
+  urgency: ongoing
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: new power supply
+  citation:
+    source_name: St. Johns County Neighborhood Bill of Rights
+    source_type: government_website
+    accessed_at: '2026-06-26T07:16:16Z'
+    url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  review_status: verified
+  primary_topic: infrastructure
+  interest_tags:
+  - utility_impact
+  - quality_of_life
+  resident_relevance:
+    summary: ROW permit affecting St. Johns County residents.
+    affected_audiences:
+    - residents
+    - homeowners
+    - commuters
+    - nearby_residents
+    why_it_matters: new power supply
+    confidence: high
+    inference_notes: Directly from NBOR public notices application.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:16:16Z'
+  _dedupe_key: a2b6c0939090f8e6
+  _category: ROW
+  _beat: utilities_water
+  _app_id: ''
+  _pdf_urls: []
+  _map_url: ''
+  _district: '1'
+  _raw_text: "Comcast   \n\t\t\t\t\t        new power supply  \n                 \
+    \               2026-0511.pdf     \n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t \
+    \    \t\t\t\t\t   \n\t\t\t\t\t     \n                            1 \n\t\t\t\t\t\
+    \     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n         \
+    \                                               \n                           \
+    \ ROW\n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t\
+    \     \n                             6/16/2026"
+  reviewer_notes: 'Batch verified: NBOR utility ROW permit. Public notice with project
+    description, district, date, and PDF evidence.'
+- item_id: SJC-NBOR-20260626-0006
+  title: Comcast
+  summary: 'ROW permit: Comcast — Fiber cable'
+  source_id: sjc_nbor_public_notices
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_published_at: 6/16/2026
+  discovered_at: '2026-06-26T07:16:16Z'
+  discovered_by: hermes-sjc_nbor_public_notices
+  topics:
+  - infrastructure
+  - environment
+  communities: []
+  geographic_scope: county_wide
+  urgency: ongoing
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: Fiber cable
+  citation:
+    source_name: St. Johns County Neighborhood Bill of Rights
+    source_type: government_website
+    accessed_at: '2026-06-26T07:16:16Z'
+    url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  review_status: verified
+  primary_topic: infrastructure
+  interest_tags:
+  - utility_impact
+  - quality_of_life
+  resident_relevance:
+    summary: ROW permit affecting St. Johns County residents.
+    affected_audiences:
+    - residents
+    - homeowners
+    - commuters
+    - nearby_residents
+    why_it_matters: Fiber cable
+    confidence: high
+    inference_notes: Directly from NBOR public notices application.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:16:16Z'
+  _dedupe_key: a2b6c0939090f8e6
+  _category: ROW
+  _beat: utilities_water
+  _app_id: ''
+  _pdf_urls: []
+  _map_url: ''
+  _district: 1, 3
+  _raw_text: "Comcast   \n\t\t\t\t\t        Fiber cable  \n                      \
+    \          2026-0486.pdf      2026-0513.pdf     \n\t\t\t\t\t     \n\t\t\t\t  \
+    \   \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n                          \
+    \  1, 3 \n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\
+    \t     \n                                                        \n          \
+    \                  ROW\n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t\
+    \   \n\t\t\t\t\t     \n                             6/16/2026"
+  reviewer_notes: 'Batch verified: NBOR utility ROW permit. Public notice with project
+    description, district, date, and PDF evidence.'
+- item_id: SJC-NBOR-20260626-0007
+  title: City of St Augustine
+  summary: 'ROW permit: City of St Augustine — New service'
+  source_id: sjc_nbor_public_notices
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_published_at: 6/16/2026
+  discovered_at: '2026-06-26T07:16:16Z'
+  discovered_by: hermes-sjc_nbor_public_notices
+  topics:
+  - development
+  - infrastructure
+  communities: []
+  geographic_scope: county_wide
+  urgency: ongoing
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: New service
+  citation:
+    source_name: St. Johns County Neighborhood Bill of Rights
+    source_type: government_website
+    accessed_at: '2026-06-26T07:16:16Z'
+    url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  review_status: verified
+  primary_topic: development
+  interest_tags:
+  - development_watch
+  resident_relevance:
+    summary: ROW permit affecting St. Johns County residents.
+    affected_audiences:
+    - residents
+    - homeowners
+    - commuters
+    - nearby_residents
+    why_it_matters: New service
+    confidence: high
+    inference_notes: Directly from NBOR public notices application.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:16:16Z'
+  _dedupe_key: a118935cdd9fd61d
+  _category: ROW
+  _beat: site_plans_permits_construction
+  _app_id: ''
+  _pdf_urls: []
+  _map_url: ''
+  _district: '3'
+  _raw_text: "City of St Augustine   \n\t\t\t\t\t        New service  \n         \
+    \                       2026-0532.pdf     \n\t\t\t\t\t     \n\t\t\t\t     \n\t\
+    \t\t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n                            3 \n\t\t\
+    \t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n    \
+    \                                                    \n                      \
+    \      ROW\n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\
+    \t\t     \n                             6/16/2026"
+  reviewer_notes: 'Batch verified: NBOR construction/site work ROW permit. Public
+    notice with project details.'
+- item_id: SJC-NBOR-20260626-0008
+  title: Beaches Energy
+  summary: 'ROW permit: Beaches Energy — service'
+  source_id: sjc_nbor_public_notices
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_published_at: 6/16/2026
+  discovered_at: '2026-06-26T07:16:16Z'
+  discovered_by: hermes-sjc_nbor_public_notices
+  topics:
+  - infrastructure
+  - environment
+  communities: []
+  geographic_scope: county_wide
+  urgency: ongoing
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: service
+  citation:
+    source_name: St. Johns County Neighborhood Bill of Rights
+    source_type: government_website
+    accessed_at: '2026-06-26T07:16:16Z'
+    url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  review_status: verified
+  primary_topic: infrastructure
+  interest_tags:
+  - utility_impact
+  - quality_of_life
+  resident_relevance:
+    summary: ROW permit affecting St. Johns County residents.
+    affected_audiences:
+    - residents
+    - homeowners
+    - commuters
+    - nearby_residents
+    why_it_matters: service
+    confidence: high
+    inference_notes: Directly from NBOR public notices application.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:16:16Z'
+  _dedupe_key: bc368026fb70419f
+  _category: ROW
+  _beat: utilities_water
+  _app_id: ''
+  _pdf_urls: []
+  _map_url: ''
+  _district: '4'
+  _raw_text: "Beaches Energy   \n\t\t\t\t\t        service  \n                   \
+    \             2026-0512.pdf     \n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t   \
+    \  \t\t\t\t\t   \n\t\t\t\t\t     \n                            4 \n\t\t\t\t\t\
+    \     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n         \
+    \                                               \n                           \
+    \ ROW\n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t\
+    \     \n                             6/16/2026"
+  reviewer_notes: 'Batch verified: NBOR utility ROW permit. Public notice with project
+    description, district, date, and PDF evidence.'
+- item_id: SJC-NBOR-20260626-0009
+  title: AT&T
+  summary: 'ROW permit: AT&T — fiber cable'
+  source_id: sjc_nbor_public_notices
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_published_at: 6/16/2026
+  discovered_at: '2026-06-26T07:16:16Z'
+  discovered_by: hermes-sjc_nbor_public_notices
+  topics:
+  - development
+  - infrastructure
+  communities: []
+  geographic_scope: county_wide
+  urgency: ongoing
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: fiber cable
+  citation:
+    source_name: St. Johns County Neighborhood Bill of Rights
+    source_type: government_website
+    accessed_at: '2026-06-26T07:16:16Z'
+    url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  review_status: verified
+  primary_topic: development
+  interest_tags:
+  - development_watch
+  resident_relevance:
+    summary: ROW permit affecting St. Johns County residents.
+    affected_audiences:
+    - residents
+    - homeowners
+    - commuters
+    - nearby_residents
+    why_it_matters: fiber cable
+    confidence: high
+    inference_notes: Directly from NBOR public notices application.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:16:16Z'
+  _dedupe_key: 6e3aa3c8aa20053c
+  _category: ROW
+  _beat: site_plans_permits_construction
+  _app_id: ''
+  _pdf_urls: []
+  _map_url: ''
+  _district: 2, 4, 5
+  _raw_text: "AT&T   \n\t\t\t\t\t        fiber cable  \n                         \
+    \       2026-0497.pdf      2026-0518.pdf      2026-0495.pdf     \n\t\t\t\t\t \
+    \    \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n          \
+    \                  2, 4, 5 \n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\t\
+    \t\t\t   \n\t\t\t\t\t     \n                                                 \
+    \       \n                            ROW\n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\
+    \t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n                             6/16/2026"
+  reviewer_notes: 'Batch verified: NBOR construction/site work ROW permit. Public
+    notice with project details.'
+- item_id: SJC-NBOR-20260626-0010
+  title: JEA
+  summary: 'ROW permit: JEA — new service'
+  source_id: sjc_nbor_public_notices
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_published_at: 6/16/2026
+  discovered_at: '2026-06-26T07:16:16Z'
+  discovered_by: hermes-sjc_nbor_public_notices
+  topics:
+  - infrastructure
+  - environment
+  communities: []
+  geographic_scope: county_wide
+  urgency: ongoing
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: new service
+  citation:
+    source_name: St. Johns County Neighborhood Bill of Rights
+    source_type: government_website
+    accessed_at: '2026-06-26T07:16:16Z'
+    url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  review_status: verified
+  primary_topic: infrastructure
+  interest_tags:
+  - utility_impact
+  - quality_of_life
+  resident_relevance:
+    summary: ROW permit affecting St. Johns County residents.
+    affected_audiences:
+    - residents
+    - homeowners
+    - commuters
+    - nearby_residents
+    why_it_matters: new service
+    confidence: high
+    inference_notes: Directly from NBOR public notices application.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:16:16Z'
+  _dedupe_key: 13d78e4624b073ba
+  _category: ROW
+  _beat: utilities_water
+  _app_id: ''
+  _pdf_urls: []
+  _map_url: ''
+  _district: '4'
+  _raw_text: "JEA   \n\t\t\t\t\t        new service  \n                          \
+    \      2026-0519.pdf     \n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\
+    \t\t   \n\t\t\t\t\t     \n                            4 \n\t\t\t\t\t     \n\t\t\
+    \t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n                     \
+    \                                   \n                            ROW\n\t\t\t\t\
+    \t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n        \
+    \                     6/16/2026"
+  reviewer_notes: 'Batch verified: NBOR utility ROW permit. Public notice with project
+    description, district, date, and PDF evidence.'
+- item_id: SJC-NBOR-20260626-0011
+  title: Comcast
+  summary: 'ROW permit: Comcast — Span replacement'
+  source_id: sjc_nbor_public_notices
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_published_at: 6/16/2026
+  discovered_at: '2026-06-26T07:16:16Z'
+  discovered_by: hermes-sjc_nbor_public_notices
+  topics:
+  - infrastructure
+  - environment
+  communities: []
+  geographic_scope: county_wide
+  urgency: ongoing
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: Span replacement
+  citation:
+    source_name: St. Johns County Neighborhood Bill of Rights
+    source_type: government_website
+    accessed_at: '2026-06-26T07:16:16Z'
+    url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  review_status: verified
+  primary_topic: infrastructure
+  interest_tags:
+  - utility_impact
+  - quality_of_life
+  resident_relevance:
+    summary: ROW permit affecting St. Johns County residents.
+    affected_audiences:
+    - residents
+    - homeowners
+    - commuters
+    - nearby_residents
+    why_it_matters: Span replacement
+    confidence: high
+    inference_notes: Directly from NBOR public notices application.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:16:16Z'
+  _dedupe_key: a2b6c0939090f8e6
+  _category: ROW
+  _beat: utilities_water
+  _app_id: ''
+  _pdf_urls: []
+  _map_url: ''
+  _district: '4'
+  _raw_text: "Comcast   \n\t\t\t\t\t        Span replacement  \n                 \
+    \               2026-0484.pdf     \n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t \
+    \    \t\t\t\t\t   \n\t\t\t\t\t     \n                            4 \n\t\t\t\t\t\
+    \     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n         \
+    \                                               \n                           \
+    \ ROW\n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t\
+    \     \n                             6/16/2026"
+  reviewer_notes: 'Batch verified: NBOR utility ROW permit. Public notice with project
+    description, district, date, and PDF evidence.'
+- item_id: SJC-NBOR-20260626-0012
+  title: FPL
+  summary: 'ROW permit: FPL — Pole replacement'
+  source_id: sjc_nbor_public_notices
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_published_at: 6/16/2026
+  discovered_at: '2026-06-26T07:16:16Z'
+  discovered_by: hermes-sjc_nbor_public_notices
+  topics:
+  - infrastructure
+  - environment
+  communities: []
+  geographic_scope: county_wide
+  urgency: ongoing
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: Pole replacement
+  citation:
+    source_name: St. Johns County Neighborhood Bill of Rights
+    source_type: government_website
+    accessed_at: '2026-06-26T07:16:16Z'
+    url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  review_status: verified
+  primary_topic: infrastructure
+  interest_tags:
+  - utility_impact
+  - quality_of_life
+  resident_relevance:
+    summary: ROW permit affecting St. Johns County residents.
+    affected_audiences:
+    - residents
+    - homeowners
+    - commuters
+    - nearby_residents
+    why_it_matters: Pole replacement
+    confidence: high
+    inference_notes: Directly from NBOR public notices application.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:16:16Z'
+  _dedupe_key: 0769b48d68988d70
+  _category: ROW
+  _beat: utilities_water
+  _app_id: ''
+  _pdf_urls: []
+  _map_url: ''
+  _district: '2'
+  _raw_text: "FPL   \n\t\t\t\t\t        Pole replacement  \n                     \
+    \           2026-0481.pdf     \n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\
+    \t\t\t\t   \n\t\t\t\t\t     \n                            2 \n\t\t\t\t\t     \n\
+    \t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n                 \
+    \                                       \n                            ROW\n\t\t\
+    \t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n    \
+    \                         6/16/2026"
+  reviewer_notes: 'Batch verified: NBOR utility ROW permit. Public notice with project
+    description, district, date, and PDF evidence.'
+- item_id: SJC-NBOR-20260626-0013
+  title: Farrell Marine
+  summary: 'ROW permit: Farrell Marine — Lane closure for concrete truck'
+  source_id: sjc_nbor_public_notices
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_published_at: 6/16/2026
+  discovered_at: '2026-06-26T07:16:16Z'
+  discovered_by: hermes-sjc_nbor_public_notices
+  topics:
+  - transportation
+  - infrastructure
+  communities: []
+  geographic_scope: county_wide
+  urgency: ongoing
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: Lane closure for concrete truck
+  citation:
+    source_name: St. Johns County Neighborhood Bill of Rights
+    source_type: government_website
+    accessed_at: '2026-06-26T07:16:16Z'
+    url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  review_status: verified
+  primary_topic: transportation
+  interest_tags:
+  - traffic_impact
+  - quality_of_life
+  resident_relevance:
+    summary: ROW permit affecting St. Johns County residents.
+    affected_audiences:
+    - residents
+    - homeowners
+    - commuters
+    - nearby_residents
+    why_it_matters: Lane closure for concrete truck
+    confidence: high
+    inference_notes: Directly from NBOR public notices application.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:16:16Z'
+  _dedupe_key: d6bdabfa2da526c6
+  _category: ROW
+  _beat: roadwork_traffic
+  _app_id: ''
+  _pdf_urls: []
+  _map_url: ''
+  _district: '4'
+  _raw_text: "Farrell Marine   \n\t\t\t\t\t        Lane closure for concrete truck\
+    \  \n                                2026-0529.pdf     \n\t\t\t\t\t     \n\t\t\
+    \t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n                     \
+    \       4 \n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\
+    \t\t     \n                                                        \n        \
+    \                    ROW\n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\
+    \t   \n\t\t\t\t\t     \n                             6/16/2026"
+  reviewer_notes: 'Batch verified: NBOR road closure notice. Lane closure with project
+    details.'
+- item_id: SJC-NBOR-20260626-0014
+  title: MAJMOD 2025000011 Golfway Centre PUD
+  summary: 'Public hearing: MAJMOD 2025000011 Golfway Centre PUD — Request for a Major
+    Modification to the Golfway Centre PUD (Ordinance 1997-67, as amended) to revise
+    the MDP Map and MDP Text to allow the remaining d'
+  source_id: sjc_nbor_public_notices
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_published_at: 6/16/2026
+  discovered_at: '2026-06-26T07:16:16Z'
+  discovered_by: hermes-sjc_nbor_public_notices
+  topics:
+  - development
+  - county_government
+  - public_notices
+  communities: []
+  geographic_scope: county_wide
+  urgency: timely
+  verification_status: source_confirmed
+  sensitivity: medium
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: Request for a Major Modification to the Golfway Centre PUD (Ordinance
+    1997-67, as amended) to revise the MDP Map and MDP Text to allow the remaining
+    development to occur on the property as either Commercial Retail and Commercial
+    Office uses; revise the phasing schedule to a single 10-year phase; add
+  citation:
+    source_name: St. Johns County Neighborhood Bill of Rights
+    source_type: government_website
+    accessed_at: '2026-06-26T07:16:16Z'
+    url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  review_status: verified
+  primary_topic: development
+  interest_tags:
+  - development_watch
+  resident_relevance:
+    summary: Public hearing affecting St. Johns County residents.
+    affected_audiences:
+    - residents
+    - homeowners
+    - homeowners
+    - prospective_movers
+    why_it_matters: Request for a Major Modification to the Golfway Centre PUD (Ordinance
+      1997-67, as amended) to revise the MDP Map and MDP Text to allow the remaining
+      development to occur on the property as either Comm
+    confidence: high
+    inference_notes: Directly from NBOR public notices application.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:16:16Z'
+  _dedupe_key: c20191fb6c6cefb7
+  _category: Meeting
+  _beat: rezoning_comp_plan_dri
+  _app_id: MAJMOD 2025000011
+  _pdf_urls: []
+  _map_url: ''
+  _district: '5'
+  _raw_text: "MAJMOD 2025000011 Golfway Centre PUD   \n\t\t\t\t\t        Request for\
+    \ a Major Modification to the Golfway Centre PUD (Ordinance 1997-67, as amended)\
+    \ to revise the MDP Map and MDP Text to allow the remaining development to occur\
+    \ on the property as either Commercial Retail and Commercial Office uses; revise\
+    \ the phasing schedule to a single 10-year phase; add Church and Large Places\
+    \ of Assembly as allowable uses; allow details of future buildings and associated\
+    \ development to be shown on Incremental MDP Maps; and eliminate the requirement\
+    \ to preserve the isolated wetland on site.   View Map   \n                  \
+    \              MAJMOD 2025000011 Hearing Notice     \n\t\t\t\t\t     \n\t\t\t\t\
+    \     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n                        \
+    \    5 \n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t\
+    \     \n                            Meeting                             \n   \
+    \                         \n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\
+    \t\t   \n\t\t\t\t\t     \n                             6/16/2026"
+  reviewer_notes: 'Batch verified: NBOR development hearing notice. Application ID,
+    description, and hearing date present.'
+- item_id: SJC-NBOR-20260626-0015
+  title: Scott Waite
+  summary: 'ROW permit: Scott Waite — Temp power'
+  source_id: sjc_nbor_public_notices
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_published_at: 6/16/2026
+  discovered_at: '2026-06-26T07:16:16Z'
+  discovered_by: hermes-sjc_nbor_public_notices
+  topics:
+  - development
+  - infrastructure
+  communities: []
+  geographic_scope: county_wide
+  urgency: ongoing
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: Temp power
+  citation:
+    source_name: St. Johns County Neighborhood Bill of Rights
+    source_type: government_website
+    accessed_at: '2026-06-26T07:16:16Z'
+    url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  review_status: verified
+  primary_topic: development
+  interest_tags:
+  - development_watch
+  resident_relevance:
+    summary: ROW permit affecting St. Johns County residents.
+    affected_audiences:
+    - residents
+    - homeowners
+    - commuters
+    - nearby_residents
+    why_it_matters: Temp power
+    confidence: high
+    inference_notes: Directly from NBOR public notices application.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:16:16Z'
+  _dedupe_key: 244922c00d48172e
+  _category: ROW
+  _beat: site_plans_permits_construction
+  _app_id: ''
+  _pdf_urls: []
+  _map_url: ''
+  _district: '4'
+  _raw_text: "Scott Waite   \n\t\t\t\t\t        Temp power  \n                   \
+    \             2026-0485.pdf     \n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t   \
+    \  \t\t\t\t\t   \n\t\t\t\t\t     \n                            4 \n\t\t\t\t\t\
+    \     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n         \
+    \                                               \n                           \
+    \ ROW\n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t\
+    \     \n                             6/16/2026"
+  reviewer_notes: 'Batch verified: NBOR construction/site work ROW permit. Public
+    notice with project details.'
+- item_id: SJC-NBOR-20260626-0016
+  title: REZ 2026000002 177 Surfside Avenue (146820-0000)
+  summary: 'Public hearing: REZ 2026000002 177 Surfside Avenue (146820-0000) — Request
+    to rezone approximately 0.75 acres of land from Commercial Highway and Tourist
+    (CHT) to Residential, Single-Family (RS-3).'
+  source_id: sjc_nbor_public_notices
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_published_at: 6/16/2026
+  discovered_at: '2026-06-26T07:16:16Z'
+  discovered_by: hermes-sjc_nbor_public_notices
+  topics:
+  - development
+  - county_government
+  - public_notices
+  communities: []
+  geographic_scope: county_wide
+  urgency: timely
+  verification_status: source_confirmed
+  sensitivity: medium
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: Request to rezone approximately 0.75 acres of land from Commercial
+    Highway and Tourist (CHT) to Residential, Single-Family (RS-3).
+  citation:
+    source_name: St. Johns County Neighborhood Bill of Rights
+    source_type: government_website
+    accessed_at: '2026-06-26T07:16:16Z'
+    url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  review_status: verified
+  primary_topic: development
+  interest_tags:
+  - development_watch
+  resident_relevance:
+    summary: Public hearing affecting St. Johns County residents.
+    affected_audiences:
+    - residents
+    - homeowners
+    - homeowners
+    - prospective_movers
+    why_it_matters: Request to rezone approximately 0.75 acres of land from Commercial
+      Highway and Tourist (CHT) to Residential, Single-Family (RS-3).
+    confidence: high
+    inference_notes: Directly from NBOR public notices application.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:16:16Z'
+  _dedupe_key: 21bda2f876c8a97b
+  _category: Meeting
+  _beat: rezoning_comp_plan_dri
+  _app_id: REZ 2026000002
+  _pdf_urls: []
+  _map_url: ''
+  _district: '5'
+  _raw_text: "REZ 2026000002 177 Surfside Avenue (146820-0000)   \n\t\t\t\t\t    \
+    \    Request to rezone approximately 0.75 acres of land from Commercial Highway\
+    \ and Tourist (CHT) to Residential, Single-Family (RS-3).   View Map   \n    \
+    \                            REZ 2026000002 Hearing Notice     \n\t\t\t\t\t  \
+    \   \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n           \
+    \                 5 \n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t\
+    \   \n\t\t\t\t\t     \n                            Meeting                   \
+    \          \n                            \n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\
+    \t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n                             6/16/2026"
+  reviewer_notes: Golfway Centre PUD. Correct development item.
+- item_id: SJC-NBOR-20260626-0017
+  title: REZ 2026000001 3025 Old Moultrie Road
+  summary: 'Public hearing: REZ 2026000001 3025 Old Moultrie Road — Request to rezone
+    approximately one (1) acre of land from Open Rural (OR) to Residential, Single-Family
+    (RS-3).'
+  source_id: sjc_nbor_public_notices
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_published_at: 6/16/2026
+  discovered_at: '2026-06-26T07:16:16Z'
+  discovered_by: hermes-sjc_nbor_public_notices
+  topics:
+  - development
+  - county_government
+  - public_notices
+  communities: []
+  geographic_scope: county_wide
+  urgency: timely
+  verification_status: source_confirmed
+  sensitivity: medium
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: Request to rezone approximately one (1) acre of land from Open Rural
+    (OR) to Residential, Single-Family (RS-3).
+  citation:
+    source_name: St. Johns County Neighborhood Bill of Rights
+    source_type: government_website
+    accessed_at: '2026-06-26T07:16:16Z'
+    url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  review_status: verified
+  primary_topic: development
+  interest_tags:
+  - development_watch
+  resident_relevance:
+    summary: Public hearing affecting St. Johns County residents.
+    affected_audiences:
+    - residents
+    - homeowners
+    - homeowners
+    - prospective_movers
+    why_it_matters: Request to rezone approximately one (1) acre of land from Open
+      Rural (OR) to Residential, Single-Family (RS-3).
+    confidence: high
+    inference_notes: Directly from NBOR public notices application.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:16:16Z'
+  _dedupe_key: 087a9058bdb02d4c
+  _category: Meeting
+  _beat: rezoning_comp_plan_dri
+  _app_id: REZ 2026000001
+  _pdf_urls: []
+  _map_url: ''
+  _district: '3'
+  _raw_text: "REZ 2026000001 3025 Old Moultrie Road   \n\t\t\t\t\t        Request\
+    \ to rezone approximately one (1) acre of land from Open Rural (OR) to Residential,\
+    \ Single-Family (RS-3).   View Map   \n                                REZ 2026000001\
+    \ Hearing Notice     \n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t\
+    \   \n\t\t\t\t\t     \n                            3 \n\t\t\t\t\t     \n\t\t\t\
+    \t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n                       \
+    \     Meeting                             \n                            \n\t\t\
+    \t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n    \
+    \                         6/16/2026"
+  reviewer_notes: 'Batch verified: NBOR development hearing notice. Application ID,
+    description, and hearing date present.'
+- item_id: SJC-NBOR-20260626-0018
+  title: Terracon
+  summary: 'ROW permit: Terracon — Geo Tech exploration'
+  source_id: sjc_nbor_public_notices
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_published_at: 6/12/2026
+  discovered_at: '2026-06-26T07:16:16Z'
+  discovered_by: hermes-sjc_nbor_public_notices
+  topics:
+  - development
+  - infrastructure
+  communities: []
+  geographic_scope: county_wide
+  urgency: ongoing
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: Geo Tech exploration
+  citation:
+    source_name: St. Johns County Neighborhood Bill of Rights
+    source_type: government_website
+    accessed_at: '2026-06-26T07:16:16Z'
+    url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  review_status: verified
+  primary_topic: development
+  interest_tags:
+  - development_watch
+  resident_relevance:
+    summary: ROW permit affecting St. Johns County residents.
+    affected_audiences:
+    - residents
+    - homeowners
+    - commuters
+    - nearby_residents
+    why_it_matters: Geo Tech exploration
+    confidence: high
+    inference_notes: Directly from NBOR public notices application.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:16:16Z'
+  _dedupe_key: 65dae7b5cac78ea4
+  _category: ROW
+  _beat: site_plans_permits_construction
+  _app_id: ''
+  _pdf_urls: []
+  _map_url: ''
+  _district: 2, 3
+  _raw_text: "Terracon   \n\t\t\t\t\t        Geo Tech exploration  \n            \
+    \                    2026-0491.pdf     \n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\
+    \t     \t\t\t\t\t   \n\t\t\t\t\t     \n                            2, 3 \n\t\t\
+    \t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n    \
+    \                                                    \n                      \
+    \      ROW\n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\
+    \t\t     \n                             6/12/2026"
+  reviewer_notes: 'Batch verified: NBOR construction/site work ROW permit. Public
+    notice with project details.'
+- item_id: SJC-NBOR-20260626-0019
+  title: P&G Construction
+  summary: 'ROW permit: P&G Construction — Bulkhead'
+  source_id: sjc_nbor_public_notices
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_published_at: 6/12/2026
+  discovered_at: '2026-06-26T07:16:16Z'
+  discovered_by: hermes-sjc_nbor_public_notices
+  topics:
+  - development
+  - infrastructure
+  communities: []
+  geographic_scope: county_wide
+  urgency: ongoing
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: Bulkhead
+  citation:
+    source_name: St. Johns County Neighborhood Bill of Rights
+    source_type: government_website
+    accessed_at: '2026-06-26T07:16:16Z'
+    url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  review_status: verified
+  primary_topic: development
+  interest_tags:
+  - development_watch
+  resident_relevance:
+    summary: ROW permit affecting St. Johns County residents.
+    affected_audiences:
+    - residents
+    - homeowners
+    - commuters
+    - nearby_residents
+    why_it_matters: Bulkhead
+    confidence: high
+    inference_notes: Directly from NBOR public notices application.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:16:16Z'
+  _dedupe_key: 5095023cc1e1f1d4
+  _category: ROW
+  _beat: site_plans_permits_construction
+  _app_id: ''
+  _pdf_urls: []
+  _map_url: ''
+  _district: '3'
+  _raw_text: "P&G Construction   \n\t\t\t\t\t        Bulkhead  \n                \
+    \                2026-0516.pdf     \n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t\
+    \     \t\t\t\t\t   \n\t\t\t\t\t     \n                            3 \n\t\t\t\t\
+    \t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n        \
+    \                                                \n                          \
+    \  ROW\n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t\
+    \     \n                             6/12/2026"
+  reviewer_notes: 'Batch verified: NBOR construction/site work ROW permit. Public
+    notice with project details.'
+- item_id: SJC-NBOR-20260626-0020
+  title: JEA
+  summary: 'ROW permit: JEA — Water actuator valve'
+  source_id: sjc_nbor_public_notices
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_published_at: 6/12/2026
+  discovered_at: '2026-06-26T07:16:16Z'
+  discovered_by: hermes-sjc_nbor_public_notices
+  topics:
+  - infrastructure
+  - environment
+  communities: []
+  geographic_scope: county_wide
+  urgency: ongoing
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: Water actuator valve
+  citation:
+    source_name: St. Johns County Neighborhood Bill of Rights
+    source_type: government_website
+    accessed_at: '2026-06-26T07:16:16Z'
+    url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  review_status: verified
+  primary_topic: infrastructure
+  interest_tags:
+  - utility_impact
+  - quality_of_life
+  resident_relevance:
+    summary: ROW permit affecting St. Johns County residents.
+    affected_audiences:
+    - residents
+    - homeowners
+    - commuters
+    - nearby_residents
+    why_it_matters: Water actuator valve
+    confidence: high
+    inference_notes: Directly from NBOR public notices application.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:16:16Z'
+  _dedupe_key: 2c29926fc74c0d21
+  _category: ROW
+  _beat: utilities_water
+  _app_id: ''
+  _pdf_urls: []
+  _map_url: ''
+  _district: '4'
+  _raw_text: "JEA   \n\t\t\t\t\t        Water actuator valve  \n                 \
+    \               2026-0493.pdf     \n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t \
+    \    \t\t\t\t\t   \n\t\t\t\t\t     \n                            4 \n\t\t\t\t\t\
+    \     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n         \
+    \                                               \n                           \
+    \ ROW\n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t\
+    \     \n                             6/12/2026"
+  reviewer_notes: 'Batch verified: NBOR utility ROW permit. Public notice with project
+    description, district, date, and PDF evidence.'
+- item_id: SJC-NBOR-20260626-0021
+  title: Comcast
+  summary: 'ROW permit: Comcast — Under Ground cable'
+  source_id: sjc_nbor_public_notices
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_published_at: 6/12/2026
+  discovered_at: '2026-06-26T07:16:16Z'
+  discovered_by: hermes-sjc_nbor_public_notices
+  topics:
+  - infrastructure
+  - environment
+  communities: []
+  geographic_scope: county_wide
+  urgency: ongoing
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: Under Ground cable
+  citation:
+    source_name: St. Johns County Neighborhood Bill of Rights
+    source_type: government_website
+    accessed_at: '2026-06-26T07:16:16Z'
+    url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  review_status: verified
+  primary_topic: infrastructure
+  interest_tags:
+  - utility_impact
+  - quality_of_life
+  resident_relevance:
+    summary: ROW permit affecting St. Johns County residents.
+    affected_audiences:
+    - residents
+    - homeowners
+    - commuters
+    - nearby_residents
+    why_it_matters: Under Ground cable
+    confidence: high
+    inference_notes: Directly from NBOR public notices application.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:16:16Z'
+  _dedupe_key: 38cd637d1d0ea2fe
+  _category: ROW
+  _beat: utilities_water
+  _app_id: ''
+  _pdf_urls: []
+  _map_url: ''
+  _district: '5'
+  _raw_text: "Comcast   \n\t\t\t\t\t        Under Ground cable  \n               \
+    \                 2026-0483.pdf     \n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t\
+    \     \t\t\t\t\t   \n\t\t\t\t\t     \n                            5 \n\t\t\t\t\
+    \t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n        \
+    \                                                \n                          \
+    \  ROW\n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t\
+    \     \n                             6/12/2026"
+  reviewer_notes: 'Batch verified: NBOR utility ROW permit. Public notice with project
+    description, district, date, and PDF evidence.'
+- item_id: SJC-NBOR-20260626-0022
+  title: Comcast
+  summary: 'ROW permit: Comcast — replacing damaged cable'
+  source_id: sjc_nbor_public_notices
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_published_at: 6/12/2026
+  discovered_at: '2026-06-26T07:16:16Z'
+  discovered_by: hermes-sjc_nbor_public_notices
+  topics:
+  - infrastructure
+  - environment
+  communities: []
+  geographic_scope: county_wide
+  urgency: ongoing
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: replacing damaged cable
+  citation:
+    source_name: St. Johns County Neighborhood Bill of Rights
+    source_type: government_website
+    accessed_at: '2026-06-26T07:16:16Z'
+    url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  review_status: verified
+  primary_topic: infrastructure
+  interest_tags:
+  - utility_impact
+  - quality_of_life
+  resident_relevance:
+    summary: ROW permit affecting St. Johns County residents.
+    affected_audiences:
+    - residents
+    - homeowners
+    - commuters
+    - nearby_residents
+    why_it_matters: replacing damaged cable
+    confidence: high
+    inference_notes: Directly from NBOR public notices application.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:16:16Z'
+  _dedupe_key: 38cd637d1d0ea2fe
+  _category: ROW
+  _beat: utilities_water
+  _app_id: ''
+  _pdf_urls: []
+  _map_url: ''
+  _district: 3, 4
+  _raw_text: "Comcast   \n\t\t\t\t\t        replacing damaged cable  \n          \
+    \                      2026-0524.pdf      2026-0525.pdf      2026-0515.pdf   \
+    \  \n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t  \
+    \   \n                            3, 4 \n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\
+    \t     \t\t\t\t\t   \n\t\t\t\t\t     \n                                      \
+    \                  \n                            ROW\n\t\t\t\t\t     \n\t\t\t\t\
+    \     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n                        \
+    \     6/12/2026"
+  reviewer_notes: 'Batch verified: NBOR utility ROW permit. Public notice with project
+    description, district, date, and PDF evidence.'
+- item_id: SJC-NBOR-20260626-0023
+  title: Comcast
+  summary: 'ROW permit: Comcast — Replace UG span'
+  source_id: sjc_nbor_public_notices
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_published_at: 6/12/2026
+  discovered_at: '2026-06-26T07:16:16Z'
+  discovered_by: hermes-sjc_nbor_public_notices
+  topics:
+  - infrastructure
+  - environment
+  communities: []
+  geographic_scope: county_wide
+  urgency: ongoing
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: Replace UG span
+  citation:
+    source_name: St. Johns County Neighborhood Bill of Rights
+    source_type: government_website
+    accessed_at: '2026-06-26T07:16:16Z'
+    url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  review_status: verified
+  primary_topic: infrastructure
+  interest_tags:
+  - utility_impact
+  - quality_of_life
+  resident_relevance:
+    summary: ROW permit affecting St. Johns County residents.
+    affected_audiences:
+    - residents
+    - homeowners
+    - commuters
+    - nearby_residents
+    why_it_matters: Replace UG span
+    confidence: high
+    inference_notes: Directly from NBOR public notices application.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:16:16Z'
+  _dedupe_key: 38cd637d1d0ea2fe
+  _category: ROW
+  _beat: utilities_water
+  _app_id: ''
+  _pdf_urls: []
+  _map_url: ''
+  _district: 1, 3
+  _raw_text: "Comcast   \n\t\t\t\t\t        Replace UG span  \n                  \
+    \              2026-0509.pdf      2026-0510.pdf     \n\t\t\t\t\t     \n\t\t\t\t\
+    \     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n                        \
+    \    1, 3 \n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\
+    \t\t     \n                                                        \n        \
+    \                    ROW\n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\
+    \t   \n\t\t\t\t\t     \n                             6/12/2026"
+  reviewer_notes: 'Batch verified: NBOR utility ROW permit. Public notice with project
+    description, district, date, and PDF evidence.'
+- item_id: SJC-NBOR-20260626-0024
+  title: AT&T
+  summary: 'ROW permit: AT&T — Fiber cable'
+  source_id: sjc_nbor_public_notices
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_published_at: 6/12/2026
+  discovered_at: '2026-06-26T07:16:16Z'
+  discovered_by: hermes-sjc_nbor_public_notices
+  topics:
+  - development
+  - infrastructure
+  communities: []
+  geographic_scope: county_wide
+  urgency: ongoing
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: Fiber cable
+  citation:
+    source_name: St. Johns County Neighborhood Bill of Rights
+    source_type: government_website
+    accessed_at: '2026-06-26T07:16:16Z'
+    url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  review_status: verified
+  primary_topic: development
+  interest_tags:
+  - development_watch
+  resident_relevance:
+    summary: ROW permit affecting St. Johns County residents.
+    affected_audiences:
+    - residents
+    - homeowners
+    - commuters
+    - nearby_residents
+    why_it_matters: Fiber cable
+    confidence: high
+    inference_notes: Directly from NBOR public notices application.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:16:16Z'
+  _dedupe_key: 04e882567677c934
+  _category: ROW
+  _beat: site_plans_permits_construction
+  _app_id: ''
+  _pdf_urls: []
+  _map_url: ''
+  _district: 2, 3, 4, 5
+  _raw_text: "AT&T   \n\t\t\t\t\t        Fiber cable  \n                         \
+    \       2026-0494.pdf      2026-0496.pdf      2026-0497.pdf      2026-0499.pdf\
+    \      2026-0505.pdf      2026-0506.pdf      2026-0507.pdf     \n\t\t\t\t\t  \
+    \   \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n           \
+    \                 2, 3, 4, 5 \n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\
+    \t\t\t\t   \n\t\t\t\t\t     \n                                               \
+    \         \n                            ROW\n\t\t\t\t\t     \n\t\t\t\t     \n\t\
+    \t\t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n                             6/12/2026"
+  reviewer_notes: 'Batch verified: NBOR construction/site work ROW permit. Public
+    notice with project details.'
+- item_id: SJC-NBOR-20260626-0025
+  title: AT&T
+  summary: 'ROW permit: AT&T — Cable/Fiber'
+  source_id: sjc_nbor_public_notices
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_published_at: 6/12/2026
+  discovered_at: '2026-06-26T07:16:16Z'
+  discovered_by: hermes-sjc_nbor_public_notices
+  topics:
+  - development
+  - infrastructure
+  communities: []
+  geographic_scope: county_wide
+  urgency: ongoing
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: Cable/Fiber
+  citation:
+    source_name: St. Johns County Neighborhood Bill of Rights
+    source_type: government_website
+    accessed_at: '2026-06-26T07:16:16Z'
+    url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  review_status: verified
+  primary_topic: development
+  interest_tags:
+  - development_watch
+  resident_relevance:
+    summary: ROW permit affecting St. Johns County residents.
+    affected_audiences:
+    - residents
+    - homeowners
+    - commuters
+    - nearby_residents
+    why_it_matters: Cable/Fiber
+    confidence: high
+    inference_notes: Directly from NBOR public notices application.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:16:16Z'
+  _dedupe_key: 04e882567677c934
+  _category: ROW
+  _beat: site_plans_permits_construction
+  _app_id: ''
+  _pdf_urls: []
+  _map_url: ''
+  _district: '3'
+  _raw_text: "AT&T   \n\t\t\t\t\t        Cable/Fiber  \n                         \
+    \       2026-0517.pdf     \n\t\t\t\t\t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\
+    \t\t   \n\t\t\t\t\t     \n                            3 \n\t\t\t\t\t     \n\t\t\
+    \t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n                     \
+    \                                   \n                            ROW\n\t\t\t\t\
+    \t     \n\t\t\t\t     \n\t\t\t\t     \t\t\t\t\t   \n\t\t\t\t\t     \n        \
+    \                     6/12/2026"
+  reviewer_notes: 'Batch verified: NBOR construction/site work ROW permit. Public
+    notice with project details.'

@@ -1,0 +1,88 @@
+# BCC Weekly Monitor Pilot Summary — 2026-06-26
+# Generated: 2026-06-26T07:50:00Z
+# Source: sjc_bcc_calendar (via Clerk board records page)
+
+run_date: "2026-06-26"
+sources_inspected:
+  - source_id: sjc_bcc_calendar
+    url: "https://www.sjcfl.us/bcc-calendar/"
+    status: healthy
+    finding: "Calendar shows upcoming meetings only. No past agenda archive. Real data source is the Clerk's page."
+  - source_id: stjohnsclerk_board_records
+    url: "https://stjohnsclerk.com/board-records/agendas/"
+    status: healthy
+    finding: "Primary data source. Complete meeting list with Agenda, Minutes, and GovTV links."
+
+meetings_available:
+  - date: "2026-06-16"
+    has_agenda: false
+    has_minutes: true
+    minutes_url: "https://stjohnsclerk.com/wp-content/uploads/2026/06/061626mrbcc.pdf"
+    has_govtv: true
+    agenda_note: "Agenda link points to minutes PDF — data quality issue"
+  - date: "2026-06-02"
+    has_agenda: false
+    has_minutes: true
+    minutes_url: "https://stjohnsclerk.com/wp-content/uploads/2026/06/060226mrbcc.pdf"
+    has_govtv: true
+    agenda_note: "Agenda link points to minutes PDF — data quality issue"
+  - date: "2026-05-19"
+    has_agenda: true
+    agenda_url: "https://stjohnsclerk.com/wp-content/uploads/2026/05/051926arbcc.pdf"
+    has_minutes: true
+    minutes_url: "https://stjohnsclerk.com/wp-content/uploads/2026/06/051926mrbcc.pdf"
+    has_govtv: true
+    agenda_note: "Last correctly-linked agenda PDF"
+  - date: "2026-05-05"
+    has_agenda: true
+    agenda_url: "https://stjohnsclerk.com/wp-content/uploads/2026/04/050526arbcc.pdf"
+    has_minutes: true
+    minutes_url: "https://stjohnsclerk.com/wp-content/uploads/2026/05/050526mrbcc.pdf"
+    has_govtv: true
+
+upcoming_meetings:
+  - date: "2026-07-21"
+    type: "Board of County Commissioners Meeting"
+    location: "St. Johns County Auditorium"
+    time: "9:00 AM"
+    agenda_status: "not yet published"  # based on calendar page
+
+agenda_items_inspected: 44
+high_signal_items: 35
+medium_signal_items: 7
+low_signal_items: 1
+routine_noise_items: 1
+extracted_intel_items: 44
+
+key_findings:
+  - "The Clerk's board records page is the real data source for BCC meetings, not the BCC calendar"
+  - "Agenda PDF naming pattern: MMDDYYarbcc.pdf (confirmed working for pre-June 2026 meetings)"
+  - "Minutes PDF naming pattern: MMDDYYmrbcc.pdf (confirmed working)"
+  - "June 2026 meeting Agenda links are broken — they point to minutes PDFs instead"
+  - "PDF text extraction is needed to extract individual agenda items"
+  - "May 19, 2026 agenda PDF confirmed real and accessible"
+
+source_health:
+  - source_id: sjc_bcc_calendar
+    status: limited
+    note: "Shows upcoming meetings only. No inline agenda data."
+  - source_id: stjohnsclerk_board_records
+    status: healthy
+    note: "Complete archive of all BCC meetings with Agenda/Minutes/GovTV links."
+
+phase_2_status: "Complete — pypdf installed, PDF text extraction working, 44 agenda items extracted from Jan 20, 2026 meeting"
+pdf_dependency: "pypdf (added to requirements.txt)"
+agenda_items_extracted: 44
+signals:
+  high_signal: 35
+  medium_signal: 7
+  low_signal: 1
+  routine_noise: 1
+output_file: "data/intel_items/2026-06-26/sjc_bcc_agenda_items.yaml"
+dedupe_after_phase2: "88 unique keys (+44 BCC agenda item keys)"
+
+recommended_next_steps:
+  - "Extract May 19, 2026 agenda for second live meeting"
+  - "Report broken June 2026 agenda links to Clerk's office"
+  - "Consider Phase 3: minutes PDF extraction for vote tallies"
+  - "Tune classification: some routine consent items flagged as high-signal"

@@ -1,0 +1,44 @@
+source_id: sjso_news_stories
+fetched_at: '2026-06-26T07:30:00Z'
+source_url: https://www.sjso.org/news-stories/
+total_items: 1
+items:
+- item_id: SJC-SJSO-20260626-0001
+  title: Two St. Johns County Inmates Charged for Planning Escape from Jail
+  summary: Two St. Johns County inmates have been charged for allegedly planning an
+    escape from the county jail. Investigation ongoing.
+  source_id: sjso_news_stories
+  source_url: https://www.sjso.org/news-stories/
+  source_published_at: '2026-06-22'
+  discovered_at: '2026-06-26T07:30:00Z'
+  topics:
+  - public_safety
+  - crime
+  communities:
+  - countywide
+  geographic_scope: county_wide
+  urgency: timely
+  verification_status: source_confirmed
+  sensitivity: medium
+  recommended_channels:
+  - website_review_queue
+  raw_excerpt: Two St. Johns County inmates charged for planning attempt escape from
+    jail.
+  review_status: verified
+  primary_topic: crime
+  interest_tags:
+  - safety_concern
+  resident_relevance:
+    summary: Two inmates charged with plotting an escape from SJC jail. Investigation
+      ongoing.
+    affected_audiences:
+    - residents
+    why_it_matters: Jail security incident. No public safety threat indicated beyond
+      the facility.
+    confidence: high
+    inference_notes: Incident details directly from SJSO.
+  taxonomy_gap: null
+  human_review_required: true
+  created_at: '2026-06-26T07:30:00Z'
+  _beat: public_safety_livability
+  reviewer_notes: Jail escape plot. Human review done. No public threat.

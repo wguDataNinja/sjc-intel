@@ -1,0 +1,742 @@
+# =============================================================================
+# SJC_Intel — Source Registry
+# =============================================================================
+# Master list of all discovered and configured public information sources for
+# St. Johns County, Florida.
+#
+# Each record follows the schema defined in schemas/source.schema.yaml.
+# Fields marked (future) are placeholders for monitor configuration data
+# that will be populated when monitoring tasks are created.
+#
+# Schema version: 1.0
+# Last updated: 2026-06-03
+# Updated by: sjc-intel-architect
+# =============================================================================
+
+sources:
+
+  # ---------------------------------------------------------------------------
+  # Priority 1 — High Relevance, Daily Monitoring
+  # ---------------------------------------------------------------------------
+
+  - source_id: "sjc_county_news"
+    name: "SJC County News"
+    description: >
+      Official St. Johns County government press releases, announcements,
+      project updates, and public notices. Published via the county's
+      WordPress site.
+    url: "https://www.sjcfl.us/news/"
+    base_domain: "sjcfl.us"
+    source_type: "wordpress_blog"
+    relevance: "HIGH"
+    monitor_frequency: "daily"
+    automatable: "YES"
+    status: "active"
+    topics:
+      - county_government
+      - public_notices
+      - development
+      - community_events
+      - emergency_alerts
+    communities: []
+    notes: >
+      WordPress blog listing. No RSS feed. HTML parsing of
+      /news/ page works. Individual article URLs follow WP permalink pattern.
+      Pilot completed 2026-06-03 — 5 items extracted successfully.
+      Main page only shows 4 Featured News items; sidebar on article pages
+      shows additional recent items.
+    monitor_config:
+      check_url: "https://www.sjcfl.us/news/"
+      check_interval_hours: 24
+      extract_selector: ".news_sec_row, .news_sec_bk"
+      item_url_pattern: "https://www.sjcfl.us/{slug}/"
+      last_checked: "2026-06-03T04:00:00Z"
+      last_error: ~
+    discovered_at: "2026-06-03T12:00:00Z"
+    discovered_by: "hermes-discovery-worker"
+    updated_at: "2026-06-03T04:30:00Z"
+    updated_by: "sjc-intel-architect (pilot)"
+
+  - source_id: "sjso_news_stories"
+    name: "SJSO News Stories"
+    description: >
+      St. Johns County Sheriff's Office press releases, arrest reports,
+      incident alerts, and community safety information. Primary source for
+      law enforcement intelligence.
+    url: "https://www.sjso.org/news-stories/"
+    base_domain: "sjso.org"
+    source_type: "wordpress_blog"
+    relevance: "HIGH"
+    monitor_frequency: "daily"
+    automatable: "YES"
+    status: "active"
+    topics:
+      - public_safety
+      - crime
+      - arrests
+      - incidents
+      - press_releases
+    communities: []
+    notes: >
+      WordPress / Elementor blog. News story URLs follow slug pattern.
+      Pilot completed 2026-06-03 — 4 items extracted with full
+      resident-interest classification. Default sensitivity: medium for
+      public-safety items. CMS may generate Unicode-encoded URLs for
+      certain article titles — handle gracefully.
+    monitor_config:
+      check_url: "https://www.sjso.org/news-stories/"
+      check_interval_hours: 24
+      extract_selector: ".elementor-posts-container .elementor-post"
+      item_url_pattern: "https://www.sjso.org/{slug}/"
+      last_checked: "2026-06-03T06:00:00Z"
+      last_error: ~
+    discovered_at: "2026-06-03T12:00:00Z"
+    discovered_by: "hermes-discovery-worker"
+    updated_at: "2026-06-03T06:30:00Z"
+    updated_by: "sjc-intel-architect (pilot)"
+
+  - source_id: "sjso_social_media"
+    name: "SJSO Social Media"
+    description: >
+      Sheriff's Office public social media channels — X/Twitter (@SJSOPIO),
+      Facebook (/StJohnsSheriffOffice/), Instagram (@sjsopio). Rapid public
+      safety alerts, incident notifications, community engagement.
+    url: "https://x.com/SJSOPIO"
+    base_domain: "x.com"
+    source_type: "social_media"
+    relevance: "HIGH"
+    monitor_frequency: "realtime"
+    automatable: "YES"
+    status: "verified"
+    topics:
+      - public_safety
+      - incidents
+      - alerts
+      - community_engagement
+    communities: []
+    notes: >
+      X/Twitter via @SJSOPIO is the fastest alert channel. Facebook and
+      Instagram for community engagement. Social media is discovery-only;
+      content is treated as leads, not verified fact.
+    discovered_at: "2026-06-03T12:00:00Z"
+    discovered_by: "hermes-discovery-worker"
+
+  # ---------------------------------------------------------------------------
+  # Priority 1b — Local Media (High Relevance, Daily Monitoring)
+  # ---------------------------------------------------------------------------
+
+  - source_id: "st_johns_citizen"
+    name: "St. Johns Citizen"
+    description: >
+      Professional local St. Johns County news/media organization with
+      daily publishing, multiple named contributors, and coverage of
+      local government, public safety, development, real estate,
+      restaurants, events, lifestyle, and community life. Operated by
+      veteran journalists (former NY Post Florida Bureau Chief, former
+      Fox News senior criminal justice reporter). 9+ named contributors.
+    url: "https://sjcitizen.com/"
+    base_domain: "sjcitizen.com"
+    source_type: "local_media"
+    relevance: "HIGH"
+    monitor_frequency: "daily"
+    automatable: "LIKELY"
+    status: "active"
+    topics:
+      - county_government
+      - public_safety
+      - development
+      - housing
+      - community_events
+      - lifestyle
+      - economic_development
+      - crime
+      - education
+    communities:
+      - nocatee
+      - st_augustine
+      - ponte_vedra
+    notes: >
+      Promoted from candidate after source review (2026-06-03).
+      Legitimate local reporting organization. Multiple contributors.
+      Daily publishing cadence. Professional advertising infrastructure
+      and newsletter (7,800 subscribers, 61% open rate). Also a
+      comparable public-facing model for SJC_Intel. Monitor as source;
+      do not copy content. Cite/link when using as source.
+      Source review: docs/source_reviews/st_johns_citizen_review.md
+    discovered_at: "2026-06-03T12:00:00Z"
+    discovered_by: "buddy (manual Facebook discovery)"
+    updated_at: "2026-06-03T12:00:00Z"
+    updated_by: "sjc-intel-architect"
+
+  # ---------------------------------------------------------------------------
+  # Priority 2 — High Relevance, Weekly Monitoring
+  # ---------------------------------------------------------------------------
+
+  - source_id: "sjc_school_district"
+    name: "SJC School District"
+    description: >
+      St. Johns County School District main website. School board agendas
+      (via BoardDocs), district news, superintendent communications,
+      safety/security information, calendars, and policy documents.
+    url: "https://www.stjohns.k12.fl.us/"
+    base_domain: "stjohns.k12.fl.us"
+    source_type: "wordpress_portal"
+    relevance: "HIGH"
+    monitor_frequency: "weekly"
+    automatable: "YES"
+    status: "verified"
+    topics:
+      - education
+      - school_board
+      - district_news
+      - safety
+      - policy
+    communities: []
+    notes: >
+      WordPress with Astra/Elementor theme. BoardDocs is a separate
+      document management system (publicly accessible). Board video
+      archive requires transcription for full extraction. Last HTTP 200
+      confirmed 2026-06-03.
+    discovered_at: "2026-06-03T12:00:00Z"
+    discovered_by: "hermes-discovery-worker"
+
+  - source_id: "sjc_development_tracker"
+    name: "SJC Development Tracker"
+    description: >
+      Interactive GIS map of active development projects across St. Johns
+      County. Tracks residential, commercial, and infrastructure projects.
+    url: "https://www.sjcfl.us/development-tracker/"
+    base_domain: "sjcfl.us"
+    source_type: "gis_map"
+    relevance: "HIGH"
+    monitor_frequency: "weekly"
+    automatable: "PARTIALLY"
+    status: "verified"
+    topics:
+      - development
+      - construction
+      - zoning
+      - infrastructure
+    communities: []
+    notes: >
+      Interactive map embedded in WordPress page. Likely uses Leaflet or
+      similar JS library. Static page content is scrapeable; GIS layer
+      data may require API discovery or browser automation for full
+      extraction.
+    discovered_at: "2026-06-03T12:00:00Z"
+    discovered_by: "hermes-discovery-worker"
+
+  - source_id: "nocatee_community"
+    name: "Nocatee Community"
+    description: >
+      Official website for Nocatee, a master-planned community in St. Johns
+      County. Community events, development updates, HOA-style notices,
+      lifestyle resources.
+    url: "https://www.nocatee.com/"
+    base_domain: "nocatee.com"
+    source_type: "cms"
+    relevance: "HIGH"
+    monitor_frequency: "weekly"
+    automatable: "YES"
+    status: "verified"
+    topics:
+      - community_events
+      - development
+      - lifestyle
+      - hoa
+    communities:
+      - nocatee
+    notes: >
+      HubSpot CMS. No JS-gated content on main pages. Standard CMS
+      structure. Last HTTP 200 confirmed 2026-06-03.
+    discovered_at: "2026-06-03T12:00:00Z"
+    discovered_by: "hermes-discovery-worker"
+
+  # ---------------------------------------------------------------------------
+  # Priority 3 — Medium Relevance, Monthly Monitoring
+  # ---------------------------------------------------------------------------
+
+  - source_id: "sjc_property_appraiser"
+    name: "SJC Property Appraiser"
+    description: >
+      St. Johns County Property Appraiser office. Property records,
+      assessments, parcel data, and real estate intelligence.
+    url: "https://www.sjcpa.us/"
+    base_domain: "sjcpa.us"
+    source_type: "government_portal"
+    relevance: "MEDIUM"
+    monitor_frequency: "monthly"
+    automatable: "LIKELY"
+    status: "verified"
+    topics:
+      - property_records
+      - assessments
+      - real_estate
+    communities: []
+    notes: >
+      Standard government website. May have search interfaces for parcel
+      lookup. Value increases during tax assessment cycles. Last HTTP 200
+      confirmed 2026-06-03.
+    discovered_at: "2026-06-03T12:00:00Z"
+    discovered_by: "hermes-discovery-worker"
+
+  - source_id: "sjc_tax_collector"
+    name: "SJC Tax Collector"
+    description: >
+      St. Johns County Tax Collector. Tax payment data, deadlines, public
+      notices, and collection information.
+    url: "https://www.sjctax.us/"
+    base_domain: "sjctax.us"
+    source_type: "government_portal"
+    relevance: "MEDIUM"
+    monitor_frequency: "monthly"
+    automatable: "LIKELY"
+    status: "verified"
+    topics:
+      - taxes
+      - public_notices
+      - deadlines
+    communities: []
+    notes: >
+      Standard government website. Value increases around tax deadlines
+      and payment cycles. Last HTTP 200 confirmed 2026-06-03.
+    discovered_at: "2026-06-03T12:00:00Z"
+    discovered_by: "hermes-discovery-worker"
+
+  # ---------------------------------------------------------------------------
+  # Priority 1c — Very High Relevance, Official Stacks (Tier 1 — promoted 2026-06-03)
+  # ---------------------------------------------------------------------------
+
+  - source_id: "sjc_bcc_calendar"
+    name: "County Commission Calendar"
+    description: >
+      St. Johns County Board of County Commissioners meeting calendar,
+      agendas, packets, and public hearing notices. Top official decision
+      stack for votes, budgets, development approvals, and county contracts.
+    url: "https://www.sjcfl.us/bcc-calendar/"
+    base_domain: "sjcfl.us"
+    source_type: "government_portal"
+    relevance: "HIGH"
+    monitor_frequency: "weekly"
+    automatable: "MODERATE"
+    status: "verified"
+    topics:
+      - county_government
+      - public_notices
+      - development
+      - taxes
+    communities: []
+    notes: >
+      Pair with Clerk board records and GovTV for full decision stack.
+      Agenda and attachment patterns need manual review before full
+      automation. Promoted from CAND-SRC-0001.
+    discovered_at: "2026-06-03T12:00:00Z"
+    discovered_by: "deep-research-extraction"
+
+  - source_id: "sjc_pza_boards"
+    name: "Planning and Zoning Boards"
+    description: >
+      St. Johns County Planning and Zoning Agency, Board of Adjustment,
+      and other land-use board calendars, agendas, and hearing schedules.
+      Primary source for rezonings, comp-plan amendments, overlays.
+    url: "https://www.sjcfl.us/planning-and-zoning-boards-and-agencies-2/"
+    base_domain: "sjcfl.us"
+    source_type: "government_portal"
+    relevance: "HIGH"
+    monitor_frequency: "weekly"
+    automatable: "MODERATE"
+    status: "verified"
+    topics:
+      - development
+      - county_government
+      - public_notices
+    communities: []
+    notes: >
+      Pair with Growth Management calendar and Planning and Zoning division
+      page. Hearings are monthly but planning calendar updates are weekly.
+      Promoted from CAND-SRC-0002.
+    discovered_at: "2026-06-03T12:00:00Z"
+    discovered_by: "deep-research-extraction"
+
+  - source_id: "sjc_nbor_public_notices"
+    name: "NBOR Public Notices"
+    description: >
+      St. Johns County Neighborhood Bill of Rights public notices
+      application. Covers road closures, utility ROW permits, zoning
+      hearings, rezonings, PUD modifications, comp plan amendments,
+      special use permits, and appeals. Replaces the old sjc_road_closures
+      landing page (dead end) with the actual data source.
+    url: "https://webapp.sjcfl.us/webnews/NBRscreend.aspx"
+    base_domain: "webapp.sjcfl.us"
+    source_type: "government_portal"
+    relevance: "HIGH"
+    monitor_frequency: "daily"
+    automatable: "YES"
+    status: "verified"
+    topics:
+      - transportation
+      - infrastructure
+      - development
+      - public_notices
+    communities: []
+    notes: >
+      Rich ASP.NET WebForms app rendering server-side plain HTML.
+      No browser automation needed. Extractor at scripts/extract_nbor.py.
+      25 records extracted from a single page fetch (2026-06-08).
+      Replaces old sjc_road_clusters (landing page with no data).
+    monitor_config:
+      check_url: "https://webapp.sjcfl.us/webnews/NBRscreend.aspx"
+      check_interval_hours: 24
+    discovered_at: "2026-06-03T12:00:00Z"
+    discovered_by: "deep-research-extraction"
+
+  # DEPRECATED: sjc_road_closures was a landing page with no inline data.
+  # Replaced by sjc_nbor_public_notices (the NBOR application).
+  # Keep this entry as a historical alias pointing to the real source.
+  - source_id: "sjc_road_closures"
+    name: "County Roads and Traffic (DEPRECATED — use sjc_nbor_public_notices)"
+    description: >
+      DEPRECATED. This was the road closures landing page, which links to the
+      NBOR application. The actual data source is sjc_nbor_public_notices.
+      This entry preserved as alias only. Do not use for monitoring.
+    url: "https://www.sjcfl.us/road-closures/"
+    base_domain: "sjcfl.us"
+    source_type: "alias"
+    relevance: "LOW"
+    monitor_frequency: "daily"
+    automatable: "NO"
+    status: "stale"
+    topics: []
+    communities: []
+    notes: >
+      DEPRECATED — replaced by sjc_nbor_public_notices.
+      This landing page has no inline data. The real source is the NBOR
+      application at https://webapp.sjcfl.us/webnews/NBRscreend.aspx.
+      See docs/monitor_specs/sjc_nbor_public_notices.md.
+    discovered_at: "2026-06-03T12:00:00Z"
+    discovered_by: "deep-research-extraction"
+
+  - source_id: "sjc_utility_department"
+    name: "Utility Department — Water and Boil Notices"
+    description: >
+      St. Johns County Utility Department page for irrigation rules,
+      bills, outages, reclaimed water, and boil water notices. Very high
+      homeowner pain-index source.
+    url: "https://www.sjcfl.us/departments/utility-department/"
+    base_domain: "sjcfl.us"
+    source_type: "government_portal"
+    relevance: "HIGH"
+    monitor_frequency: "daily"
+    automatable: "YES"
+    status: "verified"
+    topics:
+      - infrastructure
+      - environment
+      - emergency_alerts
+    communities: []
+    notes: >
+      First-class daily beat per Deep Research. Covers boil notices,
+      irrigation rules, reclaimed water, outages. Easy automation.
+      Promoted from CAND-SRC-0008.
+    discovered_at: "2026-06-03T12:00:00Z"
+    discovered_by: "deep-research-extraction"
+
+  - source_id: "sjc_budget_transparency"
+    name: "Budget, OMB, and Transparency"
+    description: >
+      St. Johns County budget information, Office of Management and Budget,
+      performance reporting, capital priorities, and transparency portal.
+      Key source for millage, TRIM season, and FY2027 budget context.
+    url: "https://www.sjcfl.us/2026budget/"
+    base_domain: "sjcfl.us"
+    source_type: "government_portal"
+    relevance: "HIGH"
+    monitor_frequency: "weekly"
+    automatable: "YES"
+    status: "verified"
+    topics:
+      - taxes
+      - county_government
+      - community_trust
+    communities: []
+    notes: >
+      Seasonal cadence: weekly normally; daily July-September during TRIM
+      and budget adoption. Key for Aug-Sep 2025 backfill planning.
+      Promoted from CAND-SRC-0010.
+    discovered_at: "2026-06-03T12:00:00Z"
+    discovered_by: "deep-research-extraction"
+
+  - source_id: "sjc_emergency_management"
+    name: "Emergency Management and Alerts"
+    description: >
+      St. Johns County Emergency Management division page with EOC
+      updates, hurricane preparedness, emergency notices, and disaster
+      response information.
+    url: "https://www.sjcfl.us/departments/emergency-mgmt/"
+    base_domain: "sjcfl.us"
+    source_type: "government_portal"
+    relevance: "HIGH"
+    monitor_frequency: "daily"
+    automatable: "YES"
+    status: "verified"
+    topics:
+      - public_safety
+      - emergency_alerts
+      - environment
+    communities: []
+    notes: >
+      Do not auto-publish; route urgent items to human review. Daily in
+      hurricane season; event-driven otherwise. Pair with county alerts.
+      Promoted from CAND-SRC-0006.
+    discovered_at: "2026-06-03T12:00:00Z"
+    discovered_by: "deep-research-extraction"
+
+  - source_id: "sjc_clerk_online_research"
+    name: "Clerk Online Research Portal"
+    description: >
+      St. Johns County Clerk of Court and Comptroller online research
+      portal for deeds, liens, board records, public records, tax deeds,
+      and official records search.
+    url: "https://stjohnsclerk.com/online-research/"
+    base_domain: "stjohnsclerk.com"
+    source_type: "government_portal"
+    relevance: "HIGH"
+    monitor_frequency: "weekly"
+    automatable: "YES"
+    status: "verified"
+    topics:
+      - county_government
+      - public_notices
+      - taxes
+      - housing
+    communities: []
+    notes: >
+      Replaces stale canonical placeholder (sjcclerk.gov — no HTTP
+      response). Validated URL from Deep Research. Portal-based search
+      may need form assessment. Promoted from CAND-SRC-0014.
+    discovered_at: "2026-06-03T12:00:00Z"
+    discovered_by: "deep-research-extraction"
+
+  - source_id: "sjc_permit_status"
+    name: "Permit Status and Public Permit Search"
+    description: >
+      St. Johns County Building Department permit status page and public
+      permit search. Inspections, certificate of occupancy, plan review,
+      issued permits, and permit reports.
+    url: "https://www.sjcfl.us/permit-status/"
+    base_domain: "sjcfl.us"
+    source_type: "government_portal"
+    relevance: "HIGH"
+    monitor_frequency: "daily"
+    automatable: "MODERATE"
+    status: "verified"
+    topics:
+      - development
+      - construction
+      - economic_development
+    communities: []
+    notes: >
+      Very high value for inspections, CO status, plan review. May need
+      browser or API assessment for the public search form. Promoted from
+      CAND-SRC-0004.
+    discovered_at: "2026-06-03T12:00:00Z"
+    discovered_by: "deep-research-extraction"
+
+  - source_id: "sjc_transportation_infrastructure"
+    name: "County Transportation and Infrastructure"
+    description: >
+      St. Johns County Transportation and Development Division page for
+      project pipeline, concurrency, infrastructure delivery, and
+      transportation planning context.
+    url: "https://www.sjcfl.us/departments/transportation-development-division/"
+    base_domain: "sjcfl.us"
+    source_type: "government_portal"
+    relevance: "HIGH"
+    monitor_frequency: "weekly"
+    automatable: "MODERATE"
+    status: "verified"
+    topics:
+      - transportation
+      - infrastructure
+      - development
+    communities: []
+    notes: >
+      Companion to road-closure daily monitor. Covers project pipeline
+      and delivery context. Promoted from CAND-SRC-0021.
+    discovered_at: "2026-06-03T12:00:00Z"
+    discovered_by: "deep-research-extraction"
+
+  - source_id: "sjrwmd_watering_restrictions"
+    name: "SJRWMD Permitting and Watering Restrictions"
+    description: >
+      St. Johns River Water Management District permitting page, permit
+      search, watering restrictions, and drought orders. Includes Phase
+      III extreme water shortage signal.
+    url: "https://www.sjrwmd.com/permitting/"
+    base_domain: "sjrwmd.com"
+    source_type: "government_portal"
+    relevance: "HIGH"
+    monitor_frequency: "daily"
+    automatable: "MODERATE"
+    status: "verified"
+    topics:
+      - environment
+      - infrastructure
+      - development
+    communities: []
+    notes: >
+      Pair with county utility stack. High May 2026 backfill relevance
+      for drought/water-restriction story. Promoted from CAND-SRC-0022.
+    discovered_at: "2026-06-03T12:00:00Z"
+    discovered_by: "deep-research-extraction"
+
+  # ---------------------------------------------------------------------------
+  # Priority 2b — Very High Relevance, School/Transportation/Weather (Tier 2 — promoted 2026-06-03)
+  # ---------------------------------------------------------------------------
+
+  - source_id: "sjcsd_boarddocs"
+    name: "School Board BoardDocs"
+    description: >
+      St. Johns County School Board agenda and document management system
+      via BoardDocs. Agenda packets, policies, attachments, workshops,
+      votes, and board meeting materials. One of the most important
+      pre-headline school sources.
+    url: "https://www.boarddocs.com/fl/stjohns/Board.nsf/Public"
+    base_domain: "boarddocs.com"
+    source_type: "government_portal"
+    relevance: "HIGH"
+    monitor_frequency: "weekly"
+    automatable: "MODERATE"
+    status: "verified"
+    topics:
+      - education
+      - public_notices
+      - county_government
+    communities: []
+    notes: >
+      Could be a child source under sjc_school_district stack. BoardDocs
+      attachments need packet/attachment handling rule. Promoted from
+      CAND-SRC-0017.
+    discovered_at: "2026-06-03T12:00:00Z"
+    discovered_by: "deep-research-extraction"
+
+  - source_id: "sjcsd_zoning_planning"
+    name: "School Attendance Zoning and Planning"
+    description: >
+      St. Johns County School District attendance zoning pages, new school
+      planning, and government relations. Attendance zone changes, K-8 QQ
+      in SilverLeaf, K-8 RR in Nocatee, and district planning.
+    url: "https://www.stjohns.k12.fl.us/zoning/"
+    base_domain: "stjohns.k12.fl.us"
+    source_type: "government_portal"
+    relevance: "HIGH"
+    monitor_frequency: "weekly"
+    automatable: "MODERATE"
+    status: "verified"
+    topics:
+      - education
+      - development
+      - public_notices
+    communities: []
+    notes: >
+      High-value school subsource. Pair with New Schools and
+      Planning/Government Relations pages. Promoted from CAND-SRC-0018.
+    discovered_at: "2026-06-03T12:00:00Z"
+    discovered_by: "deep-research-extraction"
+
+  - source_id: "fdot_district_two_nflroads"
+    name: "FDOT District Two and NFLRoads"
+    description: >
+      Florida Department of Transportation District Two page and NFLRoads
+      companion for state road projects in St. Johns County: SR 16, CR 210
+      at CR 2209, First Coast Expressway, US 1.
+    url: "https://www.fdot.gov/info/moredot/districts/dist2.shtm"
+    base_domain: "fdot.gov"
+    source_type: "government_portal"
+    relevance: "HIGH"
+    monitor_frequency: "daily"
+    automatable: "YES"
+    status: "verified"
+    topics:
+      - transportation
+      - infrastructure
+      - public_notices
+    communities: []
+    notes: >
+      Treat as transportation stack with nflroads.com companion.
+      Promoted from CAND-SRC-0019.
+    discovered_at: "2026-06-03T12:00:00Z"
+    discovered_by: "deep-research-extraction"
+
+  - source_id: "nws_jacksonville"
+    name: "NWS Jacksonville"
+    description: >
+      National Weather Service Jacksonville office. Official source for
+      hurricane tracking, severe weather warnings, fire weather, flood
+      risk, and coastal hazard forecasts for St. Johns County.
+    url: "https://www.weather.gov/jax/"
+    base_domain: "weather.gov"
+    source_type: "government_portal"
+    relevance: "HIGH"
+    monitor_frequency: "daily"
+    automatable: "YES"
+    status: "verified"
+    topics:
+      - environment
+      - emergency_alerts
+      - public_safety
+    communities: []
+    notes: >
+      Use as official hazards source, not general weather filler.
+      Promoted from CAND-SRC-0023.
+    discovered_at: "2026-06-03T12:00:00Z"
+    discovered_by: "deep-research-extraction"
+
+  - source_id: "sjc_supervisor_of_elections"
+    name: "Supervisor of Elections"
+    description: >
+      St. Johns County Supervisor of Elections. Election dates, polling
+      places, district maps, candidate reports, results, and precinct
+      information. Replaces stale placeholder entry.
+    url: "https://www.votesjc.gov/"
+    base_domain: "votesjc.gov"
+    source_type: "government_portal"
+    relevance: "HIGH"
+    monitor_frequency: "weekly"
+    automatable: "YES"
+    status: "verified"
+    topics:
+      - elections
+      - public_notices
+      - county_government
+    communities: []
+    notes: >
+      Seasonal cadence: weekly normally; daily in election season. Replaces
+      stale placeholder (previous entry had URL as TBD). Promoted from
+      CAND-SRC-0015.
+    discovered_at: "2026-06-03T12:00:00Z"
+    discovered_by: "deep-research-extraction"
+
+  # ---------------------------------------------------------------------------
+  # Future sources (placeholder — pending discovery/verification)
+  # ---------------------------------------------------------------------------
+  #
+  # - source_id: "sjc_clerk_of_court"
+  #   name: "SJC Clerk of Court"
+  #   url: "https://www.sjcclerk.gov/"
+  #   status: "observed"  (no HTTP response during discovery test)
+  #
+  # - source_id: "silverleaf_community"
+  #   name: "SilverLeaf Community"
+  #   url: "TBD"
+  #   status: "observed"
+  #
+  # - source_id: "rivertown_community"
+  #   name: "RiverTown Community"
+  #   url: "TBD"
+  #   status: "observed"
+  #
+  # - source_id: "shearwater_community"
+  #   name: "Shearwater Community"
+  #   url: "TBD"
+  #   status: "observed"

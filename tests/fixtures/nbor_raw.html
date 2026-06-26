@@ -1,0 +1,947 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+
+<!-- meta http-equiv="X-UA-Compatible" content="IE=8, IE=9, chrome=1"/ -->
+<meta http-equiv="X-UA-Compatible" content="IE=8, IE=9, IE=11" /><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /><meta name="description" content="St. Johns County, Florida, NBR publications" /><meta name="author" /><link rel="Shortcut Icon" href="&lt;%=Me.ThisApp.App_root_abs_url %>favicon.ico" type="image/x-icon" /><title>
+	Neighborhood Bill of Rights Notices
+</title><link rel="stylesheet" href="css/all.css" /> <!--local copy - prepared monochromatic icons and symbols will NOT work -->
+   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" /> live - prepared monochromatic icons and symbols will work OK -->
+
+    <!-- Bootstrap core CSS -->    
+    <link href="css/bootstrap.min.css" rel="stylesheet" /> <!-- 4.1.0 local copy  glyphicons don`t work -->
+    <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" />  4.1.0 live where  glyphicons work -->    
+    <!-- <link href="css/options/bootstrap.min.3.3.7.css" rel="stylesheet" />  local copy of bootstrap.min.3.3.7  -->
+    
+
+    <!-- Custom styles for this template -->
+    <link href="css/app.css" rel="stylesheet" /><link rel="stylesheet" href="js/jQuery/ui/1.12.1/themes/base/jquery-ui.css" /><link rel="stylesheet" href="js/jQuery/ui/1.12.1/themes/base/jquery-ui.min.css" /><link rel="stylesheet" href="js/jQuery/ui/1.12.1/themes/base/theme.css" />
+   
+    <script src="js/jQuery/ui/1.12.1/jquery-1.12.1.js"></script>
+    <script src="js/jQuery/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/jQuery/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- <script src="js/jquery-3.3.1.slim.min.js"></script> conflict with datepicker -->
+
+    <script src="js/bootstrap.4.1.3.min.js"></script><!-- in 4.1.0 collapse feature doesnt work in MSIE11 -->
+    <script src="js/popper.min.js"></script> 
+    
+    
+    
+    
+    <script type="text/javascript" src="js/ARYjavascripts.js"></script>
+
+
+
+ 
+  <script>
+      $( function() {         
+          $("#txt_dtEnd").datepicker();
+          $("#txt_dtStart").datepicker();
+      } );
+  </script>
+
+
+</head>
+<body>
+    <form method="post" action="./NBRscreend.aspx" id="frmNBRscreenB">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['frmNBRscreenB'];
+if (!theForm) {
+    theForm = document.frmNBRscreenB;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="9488E6D0" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="5ZFGqsuEm3SAsOnrhzo9C4Nfnn+VMZCThuJl4mD9ye5SlgJpvFzLHKYqMHzu/wjTfNmEBixkYfO5JgzfUkZRgxl8+GXrBNFeAaLAA8rhIhaV5kfYf6B1euR756qsJcXRQqSiFR+dpD9YCwO95S173CqrLx4vsxzCJVvDXvnLh/+9XUOpopw/xWmnOYtGtmHcOVdBewD8KFZpCOZU2F+1+MHL6exzT87YEneea09PrrDVNcWA1O/Qos/Lj/0YmIk+20DpyxyZ37qqdzHrc3bZnWCNz/8o5WTLVpFWQzpqDZEBytDzqjbkaCkri1px22uZdGLikXMYA5V7G4iCapFai1AXF0EkirvrfeJPKAbh3c+MaG2+G5bCLKuqoghwE9BPReTeAUA6SXvjAnPEngMPjsKFGbo8rih6t5hMGSYX42yxJKVY/TuZKMk/komfGMitMeu9UfcKc0z5PGJjqq7UPA4kVzfKt6Ori/qJ7LHcHPiQ3zuGResmenOJbHzY/CC6rf0Kui/IVpestaCxR+fnEw==" />
+</div>
+	<nav class="navbar navbar-expand-md navbar-dark bg-nav fixed-top">
+		<div class="container"> <a class="navbar-brand" href="http://www.sjcfl.us">www.sjcfl.us</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> 
+			</button>
+			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+				<ul class="navbar-nav mr-auto">
+                    <li class="nav-item"> <a class="nav-link text-white" href="https://sjcfl.maps.arcgis.com/apps/webappviewer/index.html?id=d80c732d64d14913b39df833f1d834a3">Development Tracker</a> </li>
+					<li class="nav-item"> <a class="nav-link text-white" href="https://secure.sjcfl.us/mysjcfl/">Find My District</a> </li>
+					<li class="nav-item"> <a class="nav-link text-white" href="https://www.sjcfl.us/departments/growth-mgmt/">Growth Management</a> </li>
+                    <li class="nav-item"> <a class="nav-link text-white" href="https://www.sjcfl.us/departments/public-works/">Public Works</a> </li>
+                    <li class="nav-item"> <a class="nav-link text-white" href="https://www.sjcfl.us/calendar/">BOCC Calendars</a> </li>
+                   
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+<main role="main" class="container box pb-3">
+    <div class="card-body clearpad p-5">
+		<img src="images/nbrbanner.png" class="img-fluid" alt="Neighborhood Bill of Rights Notices - welcome to news reader page" />
+    </div><!--end card body-->
+	<!--end banner-->
+	
+	<div class="card px-4 no-border" >
+		<div class="card-body"  > 		
+			<div class="card g-brd-0 g-mb-5" >
+				<div id="div_Heading_div_filtersubform" class="card-header g-pa-0"  role="tab">
+					<div class="col-md-12">
+						<h5 class="g-bg-white g-px-0 g-py-10 mb-0">
+                            <a href="#div_filtersubform" id="a_FilterviewToggle" class="collapsed d-block u-link-v5 g-color-main g-color-primary--hover" aria-expanded="false" data-target="#div_filtersubform" data-toggle="collapse" aria-controls="div_filtersubform">Filter Settings</a>
+						</h5>
+					</div>
+				</div>
+
+                <div id="div_filtersubform" class="card-block g-px-0 " role="tabpanel" aria-labelledby="div_filtersubform">
+				   <div class="form-row p-2" >
+					<div class="col-sm-4">
+						<label id="lbl_txt_dtStart" for="txt_dtStart">Start Date</label>
+						<!--date picker goes here-->                       
+                        <input name="txt_dtStart" value="6/12/2026" id="txt_dtStart" class="form-control  input-back" type="text" placeholder="Date from" aria-label="Start date" />                                                    
+					</div>
+					<div  class="col-sm-4">
+                        <label  for ="txt_dtEnd">End Date</label>
+						<!--date picker goes here-->
+						<input name="txt_dtEnd" type="text" value="7/31/2026" id="txt_dtEnd" class="form-control input-back" placeholder="Date to" aria-label="End date" />
+					</div><!--end col -->
+					<div class="col-sm-4">	                        
+                        <label  for ="txt_SearchKey">Keyword</label>
+						<input name="txt_SearchKey" id="txt_SearchKey" class="form-control input-back" type="text" placeholder="Enter search keyword" aria-label="Search keyword" />
+					</div><!--end col -->                      
+				   </div>
+                </div>
+                
+				<div class="form-row mt-3 p-4" >
+				  <div class="col-sm-5">
+                        <script>
+                            function setalldistricts() {
+
+                                chall = document.getElementById('chckb_selectAll');
+                                ch1 = document.getElementById('inlineCheckbox1');
+                                ch2 = document.getElementById('inlineCheckbox2');
+                                ch3 = document.getElementById('inlineCheckbox3');
+                                ch4 = document.getElementById('inlineCheckbox4');
+                                ch5 = document.getElementById('inlineCheckbox5');
+                                
+                                ch1.checked = chall.checked; ch2.checked = chall.checked; ch3.checked = chall.checked;
+                                ch4.checked = chall.checked; ch5.checked = chall.checked;
+                                
+                            }
+                        </script>
+					<label for="districts" class="mr-0 mb-0"><a href="http://www.sjcfl.us/MySJCFL/index.aspx" title="District finder. Opens in new window" target="_blank"><strong>Districts</strong></a>&nbsp;</label><br class="break"> 
+ 						<div id="div_District1" class="form-check form-check-inline mr-0">
+  							<span class="form-check-input"><input id="inlineCheckbox1" type="checkbox" name="inlineCheckbox1" checked="checked" /></span>
+  							<label id="labelfor_inlineCheckbox1" class="form-check-label" for="inlineCheckbox1">1</label>
+						</div>
+						<div id="div_District2" class="form-check form-check-inline mr-0">
+  							<span class="form-check-input"><input id="inlineCheckbox2" type="checkbox" name="inlineCheckbox2" checked="checked" /></span>
+  							<label id="labelfor_inlineCheckbox2" class="form-check-label" for="inlineCheckbox2">2</label>
+						</div>
+						<div id="div_District3" class="form-check form-check-inline mr-0">
+  							<span class="form-check-input"><input id="inlineCheckbox3" type="checkbox" name="inlineCheckbox3" checked="checked" /></span>
+  							<label id="labelfor_inlineCheckbox3" class="form-check-label" for="inlineCheckbox3">3</label>
+						</div>
+						<div id="div_District4" class="form-check form-check-inline mr-0">
+  							<span class="form-check-input"><input id="inlineCheckbox4" type="checkbox" name="inlineCheckbox4" checked="checked" /></span>
+  							<label id="labelfor_inlineCheckbox4" class="form-check-label" for="inlineCheckbox4">4</label>
+						</div>
+						<div id="div_District5" class="form-check form-check-inline mr-0">
+  							<span class="form-check-input"><input id="inlineCheckbox5" type="checkbox" name="inlineCheckbox5" checked="checked" /></span>
+  							<label id="labelfor_inlineCheckbox5" class="form-check-label" for="inlineCheckbox5">5</label>
+						</div>
+						<div id="div_DistrictAll" class="form-check form-check-inline">  						
+                             <span class="form-check-input" title="Click to select all. Uncheck to clear all. "><input id="chckb_selectAll" type="checkbox" name="chckb_selectAll" checked="checked" onclick="setalldistricts();" /></span>                                                             
+                            <label id="labelfor_chckb_selectAll" class="form-check-label" for="chckb_selectAll">All</label>
+						</div>						
+					</div>
+					<div class="col-sm-3 ">	 
+							<label for="inlineCheckboxMtgYes" >Show Meetings</label> 								
+  							<input id="inlineCheckboxMtgYes" type="checkbox" name="inlineCheckboxMtgYes" checked="checked" />
+					</div>
+					<div class="col-sm-3 ">
+							<label for="inlineCheckboxROWYes" title="ROW stands for Right Of Way">Show ROWs</label>					
+							<input id="inlineCheckboxROWYes" type="checkbox" name="inlineCheckboxROWYes" checked="checked" />				
+					</div>
+                   <div class="col-sm-1">
+							<input type="submit" name="cmd_Search2" value="Search NBRs" onclick="this.value=&#39;working...&#39;;  setTimeout(function(){this.disabled=true;},3000);" id="cmd_Search2" class="btn btn-info-sjc text-white float-right" />
+					</div>
+				</div>
+
+				   
+				</div>
+			</div>            
+		</div>
+	
+	
+  
+
+	<div class="card px-4 mt-3 no-border ">
+		<div class="card-body">
+		<!--begin notice area-->
+        <h2>June 2026 - July 2026</h2>
+                                    
+			<div class="row">
+			<div class="col-md-6 d-none d-md-block d-xs-none">
+				<p>Project</p>
+			</div>
+			<div class="col-md-2 d-none d-md-block d-xs-none">
+				<p class="float-right">District(s)</p>
+			</div>
+			<div class="col-md-2 d-none d-md-block d-xs-none">
+				<p class="float-right">Category</p>
+			</div>
+			<div class="col-md-2 d-none d-md-block d-xs-none">
+				<p class="float-right">Notice Date</p>
+			</div>
+			</div><!--end Header row-->
+            			
+			<hr class="mt-0">
+			    <div class="row">
+				    <div class="col-sm-12 col-md-6">
+					    <p>
+                            <strong>Comcast </strong><br />
+					        Fiber cable <br />
+                            <ul><li title="217 kByte.  Click to open in new window. "><span title="Click to open or download"><a target=" _blank" href=" vu.aspx?id=03bf1f06-9bc5-4296-bb35-e03d588d435f"  >2026-0522.pdf</a></span></li></ul> 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                            3 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                                                        
+                            ROW
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                             6/22/2026 
+					    </p>
+				    </div>
+			    </div><!--end Item row-->
+             			
+			<hr class="mt-0">
+			    <div class="row">
+				    <div class="col-sm-12 col-md-6">
+					    <p>
+                            <strong>ZVAR 2026000011 Bargfrede Shed (PRIDE 2601876) </strong><br />
+					        Request for a Zoning Variance to Section 2.02.04.A.1 of the Land Development Code to allow for a detached accessory structure to be 3` in lieu of the 8` required side setback in Residential, Single Family (RS-2) zoning. Specifically located at 302 Deerfield Glen Drive.<br/><br/><a href="https://www.gis.sjcfl.us/Geocortex/WebViewer/?app=c469d307bd8f42db85cd191fd2a2f5f3&workflow=69f2d620-d0d7-48f3-9393-9bb5ecdba9cd&workflowParams={%22watsnum%22:%22ZVAR_2026000011%22}" title="Open New Window" target="_blank">View Map</a> <br />
+                            <ul><li title="201 kByte.  Click to open in new window. "><span title="NBRHearingNoticejguttZVAR2026000011.pdf"><a target=" _blank" href=" vu.aspx?id=54077184-0748-49d9-b2b5-518d6963b9cd"  >ZVAR 2026000011 Hearing Notice</a></span></li></ul> 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                            3 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                            Meeting<Br />                            
+                            
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                             6/18/2026 
+					    </p>
+				    </div>
+			    </div><!--end Item row-->
+             			
+			<hr class="mt-0">
+			    <div class="row">
+				    <div class="col-sm-12 col-md-6">
+					    <p>
+                            <strong>ZVAR 2026000019 Aspinwall Variance </strong><br />
+					        Request for a Zoning Variance to Section 6.01.03.C.3 & 2.02.04.B.16.E of the Land Development Code to allow for a second Front Yard setback of ten (10) feet in lieu of the required twenty-five (25) feet for a Through Lot located in Residential, Single-Family (RS-3) zoning to accommodate an Accessory Family Unit (AFU).<br/><br/><a href="https://www.gis.sjcfl.us/Geocortex/WebViewer/?app=c469d307bd8f42db85cd191fd2a2f5f3&workflow=69f2d620-d0d7-48f3-9393-9bb5ecdba9cd&workflowParams={%22watsnum%22:%22ZVAR_2026000019%22}" title="Open New Window" target="_blank">View Map</a> <br />
+                            <ul><li title="200 kByte.  Click to open in new window. "><span title="NBRHearingNoticejguttZVAR2026000019.pdf"><a target=" _blank" href=" vu.aspx?id=058708b8-6f4f-4510-9f0c-4ac60e4e2712"  >ZVAR 2026000019 Hearing Notice</a></span></li></ul> 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                            3 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                            Meeting<Br />                            
+                            
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                             6/18/2026 
+					    </p>
+				    </div>
+			    </div><!--end Item row-->
+             			
+			<hr class="mt-0">
+			    <div class="row">
+				    <div class="col-sm-12 col-md-6">
+					    <p>
+                            <strong>ZVAR 2025000027 Tatum Variance </strong><br />
+					        Request for a Zoning Variance to Table 6.01 of the Land Development Code to allow for a Front Yard setback of ten (10) feet in lieu of the required twenty-five (25) feet along Avenue C for the construction of a duplex in Residential, Single-Family (RS-3) zoning. This request is a companion application to SUPMIN 2025-11 Tatum Duplex.<br/><br/><a href="https://www.gis.sjcfl.us/Geocortex/WebViewer/?app=c469d307bd8f42db85cd191fd2a2f5f3&workflow=69f2d620-d0d7-48f3-9393-9bb5ecdba9cd&workflowParams={%22watsnum%22:%22ZVAR_2025000027%22}" title="Open New Window" target="_blank">View Map</a> <br />
+                            <ul><li title="201 kByte.  Click to open in new window. "><span title="NBRHearingNoticejguttZVAR2025000027.pdf"><a target=" _blank" href=" vu.aspx?id=3ad9c530-d1ac-437b-97ad-5b771a5c78a4"  >ZVAR 2025000027 Hearing Notice</a></span></li></ul> 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                            3 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                            Meeting<Br />                            
+                            
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                             6/18/2026 
+					    </p>
+				    </div>
+			    </div><!--end Item row-->
+             			
+			<hr class="mt-0">
+			    <div class="row">
+				    <div class="col-sm-12 col-md-6">
+					    <p>
+                            <strong>Comcast </strong><br />
+					        new power supply <br />
+                            <ul><li title="217 kByte.  Click to open in new window. "><span title="Click to open or download"><a target=" _blank" href=" vu.aspx?id=e7c26ef3-d23f-47e7-80a5-43040fab4b38"  >2026-0511.pdf</a></span></li></ul> 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                            1 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                                                        
+                            ROW
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                             6/16/2026 
+					    </p>
+				    </div>
+			    </div><!--end Item row-->
+             			
+			<hr class="mt-0">
+			    <div class="row">
+				    <div class="col-sm-12 col-md-6">
+					    <p>
+                            <strong>Comcast </strong><br />
+					        Fiber cable <br />
+                            <ul><li title="217 kByte.  Click to open in new window. "><span title="Click to open or download"><a target=" _blank" href=" vu.aspx?id=f3b68883-3bb2-408c-bc73-df63fb571cde"  >2026-0486.pdf</a></span></li><li title="217 kByte.  Click to open in new window. "><span title="Click to open or download"><a target=" _blank" href=" vu.aspx?id=52b0081e-d572-4443-b460-dc3ad0eb80a6"  >2026-0513.pdf</a></span></li></ul> 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                            1, 3 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                                                        
+                            ROW
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                             6/16/2026 
+					    </p>
+				    </div>
+			    </div><!--end Item row-->
+             			
+			<hr class="mt-0">
+			    <div class="row">
+				    <div class="col-sm-12 col-md-6">
+					    <p>
+                            <strong>City of St Augustine </strong><br />
+					        New service <br />
+                            <ul><li title="219 kByte.  Click to open in new window. "><span title="Click to open or download"><a target=" _blank" href=" vu.aspx?id=bcdffba3-9dba-4717-8077-1979515a932a"  >2026-0532.pdf</a></span></li></ul> 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                            3 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                                                        
+                            ROW
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                             6/16/2026 
+					    </p>
+				    </div>
+			    </div><!--end Item row-->
+             			
+			<hr class="mt-0">
+			    <div class="row">
+				    <div class="col-sm-12 col-md-6">
+					    <p>
+                            <strong>Beaches Energy </strong><br />
+					        service <br />
+                            <ul><li title="217 kByte.  Click to open in new window. "><span title="Click to open or download"><a target=" _blank" href=" vu.aspx?id=ffb46473-1713-47fe-9ea9-3ad0b88673ae"  >2026-0512.pdf</a></span></li></ul> 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                            4 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                                                        
+                            ROW
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                             6/16/2026 
+					    </p>
+				    </div>
+			    </div><!--end Item row-->
+             			
+			<hr class="mt-0">
+			    <div class="row">
+				    <div class="col-sm-12 col-md-6">
+					    <p>
+                            <strong>AT&T </strong><br />
+					        fiber cable <br />
+                            <ul><li title="219 kByte.  Click to open in new window. "><span title="Click to open or download"><a target=" _blank" href=" vu.aspx?id=ece16b51-e623-49d1-b301-2fd742680f06"  >2026-0497.pdf</a></span></li><li title="218 kByte.  Click to open in new window. "><span title="Click to open or download"><a target=" _blank" href=" vu.aspx?id=40f1ed5e-be14-43d4-9c16-e97adeaa1c7e"  >2026-0518.pdf</a></span></li><li title="218 kByte.  Click to open in new window. "><span title="Click to open or download"><a target=" _blank" href=" vu.aspx?id=15edc447-fada-4338-9ce3-33c3a0f365be"  >2026-0495.pdf</a></span></li></ul> 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                            2, 4, 5 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                                                        
+                            ROW
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                             6/16/2026 
+					    </p>
+				    </div>
+			    </div><!--end Item row-->
+             			
+			<hr class="mt-0">
+			    <div class="row">
+				    <div class="col-sm-12 col-md-6">
+					    <p>
+                            <strong>JEA </strong><br />
+					        new service <br />
+                            <ul><li title="217 kByte.  Click to open in new window. "><span title="Click to open or download"><a target=" _blank" href=" vu.aspx?id=8c85df07-2467-4c97-9e10-4ae2125bda69"  >2026-0519.pdf</a></span></li></ul> 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                            4 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                                                        
+                            ROW
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                             6/16/2026 
+					    </p>
+				    </div>
+			    </div><!--end Item row-->
+             			
+			<hr class="mt-0">
+			    <div class="row">
+				    <div class="col-sm-12 col-md-6">
+					    <p>
+                            <strong>Comcast </strong><br />
+					        Span replacement <br />
+                            <ul><li title="217 kByte.  Click to open in new window. "><span title="Click to open or download"><a target=" _blank" href=" vu.aspx?id=5288fcde-ca22-434b-9b4e-ad4a4861fdd5"  >2026-0484.pdf</a></span></li></ul> 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                            4 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                                                        
+                            ROW
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                             6/16/2026 
+					    </p>
+				    </div>
+			    </div><!--end Item row-->
+             			
+			<hr class="mt-0">
+			    <div class="row">
+				    <div class="col-sm-12 col-md-6">
+					    <p>
+                            <strong>FPL </strong><br />
+					        Pole replacement <br />
+                            <ul><li title="217 kByte.  Click to open in new window. "><span title="Click to open or download"><a target=" _blank" href=" vu.aspx?id=8014fca3-ccb3-4f46-becc-4e6b1c6bb61c"  >2026-0481.pdf</a></span></li></ul> 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                            2 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                                                        
+                            ROW
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                             6/16/2026 
+					    </p>
+				    </div>
+			    </div><!--end Item row-->
+             			
+			<hr class="mt-0">
+			    <div class="row">
+				    <div class="col-sm-12 col-md-6">
+					    <p>
+                            <strong>Farrell Marine </strong><br />
+					        Lane closure for concrete truck <br />
+                            <ul><li title="217 kByte.  Click to open in new window. "><span title="Click to open or download"><a target=" _blank" href=" vu.aspx?id=6d3416f3-111f-46c5-98d4-e5da00088c82"  >2026-0529.pdf</a></span></li></ul> 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                            4 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                                                        
+                            ROW
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                             6/16/2026 
+					    </p>
+				    </div>
+			    </div><!--end Item row-->
+             			
+			<hr class="mt-0">
+			    <div class="row">
+				    <div class="col-sm-12 col-md-6">
+					    <p>
+                            <strong>MAJMOD 2025000011 Golfway Centre PUD </strong><br />
+					        Request for a Major Modification to the Golfway Centre PUD (Ordinance 1997-67, as amended) to revise the MDP Map and MDP Text to allow the remaining development to occur on the property as either Commercial Retail and Commercial Office uses; revise the phasing schedule to a single 10-year phase; add Church and Large Places of Assembly as allowable uses; allow details of future buildings and associated development to be shown on Incremental MDP Maps; and eliminate the requirement to preserve the isolated wetland on site.<br/><br/><a href="https://www.gis.sjcfl.us/Geocortex/WebViewer/?app=c469d307bd8f42db85cd191fd2a2f5f3&workflow=69f2d620-d0d7-48f3-9393-9bb5ecdba9cd&workflowParams={%22watsnum%22:%22MAJMOD_2025000011%22}" title="Open New Window" target="_blank">View Map</a> <br />
+                            <ul><li title="203 kByte.  Click to open in new window. "><span title="NBRHearingNoticejguttMAJMOD2025000011.pdf"><a target=" _blank" href=" vu.aspx?id=c7db328d-7ee4-45ff-876d-a82375752a82"  >MAJMOD 2025000011 Hearing Notice</a></span></li></ul> 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                            5 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                            Meeting<Br />                            
+                            
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                             6/16/2026 
+					    </p>
+				    </div>
+			    </div><!--end Item row-->
+             			
+			<hr class="mt-0">
+			    <div class="row">
+				    <div class="col-sm-12 col-md-6">
+					    <p>
+                            <strong>Scott Waite </strong><br />
+					        Temp power <br />
+                            <ul><li title="218 kByte.  Click to open in new window. "><span title="Click to open or download"><a target=" _blank" href=" vu.aspx?id=2bae5083-2b5a-4124-bd50-8c39bc418d2c"  >2026-0485.pdf</a></span></li></ul> 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                            4 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                                                        
+                            ROW
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                             6/16/2026 
+					    </p>
+				    </div>
+			    </div><!--end Item row-->
+             			
+			<hr class="mt-0">
+			    <div class="row">
+				    <div class="col-sm-12 col-md-6">
+					    <p>
+                            <strong>REZ 2026000002 177 Surfside Avenue (146820-0000) </strong><br />
+					        Request to rezone approximately 0.75 acres of land from Commercial Highway and Tourist (CHT) to Residential, Single-Family (RS-3).<br/><br/><a href="https://www.gis.sjcfl.us/Geocortex/WebViewer/?app=c469d307bd8f42db85cd191fd2a2f5f3&workflow=69f2d620-d0d7-48f3-9393-9bb5ecdba9cd&workflowParams={%22watsnum%22:%22REZ_2026000002%22}" title="Open New Window" target="_blank">View Map</a> <br />
+                            <ul><li title="201 kByte.  Click to open in new window. "><span title="NBRHearingNoticejguttREZ2026000002.pdf"><a target=" _blank" href=" vu.aspx?id=2cd5da13-b7f3-403f-bb5c-1657bf02df9d"  >REZ 2026000002 Hearing Notice</a></span></li></ul> 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                            5 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                            Meeting<Br />                            
+                            
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                             6/16/2026 
+					    </p>
+				    </div>
+			    </div><!--end Item row-->
+             			
+			<hr class="mt-0">
+			    <div class="row">
+				    <div class="col-sm-12 col-md-6">
+					    <p>
+                            <strong>REZ 2026000001 3025 Old Moultrie Road </strong><br />
+					        Request to rezone approximately one (1) acre of land from Open Rural (OR) to Residential, Single-Family (RS-3).<br/><br/><a href="https://www.gis.sjcfl.us/Geocortex/WebViewer/?app=c469d307bd8f42db85cd191fd2a2f5f3&workflow=69f2d620-d0d7-48f3-9393-9bb5ecdba9cd&workflowParams={%22watsnum%22:%22REZ_2026000001%22}" title="Open New Window" target="_blank">View Map</a> <br />
+                            <ul><li title="200 kByte.  Click to open in new window. "><span title="NBRHearingNoticejguttREZ2026000001.pdf"><a target=" _blank" href=" vu.aspx?id=8e567305-23d7-43ce-9ac5-43ce21f1069d"  >REZ 2026000001 Hearing Notice</a></span></li></ul> 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                            3 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                            Meeting<Br />                            
+                            
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                             6/16/2026 
+					    </p>
+				    </div>
+			    </div><!--end Item row-->
+             			
+			<hr class="mt-0">
+			    <div class="row">
+				    <div class="col-sm-12 col-md-6">
+					    <p>
+                            <strong>Terracon </strong><br />
+					        Geo Tech exploration <br />
+                            <ul><li title="217 kByte.  Click to open in new window. "><span title="Click to open or download"><a target=" _blank" href=" vu.aspx?id=7ce0ca37-b290-4b4c-8a91-ac02240e846c"  >2026-0491.pdf</a></span></li></ul> 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                            2, 3 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                                                        
+                            ROW
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                             6/12/2026 
+					    </p>
+				    </div>
+			    </div><!--end Item row-->
+             			
+			<hr class="mt-0">
+			    <div class="row">
+				    <div class="col-sm-12 col-md-6">
+					    <p>
+                            <strong>P&G Construction </strong><br />
+					        Bulkhead <br />
+                            <ul><li title="218 kByte.  Click to open in new window. "><span title="Click to open or download"><a target=" _blank" href=" vu.aspx?id=362ca67d-dd1c-4b21-b093-a22d2ff35a85"  >2026-0516.pdf</a></span></li></ul> 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                            3 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                                                        
+                            ROW
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                             6/12/2026 
+					    </p>
+				    </div>
+			    </div><!--end Item row-->
+             			
+			<hr class="mt-0">
+			    <div class="row">
+				    <div class="col-sm-12 col-md-6">
+					    <p>
+                            <strong>JEA </strong><br />
+					        Water actuator valve <br />
+                            <ul><li title="218 kByte.  Click to open in new window. "><span title="Click to open or download"><a target=" _blank" href=" vu.aspx?id=cd0734ea-d815-4177-a658-d7c686030418"  >2026-0493.pdf</a></span></li></ul> 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                            4 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                                                        
+                            ROW
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                             6/12/2026 
+					    </p>
+				    </div>
+			    </div><!--end Item row-->
+             			
+			<hr class="mt-0">
+			    <div class="row">
+				    <div class="col-sm-12 col-md-6">
+					    <p>
+                            <strong>Comcast </strong><br />
+					        Under Ground cable <br />
+                            <ul><li title="217 kByte.  Click to open in new window. "><span title="Click to open or download"><a target=" _blank" href=" vu.aspx?id=08666c39-e4ff-4233-ba3b-c864faf175a6"  >2026-0483.pdf</a></span></li></ul> 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                            5 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                                                        
+                            ROW
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                             6/12/2026 
+					    </p>
+				    </div>
+			    </div><!--end Item row-->
+             			
+			<hr class="mt-0">
+			    <div class="row">
+				    <div class="col-sm-12 col-md-6">
+					    <p>
+                            <strong>Comcast </strong><br />
+					        replacing damaged cable <br />
+                            <ul><li title="218 kByte.  Click to open in new window. "><span title="Click to open or download"><a target=" _blank" href=" vu.aspx?id=66f18c78-ce90-4aba-ab25-4ea9c97e5600"  >2026-0524.pdf</a></span></li><li title="218 kByte.  Click to open in new window. "><span title="Click to open or download"><a target=" _blank" href=" vu.aspx?id=473a5051-6493-4e0d-9e78-024b42cb91dc"  >2026-0525.pdf</a></span></li><li title="217 kByte.  Click to open in new window. "><span title="Click to open or download"><a target=" _blank" href=" vu.aspx?id=eb0d698d-a5c4-477e-9607-b3e618bfd7ca"  >2026-0515.pdf</a></span></li></ul> 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                            3, 4 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                                                        
+                            ROW
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                             6/12/2026 
+					    </p>
+				    </div>
+			    </div><!--end Item row-->
+             			
+			<hr class="mt-0">
+			    <div class="row">
+				    <div class="col-sm-12 col-md-6">
+					    <p>
+                            <strong>Comcast </strong><br />
+					        Replace UG span <br />
+                            <ul><li title="217 kByte.  Click to open in new window. "><span title="Click to open or download"><a target=" _blank" href=" vu.aspx?id=c9166e2d-d2a5-4d4a-b82d-758e67e76cda"  >2026-0509.pdf</a></span></li><li title="218 kByte.  Click to open in new window. "><span title="Click to open or download"><a target=" _blank" href=" vu.aspx?id=cbad362b-3e5a-42b6-afbd-6b12d5869823"  >2026-0510.pdf</a></span></li></ul> 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                            1, 3 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                                                        
+                            ROW
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                             6/12/2026 
+					    </p>
+				    </div>
+			    </div><!--end Item row-->
+             			
+			<hr class="mt-0">
+			    <div class="row">
+				    <div class="col-sm-12 col-md-6">
+					    <p>
+                            <strong>AT&T </strong><br />
+					        Fiber cable <br />
+                            <ul><li title="219 kByte.  Click to open in new window. "><span title="Click to open or download"><a target=" _blank" href=" vu.aspx?id=d8489dae-677f-4f19-a95d-520c05219b0d"  >2026-0494.pdf</a></span></li><li title="218 kByte.  Click to open in new window. "><span title="Click to open or download"><a target=" _blank" href=" vu.aspx?id=27bdae7c-422a-4f35-a055-951bb4c6b2d6"  >2026-0496.pdf</a></span></li><li title="219 kByte.  Click to open in new window. "><span title="Click to open or download"><a target=" _blank" href=" vu.aspx?id=ece16b51-e623-49d1-b301-2fd742680f06"  >2026-0497.pdf</a></span></li><li title="218 kByte.  Click to open in new window. "><span title="Click to open or download"><a target=" _blank" href=" vu.aspx?id=86fe9b7b-bdc8-4342-a8e7-3d8a431af76d"  >2026-0499.pdf</a></span></li><li title="219 kByte.  Click to open in new window. "><span title="Click to open or download"><a target=" _blank" href=" vu.aspx?id=354a0ede-4fb5-4d04-b209-fd2144115566"  >2026-0505.pdf</a></span></li><li title="218 kByte.  Click to open in new window. "><span title="Click to open or download"><a target=" _blank" href=" vu.aspx?id=f83b20e2-00d4-4cf1-841f-1906aff51f1e"  >2026-0506.pdf</a></span></li><li title="218 kByte.  Click to open in new window. "><span title="Click to open or download"><a target=" _blank" href=" vu.aspx?id=8e91fe3e-4c3b-476c-bdc7-5810d6b06d13"  >2026-0507.pdf</a></span></li></ul> 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                            2, 3, 4, 5 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                                                        
+                            ROW
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                             6/12/2026 
+					    </p>
+				    </div>
+			    </div><!--end Item row-->
+             			
+			<hr class="mt-0">
+			    <div class="row">
+				    <div class="col-sm-12 col-md-6">
+					    <p>
+                            <strong>AT&T </strong><br />
+					        Cable/Fiber <br />
+                            <ul><li title="219 kByte.  Click to open in new window. "><span title="Click to open or download"><a target=" _blank" href=" vu.aspx?id=b38e7963-0837-40b0-a382-b79b4aeba2a3"  >2026-0517.pdf</a></span></li></ul> 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                            3 
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                                                        
+                            ROW
+					    </p>
+				    </div>
+				    <div class="col-sm-12 col-md-2">					   
+					    <p class="float-md-right">
+                             6/12/2026 
+					    </p>
+				    </div>
+			    </div><!--end Item row-->
+             
+		<hr class="mt-0" />
+		<!--end notice area-->
+
+	        <!--begin pagination-->
+		        <div class="row">
+			<div class="col-12 col-md-8 col-lg-9">
+				<div class="form-inline float-right mobform mb-2" role="form" aria-label="Show records">
+                    <input type="button" name="hb_inputState" value="Refresh" onclick="javascript:__doPostBack(&#39;hb_inputState&#39;,&#39;&#39;)" id="hb_inputState" class="btn btn-default invisible" />
+					<label for="records" class="mr-sm-2 mr-xs-2 mobrec">Records per page</label>
+						<select name="inputState" id="inputState" class="form-control text" aria-label="Select number of records to show per page" onchange="el=document.getElementById(&#39;hb_inputState&#39;); el.click();">
+	<option selected="selected" value="25">25</option>
+	<option value="50">50</option>
+	<option value="75">75</option>
+</select>
+					</div>
+			</div><!--end col-->
+			<div class="col-12 col-md-4 col-lg-3">
+				<div class="form-inline float-right" role="form">					
+					<nav aria-label="Page navigation">
+						<ul  id= "ul_paginator" class="pagination ">
+							<li id="li_page_minus1" class="invisible"> <a id="a_page_minus1" class="page-link" aria-label="Previous" href="javascript:__doPostBack(&#39;a_page_minus1&#39;,&#39;&#39;)"> <span aria-hidden="true">&laquo;</span> <span class="sr-only">Previous</span> </a> </li>
+							<li id="li_page1" class="page-item active" disabled="disabled"><a id="a_page1" class="page-link" aria-label="Page 1 Results" href="javascript:__doPostBack(&#39;a_page1&#39;,&#39;&#39;)">1</a></li>
+							<li id="li_page2" class="page-item"><a id="a_page2" class="page-link" aria-label="Page 2 Results" href="javascript:__doPostBack(&#39;a_page2&#39;,&#39;&#39;)">2</a></li>
+							<li id="li_page3" class="page-item"><a id="a_page3" class="page-link" aria-label="Page 3 Results" href="javascript:__doPostBack(&#39;a_page3&#39;,&#39;&#39;)">3</a></li>
+							<li id="li_page4" class="invisible"><a id="a_page4" class="page-link" aria-label="Page 4 Results" href="javascript:__doPostBack(&#39;a_page4&#39;,&#39;&#39;)">4</a></li>
+							<li id="li_page_plus1" class="invisible"><a id="a_page_plus1" class="page-link" aria-label="Next" href="javascript:__doPostBack(&#39;a_page_plus1&#39;,&#39;&#39;)"> <span aria-hidden="true">&raquo;</span> <span class="sr-only">Next</span> </a> </li>
+						</ul>
+					</nav>
+				</div>
+			</div><!--end col--> 
+		</div>           
+            <!--end pagination--> 
+
+		</div><!-- end card-body--> 
+	</div><!-- end main card-->
+</main><!-- end main-->
+
+
+<footer class="footer navbar navbar-dark bg-nav">
+	<div class="container"> 
+		<div class="nav-item text-white">
+            Webpage assistance: (904) 827-6874, (904) 827-6850, Information Systems
+            &nbsp;<a href='mailto:ayefimov@sjcfl.us?subject=NBRScreenD' title="Click to send an e-mail"  class="nav-item text-white" >&bull;&nbsp;E-MAIL&nbsp;</a>
+		</div> 
+	</div>
+</footer>
+
+
+
+
+ 
+<em style="color:white;">Tracked by St.Johns County Webstatistics © 2020</em>
+  
+</form>
+</body>
+</html>
+

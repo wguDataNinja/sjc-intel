@@ -1,0 +1,191 @@
+# =============================================================================
+# SJC_Intel — Source Schema
+# =============================================================================
+# Defines the structure for every monitored source in the source registry.
+# Each source record describes a public information channel that SJC_Intel
+# monitors, scrapes, or otherwise reads for intelligence items.
+#
+# Schema version: 1.0
+# Status: configured
+# =============================================================================
+
+# --- Source record fields ---
+
+source_id:
+  type: string
+  description: >
+    Unique, stable identifier for this source. Use snake_case, prefixed by
+    category (e.g., sjc_news, sjso_news_stories).
+  required: true
+  example: "sjso_news_stories"
+
+name:
+  type: string
+  description: Human-readable display name for the source.
+  required: true
+  example: "SJSO News Stories"
+
+description:
+  type: string
+  description: Short description of what the source provides.
+  required: true
+  example: "Sheriff's Office press releases, arrest reports, and incident alerts."
+
+url:
+  type: string
+  description: Primary URL of the source.
+  required: true
+  example: "https://www.sjso.org/news-stories/"
+
+base_domain:
+  type: string
+  description: Domain root for grouping/organization.
+  required: true
+  example: "sjso.org"
+
+source_type:
+  type: string
+  description: >
+    Classification of the source technology/platform.
+    Allowed values: wordpress_blog, wordpress_portal, government_portal,
+    cms, gis_map, social_media, document_management, video_archive,
+    procurement_portal, subscription_portal, directory.
+  required: true
+  example: "wordpress_blog"
+
+relevance:
+  type: string
+  description: Intelligence value rating for this source.
+  allowed: [HIGH, MEDIUM, LOW]
+  required: true
+  example: "HIGH"
+
+monitor_frequency:
+  type: string
+  description: Recommended check interval.
+  allowed: [daily, weekly, monthly, realtime, per_event]
+  required: true
+  example: "daily"
+
+automatable:
+  type: string
+  description: Feasibility of fully automated monitoring.
+  allowed: [YES, PARTIALLY, LIKELY, CHALLENGING, NO]
+  required: true
+  example: "YES"
+
+status:
+  type: string
+  description: >
+    Operational status of this source in the monitoring pipeline.
+    Allowed: observed (identified but untested), configured (registry entry
+    exists), verified (connectivity confirmed), active (being monitored),
+    failing (monitor broken), stale (no updates detected), retired (no
+    longer monitored).
+  allowed: [observed, configured, verified, active, failing, stale, retired]
+  required: true
+  example: "verified"
+
+topics:
+  type: array<string>
+  description: List of topics this source typically covers.
+  required: false
+  example: ["public_safety", "arrests", "incidents", "press_releases"]
+
+communities:
+  type: array<string>
+  description: >
+    Geographic communities covered by this source. Use community names
+    from the community registry. Empty array = county-wide.
+  required: false
+  example: []
+
+notes:
+  type: string
+  description: Free-form operational notes about the source.
+  required: false
+  example: "WordPress blog, no RSS feed. HTML parsing required."
+
+# --- Monitor configuration (future use) ---
+
+monitor_config:
+  type: object
+  description: >
+    Configuration for the Hermes monitor worker assigned to this source.
+    Populated when a monitoring task is created.
+  required: false
+  fields:
+    check_url:
+      type: string
+      description: URL the monitor fetches on each cycle.
+      example: "https://www.sjso.org/news-stories/"
+    check_interval_hours:
+      type: integer
+      description: Number of hours between checks.
+      example: 24
+    extract_selector:
+      type: string
+      description: CSS selector or pattern for extracting items.
+      example: "article.post, .news-story"
+    item_url_pattern:
+      type: string
+      description: Pattern for individual item URLs.
+      example: "https://www.sjso.org/news-stories/{slug}/"
+    last_checked:
+      type: string (ISO 8601)
+      description: Timestamp of last successful check.
+      example: "2026-06-03T14:30:00Z"
+    last_error:
+      type: string
+      description: Last error message, if any.
+      example: null
+
+# --- Discovery metadata ---
+
+discovered_at:
+  type: string (ISO 8601)
+  description: When this source was first identified.
+  required: false
+  example: "2026-06-03T12:00:00Z"
+
+discovered_by:
+  type: string
+  description: Agent or method that identified this source.
+  required: false
+  example: "hermes-discovery-worker"
+
+# --- Change tracking ---
+
+updated_at:
+  type: string (ISO 8601)
+  description: When this registry entry was last modified.
+  required: false
+  example: "2026-06-03T14:30:00Z"
+
+updated_by:
+  type: string
+  description: Agent or person who last modified this entry.
+  required: false
+  example: "sjc-intel-architect"
+
+# =============================================================================
+# YAML Template for source records
+# =============================================================================
+# To add a new source, copy the template below and fill in the fields:
+#
+# ---
+# source_id: "example_source"
+# name: "Example Source"
+# description: "What this source provides"
+# url: "https://example.com/"
+# base_domain: "example.com"
+# source_type: "wordpress_blog"
+# relevance: "MEDIUM"
+# monitor_frequency: "weekly"
+# automatable: "YES"
+# status: "observed"
+# topics: []
+# communities: []
+# notes: ""
+# discovered_at: "2026-06-03T12:00:00Z"
+# discovered_by: "sjc-intel-architect"

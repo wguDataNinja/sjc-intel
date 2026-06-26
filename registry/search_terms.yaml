@@ -1,0 +1,538 @@
+# =============================================================================
+# SJC_Intel — Search Terms Registry
+# =============================================================================
+# Operational search terms for Search Discovery Loop B and Historical Backfill
+# Loop C. Terms can be refined or retired as effectiveness is measured.
+#
+# Schema version: 1.1
+# Last updated: 2026-06-03
+# =============================================================================
+
+search_terms:
+  - term_id: "ST-0001"
+    query: '"SilverLeaf" ("St. Johns County" OR SJCFL) (rezoning OR PZA OR DRC OR permit OR "reclaimed water" OR school OR "road closure")'
+    category: "community"
+    related_communities: ["silverleaf", "cr_210_corridor", "sr_16_corridor"]
+    related_beats: ["rezoning_comp_plan_dri", "permits_construction", "utilities_water", "school_capacity", "transportation"]
+    source_hint: "public web/news"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "weekly; once for May 2026"
+    status: "untested"
+    notes: "High-value May 2026 backfill term."
+  - term_id: "ST-0002"
+    query: '"Silverleaf" ("St. Johns Parkway" OR "SR 16" OR "CR 210") (builder OR permit OR "public hearing" OR sportsplex OR fire station)'
+    category: "community"
+    related_communities: ["silverleaf", "cr_210_corridor", "sr_16_corridor"]
+    related_beats: ["permits_construction", "parks_amenities", "public_safety"]
+    source_hint: "public web/news"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "weekly; once for May 2026"
+    status: "untested"
+    notes: ""
+  - term_id: "ST-0003"
+    query: '"Nocatee" ("St. Johns County" OR "Ponte Vedra") (CDD OR Tolomato OR rezoning OR permit OR retail OR school OR traffic)'
+    category: "community"
+    related_communities: ["nocatee", "ponte_vedra"]
+    related_beats: ["cdd_governance", "rezoning_comp_plan_dri", "permits_construction", "retail_openings", "school_capacity", "transportation"]
+    source_hint: "public web/news"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "weekly; once for May 2026"
+    status: "untested"
+    notes: "CDD/governance discovery term."
+  - term_id: "ST-0004"
+    query: '"Nocatee" ("attendance zone" OR "School RR" OR "Pine Island Academy" OR "Valley Ridge" OR "Palm Valley")'
+    category: "school"
+    related_communities: ["nocatee", "ponte_vedra"]
+    related_beats: ["school_capacity"]
+    source_hint: "school district/local reporting"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "weekly; once for May 2026"
+    status: "untested"
+    notes: ""
+  - term_id: "ST-0005"
+    query: '"RiverTown" ("St. Johns County" OR "St Johns River") (permit OR amenity OR CDD OR road OR school OR retail)'
+    category: "community"
+    related_communities: ["rivertown"]
+    related_beats: ["permits_construction", "parks_amenities", "cdd_governance", "transportation", "school_capacity", "retail_openings"]
+    source_hint: "public web/news"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "weekly; once for May 2026"
+    status: "untested"
+    notes: ""
+  - term_id: "ST-0006"
+    query: '"RiverTown" (amenities OR "CDD" OR "assessment" OR builder OR "public notice")'
+    category: "cdd_governance"
+    related_communities: ["rivertown"]
+    related_beats: ["cdd_governance", "parks_amenities", "permits_construction"]
+    source_hint: "CDD/public notices/community site"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "monthly; once for May 2026"
+    status: "untested"
+    notes: "CDD/governance discovery term."
+  - term_id: "ST-0007"
+    query: '"Shearwater" ("St. Johns County" OR "Trout Creek") (permit OR amenity OR CDD OR school OR road OR park)'
+    category: "community"
+    related_communities: ["shearwater", "cr_210_corridor"]
+    related_beats: ["permits_construction", "parks_amenities", "cdd_governance", "school_capacity", "transportation"]
+    source_hint: "public web/news"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "weekly; once for May 2026"
+    status: "untested"
+    notes: ""
+  - term_id: "ST-0008"
+    query: '"Shearwater" ("Trout Creek CDD" OR "Old CR 210" OR "community park" OR library OR rezoning)'
+    category: "community"
+    related_communities: ["shearwater", "cr_210_corridor"]
+    related_beats: ["cdd_governance", "transportation", "parks_amenities", "rezoning_comp_plan_dri"]
+    source_hint: "CDD/public web/news"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "weekly; once for May 2026"
+    status: "untested"
+    notes: "CDD/governance discovery term."
+  - term_id: "ST-0009"
+    query: '"TrailMark" ("St. Johns County" OR "SR 16") (permit OR "Six Mile Creek CDD" OR amenity OR builder OR school)'
+    category: "community"
+    related_communities: ["trailmark", "sr_16_corridor"]
+    related_beats: ["permits_construction", "cdd_governance", "parks_amenities", "school_capacity"]
+    source_hint: "public web/news"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "weekly; once for May 2026"
+    status: "untested"
+    notes: "CDD/governance discovery term."
+  - term_id: "ST-0010"
+    query: '"TrailMark" ("Six Mile Creek" OR rezoning OR "public hearing" OR "road closure")'
+    category: "community"
+    related_communities: ["trailmark", "sr_16_corridor"]
+    related_beats: ["cdd_governance", "rezoning_comp_plan_dri", "transportation"]
+    source_hint: "CDD/public notices"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "weekly; once for May 2026"
+    status: "untested"
+    notes: ""
+  - term_id: "ST-0011"
+    query: '"Beachwalk" ("Twin Creeks" OR "CR 210" OR "US 1" OR I-95) (CDD OR lagoon OR amenity OR retail OR permit)'
+    category: "community"
+    related_communities: ["beachwalk", "cr_210_corridor", "us_1_corridor"]
+    related_beats: ["cdd_governance", "parks_amenities", "retail_openings", "permits_construction"]
+    source_hint: "public web/news"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "weekly; once for May 2026"
+    status: "untested"
+    notes: ""
+  - term_id: "ST-0012"
+    query: '"Beachwalk" ("Twin Creeks North CDD" OR "public notice" OR assessment OR road)'
+    category: "cdd_governance"
+    related_communities: ["beachwalk", "cr_210_corridor"]
+    related_beats: ["cdd_governance", "transportation"]
+    source_hint: "CDD/public notices"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "monthly; once for May 2026"
+    status: "untested"
+    notes: "CDD/governance discovery term."
+  - term_id: "ST-0013"
+    query: '"Beacon Lake" ("Twin Creeks" OR "CR 210") (CDD OR reclaimed OR permit OR amenity OR school OR retail)'
+    category: "community"
+    related_communities: ["beacon_lake", "cr_210_corridor"]
+    related_beats: ["cdd_governance", "utilities_water", "permits_construction", "parks_amenities", "school_capacity", "retail_openings"]
+    source_hint: "public web/news"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "weekly; once for May 2026"
+    status: "untested"
+    notes: "May 2026 utility relevance."
+  - term_id: "ST-0014"
+    query: '"Beacon Lake" ("Meadow View at Twin Creeks CDD" OR "reuse conversion" OR "public hearing")'
+    category: "utilities_water"
+    related_communities: ["beacon_lake", "cr_210_corridor"]
+    related_beats: ["cdd_governance", "utilities_water", "rezoning_comp_plan_dri"]
+    source_hint: "CDD/public notices/utility sources"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "monthly; once for May 2026"
+    status: "untested"
+    notes: "CDD and water discovery term."
+  - term_id: "ST-0015"
+    query: '"eTown" (Jacksonville OR "south Jacksonville") (retail OR school OR road OR permit OR "The Exchange")'
+    category: "community"
+    related_communities: ["etown"]
+    related_beats: ["retail_openings", "school_capacity", "transportation", "permits_construction"]
+    source_hint: "public web/news"
+    intended_loop: ["search_discovery"]
+    cadence: "monthly"
+    status: "untested"
+    notes: "Adjacent spillover."
+  - term_id: "ST-0016"
+    query: '"Seven Pines" (Jacksonville OR Butler OR I-295) (retail OR "Village at Seven Pines" OR permit OR road)'
+    category: "community"
+    related_communities: ["seven_pines"]
+    related_beats: ["retail_openings", "permits_construction", "transportation"]
+    source_hint: "public web/news"
+    intended_loop: ["search_discovery"]
+    cadence: "monthly"
+    status: "untested"
+    notes: "Adjacent spillover."
+  - term_id: "ST-0017"
+    query: '"EverRange" ("US 1" OR "Philips Highway" OR Nocatee OR eTown) (permit OR school OR retail OR road)'
+    category: "community"
+    related_communities: ["everrange", "us_1_corridor", "nocatee", "etown"]
+    related_beats: ["permits_construction", "school_capacity", "retail_openings", "transportation"]
+    source_hint: "public web/news"
+    intended_loop: ["search_discovery"]
+    cadence: "monthly"
+    status: "untested"
+    notes: "Adjacent spillover."
+  - term_id: "ST-0018"
+    query: '"Wildlight" (retail OR park OR school OR road OR "town center")'
+    category: "community"
+    related_communities: ["wildlight"]
+    related_beats: ["retail_openings", "parks_amenities", "school_capacity", "transportation"]
+    source_hint: "public web/news"
+    intended_loop: ["search_discovery"]
+    cadence: "monthly"
+    status: "untested"
+    notes: "Regional comparator."
+
+  - term_id: "ST-0101"
+    query: '("CR 210" OR "County Road 210" OR CR210 OR "Old CR 210") ("lane closure" OR widening OR interchange OR FDOT OR SJCFL OR signal OR school)'
+    category: "corridor"
+    related_communities: ["cr_210_corridor"]
+    related_beats: ["transportation", "school_capacity"]
+    source_hint: "county roads/FDOT/local media"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "weekly; once for May 2026"
+    status: "untested"
+    notes: "High-value May 2026 backfill term."
+  - term_id: "ST-0102"
+    query: '("SR 16" OR "State Road 16") (widening OR I-95 OR FDOT OR SJCFL OR closure OR "public meeting" OR MuraBella)'
+    category: "corridor"
+    related_communities: ["sr_16_corridor"]
+    related_beats: ["transportation", "rezoning_comp_plan_dri"]
+    source_hint: "county roads/FDOT/local media"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "weekly; once for May 2026"
+    status: "untested"
+    notes: ""
+  - term_id: "ST-0103"
+    query: '("US 1" OR "U.S. 1") ("St. Johns County" OR "St Augustine") (permit OR widening OR traffic OR retail OR signal)'
+    category: "corridor"
+    related_communities: ["us_1_corridor", "st_augustine"]
+    related_beats: ["permits_construction", "transportation", "retail_openings"]
+    source_hint: "county roads/FDOT/permits"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "weekly; once for May 2026"
+    status: "untested"
+    notes: ""
+  - term_id: "ST-0104"
+    query: '("I-95" AND ("St. Johns County" OR "CR 210" OR "SR 16" OR "County Road 2209" OR "International Golf Parkway")) (interchange OR closure OR widening)'
+    category: "transportation"
+    related_communities: ["countywide", "cr_210_corridor", "sr_16_corridor"]
+    related_beats: ["transportation"]
+    source_hint: "FDOT/Florida 511/local TV"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "weekly; once for May 2026"
+    status: "untested"
+    notes: ""
+  - term_id: "ST-0105"
+    query: '("County Road 2209" OR "St. Johns Parkway") (widening OR CR210 OR "First Coast Expressway" OR traffic)'
+    category: "corridor"
+    related_communities: ["cr_210_corridor"]
+    related_beats: ["transportation"]
+    source_hint: "county roads/FDOT"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "weekly; once for May 2026"
+    status: "untested"
+    notes: ""
+  - term_id: "ST-0106"
+    query: '("First Coast Expressway" OR "SR 23") ("St. Johns County" OR "CR 16A" OR "CR 2209" OR I-95)'
+    category: "transportation"
+    related_communities: ["countywide", "cr_210_corridor", "sr_16_corridor"]
+    related_beats: ["transportation"]
+    source_hint: "FDOT/NFLRoads"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "weekly; once for May 2026"
+    status: "untested"
+    notes: ""
+
+  - term_id: "ST-0201"
+    query: '("St. Johns County School District" OR SJCSD) ("attendance zoning" OR rezoning OR "attendance boundary" OR capacity OR "new school")'
+    category: "school"
+    related_communities: ["countywide"]
+    related_beats: ["school_capacity"]
+    source_hint: "SJCSD/BoardDocs/local media"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "weekly; once for May 2026"
+    status: "untested"
+    notes: "High-value May 2026 backfill term."
+  - term_id: "ST-0202"
+    query: '("School QQ" OR "K-8 QQ" OR SilverLeaf) ("St. Johns County School District" OR SJCSD)'
+    category: "school"
+    related_communities: ["silverleaf"]
+    related_beats: ["school_capacity"]
+    source_hint: "SJCSD"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "weekly; once for May 2026"
+    status: "untested"
+    notes: ""
+  - term_id: "ST-0203"
+    query: '("School RR" OR "K-8 RR" OR Nocatee) ("St. Johns County School District" OR SJCSD)'
+    category: "school"
+    related_communities: ["nocatee"]
+    related_beats: ["school_capacity"]
+    source_hint: "SJCSD"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "weekly; once for May 2026"
+    status: "untested"
+    notes: ""
+  - term_id: "ST-0204"
+    query: '("BoardDocs" AND "St. Johns County School District") (workshop OR agenda OR attachment)'
+    category: "school"
+    related_communities: ["countywide"]
+    related_beats: ["school_capacity", "local_government_budget_procurement"]
+    source_hint: "BoardDocs"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "weekly; once for May 2026"
+    status: "untested"
+    notes: ""
+  - term_id: "ST-0205"
+    query: '("school capacity" AND ("SilverLeaf" OR Nocatee OR Beacon Lake OR Shearwater OR TrailMark))'
+    category: "school"
+    related_communities: ["silverleaf", "nocatee", "beacon_lake", "shearwater", "trailmark"]
+    related_beats: ["school_capacity"]
+    source_hint: "SJCSD/local media"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "weekly; once for May 2026"
+    status: "untested"
+    notes: ""
+
+  - term_id: "ST-0301"
+    query: 'site:sjcfl.us ("Development Tracker" OR DRC OR PZA OR rezoning OR "special use permit" OR "major modification") "St. Johns County"'
+    category: "permits_development"
+    related_communities: ["countywide"]
+    related_beats: ["rezoning_comp_plan_dri", "permits_construction"]
+    source_hint: "sjcfl.us"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "weekly; once for May 2026"
+    status: "untested"
+    notes: "High-value May 2026 backfill term."
+  - term_id: "ST-0302"
+    query: 'site:sjcfl.us ("permit status" OR "certificate of occupancy" OR "plan review log") "St. Johns County"'
+    category: "permits_development"
+    related_communities: ["countywide"]
+    related_beats: ["permits_construction", "retail_openings"]
+    source_hint: "sjcfl.us"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "weekly; once for May 2026"
+    status: "untested"
+    notes: ""
+  - term_id: "ST-0303"
+    query: 'site:nflroads.com ("St. Johns County" AND (CR210 OR SR16 OR I-95 OR "US 1" OR "First Coast Expressway"))'
+    category: "transportation"
+    related_communities: ["countywide", "cr_210_corridor", "sr_16_corridor", "us_1_corridor"]
+    related_beats: ["transportation"]
+    source_hint: "nflroads.com"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "weekly; once for May 2026"
+    status: "untested"
+    notes: "High-value May 2026 backfill term."
+  - term_id: "ST-0304"
+    query: 'site:sjrwmd.com ("St. Johns County" AND (permit OR ePermit OR ERP OR consumptive OR wetland))'
+    category: "utilities_water"
+    related_communities: ["countywide"]
+    related_beats: ["utilities_water", "permits_construction"]
+    source_hint: "sjrwmd.com"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "weekly; once for May 2026"
+    status: "untested"
+    notes: "High-value May 2026 backfill term."
+  - term_id: "ST-0305"
+    query: '("public notice" AND ("St. Johns County" OR Nocatee OR SilverLeaf OR TrailMark OR Shearwater OR Beachwalk OR Beacon Lake))'
+    category: "source_discovery"
+    related_communities: ["countywide", "nocatee", "silverleaf", "trailmark", "shearwater", "beachwalk", "beacon_lake"]
+    related_beats: ["cdd_governance", "rezoning_comp_plan_dri", "local_government_budget_procurement"]
+    source_hint: "public notices"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "weekly; once for May 2026"
+    status: "untested"
+    notes: "CDD/governance discovery term."
+
+  - term_id: "ST-0401"
+    query: '("St. Johns County" AND (TRIM OR millage OR homestead OR portability OR exemption OR VAB))'
+    category: "taxes_property"
+    related_communities: ["countywide"]
+    related_beats: ["taxes_exemptions_trim_vab"]
+    source_hint: "property appraiser/tax collector/clerk"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "monthly; daily Aug-Nov; once for May 2026"
+    status: "untested"
+    notes: ""
+  - term_id: "ST-0402"
+    query: '("Property Appraiser" AND "St. Johns County") ("new owner" OR "estimate taxes" OR "record card")'
+    category: "taxes_property"
+    related_communities: ["countywide"]
+    related_beats: ["taxes_exemptions_trim_vab", "property_values_market"]
+    source_hint: "property appraiser"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "monthly; once for May 2026"
+    status: "untested"
+    notes: ""
+  - term_id: "ST-0403"
+    query: '("Tolomato CDD" OR "Trout Creek CDD" OR "Six Mile Creek CDD" OR "Twin Creeks North CDD" OR "Meadow View at Twin Creeks CDD")'
+    category: "cdd_governance"
+    related_communities: ["nocatee", "shearwater", "trailmark", "beachwalk", "beacon_lake"]
+    related_beats: ["cdd_governance"]
+    source_hint: "CDD sites"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "weekly; once for May 2026"
+    status: "untested"
+    notes: "CDD/governance discovery term."
+  - term_id: "ST-0404"
+    query: '("assessment roll" OR "annual assessment" OR "budget hearing") (CDD OR "St. Johns County")'
+    category: "cdd_governance"
+    related_communities: ["countywide"]
+    related_beats: ["cdd_governance", "taxes_exemptions_trim_vab"]
+    source_hint: "CDD/public notices"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "monthly; once for May 2026"
+    status: "untested"
+    notes: "CDD/governance discovery term."
+  - term_id: "ST-0405"
+    query: '("HOA" AND (SilverLeaf OR Nocatee OR RiverTown OR Shearwater OR TrailMark OR Beachwalk OR Beacon Lake)) -facebook -group'
+    category: "source_discovery"
+    related_communities: ["silverleaf", "nocatee", "rivertown", "shearwater", "trailmark", "beachwalk", "beacon_lake"]
+    related_beats: ["cdd_governance", "parks_amenities"]
+    source_hint: "public HOA/community pages only"
+    intended_loop: ["search_discovery"]
+    cadence: "monthly"
+    status: "untested"
+    notes: "Exclude private/login-gated groups."
+
+  - term_id: "ST-0501"
+    query: '("SJSO" OR "St. Johns County Sheriff''s Office") ("traffic concern" OR arrest OR crash OR investigation OR patrol)'
+    category: "topic"
+    related_communities: ["countywide"]
+    related_beats: ["public_safety_livability", "transportation"]
+    source_hint: "SJSO/local media"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "weekly; once for May 2026"
+    status: "untested"
+    notes: "Sensitive; human review before publication."
+  - term_id: "ST-0502"
+    query: '("St. Johns County Fire Rescue" OR SJCFR) (station OR response OR marine rescue OR wildfire)'
+    category: "topic"
+    related_communities: ["countywide"]
+    related_beats: ["public_safety_livability", "emergency_weather_fire_flood"]
+    source_hint: "county/emergency/local media"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "weekly; once for May 2026"
+    status: "untested"
+    notes: ""
+  - term_id: "ST-0503"
+    query: '("St. Johns County" AND ("emergency management" OR evacuation OR shelter OR debris OR alert))'
+    category: "topic"
+    related_communities: ["countywide"]
+    related_beats: ["emergency_weather_fire_flood"]
+    source_hint: "county emergency management"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "weekly; daily in season; once for May 2026"
+    status: "untested"
+    notes: ""
+  - term_id: "ST-0504"
+    query: '("school zone" AND ("CR 210" OR "Longleaf Pine" OR "St. Johns Parkway" OR "Nocatee"))'
+    category: "transportation"
+    related_communities: ["cr_210_corridor", "nocatee"]
+    related_beats: ["transportation", "school_capacity", "public_safety_livability"]
+    source_hint: "SJSO/county roads/local media"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "weekly; once for May 2026"
+    status: "untested"
+    notes: ""
+
+  - term_id: "ST-0601"
+    query: '("St. Johns County Utility Department" OR SJCUD) ("boil water" OR outage OR reclaimed OR irrigation OR billing)'
+    category: "utilities_water"
+    related_communities: ["countywide"]
+    related_beats: ["utilities_water"]
+    source_hint: "SJC utility"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "daily; once for May 2026"
+    status: "untested"
+    notes: "High-value May 2026 backfill term."
+  - term_id: "ST-0602"
+    query: '("SJRWMD" OR "St. Johns River Water Management District") ("water shortage" OR restrictions OR drought OR declaration)'
+    category: "utilities_water"
+    related_communities: ["countywide"]
+    related_beats: ["utilities_water", "emergency_weather_fire_flood"]
+    source_hint: "SJRWMD"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "daily; once for May 2026"
+    status: "untested"
+    notes: "High-value May 2026 backfill term."
+  - term_id: "ST-0603"
+    query: '("SilverLeaf reclaimed water" OR "Beacon Lake reuse conversion" OR "Twin Creeks reuse conversion")'
+    category: "utilities_water"
+    related_communities: ["silverleaf", "beacon_lake", "beachwalk"]
+    related_beats: ["utilities_water", "cdd_governance"]
+    source_hint: "utility/CDD/public notices"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "weekly; once for May 2026"
+    status: "untested"
+    notes: "High-value May 2026 backfill term."
+  - term_id: "ST-0604"
+    query: '("watering restrictions" AND ("St. Johns County" OR Ponte Vedra OR St. Augustine))'
+    category: "utilities_water"
+    related_communities: ["countywide", "ponte_vedra", "st_augustine"]
+    related_beats: ["utilities_water"]
+    source_hint: "SJRWMD/county utility/local media"
+    intended_loop: ["search_discovery", "historical_backfill"]
+    cadence: "daily; once for May 2026"
+    status: "untested"
+    notes: "High-value May 2026 backfill term."
+
+  - term_id: "ST-0701"
+    query: '"St. Johns County" local news'
+    category: "local_media_discovery"
+    related_communities: ["countywide"]
+    related_beats: []
+    source_hint: "local media"
+    intended_loop: ["search_discovery"]
+    cadence: "monthly"
+    status: "untested"
+    notes: "Find sources similar to St. Johns Citizen."
+  - term_id: "ST-0702"
+    query: '"St. Johns County" community news'
+    category: "local_media_discovery"
+    related_communities: ["countywide"]
+    related_beats: []
+    source_hint: "local media"
+    intended_loop: ["search_discovery"]
+    cadence: "monthly"
+    status: "untested"
+    notes: ""
+  - term_id: "ST-0703"
+    query: '"St. Johns County" newsletter'
+    category: "local_media_discovery"
+    related_communities: ["countywide"]
+    related_beats: []
+    source_hint: "newsletter platforms"
+    intended_loop: ["search_discovery"]
+    cadence: "monthly"
+    status: "untested"
+    notes: "Find public newsletters; do not use private/login-gated content."
+  - term_id: "ST-0704"
+    query: '"Nocatee" news'
+    category: "local_media_discovery"
+    related_communities: ["nocatee"]
+    related_beats: []
+    source_hint: "local media/community pages"
+    intended_loop: ["search_discovery"]
+    cadence: "monthly"
+    status: "untested"
+    notes: ""
+  - term_id: "ST-0705"
+    query: '"Ponte Vedra" local news'
+    category: "local_media_discovery"
+    related_communities: ["ponte_vedra"]
+    related_beats: []
+    source_hint: "local media"
+    intended_loop: ["search_discovery"]
+    cadence: "monthly"
+    status: "untested"
+    notes: ""

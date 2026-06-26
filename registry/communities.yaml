@@ -1,0 +1,221 @@
+# =============================================================================
+# SJC_Intel — Community Registry
+# =============================================================================
+# Official registry of geographic communities, corridors, neighborhoods, and
+# municipalities within the SJC_Intel monitoring scope.
+#
+# Each community record provides a stable identifier and metadata that can be
+# referenced by source records (registry/sources.yaml), intel items, and the
+# taxonomy (docs/taxonomy.md).
+#
+# Schema version: 1.0
+# Status: configured
+# Last updated: 2026-06-03
+# =============================================================================
+
+community_types:
+  - master_planned_community  # Large-scale planned residential development
+  - neighborhood              # Smaller named subdivision or district
+  - corridor                  # Major roadway corridor (growth axis)
+  - municipality              # City, town, or incorporated area
+  - county_area               # Unincorporated county region or district
+  - special_place             # Named place of interest (beach, park, etc.)
+  - countywide                # Covers the entire county
+
+communities:
+
+  # ---------------------------------------------------------------------------
+  # Countywide (special — used when no specific community is affected)
+  # ---------------------------------------------------------------------------
+  - id: "countywide"
+    name: "Countywide"
+    type: "countywide"
+    parent_area: ~
+    notes: >
+      Special value used when an item affects all of St. Johns County
+      or no specific community can be identified.
+    status: "active"
+
+  # ---------------------------------------------------------------------------
+  # Master-Planned Communities
+  # ---------------------------------------------------------------------------
+  - id: "silverleaf"
+    name: "SilverLeaf"
+    type: "master_planned_community"
+    parent_area: "northwest_st_johns"
+    notes: >
+      Major growth area in northwestern St. Johns County near the Duval
+      County line. Large-scale residential and mixed-use development.
+    status: "observed"
+
+  - id: "nocatee"
+    name: "Nocatee"
+    type: "master_planned_community"
+    parent_area: "northern_st_johns"
+    notes: >
+      Large master-planned community in northern St. Johns County near
+      Ponte Vedra. Includes residential, commercial, and recreational
+      amenities. Has its own official website (nocatee.com).
+    status: "active"
+
+  - id: "rivertown"
+    name: "RiverTown"
+    type: "master_planned_community"
+    parent_area: "northwest_st_johns"
+    notes: >
+      Riverfront master-planned community along the St. Johns River in
+      northwestern St. Johns County.
+    status: "observed"
+
+  - id: "shearwater"
+    name: "Shearwater"
+    type: "master_planned_community"
+    parent_area: "northern_st_johns"
+    notes: >
+      Master-planned community in the Oceanway area of northern St. Johns
+      County, near the Duval County line.
+    status: "observed"
+
+  - id: "trailmark"
+    name: "TrailMark"
+    type: "master_planned_community"
+    parent_area: "northwest_st_johns"
+    notes: >
+      Active adult (55+) master-planned community in northwestern
+      St. Johns County.
+    status: "observed"
+
+  - id: "beacon_lake"
+    name: "Beacon Lake"
+    type: "master_planned_community"
+    parent_area: "northwest_st_johns"
+    notes: >
+      Newer master-planned community in northwestern St. Johns County
+      near the intersection of CR 210 and I-95.
+    status: "observed"
+
+  - id: "beachwalk"
+    name: "Beachwalk"
+    type: "master_planned_community"
+    parent_area: "coastal_st_johns"
+    notes: >
+      Master-planned community in coastal St. Johns County, near the
+      Atlantic coast.
+    status: "observed"
+
+  - id: "etown"
+    name: "eTown"
+    type: "master_planned_community"
+    parent_area: "northern_st_johns"
+    notes: >
+      Entertainment-focused master-planned community in northern
+      St. Johns County. Features a town center with dining, retail,
+      and events.
+    status: "observed"
+
+  - id: "seven_pines"
+    name: "Seven Pines"
+    type: "master_planned_community"
+    parent_area: "northern_st_johns"
+    notes: >
+      Master-planned community near Nocatee in northern St. Johns County.
+    status: "observed"
+
+  - id: "everrange"
+    name: "EverRange"
+    type: "master_planned_community"
+    parent_area: "northwest_st_johns"
+    notes: >
+      Master-planned community in northwestern St. Johns County.
+    status: "observed"
+
+  - id: "wildlight"
+    name: "WildLight"
+    type: "master_planned_community"
+    parent_area: "northern_st_johns"
+    notes: >
+      Master-planned community in northern St. Johns County near I-95
+      and SR 200.
+    status: "observed"
+
+  # ---------------------------------------------------------------------------
+  # Growth Corridors
+  # ---------------------------------------------------------------------------
+  - id: "cr_210_corridor"
+    name: "CR 210 Corridor"
+    type: "corridor"
+    parent_area: "northern_st_johns"
+    notes: >
+      County Road 210 — major east-west arterial through northern
+      St. Johns County. High-growth corridor connecting I-95 to
+      US-1 and the coast.
+    status: "active"
+
+  - id: "sr_16_corridor"
+    name: "SR 16 Corridor"
+    type: "corridor"
+    parent_area: "central_st_johns"
+    notes: >
+      State Road 16 — major east-west arterial connecting I-95 to
+      downtown St. Augustine and the coast. Significant development
+      corridor.
+    status: "active"
+
+  - id: "us_1_corridor"
+    name: "US 1 Corridor"
+    type: "corridor"
+    parent_area: "st_johns_county"
+    notes: >
+      U.S. Highway 1 — north-south arterial running the length of
+      St. Johns County. Major commercial and development corridor.
+    status: "active"
+
+  # ---------------------------------------------------------------------------
+  # Municipalities and Municipal Areas
+  # ---------------------------------------------------------------------------
+  - id: "ponte_vedra"
+    name: "Ponte Vedra"
+    type: "municipality"
+    parent_area: "coastal_st_johns"
+    notes: >
+      Coastal community in northeastern St. Johns County. Includes
+      Ponte Vedra Beach and surrounding areas.
+    status: "active"
+
+  - id: "st_augustine"
+    name: "St. Augustine"
+    type: "municipality"
+    parent_area: "central_st_johns"
+    notes: >
+      Historic city and county seat of St. Johns County. Central
+      location near SR 16, US 1, and I-95.
+    status: "active"
+
+  - id: "st_augustine_beach"
+    name: "St. Augustine Beach"
+    type: "municipality"
+    parent_area: "coastal_st_johns"
+    notes: >
+      Coastal city on Anastasia Island, directly east of St. Augustine.
+    status: "active"
+
+  # ---------------------------------------------------------------------------
+  # Neighborhoods and Specific Places
+  # ---------------------------------------------------------------------------
+  - id: "vilano_beach"
+    name: "Vilano Beach"
+    type: "neighborhood"
+    parent_area: "coastal_st_johns"
+    notes: >
+      Coastal neighborhood north of St. Augustine, near the Porpoise
+      Point area. Identified during sjc_county_news pilot.
+    status: "active"
+
+  - id: "porpoise_point"
+    name: "Porpoise Point"
+    type: "neighborhood"
+    parent_area: "vilano_beach"
+    notes: >
+      Specific area within Vilano Beach, near the beach access ramp.
+      Identified during sjc_county_news pilot.
+    status: "active"

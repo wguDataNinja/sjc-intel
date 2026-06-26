@@ -1,0 +1,178 @@
+# =============================================================================
+# SJC_Intel — Beat Candidates Registry
+# =============================================================================
+# Candidate homeowner/resident beats extracted from Deep Research.
+# Beats are not canonical until approved for active tracking.
+#
+# Schema version: 1.1
+# Last updated: 2026-06-03
+# =============================================================================
+
+candidates:
+  - beat_id: "CAND-BEAT-0001"
+    name: "Rezoning, comp-plan, and DRI changes"
+    homeowner_relevance: "VERY_HIGH"
+    source_types: ["official_meetings", "official_boards_calendar", "official_map_open_data", "official_records_portal", "local_business_development_media"]
+    example_search_terms: ['"SilverLeaf" rezoning', '"DRI" "St. Johns County"', '"PZA" "County Road 210"']
+    communities: ["countywide", "silverleaf", "nocatee", "rivertown", "trailmark", "cr_210_corridor", "sr_16_corridor", "st_augustine"]
+    monitor_cadence: "weekly; daily on hearing weeks"
+    related_taxonomy_terms: ["development", "county_government", "public_notices", "property_values", "development_watch"]
+    review_status: "pending_review"
+    promotion_decision: "recommend_top_5"
+    notes: "Top-five beat. Longest-lasting effect on density, traffic, school load, and neighborhood character."
+
+  - beat_id: "CAND-BEAT-0002"
+    name: "Site plans, permits, and vertical construction"
+    homeowner_relevance: "VERY_HIGH"
+    source_types: ["official_permit_database", "official_map_open_data", "local_business_development_media", "official_community_developer"]
+    example_search_terms: ['"permit" "St. Johns County"', '"certificate of occupancy"', '"site plan"']
+    communities: ["countywide", "cr_210_corridor", "us_1_corridor", "sr_16_corridor", "silverleaf", "nocatee"]
+    monitor_cadence: "daily"
+    related_taxonomy_terms: ["development", "construction", "economic_development", "development_watch", "property_values"]
+    review_status: "pending_review"
+    promotion_decision: "recommend_top_5"
+    notes: "Top-five beat. Converts speculation into actual movement."
+
+  - beat_id: "CAND-BEAT-0003"
+    name: "Roadwork and traffic impacts"
+    homeowner_relevance: "VERY_HIGH"
+    source_types: ["official_notices_projects", "official_transportation_project_tracker", "official_realtime_traffic", "local_tv_breaking_news"]
+    example_search_terms: ['"CR 210" lane closure', '"SR 16" widening', '"I-95" interchange "St. Johns"']
+    communities: ["countywide", "cr_210_corridor", "sr_16_corridor", "us_1_corridor"]
+    monitor_cadence: "daily"
+    related_taxonomy_terms: ["transportation", "infrastructure", "traffic_impact", "quality_of_life", "safety_concern"]
+    review_status: "pending_review"
+    promotion_decision: "recommend_top_5"
+    notes: "Top-five beat. Most immediate day-to-day pain point in growth corridors."
+
+  - beat_id: "CAND-BEAT-0004"
+    name: "School capacity, rezoning, and new-school delivery"
+    homeowner_relevance: "VERY_HIGH"
+    source_types: ["official_district_meetings", "official_agenda_platform", "official_planning_maps", "local_newspaper"]
+    example_search_terms: ['"attendance zoning" SJCSD', '"School QQ"', '"School RR"', '"school capacity"']
+    communities: ["countywide", "silverleaf", "nocatee", "beacon_lake", "shearwater", "trailmark", "cr_210_corridor", "sr_16_corridor"]
+    monitor_cadence: "weekly"
+    related_taxonomy_terms: ["education", "development", "school_zones", "property_values", "traffic_impact"]
+    review_status: "pending_review"
+    promotion_decision: "recommend_top_5"
+    notes: "Top-five beat. Strong driver of household choice and resident anxiety."
+
+  - beat_id: "CAND-BEAT-0005"
+    name: "Utilities, irrigation, reclaimed water, and boil notices"
+    homeowner_relevance: "VERY_HIGH"
+    source_types: ["official_service_alerts", "official_regulator", "official_emergency_info", "local_tv_breaking_news"]
+    example_search_terms: ['"boil water" "St. Johns County"', '"reclaimed water"', '"watering restrictions"']
+    communities: ["countywide", "silverleaf", "beacon_lake", "beachwalk"]
+    monitor_cadence: "daily"
+    related_taxonomy_terms: ["infrastructure", "environment", "emergency_alerts", "utility_impact", "cost_impact"]
+    review_status: "pending_review"
+    promotion_decision: "recommend_top_5"
+    notes: "Top-five beat. High-frequency, high-friction homeowner issue."
+
+  - beat_id: "CAND-BEAT-0006"
+    name: "CDD governance, assessments, and amenity operations"
+    homeowner_relevance: "VERY_HIGH"
+    source_types: ["official_special_district", "legal_notice_aggregator", "official_tax_payment_services", "local_media"]
+    example_search_terms: ['"Tolomato CDD"', '"Trout Creek CDD"', '"assessment hearing"']
+    communities: ["nocatee", "shearwater", "trailmark", "beachwalk", "beacon_lake"]
+    monitor_cadence: "weekly; monthly otherwise"
+    related_taxonomy_terms: ["county_government", "taxes", "parks_recreation", "cost_impact", "quality_of_life"]
+    review_status: "pending_review"
+    promotion_decision: "recommend_canonical_interest_group"
+    notes: "Deep Research made CDD governance a first-class homeowner source family."
+
+  - beat_id: "CAND-BEAT-0007"
+    name: "Property taxes, exemptions, TRIM, and VAB"
+    homeowner_relevance: "VERY_HIGH"
+    source_types: ["official_property_tax_base", "official_tax_payment_services", "official_records_portal", "official_finance_transparency"]
+    example_search_terms: ['"TRIM notice"', '"homestead exemption"', '"millage rate"', '"VAB"']
+    communities: ["countywide"]
+    monitor_cadence: "monthly; daily in Aug-Nov"
+    related_taxonomy_terms: ["taxes", "county_government", "cost_impact", "property_values"]
+    review_status: "pending_review"
+    promotion_decision: "recommend_canonical_interest_group"
+    notes: "Direct homeowner cost beat; cadence should rise during TRIM/budget season."
+
+  - beat_id: "CAND-BEAT-0008"
+    name: "Public safety and neighborhood livability"
+    homeowner_relevance: "HIGH"
+    source_types: ["official_public_safety", "official_emergency_info", "local_tv_breaking_news", "official_meetings"]
+    example_search_terms: ['"traffic concern" SJSO', '"St. Johns County Fire Rescue"', '"active investigation"']
+    communities: ["countywide", "cr_210_corridor", "sr_16_corridor"]
+    monitor_cadence: "daily"
+    related_taxonomy_terms: ["public_safety", "crime", "transportation", "safety_concern", "quality_of_life"]
+    review_status: "pending_review"
+    promotion_decision: "deferred"
+    notes: "Sensitive items need human review before any publication."
+
+  - beat_id: "CAND-BEAT-0009"
+    name: "Retail, grocery, restaurant, and service openings"
+    homeowner_relevance: "HIGH"
+    source_types: ["local_business_development_media", "chamber_business_calendar", "official_permit_database", "official_community_developer"]
+    example_search_terms: ['"coming soon" "St. Johns County"', '"restaurant permit"', '"grocery site plan"']
+    communities: ["cr_210_corridor", "us_1_corridor", "nocatee", "seven_pines", "etown", "everrange"]
+    monitor_cadence: "weekly"
+    related_taxonomy_terms: ["economic_development", "development", "quality_of_life", "property_values"]
+    review_status: "pending_review"
+    promotion_decision: "deferred"
+    notes: "Useful for resident convenience and traffic/value perception."
+
+  - beat_id: "CAND-BEAT-0010"
+    name: "Parks, libraries, trails, and amenity expansion"
+    homeowner_relevance: "HIGH"
+    source_types: ["official_services_facilities", "official_tourism_events_calendar", "official_community_amenities", "nearby_municipal_government"]
+    example_search_terms: ['"sportsplex" SilverLeaf', '"community park"', '"pickleball"']
+    communities: ["countywide", "silverleaf", "shearwater", "rivertown", "st_augustine", "st_augustine_beach"]
+    monitor_cadence: "weekly"
+    related_taxonomy_terms: ["parks_recreation", "library", "community_events", "quality_of_life"]
+    review_status: "pending_review"
+    promotion_decision: "deferred"
+    notes: "Quality-of-life beat after core utility/road/school/development stack."
+
+  - beat_id: "CAND-BEAT-0011"
+    name: "Local government, budgets, and procurement"
+    homeowner_relevance: "HIGH"
+    source_types: ["official_meetings", "official_procurement", "official_finance_transparency", "official_records_portal"]
+    example_search_terms: ['"approved resolution"', '"RFQ" "St. Johns County"', '"budget workshop"']
+    communities: ["countywide"]
+    monitor_cadence: "weekly"
+    related_taxonomy_terms: ["county_government", "taxes", "infrastructure", "cost_impact", "community_trust"]
+    review_status: "pending_review"
+    promotion_decision: "recommend_canonical_interest_group"
+    notes: "Explains why projects move, stall, or get funded."
+
+  - beat_id: "CAND-BEAT-0012"
+    name: "Elections and district politics"
+    homeowner_relevance: "HIGH"
+    source_types: ["official_elections", "official_meetings", "official_district_meetings", "local_media"]
+    example_search_terms: ['"election dates"', '"candidate reports"', '"district map"']
+    communities: ["countywide"]
+    monitor_cadence: "weekly; daily in election season"
+    related_taxonomy_terms: ["elections", "county_government", "community_trust"]
+    review_status: "pending_review"
+    promotion_decision: "deferred"
+    notes: "Important for referenda, local offices, and zoning/policy outcomes."
+
+  - beat_id: "CAND-BEAT-0013"
+    name: "Emergency, weather, fire, flood, and beach conditions"
+    homeowner_relevance: "VERY_HIGH"
+    source_types: ["official_emergency_info", "official_weather_hazards", "official_services_facilities", "local_tv_breaking_news"]
+    example_search_terms: ['"NWS Jacksonville briefing"', '"evacuation zone"', '"red flag"']
+    communities: ["countywide", "st_augustine_beach", "vilano_beach", "ponte_vedra"]
+    monitor_cadence: "daily"
+    related_taxonomy_terms: ["emergency_alerts", "environment", "public_safety", "emergency_awareness"]
+    review_status: "pending_review"
+    promotion_decision: "recommend_canonical_interest_group"
+    notes: "Immediate life-safety and short-term disruption beat."
+
+  - beat_id: "CAND-BEAT-0014"
+    name: "Property values and market liquidity"
+    homeowner_relevance: "HIGH"
+    source_types: ["official_property_tax_base", "local_business_development_media", "local_media"]
+    example_search_terms: ['"St. Johns County market stats"', '"median price"', '"days on market"']
+    communities: ["countywide", "silverleaf", "nocatee", "rivertown", "shearwater", "trailmark"]
+    monitor_cadence: "monthly"
+    related_taxonomy_terms: ["housing", "taxes", "property_values", "cost_impact"]
+    review_status: "pending_review"
+    promotion_decision: "deferred"
+    notes: "Monthly context beat; avoid implying investment advice."

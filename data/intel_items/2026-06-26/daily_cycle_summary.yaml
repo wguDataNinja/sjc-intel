@@ -1,0 +1,116 @@
+# Daily Monitor Cycle Summary — 2026-06-26
+# Generated: 2026-06-26T07:35:00Z
+# Sources: 4 (sjc_nbor_public_notices, sjc_utility_department, sjc_county_news, sjso_news_stories)
+
+run_date: "2026-06-26"
+sources_attempted: 4
+sources_succeeded: 4
+sources_failed: 0
+
+source_health:
+  - source_id: sjc_nbor_public_notices
+    status: healthy
+    http_status: 200
+    extraction: parser
+    items_found: 25
+    new_items: 25
+    duplicates_skipped: 0
+    errors: []
+    daily_ready: true
+  - source_id: sjc_utility_department
+    status: healthy
+    http_status: 200
+    extraction: manual
+    items_found: 5
+    new_items: 0
+    duplicates_skipped: 5
+    errors: []
+    daily_ready: true
+    note: "All 5 items duplicates of prior cycle (SJC-UTIL-20260603-0001 through 0005). Page unchanged."
+  - source_id: sjc_county_news
+    status: healthy
+    http_status: 200
+    extraction: manual
+    items_found: 4
+    new_items: 4
+    duplicates_skipped: 0
+    errors: []
+    daily_ready: true
+  - source_id: sjso_news_stories
+    status: healthy
+    http_status: 200
+    extraction: manual
+    items_found: 2
+    new_items: 1
+    duplicates_skipped: 1
+    errors: []
+    daily_ready: true
+
+total_records: 36
+total_new_items: 30
+total_duplicates_skipped: 6
+
+records_by_source:
+  sjc_nbor_public_notices: 25
+  sjc_county_news: 4
+  sjso_news_stories: 1
+  sjc_utility_department: 0
+
+records_by_beat:
+  utilities_water: 11
+  rezoning_comp_plan_dri: 6
+  site_plans_permits_construction: 7
+  roadwork_traffic: 2
+  parks_amenities: 2
+  public_safety_livability: 1
+
+notable_items:
+  - title: "SJC's Largest-Ever Capital Improvement Project Now Serving Residents"
+    source: sjc_county_news
+    beat: utilities_water
+    reason: "$191.8M SR 207 Water Reclamation Facility now operational. Largest capital project in county history."
+  - title: "Railroad Crossing Maintenance to Temporarily Close West King Street and Kinlaw Road"
+    source: sjc_county_news
+    beat: roadwork_traffic
+    reason: "Active road closure affecting St. Augustine traffic."
+  - title: "MAJMOD 2025000011 Golfway Centre PUD"
+    source: sjc_nbor_public_notices
+    beat: rezoning_comp_plan_dri
+    reason: "Major PUD modification hearing June 16 — commercial/office development on remaining parcel."
+  - title: "REZ 2026000002 177 Surfside Avenue"
+    source: sjc_nbor_public_notices
+    beat: rezoning_comp_plan_dri
+    reason: "Rezoning hearing June 16 — CHT to RS-3 on 0.75 acres."
+  - title: "Two St. Johns County Inmates Charged for Planning Escape from Jail"
+    source: sjso_news_stories
+    beat: public_safety_livability
+    reason: "Active public safety incident. Human review required."
+
+cross_source_analysis:
+  possible_clusters:
+    - title: "SR 207 Water Reclamation Facility"
+      items:
+        - source: sjc_county_news
+          item_id: "SJC-CN-20260626-0001"
+          date: "2026-06-23"
+          summary: "Project now operational"
+        - source: sjc_utility_department (prior cycle)
+          item_id: "SJC-UTIL-20260603-0003"
+          date: reference from Dec 2025
+          summary: "Phase 2 approval"
+      cluster_type: likely_cluster
+      reason: "Same project, different milestones (approval vs. completion). Should be linked as supporting sources."
+  exact_duplicates: []
+  no_cluster: "All other items are distinct — no cross-source duplication detected."
+
+taxonomy_gaps: []
+schema_gaps: []
+
+source_gaps:
+  - source_id: sjc_emergency_management
+    note: "Not checked — seasonal source. Hurricane season began June 1. Should add to daily cycle for June-November."
+
+recommended_actions:
+  - "Add sjc_emergency_management to daily cycle for hurricane season (June-November)"
+  - "Link SR 207 WRF items as supporting sources across county news + utility department"
+  - "Run sjc_nbor_public_notices extractor daily — highest-yield source (25 items/run)"

@@ -1,0 +1,169 @@
+source_id: sjc_county_news
+fetched_at: '2026-06-26T07:30:00Z'
+source_url: https://www.sjcfl.us/news/
+total_items: 4
+items:
+- item_id: SJC-CN-20260626-0001
+  title: SJC's Largest-Ever Capital Improvement Project Now Serving Residents
+  summary: St. Johns County's $191.8 million SR 207 Water Reclamation Facility is
+    now operational, protecting water resources and expanding reclaimed water capacity.
+  source_id: sjc_county_news
+  source_url: https://www.sjcfl.us/news/
+  source_published_at: '2026-06-23'
+  discovered_at: '2026-06-26T07:30:00Z'
+  topics:
+  - infrastructure
+  - environment
+  communities: []
+  geographic_scope: county_wide
+  urgency: ongoing
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: St. Johns County's $191.8 million SR 207 Water Reclamation Facility,
+    the largest capital improvement project in county history, is now serving residents.
+  review_status: verified
+  primary_topic: infrastructure
+  interest_tags:
+  - utility_impact
+  - quality_of_life
+  resident_relevance:
+    summary: The largest infrastructure project in SJC history is now operational
+      — a $191.8M water reclamation facility expands reclaimed water capacity.
+    affected_audiences:
+    - residents
+    - homeowners
+    - business_owners
+    why_it_matters: Expanded reclaimed water capacity supports growth and drought
+      resilience. Largest single infrastructure investment in county history.
+    confidence: high
+    inference_notes: Project completion directly stated. Resident benefit from reclaimed
+      water capacity is standard infrastructure value.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:30:00Z'
+  _beat: utilities_water
+  reviewer_notes: SR 207 WRF operational. Largest capital project.
+- item_id: SJC-CN-20260626-0002
+  title: Railroad Crossing Maintenance to Temporarily Close West King Street and Kinlaw
+    Road
+  summary: Railroad crossing maintenance will temporarily close the W. King Street
+    and Kinlaw Road crossings to all traffic, including vehicles, bicycles, and pedestrians.
+  source_id: sjc_county_news
+  source_url: https://www.sjcfl.us/news/
+  source_published_at: '2026-06-22'
+  discovered_at: '2026-06-26T07:30:00Z'
+  topics:
+  - transportation
+  - infrastructure
+  communities:
+  - st_augustine
+  geographic_scope: neighborhood
+  urgency: timely
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: Railroad crossing maintenance will temporarily close the W. King Street
+    and Kinlaw Road crossings to all traffic, including vehicles, bicycles, and pedestrians.
+  review_status: verified
+  primary_topic: transportation
+  interest_tags:
+  - traffic_impact
+  - safety_concern
+  resident_relevance:
+    summary: Two railroad crossings in St. Augustine will be closed for maintenance,
+      affecting local traffic patterns.
+    affected_audiences:
+    - commuters
+    - nearby_residents
+    why_it_matters: W. King Street and Kinlaw Road crossings closed to all traffic.
+      Plan alternate routes.
+    confidence: high
+    inference_notes: Closure details directly stated.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:30:00Z'
+  _beat: roadwork_traffic
+  reviewer_notes: Railroad crossing closure. Active traffic impact.
+- item_id: SJC-CN-20260626-0003
+  title: Local Businesses Invited to Join the Library Card Sign-Up Month Discount
+    Program
+  summary: St. Johns County Public Library invites local businesses to register for
+    the Library Card Sign-Up Month discount program. Deadline August 3 for marketing
+    materials.
+  source_id: sjc_county_news
+  source_url: https://www.sjcfl.us/news/
+  source_published_at: '2026-06-24'
+  discovered_at: '2026-06-26T07:30:00Z'
+  topics:
+  - library
+  - community_events
+  communities:
+  - countywide
+  geographic_scope: county_wide
+  urgency: timely
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  raw_excerpt: Interested businesses can register by August 3 for inclusion in marketing
+    materials with a final deadline of August 31.
+  review_status: verified
+  primary_topic: library
+  interest_tags:
+  - community_event
+  resident_relevance:
+    summary: Library card sign-up month offers discounts at participating local businesses.
+    affected_audiences:
+    - residents
+    - business_owners
+    why_it_matters: Businesses can register by August 3. Program benefits residents
+      with library card discounts.
+    confidence: high
+    inference_notes: All details directly stated.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:30:00Z'
+  _beat: parks_amenities
+  reviewer_notes: 'Batch verified: county news medium/high item. Official press release
+    with source URL.'
+- item_id: SJC-CN-20260626-0004
+  title: SJC Highlights Special Bond Between Recycling Driver and Three-Year-Old Resident
+  summary: Video showcases the heartwarming friendship between a local family and
+    an FCC Environmental Services recycling driver.
+  source_id: sjc_county_news
+  source_url: https://www.sjcfl.us/news/
+  source_published_at: '2026-06-25'
+  discovered_at: '2026-06-26T07:30:00Z'
+  topics:
+  - community_events
+  communities:
+  - countywide
+  geographic_scope: county_wide
+  urgency: archival
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  raw_excerpt: Video showcases the heartwarming friendship between local family and
+    FCC Environmental Services recycling driver.
+  review_status: rejected_noise
+  primary_topic: community_events
+  interest_tags:
+  - quality_of_life
+  resident_relevance:
+    summary: Feel-good story about a recycling driver's bond with a young resident.
+    affected_audiences:
+    - residents
+    why_it_matters: Community interest story highlighting positive local interactions.
+    confidence: medium
+    inference_notes: Story content directly stated. Resident impact is community interest.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:30:00Z'
+  _beat: parks_amenities
+  reviewer_notes: Recycling driver feel-good story. Not resident-impact intel.

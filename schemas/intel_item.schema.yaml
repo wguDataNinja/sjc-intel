@@ -1,0 +1,389 @@
+# =============================================================================
+# SJC_Intel — Intel Item Schema
+# =============================================================================
+# Defines the structure for a single intelligence item — the atomic unit of
+# information that a monitor produces when it detects new content from a source.
+#
+# An intel_item represents one discrete, actionable piece of information:
+# a news article, a press release, a public notice, a social media post,
+# a development tracker update, a school board agenda, etc.
+#
+# Schema version: 2.0
+# Status: configured
+# Changes in v2.0:
+#   - Added primary_topic (single canonical topic)
+#   - Added interest_tags (resident-interest dimensions)
+#   - Added resident_relevance block (summary, affected_audiences,
+#     why_it_matters, confidence, inference_notes)
+#   - Added taxonomy_gap (for proposing new tags)
+#   - Added human_review_required (sensitive item flag)
+# Changes in v1.1:
+#   - review_status: renamed "pending" → "pending_review" for clarity
+#   - recommended_channels: added website_review_queue, weekly_brief_candidate
+#   - topics, communities, geographic_scope now reference docs/taxonomy.md
+# =============================================================================
+
+# --- Core identity ---
+
+item_id:
+  type: string
+  description: >
+    Unique identifier for this intel item. Format:
+    SJC-{source_prefix}-{YYYYMMDD}-{NNNN} (sequential per source per day).
+  required: true
+  example: "SJC-SJSO-20260603-0001"
+
+title:
+  type: string
+  description: Headline or title of the item, extracted or summarized.
+  required: true
+  example: "SJSO Arrests Suspect in St. Augustine Pharmacy Robbery"
+
+summary:
+  type: string
+  description: >
+    One-to-three-sentence summary of the item's key information.
+    Written for a community reader — concise, factual, neutral.
+  required: true
+  example: "SJSO arrested a 34-year-old St. Augustine man on June 2 in connection
+    with the armed robbery of a pharmacy on US-1. No injuries were reported."
+
+# --- Source attribution ---
+
+source_id:
+  type: string
+  description: >
+    References the source_id in registry/sources.yaml that produced this item.
+  required: true
+  example: "sjso_news_stories"
+
+source_url:
+  type: string
+  description: Direct URL to the original item on the source website.
+  required: true
+  example: "https://www.sjso.org/news-stories/pharmacy-robbery-arrest-june-2026/"
+
+source_published_at:
+  type: string (ISO 8601)
+  description: >
+    Original publication date/time from the source. May differ from
+    discovered_at. Null if source doesn't provide a date.
+  required: false
+  example: "2026-06-02T16:30:00Z"
+
+# --- Discovery context ---
+
+discovered_at:
+  type: string (ISO 8601)
+  description: Timestamp when the monitor first detected this item.
+  required: true
+  example: "2026-06-03T06:15:00Z"
+
+discovered_by:
+  type: string
+  description: Worker/agent that discovered this item.
+  required: false
+  example: "hermes-sjso-monitor"
+
+# --- Classification ---
+
+topics:
+  type: array<string>
+  description: >
+    Topic tags for categorizing this item. Drawn from the controlled
+    vocabulary defined in docs/taxonomy.md. Use the most specific
+    applicable topic(s). At least one topic is required.
+  required: true
+  example: ["public_safety", "crime"]
+
+communities:
+  type: array<string>
+  description: >
+    Specific communities this item directly affects. Values drawn from
+    registry/communities.yaml. Empty array = county-wide relevance.
+  required: false
+  example: ["st_augustine", "us1_corridor"]
+
+geographic_scope:
+  type: string
+  description: >
+    Geographic breadth of this item. Values drawn from docs/taxonomy.md.
+    Allowed: county_wide, multi_community, single_community,
+    neighborhood, address_specific.
+  required: true
+  example: "county_wide"
+
+urgency:
+  type: string
+  description: >
+    Time-sensitivity of this item for the community. Values drawn from
+    docs/taxonomy.md.
+    urgent: Immediate action or awareness needed (safety alert, road closure).
+    timely: Relevant in the near term (meeting tonight, deadline this week).
+    ongoing: Evergreen or background information.
+    archival: Historical reference, not time-sensitive.
+  allowed: [urgent, timely, ongoing, archival]
+  required: true
+  example: "timely"
+
+# --- Verification & sensitivity ---
+
+verification_status:
+  type: string
+  description: >
+    How thoroughly this item has been verified. Values drawn from
+    docs/taxonomy.md.
+    unverified: Raw extract, not cross-checked.
+    source_confirmed: Original source is real and accessible.
+    cross_referenced: Information matches at least one other independent source.
+    fact_checked: Specific claims have been verified.
+    disputed: Contradictory information exists.
+  allowed:
+    [unverified, source_confirmed, cross_referenced, fact_checked, disputed]
+  required: true
+  example: "source_confirmed"
+
+sensitivity:
+  type: string
+  description: >
+    Sensitivity level for editorial handling. Values drawn from
+    docs/taxonomy.md.
+    low: Routine information, safe to publish.
+    medium: May involve named individuals, minor controversy, or
+           partially verified claims. Requires review.
+    high: Public safety, active incidents, legal matters, major
+          controversy. Requires human editorial review before any publication.
+  allowed: [low, medium, high]
+  required: true
+  example: "medium"
+
+# --- Publication channels ---
+
+recommended_channels:
+  type: array<string>
+  description: >
+    Suggested output channels for this item.
+    Allowed values (from docs/taxonomy.md): newsletter, website,
+    website_review_queue, social_brief, weekly_brief_candidate,
+    internal_only, alert.
+  required: false
+  example: ["website_review_queue", "weekly_brief_candidate"]
+
+# --- Raw content ---
+
+raw_excerpt:
+  type: string
+  description: >
+    Original excerpt from the source, verbatim. Keeps the raw signal
+    attached to the item for verification and audit. Typically the first
+    paragraph or a key sentence.
+  required: true
+  example: "On June 2, 2026, at approximately 4:30 PM, deputies responded to..."
+
+# --- Source citation ---
+
+citation:
+  type: object
+  description: Structured citation for attribution.
+  required: false
+  fields:
+    source_name:
+      type: string
+      description: Human-readable source name for attribution.
+      example: "St. Johns County Sheriff's Office"
+    source_type:
+      type: string
+      description: Type of source (government_website, social_media, etc.).
+      example: "government_website"
+    accessed_at:
+      type: string (ISO 8601)
+      description: When the source was accessed.
+      example: "2026-06-03T06:15:00Z"
+    url:
+      type: string
+      description: Direct URL to original.
+      example: "https://www.sjso.org/news-stories/pharmacy-robbery-arrest-june-2026/"
+    additional_sources:
+      type: array<string>
+      description: URLs of corroborating sources, if any.
+      example: []
+
+# --- Resident interest classification ---
+
+primary_topic:
+  type: string
+  description: >
+    The single most relevant topic for this item from the controlled
+    vocabulary in docs/taxonomy.md. More specific than the primary
+    topic in the topics array. Assigned by the resident-interest
+    classifier agent.
+  required: false
+  example: "crime"
+
+interest_tags:
+  type: array<string>
+  description: >
+    Interest-based tags that capture why a resident would engage with
+    this item. Drawn from docs/taxonomy.md (interest_tags vocabulary).
+    Examples: traffic_impact, safety_concern, cost_impact,
+    property_values, school_zones, quality_of_life, development_watch,
+    utility_impact, emergency_awareness, community_event.
+  required: false
+  example: ["safety_concern", "emergency_awareness"]
+
+resident_relevance:
+  type: object
+  description: >
+    Resident-perspective classification block. Assigned by the
+    resident-interest classifier agent. Separates source facts from
+    reasonable inference about why local residents would care.
+  required: false
+  fields:
+    summary:
+      type: string
+      description: >
+        One-to-two sentence explanation of why this matters to a
+        St. Johns County resident. Plain language, no jargon.
+      example: "An armed robbery on US-1 raises safety awareness for
+        nearby businesses and residents. Suspect is in custody."
+    affected_audiences:
+      type: array<string>
+      description: >
+        Specific resident groups affected. Drawn from docs/taxonomy.md
+        (audience vocabulary). Examples: residents, nearby_residents,
+        parents, students, commuters, homeowners, renters,
+        business_owners, retirees, visitors, prospective_movers,
+        local_workers.
+      example: ["nearby_residents", "business_owners", "commuters"]
+    why_it_matters:
+      type: string
+      description: >
+        Concrete description of the impact on daily life — traffic,
+        safety, cost, quality of life, property values, school
+        boundaries, utilities, etc.
+      example: >
+        Armed robbery on a major county corridor raises safety
+        concerns. Suspect in custody; investigation ongoing.
+    confidence:
+      type: string
+      description: >
+        Confidence in the resident-impact assessment.
+        high: Directly stated in source.
+        medium: Reasonable inference from source facts.
+        low: Speculative or unclear impact.
+      allowed: [high, medium, low]
+      example: "high"
+    inference_notes:
+      type: string
+      description: >
+        Notes on what was inferred versus directly stated in the
+        source. Transparency about the classification boundary.
+      example: >
+        Incident details directly from SJSO. Safety concern is
+        a standard community-awareness inference.
+
+taxonomy_gap:
+  type: string
+  description: >
+    Proposed new taxonomy tag if the item's topic or interest
+    dimension does not fit any existing canonical value. Only
+    sjc-intel-architect or Buddy may approve new tags. Null if
+    no gap exists.
+  required: false
+  example: ~
+
+human_review_required:
+  type: boolean
+  description: >
+    Whether this item requires mandatory human editorial review
+    before any publication or distribution. Default false. Set to
+    true for items involving: crime, arrest, suspect, victim,
+    minors, active emergencies, unresolved allegations, or
+    controversial policy.
+  required: false
+  example: true
+
+# --- Editorial review ---
+
+review_status:
+  type: string
+  description: >
+    Status of the editorial review process.
+    Allowed values (from docs/taxonomy.md):
+    pending_review: Awaiting editorial review (default for new items).
+    in_review: Being reviewed.
+    approved: Ready for publication.
+    changes_requested: Needs edits before approval.
+    rejected: Will not be published.
+    published: Has been published to one or more channels.
+  allowed:
+    [pending_review, in_review, approved, changes_requested, rejected, published]
+  required: true
+  example: "pending_review"
+
+reviewer_notes:
+  type: string
+  description: Notes from the human reviewer, if applicable.
+  required: false
+  example: "Confirmed with SJSO PIO. Verified suspect name redacted per policy."
+
+# --- Deprecation / replacement ---
+
+superseded_by:
+  type: string
+  description: >
+    item_id of a newer intel item that supersedes or updates this one.
+    Used for follow-up reporting or corrections.
+  required: false
+  example: "SJC-SJSO-20260604-0002"
+
+# --- Operational metadata ---
+
+created_at:
+  type: string (ISO 8601)
+  description: When this intel item record was first created.
+  required: true
+  example: "2026-06-03T06:16:00Z"
+
+updated_at:
+  type: string (ISO 8601)
+  description: When this intel item record was last modified.
+  required: false
+  example: "2026-06-03T14:00:00Z"
+
+# =============================================================================
+# YAML Template for an intel item record
+# =============================================================================
+# ---
+# item_id: "SJC-SJSO-20260603-0001"
+# title: "SJSO Arrests Suspect in St. Augustine Pharmacy Robbery"
+# summary: "SJSO arrested a 34-year-old St. Augustine man on June 2..."
+# source_id: "sjso_news_stories"
+# source_url: "https://www.sjso.org/news-stories/pharmacy-robbery-arrest-june-2026/"
+# source_published_at: "2026-06-02T16:30:00Z"
+# discovered_at: "2026-06-03T06:15:00Z"
+# discovered_by: "hermes-sjso-monitor"
+# topics:
+#   - public_safety
+#   - crime
+#   - arrest
+# communities:
+#   - st_augustine
+# geographic_scope: "county_wide"
+# urgency: "timely"
+# verification_status: "source_confirmed"
+# sensitivity: "medium"
+# recommended_channels:
+#   - website_review_queue
+#   - weekly_brief_candidate
+# raw_excerpt: "On June 2, 2026, at approximately 4:30 PM, deputies responded to..."
+# citation:
+#   source_name: "St. Johns County Sheriff's Office"
+#   source_type: "government_website"
+#   accessed_at: "2026-06-03T06:15:00Z"
+#   url: "https://www.sjso.org/news-stories/pharmacy-robbery-arrest-june-2026/"
+#   additional_sources: []
+# review_status: "pending_review"
+# reviewer_notes: ~
+# created_at: "2026-06-03T06:16:00Z"
+# updated_at: "2026-06-03T06:16:00Z"

@@ -1,0 +1,299 @@
+items:
+- item_id: SJC-UTIL-20260603-0001
+  title: Phase III Extreme Water Shortage Declaration — Active
+  summary: 'SJRWMD Phase III Extreme Water Shortage remains in effect as of June 2026
+    due to Extreme Drought (D3). Residential irrigation limited to one day per week,
+    prohibited 8 a.m. to 6 p.m. Reclaimed water exempt. This is the most severe water
+    shortage declaration since 2000.
+
+    '
+  source_id: sjc_utility_department
+  source_url: https://www.sjcfl.us/departments/utility-department/
+  source_published_at: '2026-05-11'
+  discovered_at: '2026-06-03T23:30:00Z'
+  discovered_by: hermes-sjc_utility_department
+  topics:
+  - environment
+  - infrastructure
+  - emergency_alerts
+  communities: []
+  geographic_scope: county_wide
+  urgency: urgent
+  verification_status: source_confirmed
+  sensitivity: medium
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  - alert
+  raw_excerpt: 'Beginning May 11, 2026, the St. Johns River Water Management District
+    (SJRWMD) has issued a Phase III Extreme Water Shortage Declaration. Residential
+    landscape irrigation is currently limited to one day per week and is prohibited
+    between 8 a.m. and 6 p.m.
+
+    '
+  citation:
+    source_name: St. Johns County Utility Department
+    source_type: government_website
+    accessed_at: '2026-06-03T23:30:00Z'
+    url: https://www.sjcfl.us/departments/utility-department/
+  review_status: verified
+  primary_topic: environment
+  interest_tags:
+  - utility_impact
+  - cost_impact
+  - emergency_awareness
+  resident_relevance:
+    summary: 'The most severe water shortage declaration since 2000 remains in effect.
+      All SJC residents face mandatory one-day-per-week irrigation limits.
+
+      '
+    affected_audiences:
+    - residents
+    - homeowners
+    - business_owners
+    why_it_matters: 'Ongoing irrigation restrictions affect all properties with landscaping.
+      Reclaimed water users exempt. Violations may result in penalties. Drought conditions
+      may lead to higher water costs.
+
+      '
+    confidence: high
+    inference_notes: 'Restriction details directly from SJRWMD via SJC Utility Department
+      page. Remains active as of June 3, 2026.
+
+      '
+  taxonomy_gap: water_restrictions
+  human_review_required: false
+  created_at: '2026-06-03T23:30:00Z'
+  reviewer_notes: Phase III water shortage. Same event as county news. Supporting
+    source.
+- item_id: SJC-UTIL-20260603-0002
+  title: Free Chlorine Burnout Scheduled June 1–21
+  summary: 'The County Road 214 Water Treatment Plant is conducting a free chlorine
+    burnout from June 1 to June 21 to enhance water quality. Water remains safe to
+    drink. Customers may notice slight discoloration, cloudiness, or chlorine odor.
+
+    '
+  source_id: sjc_utility_department
+  source_url: https://www.sjcfl.us/departments/utility-department/
+  source_published_at: '2026-05-26'
+  discovered_at: '2026-06-03T23:30:00Z'
+  discovered_by: hermes-sjc_utility_department
+  topics:
+  - infrastructure
+  communities: []
+  geographic_scope: county_wide
+  urgency: timely
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  raw_excerpt: 'Beginning June 1 for approximately 21 days, the County Road 214 Water
+    Treatment Plant will temporarily switch to free chlorine disinfection as part
+    of ongoing efforts to enhance water quality in the distribution system.
+
+    '
+  citation:
+    source_name: St. Johns County Utility Department
+    source_type: government_website
+    accessed_at: '2026-06-03T23:30:00Z'
+    url: https://www.sjcfl.us/departments/utility-department/
+  review_status: verified
+  primary_topic: infrastructure
+  interest_tags:
+  - utility_impact
+  resident_relevance:
+    summary: 'Annual water treatment maintenance may cause temporary water discoloration
+      or chlorine odor through June 21. Water remains safe.
+
+      '
+    affected_audiences:
+    - residents
+    - business_owners
+    why_it_matters: 'Customers may notice slight discoloration, cloudiness, or chlorine
+      taste in tap water. Critical users (dialysis centers, hospitals, pet businesses)
+      should consult water treatment professionals.
+
+      '
+    confidence: high
+    inference_notes: Maintenance schedule and expected impacts directly stated.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-03T23:30:00Z'
+  reviewer_notes: 'Batch verified: utility department announcement. Official county
+    utility notice with source URL.'
+- item_id: SJC-UTIL-20260603-0003
+  title: $191 Million SR 207 Water Reclamation Facility Phase 2 Approved
+  summary: 'St. Johns County BOCC approved Phase 2 of the State Road 207 Water Reclamation
+    Facility Project, awarding a $191.8M design-build agreement with Jacobs Project
+    Management Co. for the new facility and associated improvements.
+
+    '
+  source_id: sjc_utility_department
+  source_url: https://www.sjcfl.us/departments/utility-department/
+  source_published_at: '2025-12-19'
+  discovered_at: '2026-06-03T23:30:00Z'
+  discovered_by: hermes-sjc_utility_department
+  topics:
+  - infrastructure
+  - county_government
+  communities: []
+  geographic_scope: county_wide
+  urgency: archival
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  raw_excerpt: 'During the Dec. 19th regular meeting, the St. Johns County Board of
+    County Commissioners (BOCC) approved Phase 2 of the State Road 207 Water Reclamation
+    Facility Project.
+
+    '
+  citation:
+    source_name: St. Johns County Utility Department
+    source_type: government_website
+    accessed_at: '2026-06-03T23:30:00Z'
+    url: https://www.sjcfl.us/departments/utility-department/
+  review_status: verified
+  primary_topic: infrastructure
+  interest_tags:
+  - utility_impact
+  - development_watch
+  resident_relevance:
+    summary: 'Major $191M water reclamation facility approved for SR 207 corridor
+      — the largest single utility infrastructure investment in recent county history.
+
+      '
+    affected_audiences:
+    - residents
+    - homeowners
+    - business_owners
+    why_it_matters: 'Large-scale water reclamation infrastructure supports continued
+      growth in the SR 207 corridor and southern St. Johns County. Construction timeline
+      and rate impacts are not yet specified.
+
+      '
+    confidence: medium
+    inference_notes: 'BOCC approval detail directly stated. Growth-support and rate
+      impact are reasonable inferences from project scale.
+
+      '
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-03T23:30:00Z'
+  reviewer_notes: 'Batch verified: utility department announcement. Official county
+    utility notice with source URL.'
+- item_id: SJC-UTIL-20260603-0004
+  title: $4.6 Million Utilities Lab Ribbon-Cutting and Open House
+  summary: 'St. Johns County celebrated completion of the new $4.6 million Utilities
+    Lab with a ribbon-cutting ceremony. The lab features corrosion-resistant cabinets,
+    walk-in cooler for sample storage, lab sinks with de-ionized water, and backup
+    generator.
+
+    '
+  source_id: sjc_utility_department
+  source_url: https://www.sjcfl.us/departments/utility-department/
+  source_published_at: null
+  discovered_at: '2026-06-03T23:30:00Z'
+  discovered_by: hermes-sjc_utility_department
+  topics:
+  - infrastructure
+  communities: []
+  geographic_scope: county_wide
+  urgency: archival
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  raw_excerpt: 'St. Johns County held a ribbon-cutting ceremony to celebrate the completion
+    of the new $4.6 million St. Johns County Utilities Lab.
+
+    '
+  citation:
+    source_name: St. Johns County Utility Department
+    source_type: government_website
+    accessed_at: '2026-06-03T23:30:00Z'
+    url: https://www.sjcfl.us/departments/utility-department/
+  review_status: verified
+  primary_topic: infrastructure
+  interest_tags:
+  - quality_of_life
+  resident_relevance:
+    summary: 'New county utilities lab improves water testing capabilities for St.
+      Johns County''s drinking water system.
+
+      '
+    affected_audiences:
+    - residents
+    why_it_matters: 'Improved water testing lab supports water quality monitoring
+      and compliance. Indirect benefit to all county water customers.
+
+      '
+    confidence: medium
+    inference_notes: 'Facility details directly stated. Resident benefit is a reasonable
+      inference from lab purpose.
+
+      '
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-03T23:30:00Z'
+  reviewer_notes: 'Batch verified: utility department announcement. Official county
+    utility notice with source URL.'
+- item_id: SJC-UTIL-20260603-0005
+  title: Utility Department Water Service Line Material Inventory
+  summary: 'St. Johns County Utility Department is conducting a water service line
+    material inventory to identify pipe materials as part of the EPA Community Lead-Safe
+    Hub initiative. Customers may be contacted for access to inspect service lines.
+
+    '
+  source_id: sjc_utility_department
+  source_url: https://www.sjcfl.us/departments/utility-department/
+  source_published_at: null
+  discovered_at: '2026-06-03T23:30:00Z'
+  discovered_by: hermes-sjc_utility_department
+  topics:
+  - infrastructure
+  - health_wellness
+  communities: []
+  geographic_scope: county_wide
+  urgency: ongoing
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: 'Find out more on the Saint Johns County Community Lead-Safe Hub.
+
+    '
+  citation:
+    source_name: St. Johns County Utility Department
+    source_type: government_website
+    accessed_at: '2026-06-03T23:30:00Z'
+    url: https://www.sjcfl.us/departments/utility-department/
+  review_status: verified
+  primary_topic: infrastructure
+  interest_tags:
+  - utility_impact
+  - safety_concern
+  resident_relevance:
+    summary: 'County is inventorying water service line materials to identify any
+      lead pipes, in line with EPA safety guidelines.
+
+      '
+    affected_audiences:
+    - residents
+    - homeowners
+    why_it_matters: 'Lead pipe identification program affects drinking water safety.
+      Some residents may be contacted for property access to inspect service lines.
+      No lead pipes confirmed; this is a proactive inventory.
+
+      '
+    confidence: medium
+    inference_notes: 'Program existence directly stated. Customer contact is standard
+      for service line inventory programs. No specific findings reported.
+
+      '
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-03T23:30:00Z'
+  reviewer_notes: 'Batch verified: utility department announcement. Official county
+    utility notice with source URL.'

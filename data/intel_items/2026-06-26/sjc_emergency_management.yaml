@@ -1,0 +1,49 @@
+source_id: sjc_emergency_management
+fetched_at: '2026-06-26T07:40:00Z'
+source_url: https://www.sjcfl.us/departments/emergency-mgmt/
+total_items: 1
+items:
+- item_id: SJC-EM-20260626-0001
+  title: Residents Urged to Prepare as 2026 Atlantic Hurricane Season Begins
+  summary: St. Johns County Emergency Management urges residents to prepare for the
+    2026 Atlantic Hurricane Season, which began June 1. Highlights simple steps to
+    protect lives and property.
+  source_id: sjc_emergency_management
+  source_url: https://www.sjcfl.us/departments/emergency-mgmt/
+  source_published_at: '2026-06-01'
+  discovered_at: '2026-06-26T07:40:00Z'
+  topics:
+  - public_safety
+  - emergency_alerts
+  - environment
+  communities:
+  - countywide
+  geographic_scope: county_wide
+  urgency: timely
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: Emergency Management highlights simple steps to protect lives and property
+    ahead of potential storms.
+  review_status: verified
+  primary_topic: public_safety
+  interest_tags:
+  - emergency_awareness
+  resident_relevance:
+    summary: Hurricane season is here. Emergency Management encourages all SJC residents
+      to prepare now.
+    affected_audiences:
+    - residents
+    - homeowners
+    - nearby_residents
+    why_it_matters: June 1 marks the start of hurricane season. Residents should review
+      plans, sign up for Alert St. Johns, and know their evacuation zone.
+    confidence: high
+    inference_notes: Preparedness messaging directly from county Emergency Management.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:40:00Z'
+  _beat: emergency_weather_fire_flood
+  reviewer_notes: Hurricane preparedness. Seasonal awareness.

@@ -1,0 +1,100 @@
+# May 2026 Topic Clusters
+# Generated: 2026-06-03
+# Worker: historical-backfill-2026-05 (Task B)
+# Total items: 21
+# Clusters: 4
+# Unclustered: 5
+
+clusters:
+  - cluster_id: "2026-05-cluster-001"
+    label: "Phase III Extreme Water Shortage and Water Restrictions"
+    item_ids:
+      - "SJC-BF-202605-0001"
+      - "SJC-BF-202605-0005"
+    count: 2
+    source_types:
+      - "sjc_county_news"
+      - "sjrwmd_watering_restrictions"
+    communities:
+      - "countywide"
+    beat_candidate: "utilities_water"
+    severity: "high"
+    rationale: >
+      Two items from different official sources covering the same event: the
+      May 11 Phase III Extreme Water Shortage Declaration. County news
+      announced it May 13; SJRWMD source confirms the order. This is the
+      highest-impact event of May 2026 for SJC residents.
+
+  - cluster_id: "2026-05-cluster-002"
+    label: "SJCSD Program and Policy Announcements"
+    item_ids:
+      - "SJC-BF-202605-0007"
+      - "SJC-BF-202605-0008"
+      - "SJC-BF-202605-0009"
+      - "SJC-BF-202605-0010"
+      - "SJC-BF-202605-0011"
+      - "SJC-BF-202605-0012"
+    count: 6
+    source_types:
+      - "sjc_school_district"
+    communities:
+      - "countywide"
+    beat_candidate: "school_capacity"
+    severity: "medium"
+    rationale: >
+      Six education items from SJCSD covering student programs (St. Johns
+      Compass, Programs of Choice, Tech Toolkit), policy (Code of Conduct,
+      internet safety), and funding (surtax/millage). Multiple announcements
+      in late May suggest end-of-school-year administrative cycle.
+
+  - cluster_id: "2026-05-cluster-003"
+    label: "SJCSD Recognition and Awards Season"
+    item_ids:
+      - "SJC-BF-202605-0013"
+      - "SJC-BF-202605-0015"
+      - "SJC-BF-202605-0016"
+      - "SJC-BF-202605-0017"
+      - "SJC-BF-202605-0018"
+    count: 5
+    source_types:
+      - "sjc_school_district"
+    communities:
+      - "countywide"
+      - "st_augustine"
+    beat_candidate: "school_capacity"
+    severity: "low"
+    rationale: >
+      End-of-school-year recognition cluster: STAR Awards, CTE Awards, All
+      Access video series, A-grade confirmation, and SAHS graduation. May is
+      the peak season for school recognitions and graduations.
+
+  - cluster_id: "2026-05-cluster-004"
+    label: "Public Safety and Corrections"
+    item_ids:
+      - "SJC-BF-202605-0019"
+      - "SJC-BF-202605-0020"
+    count: 2
+    source_types:
+      - "sjso_news_stories"
+    communities:
+      - "countywide"
+    beat_candidate: "public_safety_livability"
+    severity: "medium"
+    rationale: >
+      Two SJSO news stories from May: a contraband incident at the corrections
+      facility and a lifesaving rescue highlighting vulnerable-persons programs.
+      Contrasting tones (enforcement vs. community service).
+
+unclustered:
+  - item_id: "SJC-BF-202605-0002"
+    reason: "Single library/community event item — not enough related items for cluster"
+  - item_id: "SJC-BF-202605-0003"
+    reason: "Single county surplus auction item — not enough related items for cluster"
+  - item_id: "SJC-BF-202605-0004"
+    reason: "Single coastal infrastructure project item — not enough related items for cluster"
+  - item_id: "SJC-BF-202605-0006"
+    reason: "Single utility maintenance announcement item — not enough related items for cluster"
+  - item_id: "SJC-BF-202605-0014"
+    reason: "Single School Board meeting item — not enough related items for cluster"
+  - item_id: "SJC-BF-202605-0021"
+    reason: "Single emergency preparedness item — not enough related items for cluster"

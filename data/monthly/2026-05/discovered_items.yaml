@@ -1,0 +1,1046 @@
+# May 2026 Discovered Items
+# Generated: 2026-06-03
+# Worker: historical-backfill-2026-05 (Task A)
+# Source scope: Official/high-authority only (Tier 1 + Tier 2)
+# Total items: 21
+
+items:
+  - item_id: "SJC-BF-202605-0001"
+    title: "St. Johns County Enters Phase III Extreme Water Shortage Declaration"
+    summary: >
+      The St. Johns River Water Management District (SJRWMD) issued a Phase III
+      Extreme Water Shortage Declaration effective May 11, 2026, due to Extreme
+      Drought (D3) conditions. Residential irrigation limited to one day per
+      week. Reclaimed water is exempt.
+    source_id: "sjc_county_news"
+    source_url: "https://www.sjcfl.us/news/"
+    source_published_at: "2026-05-13"
+    discovered_at: "2026-06-03T23:00:00Z"
+    topics:
+      - environment
+      - infrastructure
+      - emergency_alerts
+    communities: ["countywide"]
+    geographic_scope: "county_wide"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "medium"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: >
+      Phase III Extreme Water Shortage Declared Across Northeast Florida – The
+      St. Johns River Water Management District has issued a Phase III Extreme
+      Water Shortage Declaration.
+    citation:
+      source_name: "St. Johns County"
+      source_type: "government_website"
+      accessed_at: "2026-06-03T23:00:00Z"
+      url: "https://www.sjcfl.us/news/"
+    review_status: "pending_review"
+    primary_topic: "environment"
+    interest_tags:
+      - "utility_impact"
+      - "cost_impact"
+      - "emergency_awareness"
+    resident_relevance:
+      summary: >
+        The most severe water shortage declaration in Florida since 2000 imposes
+        mandatory one-day-per-week watering restrictions for all SJC residents.
+      affected_audiences:
+        - "residents"
+        - "homeowners"
+        - "business_owners"
+      why_it_matters: >
+        All residents with irrigation systems must reduce watering to one day
+        per week. Landscaping-dependent properties need immediate schedule
+        changes. Drought may lead to higher water costs or further restrictions.
+      confidence: "high"
+      inference_notes: >
+        Declaration details directly from official county news. Cost impact
+        inference is reasonable given typical utility rate structures during
+        scarcity.
+    taxonomy_gap: "water_restrictions"
+    human_review_required: false
+    created_at: "2026-06-03T23:00:00Z"
+
+  - item_id: "SJC-BF-202605-0002"
+    title: "Public Library Announces 2026 Summer Reading Program"
+    summary: >
+      St. Johns County Public Library System (SJCPLS) announced 'Stars, Stripes,
+      and Stories' Summer Reading Program with events at all six branches.
+    source_id: "sjc_county_news"
+    source_url: "https://www.sjcfl.us/news/"
+    source_published_at: "2026-05-18"
+    discovered_at: "2026-06-03T23:00:00Z"
+    topics:
+      - library
+      - community_events
+    communities: ["countywide"]
+    geographic_scope: "county_wide"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: >
+      'Stars, Stripes, and Stories' at SJCPLS with engaging events and rewards
+      for all ages.
+    citation:
+      source_name: "St. Johns County"
+      source_type: "government_website"
+      accessed_at: "2026-06-03T23:00:00Z"
+      url: "https://www.sjcfl.us/news/"
+    review_status: "pending_review"
+    primary_topic: "library"
+    interest_tags:
+      - "community_event"
+      - "quality_of_life"
+    resident_relevance:
+      summary: >
+        Free county-wide summer reading program at all six library branches
+        — a low-cost way to keep kids engaged during summer break.
+      affected_audiences:
+        - "parents"
+        - "students"
+        - "residents"
+      why_it_matters: >
+        Free summer enrichment for families. Helps prevent summer reading loss.
+        Accessible at any of six branch locations across the county.
+      confidence: "high"
+      inference_notes: "All details directly stated. Value to parents and students clear from program description."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-03T23:00:00Z"
+
+  - item_id: "SJC-BF-202605-0003"
+    title: "Surplus Goods Public Auction Scheduled for June 20"
+    summary: >
+      St. Johns County will hold a public surplus auction on Saturday, June 20,
+      at 2416 Dobbs Road. County-owned surplus goods available to the public.
+    source_id: "sjc_county_news"
+    source_url: "https://www.sjcfl.us/news/"
+    source_published_at: "2026-05-26"
+    discovered_at: "2026-06-03T23:00:00Z"
+    topics:
+      - county_government
+      - public_notices
+    communities: ["countywide"]
+    geographic_scope: "county_wide"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+    raw_excerpt: >
+      St. Johns County will hold a public surplus auction on Saturday, June 20,
+      at 2416 Dobbs Road.
+    citation:
+      source_name: "St. Johns County"
+      source_type: "government_website"
+      accessed_at: "2026-06-03T23:00:00Z"
+      url: "https://www.sjcfl.us/news/"
+    review_status: "pending_review"
+    primary_topic: "county_government"
+    interest_tags:
+      - "cost_impact"
+    resident_relevance:
+      summary: >
+        County surplus auction offers residents access to government-surplus
+        goods at public sale.
+      affected_audiences:
+        - "residents"
+        - "business_owners"
+      why_it_matters: >
+        Opportunity to purchase county surplus items at auction. June 20 date
+        at 2416 Dobbs Road.
+      confidence: "high"
+      inference_notes: "All details directly stated."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-03T23:00:00Z"
+
+  - item_id: "SJC-BF-202605-0004"
+    title: "SJC Highlights Long-Term Resiliency Improvements at Porpoise Point Beach Access Ramp"
+    summary: >
+      St. Johns County completed approximately $524,000 in resiliency
+      improvements at Porpoise Point Vehicular Beach Access Ramp, improving
+      flood mitigation and long-term durability.
+    source_id: "sjc_county_news"
+    source_url: "https://www.sjcfl.us/news/"
+    source_published_at: "2026-05-26"
+    discovered_at: "2026-06-03T23:00:00Z"
+    topics:
+      - coastal_projects
+      - infrastructure
+      - environment
+    communities: ["vilano_beach", "porpoise_point"]
+    geographic_scope: "neighborhood"
+    urgency: "ongoing"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: >
+      Approximately $524,000 project improves flood mitigation, beach access,
+      and long-term durability for the Porpoise Point community.
+    citation:
+      source_name: "St. Johns County"
+      source_type: "government_website"
+      accessed_at: "2026-06-03T23:00:00Z"
+      url: "https://www.sjcfl.us/news/"
+    review_status: "pending_review"
+    primary_topic: "coastal_projects"
+    interest_tags:
+      - "quality_of_life"
+      - "safety_concern"
+    resident_relevance:
+      summary: >
+        Porpoise Point beach access ramp received $524K in resiliency upgrades
+        improving flood protection and durability for the coastal community.
+      affected_audiences:
+        - "nearby_residents"
+        - "visitors"
+      why_it_matters: >
+        Improved beach access and flood mitigation for Porpoise Point residents
+        and visitors. Part of ongoing coastal infrastructure investment.
+      confidence: "high"
+      inference_notes: "Project details directly stated. Resident benefit inferred from project purpose."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-03T23:00:00Z"
+
+  - item_id: "SJC-BF-202605-0005"
+    title: "SJRWMD Phase III Extreme Water Shortage — One-Day-Per-Week Irrigation"
+    summary: >
+      SJRWMD Phase III Extreme Water Shortage effective May 11. Residential
+      watering limited to one day per week between 8 a.m. and 6 p.m. Reclaimed
+      water exempt. Extreme Drought (D3) conditions cited.
+    source_id: "sjrwmd_watering_restrictions"
+    source_url: "https://www.sjrwmd.com/permitting/"
+    source_published_at: "2026-05-11"
+    discovered_at: "2026-06-03T23:00:00Z"
+    topics:
+      - environment
+      - infrastructure
+      - emergency_alerts
+    communities: ["countywide"]
+    geographic_scope: "county_wide"
+    urgency: "urgent"
+    verification_status: "source_confirmed"
+    sensitivity: "medium"
+    recommended_channels:
+      - "website_review_queue"
+      - "alert"
+    raw_excerpt: >
+      Beginning May 11, 2026, the St. Johns River Water Management District
+      (SJRWMD) has issued a Phase III Extreme Water Shortage Declaration.
+    citation:
+      source_name: "St. Johns River Water Management District"
+      source_type: "government_website"
+      accessed_at: "2026-06-03T23:00:00Z"
+      url: "https://www.sjrwmd.com/permitting/"
+    review_status: "pending_review"
+    primary_topic: "environment"
+    interest_tags:
+      - "utility_impact"
+      - "cost_impact"
+      - "emergency_awareness"
+    resident_relevance:
+      summary: >
+        Extreme Drought triggers strictest watering restrictions since 2000.
+        One-day-per-week irrigation for all SJC residents.
+      affected_audiences:
+        - "residents"
+        - "homeowners"
+        - "business_owners"
+      why_it_matters: >
+        Mandatory irrigation limits affect all properties with landscaping.
+        Reclaimed water users exempt. Penalties for non-compliance.
+      confidence: "high"
+      inference_notes: "Official SJRWMD declaration. Restriction details directly stated."
+    taxonomy_gap: "water_restrictions"
+    human_review_required: false
+    created_at: "2026-06-03T23:00:00Z"
+
+  - item_id: "SJC-BF-202605-0006"
+    title: "County Utility Department Announces June Chlorine Burnout Maintenance"
+    summary: >
+      St. Johns County Utility Department announced a free chlorine burnout
+      at the CR 214 Water Treatment Plant beginning June 1 for approximately
+      21 days to maintain distribution system water quality.
+    source_id: "sjc_utility_department"
+    source_url: "https://www.sjcfl.us/departments/utility-department/"
+    source_published_at: "2026-05-26"
+    discovered_at: "2026-06-03T23:00:00Z"
+    topics:
+      - infrastructure
+    communities: ["countywide"]
+    geographic_scope: "county_wide"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+    raw_excerpt: >
+      Beginning June 1 for approximately 21 days, the County Road 214 Water
+      Treatment Plant will temporarily switch to free chlorine disinfection.
+    citation:
+      source_name: "St. Johns County Utility Department"
+      source_type: "government_website"
+      accessed_at: "2026-06-03T23:00:00Z"
+      url: "https://www.sjcfl.us/departments/utility-department/"
+    review_status: "pending_review"
+    primary_topic: "infrastructure"
+    interest_tags:
+      - "utility_impact"
+    resident_relevance:
+      summary: >
+        Annual water treatment maintenance may cause temporary discoloration or
+        chlorine odor, but water remains safe to drink.
+      affected_audiences:
+        - "residents"
+        - "business_owners"
+      why_it_matters: >
+        Customers may notice slight discoloration, cloudiness, or chlorine odor
+        in tap water during June. Water remains safe. Critical users (dialysis,
+        hospitals) should consult their water treatment professionals.
+      confidence: "high"
+      inference_notes: "Maintenance schedule and impacts directly stated."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-03T23:00:00Z"
+
+  - item_id: "SJC-BF-202605-0007"
+    title: "SJCSD Student Code of Conduct Survey Results Published"
+    summary: >
+      St. Johns County School District published results of the public survey
+      on the Student Code of Conduct conducted in March 2026. Results will
+      inform annual review and updates.
+    source_id: "sjc_school_district"
+    source_url: "https://www.stjohns.k12.fl.us/"
+    source_published_at: "2026-05-27"
+    discovered_at: "2026-06-03T23:00:00Z"
+    topics:
+      - education
+    communities: ["countywide"]
+    geographic_scope: "county_wide"
+    urgency: "ongoing"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+    raw_excerpt: >
+      During March, the St. Johns County School District invited the public to
+      provide feedback on the current Student Code of Conduct through a brief
+      online survey.
+    citation:
+      source_name: "St. Johns County School District"
+      source_type: "government_website"
+      accessed_at: "2026-06-03T23:00:00Z"
+      url: "https://www.stjohns.k12.fl.us/"
+    review_status: "pending_review"
+    primary_topic: "education"
+    interest_tags:
+      - "quality_of_life"
+    resident_relevance:
+      summary: >
+        School district seeking community input on Student Code of Conduct
+        updates, with survey results now published for review.
+      affected_audiences:
+        - "parents"
+        - "students"
+      why_it_matters: >
+        Annual Code of Conduct review affects student rights and
+        responsibilities across all SJC schools. Survey results will guide
+        updates.
+      confidence: "medium"
+      inference_notes: "Survey details directly stated. Impact on families is inferred."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-03T23:00:00Z"
+
+  - item_id: "SJC-BF-202605-0008"
+    title: "SJCSD Launches St. Johns Compass Program for August 2026"
+    summary: >
+      St. Johns County School District announced St. Johns Compass, a new
+      program launching August 2026 to expand access to high-quality public
+      education for eligible students.
+    source_id: "sjc_school_district"
+    source_url: "https://www.stjohns.k12.fl.us/"
+    source_published_at: "2026-05-26"
+    discovered_at: "2026-06-03T23:00:00Z"
+    topics:
+      - education
+    communities: ["countywide"]
+    geographic_scope: "county_wide"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: >
+      The St. Johns County School District will launch St. Johns Compass in
+      August 2026, introducing a new opportunity designed to expand access to
+      a high-quality public education for eligible students.
+    citation:
+      source_name: "St. Johns County School District"
+      source_type: "government_website"
+      accessed_at: "2026-06-03T23:00:00Z"
+      url: "https://www.stjohns.k12.fl.us/"
+    review_status: "pending_review"
+    primary_topic: "education"
+    interest_tags:
+      - "quality_of_life"
+      - "property_values"
+    resident_relevance:
+      summary: >
+        New SJCSD program launching August 2026 aimed at expanding educational
+        access. Details forthcoming on eligibility and scope.
+      affected_audiences:
+        - "parents"
+        - "students"
+        - "prospective_movers"
+      why_it_matters: >
+        New educational options may affect school choice decisions for families.
+        Program details to be clarified before August launch.
+      confidence: "medium"
+      inference_notes: "Program purpose directly stated. Eligibility and enrollment details not yet published."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-03T23:00:00Z"
+
+  - item_id: "SJC-BF-202605-0009"
+    title: "SJCSD Program of Choice Space Available Application Period Open"
+    summary: >
+      St. Johns County School District space available application period for
+      Programs of Choice is open through June 30, 2026, or until all seats
+      are filled.
+    source_id: "sjc_school_district"
+    source_url: "https://www.stjohns.k12.fl.us/"
+    source_published_at: "2026-05-27"
+    discovered_at: "2026-06-03T23:00:00Z"
+    topics:
+      - education
+    communities: ["countywide"]
+    geographic_scope: "county_wide"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: >
+      The Space Available Application period closes June 30, 2026, or until all
+      seats are filled, whichever comes first. Apply now!
+    citation:
+      source_name: "St. Johns County School District"
+      source_type: "government_website"
+      accessed_at: "2026-06-03T23:00:00Z"
+      url: "https://www.stjohns.k12.fl.us/"
+    review_status: "pending_review"
+    primary_topic: "education"
+    interest_tags:
+      - "school_zones"
+    resident_relevance:
+      summary: >
+        Families can apply for remaining seats in SJCSD Programs of Choice
+        through June 30.
+      affected_audiences:
+        - "parents"
+        - "students"
+      why_it_matters: >
+        Opportunity to enroll children in specialized programs across the
+        district. Space-available basis; apply before June 30 deadline.
+      confidence: "high"
+      inference_notes: "All details directly stated."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-03T23:00:00Z"
+
+  - item_id: "SJC-BF-202605-0010"
+    title: "SJCSD Real Talk: Internet Safety and Responsibility Podcast"
+    summary: >
+      St. Johns County School District, in conjunction with the 7th Judicial
+      Circuit State Attorney's Office, produced a podcast on internet safety
+      featuring the Superintendent's Student Advisory Council.
+    source_id: "sjc_school_district"
+    source_url: "https://www.stjohns.k12.fl.us/"
+    source_published_at: "2026-05-21"
+    discovered_at: "2026-06-03T23:00:00Z"
+    topics:
+      - education
+      - public_safety
+    communities: ["countywide"]
+    geographic_scope: "county_wide"
+    urgency: "ongoing"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+    raw_excerpt: >
+      In conjunction with the 7th Judicial Circuit State Attorney's Office,
+      members of the Superintendent's Student Advisory Council participated
+      in a podcast recording titled Real Talk: Internet Safety and
+      Responsibility.
+    citation:
+      source_name: "St. Johns County School District"
+      source_type: "government_website"
+      accessed_at: "2026-06-03T23:00:00Z"
+      url: "https://www.stjohns.k12.fl.us/"
+    review_status: "pending_review"
+    primary_topic: "education"
+    interest_tags:
+      - "safety_concern"
+    resident_relevance:
+      summary: >
+        Student-produced podcast on internet safety, in partnership with the
+        State Attorney's Office, promoting digital responsibility.
+      affected_audiences:
+        - "parents"
+        - "students"
+      why_it_matters: >
+        Internet safety education resource produced by and for SJC students.
+        Addresses digital citizenship and online responsibility.
+      confidence: "medium"
+      inference_notes: "Podcast topic and partners directly stated. Specific content not reviewed."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-03T23:00:00Z"
+
+  - item_id: "SJC-BF-202605-0011"
+    title: "Community Support for SJCSD Half-Cent Sales Surtax and One Mill Confirmed"
+    summary: >
+      St. Johns County voters approved continuing the half-cent sales surtax
+      for school capital outlay and adding one mill of operating millage to
+      preserve educational programs during the November 2024 election. Impact
+      continues into 2026.
+    source_id: "sjc_school_district"
+    source_url: "https://www.stjohns.k12.fl.us/"
+    source_published_at: "2026-05-18"
+    discovered_at: "2026-06-03T23:00:00Z"
+    topics:
+      - education
+      - taxes
+    communities: ["countywide"]
+    geographic_scope: "county_wide"
+    urgency: "ongoing"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+    raw_excerpt: >
+      During the November 2024 election, St. Johns County voted to support its
+      local schools by continuing the half-cent sales surtax and by adding one
+      mill of operating millage.
+    citation:
+      source_name: "St. Johns County School District"
+      source_type: "government_website"
+      accessed_at: "2026-06-03T23:00:00Z"
+      url: "https://www.stjohns.k12.fl.us/"
+    review_status: "pending_review"
+    primary_topic: "education"
+    interest_tags:
+      - "cost_impact"
+      - "quality_of_life"
+    resident_relevance:
+      summary: >
+        Voter-approved school funding measures continue supporting programs,
+        staffing, and capital projects in 2026.
+      affected_audiences:
+        - "parents"
+        - "homeowners"
+        - "residents"
+      why_it_matters: >
+        Half-cent sales surtax and one-mill property tax continue funding
+        school operations and construction. Affects both taxpayers and the
+        quality of local schools.
+      confidence: "high"
+      inference_notes: "Election results directly stated. Ongoing impact inferred from funding mechanism."
+    taxonomy_gap: "budget_millage"
+    human_review_required: false
+    created_at: "2026-06-03T23:00:00Z"
+
+  - item_id: "SJC-BF-202605-0012"
+    title: "SJCSD Family Tech Toolkit Virtual Sessions Announced"
+    summary: >
+      St. Johns County School District announced a series of virtual Family
+      Tech Toolkit sessions starting May 29 to help families support their
+      child's learning using district-approved digital tools.
+    source_id: "sjc_school_district"
+    source_url: "https://www.stjohns.k12.fl.us/"
+    source_published_at: "2026-05-29"
+    discovered_at: "2026-06-03T23:00:00Z"
+    topics:
+      - education
+    communities: ["countywide"]
+    geographic_scope: "county_wide"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: >
+      Join us for a series of one-hour sessions designed to help families better
+      understand and support their child's learning using district-approved
+      digital tools.
+    citation:
+      source_name: "St. Johns County School District"
+      source_type: "government_website"
+      accessed_at: "2026-06-03T23:00:00Z"
+      url: "https://www.stjohns.k12.fl.us/"
+    review_status: "pending_review"
+    primary_topic: "education"
+    interest_tags:
+      - "community_event"
+    resident_relevance:
+      summary: >
+        Free virtual sessions for SJCSD families to learn about digital tools
+        supporting student learning.
+      affected_audiences:
+        - "parents"
+        - "students"
+      why_it_matters: >
+        Free training for parents on district-approved digital learning tools.
+        Sessions begin May 29 via TEAMS.
+      confidence: "high"
+      inference_notes: "All details directly stated."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-03T23:00:00Z"
+
+  - item_id: "SJC-BF-202605-0013"
+    title: "SJCSD Maintains 'A' Grade — District-Wide Achievement"
+    summary: >
+      St. Johns County schools maintained an 'A' grade, as reported by the
+      Ponte Vedra Recorder and referenced by the school district on May 21.
+    source_id: "sjc_school_district"
+    source_url: "https://www.stjohns.k12.fl.us/"
+    source_published_at: "2026-05-21"
+    discovered_at: "2026-06-03T23:00:00Z"
+    topics:
+      - education
+    communities: ["countywide"]
+    geographic_scope: "county_wide"
+    urgency: "ongoing"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: >
+      St. Johns County schools maintain A grade.
+    citation:
+      source_name: "St. Johns County School District (citing Ponte Vedra Recorder)"
+      source_type: "government_website"
+      accessed_at: "2026-06-03T23:00:00Z"
+      url: "https://www.stjohns.k12.fl.us/"
+    review_status: "pending_review"
+    primary_topic: "education"
+    interest_tags:
+      - "property_values"
+      - "quality_of_life"
+    resident_relevance:
+      summary: >
+        St. Johns County schools continue to earn an 'A' grade, reinforcing
+        the district's reputation as one of Florida's top school systems.
+      affected_audiences:
+        - "parents"
+        - "homeowners"
+        - "prospective_movers"
+      why_it_matters: >
+        Top school grades support property values and attract families to the
+        area. Confirms continued high-quality education for SJC students.
+      confidence: "high"
+      inference_notes: "Grade directly reported. Property value inference reasonable."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-03T23:00:00Z"
+
+  - item_id: "SJC-BF-202605-0014"
+    title: "SJCSD School Board Meeting — May 12, 2026"
+    summary: >
+      St. Johns County School Board held a regular meeting on May 12, 2026.
+      Video archive available. Agenda items included budget, operations, and
+      policy matters.
+    source_id: "sjcsd_boarddocs"
+    source_url: "https://www.boarddocs.com/fl/stjohns/Board.nsf/Public"
+    source_published_at: "2026-05-12"
+    discovered_at: "2026-06-03T23:00:00Z"
+    topics:
+      - education
+      - county_government
+    communities: ["countywide"]
+    geographic_scope: "county_wide"
+    urgency: "archival"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+    raw_excerpt: >
+      SJCSB Meeting – May 12, 2026.
+    citation:
+      source_name: "St. Johns County School District / BoardDocs"
+      source_type: "government_website"
+      accessed_at: "2026-06-03T23:00:00Z"
+      url: "https://www.boarddocs.com/fl/stjohns/Board.nsf/Public"
+    review_status: "pending_review"
+    primary_topic: "education"
+    interest_tags:
+      - "quality_of_life"
+    resident_relevance:
+      summary: >
+        School Board held regular May meeting covering district business.
+        Full video and agenda available via BoardDocs.
+      affected_audiences:
+        - "parents"
+        - "residents"
+      why_it_matters: >
+        School Board meetings set policy, approve budgets, and make decisions
+        affecting all SJC schools and families.
+      confidence: "medium"
+      inference_notes: "Meeting existence confirmed. Specific agenda items not extracted."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-03T23:00:00Z"
+
+  - item_id: "SJC-BF-202605-0015"
+    title: "SJCSD STAR Awards 2026"
+    summary: >
+      St. Johns County School District held the STAR Awards 2026, recognizing
+      outstanding students, teachers, and staff across the district.
+    source_id: "sjc_school_district"
+    source_url: "https://www.stjohns.k12.fl.us/"
+    source_published_at: "2026-05-26"
+    discovered_at: "2026-06-03T23:00:00Z"
+    topics:
+      - education
+    communities: ["countywide"]
+    geographic_scope: "county_wide"
+    urgency: "archival"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+    raw_excerpt: >
+      STAR Awards 2026.
+    citation:
+      source_name: "St. Johns County School District"
+      source_type: "government_website"
+      accessed_at: "2026-06-03T23:00:00Z"
+      url: "https://www.stjohns.k12.fl.us/"
+    review_status: "pending_review"
+    primary_topic: "education"
+    interest_tags:
+      - "quality_of_life"
+      - "community_event"
+    resident_relevance:
+      summary: >
+        Annual STAR Awards recognizing excellence in SJC schools. Highlights
+        student and staff achievement.
+      affected_audiences:
+        - "parents"
+        - "students"
+        - "residents"
+      why_it_matters: >
+        Recognition of educational excellence reinforces quality of local
+        schools and community pride.
+      confidence: "medium"
+      inference_notes: "Award ceremony confirmed. Specific winners not extracted."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-03T23:00:00Z"
+
+  - item_id: "SJC-BF-202605-0016"
+    title: "SJCSD All Access with Dr. Asplen — Beachside High School Visit"
+    summary: >
+      Superintendent Dr. Asplen visited Beachside High School, featuring the
+      Academy of Veterinary and Biomedical Sciences and a leadership class
+      discussion.
+    source_id: "sjc_school_district"
+    source_url: "https://www.stjohns.k12.fl.us/"
+    source_published_at: "2026-05-22"
+    discovered_at: "2026-06-03T23:00:00Z"
+    topics:
+      - education
+    communities: ["countywide"]
+    geographic_scope: "single_community"
+    urgency: "archival"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+    raw_excerpt: >
+      Join Dr. Asplen as he visits Beachside High School, where students in the
+      Academy of Veterinary and Biomedical Sciences are training to become
+      certified veterinary assistants.
+    citation:
+      source_name: "St. Johns County School District"
+      source_type: "government_website"
+      accessed_at: "2026-06-03T23:00:00Z"
+      url: "https://www.stjohns.k12.fl.us/"
+    review_status: "pending_review"
+    primary_topic: "education"
+    interest_tags:
+      - "quality_of_life"
+    resident_relevance:
+      summary: >
+        Superintendent spotlights career academy programs at Beachside High,
+        showcasing real-world training for students.
+      affected_audiences:
+        - "parents"
+        - "students"
+      why_it_matters: >
+        Career academies provide specialized training paths for SJC students.
+        Beachside's veterinary/biomedical program is one example.
+      confidence: "medium"
+      inference_notes: "Visit and program details directly stated. Broader program impact inferred."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-03T23:00:00Z"
+
+  - item_id: "SJC-BF-202605-0017"
+    title: "SJCSD Graduation — St. Augustine High School 2025-26"
+    summary: >
+      St. Augustine High School held its 2025-26 graduation ceremony. Video
+      archive available.
+    source_id: "sjc_school_district"
+    source_url: "https://www.stjohns.k12.fl.us/"
+    source_published_at: "2026-05-20"
+    discovered_at: "2026-06-03T23:00:00Z"
+    topics:
+      - education
+      - community_events
+    communities: ["st_augustine"]
+    geographic_scope: "single_community"
+    urgency: "archival"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+    raw_excerpt: >
+      St. Augustine High School 2025-26 Graduation.
+    citation:
+      source_name: "St. Johns County School District"
+      source_type: "government_website"
+      accessed_at: "2026-06-03T23:00:00Z"
+      url: "https://www.stjohns.k12.fl.us/"
+    review_status: "pending_review"
+    primary_topic: "education"
+    interest_tags:
+      - "community_event"
+    resident_relevance:
+      summary: >
+        SAHS graduation marks the end of the 2025-26 school year for St.
+        Augustine High seniors and their families.
+      affected_audiences:
+        - "parents"
+        - "students"
+        - "residents"
+      why_it_matters: >
+        High school graduation is a major community milestone. SAHS is one of
+        the district's largest high schools.
+      confidence: "high"
+      inference_notes: "Details directly stated."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-03T23:00:00Z"
+
+  - item_id: "SJC-BF-202605-0018"
+    title: "SJCSD CTE Awards 2026"
+    summary: >
+      St. Johns County School District held the Career and Technical Education
+      (CTE) Awards 2026, recognizing achievement in career-technical programs.
+    source_id: "sjc_school_district"
+    source_url: "https://www.stjohns.k12.fl.us/"
+    source_published_at: "2026-05-01"
+    discovered_at: "2026-06-03T23:00:00Z"
+    topics:
+      - education
+      - economic_development
+    communities: ["countywide"]
+    geographic_scope: "county_wide"
+    urgency: "archival"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+    raw_excerpt: >
+      CTE Awards 2026.
+    citation:
+      source_name: "St. Johns County School District"
+      source_type: "government_website"
+      accessed_at: "2026-06-03T23:00:00Z"
+      url: "https://www.stjohns.k12.fl.us/"
+    review_status: "pending_review"
+    primary_topic: "education"
+    interest_tags:
+      - "quality_of_life"
+    resident_relevance:
+      summary: >
+        CTE Awards recognize students and programs preparing SJC students for
+        career and technical professions.
+      affected_audiences:
+        - "parents"
+        - "students"
+        - "business_owners"
+      why_it_matters: >
+        Career and technical education programs prepare students for
+        high-demand jobs, supporting the local workforce pipeline.
+      confidence: "medium"
+      inference_notes: "Award ceremony confirmed. Specific winners not extracted."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-03T23:00:00Z"
+
+  - item_id: "SJC-BF-202605-0019"
+    title: "SJSO Inmate Charged; Woman Arrested for Contraband Drop on Law Enforcement Property"
+    summary: >
+      A St. Johns County inmate was charged and a woman arrested for executing
+      a contraband drop on restricted law enforcement property at the SJSO
+      facility.
+    source_id: "sjso_news_stories"
+    source_url: "https://www.sjso.org/news-stories/"
+    source_published_at: "2026-05-21"
+    discovered_at: "2026-06-03T23:00:00Z"
+    topics:
+      - public_safety
+      - crime
+    communities: ["countywide"]
+    geographic_scope: "county_wide"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "medium"
+    recommended_channels:
+      - "website_review_queue"
+    raw_excerpt: >
+      St. Johns County inmate charged; woman arrested for executing a contraband
+      drop on restricted law enforcement property.
+    citation:
+      source_name: "St. Johns County Sheriff's Office"
+      source_type: "government_website"
+      accessed_at: "2026-06-03T23:00:00Z"
+      url: "https://www.sjso.org/news-stories/"
+    review_status: "pending_review"
+    primary_topic: "crime"
+    interest_tags:
+      - "safety_concern"
+    resident_relevance:
+      summary: >
+        Contraband incident at SJSO facility results in charges for inmate and
+        civilian. Highlights ongoing corrections security challenges.
+      affected_audiences:
+        - "residents"
+      why_it_matters: >
+        Incident at corrections facility underscores security measures at SJSO.
+        No public safety threat indicated.
+      confidence: "high"
+      inference_notes: "Incident details directly from SJSO press release."
+    taxonomy_gap: ~
+    human_review_required: true
+    created_at: "2026-06-03T23:00:00Z"
+
+  - item_id: "SJC-BF-202605-0020"
+    title: "SJSO Lifesaving Rescue Highlights Programs for Vulnerable Individuals"
+    summary: >
+      A lifesaving rescue by SJSO highlighted the importance of programs
+      designed to locate vulnerable individuals and prevent future emergencies,
+      including Project Lifesaver.
+    source_id: "sjso_news_stories"
+    source_url: "https://www.sjso.org/news-stories/"
+    source_published_at: "2026-05-05"
+    discovered_at: "2026-06-03T23:00:00Z"
+    topics:
+      - public_safety
+    communities: ["countywide"]
+    geographic_scope: "county_wide"
+    urgency: "ongoing"
+    verification_status: "source_confirmed"
+    sensitivity: "medium"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: >
+      Lifesaving rescue highlights the importance of local programs in place to
+      locate vulnerable individuals and prevent future emergencies.
+    citation:
+      source_name: "St. Johns County Sheriff's Office"
+      source_type: "government_website"
+      accessed_at: "2026-06-03T23:00:00Z"
+      url: "https://www.sjso.org/news-stories/"
+    review_status: "pending_review"
+    primary_topic: "public_safety"
+    interest_tags:
+      - "safety_concern"
+      - "quality_of_life"
+    resident_relevance:
+      summary: >
+        SJSO rescue demonstrates value of vulnerable-persons programs like
+        Project Lifesaver. Positive community safety story.
+      affected_audiences:
+        - "residents"
+        - "nearby_residents"
+      why_it_matters: >
+        Programs to locate vulnerable individuals (e.g., dementia patients,
+        children with autism) are proven lifesavers. Highlights available
+        resources for SJC families.
+      confidence: "high"
+      inference_notes: "Rescue details directly stated. Program awareness is standard public safety benefit."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-03T23:00:00Z"
+
+  - item_id: "SJC-BF-202605-0021"
+    title: "SJC Emergency Management — Hurricane Season Preparedness Messaging"
+    summary: >
+      St. Johns County Emergency Management began hurricane season
+      preparedness messaging in May 2026 ahead of the June 1 start of
+      hurricane season, promoting awareness, alerts, and readiness.
+    source_id: "sjc_emergency_management"
+    source_url: "https://www.sjcfl.us/departments/emergency-mgmt/"
+    source_published_at: "2026-05-26"
+    discovered_at: "2026-06-03T23:00:00Z"
+    topics:
+      - public_safety
+      - emergency_alerts
+      - environment
+    communities: ["countywide"]
+    geographic_scope: "county_wide"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: >
+      Hurricane Season Begins June 1. Sign Up for Alerts. Know Your Zone.
+    citation:
+      source_name: "St. Johns County Emergency Management"
+      source_type: "government_website"
+      accessed_at: "2026-06-03T23:00:00Z"
+      url: "https://www.sjcfl.us/departments/emergency-mgmt/"
+    review_status: "pending_review"
+    primary_topic: "public_safety"
+    interest_tags:
+      - "emergency_awareness"
+    resident_relevance:
+      summary: >
+        Hurricane season begins June 1. Emergency Management encouraging
+        residents to prepare, sign up for alerts, and know evacuation zones.
+      affected_audiences:
+        - "residents"
+        - "homeowners"
+        - "nearby_residents"
+      why_it_matters: >
+        Annual hurricane preparedness push. Residents should review plans,
+        sign up for Alert St. Johns, and know their evacuation zone before
+        a storm threatens.
+      confidence: "high"
+      inference_notes: "Preparedness messaging directly stated."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-03T23:00:00Z"

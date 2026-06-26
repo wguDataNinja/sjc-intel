@@ -1,0 +1,4 @@
+# SJC_Intel — Python dependencies
+# Install: pip install -r requirements.txt
+
+pypdf>=5.0.0

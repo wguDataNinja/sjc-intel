@@ -1,0 +1,934 @@
+# =============================================================================
+# SJC_Intel — Source Candidates Registry
+# =============================================================================
+# Candidate sources extracted from Deep Research or other discovery work.
+# Nothing here is canonical until promoted to registry/sources.yaml.
+#
+# Schema version: 1.1
+# Last updated: 2026-06-03
+# =============================================================================
+
+candidates:
+  - candidate_id: "st_johns_citizen"
+    name: "St. Johns Citizen"
+    url: "https://sjcitizen.com/"
+    source_type: "local_media"
+    owner: "Selim Algar / Rebecca Rosenberg"
+    homeowner_relevance: "HIGH"
+    communities: ["countywide", "nocatee", "st_augustine", "ponte_vedra"]
+    topics: ["county_government", "public_safety", "development", "housing", "economic_development", "community_events", "education", "crime", "infrastructure"]
+    update_frequency: "daily"
+    automation_feasibility: "likely"
+    reliability: "high"
+    recommended_monitor_cadence: "daily"
+    evidence_from_report: >
+      Report lists St. Johns Citizen as county-focused digital local media
+      covering county government, crime, real estate, retail, and community
+      stories, with daily cadence and medium-high reliability.
+    review_status: "reviewed"
+    promotion_decision: "already_promoted"
+    canonical_source_id: "st_johns_citizen"
+    promoted_at: "2026-06-03T12:00:00Z"
+    notes: >
+      Preserve existing promotion. Use for tip-surfacing and context; verify
+      consequential claims against official records or other attributable
+      reporting.
+
+  # Government, public offices, schools, roads, and regulators.
+  - candidate_id: "CAND-SRC-0001"
+    name: "County Commission stack"
+    url: "https://www.sjcfl.us/bcc-calendar/"
+    source_type: "official_meetings"
+    owner: "St. Johns County / Clerk of Court and County Comptroller"
+    homeowner_relevance: "VERY_HIGH"
+    communities: ["countywide"]
+    topics: ["county_government", "public_notices", "development", "taxes"]
+    update_frequency: "biweekly_plus_specials"
+    automation_feasibility: "moderate"
+    reliability: "official"
+    recommended_monitor_cadence: "weekly; daily before meetings"
+    evidence_from_report: >
+      Top official decision stack for votes, public hearings, development
+      items, budgets, and contracts. Pair with Clerk board records and GovTV.
+    review_status: "reviewed"
+    promotion_decision: "promoted"
+    canonical_source_id: "sjc_bcc_calendar"
+    promoted_at: "2026-06-03T23:00:00Z"
+    notes: "Promoted to sources.yaml as sjc_bcc_calendar. Pair with Clerk board records and GovTV."
+
+  - candidate_id: "CAND-SRC-0002"
+    name: "Planning and Zoning stack"
+    url: "https://www.sjcfl.us/planning-and-zoning-boards-and-agencies-2/"
+    source_type: "official_boards_calendar"
+    owner: "St. Johns County"
+    homeowner_relevance: "VERY_HIGH"
+    communities: ["countywide", "silverleaf", "cr_210_corridor", "sr_16_corridor", "ponte_vedra", "st_augustine"]
+    topics: ["development", "county_government", "public_notices"]
+    update_frequency: "monthly_hearing_driven"
+    automation_feasibility: "moderate"
+    reliability: "official"
+    recommended_monitor_cadence: "weekly; daily on hearing weeks"
+    evidence_from_report: >
+      Report identifies this as a very high relevance source for rezonings,
+      comp-plan amendments, overlays, and hearing schedules.
+    review_status: "reviewed"
+    promotion_decision: "promoted"
+    canonical_source_id: "sjc_pza_boards"
+    promoted_at: "2026-06-03T23:00:00Z"
+    notes: "Promoted to sources.yaml as sjc_pza_boards. Pair with Growth Management calendar."
+
+  - candidate_id: "CAND-SRC-0003"
+    name: "Development Tracker and GIS Hub"
+    url: "https://www.sjcfl.us/development-tracker/"
+    source_type: "official_map_open_data"
+    owner: "St. Johns County"
+    homeowner_relevance: "VERY_HIGH"
+    communities: ["countywide", "cr_210_corridor", "sr_16_corridor", "us_1_corridor"]
+    topics: ["development", "construction", "zoning", "infrastructure"]
+    update_frequency: "continuous"
+    automation_feasibility: "moderate"
+    reliability: "official"
+    recommended_monitor_cadence: "daily"
+    evidence_from_report: >
+      Report calls it the best single what-is-changing-near-me resident source
+      for rezoning status, permitting activity, PUD/DRI context, and mapped
+      projects.
+    review_status: "reviewed"
+    promotion_decision: "duplicate_of_canonical"
+    canonical_source_id: "sjc_development_tracker"
+    notes: "Canonical source exists; consider upgrading cadence from weekly to daily after monitor design."
+
+  - candidate_id: "CAND-SRC-0004"
+    name: "Permit status and public permit search"
+    url: "https://www.sjcfl.us/permit-status/"
+    source_type: "official_permit_database"
+    owner: "St. Johns County Building Department"
+    homeowner_relevance: "VERY_HIGH"
+    communities: ["countywide"]
+    topics: ["development", "construction", "economic_development"]
+    update_frequency: "continuous"
+    automation_feasibility: "moderate"
+    reliability: "official"
+    recommended_monitor_cadence: "daily"
+    evidence_from_report: >
+      Report says permit status and public permit search are very high value
+      for inspections, CO status, plan review, issued permits, and permit
+      reports.
+    review_status: "reviewed"
+    promotion_decision: "promoted"
+    canonical_source_id: "sjc_permit_status"
+    promoted_at: "2026-06-03T23:00:00Z"
+    notes: "Promoted to sources.yaml as sjc_permit_status. Needs browser/API assessment for search form."
+
+  - candidate_id: "CAND-SRC-0005"
+    name: "County roads, traffic, and featured projects"
+    url: "https://www.sjcfl.us/road-closures/"
+    source_type: "official_notices_projects"
+    owner: "St. Johns County"
+    homeowner_relevance: "VERY_HIGH"
+    communities: ["countywide", "cr_210_corridor", "sr_16_corridor", "us_1_corridor"]
+    topics: ["transportation", "infrastructure", "public_notices"]
+    update_frequency: "daily_as_needed"
+    automation_feasibility: "easy"
+    reliability: "official"
+    recommended_monitor_cadence: "daily"
+    evidence_from_report: >
+      Report identifies road closures, Traffic Ops, Public Works, and Featured
+      Projects as direct daily-life sources for closures and active projects.
+    review_status: "reviewed"
+    promotion_decision: "promoted"
+    canonical_source_id: "sjc_nbor_public_notices"
+    promoted_at: "2026-06-03T23:00:00Z"
+    notes: "Promoted to sources.yaml as sjc_nbor_public_notices (renamed from sjc_road_closures 2026-06-08). NBOR app is the real data source; old landing page was dead end."
+
+  - candidate_id: "CAND-SRC-0006"
+    name: "Emergency management and alerts"
+    url: "https://www.sjcfl.us/departments/emergency-mgmt/"
+    source_type: "official_emergency_info"
+    owner: "St. Johns County"
+    homeowner_relevance: "VERY_HIGH"
+    communities: ["countywide"]
+    topics: ["public_safety", "emergency_alerts", "environment"]
+    update_frequency: "as_needed"
+    automation_feasibility: "easy"
+    reliability: "official"
+    recommended_monitor_cadence: "daily in season; event-driven otherwise"
+    evidence_from_report: >
+      Report recommends pairing emergency management with county alerts and
+      hurricane preparedness for EOC updates and emergency notices.
+    review_status: "reviewed"
+    promotion_decision: "promoted"
+    canonical_source_id: "sjc_emergency_management"
+    promoted_at: "2026-06-03T23:00:00Z"
+    notes: "Promoted to sources.yaml as sjc_emergency_management. Do not auto-publish; route urgent items to human review."
+
+  - candidate_id: "CAND-SRC-0007"
+    name: "Parks, trails, and beaches stack"
+    url: "https://www.sjcfl.us/departments/parks-recreation/"
+    source_type: "official_services_facilities"
+    owner: "St. Johns County"
+    homeowner_relevance: "HIGH"
+    communities: ["countywide", "silverleaf", "rivertown", "shearwater", "st_augustine", "st_augustine_beach"]
+    topics: ["parks_recreation", "coastal_projects", "community_events"]
+    update_frequency: "weekly_seasonal_as_needed"
+    automation_feasibility: "easy"
+    reliability: "official"
+    recommended_monitor_cadence: "weekly"
+    evidence_from_report: >
+      Report identifies parks, trails, beaches, and beach driving updates as
+      useful for closures, camps, fields, beach access, and trails.
+    review_status: "pending_review"
+    promotion_decision: "deferred"
+    notes: "Useful but lower priority than roads, utilities, schools, and development."
+
+  - candidate_id: "CAND-SRC-0008"
+    name: "Utilities, water conservation, and boil water stack"
+    url: "https://www.sjcfl.us/departments/utility-department/"
+    source_type: "official_service_alerts"
+    owner: "St. Johns County Utility Department"
+    homeowner_relevance: "VERY_HIGH"
+    communities: ["countywide", "silverleaf", "beacon_lake", "beachwalk"]
+    topics: ["infrastructure", "environment", "emergency_alerts"]
+    update_frequency: "daily_as_needed"
+    automation_feasibility: "easy"
+    reliability: "official"
+    recommended_monitor_cadence: "daily"
+    evidence_from_report: >
+      Report highlights irrigation rules, bills, outages, reclaimed water, and
+      boil notices as high homeowner pain-index issues.
+    review_status: "reviewed"
+    promotion_decision: "promoted"
+    canonical_source_id: "sjc_utility_department"
+    promoted_at: "2026-06-03T23:00:00Z"
+    notes: "Promoted to sources.yaml as sjc_utility_department. First-class daily beat."
+
+  - candidate_id: "CAND-SRC-0009"
+    name: "Purchasing and active bids"
+    url: "https://www.sjcfl.us/departments/purchasing/"
+    source_type: "official_procurement"
+    owner: "St. Johns County"
+    homeowner_relevance: "HIGH"
+    communities: ["countywide"]
+    topics: ["county_government", "infrastructure", "economic_development"]
+    update_frequency: "as_posted"
+    automation_feasibility: "easy"
+    reliability: "official"
+    recommended_monitor_cadence: "weekly"
+    evidence_from_report: >
+      Report says purchasing and active bids can be early public signals for
+      county capital work and project timing.
+    review_status: "pending_review"
+    promotion_decision: "deferred"
+    notes: "Promote after roads/development stack is working."
+
+  - candidate_id: "CAND-SRC-0010"
+    name: "Budget, OMB, and transparency stack"
+    url: "https://www.sjcfl.us/2026budget/"
+    source_type: "official_finance_transparency"
+    owner: "St. Johns County"
+    homeowner_relevance: "VERY_HIGH"
+    communities: ["countywide"]
+    topics: ["taxes", "county_government", "community_trust"]
+    update_frequency: "seasonal_steady_updates"
+    automation_feasibility: "easy"
+    reliability: "official"
+    recommended_monitor_cadence: "weekly; daily Jul-Sep"
+    evidence_from_report: >
+      Report identifies budget, millage, workforce growth, capital priorities,
+      and performance reporting as high homeowner relevance.
+    review_status: "reviewed"
+    promotion_decision: "promoted"
+    canonical_source_id: "sjc_budget_transparency"
+    promoted_at: "2026-06-03T23:00:00Z"
+    notes: "Promoted to sources.yaml as sjc_budget_transparency. Key for TRIM-season backfill."
+
+  - candidate_id: "CAND-SRC-0011"
+    name: "Sheriff's Office"
+    url: "https://www.sjso.org/"
+    source_type: "official_public_safety"
+    owner: "St. Johns County Sheriff's Office"
+    homeowner_relevance: "VERY_HIGH"
+    communities: ["countywide"]
+    topics: ["public_safety", "crime", "transportation"]
+    update_frequency: "daily_as_needed"
+    automation_feasibility: "easy"
+    reliability: "official"
+    recommended_monitor_cadence: "daily"
+    evidence_from_report: >
+      Report lists SJSO as a core official source for law-enforcement updates
+      and traffic-safety issues.
+    review_status: "reviewed"
+    promotion_decision: "duplicate_of_canonical"
+    canonical_source_id: "sjso_news_stories"
+    notes: "Canonical news-stories monitor exists; social source also exists as discovery-only."
+
+  - candidate_id: "CAND-SRC-0012"
+    name: "Property Appraiser"
+    url: "https://www.sjcpa.gov/"
+    source_type: "official_property_tax_base"
+    owner: "St. Johns County Property Appraiser"
+    homeowner_relevance: "VERY_HIGH"
+    communities: ["countywide"]
+    topics: ["taxes", "housing", "development"]
+    update_frequency: "continuous_seasonal_peaks"
+    automation_feasibility: "easy"
+    reliability: "official"
+    recommended_monitor_cadence: "weekly; daily in TRIM season"
+    evidence_from_report: >
+      Report calls this a best source for parcel facts, exemptions, and
+      owner-facing tax estimate tools.
+    review_status: "reviewed"
+    promotion_decision: "duplicate_of_canonical"
+    canonical_source_id: "sjc_property_appraiser"
+    notes: "Canonical URL may need review: report uses sjcpa.gov while registry uses sjcpa.us."
+
+  - candidate_id: "CAND-SRC-0013"
+    name: "Tax Collector"
+    url: "https://sjctax.us/"
+    source_type: "official_tax_payment_services"
+    owner: "St. Johns County Tax Collector"
+    homeowner_relevance: "VERY_HIGH"
+    communities: ["countywide"]
+    topics: ["taxes", "public_notices"]
+    update_frequency: "seasonal_transactional"
+    automation_feasibility: "easy"
+    reliability: "official"
+    recommended_monitor_cadence: "weekly; daily Nov-Mar"
+    evidence_from_report: >
+      Report identifies this as a resident-cost and bill-cycle source,
+      especially when tax bills issue and delinquency deadlines approach.
+    review_status: "reviewed"
+    promotion_decision: "duplicate_of_canonical"
+    canonical_source_id: "sjc_tax_collector"
+    notes: "Canonical source exists; consider raising relevance from MEDIUM to HIGH after review."
+
+  - candidate_id: "CAND-SRC-0014"
+    name: "Clerk online research"
+    url: "https://stjohnsclerk.com/online-research/"
+    source_type: "official_records_portal"
+    owner: "Clerk of Court and County Comptroller"
+    homeowner_relevance: "VERY_HIGH"
+    communities: ["countywide"]
+    topics: ["county_government", "public_notices", "taxes", "housing"]
+    update_frequency: "continuous"
+    automation_feasibility: "easy"
+    reliability: "official"
+    recommended_monitor_cadence: "weekly"
+    evidence_from_report: >
+      Report lists Clerk online research as useful for deeds, liens, board
+      records, public records, and tax-deed monitoring.
+    review_status: "reviewed"
+    promotion_decision: "promoted"
+    canonical_source_id: "sjc_clerk_online_research"
+    promoted_at: "2026-06-03T23:00:00Z"
+    notes: "Promoted to sources.yaml as sjc_clerk_online_research. Replaces stale canonical placeholder (sjcclerk.gov)."
+
+  - candidate_id: "CAND-SRC-0015"
+    name: "Supervisor of Elections"
+    url: "https://www.votesjc.gov/"
+    source_type: "official_elections"
+    owner: "St. Johns County Supervisor of Elections"
+    homeowner_relevance: "HIGH"
+    communities: ["countywide"]
+    topics: ["elections", "public_notices", "county_government"]
+    update_frequency: "seasonal_election_driven"
+    automation_feasibility: "easy"
+    reliability: "official"
+    recommended_monitor_cadence: "weekly; daily in election season"
+    evidence_from_report: >
+      Report recommends monitoring election dates, polling places, district
+      maps, candidate reports, results, and precinct shifts.
+    review_status: "reviewed"
+    promotion_decision: "promoted"
+    canonical_source_id: "sjc_supervisor_of_elections"
+    promoted_at: "2026-06-03T23:30:00Z"
+    notes: "Promoted to sources.yaml as sjc_supervisor_of_elections. Replaces stale placeholder."
+
+  - candidate_id: "CAND-SRC-0016"
+    name: "SJCSD district and School Board stack"
+    url: "https://www.stjohns.k12.fl.us/"
+    source_type: "official_district_meetings"
+    owner: "St. Johns County School District"
+    homeowner_relevance: "VERY_HIGH"
+    communities: ["countywide", "silverleaf", "nocatee", "beacon_lake", "shearwater"]
+    topics: ["education", "public_notices", "county_government"]
+    update_frequency: "weekly_meeting_driven"
+    automation_feasibility: "easy"
+    reliability: "official"
+    recommended_monitor_cadence: "weekly; daily around Board dates"
+    evidence_from_report: >
+      Report identifies district news, School Board, meeting notices, minutes,
+      and calendars as high-value school stack components.
+    review_status: "reviewed"
+    promotion_decision: "duplicate_of_canonical"
+    canonical_source_id: "sjc_school_district"
+    notes: "Canonical source exists; add board stack details during school pilot."
+
+  - candidate_id: "CAND-SRC-0017"
+    name: "School Board BoardDocs"
+    url: "https://www.boarddocs.com/fl/stjohns/Board.nsf/Public"
+    source_type: "official_agenda_platform"
+    owner: "St. Johns County School District"
+    homeowner_relevance: "VERY_HIGH"
+    communities: ["countywide"]
+    topics: ["education", "public_notices", "county_government"]
+    update_frequency: "meeting_driven"
+    automation_feasibility: "moderate"
+    reliability: "official"
+    recommended_monitor_cadence: "weekly; daily around meetings"
+    evidence_from_report: >
+      Report calls BoardDocs one of the most important pre-headline school
+      sources, with agenda packets, policies, attachments, workshops, and votes.
+    review_status: "reviewed"
+    promotion_decision: "promoted"
+    canonical_source_id: "sjcsd_boarddocs"
+    promoted_at: "2026-06-03T23:30:00Z"
+    notes: "Promoted to sources.yaml as sjcsd_boarddocs. Child source under sjc_school_district stack."
+
+  - candidate_id: "CAND-SRC-0018"
+    name: "Attendance zoning, new schools, and planning"
+    url: "https://www.stjohns.k12.fl.us/zoning/"
+    source_type: "official_planning_maps"
+    owner: "St. Johns County School District"
+    homeowner_relevance: "VERY_HIGH"
+    communities: ["silverleaf", "nocatee", "beacon_lake", "shearwater", "cr_210_corridor", "sr_16_corridor"]
+    topics: ["education", "development", "public_notices"]
+    update_frequency: "as_needed_high_impact"
+    automation_feasibility: "moderate"
+    reliability: "official"
+    recommended_monitor_cadence: "weekly"
+    evidence_from_report: >
+      Report says public pages identify attendance-zone changes, K-8 QQ in
+      SilverLeaf, K-8 RR in Nocatee, and district planning.
+    review_status: "reviewed"
+    promotion_decision: "promoted"
+    canonical_source_id: "sjcsd_zoning_planning"
+    promoted_at: "2026-06-03T23:30:00Z"
+    notes: "Promoted to sources.yaml as sjcsd_zoning_planning. Pair with New Schools and Planning pages."
+
+  - candidate_id: "CAND-SRC-0019"
+    name: "FDOT District Two and NFLRoads"
+    url: "https://www.fdot.gov/info/moredot/districts/dist2.shtm"
+    source_type: "official_transportation_project_tracker"
+    owner: "Florida Department of Transportation"
+    homeowner_relevance: "VERY_HIGH"
+    communities: ["countywide", "cr_210_corridor", "sr_16_corridor", "us_1_corridor"]
+    topics: ["transportation", "infrastructure", "public_notices"]
+    update_frequency: "daily_weekly"
+    automation_feasibility: "easy"
+    reliability: "official"
+    recommended_monitor_cadence: "daily"
+    evidence_from_report: >
+      Report says FDOT District Two and NFLRoads are critical for SR 16, CR
+      210 at CR 2209, First Coast Expressway, and US 1 work.
+    review_status: "reviewed"
+    promotion_decision: "promoted"
+    canonical_source_id: "fdot_district_two_nflroads"
+    promoted_at: "2026-06-03T23:30:00Z"
+    notes: "Promoted to sources.yaml as fdot_district_two_nflroads. Pair with nflroads.com companion."
+
+  - candidate_id: "CAND-SRC-0020"
+    name: "Florida 511"
+    url: "https://fl511.com/"
+    source_type: "official_realtime_traffic"
+    owner: "Florida Department of Transportation"
+    homeowner_relevance: "VERY_HIGH"
+    communities: ["countywide", "cr_210_corridor", "sr_16_corridor", "us_1_corridor"]
+    topics: ["transportation", "public_safety", "emergency_alerts"]
+    update_frequency: "realtime"
+    automation_feasibility: "easy"
+    reliability: "official"
+    recommended_monitor_cadence: "daily"
+    evidence_from_report: >
+      Report identifies Florida 511 as the best live-monitor layer for I-95,
+      US 1, SR 16, and regional connectors.
+    review_status: "pending_review"
+    promotion_decision: "deferred"
+    notes: "Define alert threshold before monitoring real-time events."
+
+  - candidate_id: "CAND-SRC-0021"
+    name: "County transportation and infrastructure stack"
+    url: "https://www.sjcfl.us/departments/transportation-development-division/"
+    source_type: "official_planning_delivery"
+    owner: "St. Johns County"
+    homeowner_relevance: "VERY_HIGH"
+    communities: ["countywide", "cr_210_corridor", "sr_16_corridor", "us_1_corridor"]
+    topics: ["transportation", "infrastructure", "development"]
+    update_frequency: "weekly_project_driven"
+    automation_feasibility: "moderate"
+    reliability: "official"
+    recommended_monitor_cadence: "weekly"
+    evidence_from_report: >
+      Report recommends county transportation, concurrency, and infrastructure
+      project pages for project pipeline and delivery context.
+    review_status: "reviewed"
+    promotion_decision: "promoted"
+    canonical_source_id: "sjc_transportation_infrastructure"
+    promoted_at: "2026-06-03T23:00:00Z"
+    notes: "Promoted to sources.yaml as sjc_transportation_infrastructure. Companion to road-closure daily monitor."
+
+  - candidate_id: "CAND-SRC-0022"
+    name: "SJRWMD permitting and watering restrictions"
+    url: "https://www.sjrwmd.com/permitting/"
+    source_type: "official_regulator"
+    owner: "St. Johns River Water Management District"
+    homeowner_relevance: "VERY_HIGH"
+    communities: ["countywide"]
+    topics: ["environment", "infrastructure", "development"]
+    update_frequency: "daily_as_needed"
+    automation_feasibility: "moderate"
+    reliability: "official"
+    recommended_monitor_cadence: "daily"
+    evidence_from_report: >
+      Report highlights permits, permit search, watering restrictions, and
+      drought orders, including a Phase III extreme water shortage signal.
+    review_status: "reviewed"
+    promotion_decision: "promoted"
+    canonical_source_id: "sjrwmd_watering_restrictions"
+    promoted_at: "2026-06-03T23:00:00Z"
+    notes: "Promoted to sources.yaml as sjrwmd_watering_restrictions. Pair with county utility stack."
+
+  - candidate_id: "CAND-SRC-0023"
+    name: "NWS Jacksonville"
+    url: "https://www.weather.gov/jax/"
+    source_type: "official_weather_hazards"
+    owner: "National Weather Service"
+    homeowner_relevance: "VERY_HIGH"
+    communities: ["countywide", "st_augustine_beach", "vilano_beach", "ponte_vedra"]
+    topics: ["environment", "emergency_alerts", "public_safety"]
+    update_frequency: "daily_realtime"
+    automation_feasibility: "easy"
+    reliability: "official"
+    recommended_monitor_cadence: "daily"
+    evidence_from_report: >
+      Report calls NWS Jacksonville essential for hurricanes, severe weather,
+      fire weather, and flood risk.
+    review_status: "reviewed"
+    promotion_decision: "promoted"
+    canonical_source_id: "nws_jacksonville"
+    promoted_at: "2026-06-03T23:30:00Z"
+    notes: "Promoted to sources.yaml as nws_jacksonville. Use as official hazards source."
+
+  # Communities, developers, and public-governance companions.
+  - candidate_id: "CAND-SRC-0024"
+    name: "SilverLeaf official"
+    url: "https://silverleafflorida.com/"
+    source_type: "official_community_developer"
+    owner: "SilverLeaf / Hutson ecosystem"
+    homeowner_relevance: "HIGH"
+    communities: ["silverleaf", "cr_210_corridor", "sr_16_corridor"]
+    topics: ["development", "community_events", "parks_recreation"]
+    update_frequency: "monthly_campaign_driven"
+    automation_feasibility: "easy"
+    reliability: "semi_official"
+    recommended_monitor_cadence: "weekly"
+    evidence_from_report: >
+      Report says official site is useful for amenities, neighborhoods,
+      builders, and community positioning; governance should resolve to
+      official/county records.
+    review_status: "pending_review"
+    promotion_decision: "recommend_promotion"
+    notes: "Official developer copy; verify consequential claims elsewhere."
+
+  - candidate_id: "CAND-SRC-0025"
+    name: "Nocatee official and public events"
+    url: "https://www.nocatee.com/"
+    source_type: "official_community_developer"
+    owner: "PARC Group / Nocatee"
+    homeowner_relevance: "HIGH"
+    communities: ["nocatee", "ponte_vedra"]
+    topics: ["community_events", "development", "education", "economic_development"]
+    update_frequency: "weekly_monthly"
+    automation_feasibility: "easy"
+    reliability: "semi_official"
+    recommended_monitor_cadence: "weekly"
+    evidence_from_report: >
+      Report lists Nocatee official and events pages as useful for lifestyle,
+      schools, events, town-center activity, and amenity signals.
+    review_status: "reviewed"
+    promotion_decision: "duplicate_of_canonical"
+    canonical_source_id: "nocatee_community"
+    notes: "Canonical source exists."
+
+  - candidate_id: "CAND-SRC-0026"
+    name: "Tolomato CDD"
+    url: "https://mytcdd.com/"
+    source_type: "official_special_district"
+    owner: "Tolomato Community Development District"
+    homeowner_relevance: "VERY_HIGH"
+    communities: ["nocatee"]
+    topics: ["county_government", "taxes", "parks_recreation", "infrastructure"]
+    update_frequency: "monthly_annual_cycles"
+    automation_feasibility: "moderate"
+    reliability: "official"
+    recommended_monitor_cadence: "weekly; monthly otherwise"
+    evidence_from_report: >
+      Report identifies Tolomato CDD as a public-governance companion for
+      Nocatee assessments, schedules, and district information.
+    review_status: "pending_review"
+    promotion_decision: "recommend_promotion"
+    notes: "CDD governance is first-class after Deep Research."
+
+  - candidate_id: "CAND-SRC-0027"
+    name: "RiverTown official resident-facing site"
+    url: "https://rivertownamenities.com/"
+    source_type: "official_community_amenities"
+    owner: "RiverTown / management team"
+    homeowner_relevance: "HIGH"
+    communities: ["rivertown"]
+    topics: ["community_events", "parks_recreation", "development"]
+    update_frequency: "weekly_monthly"
+    automation_feasibility: "moderate"
+    reliability: "semi_official"
+    recommended_monitor_cadence: "weekly"
+    evidence_from_report: >
+      Report says RiverTown amenities site provides resident-facing operations,
+      amenities, contact points, and CDD contacts.
+    review_status: "pending_review"
+    promotion_decision: "recommend_promotion"
+    notes: "Pair with rivertownflorida.com for builders/new phases."
+
+  - candidate_id: "CAND-SRC-0028"
+    name: "Shearwater official"
+    url: "https://shearwaterliving.com/"
+    source_type: "official_community_developer"
+    owner: "Shearwater / Freehold Communities"
+    homeowner_relevance: "HIGH"
+    communities: ["shearwater", "cr_210_corridor"]
+    topics: ["community_events", "development", "parks_recreation"]
+    update_frequency: "weekly_monthly"
+    automation_feasibility: "easy"
+    reliability: "semi_official"
+    recommended_monitor_cadence: "weekly"
+    evidence_from_report: >
+      Report says Shearwater official pages provide amenities, builders,
+      community news, and location context.
+    review_status: "pending_review"
+    promotion_decision: "recommend_promotion"
+    notes: "Governance should go to Trout Creek CDD."
+
+  - candidate_id: "CAND-SRC-0029"
+    name: "Trout Creek CDD"
+    url: "https://troutcreekcdd.com/"
+    source_type: "official_special_district"
+    owner: "Trout Creek Community Development District"
+    homeowner_relevance: "VERY_HIGH"
+    communities: ["shearwater"]
+    topics: ["county_government", "taxes", "infrastructure", "parks_recreation"]
+    update_frequency: "monthly_meeting_driven"
+    automation_feasibility: "moderate"
+    reliability: "official"
+    recommended_monitor_cadence: "weekly; monthly otherwise"
+    evidence_from_report: >
+      Report calls Trout Creek CDD a strong public-governance source for
+      Shearwater-area infrastructure and assessments.
+    review_status: "pending_review"
+    promotion_decision: "recommend_promotion"
+    notes: "CDD monitor candidate."
+
+  - candidate_id: "CAND-SRC-0030"
+    name: "TrailMark official"
+    url: "https://trailmarkliving.com/"
+    source_type: "official_community_developer"
+    owner: "TrailMark / GreenPointe ecosystem"
+    homeowner_relevance: "HIGH"
+    communities: ["trailmark", "sr_16_corridor"]
+    topics: ["community_events", "development", "parks_recreation"]
+    update_frequency: "weekly_monthly"
+    automation_feasibility: "easy"
+    reliability: "semi_official"
+    recommended_monitor_cadence: "weekly"
+    evidence_from_report: >
+      Report lists TrailMark official as useful for builders, amenities,
+      schools, and welcome-center updates, with links to HOA/CDD surfaces.
+    review_status: "pending_review"
+    promotion_decision: "recommend_promotion"
+    notes: "Pair with Six Mile Creek CDD."
+
+  - candidate_id: "CAND-SRC-0031"
+    name: "Six Mile Creek CDD"
+    url: "https://sixmilecreekcdd.com/"
+    source_type: "official_special_district"
+    owner: "Six Mile Creek CDD"
+    homeowner_relevance: "VERY_HIGH"
+    communities: ["trailmark"]
+    topics: ["county_government", "taxes", "infrastructure", "parks_recreation"]
+    update_frequency: "monthly_meeting_driven"
+    automation_feasibility: "moderate"
+    reliability: "official"
+    recommended_monitor_cadence: "weekly; monthly otherwise"
+    evidence_from_report: >
+      Report identifies Six Mile Creek CDD as the core governance companion for
+      TrailMark.
+    review_status: "pending_review"
+    promotion_decision: "recommend_promotion"
+    notes: "CDD monitor candidate."
+
+  - candidate_id: "CAND-SRC-0032"
+    name: "Beachwalk amenity and district stack"
+    url: "https://www.clubbeachwalk.com/"
+    source_type: "official_club_district_companion"
+    owner: "Beachwalk Club / Twin Creeks North CDD"
+    homeowner_relevance: "HIGH"
+    communities: ["beachwalk", "cr_210_corridor", "us_1_corridor"]
+    topics: ["community_events", "parks_recreation", "county_government", "taxes"]
+    update_frequency: "weekly_monthly"
+    automation_feasibility: "moderate"
+    reliability: "semi_official"
+    recommended_monitor_cadence: "weekly"
+    evidence_from_report: >
+      Report says use club site for lagoon/amenity signals and Twin Creeks
+      North CDD for public packets and meetings.
+    review_status: "pending_review"
+    promotion_decision: "recommend_promotion"
+    notes: "Create separate CDD candidate if promotion proceeds."
+
+  - candidate_id: "CAND-SRC-0033"
+    name: "Beacon Lake and Meadow View district stack"
+    url: "https://www.beaconlake.com/"
+    source_type: "official_community_district_companion"
+    owner: "Beacon Lake / Meadow View at Twin Creeks CDD"
+    homeowner_relevance: "HIGH"
+    communities: ["beacon_lake", "cr_210_corridor"]
+    topics: ["community_events", "parks_recreation", "county_government", "taxes", "education"]
+    update_frequency: "weekly_monthly"
+    automation_feasibility: "moderate"
+    reliability: "semi_official"
+    recommended_monitor_cadence: "weekly"
+    evidence_from_report: >
+      Report recommends pairing Beacon Lake official community facts with
+      Meadow View at Twin Creeks CDD governance and assessment records.
+    review_status: "pending_review"
+    promotion_decision: "recommend_promotion"
+    notes: "Create separate CDD candidate if promotion proceeds."
+
+  - candidate_id: "CAND-SRC-0034"
+    name: "eTown official"
+    url: "https://www.etownjax.com/"
+    source_type: "official_adjacent_master_plan"
+    owner: "PARC Group"
+    homeowner_relevance: "MEDIUM"
+    communities: ["etown"]
+    topics: ["development", "economic_development", "community_events"]
+    update_frequency: "weekly_monthly"
+    automation_feasibility: "easy"
+    reliability: "semi_official"
+    recommended_monitor_cadence: "weekly"
+    evidence_from_report: >
+      Report treats eTown as outside core St. Johns government scope but useful
+      for commuter, retail, and competitive-growth spillover.
+    review_status: "pending_review"
+    promotion_decision: "deferred"
+    notes: "Keep as spillover watch after core SJC sources."
+
+  - candidate_id: "CAND-SRC-0035"
+    name: "Seven Pines official"
+    url: "https://sevenpines.com/"
+    source_type: "official_adjacent_master_plan"
+    owner: "Seven Pines / Skinner-family-backed project"
+    homeowner_relevance: "MEDIUM"
+    communities: ["seven_pines"]
+    topics: ["development", "economic_development", "community_events"]
+    update_frequency: "weekly_monthly"
+    automation_feasibility: "easy"
+    reliability: "semi_official"
+    recommended_monitor_cadence: "weekly"
+    evidence_from_report: >
+      Report says Seven Pines is best treated as nearby growth-spillover watch,
+      not core county-governance source.
+    review_status: "pending_review"
+    promotion_decision: "deferred"
+    notes: "Spillover only."
+
+  - candidate_id: "CAND-SRC-0036"
+    name: "EverRange official"
+    url: "https://everrange.com/"
+    source_type: "official_adjacent_master_plan"
+    owner: "EverRange / PARC Group"
+    homeowner_relevance: "MEDIUM"
+    communities: ["everrange", "us_1_corridor"]
+    topics: ["development", "economic_development", "community_events"]
+    update_frequency: "weekly_monthly"
+    automation_feasibility: "easy"
+    reliability: "semi_official"
+    recommended_monitor_cadence: "weekly"
+    evidence_from_report: >
+      Report marks EverRange relevant because it sits between Nocatee and
+      eTown with US 1 access.
+    review_status: "pending_review"
+    promotion_decision: "deferred"
+    notes: "Spillover/growth-corridor watch."
+
+  - candidate_id: "CAND-SRC-0037"
+    name: "Wildlight official"
+    url: "https://wildlight.com/"
+    source_type: "official_regional_comparator"
+    owner: "Wildlight development team"
+    homeowner_relevance: "MEDIUM"
+    communities: ["wildlight"]
+    topics: ["development", "economic_development", "community_events", "parks_recreation"]
+    update_frequency: "weekly_monthly"
+    automation_feasibility: "easy"
+    reliability: "semi_official"
+    recommended_monitor_cadence: "monthly"
+    evidence_from_report: >
+      Report says Wildlight is useful mainly as a regional comparator for
+      growth, retail, and developer behavior.
+    review_status: "pending_review"
+    promotion_decision: "deferred"
+    notes: "Comparator only; not a first promotion."
+
+  # Media, civic, and nearby municipal context.
+  - candidate_id: "CAND-SRC-0038"
+    name: "Jacksonville Daily Record"
+    url: "https://www.jaxdailyrecord.com/"
+    source_type: "local_business_development_media"
+    owner: "Jacksonville Daily Record"
+    homeowner_relevance: "HIGH"
+    communities: ["countywide", "cr_210_corridor", "us_1_corridor"]
+    topics: ["development", "economic_development", "public_notices"]
+    update_frequency: "daily"
+    automation_feasibility: "easy"
+    reliability: "high"
+    recommended_monitor_cadence: "daily"
+    evidence_from_report: >
+      Report identifies JDR as particularly strong for commercial permits,
+      store openings, development timing, restaurants, and public notices.
+    review_status: "pending_review"
+    promotion_decision: "recommend_promotion"
+    notes: "Local media source; verify consequential claims through records."
+
+  - candidate_id: "CAND-SRC-0039"
+    name: "Local TV stack"
+    url: "https://www.news4jax.com/"
+    source_type: "local_tv_breaking_news"
+    owner: "WJXT / companion stations"
+    homeowner_relevance: "HIGH"
+    communities: ["countywide"]
+    topics: ["public_safety", "transportation", "environment", "emergency_alerts"]
+    update_frequency: "daily_realtime"
+    automation_feasibility: "easy"
+    reliability: "high"
+    recommended_monitor_cadence: "daily"
+    evidence_from_report: >
+      Report recommends News4Jax with Action News Jax and First Coast News
+      for breaking traffic, safety, weather, closures, and public-interest
+      stories.
+    review_status: "pending_review"
+    promotion_decision: "deferred"
+    notes: "Use as context/tip stack; avoid duplicative media copying."
+
+  - candidate_id: "CAND-SRC-0040"
+    name: "Ponte Vedra Recorder"
+    url: "https://www.pontevedrarecorder.com/"
+    source_type: "local_newspaper"
+    owner: "The Recorder / local publisher"
+    homeowner_relevance: "HIGH"
+    communities: ["ponte_vedra", "nocatee"]
+    topics: ["county_government", "education", "community_events", "development"]
+    update_frequency: "weekly"
+    automation_feasibility: "easy"
+    reliability: "high"
+    recommended_monitor_cadence: "daily scan; weekly digest"
+    evidence_from_report: >
+      Report identifies the Recorder as a weekly serving St. Johns and Duval
+      with Ponte Vedra, Nocatee, schools, government, and community coverage.
+    review_status: "pending_review"
+    promotion_decision: "deferred"
+    notes: "Good local context source after official stack."
+
+  - candidate_id: "CAND-SRC-0041"
+    name: "Florida Public Notices"
+    url: "https://floridapublicnotices.com/"
+    source_type: "legal_notice_aggregator"
+    owner: "Florida Press Association system"
+    homeowner_relevance: "VERY_HIGH"
+    communities: ["countywide"]
+    topics: ["public_notices", "county_government", "development", "taxes", "elections"]
+    update_frequency: "daily_as_filed"
+    automation_feasibility: "moderate"
+    reliability: "high"
+    recommended_monitor_cadence: "daily"
+    evidence_from_report: >
+      Report calls this a strong cross-check for notices that never receive
+      normal news coverage, including CDDs, hearings, procurement, and elections.
+    review_status: "pending_review"
+    promotion_decision: "recommend_promotion"
+    notes: "High-value source for CDD/governance and public-hearing discovery."
+
+  - candidate_id: "CAND-SRC-0042"
+    name: "St. Johns County Chamber calendar"
+    url: "https://business.sjcchamber.com/sjc-events-calendar"
+    source_type: "chamber_business_calendar"
+    owner: "St. Johns County Chamber of Commerce"
+    homeowner_relevance: "MEDIUM_HIGH"
+    communities: ["countywide"]
+    topics: ["economic_development", "community_events"]
+    update_frequency: "weekly"
+    automation_feasibility: "easy"
+    reliability: "high"
+    recommended_monitor_cadence: "weekly"
+    evidence_from_report: >
+      Report says chamber calendar is good for new-business and opening
+      signals, ribbon cuttings, and member announcements.
+    review_status: "pending_review"
+    promotion_decision: "deferred"
+    notes: "Useful for retail/service openings; not a first official-source priority."
+
+  - candidate_id: "CAND-SRC-0043"
+    name: "Florida's Historic Coast events"
+    url: "https://www.floridashistoriccoast.com/events/"
+    source_type: "official_tourism_events_calendar"
+    owner: "St. Augustine, Ponte Vedra and The Beaches VCB"
+    homeowner_relevance: "MEDIUM"
+    communities: ["st_augustine", "ponte_vedra", "st_augustine_beach"]
+    topics: ["community_events", "transportation"]
+    update_frequency: "daily_weekly"
+    automation_feasibility: "easy"
+    reliability: "high"
+    recommended_monitor_cadence: "weekly"
+    evidence_from_report: >
+      Report says this is helpful for traffic, parking, and big-weekend
+      forecasting around St. Augustine and beach areas.
+    review_status: "pending_review"
+    promotion_decision: "deferred"
+    notes: "Events context source."
+
+  - candidate_id: "CAND-SRC-0044"
+    name: "City of St. Augustine meetings and notices"
+    url: "https://citystaug.com/603/Meeting-Calendar"
+    source_type: "nearby_municipal_government"
+    owner: "City of St. Augustine"
+    homeowner_relevance: "HIGH"
+    communities: ["st_augustine", "us_1_corridor", "sr_16_corridor"]
+    topics: ["county_government", "public_notices", "development", "transportation", "coastal_projects"]
+    update_frequency: "weekly_meeting_driven"
+    automation_feasibility: "easy"
+    reliability: "official"
+    recommended_monitor_cadence: "weekly"
+    evidence_from_report: >
+      Report recommends city meetings, posted public notices, agendas/minutes,
+      and possible beach-city meetings for parking, flood, event, and interface
+      issues.
+    review_status: "pending_review"
+    promotion_decision: "deferred"
+    notes: "Municipal context source, not countywide first wave."
+
+  - candidate_id: "CAND-SRC-0045"
+    name: "Ponte Vedra Beach MSD"
+    url: "https://pvmsd.org/"
+    source_type: "nearby_special_district"
+    owner: "Municipal Service District of Ponte Vedra Beach"
+    homeowner_relevance: "MEDIUM_HIGH"
+    communities: ["ponte_vedra"]
+    topics: ["county_government", "infrastructure", "parks_recreation"]
+    update_frequency: "monthly_meeting_driven"
+    automation_feasibility: "moderate"
+    reliability: "high"
+    recommended_monitor_cadence: "monthly"
+    evidence_from_report: >
+      Report says this is useful for coastal-north resident issues but narrower
+      than county sources.
+    review_status: "pending_review"
+    promotion_decision: "deferred"
+    notes: "Special district context source."

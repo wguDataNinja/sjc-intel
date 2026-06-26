@@ -1,0 +1,544 @@
+source_id: sjc_bcc_calendar
+fetched_at: '2026-06-26T07:53:56Z'
+source_url: https://stjohnsclerk.com/board-records/agendas/
+total_items: 11
+items:
+- item_id: SJC-BCC-20260616-0001
+  title: BCC Meeting — 2026-06-16 (agenda link broken)
+  summary: 'BCC Regular Meeting on 2026-06-16. Status: agenda link broken.'
+  source_id: sjc_bcc_calendar
+  source_url: https://stjohnsclerk.com/board-records/agendas/
+  source_published_at: '2026-06-16'
+  discovered_at: '2026-06-26T07:53:56Z'
+  discovered_by: hermes-sjc_bcc_calendar
+  topics:
+  - county_government
+  communities: []
+  geographic_scope: county_wide
+  urgency: archival
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: 'BCC meeting on 2026-06-16. Agenda: unavailable. Minutes: pending.'
+  citation:
+    source_name: St. Johns County Clerk of Court — Board Records
+    source_type: government_website
+    accessed_at: '2026-06-26T07:53:56Z'
+    url: https://stjohnsclerk.com/board-records/agendas/
+  review_status: archived
+  primary_topic: county_government
+  interest_tags:
+  - community_trust
+  resident_relevance:
+    summary: BCC meeting on 2026-06-16 — the county's top decision-making body.
+    affected_audiences:
+    - residents
+    - homeowners
+    why_it_matters: BCC meetings set policy, approve budgets, and make decisions affecting
+      all SJC residents.
+    confidence: high
+    inference_notes: Meeting details directly from Clerk board records.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:53:56Z'
+  _dedupe_key: f64c8b14dc2c35e5
+  _meeting_date: '2026-06-16'
+  _agenda_url: https://stjohnsclerk.com/wp-content/uploads/2026/06/61626arbcc.pdf
+  _minutes_url: ''
+  _govtv_url: https://stjohnscountyfl.new.swagit.com/videos/391153
+  _status: agenda_link_broken
+  _agenda_link_broken: true
+  reviewer_notes: 'Batch archived: BCC meeting-level metadata record. Source event
+    tracker — per-item extraction is in separate file.'
+- item_id: SJC-BCC-20260602-0002
+  title: BCC Meeting — 2026-06-02
+  summary: 'BCC Regular Meeting on 2026-06-02. Status: past with minutes.'
+  source_id: sjc_bcc_calendar
+  source_url: https://stjohnsclerk.com/board-records/agendas/
+  source_published_at: '2026-06-02'
+  discovered_at: '2026-06-26T07:53:56Z'
+  discovered_by: hermes-sjc_bcc_calendar
+  topics:
+  - county_government
+  communities: []
+  geographic_scope: county_wide
+  urgency: archival
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: 'BCC meeting on 2026-06-02. Agenda: unavailable. Minutes: available.'
+  citation:
+    source_name: St. Johns County Clerk of Court — Board Records
+    source_type: government_website
+    accessed_at: '2026-06-26T07:53:56Z'
+    url: https://stjohnsclerk.com/board-records/agendas/
+  review_status: archived
+  primary_topic: county_government
+  interest_tags:
+  - community_trust
+  resident_relevance:
+    summary: BCC meeting on 2026-06-02 — the county's top decision-making body.
+    affected_audiences:
+    - residents
+    - homeowners
+    why_it_matters: BCC meetings set policy, approve budgets, and make decisions affecting
+      all SJC residents.
+    confidence: high
+    inference_notes: Meeting details directly from Clerk board records.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:53:56Z'
+  _dedupe_key: ce687868b3a853f3
+  _meeting_date: '2026-06-02'
+  _agenda_url: https://stjohnsclerk.com/wp-content/uploads/2026/06/60226arbcc.pdf
+  _minutes_url: https://stjohnsclerk.com/wp-content/uploads/2026/06/060226mrbcc.pdf
+  _govtv_url: https://stjohnscountyfl.new.swagit.com/videos/389819
+  _status: past_with_minutes
+  _agenda_link_broken: true
+  reviewer_notes: 'Batch archived: BCC meeting-level metadata record. Source event
+    tracker — per-item extraction is in separate file.'
+- item_id: SJC-BCC-20260519-0003
+  title: BCC Meeting — 2026-05-19
+  summary: 'BCC Regular Meeting on 2026-05-19. Status: past with minutes.'
+  source_id: sjc_bcc_calendar
+  source_url: https://stjohnsclerk.com/board-records/agendas/
+  source_published_at: '2026-05-19'
+  discovered_at: '2026-06-26T07:53:56Z'
+  discovered_by: hermes-sjc_bcc_calendar
+  topics:
+  - county_government
+  communities: []
+  geographic_scope: county_wide
+  urgency: archival
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: 'BCC meeting on 2026-05-19. Agenda: available. Minutes: available.'
+  citation:
+    source_name: St. Johns County Clerk of Court — Board Records
+    source_type: government_website
+    accessed_at: '2026-06-26T07:53:56Z'
+    url: https://stjohnsclerk.com/board-records/agendas/
+  review_status: archived
+  primary_topic: county_government
+  interest_tags:
+  - community_trust
+  resident_relevance:
+    summary: BCC meeting on 2026-05-19 — the county's top decision-making body.
+    affected_audiences:
+    - residents
+    - homeowners
+    why_it_matters: BCC meetings set policy, approve budgets, and make decisions affecting
+      all SJC residents.
+    confidence: high
+    inference_notes: Meeting details directly from Clerk board records.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:53:56Z'
+  _dedupe_key: cac70767af4ca628
+  _meeting_date: '2026-05-19'
+  _agenda_url: https://stjohnsclerk.com/wp-content/uploads/2026/05/051926arbcc.pdf
+  _minutes_url: https://stjohnsclerk.com/wp-content/uploads/2026/06/051926mrbcc.pdf
+  _govtv_url: https://stjohnscountyfl.new.swagit.com/videos/388340
+  _status: past_with_minutes
+  _agenda_link_broken: false
+  reviewer_notes: 'Batch archived: BCC meeting-level metadata record. Source event
+    tracker — per-item extraction is in separate file.'
+- item_id: SJC-BCC-20260505-0004
+  title: BCC Meeting — 2026-05-05
+  summary: 'BCC Regular Meeting on 2026-05-05. Status: past with minutes.'
+  source_id: sjc_bcc_calendar
+  source_url: https://stjohnsclerk.com/board-records/agendas/
+  source_published_at: '2026-05-05'
+  discovered_at: '2026-06-26T07:53:56Z'
+  discovered_by: hermes-sjc_bcc_calendar
+  topics:
+  - county_government
+  communities: []
+  geographic_scope: county_wide
+  urgency: archival
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: 'BCC meeting on 2026-05-05. Agenda: available. Minutes: available.'
+  citation:
+    source_name: St. Johns County Clerk of Court — Board Records
+    source_type: government_website
+    accessed_at: '2026-06-26T07:53:56Z'
+    url: https://stjohnsclerk.com/board-records/agendas/
+  review_status: archived
+  primary_topic: county_government
+  interest_tags:
+  - community_trust
+  resident_relevance:
+    summary: BCC meeting on 2026-05-05 — the county's top decision-making body.
+    affected_audiences:
+    - residents
+    - homeowners
+    why_it_matters: BCC meetings set policy, approve budgets, and make decisions affecting
+      all SJC residents.
+    confidence: high
+    inference_notes: Meeting details directly from Clerk board records.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:53:56Z'
+  _dedupe_key: 4c6f8d8b89d485bf
+  _meeting_date: '2026-05-05'
+  _agenda_url: https://stjohnsclerk.com/wp-content/uploads/2026/04/050526arbcc.pdf
+  _minutes_url: https://stjohnsclerk.com/wp-content/uploads/2026/05/050526mrbcc.pdf
+  _govtv_url: https://stjohnscountyfl.new.swagit.com/videos/385066
+  _status: past_with_minutes
+  _agenda_link_broken: false
+  reviewer_notes: 'Batch archived: BCC meeting-level metadata record. Source event
+    tracker — per-item extraction is in separate file.'
+- item_id: SJC-BCC-20260421-0005
+  title: BCC Meeting — 2026-04-21
+  summary: 'BCC Regular Meeting on 2026-04-21. Status: past with minutes.'
+  source_id: sjc_bcc_calendar
+  source_url: https://stjohnsclerk.com/board-records/agendas/
+  source_published_at: '2026-04-21'
+  discovered_at: '2026-06-26T07:53:56Z'
+  discovered_by: hermes-sjc_bcc_calendar
+  topics:
+  - county_government
+  communities: []
+  geographic_scope: county_wide
+  urgency: archival
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: 'BCC meeting on 2026-04-21. Agenda: unavailable. Minutes: available.'
+  citation:
+    source_name: St. Johns County Clerk of Court — Board Records
+    source_type: government_website
+    accessed_at: '2026-06-26T07:53:56Z'
+    url: https://stjohnsclerk.com/board-records/agendas/
+  review_status: archived
+  primary_topic: county_government
+  interest_tags:
+  - community_trust
+  resident_relevance:
+    summary: BCC meeting on 2026-04-21 — the county's top decision-making body.
+    affected_audiences:
+    - residents
+    - homeowners
+    why_it_matters: BCC meetings set policy, approve budgets, and make decisions affecting
+      all SJC residents.
+    confidence: high
+    inference_notes: Meeting details directly from Clerk board records.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:53:56Z'
+  _dedupe_key: ecf09b221aa7da24
+  _meeting_date: '2026-04-21'
+  _agenda_url: https://stjohnsclerk.com/wp-content/uploads/2026/04/42126arbcc.pdf
+  _minutes_url: https://stjohnsclerk.com/wp-content/uploads/2026/05/042126mrbcc.pdf
+  _govtv_url: https://stjohnscountyfl.new.swagit.com/videos/382852
+  _status: past_with_minutes
+  _agenda_link_broken: true
+  reviewer_notes: 'Batch archived: BCC meeting-level metadata record. Source event
+    tracker — per-item extraction is in separate file.'
+- item_id: SJC-BCC-20260407-0006
+  title: BCC Meeting — 2026-04-07
+  summary: 'BCC Regular Meeting on 2026-04-07. Status: past with minutes.'
+  source_id: sjc_bcc_calendar
+  source_url: https://stjohnsclerk.com/board-records/agendas/
+  source_published_at: '2026-04-07'
+  discovered_at: '2026-06-26T07:53:56Z'
+  discovered_by: hermes-sjc_bcc_calendar
+  topics:
+  - county_government
+  communities: []
+  geographic_scope: county_wide
+  urgency: archival
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: 'BCC meeting on 2026-04-07. Agenda: available. Minutes: available.'
+  citation:
+    source_name: St. Johns County Clerk of Court — Board Records
+    source_type: government_website
+    accessed_at: '2026-06-26T07:53:56Z'
+    url: https://stjohnsclerk.com/board-records/agendas/
+  review_status: archived
+  primary_topic: county_government
+  interest_tags:
+  - community_trust
+  resident_relevance:
+    summary: BCC meeting on 2026-04-07 — the county's top decision-making body.
+    affected_audiences:
+    - residents
+    - homeowners
+    why_it_matters: BCC meetings set policy, approve budgets, and make decisions affecting
+      all SJC residents.
+    confidence: high
+    inference_notes: Meeting details directly from Clerk board records.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:53:56Z'
+  _dedupe_key: e56c230a5f9426c1
+  _meeting_date: '2026-04-07'
+  _agenda_url: https://stjohnsclerk.com/wp-content/uploads/2026/04/040726arbcc.pdf
+  _minutes_url: https://stjohnsclerk.com/wp-content/uploads/2026/04/040726mrbcc.pdf
+  _govtv_url: https://stjohnscountyfl.new.swagit.com/videos/381317
+  _status: past_with_minutes
+  _agenda_link_broken: false
+  reviewer_notes: 'Batch archived: BCC meeting-level metadata record. Source event
+    tracker — per-item extraction is in separate file.'
+- item_id: SJC-BCC-20260324-0007
+  title: BCC Meeting — 2026-03-24
+  summary: 'BCC Regular Meeting on 2026-03-24. Status: past with minutes.'
+  source_id: sjc_bcc_calendar
+  source_url: https://stjohnsclerk.com/board-records/agendas/
+  source_published_at: '2026-03-24'
+  discovered_at: '2026-06-26T07:53:56Z'
+  discovered_by: hermes-sjc_bcc_calendar
+  topics:
+  - county_government
+  communities: []
+  geographic_scope: county_wide
+  urgency: archival
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: 'BCC meeting on 2026-03-24. Agenda: available. Minutes: available.'
+  citation:
+    source_name: St. Johns County Clerk of Court — Board Records
+    source_type: government_website
+    accessed_at: '2026-06-26T07:53:56Z'
+    url: https://stjohnsclerk.com/board-records/agendas/
+  review_status: archived
+  primary_topic: county_government
+  interest_tags:
+  - community_trust
+  resident_relevance:
+    summary: BCC meeting on 2026-03-24 — the county's top decision-making body.
+    affected_audiences:
+    - residents
+    - homeowners
+    why_it_matters: BCC meetings set policy, approve budgets, and make decisions affecting
+      all SJC residents.
+    confidence: high
+    inference_notes: Meeting details directly from Clerk board records.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:53:56Z'
+  _dedupe_key: a89fa7c50b0a20be
+  _meeting_date: '2026-03-24'
+  _agenda_url: https://stjohnsclerk.com/wp-content/uploads/2026/03/032426arbcc.pdf
+  _minutes_url: https://stjohnsclerk.com/wp-content/uploads/2026/04/032426mrbcc.pdf
+  _govtv_url: https://stjohnscountyfl.new.swagit.com/videos/379038
+  _status: past_with_minutes
+  _agenda_link_broken: false
+  reviewer_notes: 'Batch archived: BCC meeting-level metadata record. Source event
+    tracker — per-item extraction is in separate file.'
+- item_id: SJC-BCC-20260303-0008
+  title: BCC Meeting — 2026-03-03
+  summary: 'BCC Regular Meeting on 2026-03-03. Status: past with minutes.'
+  source_id: sjc_bcc_calendar
+  source_url: https://stjohnsclerk.com/board-records/agendas/
+  source_published_at: '2026-03-03'
+  discovered_at: '2026-06-26T07:53:56Z'
+  discovered_by: hermes-sjc_bcc_calendar
+  topics:
+  - county_government
+  communities: []
+  geographic_scope: county_wide
+  urgency: archival
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: 'BCC meeting on 2026-03-03. Agenda: available. Minutes: available.'
+  citation:
+    source_name: St. Johns County Clerk of Court — Board Records
+    source_type: government_website
+    accessed_at: '2026-06-26T07:53:56Z'
+    url: https://stjohnsclerk.com/board-records/agendas/
+  review_status: archived
+  primary_topic: county_government
+  interest_tags:
+  - community_trust
+  resident_relevance:
+    summary: BCC meeting on 2026-03-03 — the county's top decision-making body.
+    affected_audiences:
+    - residents
+    - homeowners
+    why_it_matters: BCC meetings set policy, approve budgets, and make decisions affecting
+      all SJC residents.
+    confidence: high
+    inference_notes: Meeting details directly from Clerk board records.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:53:56Z'
+  _dedupe_key: f322b24f236c2c0d
+  _meeting_date: '2026-03-03'
+  _agenda_url: https://stjohnsclerk.com/wp-content/uploads/2026/02/030326arbcc.pdf
+  _minutes_url: https://stjohnsclerk.com/wp-content/uploads/2026/03/030326mrbcc.pdf
+  _govtv_url: https://stjohnscountyfl.new.swagit.com/videos/376856
+  _status: past_with_minutes
+  _agenda_link_broken: false
+  reviewer_notes: 'Batch archived: BCC meeting-level metadata record. Source event
+    tracker — per-item extraction is in separate file.'
+- item_id: SJC-BCC-20260217-0009
+  title: BCC Meeting — 2026-02-17
+  summary: 'BCC Regular Meeting on 2026-02-17. Status: past with minutes.'
+  source_id: sjc_bcc_calendar
+  source_url: https://stjohnsclerk.com/board-records/agendas/
+  source_published_at: '2026-02-17'
+  discovered_at: '2026-06-26T07:53:56Z'
+  discovered_by: hermes-sjc_bcc_calendar
+  topics:
+  - county_government
+  communities: []
+  geographic_scope: county_wide
+  urgency: archival
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: 'BCC meeting on 2026-02-17. Agenda: available. Minutes: available.'
+  citation:
+    source_name: St. Johns County Clerk of Court — Board Records
+    source_type: government_website
+    accessed_at: '2026-06-26T07:53:56Z'
+    url: https://stjohnsclerk.com/board-records/agendas/
+  review_status: archived
+  primary_topic: county_government
+  interest_tags:
+  - community_trust
+  resident_relevance:
+    summary: BCC meeting on 2026-02-17 — the county's top decision-making body.
+    affected_audiences:
+    - residents
+    - homeowners
+    why_it_matters: BCC meetings set policy, approve budgets, and make decisions affecting
+      all SJC residents.
+    confidence: high
+    inference_notes: Meeting details directly from Clerk board records.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:53:56Z'
+  _dedupe_key: 7195157005e33457
+  _meeting_date: '2026-02-17'
+  _agenda_url: https://stjohnsclerk.com/wp-content/uploads/2026/02/021726arbcc.pdf
+  _minutes_url: https://stjohnsclerk.com/wp-content/uploads/2026/03/021726mrbcc.pdf
+  _govtv_url: https://stjohnscountyfl.new.swagit.com/videos/375307
+  _status: past_with_minutes
+  _agenda_link_broken: false
+  reviewer_notes: 'Batch archived: BCC meeting-level metadata record. Source event
+    tracker — per-item extraction is in separate file.'
+- item_id: SJC-BCC-20260203-0010
+  title: BCC Meeting — 2026-02-03
+  summary: 'BCC Regular Meeting on 2026-02-03. Status: past with minutes.'
+  source_id: sjc_bcc_calendar
+  source_url: https://stjohnsclerk.com/board-records/agendas/
+  source_published_at: '2026-02-03'
+  discovered_at: '2026-06-26T07:53:56Z'
+  discovered_by: hermes-sjc_bcc_calendar
+  topics:
+  - county_government
+  communities: []
+  geographic_scope: county_wide
+  urgency: archival
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: 'BCC meeting on 2026-02-03. Agenda: available. Minutes: available.'
+  citation:
+    source_name: St. Johns County Clerk of Court — Board Records
+    source_type: government_website
+    accessed_at: '2026-06-26T07:53:56Z'
+    url: https://stjohnsclerk.com/board-records/agendas/
+  review_status: archived
+  primary_topic: county_government
+  interest_tags:
+  - community_trust
+  resident_relevance:
+    summary: BCC meeting on 2026-02-03 — the county's top decision-making body.
+    affected_audiences:
+    - residents
+    - homeowners
+    why_it_matters: BCC meetings set policy, approve budgets, and make decisions affecting
+      all SJC residents.
+    confidence: high
+    inference_notes: Meeting details directly from Clerk board records.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:53:56Z'
+  _dedupe_key: d66dcfc1a7c6e19f
+  _meeting_date: '2026-02-03'
+  _agenda_url: https://stjohnsclerk.com/wp-content/uploads/2026/01/020326arbcc.pdf
+  _minutes_url: https://stjohnsclerk.com/wp-content/uploads/2026/02/020326mrbcc.pdf
+  _govtv_url: https://stjohnscountyfl.new.swagit.com/videos/373846
+  _status: past_with_minutes
+  _agenda_link_broken: false
+  reviewer_notes: 'Batch archived: BCC meeting-level metadata record. Source event
+    tracker — per-item extraction is in separate file.'
+- item_id: SJC-BCC-20260120-0011
+  title: BCC Meeting — 2026-01-20
+  summary: 'BCC Regular Meeting on 2026-01-20. Status: past with minutes.'
+  source_id: sjc_bcc_calendar
+  source_url: https://stjohnsclerk.com/board-records/agendas/
+  source_published_at: '2026-01-20'
+  discovered_at: '2026-06-26T07:53:56Z'
+  discovered_by: hermes-sjc_bcc_calendar
+  topics:
+  - county_government
+  communities: []
+  geographic_scope: county_wide
+  urgency: archival
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: 'BCC meeting on 2026-01-20. Agenda: available. Minutes: available.'
+  citation:
+    source_name: St. Johns County Clerk of Court — Board Records
+    source_type: government_website
+    accessed_at: '2026-06-26T07:53:56Z'
+    url: https://stjohnsclerk.com/board-records/agendas/
+  review_status: archived
+  primary_topic: county_government
+  interest_tags:
+  - community_trust
+  resident_relevance:
+    summary: BCC meeting on 2026-01-20 — the county's top decision-making body.
+    affected_audiences:
+    - residents
+    - homeowners
+    why_it_matters: BCC meetings set policy, approve budgets, and make decisions affecting
+      all SJC residents.
+    confidence: high
+    inference_notes: Meeting details directly from Clerk board records.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T07:53:56Z'
+  _dedupe_key: 34b68648c683099b
+  _meeting_date: '2026-01-20'
+  _agenda_url: https://stjohnsclerk.com/wp-content/uploads/2026/04/012026arbcc.pdf
+  _minutes_url: https://stjohnsclerk.com/wp-content/uploads/2026/02/012026mrbcc.pdf
+  _govtv_url: https://stjohnscountyfl.new.swagit.com/videos/372481
+  _status: past_with_minutes
+  _agenda_link_broken: false
+  reviewer_notes: 'Batch archived: BCC meeting-level metadata record. Source event
+    tracker — per-item extraction is in separate file.'

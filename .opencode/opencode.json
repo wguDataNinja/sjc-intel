@@ -1,0 +1,72 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "agent": {
+    "sjc-intel-architect": {
+      "description": "Repo-local product/architecture/editorial-systems agent for SJC_Intel (St. Johns County, FL local intelligence/reporting system)",
+      "mode": "primary",
+      "model": "opencode-go/qwen3.5-plus",
+      "prompt": "{file:./agents/sjc-intel-architect.md}",
+      "permission": {
+        "read": {
+          "*": "allow",
+          "*.env": "deny",
+          "*.env.*": "deny",
+          "*/.env": "deny",
+          "*/.env.*": "deny",
+          "*credential*": "deny",
+          "*secret*": "deny",
+          "*token*": "deny"
+        },
+        "glob": {
+          "*": "allow",
+          "*.env": "deny",
+          "*.env.*": "deny"
+        },
+        "list": {
+          "*": "allow"
+        },
+        "edit": {
+          "*": "ask",
+          ".opencode/agent_memory/sjc-intel-architect.memory.md": "allow",
+          "README.md": "allow",
+          "*.yaml": "allow",
+          "*.json": "allow",
+          "*.md": "allow",
+          "*.yml": "allow",
+          ".opencode/opencode.json": "ask",
+          ".opencode/agents/**": "ask",
+          ".opencode/agent_memory/**": "allow",
+          "*.env": "deny",
+          "*.env.*": "deny",
+          "*/.env": "deny",
+          "*/.env.*": "deny",
+          "*credential*": "deny",
+          "*secret*": "deny",
+          "*token*": "deny"
+        },
+        "bash": {
+          "*": "deny",
+          "python3 -c *": "allow",
+          "python3 -m json.tool *": "allow",
+          "diff *": "allow",
+          "ls *": "allow",
+          "mkdir *": "allow",
+          "cat .opencode/agent_memory/sjc-intel-architect.memory.md": "allow",
+          "cat README.md": "allow",
+          "cat **/*.yaml": "allow",
+          "cat **/*.yml": "allow",
+          "cat **/*.json": "allow",
+          "cat **/*.md": "allow",
+          "test -f *": "allow",
+          "test -d *": "allow",
+          "wc -l *": "allow",
+          "git status*": "allow",
+          "git diff*": "allow"
+        },
+        "task": "allow",
+        "webfetch": "ask",
+        "websearch": "ask"
+      }
+    }
+  }
+}

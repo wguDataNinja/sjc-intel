@@ -1,0 +1,174 @@
+# =============================================================================
+# SJC_Intel — Source Event Schema
+# =============================================================================
+# A source_event represents a discrete occurrence of a monitored source
+# producing content. Examples: a BCC meeting, an NBOR page fetch, a press
+# release batch, a public notice snapshot.
+#
+# Source events are NOT intel items. They are the containers/context in
+# which intel_items are discovered. Intel items link back to their parent
+# source_event via source_event_id.
+#
+# Schema version: 1.0
+# Status: configured
+# =============================================================================
+
+# --- Core identity ---
+
+event_id:
+  type: string
+  description: >
+    Unique identifier for this source event. Format:
+    EVT-{source_prefix}-{YYYYMMDD}-{NNNN}
+  required: true
+  example: "EVT-BCC-20260120-0001"
+
+source_id:
+  type: string
+  description: >
+    References the source_id in registry/sources.yaml that produced this event.
+  required: true
+  example: "sjc_bcc_calendar"
+
+event_type:
+  type: string
+  description: >
+    Type of source event. Examples:
+    - meeting: A recurring scheduled meeting (BCC, PZA, School Board)
+    - agenda_packet: A published agenda PDF for a specific meeting
+    - page_snapshot: A routine fetch of a source page
+    - press_release_batch: A set of press releases from one fetch
+    - public_notice_snapshot: A fetch of the NBOR public notices page
+  allowed:
+    - meeting
+    - agenda_packet
+    - page_snapshot
+    - press_release_batch
+    - public_notice_snapshot
+  required: true
+  example: "meeting"
+
+# --- Descriptive ---
+
+title:
+  type: string
+  description: Human-readable title for this event.
+  required: true
+  example: "BCC Regular Meeting — January 20, 2026"
+
+event_date:
+  type: string (ISO 8601 date)
+  description: The date the event occurred or is scheduled.
+  required: true
+  example: "2026-01-20"
+
+discovered_at:
+  type: string (ISO 8601)
+  description: When this event was first processed by SJC_Intel.
+  required: true
+  example: "2026-06-26T07:50:00Z"
+
+# --- Source references ---
+
+source_url:
+  type: string
+  description: URL to the source page where this event was discovered.
+  required: true
+  example: "https://stjohnsclerk.com/board-records/agendas/"
+
+document_urls:
+  type: object
+  description: URLs to associated documents for this event.
+  required: false
+  fields:
+    agenda:
+      type: string
+      description: URL to the agenda PDF or page.
+      example: "https://stjohnsclerk.com/wp-content/uploads/2026/01/012026arbcc.pdf"
+    minutes:
+      type: string
+      description: URL to the minutes PDF or page.
+      example: "https://stjohnsclerk.com/wp-content/uploads/2026/02/012026mrbcc.pdf"
+    video:
+      type: string
+      description: URL to GovTV video archive.
+      example: "https://www.sjcfl.us/govtv/"
+
+# --- Status ---
+
+status:
+  type: string
+  description: >
+    Processing status of this event.
+    - discovered: Identified but not yet extracted
+    - extracted: Intel items have been extracted from this event
+    - partially_extracted: Some items extracted, some pending
+    - blocked: Cannot be extracted (broken link, auth required, etc.)
+    - archived: No extraction needed; source-event-only
+  allowed:
+    - discovered
+    - extracted
+    - partially_extracted
+    - blocked
+    - archived
+  required: true
+  example: "extracted"
+
+extraction_status:
+  type: string
+  description: Specific details about what was or was not extracted.
+  required: false
+  example: "Agenda PDF extracted (44 items). Minutes not yet extracted."
+
+source_health:
+  type: string
+  description: Health of the source link at the time of discovery.
+  allowed:
+    - accessible
+    - broken_link
+    - unavailable
+  required: false
+  example: "accessible"
+
+# --- Linkage ---
+
+extracted_item_ids:
+  type: array<string>
+  description: >
+    item_ids of intel_items that were extracted from this event.
+    Populated after extraction.
+  required: false
+  example: ["SJC-BCC-20260120-0001", "SJC-BCC-20260120-0002"]
+
+related_source_event_ids:
+  type: array<string>
+  description: >
+    event_ids of related source events (e.g., minutes event linked to agenda event).
+  required: false
+  example: []
+
+# --- Metadata ---
+
+notes:
+  type: string
+  description: Free-form notes about this event.
+  required: false
+  example: "Agenda link points to minutes PDF — broken link flagged."
+
+raw_source_file:
+  type: string
+  description: Path to raw source fixture, if saved.
+  required: false
+  example: "tests/fixtures/clerk_agendas.html"
+
+created_at:
+  type: string (ISO 8601)
+  description: When this source event record was created.
+  required: true
+  example: "2026-06-26T07:50:00Z"
+
+updated_at:
+  type: string (ISO 8601)
+  description: When this source event record was last modified.
+  required: false
+  example: "2026-06-26T07:50:00Z"

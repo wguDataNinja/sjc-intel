@@ -1,0 +1,599 @@
+# =============================================================================
+# SJC_Intel — Prior Items Dedupe Index
+# =============================================================================
+# Tracks item fingerprints for deduplication across monitor cycles.
+#
+# Schema version: 1.1
+# Last updated: 2026-06-26
+# Updated by: rebuild_dedupe_index.py
+# =============================================================================
+
+prior_items:
+- key: e686c07578f7530e
+  item_id: SJC-CN-20260603-0001
+  title: Surplus Goods Public Auction Scheduled for June 20
+  source_id: sjc_county_news
+  beat: unknown
+  discovered_at: '2026-06-03T04:00:00Z'
+  status: pending_review
+- key: 0523b010fd210fce
+  item_id: SJC-CN-20260603-0002
+  title: SJC Highlights Long-Term Resiliency Improvements at Porpoise Point Vehicular
+    Beach Access Ramp
+  source_id: sjc_county_news
+  beat: unknown
+  discovered_at: '2026-06-03T04:00:00Z'
+  status: pending_review
+- key: 4c103eb19c53b877
+  item_id: SJC-CN-20260603-0003
+  title: Public Library Announces 2026 Summer Reading Program
+  source_id: sjc_county_news
+  beat: unknown
+  discovered_at: '2026-06-03T04:00:00Z'
+  status: pending_review
+- key: 405958168638afba
+  item_id: SJC-CN-20260603-0004
+  title: St. Johns County Earns Statewide Communications Recognition
+  source_id: sjc_county_news
+  beat: unknown
+  discovered_at: '2026-06-03T04:00:00Z'
+  status: pending_review
+- key: 337acf8d52f83708
+  item_id: SJC-CN-20260603-0005
+  title: St. Johns County Enters Phase III Extreme Water Shortage Declaration
+  source_id: sjc_county_news
+  beat: unknown
+  discovered_at: '2026-06-03T04:00:00Z'
+  status: pending_review
+- key: e5f9cd3617365a55
+  item_id: SJC-UTIL-20260603-0001
+  title: Phase III Extreme Water Shortage Declaration — Active
+  source_id: sjc_utility_department
+  beat: environment
+  discovered_at: '2026-06-03T23:30:00Z'
+  status: pending_review
+- key: a7b5644230d1e094
+  item_id: SJC-SJSO-20260603-0001
+  title: St. Johns County inmate charged; woman arrested for executing a contraband
+    drop on restricted law enforcement property
+  source_id: sjso_news_stories
+  beat: crime
+  discovered_at: '2026-06-03T06:00:00Z'
+  status: pending_review
+- key: f1d2b2458de20010
+  item_id: SJC-SJSO-20260603-0002
+  title: Lifesaving rescue highlights the importance of local programs in place to
+    locate vulnerable individuals and prevent future emergencies
+  source_id: sjso_news_stories
+  beat: public_safety
+  discovered_at: '2026-06-03T06:00:00Z'
+  status: pending_review
+- key: f2daa2eb6dbe065b
+  item_id: SJC-SJSO-20260603-0003
+  title: Nine arrested during SJSOs March 2026 DUI Wolfpack Operation
+  source_id: sjso_news_stories
+  beat: crime
+  discovered_at: '2026-06-03T06:00:00Z'
+  status: pending_review
+- key: 586aa73ebc5d75b7
+  item_id: SJC-SJSO-20260603-0004
+  title: Arrest made in connection to the 2023 double murders of Cody Bennett and
+    Tre' Lyons
+  source_id: sjso_news_stories
+  beat: crime
+  discovered_at: '2026-06-03T06:00:00Z'
+  status: pending_review
+- key: e1e7b41af72ede8d
+  item_id: SJC-NBOR-20260626-0001
+  title: Comcast
+  source_id: sjc_nbor_public_notices
+  beat: utilities_water
+  discovered_at: '2026-06-26T07:16:16Z'
+  status: pending_review
+- key: 0352eee67611e605
+  item_id: SJC-NBOR-20260626-0002
+  title: ZVAR 2026000011 Bargfrede Shed (PRIDE 2601876)
+  source_id: sjc_nbor_public_notices
+  beat: rezoning_comp_plan_dri
+  discovered_at: '2026-06-26T07:16:16Z'
+  status: pending_review
+- key: 0f7f485f7206b341
+  item_id: SJC-NBOR-20260626-0003
+  title: ZVAR 2026000019 Aspinwall Variance
+  source_id: sjc_nbor_public_notices
+  beat: rezoning_comp_plan_dri
+  discovered_at: '2026-06-26T07:16:16Z'
+  status: pending_review
+- key: baba40870e646206
+  item_id: SJC-NBOR-20260626-0004
+  title: ZVAR 2025000027 Tatum Variance
+  source_id: sjc_nbor_public_notices
+  beat: rezoning_comp_plan_dri
+  discovered_at: '2026-06-26T07:16:16Z'
+  status: pending_review
+- key: a2b6c0939090f8e6
+  item_id: SJC-NBOR-20260626-0005
+  title: Comcast
+  source_id: sjc_nbor_public_notices
+  beat: utilities_water
+  discovered_at: '2026-06-26T07:16:16Z'
+  status: pending_review
+- key: a118935cdd9fd61d
+  item_id: SJC-NBOR-20260626-0007
+  title: City of St Augustine
+  source_id: sjc_nbor_public_notices
+  beat: site_plans_permits_construction
+  discovered_at: '2026-06-26T07:16:16Z'
+  status: pending_review
+- key: bc368026fb70419f
+  item_id: SJC-NBOR-20260626-0008
+  title: Beaches Energy
+  source_id: sjc_nbor_public_notices
+  beat: utilities_water
+  discovered_at: '2026-06-26T07:16:16Z'
+  status: pending_review
+- key: 6e3aa3c8aa20053c
+  item_id: SJC-NBOR-20260626-0009
+  title: AT&T
+  source_id: sjc_nbor_public_notices
+  beat: site_plans_permits_construction
+  discovered_at: '2026-06-26T07:16:16Z'
+  status: pending_review
+- key: 13d78e4624b073ba
+  item_id: SJC-NBOR-20260626-0010
+  title: JEA
+  source_id: sjc_nbor_public_notices
+  beat: utilities_water
+  discovered_at: '2026-06-26T07:16:16Z'
+  status: pending_review
+- key: 0769b48d68988d70
+  item_id: SJC-NBOR-20260626-0012
+  title: FPL
+  source_id: sjc_nbor_public_notices
+  beat: utilities_water
+  discovered_at: '2026-06-26T07:16:16Z'
+  status: pending_review
+- key: d6bdabfa2da526c6
+  item_id: SJC-NBOR-20260626-0013
+  title: Farrell Marine
+  source_id: sjc_nbor_public_notices
+  beat: roadwork_traffic
+  discovered_at: '2026-06-26T07:16:16Z'
+  status: pending_review
+- key: c20191fb6c6cefb7
+  item_id: SJC-NBOR-20260626-0014
+  title: MAJMOD 2025000011 Golfway Centre PUD
+  source_id: sjc_nbor_public_notices
+  beat: rezoning_comp_plan_dri
+  discovered_at: '2026-06-26T07:16:16Z'
+  status: pending_review
+- key: 244922c00d48172e
+  item_id: SJC-NBOR-20260626-0015
+  title: Scott Waite
+  source_id: sjc_nbor_public_notices
+  beat: site_plans_permits_construction
+  discovered_at: '2026-06-26T07:16:16Z'
+  status: pending_review
+- key: 21bda2f876c8a97b
+  item_id: SJC-NBOR-20260626-0016
+  title: REZ 2026000002 177 Surfside Avenue (146820-0000)
+  source_id: sjc_nbor_public_notices
+  beat: rezoning_comp_plan_dri
+  discovered_at: '2026-06-26T07:16:16Z'
+  status: pending_review
+- key: 087a9058bdb02d4c
+  item_id: SJC-NBOR-20260626-0017
+  title: REZ 2026000001 3025 Old Moultrie Road
+  source_id: sjc_nbor_public_notices
+  beat: rezoning_comp_plan_dri
+  discovered_at: '2026-06-26T07:16:16Z'
+  status: pending_review
+- key: 65dae7b5cac78ea4
+  item_id: SJC-NBOR-20260626-0018
+  title: Terracon
+  source_id: sjc_nbor_public_notices
+  beat: site_plans_permits_construction
+  discovered_at: '2026-06-26T07:16:16Z'
+  status: pending_review
+- key: 5095023cc1e1f1d4
+  item_id: SJC-NBOR-20260626-0019
+  title: P&G Construction
+  source_id: sjc_nbor_public_notices
+  beat: site_plans_permits_construction
+  discovered_at: '2026-06-26T07:16:16Z'
+  status: pending_review
+- key: 2c29926fc74c0d21
+  item_id: SJC-NBOR-20260626-0020
+  title: JEA
+  source_id: sjc_nbor_public_notices
+  beat: utilities_water
+  discovered_at: '2026-06-26T07:16:16Z'
+  status: pending_review
+- key: 38cd637d1d0ea2fe
+  item_id: SJC-NBOR-20260626-0021
+  title: Comcast
+  source_id: sjc_nbor_public_notices
+  beat: utilities_water
+  discovered_at: '2026-06-26T07:16:16Z'
+  status: pending_review
+- key: 04e882567677c934
+  item_id: SJC-NBOR-20260626-0024
+  title: AT&T
+  source_id: sjc_nbor_public_notices
+  beat: site_plans_permits_construction
+  discovered_at: '2026-06-26T07:16:16Z'
+  status: pending_review
+- key: 6d47e00087b32f38
+  item_id: SJC-BCC-20260120-0001
+  title: Public Hearing * 2050 Comprehensive Plan - Transmittal Hearing - Restrictive
+    and Burdensome Revisi on; Statute Update.   The 2050 Comprehensive Plan was
+  source_id: sjc_bcc_calendar
+  beat: rezoning_comp_plan_dri
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: a371acc881446d24
+  item_id: SJC-BCC-20260120-0002
+  title: Public Hearing * REZ 2025-11 Nothing Putt Fun.  Request to rezone approximately
+    3.98 acres of land, located at 7250 and 7280 US 1 North, from Commercial
+  source_id: sjc_bcc_calendar
+  beat: rezoning_comp_plan_dri
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: f943cca699d72b2d
+  item_id: SJC-BCC-20260120-0003
+  title: Public Hearing * REZ 2025-13 James-Cogo Commercial.   Request to rezone approximately
+    0.68 acres of land from Commercial General (CG) with conditions to
+  source_id: sjc_bcc_calendar
+  beat: rezoning_comp_plan_dri
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: 30976d7c165ea753
+  item_id: SJC-BCC-20260120-0004
+  title: Interlocal Agreement - St. Johns County Community Redevelopment Agency and
+    Flagler Estates Road and Water Control District.   In July 2025, County Staff
+  source_id: sjc_bcc_calendar
+  beat: transportation
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: 020b1e94f772fe3e
+  item_id: SJC-BCC-20260120-0005
+  title: Septic-to-Sewer Connection Policy Discussion.   Pursuant to direction from
+    the Board of County Commissioners (BOCC) on October 7, 2025, staff prepared a
+    white
+  source_id: sjc_bcc_calendar
+  beat: utilities_water
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: d47218047beb8f02
+  item_id: SJC-BCC-20260120-0006
+  title: Urban Flex PV, LLC Economic Development Incentive Request.   The St. Johns
+    County Economic Development Agency (Age ncy) has received an application from
+  source_id: sjc_bcc_calendar
+  beat: utilities_water
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: af282c824e5687cf
+  item_id: SJC-BCC-20260120-0007
+  title: Land Acquisition and Management Program (LAMP) Funding.  At the November
+    4, 2025 BCC meeting, the Board directed staff to identify potential funding opportu
+  source_id: sjc_bcc_calendar
+  beat: taxes_exemptions_trim_vab
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: 12c01123a2bc5a83
+  item_id: SJC-BCC-20260120-0008
+  title: Median Opening - Shores Boulevard.  The Board directed staff during the December
+  source_id: sjc_bcc_calendar
+  beat: rezoning_comp_plan_dri
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: 7bbf0dece6178de2
+  item_id: SJC-BCC-20260120-0009
+  title: Motion to approve the  Cash Requirement Report.     For more information,
+    contact
+  source_id: sjc_bcc_calendar
+  beat: local_government_budget_procurement
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: 0248a3642530d23a
+  item_id: SJC-BCC-20260120-0010
+  title: Motion to approve PFS AGREE 2025-02 and au thorize the County Administrator,
+    or designee, to execute the Sebastian Oaks Concurrency and Impact Fee Agreement,
+  source_id: sjc_bcc_calendar
+  beat: transportation
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: cc2f24ac1cb9b515
+  item_id: SJC-BCC-20260120-0011
+  title: Motion to adopt Resolution 2026-________, authorizing the County Administrator,
+    or
+  source_id: sjc_bcc_calendar
+  beat: transportation
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: 93213b25bef9523f
+  item_id: SJC-BCC-20260120-0012
+  title: Motion to adopt Resolution 2026-________, approving the  transfer of road
+    impact fee
+  source_id: sjc_bcc_calendar
+  beat: rezoning_comp_plan_dri
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: a8dc735ce6abe3d5
+  item_id: SJC-BCC-20260120-0013
+  title: Motion to adopt  Resolution 2026-________, accepting a Bill of Sale with
+    a Schedule of
+  source_id: sjc_bcc_calendar
+  beat: utilities_water
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: 9a8b7aa73a1823c5
+  item_id: SJC-BCC-20260120-0014
+  title: Motion to adopt Resolution 2026-_____, accepting an  Easement for Utilities,
+    a Bill
+  source_id: sjc_bcc_calendar
+  beat: utilities_water
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: 5e433852e6a11b98
+  item_id: SJC-BCC-20260120-0015
+  title: Motion to adopt Resolution 2026-________, accepting a  Bill of Sale with
+    a Schedule of
+  source_id: sjc_bcc_calendar
+  beat: utilities_water
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: dac25809d37d1366
+  item_id: SJC-BCC-20260120-0016
+  title: Motion to adopt Resolution 2026-________, accepting a  Bill of Sale with
+    a Schedule of
+  source_id: sjc_bcc_calendar
+  beat: utilities_water
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: c4811cdd3e00a048
+  item_id: SJC-BCC-20260120-0017
+  title: Motion to adopt Resolution 2026-________, approving the terms and conditions
+    of a
+  source_id: sjc_bcc_calendar
+  beat: local_government_budget_procurement
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: 2878230aff5556dd
+  item_id: SJC-BCC-20260120-0018
+  title: Motion to adopt Resolution 2026-________, approving the terms and conditions
+    of a
+  source_id: sjc_bcc_calendar
+  beat: local_government_budget_procurement
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: e24f841f163319aa
+  item_id: SJC-BCC-20260120-0019
+  title: Motion to adopt Resolution 2026-______ __, accepting the terms and authorizing
+    the
+  source_id: sjc_bcc_calendar
+  beat: transportation
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: 03d668cf2af921d7
+  item_id: SJC-BCC-20260120-0020
+  title: Motion to adopt Resolution 2026-________, authorizing the Chair of the Board,
+    on
+  source_id: sjc_bcc_calendar
+  beat: rezoning_comp_plan_dri
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: 04dcf8bfdf55559b
+  item_id: SJC-BCC-20260120-0021
+  title: Motion to adopt Resolution 2026-________, accepting a  Grant of Easement
+    for Utilities
+  source_id: sjc_bcc_calendar
+  beat: utilities_water
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: fd6394bc9fb1a6b6
+  item_id: SJC-BCC-20260120-0022
+  title: Motion to adopt Resolution 2026-______ __, accepting the terms and authorizing
+    the
+  source_id: sjc_bcc_calendar
+  beat: parks_amenities
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: 9fedea87cf0882bb
+  item_id: SJC-BCC-20260120-0023
+  title: Motion to adopt Resolution 2026-________, approving  a First Amendment to
+    Access
+  source_id: sjc_bcc_calendar
+  beat: local_government_budget_procurement
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: 40e2b7bd611d7a60
+  item_id: SJC-BCC-20260120-0024
+  title: Motion to adopt Resolution 2026-________, approving the terms and authorizing
+    the
+  source_id: sjc_bcc_calendar
+  beat: parks_amenities
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: b2867abda4f18040
+  item_id: SJC-BCC-20260120-0025
+  title: Motion to adopt Resolution 2026-________, approving the terms and authorizing
+    the
+  source_id: sjc_bcc_calendar
+  beat: parks_amenities
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: c0196e64e382680e
+  item_id: SJC-BCC-20260120-0026
+  title: 'Motion to adopt Resolution 2026-________, approving the  License Agreement
+    between the County and St. Johns Parkway Land Trust allowing Fire Rescue to use '
+  source_id: sjc_bcc_calendar
+  beat: parks_amenities
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: 21f2245699e7c16a
+  item_id: SJC-BCC-20260120-0027
+  title: Motion to adopt Resolution 2026-________, authorizing the Utility Department
+    to submit a grant application to the St. Johns River Water Management District
+    for
+  source_id: sjc_bcc_calendar
+  beat: utilities_water
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: ec04015bfd98abdc
+  item_id: SJC-BCC-20260120-0028
+  title: Motion to adopt Resolution 2026-________, setting the  Public Hearing for
+    March 3,
+  source_id: sjc_bcc_calendar
+  beat: utilities_water
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: 640afe1debd20844
+  item_id: SJC-BCC-20260120-0029
+  title: Motion to adopt Resolution 2026-________, authorizing the County Administrator,
+    or
+  source_id: sjc_bcc_calendar
+  beat: utilities_water
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: 15d378d415c3fed9
+  item_id: SJC-BCC-20260120-0030
+  title: Motion to adopt Resolution 2026-________, authorizing the County Administrator,
+    or
+  source_id: sjc_bcc_calendar
+  beat: utilities_water
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: 6696f93e1bb8d982
+  item_id: SJC-BCC-20260120-0031
+  title: Motion to adopt Resolution 2026-________, authorizing the County Administrator,
+    or
+  source_id: sjc_bcc_calendar
+  beat: parks_amenities
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: b2513be19a353b3d
+  item_id: SJC-BCC-20260120-0032
+  title: Motion to adopt Resolution 2026-________, authorizing the County Administrator,
+    or
+  source_id: sjc_bcc_calendar
+  beat: local_government_budget_procurement
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: 38438cc1d05083ae
+  item_id: SJC-BCC-20260120-0033
+  title: Motion to declare the attachment list as  surplus and authorize the County
+    Administrator, or designee, to dispose of the same in accordance with the Purcha
+  source_id: sjc_bcc_calendar
+  beat: local_government_budget_procurement
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: d7108a5738e8b013
+  item_id: SJC-BCC-20260120-0034
+  title: Motion to adopt Resolution 2026-________,  sunsetting the Northwest Communications
+    Tower Citizen Advisory Board and transferring its duties and
+  source_id: sjc_bcc_calendar
+  beat: local_government_budget_procurement
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: 12c58b2439414cf6
+  item_id: SJC-BCC-20260120-0035
+  title: Motion to appoint Mayor Beth Sweeny to the Tourist Development Council as
+    the City of St. Augustine Beach representative.    For more information, contact
+    She
+  source_id: sjc_bcc_calendar
+  beat: parks_amenities
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: 016f4d0dfb32d75f
+  item_id: SJC-BCC-20260120-0036
+  title: Motion to  re-appoint Stephen Lieberman as a regular member to the South
+    Anastasia Design Review Board for a second full (4) year term scheduled to expir
+  source_id: sjc_bcc_calendar
+  beat: local_government_budget_procurement
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: 0944b85bad4c6111
+  item_id: SJC-BCC-20260120-0037
+  title: Motion to adopt Resolution 2026-________, granting a  Certificate of Public
+    Convenience and Necessity to St. Johns County Fire Rescue to provide emergency
+  source_id: sjc_bcc_calendar
+  beat: public_safety_livability
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: 6848b7a24a234e1a
+  item_id: SJC-BCC-20260120-0038
+  title: Motion to adopt Resolution 2026-________, approving and authorizing the County
+    Administrator, or designee, to execute an d deliver, on behalf of the County,
+    th
+  source_id: sjc_bcc_calendar
+  beat: public_safety_livability
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: c139f4aa46ab4ecc
+  item_id: SJC-BCC-20260120-0039
+  title: Motion to authorize the Office of Intergovernmental Affairs to submit  two
+    grant
+  source_id: sjc_bcc_calendar
+  beat: local_government_budget_procurement
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: 5a7fec95d42de52b
+  item_id: SJC-BCC-20260120-0040
+  title: Motion to adopt Resolution 2026-________, increasing the  General Fund Library
+    Donations budget by $60 and appropriating to th e Library Services department
+  source_id: sjc_bcc_calendar
+  beat: taxes_exemptions_trim_vab
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: a8fa8fa881bb346d
+  item_id: SJC-BCC-20260120-0041
+  title: Motion to adopt Resolution 2026-________,  recognizing the purchase and donation
+  source_id: sjc_bcc_calendar
+  beat: parks_amenities
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: 7d9854d037f22830
+  item_id: SJC-BCC-20260120-0042
+  title: Motion to adopt Resolution 2026-________,  accepting the donation of a mosaic
+    art
+  source_id: sjc_bcc_calendar
+  beat: parks_amenities
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: 2246d9c00d3ae1bc
+  item_id: SJC-BCC-20260120-0043
+  title: 'Motion to  approve minutes:  12/16/25, BCC Regular'
+  source_id: sjc_bcc_calendar
+  beat: local_government_budget_procurement
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: 079ed1c86ba88217
+  item_id: SJC-BCC-20260120-0044
+  title: 'Proofs: Proof:    Notice of Special Meeting, the Board of County Commissioners
+    will hold'
+  source_id: sjc_bcc_calendar
+  beat: local_government_budget_procurement
+  discovered_at: '2026-06-26T08:07:51Z'
+  status: pending_review
+- key: 96aa927786d160ed
+  item_id: SJC-CN-20260626-0001
+  title: SJC's Largest-Ever Capital Improvement Project Now Serving Residents
+  source_id: sjc_county_news
+  beat: utilities_water
+  discovered_at: '2026-06-26T07:30:00Z'
+  status: pending_review
+- key: ca2e33a11d4e22af
+  item_id: SJC-EM-20260626-0001
+  title: Residents Urged to Prepare as 2026 Atlantic Hurricane Season Begins
+  source_id: sjc_emergency_management
+  beat: emergency_weather_fire_flood
+  discovered_at: '2026-06-26T07:40:00Z'
+  status: pending_review
+- key: 8522463888dcff01
+  item_id: SJC-SJSO-20260626-0001
+  title: Two St. Johns County Inmates Charged for Planning Escape from Jail
+  source_id: sjso_news_stories
+  beat: public_safety_livability
+  discovered_at: '2026-06-26T07:30:00Z'
+  status: pending_review
