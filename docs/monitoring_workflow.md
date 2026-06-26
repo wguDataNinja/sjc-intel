@@ -16,11 +16,16 @@ produces structured intel items ready for verification and editorial review.
 └────────────┬──────────────────┘
              ▼
 ┌───────────────────────────────┐
+│  1b. CREATE SOURCE EVENT      │  Record the fetch as a source_event
+│                               │  (meeting, snapshot, press batch)
+└────────────┬──────────────────┘
+             ▼
+┌───────────────────────────────┐
 │  2. EXTRACT CANDIDATES        │  Parse HTML, identify new items
 └────────────┬──────────────────┘
              ▼
 ┌───────────────────────────────┐
-│  3. DEDUPLICATE               │  Check against prior items
+│  3. DEDUPLICATE               │  Check against prior items (intel_items only)
 └────────────┬──────────────────┘
              ▼
 ┌───────────────────────────────┐
@@ -37,6 +42,7 @@ produces structured intel items ready for verification and editorial review.
              ▼
 ┌───────────────────────────────┐
 │  6. STRUCTURE ITEM            │  Build full intel_item record
+│                               │  (with source_event_id link)
 └────────────┬──────────────────┘
              ▼
 ┌───────────────────────────────┐
@@ -47,10 +53,12 @@ produces structured intel items ready for verification and editorial review.
              ▼
 ┌───────────────────────────────┐
 │  8. CREATE REVIEW TASK        │  Queue for human review if needed
+│                               │  (source_events excluded)
 └────────────┬──────────────────┘
              ▼
 ┌───────────────────────────────┐
-│  9. WRITE OUTPUT              │  Write artifact + update dedupe index
+│  9. WRITE OUTPUT              │  Write source_event + intel_item
+│                               │  artifacts, update dedupe index
 └────────────┬──────────────────┘
              ▼
 ┌───────────────────────────────┐
@@ -212,16 +220,21 @@ steps:
   - step_id: 9
     name: "write_output"
     description: >
-      Write the new intel items as a single YAML artifact file in the
-      repo under data/intel_items/{YYYY-MM-DD}/{source_id}.yaml.
+      Write the source event as a YAML artifact in data/source_events/,
+      and the new intel items (with source_event_id) as a YAML artifact
+      in data/intel_items/{YYYY-MM-DD}/{source_id}.yaml.
       Also update the dedupe index at data/index/prior_items.yaml.
+      Source events are excluded from the dedupe index and review queue.
     tool: "file_write"
     inputs:
       items: "{{ reviewed_items.intel_items }}"
-      path_pattern: "data/intel_items/{date}/{source_id}.yaml"
+      source_event: "{{ source_event }}"
+      intel_path_pattern: "data/intel_items/{date}/{source_id}.yaml"
+      event_path_pattern: "data/source_events/{date}/{source_id}.yaml"
       index_update: "data/index/prior_items.yaml"
     outputs:
-      output_file: "string"
+      intel_file: "string"
+      event_file: "string"
       dedupe_entries: "integer"
 
   - step_id: 10

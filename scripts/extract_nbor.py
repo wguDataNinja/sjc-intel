@@ -19,8 +19,11 @@ from datetime import datetime, timezone
 
 NBOR_URL = "https://webapp.sjcfl.us/webnews/NBRscreend.aspx"
 USER_AGENT = "Mozilla/5.0 (SJC_Intel NBOR Extractor/1.0)"
-OUTPUT_DIR = "data/intel_items/2026-06-08"
 RAW_FIXTURE = "tests/fixtures/nbor_raw.html"
+
+BASE_INTEL_DIR = "data/intel_items"
+BASE_SOURCE_EVENTS_DIR = "data/source_events"
+SOURCE_EVENT_PREFIX = "EVT-NBOR"
 
 
 # ── Category classification ──────────────────────────────────────────────
@@ -183,7 +186,7 @@ def parse_rows(html):
     return records
 
 
-def normalize_records(records, source="sjc_nbor_public_notices"):
+def normalize_records(records, source="sjc_nbor_public_notices", source_event_id=None):
     """Convert raw NBOR records to intel_item schema."""
     items = []
     now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -233,6 +236,7 @@ def normalize_records(records, source="sjc_nbor_public_notices"):
             "summary": summary,
             "source_id": source,
             "source_url": NBOR_URL,
+            "source_event_id": source_event_id,
             "source_published_at": rec["date"] if rec["date"] else None,
             "discovered_at": now,
             "discovered_by": f"hermes-{source}",
@@ -279,23 +283,73 @@ def normalize_records(records, source="sjc_nbor_public_notices"):
 
 # ── Output ───────────────────────────────────────────────────────────────
 
-def write_output(items, html, records):
-    """Write output files: intel_items YAML, raw fixture, and a summary."""
+def write_source_event(records, items, output_date, event_id, fetched_at):
+    """Build and write a source_event record for this NBOR fetch."""
     import os
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+    se_dir = f"{BASE_SOURCE_EVENTS_DIR}/{output_date}"
+    os.makedirs(se_dir, exist_ok=True)
+
+    item_ids = sorted(item["item_id"] for item in items if item.get("item_id"))
+
+    source_event = {
+        "source_id": "sjc_nbor_public_notices",
+        "generated_at": fetched_at,
+        "total_events": 1,
+        "events": [
+            {
+                "event_id": event_id,
+                "source_id": "sjc_nbor_public_notices",
+                "event_type": "public_notice_snapshot",
+                "title": f"NBOR Public Notices Snapshot — {output_date}",
+                "event_date": output_date,
+                "discovered_at": fetched_at,
+                "source_url": NBOR_URL,
+                "status": "extracted",
+                "extraction_status": f"All {len(items)} notices extracted as intel_items.",
+                "source_health": "accessible",
+                "extracted_item_ids": item_ids,
+                "raw_source_file": RAW_FIXTURE,
+                "notes": "",
+                "created_at": fetched_at,
+                "updated_at": fetched_at,
+            }
+        ],
+    }
+
+    se_path = f"{se_dir}/sjc_nbor_public_notices.yaml"
+    with open(se_path, "w") as f:
+        yaml.dump(source_event, f, default_flow_style=False, sort_keys=False, allow_unicode=True)
+    print(f"Wrote source event to {se_path}")
+
+
+def write_output(items, html, records, event_id=None, output_date=None):
+    """Write output files: intel_items YAML, source_event YAML, raw fixture, and a summary."""
+    import os
+
+    if output_date is None:
+        output_date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    fetched_at = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+    intel_dir = f"{BASE_INTEL_DIR}/{output_date}"
+    os.makedirs(intel_dir, exist_ok=True)
 
     # Intel items YAML
     output = {
         "source_id": "sjc_nbor_public_notices",
-        "fetched_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "fetched_at": fetched_at,
         "source_url": NBOR_URL,
         "total_items": len(items),
         "items": items,
     }
-    items_path = f"{OUTPUT_DIR}/sjc_nbor_public_notices.yaml"
+    items_path = f"{intel_dir}/sjc_nbor_public_notices.yaml"
     with open(items_path, "w") as f:
         yaml.dump(output, f, default_flow_style=False, sort_keys=False, allow_unicode=True)
     print(f"Wrote {len(items)} items to {items_path}")
+
+    # Source event YAML (if event_id provided)
+    if event_id:
+        write_source_event(records, items, output_date, event_id, fetched_at)
 
     # Raw HTML fixture (already saved, update if live)
     if html:
@@ -317,6 +371,8 @@ def write_output(items, html, records):
     print(f"\nRecords by NBOR category: {by_category}")
     print(f"Items by resident-interest beat: {by_beat}")
     print(f"Total normalized items: {len(items)}")
+    if event_id:
+        print(f"Source event: {event_id}")
 
 
 # ── Main ─────────────────────────────────────────────────────────────────
@@ -345,9 +401,14 @@ def main():
         if rec['app_id']:
             print(f"     App ID: {rec['app_id']}")
 
+    # Generate source_event_id for this fetch
+    today_iso = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    today_num = datetime.now(timezone.utc).strftime("%Y%m%d")
+    event_id = f"{SOURCE_EVENT_PREFIX}-{today_num}-0001"
+
     # Normalize
     print("\n3. Normalizing to intel_item schema...")
-    items = normalize_records(records)
+    items = normalize_records(records, source_event_id=event_id)
     print(f"   Generated {len(items)} normalized items")
 
     # Show sample
@@ -362,13 +423,19 @@ def main():
 
     # Write
     print("\n4. Writing output files...")
-    write_output(items, html, records)
+    write_output(items, html, records, event_id=event_id, output_date=today_iso)
 
     # Dedupe strategy
     print("\n5. Dedupe key strategy:")
     print("   Primary: source_id + category + app_id + date")
     print("   Fallback: source_id + category + normalized_title + date")
     print("   Final: SHA256 hash of raw row text")
+
+    # Source event summary
+    print(f"\n6. Source event:")
+    print(f"   ID: {event_id}")
+    print(f"   Type: public_notice_snapshot")
+    print(f"   Items linked: {len(items)}")
 
     print("\nDone.")
     return items, records

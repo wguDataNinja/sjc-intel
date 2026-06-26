@@ -157,8 +157,21 @@ The extractor has been tested against the live page and fixture, producing
 - 25 records extracted in the test run (19 ROW, 6 Meeting)
 - 4 classification categories mapped
 - YAML output matching intel_item schema, stored at `data/intel_items/{date}/`
+- Source event created at `data/source_events/{date}/sjc_nbor_public_notices.yaml`
 - Fixture saved at `tests/fixtures/nbor_raw.html`
 - Dedupe key strategy: primary = source_id + category + app_id + date
+
+### Source Event Model
+
+Each NBOR page fetch now creates a `source_event` record of type
+`public_notice_snapshot`. All extracted intel_items link back to this
+source event via `source_event_id`. This provides provenance, health
+tracking, and a container for all items from a single fetch.
+
+**Example source_event ID:** `EVT-NBOR-20260626-0001`
+
+Source events are stored in `data/source_events/` and are excluded from
+the review queue and dedupe index (only intel_items participate in those).
 
 ### Next Steps
 
@@ -178,7 +191,8 @@ python3 scripts/extract_nbor.py
 ```
 
 Output:
-- `data/intel_items/{YYYY-MM-DD}/sjc_nbor_public_notices.yaml` — normalized records
+- `data/intel_items/{YYYY-MM-DD}/sjc_nbor_public_notices.yaml` — normalized records with `source_event_id`
+- `data/source_events/{YYYY-MM-DD}/sjc_nbor_public_notices.yaml` — source event record
 - `tests/fixtures/nbor_raw.html` — raw HTML fixture (updated each run)
 
 ### NBOR Data Categories (Confirmed 2026-06-08)

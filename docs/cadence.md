@@ -71,7 +71,8 @@ the current session to catch up, but no more than 2.
 ### Daily Output
 
 Each daily monitor run produces:
-- `data/intel_items/{YYYY-MM-DD}/{source_id}.yaml` — extracted items
+- `data/source_events/{YYYY-MM-DD}/{source_id}.yaml` — source event record (container for the fetch)
+- `data/intel_items/{YYYY-MM-DD}/{source_id}.yaml` — extracted items with `source_event_id` linking to parent event
 - `data/intel_items/{YYYY-MM-DD}/daily_cycle_summary.yaml` — cross-source summary (optional, for full cycles)
 - Prior items index update via `python3 scripts/rebuild_dedupe_index.py`
 - Review queue update via `python3 scripts/build_review_queue.py` (optional after individual runs; recommended after full cycles)

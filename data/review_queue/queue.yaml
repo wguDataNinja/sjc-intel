@@ -2,7 +2,7 @@
 # SJC_Intel — Editorial Review Queue
 # =============================================================================
 # Flat queue of all intel_items requiring or eligible for review.
-# Generated: 2026-06-26T09:17:55Z
+# Generated: 2026-06-26T09:44:58Z
 # Total entries: 89
 # =============================================================================
 
@@ -32,6 +32,7 @@ queue:
   meeting_date: 6/22/2026
   agenda_item_number: null
   application_id: null
+  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR utility ROW permit. Public notice with project
     description, district, date, and PDF evidence.'
@@ -63,6 +64,7 @@ queue:
   meeting_date: 6/18/2026
   agenda_item_number: null
   application_id: ZVAR 2026000011
+  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: Bargfrede Shed variance. Correct classification.
   reviewed_at: '2026-06-26T08:33:43Z'
@@ -93,6 +95,7 @@ queue:
   meeting_date: 6/18/2026
   agenda_item_number: null
   application_id: ZVAR 2026000019
+  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR development hearing notice. Application ID,
     description, and hearing date present.'
@@ -124,6 +127,7 @@ queue:
   meeting_date: 6/18/2026
   agenda_item_number: null
   application_id: ZVAR 2025000027
+  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR development hearing notice. Application ID,
     description, and hearing date present.'
@@ -153,6 +157,7 @@ queue:
   meeting_date: 6/16/2026
   agenda_item_number: null
   application_id: null
+  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR utility ROW permit. Public notice with project
     description, district, date, and PDF evidence.'
@@ -182,6 +187,7 @@ queue:
   meeting_date: 6/16/2026
   agenda_item_number: null
   application_id: null
+  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR utility ROW permit. Public notice with project
     description, district, date, and PDF evidence.'
@@ -210,6 +216,7 @@ queue:
   meeting_date: 6/16/2026
   agenda_item_number: null
   application_id: null
+  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR construction/site work ROW permit. Public notice
     with project details.'
@@ -239,6 +246,7 @@ queue:
   meeting_date: 6/16/2026
   agenda_item_number: null
   application_id: null
+  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR utility ROW permit. Public notice with project
     description, district, date, and PDF evidence.'
@@ -267,6 +275,7 @@ queue:
   meeting_date: 6/16/2026
   agenda_item_number: null
   application_id: null
+  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR construction/site work ROW permit. Public notice
     with project details.'
@@ -296,6 +305,7 @@ queue:
   meeting_date: 6/16/2026
   agenda_item_number: null
   application_id: null
+  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR utility ROW permit. Public notice with project
     description, district, date, and PDF evidence.'
@@ -325,6 +335,7 @@ queue:
   meeting_date: 6/16/2026
   agenda_item_number: null
   application_id: null
+  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR utility ROW permit. Public notice with project
     description, district, date, and PDF evidence.'
@@ -354,6 +365,7 @@ queue:
   meeting_date: 6/16/2026
   agenda_item_number: null
   application_id: null
+  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR utility ROW permit. Public notice with project
     description, district, date, and PDF evidence.'
@@ -383,6 +395,7 @@ queue:
   meeting_date: 6/16/2026
   agenda_item_number: null
   application_id: null
+  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR road closure notice. Lane closure with project
     details.'
@@ -414,6 +427,7 @@ queue:
   meeting_date: 6/16/2026
   agenda_item_number: null
   application_id: MAJMOD 2025000011
+  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR development hearing notice. Application ID,
     description, and hearing date present.'
@@ -442,6 +456,7 @@ queue:
   meeting_date: 6/16/2026
   agenda_item_number: null
   application_id: null
+  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR construction/site work ROW permit. Public notice
     with project details.'
@@ -473,6 +488,7 @@ queue:
   meeting_date: 6/16/2026
   agenda_item_number: null
   application_id: REZ 2026000002
+  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: Golfway Centre PUD. Correct development item.
   reviewed_at: '2026-06-26T08:33:44Z'
@@ -503,6 +519,7 @@ queue:
   meeting_date: 6/16/2026
   agenda_item_number: null
   application_id: REZ 2026000001
+  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR development hearing notice. Application ID,
     description, and hearing date present.'
@@ -531,6 +548,7 @@ queue:
   meeting_date: 6/12/2026
   agenda_item_number: null
   application_id: null
+  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR construction/site work ROW permit. Public notice
     with project details.'
@@ -559,6 +577,7 @@ queue:
   meeting_date: 6/12/2026
   agenda_item_number: null
   application_id: null
+  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR construction/site work ROW permit. Public notice
     with project details.'
@@ -588,6 +607,7 @@ queue:
   meeting_date: 6/12/2026
   agenda_item_number: null
   application_id: null
+  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR utility ROW permit. Public notice with project
     description, district, date, and PDF evidence.'
@@ -617,6 +637,7 @@ queue:
   meeting_date: 6/12/2026
   agenda_item_number: null
   application_id: null
+  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR utility ROW permit. Public notice with project
     description, district, date, and PDF evidence.'
@@ -646,6 +667,7 @@ queue:
   meeting_date: 6/12/2026
   agenda_item_number: null
   application_id: null
+  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR utility ROW permit. Public notice with project
     description, district, date, and PDF evidence.'
@@ -675,6 +697,7 @@ queue:
   meeting_date: 6/12/2026
   agenda_item_number: null
   application_id: null
+  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR utility ROW permit. Public notice with project
     description, district, date, and PDF evidence.'
@@ -703,6 +726,7 @@ queue:
   meeting_date: 6/12/2026
   agenda_item_number: null
   application_id: null
+  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR construction/site work ROW permit. Public notice
     with project details.'
@@ -731,6 +755,7 @@ queue:
   meeting_date: 6/12/2026
   agenda_item_number: null
   application_id: null
+  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR construction/site work ROW permit. Public notice
     with project details.'
@@ -764,6 +789,7 @@ queue:
   meeting_date: '2026-05-26T12:00:00Z'
   agenda_item_number: null
   application_id: null
+  source_event_id: ''
   reviewer: ''
   review_notes: 'Batch verified: county news medium/high item. Official press release
     with source URL.'
@@ -796,6 +822,7 @@ queue:
   meeting_date: '2026-05-26T12:00:00Z'
   agenda_item_number: null
   application_id: null
+  source_event_id: ''
   reviewer: ''
   review_notes: 'Batch verified: county news low-impact item. Public announcement
     with source URL.'
@@ -829,6 +856,7 @@ queue:
   meeting_date: '2026-05-18T12:00:00Z'
   agenda_item_number: null
   application_id: null
+  source_event_id: ''
   reviewer: ''
   review_notes: 'Batch verified: county news medium/high item. Official press release
     with source URL.'
@@ -860,6 +888,7 @@ queue:
   meeting_date: '2026-05-14T12:00:00Z'
   agenda_item_number: null
   application_id: null
+  source_event_id: ''
   reviewer: ''
   review_notes: 'Batch verified: county news low-impact item. Public announcement
     with source URL.'
@@ -891,6 +920,7 @@ queue:
   meeting_date: '2026-05-13T12:00:00Z'
   agenda_item_number: null
   application_id: null
+  source_event_id: ''
   reviewer: ''
   review_notes: Phase III Extreme Water Shortage - active, ongoing. Correct classification.
     Human review not required (official county notice).
@@ -927,6 +957,7 @@ queue:
   meeting_date: '2026-05-11'
   agenda_item_number: null
   application_id: null
+  source_event_id: ''
   reviewer: ''
   review_notes: Phase III water shortage. Same event as county news. Supporting source.
   reviewed_at: '2026-06-26T08:33:34Z'
@@ -957,6 +988,7 @@ queue:
   meeting_date: '2026-05-26'
   agenda_item_number: null
   application_id: null
+  source_event_id: ''
   reviewer: ''
   review_notes: 'Batch verified: utility department announcement. Official county
     utility notice with source URL.'
@@ -990,6 +1022,7 @@ queue:
   meeting_date: '2025-12-19'
   agenda_item_number: null
   application_id: null
+  source_event_id: ''
   reviewer: ''
   review_notes: 'Batch verified: utility department announcement. Official county
     utility notice with source URL.'
@@ -1022,6 +1055,7 @@ queue:
   meeting_date: null
   agenda_item_number: null
   application_id: null
+  source_event_id: ''
   reviewer: ''
   review_notes: 'Batch verified: utility department announcement. Official county
     utility notice with source URL.'
@@ -1055,6 +1089,7 @@ queue:
   meeting_date: null
   agenda_item_number: null
   application_id: null
+  source_event_id: ''
   reviewer: ''
   review_notes: 'Batch verified: utility department announcement. Official county
     utility notice with source URL.'
@@ -1089,6 +1124,7 @@ queue:
   meeting_date: '2026-05-21T12:00:00Z'
   agenda_item_number: null
   application_id: null
+  source_event_id: ''
   reviewer: ''
   review_notes: Routine crime press release. Human review done. No active threat.
   reviewed_at: '2026-06-26T08:33:34Z'
@@ -1123,6 +1159,7 @@ queue:
   meeting_date: '2026-05-05T12:00:00Z'
   agenda_item_number: null
   application_id: null
+  source_event_id: ''
   reviewer: ''
   review_notes: Positive community story. Human review confirms.
   reviewed_at: '2026-06-26T08:33:34Z'
@@ -1155,6 +1192,7 @@ queue:
   meeting_date: '2026-04-20T12:00:00Z'
   agenda_item_number: null
   application_id: null
+  source_event_id: ''
   reviewer: ''
   review_notes: March 2026. 3+ months old. Archival.
   reviewed_at: '2026-06-26T08:33:34Z'
@@ -1189,6 +1227,7 @@ queue:
   meeting_date: '2025-11-25T12:00:00Z'
   agenda_item_number: null
   application_id: null
+  source_event_id: ''
   reviewer: ''
   review_notes: 2023 double murder arrest. Human review confirms facts.
   reviewed_at: '2026-06-26T08:33:34Z'
@@ -1221,6 +1260,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '1'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 2050 Comp Plan transmittal. Major land-use policy.
   reviewed_at: '2026-06-26T08:33:43Z'
@@ -1253,6 +1293,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '2'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC rezoning/development item. Land-use resolution
     from agenda PDF.'
@@ -1285,6 +1326,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '3'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC rezoning/development item. Land-use resolution
     from agenda PDF.'
@@ -1317,6 +1359,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '4'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC transportation item. Road/infrastructure resolution
     from agenda PDF.'
@@ -1350,6 +1393,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '5'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: Septic-to-sewer policy. Major utility infrastructure.
   reviewed_at: '2026-06-26T08:33:43Z'
@@ -1381,6 +1425,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '6'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC utility/water consent item. Utility easement
     or infrastructure resolution from agenda PDF.'
@@ -1413,6 +1458,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '7'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC budget/tax item. Budget/funding resolution from
     agenda PDF.'
@@ -1444,6 +1490,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '8'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC rezoning/development item. Land-use resolution
     from agenda PDF.'
@@ -1473,6 +1520,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '1'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Needs follow-up: BCC procurement/contract item. Limited agenda PDF
     context for resident impact assessment.; Cash Requirement Report. Routine financial
@@ -1506,6 +1554,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '2'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: Road impact fee transfer. Transportation funding.
   reviewed_at: '2026-06-26T08:33:43Z'
@@ -1536,6 +1585,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '3'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch archived: BCC meeting-level metadata record. Source event tracker
     — per-item extraction is in separate file.'
@@ -1568,6 +1618,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '4'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC rezoning/development item. Land-use resolution
     from agenda PDF.'
@@ -1599,6 +1650,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '5'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC utility/water consent item. Utility easement
     or infrastructure resolution from agenda PDF.'
@@ -1630,6 +1682,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '6'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC utility/water consent item. Utility easement
     or infrastructure resolution from agenda PDF.'
@@ -1661,6 +1714,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '7'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC utility/water consent item. Utility easement
     or infrastructure resolution from agenda PDF.'
@@ -1692,6 +1746,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '8'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC utility/water consent item. Utility easement
     or infrastructure resolution from agenda PDF.'
@@ -1721,6 +1776,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '9'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Needs follow-up: BCC procurement/contract item. Limited agenda PDF
     context for resident impact assessment.; Summer Haven parcel acquisition for conservation.
@@ -1751,6 +1807,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '10'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Needs follow-up: BCC procurement/contract item. Limited agenda PDF
     context for resident impact assessment.; Summer Haven second parcel acquisition.
@@ -1783,6 +1840,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '11'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC transportation item. Road/infrastructure resolution
     from agenda PDF.'
@@ -1815,6 +1873,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '12'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC rezoning/development item. Land-use resolution
     from agenda PDF.'
@@ -1846,6 +1905,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '13'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC utility/water consent item. Utility easement
     or infrastructure resolution from agenda PDF.'
@@ -1876,6 +1936,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '14'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC parks/amenities item. Donation, license agreement,
     or park resolution from agenda PDF.'
@@ -1905,6 +1966,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '15'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Needs follow-up: BCC procurement/contract item. Limited agenda PDF
     context for resident impact assessment.; Accolade Avenue access easement amendment.
@@ -1936,6 +1998,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '16'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC parks/amenities item. Donation, license agreement,
     or park resolution from agenda PDF.'
@@ -1966,6 +2029,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '17'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC parks/amenities item. Donation, license agreement,
     or park resolution from agenda PDF.'
@@ -1997,6 +2061,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '18'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC parks/amenities item. Donation, license agreement,
     or park resolution from agenda PDF.'
@@ -2030,6 +2095,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '19'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC utility/water consent item. Utility easement
     or infrastructure resolution from agenda PDF.'
@@ -2061,6 +2127,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '20'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC utility/water consent item. Utility easement
     or infrastructure resolution from agenda PDF.'
@@ -2092,6 +2159,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '21'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC utility/water consent item. Utility easement
     or infrastructure resolution from agenda PDF.'
@@ -2123,6 +2191,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '22'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC utility/water consent item. Utility easement
     or infrastructure resolution from agenda PDF.'
@@ -2153,6 +2222,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '23'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC parks/amenities item. Donation, license agreement,
     or park resolution from agenda PDF.'
@@ -2182,6 +2252,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '24'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Needs follow-up: BCC procurement/contract item. Limited agenda PDF
     context for resident impact assessment.; Barrier Island Lift Station Rehabilitation
@@ -2213,6 +2284,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '25'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Needs follow-up: BCC procurement/contract item. Limited agenda PDF
     context for resident impact assessment.; Surplus property declaration. Purely
@@ -2244,6 +2316,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '26'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Needs follow-up: BCC procurement/contract item. Limited agenda PDF
     context for resident impact assessment.; Sunsetting NW Communications Tower CAB.
@@ -2277,6 +2350,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '27'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC parks/amenities item. Donation, license agreement,
     or park resolution from agenda PDF.'
@@ -2307,6 +2381,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '28'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Needs follow-up: BCC procurement/contract item. Limited agenda PDF
     context for resident impact assessment.; Board appointment. Routine public appointment
@@ -2338,6 +2413,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '29'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC public safety item. Safety/emergency services
     resolution from agenda PDF.'
@@ -2369,6 +2445,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '30'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC public safety item. Safety/emergency services
     resolution from agenda PDF.'
@@ -2398,6 +2475,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '31'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Needs follow-up: BCC procurement/contract item. Limited agenda PDF
     context for resident impact assessment.; USDOT BUILD grant applications for SR
@@ -2431,6 +2509,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '32'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC budget/tax item. Budget/funding resolution from
     agenda PDF.'
@@ -2460,6 +2539,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '33'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC parks/amenities item. Donation, license agreement,
     or park resolution from agenda PDF.'
@@ -2490,6 +2570,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '34'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC parks/amenities item. Donation, license agreement,
     or park resolution from agenda PDF.'
@@ -2517,6 +2598,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '35'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Needs follow-up: BCC procurement/contract item. Limited agenda PDF
     context for resident impact assessment.; Minutes approval. Purely administrative
@@ -2547,6 +2629,7 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '36'
   application_id: null
+  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Needs follow-up: BCC procurement/contract item. Limited agenda PDF
     context for resident impact assessment.; Proofs of publication. Routine legal
@@ -2578,6 +2661,7 @@ queue:
   meeting_date: '2026-06-23'
   agenda_item_number: null
   application_id: null
+  source_event_id: ''
   reviewer: ''
   review_notes: SR 207 WRF operational. Largest capital project.
   reviewed_at: '2026-06-26T08:33:44Z'
@@ -2608,6 +2692,7 @@ queue:
   meeting_date: '2026-06-22'
   agenda_item_number: null
   application_id: null
+  source_event_id: ''
   reviewer: ''
   review_notes: Railroad crossing closure. Active traffic impact.
   reviewed_at: '2026-06-26T08:33:44Z'
@@ -2638,6 +2723,7 @@ queue:
   meeting_date: '2026-06-24'
   agenda_item_number: null
   application_id: null
+  source_event_id: ''
   reviewer: ''
   review_notes: 'Batch verified: county news medium/high item. Official press release
     with source URL.'
@@ -2666,6 +2752,7 @@ queue:
   meeting_date: '2026-06-25'
   agenda_item_number: null
   application_id: null
+  source_event_id: ''
   reviewer: ''
   review_notes: Recycling driver feel-good story. Not resident-impact intel.
   reviewed_at: '2026-06-26T08:33:44Z'
@@ -2696,6 +2783,7 @@ queue:
   meeting_date: '2026-06-01'
   agenda_item_number: null
   application_id: null
+  source_event_id: ''
   reviewer: ''
   review_notes: Hurricane preparedness. Seasonal awareness.
   reviewed_at: '2026-06-26T08:33:44Z'
@@ -2724,6 +2812,7 @@ queue:
   meeting_date: '2026-06-22'
   agenda_item_number: null
   application_id: null
+  source_event_id: ''
   reviewer: ''
   review_notes: Jail escape plot. Human review done. No public threat.
   reviewed_at: '2026-06-26T08:33:34Z'

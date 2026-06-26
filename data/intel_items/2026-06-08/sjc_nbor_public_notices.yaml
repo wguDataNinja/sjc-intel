@@ -8,6 +8,7 @@ items:
   summary: 'ROW permit: Comcast — Fiber cable'
   source_id: sjc_nbor_public_notices
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/22/2026
   discovered_at: '2026-06-26T07:16:16Z'
   discovered_by: hermes-sjc_nbor_public_notices
@@ -69,6 +70,7 @@ items:
     for a detached accessory structure to be 3` in lieu of the '
   source_id: sjc_nbor_public_notices
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/18/2026
   discovered_at: '2026-06-26T07:16:16Z'
   discovered_by: hermes-sjc_nbor_public_notices
@@ -138,6 +140,7 @@ items:
     to allow for a second Front Yard setback of ten (10'
   source_id: sjc_nbor_public_notices
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/18/2026
   discovered_at: '2026-06-26T07:16:16Z'
   discovered_by: hermes-sjc_nbor_public_notices
@@ -208,6 +211,7 @@ items:
     setback of ten (10) feet in lieu of the required tw'
   source_id: sjc_nbor_public_notices
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/18/2026
   discovered_at: '2026-06-26T07:16:16Z'
   discovered_by: hermes-sjc_nbor_public_notices
@@ -277,6 +281,7 @@ items:
   summary: 'ROW permit: Comcast — new power supply'
   source_id: sjc_nbor_public_notices
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/16/2026
   discovered_at: '2026-06-26T07:16:16Z'
   discovered_by: hermes-sjc_nbor_public_notices
@@ -336,6 +341,7 @@ items:
   summary: 'ROW permit: Comcast — Fiber cable'
   source_id: sjc_nbor_public_notices
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/16/2026
   discovered_at: '2026-06-26T07:16:16Z'
   discovered_by: hermes-sjc_nbor_public_notices
@@ -395,6 +401,7 @@ items:
   summary: 'ROW permit: City of St Augustine — New service'
   source_id: sjc_nbor_public_notices
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/16/2026
   discovered_at: '2026-06-26T07:16:16Z'
   discovered_by: hermes-sjc_nbor_public_notices
@@ -453,6 +460,7 @@ items:
   summary: 'ROW permit: Beaches Energy — service'
   source_id: sjc_nbor_public_notices
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/16/2026
   discovered_at: '2026-06-26T07:16:16Z'
   discovered_by: hermes-sjc_nbor_public_notices
@@ -512,6 +520,7 @@ items:
   summary: 'ROW permit: AT&T — fiber cable'
   source_id: sjc_nbor_public_notices
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/16/2026
   discovered_at: '2026-06-26T07:16:16Z'
   discovered_by: hermes-sjc_nbor_public_notices
@@ -570,6 +579,7 @@ items:
   summary: 'ROW permit: JEA — new service'
   source_id: sjc_nbor_public_notices
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/16/2026
   discovered_at: '2026-06-26T07:16:16Z'
   discovered_by: hermes-sjc_nbor_public_notices
@@ -629,6 +639,7 @@ items:
   summary: 'ROW permit: Comcast — Span replacement'
   source_id: sjc_nbor_public_notices
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/16/2026
   discovered_at: '2026-06-26T07:16:16Z'
   discovered_by: hermes-sjc_nbor_public_notices
@@ -688,6 +699,7 @@ items:
   summary: 'ROW permit: FPL — Pole replacement'
   source_id: sjc_nbor_public_notices
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/16/2026
   discovered_at: '2026-06-26T07:16:16Z'
   discovered_by: hermes-sjc_nbor_public_notices
@@ -747,6 +759,7 @@ items:
   summary: 'ROW permit: Farrell Marine — Lane closure for concrete truck'
   source_id: sjc_nbor_public_notices
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/16/2026
   discovered_at: '2026-06-26T07:16:16Z'
   discovered_by: hermes-sjc_nbor_public_notices
@@ -808,6 +821,7 @@ items:
     the MDP Map and MDP Text to allow the remaining d'
   source_id: sjc_nbor_public_notices
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/16/2026
   discovered_at: '2026-06-26T07:16:16Z'
   discovered_by: hermes-sjc_nbor_public_notices
@@ -879,6 +893,7 @@ items:
   summary: 'ROW permit: Scott Waite — Temp power'
   source_id: sjc_nbor_public_notices
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/16/2026
   discovered_at: '2026-06-26T07:16:16Z'
   discovered_by: hermes-sjc_nbor_public_notices
@@ -939,6 +954,7 @@ items:
     (CHT) to Residential, Single-Family (RS-3).'
   source_id: sjc_nbor_public_notices
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/16/2026
   discovered_at: '2026-06-26T07:16:16Z'
   discovered_by: hermes-sjc_nbor_public_notices
@@ -1003,6 +1019,7 @@ items:
     (RS-3).'
   source_id: sjc_nbor_public_notices
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/16/2026
   discovered_at: '2026-06-26T07:16:16Z'
   discovered_by: hermes-sjc_nbor_public_notices
@@ -1066,6 +1083,7 @@ items:
   summary: 'ROW permit: Terracon — Geo Tech exploration'
   source_id: sjc_nbor_public_notices
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/12/2026
   discovered_at: '2026-06-26T07:16:16Z'
   discovered_by: hermes-sjc_nbor_public_notices
@@ -1124,6 +1142,7 @@ items:
   summary: 'ROW permit: P&G Construction — Bulkhead'
   source_id: sjc_nbor_public_notices
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/12/2026
   discovered_at: '2026-06-26T07:16:16Z'
   discovered_by: hermes-sjc_nbor_public_notices
@@ -1182,6 +1201,7 @@ items:
   summary: 'ROW permit: JEA — Water actuator valve'
   source_id: sjc_nbor_public_notices
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/12/2026
   discovered_at: '2026-06-26T07:16:16Z'
   discovered_by: hermes-sjc_nbor_public_notices
@@ -1241,6 +1261,7 @@ items:
   summary: 'ROW permit: Comcast — Under Ground cable'
   source_id: sjc_nbor_public_notices
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/12/2026
   discovered_at: '2026-06-26T07:16:16Z'
   discovered_by: hermes-sjc_nbor_public_notices
@@ -1300,6 +1321,7 @@ items:
   summary: 'ROW permit: Comcast — replacing damaged cable'
   source_id: sjc_nbor_public_notices
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/12/2026
   discovered_at: '2026-06-26T07:16:16Z'
   discovered_by: hermes-sjc_nbor_public_notices
@@ -1360,6 +1382,7 @@ items:
   summary: 'ROW permit: Comcast — Replace UG span'
   source_id: sjc_nbor_public_notices
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/12/2026
   discovered_at: '2026-06-26T07:16:16Z'
   discovered_by: hermes-sjc_nbor_public_notices
@@ -1419,6 +1442,7 @@ items:
   summary: 'ROW permit: AT&T — Fiber cable'
   source_id: sjc_nbor_public_notices
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/12/2026
   discovered_at: '2026-06-26T07:16:16Z'
   discovered_by: hermes-sjc_nbor_public_notices
@@ -1478,6 +1502,7 @@ items:
   summary: 'ROW permit: AT&T — Cable/Fiber'
   source_id: sjc_nbor_public_notices
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/12/2026
   discovered_at: '2026-06-26T07:16:16Z'
   discovered_by: hermes-sjc_nbor_public_notices
