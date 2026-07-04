@@ -261,3 +261,36 @@ Produced `docs/reviews/sjc_vps_codex_discovery_brief.md` — a 22-section brief 
 ## Not Modified
 - No scripts, schemas, registries, data, or deployment files changed.
 - No commits.
+
+---
+
+# SJC_Intel Session — 2026-07-04 (Git Steward + Codex Roadmap Prompt)
+
+## Task
+- Commit the VPS-aligned discovery brief.
+- Draft the self-contained Codex prompt for ROADMAP.md planning.
+
+## Summary
+Inspected git status, confirmed only LOG.md + SESSION.md modified + `docs/reviews/sjc_vps_codex_discovery_brief.md` untracked. No scripts, schemas, registries, data, or deployment files changed. No secrets present. Staged and committed 3 files with message `docs: add VPS-aligned Codex roadmap discovery brief` (commit `ab0faed`).
+
+Then read all required SJC_Intel and ivy-control context files and produced `docs/reviews/sjc_vps_codex_roadmap_prompt.md` — a self-contained prompt Buddy can paste into Codex. The prompt requires Codex to produce ROADMAP.md with: roadmap overview, detailed phases, PostgreSQL implementation detail, ingestion contracts, workflow classification matrix, deployment artifacts, services/timers, environment/secrets model, raw artifact policy, health/dashboard model, Hermes role, GitHub readiness, publishing deferral, roadmap quality rules, decision table, phase dependency graph, Worker-sized session table, first Worker task outline, unresolved questions, and completion definition.
+
+## Files Created
+- `docs/reviews/sjc_vps_codex_roadmap_prompt.md` — Codex planning prompt for ROADMAP.md generation
+
+## Files Updated
+- `SESSION.md` — appended this session record
+- `LOG.md` — appended this session record
+
+## Commit
+- `ab0faed` — `docs: add VPS-aligned Codex roadmap discovery brief`
+- 3 files: `docs/reviews/sjc_vps_codex_discovery_brief.md`, `LOG.md`, `SESSION.md`
+
+## Not Modified
+- No scripts, schemas, registries, data, or deployment files changed.
+- ROADMAP.md not overwritten.
+- Codex not run.
+
+## Current Dirty State
+- `docs/reviews/codex_roadmap_preflight.md` untracked (from prior session, not part of this work)
+- `docs/reviews/sjc_vps_codex_roadmap_prompt.md` untracked (created this session; not committed per constraint)

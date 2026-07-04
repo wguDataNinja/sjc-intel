@@ -91,3 +91,17 @@ facing output. Next roadmap must decide: deepen, expand, or automate.
 - Critical path: GitHub → Schema → Migration → Scripts → Health → VPS → Backup → Dashboard → Hermes → Cutover
 
 **Design-only session.** No scripts, schemas, registries, data, or deployment files changed.
+
+## 2026-07-04 (Git Steward + Codex Roadmap Prompt) — Commit brief, draft Codex prompt
+
+**Task:** Commit VPS-aligned discovery brief. Draft self-contained Codex prompt for ROADMAP.md planning.
+
+**Work done:**
+- Inspected git status, diffs — confirmed only LOG.md + SESSION.md modified, no scripts/schemas/registries/data changed
+- No secrets found in any diff
+- Staged explicit paths: `docs/reviews/sjc_vps_codex_discovery_brief.md`, `LOG.md`, `SESSION.md`
+- Committed: `ab0faed` — `docs: add VPS-aligned Codex roadmap discovery brief`
+- Read all required context (SJC_Intel + ivy-control VPS)
+- Produced `docs/reviews/sjc_vps_codex_roadmap_prompt.md` — self-contained Codex prompt requiring ROADMAP.md with 15+ sections, worker session tables, decision tables, phase dependency graphs
+
+**Validation:** Post-commit status clean. Only `docs/reviews/codex_roadmap_preflight.md` (prior session) and `docs/reviews/sjc_vps_codex_roadmap_prompt.md` (this session, not committed per constraint) remain untracked. Codex not run. ROADMAP.md not overwritten.
