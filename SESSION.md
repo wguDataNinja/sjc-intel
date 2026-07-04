@@ -193,3 +193,71 @@ prioritizing precision over recall. Queue entries gain `matched_entities`,
 - Interest filters NOT modified or auto-generated
 - No new entities added
 - No lifecycle statuses changed
+
+---
+
+# SJC_Intel Session — 2026-07-04 (Codex Roadmap Preflight)
+
+## Task
+Prepare a Codex roadmap-planning preflight packet before Buddy's next
+high-reasoning planning session.
+
+## Summary
+Inspected all context files, analyzed stakeholder value, data coverage,
+search/discovery capabilities, neighborhood expansion model, knowledgebase
+workflow, and documentation quality. Produced `docs/reviews/codex_roadmap_preflight.md`
+with 17 sections including a full recommended Codex prompt.
+
+## Key Findings
+- System has strong infrastructure but no resident-facing output
+- 132 items in queue but no human-readable digest or report
+- Coverage heavily concentrated on SilverLeaf/Jun 2026
+- 20+ communities in registry with zero items
+- Community schema lacks aliases, search keywords, related sources
+- Knowledgebase is undefined (verified queue items vs curated layer?)
+- No search/browser automation execution exists (contracts drafted but untested)
+- Next roadmap faces fundamental decision: deepen, expand, or build automation
+
+## Files Created
+- `docs/reviews/codex_roadmap_preflight.md` — preflight packet with analysis,
+  gaps, decisions Codex must make, and recommended Codex prompt
+
+## Files Updated
+- `SESSION.md` — appended this session record
+- `LOG.md` — appended this session record
+
+## Not Modified
+- No scripts, schemas, registries, or data changed.
+- No commits.
+
+---
+
+# SJC_Intel Session — 2026-07-04 (Cross-Repo VPS Discovery Brief)
+
+## Task
+Cross-repo discovery pass for SJC_Intel and ivy-control VPS migration. Produce a compact implementation-planning brief for Codex to write/overwrite ROADMAP.md.
+
+## Summary
+Inspected all SJC_Intel context files (README.md, README_INTERNAL.md, AGENTS.md, BACKLOG.md, ROADMAP.md, all docs/, all registries, all schemas, scripts, git history) and all ivy-control/VPS planning files (vps/README.md, vps-host.md, session log, ecosystem review, repo-operating-standard, github-readiness-checklist).
+
+Produced `docs/reviews/sjc_vps_codex_discovery_brief.md` — a 22-section brief covering: architecture, ingestion mode classification, automation constraints, data inventory, PG isolation recommendation, table inventory (28 tables), raw artifact policy, backup/restore, dashboard metrics, Hermes role, GitHub blockers, required VPS services/timers, environment model, publishing deferral, critical path, decision table, unresolved decisions, and Codex prompt recommendations.
+
+## Key Findings
+- SJC_Intel is VPS-ready after: GitHub cleanup, PostgreSQL schema design, data migration, and ingestion script hardening
+- Recommended isolation: dedicated `sjc_intel` schema in shared `ivy_control` DB
+- 7 workflows are immediately VPS-schedulable; ~10 need script hardening; ~4 remain manual
+- 28 PostgreSQL tables proposed with grain, PK, FK, retention, mutability
+- Hermes role: read-only health inspector, never modify production, never bypass human review
+- Publishing remains deferred; schema must preserve eligibility fields
+- Critical path: GitHub → Schema → Migration → Scripts → Health → VPS → Backup → Dashboard → Hermes → Cutover
+
+## Files Created
+- `docs/reviews/sjc_vps_codex_discovery_brief.md` — 22-section discovery brief (~500 lines)
+
+## Files Updated
+- `SESSION.md` — appended this session record
+- `LOG.md` — appended this session record
+
+## Not Modified
+- No scripts, schemas, registries, data, or deployment files changed.
+- No commits.

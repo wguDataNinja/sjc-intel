@@ -55,3 +55,39 @@
 
 **Matching:** Exact label/alias substring match. Precision over recall.
 **Validation:** 114 review states preserved. Idempotent. 0 source_events leaked.
+
+## 2026-07-04 (Codex Roadmap Preflight) — Prep next planning session
+
+**Task:** Prepare Codex roadmap-planning preflight packet.
+
+**Work done:**
+- Read all context files — architecture, data, registries, docs, logs
+- Analyzed stakeholder value, data coverage, search/discovery, neighborhood
+  model, knowledgebase workflow, documentation quality
+- Created `docs/reviews/codex_roadmap_preflight.md` with 17 sections including
+  full recommended Codex prompt
+- Updated SESSION.md and LOG.md
+
+**Key finding:** System is solid infrastructure but produces no resident-
+facing output. Next roadmap must decide: deepen, expand, or automate.
+**Design-only session.** No scripts, schemas, registries, or data changed.
+
+## 2026-07-04 (Cross-Repo VPS Discovery Brief) — VPS migration planning
+
+**Task:** Cross-repo discovery pass for SJC_Intel and ivy-control VPS migration.
+
+**Work done:**
+- Inspected all SJC_Intel context (docs, registries, schemas, scripts, git)
+- Inspected all ivy-control/vps planning files (vps/README, vps-host.md, session log, ecosystem review, standards)
+- Produced `docs/reviews/sjc_vps_codex_discovery_brief.md` — 22 sections, 28 PG tables, 7 workflow classifications, decision table, critical path, unresolved decisions, Codex prompt recommendations
+
+**Key findings:**
+- Recommended isolation: dedicated `sjc_intel` schema in shared `ivy_control` DB
+- 7 VPS-schedulable workflows; ~10 need hardening; 4 remain manual
+- 28 PostgreSQL tables proposed with retention/mutability
+- Hermes role: read-only health inspector only
+- Publishing remains deferred; schema preserves eligibility fields
+- GitHub blockers: local paths, missing env example, no CI, missing license
+- Critical path: GitHub → Schema → Migration → Scripts → Health → VPS → Backup → Dashboard → Hermes → Cutover
+
+**Design-only session.** No scripts, schemas, registries, data, or deployment files changed.
