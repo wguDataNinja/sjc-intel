@@ -18,7 +18,7 @@ tasks can slip by a few days.
 When Buddy says "get to work":
 
 1. Read `docs/cadence.md` (this file).
-2. Read `STATE.md` and `BACKLOG.md`.
+2. Read `README_INTERNAL.md` and `BACKLOG.md`.
 3. Read `logs/runs/README.md` for the run-log format.
 4. Check `logs/runs/daily/LAST_RUN` for the last daily run timestamp.
 5. Check `logs/runs/weekly/LAST_RUN` for the last weekly run timestamp.
@@ -28,7 +28,7 @@ When Buddy says "get to work":
 9. Execute or delegate.
 10. Write a meta-run log to `logs/runs/{cadence}/{YYYY-MM-DD}_{task}.md`.
 11. Update LAST_RUN markers.
-12. Update `STATE.md`, `BACKLOG.md`, memory, and agent log if state changed.
+12. Update `README_INTERNAL.md`, `BACKLOG.md`, memory, and agent log if state changed.
 
 ---
 
@@ -193,7 +193,7 @@ Do direct (architect) work when:
 | Documentation | Cadence docs, monitor specs, READMEs |
 | Registry cleanup | Candidate updates, dedupe, notes |
 | Schema review | Taxonomy, intel_item, source schemas |
-| Backlog/state hygiene | Updating STATE.md, BACKLOG.md, memory |
+| Backlog/state hygiene | Updating README_INTERNAL.md, BACKLOG.md, memory |
 | Investigation | Determining whether a source is monitorable |
 | Architecture judgment | Deciding what to build next |
 
@@ -215,14 +215,14 @@ an entire cadence bucket because one task is blocked.
 
 ---
 
-## 8. How Cadence Interacts with STATE.md, BACKLOG.md, Memory, and Logs
+## 8. How Cadence Interacts with README_INTERNAL.md, BACKLOG.md, Memory, and Logs
 
-### STATE.md
+### README_INTERNAL.md
 
 Updated after every session that produces durable output:
-- Add completed work to "Recent Completed Work"
-- Update "Current Recommended Next Task"
-- Update "Current Blockers" if status changes
+- Update "Current Phase" and architecture counts
+- Add completed work to open loops / backlog
+- Update "Open Loops" if status changes
 
 ### BACKLOG.md
 

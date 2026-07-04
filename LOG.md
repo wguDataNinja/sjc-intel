@@ -1,14 +1,16 @@
 # SJC_Intel Session Log
 
-## 2026-06-26 (Afternoon) — NBOR Source Event Migration
+## 2026-07-04 (Doc Consolidation) — Reduce doc sprawl, add git/logging policy
 
-**Task:** Apply the source_event model to NBOR public notice page fetches.
+**Task:** Consolidate project docs, define Git policy, formalize logging practice.
 
 **Work done:**
-- Created NBOR source_event `EVT-NBOR-20260626-0001` at `data/source_events/2026-06-26/sjc_nbor_public_notices.yaml`
-- Added `source_event_id` to all 50 NBOR intel_items (across two date directories)
-- Updated `scripts/extract_nbor.py` to dynamically generate source_events on future runs
-- Rebuilt dedupe index (77 entries) and review queue (89 entries, all states preserved)
-- Updated 3 docs: NBOR monitor spec, cadence.md, monitoring_workflow.md
+- Rewrote README_INTERNAL.md as primary dev entrypoint (183 lines, was 286)
+- Rewrote AGENTS.md with git policy, 3-tier logging, session checklists
+- Deprecated STATE.md, ROADMAP.md, CHECKLIST.md (short stubs remain)
+- Shortened README.md to dev pointer
+- Archived ST_JOHNS_COUNTY_INTELLIGENCE.md and discovery_test.md to docs/archive/
+- Created logs/conversations/README.md for third logging tier
+- Updated stale references in docs/cadence.md and docs/operator_mode.md
 
-**Validation:** All YAML valid, schema compliant, idempotent, BCC untouched.
+**Validation:** All YAML valid. No data artifacts modified. No stale refs in core docs.

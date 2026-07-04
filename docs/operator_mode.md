@@ -7,9 +7,9 @@ repo state without requiring the project to be re-explained.
 
 ## Startup Routine
 
-1. Read `STATE.md`.
+1. Read `README_INTERNAL.md`.
 2. Read the concise memory file.
-3. Read `BACKLOG.md` and `ROADMAP.md`.
+3. Read `BACKLOG.md`.
 4. Read `docs/cadence.md` and `logs/runs/README.md`.
 5. Check `logs/runs/daily/LAST_RUN`, `logs/runs/weekly/LAST_RUN`,
    `logs/runs/monthly/LAST_RUN` to determine what cadence work is due.
@@ -46,7 +46,7 @@ Delegate to Hermes when:
 ## Logging
 
 - Create/update an agent log for meaningful work.
-- Update `STATE.md` after durable changes.
+- Update `README_INTERNAL.md` after durable changes.
 - Update `BACKLOG.md` when statuses change.
 - Keep memory short and point to the latest log.
 

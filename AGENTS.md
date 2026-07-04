@@ -31,23 +31,61 @@ definitions that document what a worker does (but isn't interactive) live in
 
 ## Startup Routine
 
-1. Read `STATE.md`.
-2. Read `.opencode/agent_memory/sjc-intel-architect.memory.md`.
-3. Read `BACKLOG.md` and `ROADMAP.md` when choosing work.
-4. Follow `docs/operator_mode.md` if Buddy says "get to work".
+1. Read `README_INTERNAL.md` — primary dev entrypoint with current state and architecture.
+2. Read `.opencode/agent_memory/sjc-intel-architect.memory.md` — concise current memory.
+3. Read `BACKLOG.md` — for highest-priority open item.
+4. Read `docs/operator_mode.md` if Buddy says "get to work".
+5. Read `docs/cadence.md` and check `logs/runs/{daily,weekly,monthly}/LAST_RUN` for due work.
+6. Confirm task does not require live monitoring, backfill execution, source promotion,
+   or publishing without explicit approval.
+
+## Worker Context-Gathering Requirement
+
+Before starting any task, workers must read:
+1. `README_INTERNAL.md` — project state and architecture
+2. `AGENTS.md` — rules, git policy, logging expectations
+3. `BACKLOG.md` — task context if applicable
+4. Relevant monitor spec or task prompt — extraction/classification rules
+
+## Git Policy
+
+- Agents do NOT commit unless explicitly instructed by Buddy.
+- Commit after meaningful completed sessions that produce durable output.
+- Git Steward is the preferred commit agent.
+- Stage explicit paths only — never use broad `git add .` without Git Steward review.
+- Inspect `git diff` and `git status` before staging anything.
+- Conventional commit prefixes: `feat:`, `fix:`, `docs:`, `chore:`, `data:`.
+- Never commit: secrets, `.env`, credentials, private exports, raw GPT transcripts,
+  `node_modules/`, caches, or large generated dumps.
+- Generated data under `data/` may be committed when it represents curated project state
+  (intel items, dedupe index, review queue).
+- Validate YAML/JSON before commit when touching structured data.
+- If unsure about a file, leave it unstaged and ask.
 
 ## Logging Rules
 
-- Log meaningful agent work under `logs/agents/{agent_name}/`.
-- Keep narrative history in `logs/sessions/`.
-- Record durable design decisions in `logs/decisions/`.
-- Update `STATE.md` after durable state changes.
+Three logging tiers:
+
+| Tier | Content | Location | Cadence |
+|------|---------|----------|---------|
+| Agent logs | What agents did, decisions, friction, rationale | `logs/agents/{agent_name}/{YYYY-MM-DD}_{task}.md` | Per session |
+| Run logs | Pipeline execution, extractions, cadence work | `logs/runs/{daily,weekly,monthly}/{YYYY-MM-DD}_{task}.md` | Per cadence run |
+| Conversation logs | Buddy's GPT/research outputs (curated summaries) | `logs/conversations/{YYYY-MM-DD}_{topic}.md` | Per research thread |
+
+Rules:
+- Agent logs record technical decisions, files read/changed, friction encountered.
+- Run logs record what cadence was evaluated, what was selected, what was produced.
+- Conversation logs are curated summaries, not raw transcripts by default.
+- Log meaningful work; do not log trivial no-op sessions.
+- Update LAST_RUN markers after completing cadence work.
+- Full session narrative: `logs/sessions/` for major buildout sessions.
 
 ## Memory Rules
 
 - Memory is for current operating state only.
 - Do not store long history, secrets, private content, or raw sensitive data.
 - Point to logs and source-of-truth docs instead of duplicating them.
+- Architect memory must stay under ~100 lines. Archive to logs when it grows.
 
 ## Safety Rules
 
@@ -66,17 +104,36 @@ definitions that document what a worker does (but isn't interactive) live in
 - Do not create cron, launchd, or scheduled automation.
 - Verify output files before marking a task complete.
 
-## Source Of Truth Files
+## Session Checklists
 
-- `STATE.md` — current operating state
-- `ROADMAP.md` — phase plan and readiness criteria
-- `BACKLOG.md` — actionable work list
-- `CHECKLIST.md` — operational gates
-- `docs/operator_mode.md` — behavior when told to get to work
-- `docs/discovery_loops.md` — loop operating model
-- `docs/taxonomy.md` — controlled vocabularies
-- `registry/sources.yaml` — canonical sources
-- `registry/source_candidates.yaml` — candidate sources
-- `registry/beat_candidates.yaml` — candidate beats
-- `registry/search_terms.yaml` — operational search terms
-- `.opencode/agent_memory/sjc-intel-architect.memory.md` — concise agent memory
+### Start Of Session
+- Read `README_INTERNAL.md` and `AGENTS.md`.
+- Read `.opencode/agent_memory/sjc-intel-architect.memory.md`.
+- Check `BACKLOG.md` for the highest-priority open item.
+- Check `docs/operator_mode.md` if Buddy says "get to work".
+- Check `docs/cadence.md` and evaluate due work from LAST_RUN markers.
+- Confirm the task does not require live monitoring, backfill execution,
+  source promotion, or publishing without explicit approval.
+
+### Before Hermes Delegation
+- Define the exact input files and output files.
+- State whether web access is needed.
+- Confirm public-source-only boundaries.
+- Include dedupe and sensitivity rules.
+- Specify what should be logged.
+- Make the task small enough to verify.
+
+### After Hermes Completion
+- Inspect output files for schema shape and obvious overreach.
+- Check source URLs and public accessibility assumptions.
+- Confirm sensitive items are `pending_review` and human-review-required.
+- Update `BACKLOG.md` and agent memory if durable state changed.
+- Add or update an agent log.
+
+### End Of Session
+- Update changed docs (`README_INTERNAL.md`, `BACKLOG.md`, etc.).
+- Write meta-run log to `logs/runs/{cadence}/{YYYY-MM-DD}_{task}.md`.
+- Update `logs/runs/{cadence}/LAST_RUN` timestamp.
+- Write agent log to `logs/agents/{agent_name}/{YYYY-MM-DD}_{task}.md`.
+- Keep agent memory concise (< 100 lines).
+- Do not leave unreported blockers.

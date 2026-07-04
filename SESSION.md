@@ -1,50 +1,65 @@
-# SJC_Intel Session — 2026-06-26 (Afternoon)
+# SJC_Intel Session — 2026-07-04 (Doc Consolidation)
 
 ## Task
-Apply the `source_event` model to NBOR public notice page fetches.
+Consolidate project docs, define Git policy, and formalize logging practice.
 
 ## Summary
-Implemented the source_event parent-child pattern for the `sjc_nbor_public_notices` source. Each NBOR page fetch now produces a `source_event` record of type `public_notice_snapshot`, and all extracted intel_items link back to it via `source_event_id`.
+Reduced root-level doc count from 11 to 7 by folding STATE.md, ROADMAP.md,
+CHECKLIST.md content into README_INTERNAL.md and AGENTS.md. Made
+README_INTERNAL.md the primary development entrypoint. Added git policy,
+three-tier logging, and worker context-gathering requirement to AGENTS.md.
+Archived two stale discovery docs (ST_JOHNS_COUNTY_INTELLIGENCE.md,
+discovery_test.md) to docs/archive/. Created logs/conversations/ for
+Buddy's GPT research thread storage.
 
 ## Changes Made
 
-### Source Event Data
-- Created `data/source_events/2026-06-26/sjc_nbor_public_notices.yaml` — NBOR source event `EVT-NBOR-20260626-0001` with 25 linked item_ids
+### Rewritten
+- `README_INTERNAL.md` — now primary dev entrypoint (was 286 lines, now 183)
+  - Removed long session narrative (moved to logs)
+  - Added review pipeline status (115 dedupe, 132 queue, interest filters)
+  - Added Current Phase, Core Docs, Open Loops, Logging Tiers sections
+  - Kept architecture tables, durable decisions, agent cautions, memory export
 
-### Intel Item Updates
-- Added `source_event_id: EVT-NBOR-20260626-0001` to all 25 items in `data/intel_items/2026-06-26/sjc_nbor_public_notices.yaml`
-- Added `source_event_id: EVT-NBOR-20260626-0001` to all 25 items in `data/intel_items/2026-06-08/sjc_nbor_public_notices.yaml`
+- `AGENTS.md` — added:
+  - Git policy (commit boundaries, staging rules, conventional prefixes)
+  - Three-tier logging practice (agent/runs/conversations)
+  - Worker context-gathering requirement
+  - Session checklists (start, end, Hermes delegation)
+  - Updated startup routine (README_INTERNAL.md replaces STATE.md)
 
-### Script Update
-- Updated `scripts/extract_nbor.py` to:
-  - Use dynamic date-based output directories (instead of hardcoded `2026-06-08`)
-  - Generate a `source_event` of type `public_notice_snapshot` per fetch
-  - Add `source_event_id` to each intel_item
-  - Write source_event to `data/source_events/{date}/sjc_nbor_public_notices.yaml`
+### Deprecated (short stubs remain pointing to new homes)
+- `STATE.md` — content folded into README_INTERNAL.md
+- `ROADMAP.md` — phase table folded into README_INTERNAL.md
+- `CHECKLIST.md` — checklists folded into AGENTS.md
+- `README.md` — shortened to dev pointer to README_INTERNAL.md
 
-### Rebuilt Artifacts
-- Rebuilt `data/index/prior_items.yaml` — 77 entries, no source_events leaked
-- Rebuilt `data/review_queue/queue.yaml` — 89 entries, review states preserved (25 NBOR items remain `verified`)
-- Rebuilt `data/review_queue/summary.yaml`
+### Archive
+- `ST_JOHNS_COUNTY_INTELLIGENCE.md` → `docs/archive/`
+- `discovery_test.md` → `docs/archive/`
 
-### Documentation Updates
-- Updated `docs/monitor_specs/sjc_nbor_public_notices.md` — added source event model section and updated output paths
-- Updated `docs/cadence.md` — daily output now lists source_events before intel_items
-- Updated `docs/monitoring_workflow.md` — added source_event creation step (1b), updated step descriptions
+### New
+- `logs/conversations/README.md` — third logging tier definition
+- `logs/runs/daily/2026-07-04_interest_filters_and_silverleaf.md` — prior session log
 
-### BCC Impact
-- BCC files untouched: `data/intel_items/2026-06-26/sjc_bcc_agenda_items.yaml` and `data/source_events/2026-06-26/sjc_bcc_calendar.yaml` unchanged
+### Updated references
+- `docs/cadence.md` — STATE.md references → README_INTERNAL.md
+- `docs/operator_mode.md` — STATE.md/ROADMAP.md → README_INTERNAL.md
+
+### Not modified (intentional)
+- No extraction scripts touched
+- No data artifacts modified (beyond existing dirty state)
+- No source monitors added
+- No source_event migration performed
 
 ## Validation
-- All YAML files parse correctly ✓
-- Source event schema compliant (event_type: public_notice_snapshot, status: extracted) ✓
-- All 50 NBOR items (across both files) linked to EVT-NBOR-20260626-0001 ✓
-- Dedupe index: 0 source_events leaked, 77 entries ✓
-- Review queue: 0 source_events leaked, 89 entries, review states preserved ✓
-- Dedupe rebuild idempotent ✓
-- BCC files intact and parseable ✓
+- All YAML files parse correctly
+- No stale STATE.md/ROADMAP.md/CHECKLIST.md references remain in core docs
+- Data artifacts untouched
+- Git shows expected dirty files (doc changes only)
 
-## Next Steps
-- MON-008: Run recurring daily NBOR monitor (extractor updated, Hermes-ready)
-- MON-005: BCC calendar weekly monitor pilot
-- SW-002: Source-watch first discovery cycle
+## Residual Stale References (archival docs only, not updated)
+- `docs/hermes_task_contract.md` — references STATE.md/ROADMAP.md (historical Hermes spec)
+- `docs/reviews/codex_review_output.md` — review artifact, not active
+- `docs/repo_audit.md` — historical audit, not active
+- `docs/source_promotion/first_wave_source_promotion_packet.md` — historical
