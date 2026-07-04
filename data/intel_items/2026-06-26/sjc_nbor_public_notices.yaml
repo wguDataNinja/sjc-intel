@@ -1,5 +1,5 @@
 source_id: sjc_nbor_public_notices
-fetched_at: '2026-06-26T07:28:52Z'
+fetched_at: '2026-06-26T10:14:04Z'
 source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
 total_items: 25
 items:
@@ -10,7 +10,7 @@ items:
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/22/2026
-  discovered_at: '2026-06-26T07:28:52Z'
+  discovered_at: '2026-06-26T10:14:04Z'
   discovered_by: hermes-sjc_nbor_public_notices
   topics:
   - infrastructure
@@ -27,7 +27,7 @@ items:
   citation:
     source_name: St. Johns County Neighborhood Bill of Rights
     source_type: government_website
-    accessed_at: '2026-06-26T07:28:52Z'
+    accessed_at: '2026-06-26T10:14:04Z'
     url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   review_status: pending_review
   primary_topic: infrastructure
@@ -46,7 +46,7 @@ items:
     inference_notes: Directly from NBOR public notices application.
   taxonomy_gap: null
   human_review_required: false
-  created_at: '2026-06-26T07:28:52Z'
+  created_at: '2026-06-26T10:14:04Z'
   _dedupe_key: e1e7b41af72ede8d
   _category: ROW
   _beat: utilities_water
@@ -70,7 +70,7 @@ items:
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/18/2026
-  discovered_at: '2026-06-26T07:28:52Z'
+  discovered_at: '2026-06-26T10:14:04Z'
   discovered_by: hermes-sjc_nbor_public_notices
   topics:
   - development
@@ -91,7 +91,7 @@ items:
   citation:
     source_name: St. Johns County Neighborhood Bill of Rights
     source_type: government_website
-    accessed_at: '2026-06-26T07:28:52Z'
+    accessed_at: '2026-06-26T10:14:04Z'
     url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   review_status: pending_review
   primary_topic: development
@@ -111,7 +111,7 @@ items:
     inference_notes: Directly from NBOR public notices application.
   taxonomy_gap: null
   human_review_required: false
-  created_at: '2026-06-26T07:28:52Z'
+  created_at: '2026-06-26T10:14:04Z'
   _dedupe_key: 0352eee67611e605
   _category: Meeting
   _beat: rezoning_comp_plan_dri
@@ -140,7 +140,7 @@ items:
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/18/2026
-  discovered_at: '2026-06-26T07:28:52Z'
+  discovered_at: '2026-06-26T10:14:04Z'
   discovered_by: hermes-sjc_nbor_public_notices
   topics:
   - development
@@ -161,7 +161,7 @@ items:
   citation:
     source_name: St. Johns County Neighborhood Bill of Rights
     source_type: government_website
-    accessed_at: '2026-06-26T07:28:52Z'
+    accessed_at: '2026-06-26T10:14:04Z'
     url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   review_status: pending_review
   primary_topic: development
@@ -181,7 +181,7 @@ items:
     inference_notes: Directly from NBOR public notices application.
   taxonomy_gap: null
   human_review_required: false
-  created_at: '2026-06-26T07:28:52Z'
+  created_at: '2026-06-26T10:14:04Z'
   _dedupe_key: 0f7f485f7206b341
   _category: Meeting
   _beat: rezoning_comp_plan_dri
@@ -210,7 +210,7 @@ items:
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/18/2026
-  discovered_at: '2026-06-26T07:28:52Z'
+  discovered_at: '2026-06-26T10:14:04Z'
   discovered_by: hermes-sjc_nbor_public_notices
   topics:
   - development
@@ -231,7 +231,7 @@ items:
   citation:
     source_name: St. Johns County Neighborhood Bill of Rights
     source_type: government_website
-    accessed_at: '2026-06-26T07:28:52Z'
+    accessed_at: '2026-06-26T10:14:04Z'
     url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   review_status: pending_review
   primary_topic: development
@@ -251,7 +251,7 @@ items:
     inference_notes: Directly from NBOR public notices application.
   taxonomy_gap: null
   human_review_required: false
-  created_at: '2026-06-26T07:28:52Z'
+  created_at: '2026-06-26T10:14:04Z'
   _dedupe_key: baba40870e646206
   _category: Meeting
   _beat: rezoning_comp_plan_dri
@@ -278,7 +278,7 @@ items:
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/16/2026
-  discovered_at: '2026-06-26T07:28:52Z'
+  discovered_at: '2026-06-26T10:14:04Z'
   discovered_by: hermes-sjc_nbor_public_notices
   topics:
   - infrastructure
@@ -295,7 +295,7 @@ items:
   citation:
     source_name: St. Johns County Neighborhood Bill of Rights
     source_type: government_website
-    accessed_at: '2026-06-26T07:28:52Z'
+    accessed_at: '2026-06-26T10:14:04Z'
     url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   review_status: pending_review
   primary_topic: infrastructure
@@ -314,7 +314,7 @@ items:
     inference_notes: Directly from NBOR public notices application.
   taxonomy_gap: null
   human_review_required: false
-  created_at: '2026-06-26T07:28:52Z'
+  created_at: '2026-06-26T10:14:04Z'
   _dedupe_key: a2b6c0939090f8e6
   _category: ROW
   _beat: utilities_water
@@ -336,7 +336,7 @@ items:
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/16/2026
-  discovered_at: '2026-06-26T07:28:52Z'
+  discovered_at: '2026-06-26T10:14:04Z'
   discovered_by: hermes-sjc_nbor_public_notices
   topics:
   - infrastructure
@@ -353,7 +353,7 @@ items:
   citation:
     source_name: St. Johns County Neighborhood Bill of Rights
     source_type: government_website
-    accessed_at: '2026-06-26T07:28:52Z'
+    accessed_at: '2026-06-26T10:14:04Z'
     url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   review_status: pending_review
   primary_topic: infrastructure
@@ -372,7 +372,7 @@ items:
     inference_notes: Directly from NBOR public notices application.
   taxonomy_gap: null
   human_review_required: false
-  created_at: '2026-06-26T07:28:52Z'
+  created_at: '2026-06-26T10:14:04Z'
   _dedupe_key: a2b6c0939090f8e6
   _category: ROW
   _beat: utilities_water
@@ -395,7 +395,7 @@ items:
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/16/2026
-  discovered_at: '2026-06-26T07:28:52Z'
+  discovered_at: '2026-06-26T10:14:04Z'
   discovered_by: hermes-sjc_nbor_public_notices
   topics:
   - development
@@ -412,7 +412,7 @@ items:
   citation:
     source_name: St. Johns County Neighborhood Bill of Rights
     source_type: government_website
-    accessed_at: '2026-06-26T07:28:52Z'
+    accessed_at: '2026-06-26T10:14:04Z'
     url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   review_status: pending_review
   primary_topic: development
@@ -430,7 +430,7 @@ items:
     inference_notes: Directly from NBOR public notices application.
   taxonomy_gap: null
   human_review_required: false
-  created_at: '2026-06-26T07:28:52Z'
+  created_at: '2026-06-26T10:14:04Z'
   _dedupe_key: a118935cdd9fd61d
   _category: ROW
   _beat: site_plans_permits_construction
@@ -453,7 +453,7 @@ items:
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/16/2026
-  discovered_at: '2026-06-26T07:28:52Z'
+  discovered_at: '2026-06-26T10:14:04Z'
   discovered_by: hermes-sjc_nbor_public_notices
   topics:
   - infrastructure
@@ -470,7 +470,7 @@ items:
   citation:
     source_name: St. Johns County Neighborhood Bill of Rights
     source_type: government_website
-    accessed_at: '2026-06-26T07:28:52Z'
+    accessed_at: '2026-06-26T10:14:04Z'
     url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   review_status: pending_review
   primary_topic: infrastructure
@@ -489,7 +489,7 @@ items:
     inference_notes: Directly from NBOR public notices application.
   taxonomy_gap: null
   human_review_required: false
-  created_at: '2026-06-26T07:28:52Z'
+  created_at: '2026-06-26T10:14:04Z'
   _dedupe_key: bc368026fb70419f
   _category: ROW
   _beat: utilities_water
@@ -511,7 +511,7 @@ items:
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/16/2026
-  discovered_at: '2026-06-26T07:28:52Z'
+  discovered_at: '2026-06-26T10:14:04Z'
   discovered_by: hermes-sjc_nbor_public_notices
   topics:
   - development
@@ -528,7 +528,7 @@ items:
   citation:
     source_name: St. Johns County Neighborhood Bill of Rights
     source_type: government_website
-    accessed_at: '2026-06-26T07:28:52Z'
+    accessed_at: '2026-06-26T10:14:04Z'
     url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   review_status: pending_review
   primary_topic: development
@@ -546,7 +546,7 @@ items:
     inference_notes: Directly from NBOR public notices application.
   taxonomy_gap: null
   human_review_required: false
-  created_at: '2026-06-26T07:28:52Z'
+  created_at: '2026-06-26T10:14:04Z'
   _dedupe_key: 6e3aa3c8aa20053c
   _category: ROW
   _beat: site_plans_permits_construction
@@ -569,7 +569,7 @@ items:
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/16/2026
-  discovered_at: '2026-06-26T07:28:52Z'
+  discovered_at: '2026-06-26T10:14:04Z'
   discovered_by: hermes-sjc_nbor_public_notices
   topics:
   - infrastructure
@@ -586,7 +586,7 @@ items:
   citation:
     source_name: St. Johns County Neighborhood Bill of Rights
     source_type: government_website
-    accessed_at: '2026-06-26T07:28:52Z'
+    accessed_at: '2026-06-26T10:14:04Z'
     url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   review_status: pending_review
   primary_topic: infrastructure
@@ -605,7 +605,7 @@ items:
     inference_notes: Directly from NBOR public notices application.
   taxonomy_gap: null
   human_review_required: false
-  created_at: '2026-06-26T07:28:52Z'
+  created_at: '2026-06-26T10:14:04Z'
   _dedupe_key: 13d78e4624b073ba
   _category: ROW
   _beat: utilities_water
@@ -627,7 +627,7 @@ items:
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/16/2026
-  discovered_at: '2026-06-26T07:28:52Z'
+  discovered_at: '2026-06-26T10:14:04Z'
   discovered_by: hermes-sjc_nbor_public_notices
   topics:
   - infrastructure
@@ -644,7 +644,7 @@ items:
   citation:
     source_name: St. Johns County Neighborhood Bill of Rights
     source_type: government_website
-    accessed_at: '2026-06-26T07:28:52Z'
+    accessed_at: '2026-06-26T10:14:04Z'
     url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   review_status: pending_review
   primary_topic: infrastructure
@@ -663,7 +663,7 @@ items:
     inference_notes: Directly from NBOR public notices application.
   taxonomy_gap: null
   human_review_required: false
-  created_at: '2026-06-26T07:28:52Z'
+  created_at: '2026-06-26T10:14:04Z'
   _dedupe_key: a2b6c0939090f8e6
   _category: ROW
   _beat: utilities_water
@@ -685,7 +685,7 @@ items:
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/16/2026
-  discovered_at: '2026-06-26T07:28:52Z'
+  discovered_at: '2026-06-26T10:14:04Z'
   discovered_by: hermes-sjc_nbor_public_notices
   topics:
   - infrastructure
@@ -702,7 +702,7 @@ items:
   citation:
     source_name: St. Johns County Neighborhood Bill of Rights
     source_type: government_website
-    accessed_at: '2026-06-26T07:28:52Z'
+    accessed_at: '2026-06-26T10:14:04Z'
     url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   review_status: pending_review
   primary_topic: infrastructure
@@ -721,7 +721,7 @@ items:
     inference_notes: Directly from NBOR public notices application.
   taxonomy_gap: null
   human_review_required: false
-  created_at: '2026-06-26T07:28:52Z'
+  created_at: '2026-06-26T10:14:04Z'
   _dedupe_key: 0769b48d68988d70
   _category: ROW
   _beat: utilities_water
@@ -743,7 +743,7 @@ items:
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/16/2026
-  discovered_at: '2026-06-26T07:28:52Z'
+  discovered_at: '2026-06-26T10:14:04Z'
   discovered_by: hermes-sjc_nbor_public_notices
   topics:
   - transportation
@@ -760,7 +760,7 @@ items:
   citation:
     source_name: St. Johns County Neighborhood Bill of Rights
     source_type: government_website
-    accessed_at: '2026-06-26T07:28:52Z'
+    accessed_at: '2026-06-26T10:14:04Z'
     url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   review_status: pending_review
   primary_topic: transportation
@@ -779,7 +779,7 @@ items:
     inference_notes: Directly from NBOR public notices application.
   taxonomy_gap: null
   human_review_required: false
-  created_at: '2026-06-26T07:28:52Z'
+  created_at: '2026-06-26T10:14:04Z'
   _dedupe_key: d6bdabfa2da526c6
   _category: ROW
   _beat: roadwork_traffic
@@ -804,7 +804,7 @@ items:
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/16/2026
-  discovered_at: '2026-06-26T07:28:52Z'
+  discovered_at: '2026-06-26T10:14:04Z'
   discovered_by: hermes-sjc_nbor_public_notices
   topics:
   - development
@@ -825,7 +825,7 @@ items:
   citation:
     source_name: St. Johns County Neighborhood Bill of Rights
     source_type: government_website
-    accessed_at: '2026-06-26T07:28:52Z'
+    accessed_at: '2026-06-26T10:14:04Z'
     url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   review_status: pending_review
   primary_topic: development
@@ -845,7 +845,7 @@ items:
     inference_notes: Directly from NBOR public notices application.
   taxonomy_gap: null
   human_review_required: false
-  created_at: '2026-06-26T07:28:52Z'
+  created_at: '2026-06-26T10:14:04Z'
   _dedupe_key: c20191fb6c6cefb7
   _category: Meeting
   _beat: rezoning_comp_plan_dri
@@ -875,7 +875,7 @@ items:
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/16/2026
-  discovered_at: '2026-06-26T07:28:52Z'
+  discovered_at: '2026-06-26T10:14:04Z'
   discovered_by: hermes-sjc_nbor_public_notices
   topics:
   - development
@@ -892,7 +892,7 @@ items:
   citation:
     source_name: St. Johns County Neighborhood Bill of Rights
     source_type: government_website
-    accessed_at: '2026-06-26T07:28:52Z'
+    accessed_at: '2026-06-26T10:14:04Z'
     url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   review_status: pending_review
   primary_topic: development
@@ -910,7 +910,7 @@ items:
     inference_notes: Directly from NBOR public notices application.
   taxonomy_gap: null
   human_review_required: false
-  created_at: '2026-06-26T07:28:52Z'
+  created_at: '2026-06-26T10:14:04Z'
   _dedupe_key: 244922c00d48172e
   _category: ROW
   _beat: site_plans_permits_construction
@@ -934,7 +934,7 @@ items:
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/16/2026
-  discovered_at: '2026-06-26T07:28:52Z'
+  discovered_at: '2026-06-26T10:14:04Z'
   discovered_by: hermes-sjc_nbor_public_notices
   topics:
   - development
@@ -953,7 +953,7 @@ items:
   citation:
     source_name: St. Johns County Neighborhood Bill of Rights
     source_type: government_website
-    accessed_at: '2026-06-26T07:28:52Z'
+    accessed_at: '2026-06-26T10:14:04Z'
     url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   review_status: pending_review
   primary_topic: development
@@ -972,7 +972,7 @@ items:
     inference_notes: Directly from NBOR public notices application.
   taxonomy_gap: null
   human_review_required: false
-  created_at: '2026-06-26T07:28:52Z'
+  created_at: '2026-06-26T10:14:04Z'
   _dedupe_key: 21bda2f876c8a97b
   _category: Meeting
   _beat: rezoning_comp_plan_dri
@@ -999,7 +999,7 @@ items:
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/16/2026
-  discovered_at: '2026-06-26T07:28:52Z'
+  discovered_at: '2026-06-26T10:14:04Z'
   discovered_by: hermes-sjc_nbor_public_notices
   topics:
   - development
@@ -1018,7 +1018,7 @@ items:
   citation:
     source_name: St. Johns County Neighborhood Bill of Rights
     source_type: government_website
-    accessed_at: '2026-06-26T07:28:52Z'
+    accessed_at: '2026-06-26T10:14:04Z'
     url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   review_status: pending_review
   primary_topic: development
@@ -1037,7 +1037,7 @@ items:
     inference_notes: Directly from NBOR public notices application.
   taxonomy_gap: null
   human_review_required: false
-  created_at: '2026-06-26T07:28:52Z'
+  created_at: '2026-06-26T10:14:04Z'
   _dedupe_key: 087a9058bdb02d4c
   _category: Meeting
   _beat: rezoning_comp_plan_dri
@@ -1061,7 +1061,7 @@ items:
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/12/2026
-  discovered_at: '2026-06-26T07:28:52Z'
+  discovered_at: '2026-06-26T10:14:04Z'
   discovered_by: hermes-sjc_nbor_public_notices
   topics:
   - development
@@ -1078,7 +1078,7 @@ items:
   citation:
     source_name: St. Johns County Neighborhood Bill of Rights
     source_type: government_website
-    accessed_at: '2026-06-26T07:28:52Z'
+    accessed_at: '2026-06-26T10:14:04Z'
     url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   review_status: pending_review
   primary_topic: development
@@ -1096,7 +1096,7 @@ items:
     inference_notes: Directly from NBOR public notices application.
   taxonomy_gap: null
   human_review_required: false
-  created_at: '2026-06-26T07:28:52Z'
+  created_at: '2026-06-26T10:14:04Z'
   _dedupe_key: 65dae7b5cac78ea4
   _category: ROW
   _beat: site_plans_permits_construction
@@ -1119,7 +1119,7 @@ items:
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/12/2026
-  discovered_at: '2026-06-26T07:28:52Z'
+  discovered_at: '2026-06-26T10:14:04Z'
   discovered_by: hermes-sjc_nbor_public_notices
   topics:
   - development
@@ -1136,7 +1136,7 @@ items:
   citation:
     source_name: St. Johns County Neighborhood Bill of Rights
     source_type: government_website
-    accessed_at: '2026-06-26T07:28:52Z'
+    accessed_at: '2026-06-26T10:14:04Z'
     url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   review_status: pending_review
   primary_topic: development
@@ -1154,7 +1154,7 @@ items:
     inference_notes: Directly from NBOR public notices application.
   taxonomy_gap: null
   human_review_required: false
-  created_at: '2026-06-26T07:28:52Z'
+  created_at: '2026-06-26T10:14:04Z'
   _dedupe_key: 5095023cc1e1f1d4
   _category: ROW
   _beat: site_plans_permits_construction
@@ -1176,7 +1176,7 @@ items:
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/12/2026
-  discovered_at: '2026-06-26T07:28:52Z'
+  discovered_at: '2026-06-26T10:14:04Z'
   discovered_by: hermes-sjc_nbor_public_notices
   topics:
   - infrastructure
@@ -1193,7 +1193,7 @@ items:
   citation:
     source_name: St. Johns County Neighborhood Bill of Rights
     source_type: government_website
-    accessed_at: '2026-06-26T07:28:52Z'
+    accessed_at: '2026-06-26T10:14:04Z'
     url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   review_status: pending_review
   primary_topic: infrastructure
@@ -1212,7 +1212,7 @@ items:
     inference_notes: Directly from NBOR public notices application.
   taxonomy_gap: null
   human_review_required: false
-  created_at: '2026-06-26T07:28:52Z'
+  created_at: '2026-06-26T10:14:04Z'
   _dedupe_key: 2c29926fc74c0d21
   _category: ROW
   _beat: utilities_water
@@ -1234,7 +1234,7 @@ items:
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/12/2026
-  discovered_at: '2026-06-26T07:28:52Z'
+  discovered_at: '2026-06-26T10:14:04Z'
   discovered_by: hermes-sjc_nbor_public_notices
   topics:
   - infrastructure
@@ -1251,7 +1251,7 @@ items:
   citation:
     source_name: St. Johns County Neighborhood Bill of Rights
     source_type: government_website
-    accessed_at: '2026-06-26T07:28:52Z'
+    accessed_at: '2026-06-26T10:14:04Z'
     url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   review_status: pending_review
   primary_topic: infrastructure
@@ -1270,7 +1270,7 @@ items:
     inference_notes: Directly from NBOR public notices application.
   taxonomy_gap: null
   human_review_required: false
-  created_at: '2026-06-26T07:28:52Z'
+  created_at: '2026-06-26T10:14:04Z'
   _dedupe_key: 38cd637d1d0ea2fe
   _category: ROW
   _beat: utilities_water
@@ -1292,7 +1292,7 @@ items:
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/12/2026
-  discovered_at: '2026-06-26T07:28:52Z'
+  discovered_at: '2026-06-26T10:14:04Z'
   discovered_by: hermes-sjc_nbor_public_notices
   topics:
   - infrastructure
@@ -1309,7 +1309,7 @@ items:
   citation:
     source_name: St. Johns County Neighborhood Bill of Rights
     source_type: government_website
-    accessed_at: '2026-06-26T07:28:52Z'
+    accessed_at: '2026-06-26T10:14:04Z'
     url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   review_status: pending_review
   primary_topic: infrastructure
@@ -1328,7 +1328,7 @@ items:
     inference_notes: Directly from NBOR public notices application.
   taxonomy_gap: null
   human_review_required: false
-  created_at: '2026-06-26T07:28:52Z'
+  created_at: '2026-06-26T10:14:04Z'
   _dedupe_key: 38cd637d1d0ea2fe
   _category: ROW
   _beat: utilities_water
@@ -1351,7 +1351,7 @@ items:
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/12/2026
-  discovered_at: '2026-06-26T07:28:52Z'
+  discovered_at: '2026-06-26T10:14:04Z'
   discovered_by: hermes-sjc_nbor_public_notices
   topics:
   - infrastructure
@@ -1368,7 +1368,7 @@ items:
   citation:
     source_name: St. Johns County Neighborhood Bill of Rights
     source_type: government_website
-    accessed_at: '2026-06-26T07:28:52Z'
+    accessed_at: '2026-06-26T10:14:04Z'
     url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   review_status: pending_review
   primary_topic: infrastructure
@@ -1387,7 +1387,7 @@ items:
     inference_notes: Directly from NBOR public notices application.
   taxonomy_gap: null
   human_review_required: false
-  created_at: '2026-06-26T07:28:52Z'
+  created_at: '2026-06-26T10:14:04Z'
   _dedupe_key: 38cd637d1d0ea2fe
   _category: ROW
   _beat: utilities_water
@@ -1410,7 +1410,7 @@ items:
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/12/2026
-  discovered_at: '2026-06-26T07:28:52Z'
+  discovered_at: '2026-06-26T10:14:04Z'
   discovered_by: hermes-sjc_nbor_public_notices
   topics:
   - development
@@ -1427,7 +1427,7 @@ items:
   citation:
     source_name: St. Johns County Neighborhood Bill of Rights
     source_type: government_website
-    accessed_at: '2026-06-26T07:28:52Z'
+    accessed_at: '2026-06-26T10:14:04Z'
     url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   review_status: pending_review
   primary_topic: development
@@ -1445,7 +1445,7 @@ items:
     inference_notes: Directly from NBOR public notices application.
   taxonomy_gap: null
   human_review_required: false
-  created_at: '2026-06-26T07:28:52Z'
+  created_at: '2026-06-26T10:14:04Z'
   _dedupe_key: 04e882567677c934
   _category: ROW
   _beat: site_plans_permits_construction
@@ -1469,7 +1469,7 @@ items:
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   source_event_id: EVT-NBOR-20260626-0001
   source_published_at: 6/12/2026
-  discovered_at: '2026-06-26T07:28:52Z'
+  discovered_at: '2026-06-26T10:14:04Z'
   discovered_by: hermes-sjc_nbor_public_notices
   topics:
   - development
@@ -1486,7 +1486,7 @@ items:
   citation:
     source_name: St. Johns County Neighborhood Bill of Rights
     source_type: government_website
-    accessed_at: '2026-06-26T07:28:52Z'
+    accessed_at: '2026-06-26T10:14:04Z'
     url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
   review_status: pending_review
   primary_topic: development
@@ -1504,7 +1504,7 @@ items:
     inference_notes: Directly from NBOR public notices application.
   taxonomy_gap: null
   human_review_required: false
-  created_at: '2026-06-26T07:28:52Z'
+  created_at: '2026-06-26T10:14:04Z'
   _dedupe_key: 04e882567677c934
   _category: ROW
   _beat: site_plans_permits_construction

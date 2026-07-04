@@ -1,46 +1,314 @@
-generated_at: '2026-06-26T09:44:58Z'
-total_entries: 89
-pending_review: 0
+generated_at: '2026-07-04T04:10:06Z'
+total_entries: 132
+pending_review: 43
 by_source:
-  sjc_nbor_public_notices: 25
+  sjc_nbor_public_notices: 50
   sjc_county_news: 9
-  sjc_utility_department: 5
+  sjc_utility_department: 8
   sjso_news_stories: 5
+  silverleaf_discovery: 6
+  six_mile_creek_cdd: 3
   sjc_bcc_calendar: 44
   sjc_emergency_management: 1
+  tolomato_cdd: 3
+  trout_creek_cdd: 3
 by_beat:
-  utilities_water: 23
-  rezoning_comp_plan_dri: 12
-  site_plans_permits_construction: 7
-  roadwork_traffic: 2
+  utilities_water: 32
+  rezoning_comp_plan_dri: 19
+  site_plans_permits_construction: 17
+  roadwork_traffic: 3
   ? ''
-  : 5
+  : 14
   environment: 1
-  infrastructure: 4
+  infrastructure: 5
   crime: 3
   public_safety: 1
-  transportation: 4
+  development: 4
+  education: 1
+  transportation: 5
   taxes_exemptions_trim_vab: 2
   local_government_budget_procurement: 11
   parks_amenities: 10
   public_safety_livability: 3
   emergency_weather_fire_flood: 1
 by_escalation:
-  high: 64
-  low: 16
+  high: 88
+  low: 35
   immediate: 2
   normal: 7
 by_signal:
-  unknown: 45
+  unknown: 88
   high_signal: 35
   medium_signal: 7
   routine_noise: 1
   low_signal: 1
 by_urgency:
-  ongoing: 25
-  timely: 14
+  ongoing: 52
+  timely: 28
   urgent: 2
-  archival: 48
+  archival: 50
+interest_filter_matches:
+  major_development: 13
+  emergency_alerts: 3
+  utility_disruption: 8
+  neighborhood_silverleaf: 5
+  corridor_cr210: 5
+  silverleaf_northwest_dev: 6
+  school_zoning_changes: 1
+  neighborhood_nocatee: 1
+  corridor_sr16: 3
+total_prioritized_items: 32
+prioritized_items:
+- item_id: SJC-NBOR-20260626-0002
+  title: ZVAR 2026000011 Bargfrede Shed (PRIDE 2601876)
+  matched_filters:
+  - major_development
+  escalation: high
+  source: sjc_nbor_public_notices
+  discovered_at: '2026-06-26T07:16:16Z'
+- item_id: SJC-NBOR-20260626-0014
+  title: MAJMOD 2025000011 Golfway Centre PUD
+  matched_filters:
+  - major_development
+  escalation: high
+  source: sjc_nbor_public_notices
+  discovered_at: '2026-06-26T07:16:16Z'
+- item_id: SJC-CN-20260603-0002
+  title: SJC Highlights Long-Term Resiliency Improvements at Porpoise Point Vehicular
+    Beach Access Ramp
+  matched_filters:
+  - emergency_alerts
+  escalation: low
+  source: sjc_county_news
+  discovered_at: '2026-06-03T04:00:00Z'
+- item_id: SJC-CN-20260603-0005
+  title: St. Johns County Enters Phase III Extreme Water Shortage Declaration
+  matched_filters:
+  - utility_disruption
+  escalation: immediate
+  source: sjc_county_news
+  discovered_at: '2026-06-03T04:00:00Z'
+- item_id: SJC-UTIL-20260603-0001
+  title: Phase III Extreme Water Shortage Declaration — Active
+  matched_filters:
+  - utility_disruption
+  escalation: immediate
+  source: sjc_utility_department
+  discovered_at: '2026-06-03T23:30:00Z'
+- item_id: SJC-UTIL-20260603-0002
+  title: Free Chlorine Burnout Scheduled June 1–21
+  matched_filters:
+  - major_development
+  - utility_disruption
+  escalation: high
+  source: sjc_utility_department
+  discovered_at: '2026-06-03T23:30:00Z'
+- item_id: SJC-SJSO-20260603-0003
+  title: Nine arrested during SJSOs March 2026 DUI Wolfpack Operation
+  matched_filters:
+  - major_development
+  escalation: high
+  source: sjso_news_stories
+  discovered_at: '2026-06-03T06:00:00Z'
+- item_id: SJC-SL-20260704-0001
+  title: Here's your first look at SilverLeaf's new 55,000 sq. ft. mega Publix
+  matched_filters:
+  - neighborhood_silverleaf
+  - corridor_cr210
+  - silverleaf_northwest_dev
+  escalation: low
+  source: silverleaf_discovery
+  discovered_at: '2026-07-04T08:00:00Z'
+- item_id: SJC-SL-20260704-0002
+  title: 'Nailed it: St. Johns officials give sneak peek of new Silverleaf K-8 school'
+  matched_filters:
+  - neighborhood_silverleaf
+  - school_zoning_changes
+  - silverleaf_northwest_dev
+  escalation: low
+  source: silverleaf_discovery
+  discovered_at: '2026-07-04T08:15:00Z'
+- item_id: SJC-SL-20260704-0003
+  title: Fore! Major new 2-acre recreational attraction proposed for SilverLeaf by
+    husband and wife team
+  matched_filters:
+  - neighborhood_silverleaf
+  - silverleaf_northwest_dev
+  escalation: low
+  source: silverleaf_discovery
+  discovered_at: '2026-07-04T08:30:00Z'
+- item_id: SJC-SL-20260704-0004
+  title: 'Road relief: Here''s your first look at St. Johns County''s newest highway'
+  matched_filters:
+  - neighborhood_silverleaf
+  - corridor_cr210
+  - silverleaf_northwest_dev
+  escalation: high
+  source: silverleaf_discovery
+  discovered_at: '2026-07-04T08:45:00Z'
+- item_id: SJC-SL-20260704-0005
+  title: St. Johns County is getting two new supermarkets — and they're not Publix
+  matched_filters:
+  - neighborhood_silverleaf
+  - corridor_cr210
+  - silverleaf_northwest_dev
+  escalation: low
+  source: silverleaf_discovery
+  discovered_at: '2026-07-04T09:00:00Z'
+- item_id: SJC-SL-20260704-0006
+  title: 'Exclusive: Here''s what coming to new Nocatee retail center across from
+    water park'
+  matched_filters:
+  - neighborhood_nocatee
+  - silverleaf_northwest_dev
+  escalation: low
+  source: silverleaf_discovery
+  discovered_at: '2026-07-04T09:15:00Z'
+- item_id: SJC-NBOR-20260704-0003
+  title: NZVAR 2026000015 Coddington Driveway
+  matched_filters:
+  - major_development
+  escalation: high
+  source: sjc_nbor_public_notices
+  discovered_at: '2026-07-04T03:44:10Z'
+- item_id: SJC-NBOR-20260704-0004
+  title: NZVAR 2026000014 Herlth SFR
+  matched_filters:
+  - major_development
+  escalation: high
+  source: sjc_nbor_public_notices
+  discovered_at: '2026-07-04T03:44:10Z'
+- item_id: SJC-NBOR-20260704-0005
+  title: NZVAR 2026000009 5325 Porter Road Extension
+  matched_filters:
+  - major_development
+  escalation: high
+  source: sjc_nbor_public_notices
+  discovered_at: '2026-07-04T03:44:10Z'
+- item_id: SJC-NBOR-20260704-0006
+  title: MAJMOD 2023000011 Canopy Shores
+  matched_filters:
+  - major_development
+  escalation: high
+  source: sjc_nbor_public_notices
+  discovered_at: '2026-07-04T03:44:10Z'
+- item_id: SJC-NBOR-20260704-0007
+  title: CPA(SS) 2025000013 Daily´s Place
+  matched_filters:
+  - major_development
+  escalation: high
+  source: sjc_nbor_public_notices
+  discovered_at: '2026-07-04T03:44:10Z'
+- item_id: SJC-BCC-20260120-0005
+  title: Septic-to-Sewer Connection Policy Discussion.   Pursuant to direction from
+    the Board of County Commi
+  matched_filters:
+  - utility_disruption
+  escalation: high
+  source: sjc_bcc_calendar
+  discovered_at: '2026-06-26T08:07:51Z'
+- item_id: SJC-BCC-20260120-0008
+  title: Median Opening - Shores Boulevard.  The Board directed staff during the December
+  matched_filters:
+  - major_development
+  escalation: high
+  source: sjc_bcc_calendar
+  discovered_at: '2026-06-26T08:07:51Z'
+- item_id: SJC-BCC-20260120-0012
+  title: Motion to adopt Resolution 2026-________, approving the  transfer of road
+    impact fee
+  matched_filters:
+  - major_development
+  escalation: high
+  source: sjc_bcc_calendar
+  discovered_at: '2026-06-26T08:07:51Z'
+- item_id: SJC-BCC-20260120-0013
+  title: Motion to adopt  Resolution 2026-________, accepting a Bill of Sale with
+    a Schedule of
+  matched_filters:
+  - utility_disruption
+  escalation: high
+  source: sjc_bcc_calendar
+  discovered_at: '2026-06-26T08:07:51Z'
+- item_id: SJC-BCC-20260120-0014
+  title: Motion to adopt Resolution 2026-_____, accepting an  Easement for Utilities,
+    a Bill
+  matched_filters:
+  - utility_disruption
+  escalation: high
+  source: sjc_bcc_calendar
+  discovered_at: '2026-06-26T08:07:51Z'
+- item_id: SJC-BCC-20260120-0015
+  title: Motion to adopt Resolution 2026-________, accepting a  Bill of Sale with
+    a Schedule of
+  matched_filters:
+  - utility_disruption
+  escalation: high
+  source: sjc_bcc_calendar
+  discovered_at: '2026-06-26T08:07:51Z'
+- item_id: SJC-BCC-20260120-0019
+  title: Motion to adopt Resolution 2026-______ __, accepting the terms and authorizing
+    the
+  matched_filters:
+  - corridor_sr16
+  escalation: high
+  source: sjc_bcc_calendar
+  discovered_at: '2026-06-26T08:07:51Z'
+- item_id: SJC-BCC-20260120-0021
+  title: Motion to adopt Resolution 2026-________, accepting a  Grant of Easement
+    for Utilities
+  matched_filters:
+  - major_development
+  - utility_disruption
+  escalation: high
+  source: sjc_bcc_calendar
+  discovered_at: '2026-06-26T08:07:51Z'
+- item_id: SJC-BCC-20260120-0026
+  title: Motion to adopt Resolution 2026-________, approving the  License Agreement
+    between the County and St
+  matched_filters:
+  - corridor_cr210
+  escalation: high
+  source: sjc_bcc_calendar
+  discovered_at: '2026-06-26T08:07:51Z'
+- item_id: SJC-BCC-20260120-0037
+  title: Motion to adopt Resolution 2026-________, granting a  Certificate of Public
+    Convenience and Necessit
+  matched_filters:
+  - emergency_alerts
+  escalation: high
+  source: sjc_bcc_calendar
+  discovered_at: '2026-06-26T08:07:51Z'
+- item_id: SJC-BCC-20260120-0039
+  title: Motion to authorize the Office of Intergovernmental Affairs to submit  two
+    grant
+  matched_filters:
+  - corridor_cr210
+  - corridor_sr16
+  escalation: normal
+  source: sjc_bcc_calendar
+  discovered_at: '2026-06-26T08:07:51Z'
+- item_id: SJC-CN-20260626-0004
+  title: SJC Highlights Special Bond Between Recycling Driver and Three-Year-Old Resident
+  matched_filters:
+  - major_development
+  escalation: low
+  source: sjc_county_news
+  discovered_at: '2026-06-26T07:30:00Z'
+- item_id: SJC-EM-20260626-0001
+  title: Residents Urged to Prepare as 2026 Atlantic Hurricane Season Begins
+  matched_filters:
+  - emergency_alerts
+  escalation: high
+  source: sjc_emergency_management
+  discovered_at: '2026-06-26T07:40:00Z'
+- item_id: SJC-UD-20260626-0001
+  title: SJC Utilities 2025 Annual Report Published
+  matched_filters:
+  - corridor_sr16
+  escalation: low
+  source: sjc_utility_department
+  discovered_at: '2026-06-26T10:53:25Z'
 human_review_count: 5
 human_review_item_ids:
 - SJC-SJSO-20260603-0001
@@ -49,22 +317,22 @@ human_review_item_ids:
 - SJC-SJSO-20260603-0004
 - SJC-SJSO-20260626-0001
 oldest_pending:
-- item_id: SJC-CN-20260603-0001
-  title: Surplus Goods Public Auction Scheduled for June 20
-  discovered_at: '2026-06-03T04:00:00Z'
-- item_id: SJC-CN-20260603-0002
-  title: SJC Highlights Long-Term Resiliency Improvements at Porpoise Point Vehicular
-    Bea
-  discovered_at: '2026-06-03T04:00:00Z'
-- item_id: SJC-CN-20260603-0003
-  title: Public Library Announces 2026 Summer Reading Program
-  discovered_at: '2026-06-03T04:00:00Z'
-- item_id: SJC-CN-20260603-0004
-  title: St. Johns County Earns Statewide Communications Recognition
-  discovered_at: '2026-06-03T04:00:00Z'
-- item_id: SJC-CN-20260603-0005
-  title: St. Johns County Enters Phase III Extreme Water Shortage Declaration
-  discovered_at: '2026-06-03T04:00:00Z'
+- item_id: six_mile_creek_cdd-001
+  title: Six Mile Creek CDD Board of Supervisors Vacancy Announcement
+  discovered_at: ''
+- item_id: six_mile_creek_cdd-002
+  title: Notice of Qualifying Period for Six Mile Creek CDD Board Candidates — Seats
+    2 an
+  discovered_at: ''
+- item_id: six_mile_creek_cdd-003
+  title: Six Mile Creek CDD Board Meeting Agenda — June 10, 2026
+  discovered_at: ''
+- item_id: tolomato_cdd-001
+  title: Tolomato CDD Board Meeting Agenda — June 23, 2026
+  discovered_at: ''
+- item_id: tolomato_cdd-002
+  title: Tolomato CDD Board Meeting Minutes — April 28, 2026
+  discovered_at: ''
 top_urgent_items:
 - item_id: SJC-NBOR-20260626-0001
   title: Comcast

@@ -1,0 +1,272 @@
+source_id: "silverleaf_discovery"
+fetched_at: "2026-07-04T07:45:00Z"
+source_url: "https://sjcitizen.com/"
+total_items: 6
+items:
+  - item_id: "SJC-SL-20260704-0001"
+    title: "Here's your first look at SilverLeaf's new 55,000 sq. ft. mega Publix"
+    summary: "A massive new Publix — one of the chain's largest at 55,701 sq. ft. — has opened at 1975 SilverLeaf Parkway, giving SilverLeaf residents a full-service grocery with specialty departments including a Pours café serving beer and wine, a scratch bakery, custom-cut meats, fresh seafood, a full-service pharmacy, and prepared food stations."
+    source_id: "st_johns_citizen"
+    source_url: "https://sjcitizen.com/heres-your-first-look-at-silverleafs-new-55000-sq-ft-mega-publix/"
+    source_published_at: "2026-03-26"
+    discovered_at: "2026-07-04T08:00:00Z"
+    discovered_by: "silverleaf-discovery-worker"
+    topics:
+      - development
+      - infrastructure
+    communities:
+      - silverleaf
+    geographic_scope: "single_community"
+    urgency: "ongoing"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: "The cavernous new location at 1975 SilverLeaf Parkway spans 55,701 square feet and officially welcomed customers bright and early."
+    citation:
+      source_name: "St. Johns Citizen"
+      source_type: "local_media"
+      accessed_at: "2026-07-04T08:00:00Z"
+      url: "https://sjcitizen.com/heres-your-first-look-at-silverleafs-new-55000-sq-ft-mega-publix/"
+    review_status: "pending_review"
+    primary_topic: "development"
+    interest_tags:
+      - "development_watch"
+      - "property_values"
+      - "quality_of_life"
+    resident_relevance:
+      summary: "SilverLeaf residents now have a premier grocery anchor in their backyard, eliminating the need to drive to nearby communities for full-service shopping."
+      affected_audiences:
+        - "residents"
+        - "homeowners"
+        - "prospective_movers"
+      why_it_matters: "Adds daily grocery shopping convenience within walking/driving distance of SilverLeaf homes, with specialty food and beverage options that function as a local gathering spot."
+      confidence: "high"
+      inference_notes: "Directly reported by St. Johns Citizen, a professional local news outlet."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-07-04T08:00:00Z"
+
+  - item_id: "SJC-SL-20260704-0002"
+    title: "Nailed it: St. Johns officials give sneak peek of new Silverleaf K-8 school"
+    summary: "A new 190,000 sq. ft., three-story K-8 school in SilverLeaf reached its structural milestone with a topping-out ceremony. The 73-classroom school will serve ~1,500 students when it opens for the 2026–2027 school year, part of a district-wide push to alleviate overcrowding — over 13,000 students countywide are currently in portable classrooms."
+    source_id: "st_johns_citizen"
+    source_url: "https://sjcitizen.com/nailed-it-st-johns-officials-give-sneak-peek-of-new-silverleaf-k-8-school/"
+    source_published_at: "2025-05-07"
+    discovered_at: "2026-07-04T08:15:00Z"
+    discovered_by: "silverleaf-discovery-worker"
+    topics:
+      - development
+      - education
+    communities:
+      - silverleaf
+    geographic_scope: "single_community"
+    urgency: "ongoing"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: "The yet-to-be-named school, set to open for the 2026–2027 academic year, will span 190,000 square feet across three stories and feature 73 classrooms."
+    citation:
+      source_name: "St. Johns Citizen"
+      source_type: "local_media"
+      accessed_at: "2026-07-04T08:15:00Z"
+      url: "https://sjcitizen.com/nailed-it-st-johns-officials-give-sneak-peek-of-new-silverleaf-k-8-school/"
+    review_status: "pending_review"
+    primary_topic: "education"
+    interest_tags:
+      - "development_watch"
+      - "property_values"
+      - "schools"
+    resident_relevance:
+      summary: "SilverLeaf families with school-age children will have a dedicated K-8 school within the community starting next school year, reducing long bus routes and portable-classroom overcrowding."
+      affected_audiences:
+        - "residents"
+        - "homeowners"
+        - "families"
+      why_it_matters: "Eliminates the need for SilverLeaf children to commute to overcrowded schools elsewhere and boosts the community's appeal for families considering a move."
+      confidence: "high"
+      inference_notes: "Directly reported by St. Johns Citizen, a professional local news outlet."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-07-04T08:15:00Z"
+
+  - item_id: "SJC-SL-20260704-0003"
+    title: "Fore! Major new 2-acre recreational attraction proposed for SilverLeaf by husband and wife team"
+    summary: "Beach Valley Mini Golf, a 36-hole mini-golf course with a clubhouse, pavilions, and parking, has been proposed on 2 acres in SilverLeaf. The husband-and-wife developer team Michael and Bridgette Goolsby would lease the land from The Hutson Companies, pending county Development Review Committee approval."
+    source_id: "st_johns_citizen"
+    source_url: "https://sjcitizen.com/fore-major-new-2-acre-recreational-attraction-proposed-for-silverleaf-by-husband-and-wife-team/"
+    source_published_at: "2026-04-08"
+    discovered_at: "2026-07-04T08:30:00Z"
+    discovered_by: "silverleaf-discovery-worker"
+    topics:
+      - development
+    communities:
+      - silverleaf
+    geographic_scope: "single_community"
+    urgency: "ongoing"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: "A 36-hole miniature golf course called Beach Valley Mini Golf could soon land in the SilverLeaf master-planned community."
+    citation:
+      source_name: "St. Johns Citizen"
+      source_type: "local_media"
+      accessed_at: "2026-07-04T08:30:00Z"
+      url: "https://sjcitizen.com/fore-major-new-2-acre-recreational-attraction-proposed-for-silverleaf-by-husband-and-wife-team/"
+    review_status: "pending_review"
+    primary_topic: "development"
+    interest_tags:
+      - "development_watch"
+      - "recreation"
+      - "quality_of_life"
+    resident_relevance:
+      summary: "SilverLeaf residents would gain a walkable family-friendly recreational amenity within the community, reducing the need to drive elsewhere for entertainment."
+      affected_audiences:
+        - "residents"
+        - "homeowners"
+        - "families"
+      why_it_matters: "Adds an on-site recreational option for families and contributes to SilverLeaf's desirability as a self-contained master-planned community with amenities."
+      confidence: "high"
+      inference_notes: "Directly reported by St. Johns Citizen, a professional local news outlet."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-07-04T08:30:00Z"
+
+  - item_id: "SJC-SL-20260704-0004"
+    title: "Road relief: Here's your first look at St. Johns County's newest highway"
+    summary: "County Road 2209 opened October 28, 2025, connecting International Golf Parkway to SilverLeaf Parkway with a four-lane divided roadway spanning three miles. The new route aims to relieve congestion in the rapidly growing area, particularly around Tocoi Creek High School which serves over 2,700 students."
+    source_id: "st_johns_citizen"
+    source_url: "https://sjcitizen.com/road-relief-heres-your-first-look-at-st-johns-countys-newest-highway/"
+    source_published_at: "2025-10-28"
+    discovered_at: "2026-07-04T08:45:00Z"
+    discovered_by: "silverleaf-discovery-worker"
+    topics:
+      - infrastructure
+      - transportation
+    communities:
+      - silverleaf
+    geographic_scope: "multi_community"
+    urgency: "ongoing"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: "The four-lane divided roadway connects International Golf Parkway to SilverLeaf Parkway, spanning three miles."
+    citation:
+      source_name: "St. Johns Citizen"
+      source_type: "local_media"
+      accessed_at: "2026-07-04T08:45:00Z"
+      url: "https://sjcitizen.com/road-relief-heres-your-first-look-at-st-johns-countys-newest-highway/"
+    review_status: "pending_review"
+    primary_topic: "transportation"
+    interest_tags:
+      - "development_watch"
+      - "transportation"
+      - "quality_of_life"
+    resident_relevance:
+      summary: "SilverLeaf residents now have a direct three-mile connection to International Golf Parkway, shortening commutes and reducing congestion on local roads."
+      affected_audiences:
+        - "residents"
+        - "homeowners"
+        - "commuters"
+      why_it_matters: "Directly improves daily commute times for SilverLeaf residents heading to I-95, World Golf Village, and western St. Johns County employment centers."
+      confidence: "high"
+      inference_notes: "Directly reported by St. Johns Citizen, a professional local news outlet."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-07-04T08:45:00Z"
+
+  - item_id: "SJC-SL-20260704-0005"
+    title: "St. Johns County is getting two new supermarkets — and they're not Publix"
+    summary: "Two 61,000 sq. ft. supermarkets from a Kroger-owned chain (identified as Harris Teeter) are proposed for St. Johns County — one at Veterans Parkway and CR 210 West and another in a SilverLeaf shopping center. The applications represent the first major non-Publix grocery competition in the area."
+    source_id: "st_johns_citizen"
+    source_url: "https://sjcitizen.com/st-johns-county-is-getting-two-new-supermarkets-and-theyre-not-publix/"
+    source_published_at: "2025-12-02"
+    discovered_at: "2026-07-04T09:00:00Z"
+    discovered_by: "silverleaf-discovery-worker"
+    topics:
+      - development
+    communities:
+      - silverleaf
+    geographic_scope: "single_community"
+    urgency: "ongoing"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: "The applicant wants to open 61,000 square foot stores at Veterans Parkway and County Road 210 West and in a SilverLeaf shopping center."
+    citation:
+      source_name: "St. Johns Citizen"
+      source_type: "local_media"
+      accessed_at: "2026-07-04T09:00:00Z"
+      url: "https://sjcitizen.com/st-johns-county-is-getting-two-new-supermarkets-and-theyre-not-publix/"
+    review_status: "pending_review"
+    primary_topic: "development"
+    interest_tags:
+      - "development_watch"
+      - "property_values"
+      - "shopping"
+    resident_relevance:
+      summary: "SilverLeaf residents may soon have a second grocery option beyond Publix, with a Harris Teeter proposed for a shopping center within the community, increasing competition and choice."
+      affected_audiences:
+        - "residents"
+        - "homeowners"
+        - "prospective_movers"
+      why_it_matters: "Grocery competition typically means better prices and selection for residents, plus the convenience of a second supermarket location within SilverLeaf itself."
+      confidence: "high"
+      inference_notes: "Directly reported by St. Johns Citizen, a professional local news outlet."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-07-04T09:00:00Z"
+
+  - item_id: "SJC-SL-20260704-0006"
+    title: "Exclusive: Here's what coming to new Nocatee retail center across from water park"
+    summary: "An Ascension St. Vincent's primary care center is planned for a six-storefront commercial strip along Crosswater Parkway in Nocatee, directly across from Splash Water Park. The center will occupy three of the six units, providing adult and pediatric care including physicals, screenings, and treatment for minor illnesses and injuries."
+    source_id: "st_johns_citizen"
+    source_url: "https://sjcitizen.com/exclusive-heres-what-coming-to-new-nocatee-retail-center-across-from-water-park/"
+    source_published_at: "2026-06-01"
+    discovered_at: "2026-07-04T09:15:00Z"
+    discovered_by: "silverleaf-discovery-worker"
+    topics:
+      - development
+      - healthcare
+    communities:
+      - nocatee
+    geographic_scope: "single_community"
+    urgency: "ongoing"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: "The popular community is getting an Ascension St. Vincent's primary care center, The Citizen has learned."
+    citation:
+      source_name: "St. Johns Citizen"
+      source_type: "local_media"
+      accessed_at: "2026-07-04T09:15:00Z"
+      url: "https://sjcitizen.com/exclusive-heres-what-coming-to-new-nocatee-retail-center-across-from-water-park/"
+    review_status: "pending_review"
+    primary_topic: "development"
+    interest_tags:
+      - "development_watch"
+      - "healthcare"
+      - "quality_of_life"
+    resident_relevance:
+      summary: "Nocatee residents will have a convenient primary care option within walking distance of Splash Water Park, reducing the need to travel outside the community for routine medical care."
+      affected_audiences:
+        - "residents"
+        - "homeowners"
+        - "families"
+      why_it_matters: "Brings accessible healthcare directly into Nocatee's commercial core, making routine checkups and minor medical care more convenient for residents."
+      confidence: "high"
+      inference_notes: "Directly reported by St. Johns Citizen, a professional local news outlet."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-07-04T09:15:00Z"

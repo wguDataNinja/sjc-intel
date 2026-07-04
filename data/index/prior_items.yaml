@@ -1,3 +1,13 @@
+# =============================================================================
+# SJC_Intel — Prior Items Dedupe Index
+# =============================================================================
+# Tracks item fingerprints for deduplication across monitor cycles.
+#
+# Schema version: 1.1
+# Last updated: 2026-07-04
+# Updated by: rebuild_dedupe_index.py
+# =============================================================================
+
 prior_items:
 - key: e686c07578f7530e
   item_id: SJC-CN-20260603-0001
@@ -212,6 +222,28 @@ prior_items:
   source_id: sjc_nbor_public_notices
   beat: site_plans_permits_construction
   discovered_at: '2026-06-26T07:16:16Z'
+  status: pending_review
+- key: c311f2f5a32371b6
+  item_id: six_mile_creek_cdd-001
+  title: Six Mile Creek CDD Board of Supervisors Vacancy Announcement
+  source_id: six_mile_creek_cdd
+  beat: unknown
+  discovered_at: '2026-07-04T04:10:06Z'
+  status: pending_review
+- key: 973aa4af1b29e75e
+  item_id: six_mile_creek_cdd-002
+  title: Notice of Qualifying Period for Six Mile Creek CDD Board Candidates — Seats
+    2 and 4
+  source_id: six_mile_creek_cdd
+  beat: unknown
+  discovered_at: '2026-07-04T04:10:06Z'
+  status: pending_review
+- key: c09e768cb8faf093
+  item_id: six_mile_creek_cdd-003
+  title: Six Mile Creek CDD Board Meeting Agenda — June 10, 2026
+  source_id: six_mile_creek_cdd
+  beat: unknown
+  discovered_at: '2026-07-04T04:10:06Z'
   status: pending_review
 - key: 6d47e00087b32f38
   item_id: SJC-BCC-20260120-0001
@@ -586,4 +618,253 @@ prior_items:
   source_id: sjso_news_stories
   beat: public_safety_livability
   discovered_at: '2026-06-26T07:30:00Z'
+  status: pending_review
+- key: 97e86a2f78dbf968
+  item_id: tolomato_cdd-001
+  title: Tolomato CDD Board Meeting Agenda — June 23, 2026
+  source_id: tolomato_cdd
+  beat: unknown
+  discovered_at: '2026-07-04T04:10:06Z'
+  status: pending_review
+- key: 3b19bbc39ca39fd1
+  item_id: tolomato_cdd-002
+  title: Tolomato CDD Board Meeting Minutes — April 28, 2026
+  source_id: tolomato_cdd
+  beat: unknown
+  discovered_at: '2026-07-04T04:10:06Z'
+  status: pending_review
+- key: 6c7a872d174174fc
+  item_id: tolomato_cdd-003
+  title: Tolomato CDD FY2026 Assessment Information Published
+  source_id: tolomato_cdd
+  beat: unknown
+  discovered_at: '2026-07-04T04:10:06Z'
+  status: pending_review
+- key: 3eda6ec64602702a
+  item_id: trout_creek_cdd-001
+  title: Trout Creek CDD Meeting Agenda — June 25, 2026 (Revised)
+  source_id: trout_creek_cdd
+  beat: unknown
+  discovered_at: '2026-07-04T04:10:06Z'
+  status: pending_review
+- key: 6bb6553a766395a1
+  item_id: trout_creek_cdd-002
+  title: Trout Creek CDD Workshop Meeting Scheduled — July 7, 2026
+  source_id: trout_creek_cdd
+  beat: unknown
+  discovered_at: '2026-07-04T04:10:06Z'
+  status: pending_review
+- key: 87f0d06c07f16b53
+  item_id: trout_creek_cdd-003
+  title: Trout Creek CDD Regular Meeting Scheduled — July 23, 2026
+  source_id: trout_creek_cdd
+  beat: unknown
+  discovered_at: '2026-07-04T04:10:06Z'
+  status: pending_review
+- key: 09ebda76202e7eaa
+  item_id: SJC-SL-20260704-0001
+  title: Here's your first look at SilverLeaf's new 55,000 sq. ft. mega Publix
+  source_id: silverleaf_discovery
+  beat: development
+  discovered_at: '2026-07-04T08:00:00Z'
+  status: pending_review
+- key: 1252975b806d4a7b
+  item_id: SJC-SL-20260704-0002
+  title: 'Nailed it: St. Johns officials give sneak peek of new Silverleaf K-8 school'
+  source_id: silverleaf_discovery
+  beat: education
+  discovered_at: '2026-07-04T08:15:00Z'
+  status: pending_review
+- key: 6c7b86cda3c17074
+  item_id: SJC-SL-20260704-0003
+  title: Fore! Major new 2-acre recreational attraction proposed for SilverLeaf by
+    husband and wife team
+  source_id: silverleaf_discovery
+  beat: development
+  discovered_at: '2026-07-04T08:30:00Z'
+  status: pending_review
+- key: c597547b9061d1c2
+  item_id: SJC-SL-20260704-0004
+  title: 'Road relief: Here''s your first look at St. Johns County''s newest highway'
+  source_id: silverleaf_discovery
+  beat: transportation
+  discovered_at: '2026-07-04T08:45:00Z'
+  status: pending_review
+- key: a4e32674cd8dce9f
+  item_id: SJC-SL-20260704-0005
+  title: St. Johns County is getting two new supermarkets — and they're not Publix
+  source_id: silverleaf_discovery
+  beat: development
+  discovered_at: '2026-07-04T09:00:00Z'
+  status: pending_review
+- key: b916b59ed9eb7014
+  item_id: SJC-SL-20260704-0006
+  title: 'Exclusive: Here''s what coming to new Nocatee retail center across from
+    water park'
+  source_id: silverleaf_discovery
+  beat: development
+  discovered_at: '2026-07-04T09:15:00Z'
+  status: pending_review
+- key: 39baed406fb98260
+  item_id: SJC-NBOR-20260704-0001
+  title: SUPMAJ 2025000029 St. Thomas Island Parkway Cell Tower
+  source_id: sjc_nbor_public_notices
+  beat: site_plans_permits_construction
+  discovered_at: '2026-07-04T03:44:10Z'
+  status: pending_review
+- key: 8833e9683a093ea9
+  item_id: SJC-NBOR-20260704-0002
+  title: REZ 2026000012 St. Augustine Airport East
+  source_id: sjc_nbor_public_notices
+  beat: rezoning_comp_plan_dri
+  discovered_at: '2026-07-04T03:44:10Z'
+  status: pending_review
+- key: 05d07f85bcc910a0
+  item_id: SJC-NBOR-20260704-0003
+  title: NZVAR 2026000015 Coddington Driveway
+  source_id: sjc_nbor_public_notices
+  beat: rezoning_comp_plan_dri
+  discovered_at: '2026-07-04T03:44:10Z'
+  status: pending_review
+- key: df7c09b9725c3fdf
+  item_id: SJC-NBOR-20260704-0004
+  title: NZVAR 2026000014 Herlth SFR
+  source_id: sjc_nbor_public_notices
+  beat: rezoning_comp_plan_dri
+  discovered_at: '2026-07-04T03:44:10Z'
+  status: pending_review
+- key: 7a42a8e4e5a3428f
+  item_id: SJC-NBOR-20260704-0005
+  title: NZVAR 2026000009 5325 Porter Road Extension
+  source_id: sjc_nbor_public_notices
+  beat: rezoning_comp_plan_dri
+  discovered_at: '2026-07-04T03:44:10Z'
+  status: pending_review
+- key: e7069e220e2e92cb
+  item_id: SJC-NBOR-20260704-0006
+  title: MAJMOD 2023000011 Canopy Shores
+  source_id: sjc_nbor_public_notices
+  beat: rezoning_comp_plan_dri
+  discovered_at: '2026-07-04T03:44:10Z'
+  status: pending_review
+- key: 4f14748db0da1628
+  item_id: SJC-NBOR-20260704-0007
+  title: CPA(SS) 2025000013 Daily´s Place
+  source_id: sjc_nbor_public_notices
+  beat: rezoning_comp_plan_dri
+  discovered_at: '2026-07-04T03:44:10Z'
+  status: pending_review
+- key: b41b7e508d2524ca
+  item_id: SJC-NBOR-20260704-0008
+  title: ZVAR 2025000035 Bushrangers Brewery
+  source_id: sjc_nbor_public_notices
+  beat: rezoning_comp_plan_dri
+  discovered_at: '2026-07-04T03:44:10Z'
+  status: pending_review
+- key: 437d0de4db3b764a
+  item_id: SJC-NBOR-20260704-0009
+  title: SUPMAJ 2025000030 Bushrangers Brewery
+  source_id: sjc_nbor_public_notices
+  beat: site_plans_permits_construction
+  discovered_at: '2026-07-04T03:44:10Z'
+  status: pending_review
+- key: e77e33c0886cd0c9
+  item_id: SJC-NBOR-20260704-0010
+  title: NCDRB 2026000003 North Beach Camp Resort Signage
+  source_id: sjc_nbor_public_notices
+  beat: site_plans_permits_construction
+  discovered_at: '2026-07-04T03:44:10Z'
+  status: pending_review
+- key: 0279db8f2988ccaa
+  item_id: SJC-NBOR-20260704-0011
+  title: ARCCC 2026000004 Marsh Landing South Monument Signs
+  source_id: sjc_nbor_public_notices
+  beat: site_plans_permits_construction
+  discovered_at: '2026-07-04T03:44:10Z'
+  status: pending_review
+- key: 5b83f44fcfb73ed0
+  item_id: SJC-NBOR-20260704-0012
+  title: ARC 2026000002 Upperline Health
+  source_id: sjc_nbor_public_notices
+  beat: site_plans_permits_construction
+  discovered_at: '2026-07-04T03:44:10Z'
+  status: pending_review
+- key: 19dfe9f3606c49ef
+  item_id: SJC-NBOR-20260704-0013
+  title: Buckley Cable Construction
+  source_id: sjc_nbor_public_notices
+  beat: site_plans_permits_construction
+  discovered_at: '2026-07-04T03:44:10Z'
+  status: pending_review
+- key: 2e18f0cb7cddda69
+  item_id: SJC-NBOR-20260704-0014
+  title: Comcast
+  source_id: sjc_nbor_public_notices
+  beat: utilities_water
+  discovered_at: '2026-07-04T03:44:10Z'
+  status: pending_review
+- key: 5f8916af2ab984fa
+  item_id: SJC-NBOR-20260704-0017
+  title: FPL
+  source_id: sjc_nbor_public_notices
+  beat: utilities_water
+  discovered_at: '2026-07-04T03:44:10Z'
+  status: pending_review
+- key: '9320825648144319'
+  item_id: SJC-NBOR-20260704-0018
+  title: TECO
+  source_id: sjc_nbor_public_notices
+  beat: site_plans_permits_construction
+  discovered_at: '2026-07-04T03:44:10Z'
+  status: pending_review
+- key: ec8881d62c2385d0
+  item_id: SJC-NBOR-20260704-0019
+  title: NBR - EAST PEYTON PKWY TRAFFIC LIGHT ACTIVATION
+  source_id: sjc_nbor_public_notices
+  beat: roadwork_traffic
+  discovered_at: '2026-07-04T03:44:10Z'
+  status: pending_review
+- key: 3bc1a3d6d9bac20a
+  item_id: SJC-NBOR-20260704-0020
+  title: 'NW Sector Community Meeting: SUPMAJ 2026-09 Colee Cove Tower'
+  source_id: sjc_nbor_public_notices
+  beat: site_plans_permits_construction
+  discovered_at: '2026-07-04T03:44:10Z'
+  status: pending_review
+- key: 95704f26af67775c
+  item_id: SJC-NBOR-20260704-0023
+  title: City of St Augustine
+  source_id: sjc_nbor_public_notices
+  beat: site_plans_permits_construction
+  discovered_at: '2026-07-04T03:44:10Z'
+  status: pending_review
+- key: ae501feb398adcb4
+  item_id: SJC-NBOR-20260704-0024
+  title: Beaches Energy
+  source_id: sjc_nbor_public_notices
+  beat: utilities_water
+  discovered_at: '2026-07-04T03:44:10Z'
+  status: pending_review
+- key: 067830a6bee1c5c8
+  item_id: SJC-NBOR-20260704-0025
+  title: AT&T
+  source_id: sjc_nbor_public_notices
+  beat: site_plans_permits_construction
+  discovered_at: '2026-07-04T03:44:10Z'
+  status: pending_review
+- key: e51d6b50a414ceef
+  item_id: SJC-UD-20260704-0001
+  title: St. Johns County Completes $1.6 Million Capital Improvement Project at Plantation
+    Water Treatment Plant
+  source_id: sjc_utility_department
+  beat: utilities_water
+  discovered_at: '2026-07-04T03:48:19Z'
+  status: pending_review
+- key: b4458b0635d1caf2
+  item_id: SJC-UD-20260704-0002
+  title: St. Johns County Utility Department Earns High Moody's Rating, Reflecting
+    Strong Financial Management
+  source_id: sjc_utility_department
+  beat: utilities_water
+  discovered_at: '2026-07-04T03:48:19Z'
   status: pending_review

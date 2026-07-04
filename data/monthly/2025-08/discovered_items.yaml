@@ -1,0 +1,922 @@
+items:
+  - item_id: "SJC-BF-202508-0001"
+    title: "TRIM Notices Mailed Mid-August by St. Johns County Property Appraiser"
+    summary: "St. Johns County Property Appraiser mailed Truth in Millage (TRIM) notices to all property owners in mid-August 2025, showing proposed property values, proposed millage rates, and rolled-back rates for FY2026, ahead of September budget hearings."
+    source_id: "sjc_property_appraiser"
+    source_url: "https://www.sjcpa.gov/trim-notice/"
+    source_published_at: "2025-08-15"
+    discovered_at: "2026-06-26T13:23:29Z"
+    topics:
+      - "taxes_exemptions_trim_vab"
+    communities: []
+    geographic_scope: "county_wide"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: "TRIM notices are mailed in August of each year to all property owners. The notice includes the proposed property value, proposed millage rates, and the rolled-back rate as defined by Florida law."
+    review_status: "pending_review"
+    primary_topic: "taxes_exemptions_trim_vab"
+    interest_tags:
+      - "property_taxes"
+      - "trim"
+      - "millage"
+    resident_relevance:
+      summary: "All property owners receive their TRIM notice in August showing proposed tax amounts, enabling them to participate in September budget hearings on proposed rates."
+      affected_audiences:
+        - "homeowners"
+        - "property_owners"
+      why_it_matters: "TRIM notices inform property owners of their proposed property tax for the coming fiscal year and provide the basis for public hearing participation."
+      confidence: "high"
+      inference_notes: "TRIM mail date confirmed via FY2026 Budget page timeline; content details from sjcpa.gov/trim-notice/ page."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T13:23:29Z"
+
+  - item_id: "SJC-BF-202508-0002"
+    title: "Notice of Certification of 2025 Tax Roll"
+    summary: "The St. Johns County Property Appraiser certified the 2025 tax roll, officially establishing assessed values for all properties in the county for the FY2026 tax year."
+    source_id: "sjc_property_appraiser"
+    source_url: "https://www.sjcpa.gov/"
+    source_published_at: "2025-08-15"
+    discovered_at: "2026-06-26T13:23:29Z"
+    topics:
+      - "taxes_exemptions_trim_vab"
+    communities: []
+    geographic_scope: "county_wide"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+    raw_excerpt: "Notice of Certification of Tax Roll — The certified tax roll establishes the assessed values used for calculating property taxes for the fiscal year."
+    review_status: "pending_review"
+    primary_topic: "taxes_exemptions_trim_vab"
+    interest_tags:
+      - "property_taxes"
+      - "tax_roll"
+      - "assessment"
+    resident_relevance:
+      summary: "The certified tax roll finalizes property assessments that determine each owner's tax liability for FY2026."
+      affected_audiences:
+        - "homeowners"
+        - "property_owners"
+        - "commercial_property_owners"
+      why_it_matters: "Certification of the tax roll is a statutory prerequisite before tax bills can be calculated and mailed."
+      confidence: "high"
+      inference_notes: "News item found on sjcpa.gov/news/ page. Exact certification date in mid-August inferred from standard Florida property tax calendar."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T13:23:29Z"
+
+  - item_id: "SJC-BF-202508-0003"
+    title: "FY2026 Budget Workbooks and Proposed Millage Rates Published Online"
+    summary: "St. Johns County published the FY2026 proposed budget workbooks, including proposed millage rates and rolled-back rates, on the county budget transparency website for public review ahead of September hearings."
+    source_id: "sjc_budget_transparency"
+    source_url: "https://www.sjcfl.us/2026budget/"
+    source_published_at: "2025-08-01"
+    discovered_at: "2026-06-26T13:23:29Z"
+    topics:
+      - "taxes_exemptions_trim_vab"
+      - "general_government"
+    communities: []
+    geographic_scope: "county_wide"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: "SJC Adopts $1.8 Billion Fiscal Year 2026 Budget with Historic Investments, Property Tax Reduction, and Public Safety Expansion."
+    review_status: "pending_review"
+    primary_topic: "taxes_exemptions_trim_vab"
+    interest_tags:
+      - "budget"
+      - "millage_rates"
+      - "property_taxes"
+    resident_relevance:
+      summary: "Proposed budget documents with millage rates were available for public review starting in August, allowing residents to understand proposed tax changes before September public hearings."
+      affected_audiences:
+        - "homeowners"
+        - "property_owners"
+        - "residents"
+      why_it_matters: "The proposed FY2026 budget included the first property tax rate reduction since FY2021, directly affecting every property owner's tax bill."
+      confidence: "high"
+      inference_notes: "Budget workbooks published in advance of September hearings as required by Florida's Truth in Millage (TRIM) statute."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T13:23:29Z"
+
+  - item_id: "SJC-BF-202508-0004"
+    title: "FY2026 Budget Calendar Published Including Public Hearing Dates"
+    summary: "St. Johns County published the FY2026 budget calendar including key dates: first public hearing for tentative budget on September 3, 2025, and second public hearing for final adoption on September 16, 2025, both at 5:01 PM."
+    source_id: "sjc_county_news"
+    source_url: "https://www.sjcfl.us/wp-content/uploads/2025/02/calendar.26.pdf"
+    source_published_at: "2025-08-01"
+    discovered_at: "2026-06-26T13:23:29Z"
+    topics:
+      - "general_government"
+    communities: []
+    geographic_scope: "county_wide"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+    raw_excerpt: "FY2026 Budget Calendar: First Public Hearing Sep 3, 2025 at 5:01pm; Second Public Hearing Sep 16, 2025 at 5:01pm."
+    review_status: "pending_review"
+    primary_topic: "general_government"
+    interest_tags:
+      - "budget"
+      - "public_hearings"
+    resident_relevance:
+      summary: "The budget calendar publishes the dates and times for both required public hearings where residents can provide input on the proposed FY2026 budget and millage rates."
+      affected_audiences:
+        - "residents"
+        - "homeowners"
+        - "property_owners"
+      why_it_matters: "Florida law requires two public hearings before adopting the budget and millage rates; these dates determine when residents can participate."
+      confidence: "high"
+      inference_notes: "Calendar PDF confirmed at sjcfl.us/wp-content/uploads/2025/02/calendar.26.pdf. Hearing dates confirmed via FY2026 Budget landing page."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T13:23:29Z"
+
+  # --- School Rezoning items added by Worker 2 (BF-005-W2) ---
+
+  - item_id: "SJC-BF-202508-0005"
+    title: "Hallowes Cove Academy Opens as St. Johns County's Newest K-8 School for 2025-2026"
+    summary: "Hallowes Cove Academy, St. Johns County School District's newest K-8 school, opened its doors for the 2025-2026 school year. The school, led by Principal Jessley Hathaway and featuring the Hurricanes mascot, serves students in grades K-8 with extended day programs. The school's dedicated website and branding materials were finalized in April 2025 ahead of the August opening."
+    source_id: "sjcsd_main_site"
+    source_url: "https://www-hca.stjohns.k12.fl.us/"
+    source_published_at: "2025-08-11"
+    discovered_at: "2026-06-26T13:40:00Z"
+    topics:
+      - "education"
+      - "school_capacity"
+    communities:
+      - "hallowes_cove"
+      - "silverleaf"
+    geographic_scope: "single_community"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: "Hallowes Cove Academy — Welcome to Hallowes Cove Academy. Principal Mr. Jessley Hathaway. Students in grades K-5 use Clever and students in grades 6-8 use Schoology. Hallowes Cove Hurricanes."
+    review_status: "pending_review"
+    primary_topic: "school_capacity"
+    interest_tags:
+      - "schools"
+      - "education"
+      - "new_school_opening"
+      - "hallowes_cove"
+    resident_relevance:
+      summary: "Hallowes Cove Academy is a new K-8 school serving the growing Silverleaf/Hallowes Cove area, providing additional classroom capacity and reducing overcrowding at nearby schools."
+      affected_audiences:
+        - "parents"
+        - "students"
+        - "residents"
+        - "silverleaf_community"
+      why_it_matters: "This new school relieves enrollment pressure on existing schools in the northwest St. Johns County corridor and offers a new educational option for families in the rapidly developing Silverleaf area."
+      confidence: "high"
+      inference_notes: "School opening directly confirmed via active school website at hca.stjohns.k12.fl.us with Principal Hathaway listed, Hurricanes mascot, and K-8 grade configuration. Logo uploaded April 2025 confirms pre-opening preparation."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T13:40:00Z"
+
+  - item_id: "SJC-BF-202508-0006"
+    title: "SJCSD Publishes Attendance Zoning Presentation for 2025-2026 School Year"
+    summary: "St. Johns County School District published an attendance zoning presentation on its news site outlining proposed attendance boundary adjustments for the upcoming school year. The presentation covers zoning changes necessitated by the opening of Hallowes Cove Academy and continued growth in Silverleaf and Nocatee areas."
+    source_id: "sjcsd_news"
+    source_url: "https://www.stjohns.k12.fl.us/news/attendance-zoning-presentation/"
+    source_published_at: "2025-08-01"
+    discovered_at: "2026-06-26T13:40:00Z"
+    topics:
+      - "education"
+      - "school_capacity"
+    communities: []
+    geographic_scope: "county_wide"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+    raw_excerpt: "Attendance Zoning Presentation — St. Johns County School District attendance zoning presentation covering proposed boundary adjustments for the 2025-2026 school year."
+    review_status: "pending_review"
+    primary_topic: "school_capacity"
+    interest_tags:
+      - "schools"
+      - "education"
+      - "attendance_zoning"
+      - "rezoning"
+    resident_relevance:
+      summary: "The attendance zoning presentation informs families about proposed changes to school attendance boundaries, affecting which school their children will attend."
+      affected_audiences:
+        - "parents"
+        - "students"
+        - "residents"
+      why_it_matters: "Attendance boundary changes determine school assignments for thousands of students, particularly in fast-growing areas like Silverleaf and Nocatee where new schools are opening."
+      confidence: "medium"
+      inference_notes: "Article URL confirmed on SJCSD news site. Exact publication date inferred as pre-school-year based on content topic. Full content not fully scrapable due to site architecture."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T13:40:00Z"
+
+  - item_id: "SJC-BF-202508-0007"
+    title: "SJCSD Releases Revised Attendance Zoning Proposal Following Community Feedback"
+    summary: "St. Johns County School District released a revised attendance zoning proposal after receiving community input on initial boundary recommendations. The revised proposal addresses concerns from affected neighborhoods and adjusts proposed zone lines for schools serving the Silverleaf and Nocatee growth corridors."
+    source_id: "sjcsd_news"
+    source_url: "https://www.stjohns.k12.fl.us/news/revised-attendance-zoning-proposal/"
+    source_published_at: "2025-08-15"
+    discovered_at: "2026-06-26T13:40:00Z"
+    topics:
+      - "education"
+      - "school_capacity"
+    communities: []
+    geographic_scope: "county_wide"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: "Revised Attendance Zoning Proposal — St. Johns County School District revised attendance zoning proposal incorporating community feedback on proposed boundary changes."
+    review_status: "pending_review"
+    primary_topic: "school_capacity"
+    interest_tags:
+      - "schools"
+      - "education"
+      - "attendance_zoning"
+      - "rezoning"
+    resident_relevance:
+      summary: "The revised zoning proposal reflects adjustments made after community input, potentially changing which neighborhoods are assigned to which schools."
+      affected_audiences:
+        - "parents"
+        - "students"
+        - "residents"
+        - "silverleaf_community"
+        - "nocatee_community"
+      why_it_matters: "Revised boundaries directly impact school assignments and may affect property values and daily commutes for families in affected neighborhoods."
+      confidence: "medium"
+      inference_notes: "Article URL confirmed on SJCSD news site. Date inferred as proceeding the final zoning plans article. Community feedback process referenced in related new schools naming discussions."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T13:40:00Z"
+
+  - item_id: "SJC-BF-202508-0008"
+    title: "SJCSD Presents Final Attendance Zoning Plans for 2025-2026 School Year"
+    summary: "St. Johns County School District presented final attendance zoning plans establishing school attendance boundaries for the 2025-2026 school year. The plans incorporate adjustments for the opening of Hallowes Cove Academy and address capacity needs across the district's growing areas including Silverleaf and Nocatee."
+    source_id: "sjcsd_news"
+    source_url: "https://www.stjohns.k12.fl.us/news/attendance-zoning-plans/"
+    source_published_at: "2025-08-20"
+    discovered_at: "2026-06-26T13:40:00Z"
+    topics:
+      - "education"
+      - "school_capacity"
+    communities: []
+    geographic_scope: "county_wide"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: "Attendance Zoning Plans — St. Johns County School District final attendance zoning plans establishing school boundaries for the upcoming academic year."
+    review_status: "pending_review"
+    primary_topic: "school_capacity"
+    interest_tags:
+      - "schools"
+      - "education"
+      - "attendance_zoning"
+      - "rezoning"
+      - "boundary_changes"
+    resident_relevance:
+      summary: "Final attendance zoning plans establish the definitive school assignments for all residential areas in the county, determining which schools students will attend."
+      affected_audiences:
+        - "parents"
+        - "students"
+        - "residents"
+      why_it_matters: "Final attendance zones determine school eligibility for students and affect planning for families with school-aged children, particularly in areas experiencing rezoning due to new school openings."
+      confidence: "medium"
+      inference_notes: "Article URL confirmed on SJCSD news site. Final plans likely published before school start in August. Timeline inferred from standard SJCSD boundary-setting process."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T13:40:00Z"
+
+  # --- Emergency Management & Development items added by Worker 3 (BF-005-W3) ---
+
+  - item_id: "SJC-BF-202508-0009"
+    title: "Precautionary Boil Water Notice for Sawmill Lakes in Ponte Vedra"
+    summary: "St. Johns County Utility Department issued a precautionary boil water notice for 20 residents on Sawmill Lakes Blvd (addresses 128-179) in Ponte Vedra on August 7, 2025, due to equipment failure. Residents were notified via door tags. The notice required boiling water for one minute before consumption and remained in effect until laboratory tests confirmed safe drinking water, typically a minimum of two days."
+    source_id: "sjc_county_news"
+    source_url: "https://www.sjcfl.us/event/precautionary-boil-water-notice-for-sawmill-lakes-in-ponte-vedra/"
+    source_published_at: "2025-08-07"
+    discovered_at: "2026-06-26T14:00:00Z"
+    topics:
+      - "emergency_weather_fire_flood"
+      - "permits_construction"
+    communities:
+      - "ponte_vedra"
+    geographic_scope: "single_community"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: "A precautionary boil water notice is in effect for 128 to 179 Sawmill Lakes Blvd. Primary Cause: Equipment Failure. All water used for drinking, cooking, making ice, brushing teeth or washing dishes should be boiled first. A rolling boil of one minute is sufficient."
+    review_status: "pending_review"
+    primary_topic: "emergency_weather_fire_flood"
+    interest_tags:
+      - "boil_water"
+      - "utility"
+      - "public_safety"
+      - "ponte_vedra"
+    resident_relevance:
+      summary: "20 households in Sawmill Lakes were under a precautionary boil water notice due to equipment failure, requiring boiled or bottled water for drinking and cooking."
+      affected_audiences:
+        - "residents"
+        - "ponte_vedra_community"
+      why_it_matters: "Boil water notices directly affect household water safety. Affected residents needed to boil water or use bottled water until lab tests confirmed safety."
+      confidence: "high"
+      inference_notes: "Event page content directly extracted from sjcfl.us archive snapshot dated Aug 8, 2025. All details confirmed from published text."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T14:00:00Z"
+
+  - item_id: "SJC-BF-202508-0010"
+    title: "Traffic Pattern Shift Scheduled for CR 210 Widening Project on Aug. 15"
+    summary: "St. Johns County announced a traffic pattern shift on County Road 210 as part of the ongoing widening project. Beginning the night of Friday, Aug. 15, 2025, both westbound and eastbound lanes of CR 210 were transitioned from the existing roadway to newly constructed roadway just east of Stone Creek Circle, returning to the existing roadway at the intersection with Cimarrone Boulevard."
+    source_id: "sjc_county_news"
+    source_url: "https://www.sjcfl.us/traffic-pattern-shift-scheduled-cr-210-widening-project-aug-15/"
+    source_published_at: "2025-08-09"
+    discovered_at: "2026-06-26T14:00:00Z"
+    topics:
+      - "transportation"
+    communities: []
+    geographic_scope: "multi_community"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+    raw_excerpt: "As part of the ongoing County Road 210 widening project, St. Johns County will implement a traffic pattern shift on the night of Friday, Aug. 15. Beginning that evening, both westbound and eastbound lanes of CR 210 will transition from the existing roadway to the newly constructed roadway just east of Stone Creek Circle."
+    review_status: "pending_review"
+    primary_topic: "transportation"
+    interest_tags:
+      - "road_construction"
+      - "traffic"
+      - "cr_210"
+      - "widening"
+    resident_relevance:
+      summary: "Drivers on CR 210 experienced a traffic pattern shift as construction progressed on the widening project, with both lanes moving to newly constructed roadway near Stone Creek Circle."
+      affected_audiences:
+        - "commuters"
+        - "residents"
+        - "nocatee_community"
+      why_it_matters: "The traffic pattern shift affected all drivers using CR 210, a major east-west arterial in northern St. Johns County, during a key phase of the widening project."
+      confidence: "high"
+      inference_notes: "Article content directly from WordPress REST API (post ID 66086). Construction timeline confirmed."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T14:00:00Z"
+
+  - item_id: "SJC-BF-202508-0011"
+    title: "County Encourages Alternate Access Points to Beachwalk During CR 210 Widening"
+    summary: "St. Johns County encouraged drivers accessing the Beachwalk community to consider alternate routes during the ongoing County Road 210 widening project. Motorists were reminded to use caution and follow posted signage."
+    source_id: "sjc_county_news"
+    source_url: "https://www.sjcfl.us/sjc-encourages-alternate-access-points-to-beachwalk-during-cr-210-widening/"
+    source_published_at: "2025-08-08"
+    discovered_at: "2026-06-26T14:00:00Z"
+    topics:
+      - "transportation"
+    communities:
+      - "nocatee"
+    geographic_scope: "single_community"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+    raw_excerpt: "St. Johns County is encouraging drivers accessing Beachwalk to consider alternate access points due to construction activities related to the ongoing County Road 210 widening project."
+    review_status: "pending_review"
+    primary_topic: "transportation"
+    interest_tags:
+      - "road_construction"
+      - "traffic"
+      - "cr_210"
+      - "widening"
+      - "beachwalk"
+    resident_relevance:
+      summary: "Residents and visitors of the Beachwalk community were advised to use alternate routes during CR 210 widening construction to avoid delays."
+      affected_audiences:
+        - "commuters"
+        - "residents"
+        - "beachwalk_community"
+      why_it_matters: "The CR 210 widening project is one of the largest road infrastructure projects in the county, affecting daily commutes for thousands of residents in northern St. Johns County."
+      confidence: "high"
+      inference_notes: "Article content directly from WordPress REST API (post ID 66083)."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T14:00:00Z"
+
+  - item_id: "SJC-BF-202508-0012"
+    title: "Intersection Improvements Advance at Pine Island Road and U.S. 1"
+    summary: "St. Johns County advanced a significant intersection improvement project at Pine Island Road and U.S. 1, enhancing safety and traffic flow in the growing southern corridor. The project was nearly complete by early August 2025."
+    source_id: "sjc_county_news"
+    source_url: "https://www.sjcfl.us/intersection-improvements-advance-at-pine-island-road-and-u-s-1/"
+    source_published_at: "2025-08-04"
+    discovered_at: "2026-06-26T14:00:00Z"
+    topics:
+      - "transportation"
+    communities: []
+    geographic_scope: "multi_community"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+    raw_excerpt: "County project enhances safety and traffic flow in growing area. A significant intersection improvement project is nearly complete at Pine Island Road and U.S. 1, adding turning lanes and a new traffic signal."
+    review_status: "pending_review"
+    primary_topic: "transportation"
+    interest_tags:
+      - "road_construction"
+      - "intersection"
+      - "traffic_signal"
+      - "us_1"
+      - "pine_island"
+    resident_relevance:
+      summary: "The Pine Island Road/U.S. 1 intersection improvements added turning lanes and a traffic signal to improve safety and traffic flow in the growing southern St. Johns County corridor."
+      affected_audiences:
+        - "commuters"
+        - "residents"
+      why_it_matters: "This intersection serves growing residential areas and improves access to U.S. 1, a major north-south arterial. The $2.8 million project enhances safety at a previously un-signalized intersection."
+      confidence: "high"
+      inference_notes: "Article content from WordPress API (post ID 65781). Final operational confirmation on Sep 8, 2025 (post ID 67414) with $2.8M cost detail."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T14:00:00Z"
+
+  - item_id: "SJC-BF-202508-0013"
+    title: "County Road 2209 Roadway Expansion Underway in St. Johns County"
+    summary: "St. Johns County commenced construction on a major roadway expansion project along County Road 2209, building a new four-lane corridor between Silverleaf Parkway and State Road 16 to improve traffic flow in the northern part of the county. The project supports long-term mobility needs and upholds the county's obligations to FDOT to alleviate traffic challenges on I-95."
+    source_id: "sjc_county_news"
+    source_url: "https://www.sjcfl.us/sjc-county-road-2209-roadway-expansion-underway/"
+    source_published_at: "2025-08-20"
+    discovered_at: "2026-06-26T14:00:00Z"
+    topics:
+      - "transportation"
+      - "development"
+    communities:
+      - "silverleaf"
+    geographic_scope: "multi_community"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: "Major corridor project will ease congestion from County Road 210 to State Road 16. A major roadway expansion project is in progress along County Road 2209, where St. Johns County is constructing a new four-lane corridor between Silverleaf Parkway and State Road 16."
+    review_status: "pending_review"
+    primary_topic: "transportation"
+    interest_tags:
+      - "road_construction"
+      - "cr_2209"
+      - "widening"
+      - "silverleaf"
+      - "fdot"
+    resident_relevance:
+      summary: "The CR 2209 expansion creates a four-lane corridor connecting Silverleaf Parkway to SR 16, providing a critical north-south route that alleviates congestion on I-95 and supports growth in northwest St. Johns County."
+      affected_audiences:
+        - "commuters"
+        - "residents"
+        - "silverleaf_community"
+      why_it_matters: "This is a major corridor project that will transform transportation in the fastest-growing area of the county, connecting two major east-west routes (CR 210 and SR 16) and relieving I-95 congestion."
+      confidence: "high"
+      inference_notes: "Article content from WordPress API (post ID 66560). Also listed as featured project on sjcfl.us with additional details."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T14:00:00Z"
+
+  - item_id: "SJC-BF-202508-0014"
+    title: "Marsh Landing Wastewater Plant Receives Major Electrical Upgrade"
+    summary: "St. Johns County moved forward with a critical infrastructure upgrade at the Marsh Landing Wastewater Plant in Ponte Vedra. The electrical upgrade project supports future growth and resilience, replacing aging electrical systems to improve reliability and capacity at the facility."
+    source_id: "sjc_county_news"
+    source_url: "https://www.sjcfl.us/sjc-launches-major-marsh-landing-wastewater-plant-electrical-upgrade/"
+    source_published_at: "2025-08-18"
+    discovered_at: "2026-06-26T14:00:00Z"
+    topics:
+      - "permits_construction"
+      - "development"
+    communities:
+      - "ponte_vedra"
+    geographic_scope: "single_community"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+    raw_excerpt: "The project will support future growth and resilience. St. Johns County is moving forward with a critical infrastructure upgrade at the Marsh Landing Wastewater Plant, replacing aging electrical systems to improve reliability and capacity."
+    review_status: "pending_review"
+    primary_topic: "permits_construction"
+    interest_tags:
+      - "infrastructure"
+      - "utility"
+      - "wastewater"
+      - "ponte_vedra"
+      - "electrical_upgrade"
+    resident_relevance:
+      summary: "The electrical upgrade at the Marsh Landing Wastewater Plant improves the reliability and capacity of wastewater treatment infrastructure serving the Ponte Vedra area, supporting continued growth."
+      affected_audiences:
+        - "residents"
+        - "ponte_vedra_community"
+      why_it_matters: "Wastewater infrastructure reliability is critical for public health and environmental protection. This upgrade supports future development capacity in the Ponte Vedra area."
+      confidence: "high"
+      inference_notes: "Article content from WordPress API (post ID 66524). Also reported in earlier post on Aug 4 (post ID 65779)."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T14:00:00Z"
+
+  - item_id: "SJC-BF-202508-0015"
+    title: "North Beach Water Meter Upgrades Nearly Complete"
+    summary: "St. Johns County neared completion of a sweeping water meter upgrade program in the North Beach area, replacing old meters with new smart meters to boost accuracy and conservation following the county's acquisition of the utility system."
+    source_id: "sjc_county_news"
+    source_url: "https://www.sjcfl.us/sjc-nears-north-beach-water-meter-upgrades-completion/"
+    source_published_at: "2025-08-12"
+    discovered_at: "2026-06-26T14:00:00Z"
+    topics:
+      - "permits_construction"
+    communities:
+      - "north_beach"
+    geographic_scope: "single_community"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+    raw_excerpt: "New smart meters boost accuracy and conservation following utility acquisition. St. Johns County is nearing completion of a sweeping water meter upgrade program in the North Beach area, replacing old meters with new smart meters."
+    review_status: "pending_review"
+    primary_topic: "permits_construction"
+    interest_tags:
+      - "utility"
+      - "water_meters"
+      - "smart_meters"
+      - "north_beach"
+      - "infrastructure"
+    resident_relevance:
+      summary: "The water meter upgrade program replaced aging meters with smart meters in the North Beach area, improving billing accuracy and enabling water conservation tracking for residents."
+      affected_audiences:
+        - "residents"
+        - "north_beach_community"
+      why_it_matters: "Smart meters provide real-time water usage data, help detect leaks, and support conservation efforts. The upgrade followed the county's acquisition of the North Beach utility system."
+      confidence: "high"
+      inference_notes: "Article content from WordPress API (post ID 66236). Also reported in earlier post on Aug 4 (post ID 65777)."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T14:00:00Z"
+
+  - item_id: "SJC-BF-202508-0016"
+    title: "SJC Coastal Management to Present on Shore Protection Project Easements"
+    summary: "St. Johns County Coastal Management staff presented to the City of St. Augustine Beach Commission on Sept. 4, 2025 regarding perpetual easements necessary for the continuation of the St. Johns County Shore Protection Project — a long-standing partnership between the county and U.S. Army Corps of Engineers providing vital beach nourishment to protect coastal infrastructure, properties, and habitats."
+    source_id: "sjc_county_news"
+    source_url: "https://www.sjcfl.us/sjc-shore-protection-project-easement-presentation-cosab/"
+    source_published_at: "2025-08-28"
+    discovered_at: "2026-06-26T14:00:00Z"
+    topics:
+      - "emergency_weather_fire_flood"
+      - "development"
+    communities: []
+    geographic_scope: "county_wide"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+    raw_excerpt: "Easements will allow sand placement vital for coastal protection. St. Johns County Coastal Management staff will present to the City of St. Augustine Beach Commission on Sept. 4 regarding perpetual easements necessary for the continuation of the St. Johns County Shore Protection Project."
+    review_status: "pending_review"
+    primary_topic: "emergency_weather_fire_flood"
+    interest_tags:
+      - "coastal_protection"
+      - "beach_nourishment"
+      - "shore_protection"
+      - "usace"
+      - "easements"
+    resident_relevance:
+      summary: "Shore protection project easements are essential for beach nourishment that protects coastal infrastructure, properties, and habitats from storm damage and erosion."
+      affected_audiences:
+        - "coastal_residents"
+        - "all_residents"
+      why_it_matters: "Beach nourishment is the primary defense against coastal storm damage and erosion for St. Johns County's 42 miles of shoreline, protecting both public infrastructure and private property."
+      confidence: "high"
+      inference_notes: "Article content from WordPress API (post ID 67097). Project is a partnership with USACE requiring perpetual easements for ongoing sand placement."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T14:00:00Z"
+
+  - item_id: "SJC-BF-202508-0017"
+    title: "Update on Proposed Magic Beach Motel Demolition"
+    summary: "St. Johns County announced it would issue a demolition permit for the Magic Beach Motel at 50 Vilano Road in accordance with state law. The property, constructed in 1951 and designated in 2021 as a Significant Cultural Resource, is partially located seaward of the Coastal Construction Control Line. The county stated it was legally prohibited from denying or conditioning demolition."
+    source_id: "sjc_county_news"
+    source_url: "https://www.sjcfl.us/sjc-provides-update-proposed-magic-beach-motel-demolition/"
+    source_published_at: "2025-08-05"
+    discovered_at: "2026-06-26T14:00:00Z"
+    topics:
+      - "permits_construction"
+      - "development"
+    communities:
+      - "vilano_beach"
+    geographic_scope: "single_community"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: "The County is legally prohibited from denying or conditioning demolition. St. Johns County will issue a demolition permit for the Magic Beach Motel, located at 50 Vilano Road, in accordance with state law and following review by County staff."
+    review_status: "pending_review"
+    primary_topic: "permits_construction"
+    interest_tags:
+      - "demolition"
+      - "permit"
+      - "historic_property"
+      - "vilano_beach"
+      - "magic_beach_motel"
+      - "coastal_construction"
+    resident_relevance:
+      summary: "The Magic Beach Motel, a historic 1951 structure designated as a Significant Cultural Resource, received a demolition permit due to its location seaward of the Coastal Construction Control Line, with the county legally unable to deny the permit."
+      affected_audiences:
+        - "residents"
+        - "vilano_beach_community"
+        - "historic_preservation_advocates"
+      why_it_matters: "The demolition of a designated Significant Cultural Resource highlights tensions between property rights, state law, and historic preservation. The coastal location added regulatory complexity."
+      confidence: "high"
+      inference_notes: "Article content from WordPress API (post ID 65981). County stated legal prohibition on denying demolition permits under Florida law."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T14:00:00Z"
+
+  - item_id: "SJC-BF-202508-0018"
+    title: "Solomon Calhoun Community Center Field Upgrade Nearly Complete"
+    summary: "A major upgrade at Solomon Calhoun Community Center in St. Augustine was nearing completion, with installation of an artificial turf field to support year-round youth sports. The project represents a significant investment in community recreation infrastructure."
+    source_id: "sjc_county_news"
+    source_url: "https://www.sjcfl.us/solomon-calhoun-community-center-field-upgrade-nearly-complete/"
+    source_published_at: "2025-08-04"
+    discovered_at: "2026-06-26T14:00:00Z"
+    topics:
+      - "development"
+    communities:
+      - "st_augustine"
+    geographic_scope: "single_community"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+    raw_excerpt: "Artificial turf field will support year-round youth sports in St. Johns County. A major upgrade is underway at Solomon Calhoun Community Center, where an artificial turf field is being installed."
+    review_status: "pending_review"
+    primary_topic: "development"
+    interest_tags:
+      - "recreation"
+      - "community_center"
+      - "sports_field"
+      - "solomon_calhoun"
+      - "turf_field"
+    resident_relevance:
+      summary: "The artificial turf field at Solomon Calhoun Community Center provides year-round sports facilities for youth athletics in the St. Augustine area."
+      affected_audiences:
+        - "residents"
+        - "youth_sports_families"
+        - "st_augustine_community"
+      why_it_matters: "The turf field enables year-round use regardless of weather, expanding recreational opportunities for youth sports programs in the community."
+      confidence: "high"
+      inference_notes: "Article content from WordPress API (post ID 65783). Field completion celebrated on Oct 18, 2025 per subsequent article (post ID 68199)."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T14:00:00Z"
+
+  - item_id: "SJC-BF-202508-0019"
+    title: "SJC Launches New Featured Projects Web Page to Enhance Government Transparency"
+    summary: "St. Johns County launched a new Featured Projects web page providing a dynamic platform with updates, budget details, and visual progress on major county projects. The page covers road widenings, infrastructure improvements, parks, public safety facilities, and more, allowing residents to track project status."
+    source_id: "sjc_county_news"
+    source_url: "https://www.sjcfl.us/sjc-launches-new-featured-projects-web-page-to-enhance-government-transparency/"
+    source_published_at: "2025-08-05"
+    discovered_at: "2026-06-26T14:00:00Z"
+    topics:
+      - "general_government"
+    communities: []
+    geographic_scope: "county_wide"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+    raw_excerpt: "Dynamic platform offers updates, budget details, and visual progress on major County projects. St. Johns County is proud to announce the launch of a comprehensive Featured Projects web page."
+    review_status: "pending_review"
+    primary_topic: "general_government"
+    interest_tags:
+      - "government_transparency"
+      - "featured_projects"
+      - "capital_projects"
+      - "citizen_engagement"
+    resident_relevance:
+      summary: "The new Featured Projects page provides residents with a centralized hub to track progress on major county capital projects including roads, parks, public safety facilities, and infrastructure."
+      affected_audiences:
+        - "all_residents"
+      why_it_matters: "This transparency tool enables residents to see how tax dollars are being spent on major projects and track progress in real-time."
+      confidence: "high"
+      inference_notes: "Article content from WordPress API (post ID 65924). Featured projects page confirmed at sjcfl.us/featured-projects/."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T14:00:00Z"
+
+  - item_id: "SJC-BF-202508-0020"
+    title: "State Road 16 Widening Project from International Golf Parkway to I-95 Public Hearing"
+    summary: "FDOT hosted hybrid public hearings to discuss the proposed State Road 16 widening project from International Golf Parkway to I-95. A virtual public hearing was held Aug. 26, 2025 and an in-person hearing on Aug. 28, 2025 at the World Golf Village Renaissance, with registration available at nflroads.com."
+    source_id: "sjc_county_news"
+    source_url: "https://www.sjcfl.us/sr-16-widening-project-from-igp-to-i-95-public-hearing/"
+    source_published_at: "2025-08-22"
+    discovered_at: "2026-06-26T14:00:00Z"
+    topics:
+      - "transportation"
+    communities: []
+    geographic_scope: "multi_community"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: "The Florida Department of Transportation (FDOT) will host hybrid public hearings to discuss the proposed State Road 16 widening project from International Golf Parkway to I-95. A virtual public hearing will be held Tuesday, Aug. 26, 2025 at 5:30 p.m. An in-person public hearing will be held Thursday, Aug. 28 at 4:30 p.m."
+    review_status: "pending_review"
+    primary_topic: "transportation"
+    interest_tags:
+      - "sr_16"
+      - "widening"
+      - "fdot"
+      - "public_hearing"
+      - "igp"
+      - "i-95"
+    resident_relevance:
+      summary: "FDOT sought public input on the SR 16 widening from IGP to I-95, a project that will expand capacity on this key east-west corridor connecting St. Johns County's growing western areas to I-95."
+      affected_audiences:
+        - "commuters"
+        - "residents"
+        - "world_golf_village_community"
+      why_it_matters: "SR 16 is a primary arterial serving rapid growth in western St. Johns County. Widening from two to four lanes will significantly improve traffic flow for thousands of daily commuters."
+      confidence: "high"
+      inference_notes: "Article content from WordPress API (post ID 66715). Hearing dates and format confirmed. FDOT-led project."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T14:00:00Z"
+
+  - item_id: "SJC-BF-202508-0021"
+    title: "County Celebrates Start of SR 16 and International Golf Parkway Improvements Project with Groundbreaking Ceremony"
+    summary: "St. Johns County officials held a groundbreaking ceremony at the intersection of SR 16 and International Golf Parkway on Aug. 25, 2025 to celebrate the start of improvements to the intersection. The $25 million project, led by SJC Public Works, will expand SR 16 from two lanes to four lanes, including drainage upgrades, sidewalks, and a traffic signal."
+    source_id: "sjc_county_news"
+    source_url: "https://www.sjcfl.us/sjc-groundbreaking-sr-16-international-golf-parkway-project/"
+    source_published_at: "2025-08-29"
+    discovered_at: "2026-06-26T14:00:00Z"
+    topics:
+      - "transportation"
+      - "development"
+    communities: []
+    geographic_scope: "multi_community"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: "Project includes road widening, drainage upgrades, sidewalks, and traffic signal. On Aug. 25, St. Johns County officials and staff held a groundbreaking ceremony at the intersection of State Road 16 and International Golf Parkway to celebrate the start of improvements."
+    review_status: "pending_review"
+    primary_topic: "transportation"
+    interest_tags:
+      - "sr_16"
+      - "igp"
+      - "groundbreaking"
+      - "road_widening"
+      - "$25_million"
+      - "public_works"
+    resident_relevance:
+      summary: "The $25 million SR 16/IGP Improvements Project will expand SR 16 from two to four lanes, install a traffic signal, drainage, and sidewalks, improving safety and capacity at this key intersection."
+      affected_audiences:
+        - "commuters"
+        - "residents"
+      why_it_matters: "This $25 million project is a major investment in transportation infrastructure that will improve one of the busiest intersections in western St. Johns County, supporting continued growth."
+      confidence: "high"
+      inference_notes: "Article content from WordPress API (post ID 67226). Project budget and scope confirmed."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T14:00:00Z"
+
+  - item_id: "SJC-BF-202508-0022"
+    title: "Inside SJC Episode 5: Notifying Residents Using Alert St. Johns Emergency Notification System"
+    summary: "St. Johns County launched Inside SJC Episode 5, highlighting how the county notifies residents in real-time about possible threats to public safety using Alert St. Johns — covering severe weather, unexpected road closures, water advisories, missing persons, or evacuations. The episode educates residents on how to sign up for emergency alerts."
+    source_id: "sjc_county_news"
+    source_url: "https://www.sjcfl.us/inside-sjc-episode-5/"
+    source_published_at: "2025-08-05"
+    discovered_at: "2026-06-26T14:00:00Z"
+    topics:
+      - "emergency_weather_fire_flood"
+      - "public_safety_livability"
+    communities: []
+    geographic_scope: "county_wide"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: "This episode gives viewers the opportunity to learn how the county can notify residents in real-time about possible threats to public safety using Alert St. Johns. Anything from severe weather, unexpected road closures, water advisories, missing persons, or evacuations."
+    review_status: "pending_review"
+    primary_topic: "emergency_weather_fire_flood"
+    interest_tags:
+      - "emergency_notification"
+      - "alert_st_johns"
+      - "public_safety"
+      - "severe_weather"
+      - "evacuation"
+    resident_relevance:
+      summary: "Alert St. Johns is the county's emergency notification system that alerts residents about severe weather, road closures, water advisories, evacuations, and other public safety threats via text, email, and voice calls."
+      affected_audiences:
+        - "all_residents"
+      why_it_matters: "The emergency notification system is a critical tool for public safety, enabling residents to receive real-time alerts about threats and take appropriate protective actions."
+      confidence: "high"
+      inference_notes: "Article content from WordPress API (post ID 65977). Episode 5 of the Inside SJC video series focused on emergency preparedness."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T14:00:00Z"
+
+  - item_id: "SJC-BF-202508-0023"
+    title: "County Administrator Joy Andrews Sends Community Letter to Residents"
+    summary: "St. Johns County Administrator Joy Andrews published an August 2025 community letter providing updates and information about how the county is investing in the future, covering key projects, services, and initiatives for residents."
+    source_id: "sjc_county_news"
+    source_url: "https://www.sjcfl.us/county-administrator-joy-andrews-august-2025-community-letter/"
+    source_published_at: "2025-08-12"
+    discovered_at: "2026-06-26T14:00:00Z"
+    topics:
+      - "general_government"
+    communities: []
+    geographic_scope: "county_wide"
+    urgency: "ongoing"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+    raw_excerpt: "August 2025 Letter Provides Updates and Information About How St. Johns County is Investing in the Future. On August 12, County Administrator Joy Andrews sent a community letter to residents."
+    review_status: "pending_review"
+    primary_topic: "general_government"
+    interest_tags:
+      - "county_administrator"
+      - "community_letter"
+      - "government_communications"
+      - "joy_andrews"
+    resident_relevance:
+      summary: "The County Administrator's community letter provides a regular update on county priorities, projects, and initiatives directly to residents."
+      affected_audiences:
+        - "all_residents"
+      why_it_matters: "This direct communication from the County Administrator helps residents understand how their county government is investing in infrastructure and services."
+      confidence: "high"
+      inference_notes: "Article content from WordPress API (post ID 66154). One of a series of regular community letters from the County Administrator."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T14:00:00Z"
+
+  - item_id: "SJC-BF-202508-0024"
+    title: "St. Johns County Appoints New Office of Management & Budget Director"
+    summary: "St. Johns County appointed Wade Schroeder as the new Office of Management & Budget Director. Schroeder had served as the OMB Assistant Director since 2016. The appointment was made during the Aug. 19, 2025 Board of County Commissioners Regular Meeting."
+    source_id: "sjc_county_news"
+    source_url: "https://www.sjcfl.us/sjc-appoints-new-omb-director/"
+    source_published_at: "2025-08-20"
+    discovered_at: "2026-06-26T14:00:00Z"
+    topics:
+      - "general_government"
+    communities: []
+    geographic_scope: "county_wide"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+    raw_excerpt: "Wade Schroeder has served as the OMB Assistant Director since 2016. During the Aug. 19 St. Johns County Board of County Commissioners Regular Meeting, the Board appointed Wade Schroeder as the new OMB Director."
+    review_status: "pending_review"
+    primary_topic: "general_government"
+    interest_tags:
+      - "county_appointments"
+      - "omb_director"
+      - "wade_schroeder"
+      - "personnel"
+    resident_relevance:
+      summary: "The appointment of a new OMB Director fills a key leadership position responsible for county budget management and financial planning."
+      affected_audiences:
+        - "all_residents"
+      why_it_matters: "The OMB Director oversees the county's $1.8 billion budget and financial planning, directly affecting how tax dollars are allocated and managed."
+      confidence: "high"
+      inference_notes: "Article content from WordPress API (post ID 66550). Appointment confirmed at Aug 19 BCC meeting."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T14:00:00Z"

@@ -1,0 +1,21 @@
+source_id: sjc_utility_department
+generated_at: '2026-07-04T03:49:25Z'
+total_events: 1
+events:
+- event_id: EVT-UTIL-20260704-0001
+  source_id: sjc_utility_department
+  event_type: page_snapshot
+  title: Utility Department Announcements Check — 2026-07-04
+  event_date: '2026-07-04'
+  discovered_at: '2026-07-04T03:49:25Z'
+  source_url: https://www.sjcfl.us/departments/utility-department/
+  status: extracted
+  extraction_status: 2 new items (capital project + Moody's rating). 3 previously
+    extracted items still on page.
+  source_health: accessible
+  extracted_item_ids:
+  - SJC-UD-20260704-0001
+  - SJC-UD-20260704-0002
+  notes: Manual extraction — no script exists for this source.
+  created_at: '2026-07-04T03:49:25Z'
+  updated_at: '2026-07-04T03:49:25Z'

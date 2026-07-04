@@ -1,0 +1,97 @@
+source_id: sjc_utility_department
+fetched_at: '2026-07-04T03:48:19Z'
+source_url: https://www.sjcfl.us/departments/utility-department/
+total_items: 2
+items:
+- item_id: SJC-UD-20260704-0001
+  title: St. Johns County Completes $1.6 Million Capital Improvement Project at Plantation
+    Water Treatment Plant
+  summary: 'Completed capital project: $1.6M improvement at Plantation Water Treatment
+    Plant.'
+  source_id: sjc_utility_department
+  source_url: https://www.sjcfl.us/departments/utility-department/
+  source_published_at: '2026-07-04'
+  discovered_at: '2026-07-04T03:48:19Z'
+  discovered_by: hermes-sjc_utility_department
+  topics:
+  - infrastructure
+  - county_government
+  communities: []
+  geographic_scope: county_wide
+  urgency: archival
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: St. Johns County Completes $1.6 Million Capital Improvement Project
+    at Plantation Water Treatment Plant
+  citation:
+    source_name: St. Johns County Utility Department
+    source_type: government_website
+    accessed_at: '2026-07-04T03:48:19Z'
+    url: https://www.sjcfl.us/departments/utility-department/
+  review_status: pending_review
+  primary_topic: infrastructure
+  interest_tags:
+  - utility_impact
+  - quality_of_life
+  resident_relevance:
+    summary: Utility department announcement.
+    affected_audiences:
+    - residents
+    - homeowners
+    why_it_matters: St. Johns County Completes $1.6 Million Capital Improvement Project
+      at Plantation Water Treatment Plant
+    confidence: high
+    inference_notes: Directly from SJC Utility Department announcements page.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-07-04T03:48:19Z'
+  _dedupe_key: e51d6b50a414ceef
+  _beat: utilities_water
+- item_id: SJC-UD-20260704-0002
+  title: St. Johns County Utility Department Earns High Moody's Rating, Reflecting
+    Strong Financial Management
+  summary: Utility Department received high Moody's rating for strong financial management.
+  source_id: sjc_utility_department
+  source_url: https://www.sjcfl.us/departments/utility-department/
+  source_published_at: '2026-07-04'
+  discovered_at: '2026-07-04T03:48:19Z'
+  discovered_by: hermes-sjc_utility_department
+  topics:
+  - county_government
+  communities: []
+  geographic_scope: county_wide
+  urgency: archival
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: St. Johns County Utility Department Earns High Moody's Rating, Reflecting
+    Strong Financial Management
+  citation:
+    source_name: St. Johns County Utility Department
+    source_type: government_website
+    accessed_at: '2026-07-04T03:48:19Z'
+    url: https://www.sjcfl.us/departments/utility-department/
+  review_status: pending_review
+  primary_topic: county_government
+  interest_tags:
+  - cost_impact
+  - community_trust
+  resident_relevance:
+    summary: Utility department announcement.
+    affected_audiences:
+    - residents
+    - homeowners
+    why_it_matters: St. Johns County Utility Department Earns High Moody's Rating,
+      Reflecting Strong Financial Management
+    confidence: high
+    inference_notes: Directly from SJC Utility Department announcements page.
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-07-04T03:48:19Z'
+  _dedupe_key: b4458b0635d1caf2
+  _beat: utilities_water

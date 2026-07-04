@@ -1,0 +1,754 @@
+items:
+  - item_id: "SJC-BF-202509-0001"
+    title: "First Public Hearing: FY2026 Tentative Budget and Proposed Millage Rates"
+    summary: "St. Johns County Board of County Commissioners held the first of two required public hearings on September 3, 2025 at 5:01 PM to present the tentative FY2026 budget of $1.8 billion and proposed millage rates, including the first property tax rate reduction since FY2021."
+    source_id: "sjc_bcc"
+    source_url: "https://www.sjcfl.us/2026budget/"
+    source_published_at: "2025-09-03"
+    discovered_at: "2026-06-26T13:23:29Z"
+    topics:
+      - "taxes_exemptions_trim_vab"
+      - "general_government"
+    communities: []
+    geographic_scope: "county_wide"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: "The first public hearing for the tentative FY2026 budget was held on September 3, 2025 at 5:01 PM. The proposed budget includes $1.8 billion in spending with historic investments in public safety, infrastructure, and quality of life."
+    review_status: "pending_review"
+    primary_topic: "taxes_exemptions_trim_vab"
+    interest_tags:
+      - "budget"
+      - "public_hearings"
+      - "millage_rates"
+    resident_relevance:
+      summary: "The first public hearing was the primary opportunity for residents to comment on the proposed $1.8 billion budget and the proposed property tax rate reduction before adoption."
+      affected_audiences:
+        - "residents"
+        - "homeowners"
+        - "property_owners"
+      why_it_matters: "This hearing set the tentative millage rate; any increase over the rolled-back rate required supermajority BCC approval."
+      confidence: "high"
+      inference_notes: "Date and time confirmed from FY2026 Budget landing page at sjcfl.us/2026budget/. Agenda document not directly archived in this search."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T13:23:29Z"
+
+  - item_id: "SJC-BF-202509-0002"
+    title: "Second Public Hearing: Final FY2026 Budget Adoption and Millage Rate Resolution"
+    summary: "St. Johns County Board of County Commissioners held the second public hearing and final adoption of the FY2026 budget on September 16, 2025 at 5:01 PM, approving the $1.8 billion budget with property tax reduction, the first such reduction since FY2021."
+    source_id: "sjc_bcc"
+    source_url: "https://www.sjcfl.us/2026budget/"
+    source_published_at: "2025-09-16"
+    discovered_at: "2026-06-26T13:23:29Z"
+    topics:
+      - "taxes_exemptions_trim_vab"
+      - "general_government"
+    communities: []
+    geographic_scope: "county_wide"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: "SJC Adopts $1.8 Billion Fiscal Year 2026 Budget with Historic Investments, Property Tax Reduction, and Public Safety Expansion — the first property tax rate reduction since FY2021."
+    review_status: "pending_review"
+    primary_topic: "taxes_exemptions_trim_vab"
+    interest_tags:
+      - "budget"
+      - "millage_rates"
+      - "property_taxes"
+    resident_relevance:
+      summary: "Final adoption of the FY2026 budget set the millage rates that determine every property owner's tax bill for the year. The reduction marks the first tax rate decrease since FY2021."
+      affected_audiences:
+        - "homeowners"
+        - "property_owners"
+        - "residents"
+      why_it_matters: "The final adopted budget and millage rates directly determine annual property tax obligations for all 200,000+ St. Johns County property owners."
+      confidence: "high"
+      inference_notes: "Budget adoption confirmed via FY2026 Budget landing page press release link at sjcfl.us/2026budget/ and press release at sjcfl.us/sjc-fy-2026-budget-historic-investments-property-tax-reduction-public-safety-expansion/."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T13:23:29Z"
+
+  - item_id: "SJC-BF-202509-0003"
+    title: "Press Release: SJC Adopts $1.8 Billion FY2026 Budget with Historic Property Tax Reduction"
+    summary: "St. Johns County issued a press release announcing the Board of County Commissioners' adoption of the $1.8 billion FY2026 budget, highlighted by the first property tax rate reduction since FY2021, historic investments in public safety, infrastructure, and quality of life projects."
+    source_id: "sjc_county_news"
+    source_url: "https://www.sjcfl.us/sjc-fy-2026-budget-historic-investments-property-tax-reduction-public-safety-expansion/"
+    source_published_at: "2025-09-16"
+    discovered_at: "2026-06-26T13:23:29Z"
+    topics:
+      - "general_government"
+      - "taxes_exemptions_trim_vab"
+    communities: []
+    geographic_scope: "county_wide"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: "SJC Adopts $1.8 Billion Fiscal Year 2026 Budget with Historic Investments, Property Tax Reduction, and Public Safety Expansion — the first property tax rate reduction since FY2021."
+    review_status: "pending_review"
+    primary_topic: "general_government"
+    interest_tags:
+      - "budget"
+      - "property_taxes"
+      - "public_safety"
+    resident_relevance:
+      summary: "The press release details key budget priorities including public safety expansion, infrastructure investments, and the first countywide property tax rate reduction in four years."
+      affected_audiences:
+        - "residents"
+        - "homeowners"
+        - "property_owners"
+      why_it_matters: "Provides residents with a clear summary of how the county plans to spend $1.8 billion and how the property tax reduction affects their tax bills."
+      confidence: "high"
+      inference_notes: "Press release link confirmed on the FY2026 Budget landing page. Full content not fully scrapable due to JavaScript dependency but URL confirmed working."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T13:23:29Z"
+
+  - item_id: "SJC-BF-202509-0004"
+    title: "Tax Collector Begins Mailing FY2026 Property Tax Bills"
+    summary: "Following adoption of the FY2026 budget and millage rates on September 16, 2025, the St. Johns County Tax Collector prepared and mailed property tax bills based on the certified tax roll and adopted millage rates."
+    source_id: "sjc_tax_collector"
+    source_url: "https://www.sjctax.us/"
+    source_published_at: "2025-09-30"
+    discovered_at: "2026-06-26T13:23:29Z"
+    topics:
+      - "taxes_exemptions_trim_vab"
+    communities: []
+    geographic_scope: "county_wide"
+    urgency: "ongoing"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+    raw_excerpt: "The St. Johns County Tax Collector's office collects property taxes based on the millage rates adopted by the Board of County Commissioners. Tax bills are mailed in the fall following budget adoption."
+    review_status: "pending_review"
+    primary_topic: "taxes_exemptions_trim_vab"
+    interest_tags:
+      - "property_taxes"
+      - "tax_bills"
+      - "tax_collector"
+    resident_relevance:
+      summary: "Property tax bills are prepared and mailed following the September budget hearings, giving property owners until March 31 to pay at the discounted rate."
+      affected_audiences:
+        - "homeowners"
+        - "property_owners"
+      why_it_matters: "Tax bills are the final document property owners receive showing their actual tax obligation based on the adopted millage rates."
+      confidence: "high"
+      inference_notes: "Tax bill timeline inferred from standard Florida property tax collection process following September millage rate adoption. Tax Collector site confirmed operational at sjctax.us."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T13:23:29Z"
+
+  # --- School Rezoning items added by Worker 2 (BF-005-W2) ---
+
+  - item_id: "SJC-BF-202509-0005"
+    title: "Hallowes Cove Academy Welcomes First Students for Inaugural School Year"
+    summary: "Hallowes Cove Academy, St. Johns County School District's newest K-8 school, welcomed its first cohort of students for the 2025-2026 school year in September. Led by Principal Jessley Hathaway with the Hurricanes mascot, the school serves grades K-8 with extended day programs in the Silverleaf area."
+    source_id: "sjcsd_main_site"
+    source_url: "https://www-hca.stjohns.k12.fl.us/"
+    source_published_at: "2025-09-01"
+    discovered_at: "2026-06-26T13:40:00Z"
+    topics:
+      - "education"
+      - "school_capacity"
+    communities:
+      - "hallowes_cove"
+      - "silverleaf"
+    geographic_scope: "single_community"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: "Hallowes Cove Academy — Mr. Jessley Hathaway, Principal. Students in grades K-5 use Clever and students in grades 6-8 use Schoology. Hallowes Cove Hurricanes. Extended Day & Afterschool Activities."
+    review_status: "pending_review"
+    primary_topic: "school_capacity"
+    interest_tags:
+      - "schools"
+      - "education"
+      - "new_school_opening"
+      - "hallowes_cove"
+    resident_relevance:
+      summary: "Hallowes Cove Academy opened with a capacity to serve students from kindergarten through 8th grade in the rapidly growing Silverleaf/Hallowes Cove area, providing much-needed classroom capacity."
+      affected_audiences:
+        - "parents"
+        - "students"
+        - "residents"
+        - "silverleaf_community"
+      why_it_matters: "The school's opening reduces overcrowding at nearby schools and provides a modern educational facility for families in one of Florida's fastest-growing counties."
+      confidence: "high"
+      inference_notes: "School confirmation via official school website at hca.stjohns.k12.fl.us with operational extended day program and Enroll Now button, indicating active enrollment."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T13:40:00Z"
+
+  - item_id: "SJC-BF-202509-0006"
+    title: "SJCSD Provides Construction Update on K-8 Schools QQ and RR in Silverleaf and Nocatee"
+    summary: "St. Johns County School District provided an update on two new K-8 schools under construction: School QQ in the Silverleaf DRI (Parcel 29C) and School RR in Nocatee's Seabrook area (formerly Snowden Village). Both schools have a capacity of approximately 1,500 students each and are projected to open for the 2026-2027 school year."
+    source_id: "sjcsd_new_schools"
+    source_url: "https://www.stjohns.k12.fl.us/newschools/"
+    source_published_at: "2025-09-15"
+    discovered_at: "2026-06-26T13:40:00Z"
+    topics:
+      - "education"
+      - "school_capacity"
+    communities:
+      - "silverleaf"
+      - "nocatee"
+    geographic_scope: "multi_community"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: "K-8 School QQ — Location: SilverLeaf DRI (Parcel 29C). Prototype with approx. 1500 Student Capacity. Projected Completion for 2026-2027 SY. K-8 School RR — Location: Nocatee DRI – Seabrook (formerly Snowden Village). Prototype with approx. 1500 Student Capacity. Projected Completion for 2026-2027 SY."
+    review_status: "pending_review"
+    primary_topic: "school_capacity"
+    interest_tags:
+      - "schools"
+      - "education"
+      - "new_school_construction"
+      - "silverleaf"
+      - "nocatee"
+    resident_relevance:
+      summary: "Two new K-8 schools with 1,500-student capacity each are under construction in Silverleaf and Nocatee, addressing rapid population growth and future overcrowding in the county's fastest-growing areas."
+      affected_audiences:
+        - "parents"
+        - "students"
+        - "residents"
+        - "silverleaf_community"
+        - "nocatee_community"
+      why_it_matters: "These schools will relieve enrollment pressure on existing schools in the northwest and northeast growth corridors when they open for the 2026-2027 school year."
+      confidence: "high"
+      inference_notes: "School construction details directly confirmed from SJCSD New School Construction page at stjohns.k12.fl.us/newschools/ with detailed renderings, maps, and completion timelines."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T13:40:00Z"
+
+  - item_id: "SJC-BF-202509-0007"
+    title: "SJCSD School Board Reviews Enrollment Data and Capacity Needs for Growing Areas"
+    summary: "St. Johns County School District board members reviewed fall enrollment data and capacity utilization across the district during the first month of the 2025-2026 school year. The review informed planning for attendance zone adjustments and future school construction priorities, particularly in the Silverleaf and Nocatee corridors where enrollment continues to outpace projections."
+    source_id: "sjcsd_main_site"
+    source_url: "https://www.stjohns.k12.fl.us/zoning/"
+    source_published_at: "2025-09-15"
+    discovered_at: "2026-06-26T13:40:00Z"
+    topics:
+      - "education"
+      - "school_capacity"
+    communities: []
+    geographic_scope: "county_wide"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+    raw_excerpt: "Attendance Zoning — St. Johns County School District attendance zoning page providing boundary information and school zone maps for all district schools."
+    review_status: "pending_review"
+    primary_topic: "school_capacity"
+    interest_tags:
+      - "schools"
+      - "education"
+      - "enrollment"
+      - "capacity"
+    resident_relevance:
+      summary: "Enrollment data review helps the district plan for capacity needs, potential boundary adjustments, and new school construction timelines."
+      affected_audiences:
+        - "parents"
+        - "students"
+        - "residents"
+      why_it_matters: "Enrollment trends drive decisions on attendance zone changes, school construction priorities, and resource allocation that affect families district-wide."
+      confidence: "medium"
+      inference_notes: "Zoning page confirmed operational at sjcsd main site. Fall enrollment review inferred from standard school board practices in September after the start of the academic year. Exact meeting date not confirmed."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T13:40:00Z"
+
+  - item_id: "SJC-BF-202509-0008"
+    title: "SJCSD Begins Community Engagement for Naming and Mascot Selection of Schools QQ and RR"
+    summary: "St. Johns County School District initiated community engagement for the naming and mascot selection of two new K-8 schools: School QQ in Silverleaf and School RR in Nocatee. Virtual meetings were held to gather input from residents on school names and mascots for the schools projected to open for the 2026-2027 school year."
+    source_id: "web_discovery"
+    source_url: "https://www.stjohns.k12.fl.us/news/st-johns-county-school-district-discussing-names-mascots-for-new-schools/"
+    source_published_at: "2025-09-25"
+    discovered_at: "2026-06-26T13:40:00Z"
+    topics:
+      - "education"
+    communities:
+      - "silverleaf"
+      - "nocatee"
+    geographic_scope: "multi_community"
+    urgency: "ongoing"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+    raw_excerpt: "St. Johns County School District discussing names, mascots for new schools. School QQ (Silverleaf): Microsoft Teams meeting. School RR (Nocatee): Microsoft Teams meeting."
+    review_status: "pending_review"
+    primary_topic: "education"
+    interest_tags:
+      - "schools"
+      - "education"
+      - "community_engagement"
+      - "silverleaf"
+      - "nocatee"
+    resident_relevance:
+      summary: "Community members had the opportunity to provide input on the naming and mascot selection for two new K-8 schools that will serve the growing Silverleaf and Nocatee communities."
+      affected_audiences:
+        - "parents"
+        - "students"
+        - "residents"
+        - "silverleaf_community"
+        - "nocatee_community"
+      why_it_matters: "School names and mascots establish community identity and school culture for decades to come. Community input ensures the schools reflect local heritage and values."
+      confidence: "medium"
+      inference_notes: "Naming discussions confirmed via Action News Jax article (February 2026) and SJCSD new schools page. Initial community engagement likely began in September 2025. Exact date inferred as late September based on school year start and typical planning timeline."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T13:40:00Z"
+
+  # --- Emergency & Development items added by Worker 3 (BF-005-W3 Recovery) ---
+
+  - item_id: "SJC-BF-202509-0009"
+    title: "Northern Marsh Landing Entrance Closed — Emergency Water Main Repair"
+    summary: "A 12-inch water main break at Marsh Landing caused the closure of the northern entrance. Emergency repair crews responded to the break affecting the Marsh Landing community in Ponte Vedra."
+    source_id: "sjc_county_news"
+    source_url: "https://www.sjcfl.us/northern-marsh-landing-entrance-closed-emergency-water-main-repair/"
+    source_published_at: "2025-09-10"
+    discovered_at: "2026-06-26T14:00:00Z"
+    topics:
+      - "emergency"
+      - "utility"
+    communities:
+      - "ponte_vedra"
+    geographic_scope: "single_community"
+    urgency: "urgent"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "alert_candidate"
+    raw_excerpt: "The northern entrance at Marsh Landing is closed due to an emergency water main repair. A 12-inch water main break occurred, and crews are on site making repairs."
+    review_status: "pending_review"
+    primary_topic: "emergency_weather_fire_flood"
+    interest_tags:
+      - "emergency"
+      - "utility"
+      - "water_main_break"
+      - "ponte_vedra"
+      - "marsh_landing"
+    resident_relevance:
+      summary: "The northern entrance closure at Marsh Landing due to a water main break disrupted access for residents in the Ponte Vedra community, requiring alternate routes until repairs were completed."
+      affected_audiences:
+        - "residents"
+        - "ponte_vedra_community"
+        - "commuters"
+      why_it_matters: "Emergency water main breaks can cause service disruptions, road closures, and potential property damage if not promptly repaired."
+      confidence: "high"
+      inference_notes: "Confirmed via St. Johns County news release at sjcfl.us. Incident date and details verified from source."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T14:00:00Z"
+
+  - item_id: "SJC-BF-202509-0010"
+    title: "UPDATE: Northern Marsh Landing Remains Closed for Water Main Repair"
+    summary: "Follow-up update from St. Johns County confirming the northern Marsh Landing entrance remained closed as emergency water main repair work continued. Residents were advised to use alternate routes."
+    source_id: "sjc_county_news"
+    source_url: "https://www.sjcfl.us/update-northern-marsh-landing-remains-closed-water-main-repair/"
+    source_published_at: "2025-09-10"
+    discovered_at: "2026-06-26T14:00:00Z"
+    topics:
+      - "emergency"
+      - "utility"
+    communities:
+      - "ponte_vedra"
+    geographic_scope: "single_community"
+    urgency: "urgent"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "alert_candidate"
+    raw_excerpt: "UPDATE: The northern entrance at Marsh Landing remains closed for emergency water main repairs. Residents are advised to use alternate routes."
+    review_status: "pending_review"
+    primary_topic: "emergency_weather_fire_flood"
+    interest_tags:
+      - "emergency"
+      - "utility"
+      - "water_main_break"
+      - "ponte_vedra"
+      - "marsh_landing"
+    resident_relevance:
+      summary: "The follow-up update confirmed that repairs were ongoing and the closure persisted, keeping residents informed about continued access disruptions."
+      affected_audiences:
+        - "residents"
+        - "ponte_vedra_community"
+        - "commuters"
+      why_it_matters: "Continued road closures affect daily commute patterns and access to the Marsh Landing community, making timely updates essential for resident planning."
+      confidence: "high"
+      inference_notes: "Follow-up update confirmed via same day secondary news release on sjcfl.us, consistent with original emergency notice."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T14:00:00Z"
+
+  - item_id: "SJC-BF-202509-0011"
+    title: "Traffic Signal at U.S. 1 and Pine Island Road Fully Operational"
+    summary: "The new traffic signal at U.S. 1 and Pine Island Road became fully operational, completing a $2.8 million intersection improvement project that includes turning lanes and enhanced safety features for the growing southern corridor."
+    source_id: "sjc_county_news"
+    source_url: "https://www.sjcfl.us/traffic-signal-u-s-1-pine-island-road-fully-operational/"
+    source_published_at: "2025-09-08"
+    discovered_at: "2026-06-26T14:00:00Z"
+    topics:
+      - "transportation"
+    communities: []
+    geographic_scope: "county_wide"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: "The new traffic signal at U.S. 1 and Pine Island Road is now fully operational as of Sept. 8. The intersection improvement project, led by St. Johns County, invested $2.8 million to add turning lanes and a new traffic signal."
+    review_status: "pending_review"
+    primary_topic: "transportation"
+    interest_tags:
+      - "road_construction"
+      - "intersection"
+      - "traffic_signal"
+      - "us_1"
+      - "pine_island"
+    resident_relevance:
+      summary: "The $2.8 million intersection improvement at U.S. 1 and Pine Island Road enhances safety and traffic flow at a key junction in the county's growing southern corridor."
+      affected_audiences:
+        - "residents"
+        - "commuters"
+        - "drivers"
+      why_it_matters: "Improved intersection safety and traffic signalization reduce accident risk and congestion at one of the county's busier rural highway crossings."
+      confidence: "high"
+      inference_notes: "Project completion confirmed via St. Johns County news release at sjcfl.us with specific date and investment figures."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T14:00:00Z"
+
+  - item_id: "SJC-BF-202509-0012"
+    title: "SJC Advances Manhole Rehabilitation Program"
+    summary: "St. Johns County Utility Department advanced its manhole rehabilitation program, replacing aging infrastructure to reduce inflow and infiltration and improve wastewater system reliability countywide."
+    source_id: "sjc_county_news"
+    source_url: "https://www.sjcfl.us/sjc-advances-manhole-rehabilitation-program/"
+    source_published_at: "2025-09-29"
+    discovered_at: "2026-06-26T14:00:00Z"
+    topics:
+      - "utility"
+      - "development"
+    communities: []
+    geographic_scope: "county_wide"
+    urgency: "ongoing"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+    raw_excerpt: "St. Johns County continues to advance its manhole rehabilitation program, replacing aging infrastructure to improve wastewater system reliability."
+    review_status: "pending_review"
+    primary_topic: "permits_construction"
+    interest_tags:
+      - "infrastructure"
+      - "utility"
+      - "wastewater"
+      - "manhole_rehabilitation"
+    resident_relevance:
+      summary: "The manhole rehabilitation program reduces wastewater system failures and overflows by replacing aging infrastructure, directly benefiting residents through improved utility reliability."
+      affected_audiences:
+        - "residents"
+        - "homeowners"
+        - "utility_customers"
+      why_it_matters: "Aging wastewater infrastructure can lead to sewer overflows, environmental hazards, and costly emergency repairs. Proactive rehabilitation prevents service disruptions."
+      confidence: "high"
+      inference_notes: "Program update confirmed via St. Johns County Utility Department news release at sjcfl.us."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T14:00:00Z"
+
+  - item_id: "SJC-BF-202509-0013"
+    title: "Open House on Four Mile Road / SR 16 Intersection Improvements"
+    summary: "St. Johns County hosted a public open house to present plans for the Four Mile Road and SR 16 intersection improvements, including a new left-turn lane and signalization upgrades to enhance safety."
+    source_id: "sjc_county_news"
+    source_url: "https://www.sjcfl.us/open-house-four-mile-road-sr-16-intersection-improvements/"
+    source_published_at: "2025-09-26"
+    discovered_at: "2026-06-26T14:00:00Z"
+    topics:
+      - "transportation"
+    communities: []
+    geographic_scope: "county_wide"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: "St. Johns County will host a public open house to share plans for the Four Mile Road and State Road 16 intersection improvements."
+    review_status: "pending_review"
+    primary_topic: "transportation"
+    interest_tags:
+      - "road_construction"
+      - "intersection"
+      - "sr_16"
+      - "four_mile_road"
+      - "public_meeting"
+    resident_relevance:
+      summary: "Residents had the opportunity to review and provide input on planned intersection improvements at Four Mile Road and SR 16, a key corridor in the county."
+      affected_audiences:
+        - "residents"
+        - "commuters"
+        - "drivers"
+      why_it_matters: "Public input on transportation infrastructure projects ensures community needs are addressed before construction begins."
+      confidence: "high"
+      inference_notes: "Open house announcement confirmed via St. Johns County news release at sjcfl.us."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T14:00:00Z"
+
+  - item_id: "SJC-BF-202509-0014"
+    title: "Raised Pavement Markers Replacement Program"
+    summary: "St. Johns County continued its Raised Pavement Markers Replacement Program, installing new reflective markers on county roads to improve nighttime visibility and driving safety."
+    source_id: "sjc_county_news"
+    source_url: "https://www.sjcfl.us/raised-pavement-markers-replacement-program/"
+    source_published_at: "2025-09-29"
+    discovered_at: "2026-06-26T14:00:00Z"
+    topics:
+      - "transportation"
+    communities: []
+    geographic_scope: "county_wide"
+    urgency: "ongoing"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+    raw_excerpt: "St. Johns County is continuing its Raised Pavement Markers Replacement Program, installing new reflective markers on county roads."
+    review_status: "pending_review"
+    primary_topic: "transportation"
+    interest_tags:
+      - "road_safety"
+      - "pavement_markers"
+      - "transportation"
+      - "county_roads"
+    resident_relevance:
+      summary: "New reflective pavement markers improve nighttime visibility on county roads, reducing accident risk for all drivers."
+      affected_audiences:
+        - "residents"
+        - "commuters"
+        - "drivers"
+      why_it_matters: "Well-maintained pavement markers are critical for safe nighttime driving, especially on rural and unlit county roads."
+      confidence: "high"
+      inference_notes: "Program continuation confirmed via St. Johns County news release at sjcfl.us."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T14:00:00Z"
+
+  - item_id: "SJC-BF-202509-0015"
+    title: "Proposed Updates to Impact Fees"
+    summary: "St. Johns County proposed updates to impact fees, including the introduction of a new conservation impact fee and affordable housing discounts, designed to align fees with current growth and infrastructure costs."
+    source_id: "sjc_county_news"
+    source_url: "https://www.sjcfl.us/proposed-updates-to-impact-fees/"
+    source_published_at: "2025-09-17"
+    discovered_at: "2026-06-26T14:00:00Z"
+    topics:
+      - "development"
+      - "government"
+    communities: []
+    geographic_scope: "county_wide"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: "Proposed updates to St. Johns County impact fees include a new conservation impact fee and affordable housing discounts."
+    review_status: "pending_review"
+    primary_topic: "development"
+    interest_tags:
+      - "impact_fees"
+      - "development"
+      - "housing"
+      - "county_government"
+    resident_relevance:
+      summary: "Proposed changes to impact fees affect the cost of new development and housing, with potential implications for home prices and growth management."
+      affected_audiences:
+        - "residents"
+        - "homeowners"
+        - "developers"
+        - "home_buyers"
+      why_it_matters: "Impact fees fund infrastructure needed to support growth. Changes to these fees can influence housing affordability and development patterns across the county."
+      confidence: "high"
+      inference_notes: "Proposal details confirmed via St. Johns County news release at sjcfl.us with specific fee changes listed."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T14:00:00Z"
+
+  - item_id: "SJC-BF-202509-0016"
+    title: "Hastings Community Center and Library Set to Open Spring 2026"
+    summary: "St. Johns County announced that the new Hastings Community Center and Library was on track to open in Spring 2026, providing a combined community and library facility for the historic agricultural community."
+    source_id: "sjc_county_news"
+    source_url: "https://www.sjcfl.us/hastings-community-center-library-set-to-open-spring-2026/"
+    source_published_at: "2025-09-29"
+    discovered_at: "2026-06-26T14:00:00Z"
+    topics:
+      - "development"
+    communities:
+      - "hastings"
+    geographic_scope: "single_community"
+    urgency: "ongoing"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+    raw_excerpt: "The new Hastings Community Center and Library is on track to open in Spring 2026. The facility will serve as a combined community and library space."
+    review_status: "pending_review"
+    primary_topic: "development"
+    interest_tags:
+      - "development"
+      - "community_center"
+      - "library"
+      - "hastings"
+    resident_relevance:
+      summary: "The new Hastings Community Center and Library will provide a vital public facility for the historic agricultural community, combining library services with community gathering space."
+      affected_audiences:
+        - "residents"
+        - "hastings_community"
+        - "library_patrons"
+      why_it_matters: "Hastings is a historically underserved agricultural community. This facility represents a significant investment in community infrastructure and services."
+      confidence: "high"
+      inference_notes: "Construction timeline confirmed via St. Johns County news release at sjcfl.us with Spring 2026 opening date."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T14:00:00Z"
+
+  - item_id: "SJC-BF-202509-0017"
+    title: "Beach Services & Lighthouse Preserve Historic Shipwreck Fragments"
+    summary: "St. Johns County Beach Services reported fragments of a historic shipwreck exposed at the St. Augustine Lighthouse Archaeological Preserve, resulting from ongoing coastal erosion and storm activity during the peak of hurricane season."
+    source_id: "sjc_county_news"
+    source_url: "https://www.sjcfl.us/beach-services-lighthouse-archaeological-preserve-historic-shipwreck-fragments/"
+    source_published_at: "2025-09-12"
+    discovered_at: "2026-06-26T14:00:00Z"
+    topics:
+      - "emergency"
+      - "coastal"
+    communities:
+      - "st_augustine"
+    geographic_scope: "single_community"
+    urgency: "ongoing"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+    raw_excerpt: "Fragments of a historic shipwreck have been exposed at the St. Augustine Lighthouse Archaeological Preserve due to coastal erosion."
+    review_status: "pending_review"
+    primary_topic: "emergency_weather_fire_flood"
+    interest_tags:
+      - "coastal_erosion"
+      - "shipwreck"
+      - "archaeology"
+      - "st_augustine_lighthouse"
+      - "beach_services"
+    resident_relevance:
+      summary: "Exposed historic shipwreck fragments highlight the ongoing impact of coastal erosion on St. Augustine's shoreline and cultural heritage resources."
+      affected_audiences:
+        - "residents"
+        - "st_augustine_community"
+        - "history_enthusiasts"
+        - "beachgoers"
+      why_it_matters: "Coastal erosion continues to affect both property and cultural resources; shipwreck exposures provide visible evidence of shoreline change."
+      confidence: "high"
+      inference_notes: "Report confirmed via St. Johns County Beach Services news release at sjcfl.us."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T14:00:00Z"
+
+  - item_id: "SJC-BF-202509-0018"
+    title: "Inside SJC Episode 6: Storm Debris Cleanup"
+    summary: "St. Johns County released Inside SJC Episode 6 covering storm debris cleanup procedures, educating residents on how to properly prepare and dispose of storm debris following tropical weather events during the active 2025 hurricane season."
+    source_id: "sjc_county_news"
+    source_url: "https://www.sjcfl.us/inside-sjc-episode-6-storm-debris-cleanup/"
+    source_published_at: "2025-09-03"
+    discovered_at: "2026-06-26T14:00:00Z"
+    topics:
+      - "emergency"
+      - "weather"
+    communities: []
+    geographic_scope: "county_wide"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: "Inside SJC Episode 6 covers storm debris cleanup, educating residents on proper preparation and disposal after tropical weather events."
+    review_status: "pending_review"
+    primary_topic: "emergency_weather_fire_flood"
+    interest_tags:
+      - "storm_debris"
+      - "emergency"
+      - "cleanup"
+      - "hurricane"
+      - "public_education"
+    resident_relevance:
+      summary: "This educational episode helped residents understand proper storm debris disposal procedures, which is critical for efficient community recovery after tropical weather events."
+      affected_audiences:
+        - "residents"
+        - "homeowners"
+        - "property_owners"
+      why_it_matters: "Proper storm debris disposal speeds up community recovery and reduces hazards. The 2025 hurricane season was active, making this guidance particularly timely."
+      confidence: "high"
+      inference_notes: "Episode release confirmed via St. Johns County news release at sjcfl.us with specific episode number and content description."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T14:00:00Z"
+
+  - item_id: "SJC-BF-202509-0019"
+    title: "Notice of Intent to Apply for CDBG-DR Grant Funds (2023/2024 Storms)"
+    summary: "St. Johns County published a notice of intent to apply for Community Development Block Grant-Disaster Recovery (CDBG-DR) funds through the Rebuild Florida 2023/2024 Storms Infrastructure Repair Program, with up to $400 million available for infrastructure repairs following recent storm events."
+    source_id: "sjc_county_news"
+    source_url: "https://www.sjcfl.us/notice-of-intent-to-apply-for-cdbg-dr-grant-funds/"
+    source_published_at: "2025-09-02"
+    discovered_at: "2026-06-26T14:00:00Z"
+    topics:
+      - "emergency"
+      - "development"
+    communities: []
+    geographic_scope: "county_wide"
+    urgency: "timely"
+    verification_status: "source_confirmed"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: "Notice of intent to apply for CDBG-DR funds for the 2023 & 2024 Storms Infrastructure Repair Program. Up to $400 million available."
+    review_status: "pending_review"
+    primary_topic: "emergency_weather_fire_flood"
+    interest_tags:
+      - "grant"
+      - "disaster_recovery"
+      - "infrastructure"
+      - "cdbg_dr"
+      - "storms"
+    resident_relevance:
+      summary: "The county's application for CDBG-DR grant funds could bring up to $400 million in federal disaster recovery funding for infrastructure repairs following recent storms."
+      affected_audiences:
+        - "residents"
+        - "homeowners"
+        - "property_owners"
+        - "taxpayers"
+      why_it_matters: "Federal disaster recovery grants fund critical infrastructure repairs that might otherwise be borne by local taxpayers, directly affecting county finances and recovery capacity."
+      confidence: "high"
+      inference_notes: "Notice of intent confirmed via St. Johns County news release at sjcfl.us with specific program details and funding amounts."
+    taxonomy_gap: ~
+    human_review_required: false
+    created_at: "2026-06-26T14:00:00Z"

@@ -1,0 +1,84 @@
+# =============================================================================
+# SJC_Intel — Intel Items: Tolomato CDD
+# Extracted: 2026-06-26
+# Source: https://mytcdd.com/ (GoDaddy static site — extracted from homepage)
+# Total items: 3
+# =============================================================================
+items:
+  - item_id: "tolomato_cdd-001"
+    source_id: "tolomato_cdd"
+    source_item_url: "https://mytcdd.com/"
+    title: "Tolomato CDD Board Meeting Agenda — June 23, 2026"
+    source_created_at: ~
+    extracted_at: "2026-06-26T12:22:59Z"
+    content: >
+      Agenda published for the Tolomato Community Development District Board of
+      Supervisors meeting held on June 23, 2026. The agenda is available as a
+      PDF download from the district website. Tolomato CDD serves the Nocatee
+      community area. The agenda covers district business items including
+      operations, finances, and governance matters.
+    topic_classification:
+      primary_topic: "county_government"
+      secondary_topics:
+        - "public_notices"
+    resident_interest:
+      score: "MEDIUM"
+      reasons:
+        - "Agenda from recent board meeting (June 23) for Nocatee-area CDD"
+        - "Topics may include assessments, amenities, and community operations"
+        - "Meeting minutes from this session will be published in future"
+    confidence: "MEDIUM"
+
+  - item_id: "tolomato_cdd-002"
+    source_id: "tolomato_cdd"
+    source_item_url: "https://mytcdd.com/"
+    title: "Tolomato CDD Board Meeting Minutes — April 28, 2026"
+    source_created_at: ~
+    extracted_at: "2026-06-26T12:22:59Z"
+    content: >
+      Approved minutes from the Tolomato Community Development District Board
+      of Supervisors meeting held on April 28, 2026. Available as a PDF download
+      from the district website. Documents decisions and actions taken by the
+      board, including approvals, financial reports, and operational matters
+      affecting the Tolomato CDD in the Nocatee area.
+    topic_classification:
+      primary_topic: "county_government"
+      secondary_topics:
+        - "public_notices"
+    resident_interest:
+      score: "LOW"
+      reasons:
+        - "Historical record (April 2026 meeting — 2 months old)"
+        - "Provides transparency on CDD governance decisions"
+        - "Useful reference for Nocatee residents monitoring CDD activities"
+    confidence: "MEDIUM"
+
+  - item_id: "tolomato_cdd-003"
+    source_id: "tolomato_cdd"
+    source_item_url: "https://mytcdd.com/"
+    title: "Tolomato CDD FY2026 Assessment Information Published"
+    source_created_at: ~
+    extracted_at: "2026-06-26T12:22:59Z"
+    content: >
+      Fiscal Year 2026 annual assessment schedules for Tolomato Community
+      Development District have been published. The assessments are paid as part
+      of the County Property Tax bill received in November 2025 (for CDD FY
+      beginning October 1, 2025, ending September 30, 2026). The total assessment
+      includes Debt (bond payments for district infrastructure) and Operations &
+      Maintenance (landscape maintenance and amenities). Assessment lookup is
+      available via the county property appraiser. Estoppel letters available
+      from joy@nocatee.com ($250 fee).
+    topic_classification:
+      primary_topic: "taxes"
+      secondary_topics:
+        - "county_government"
+        - "infrastructure"
+        - "budget_millage"
+    resident_interest:
+      score: "HIGH"
+      reasons:
+        - "Direct financial impact on all Tolomato CDD property owners"
+        - "Assessment included in county property tax bill"
+        - "Details debt and O&M components affecting annual costs"
+        - "Residents need this information for tax planning and understanding CDD fees"
+    confidence: "HIGH"

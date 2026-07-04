@@ -1,0 +1,77 @@
+# =============================================================================
+# SJC_Intel — Intel Items: Trout Creek CDD
+# Extracted: 2026-06-26
+# Source: https://troutcreekcdd.com/ (WordPress, no RSS items — extracted from homepage)
+# Total items: 3
+# =============================================================================
+items:
+  - item_id: "trout_creek_cdd-001"
+    source_id: "trout_creek_cdd"
+    source_item_url: "https://troutcreekcdd.com/"
+    title: "Trout Creek CDD Meeting Agenda — June 25, 2026 (Revised)"
+    source_created_at: "2026-06-23T19:59:04Z"
+    extracted_at: "2026-06-26T12:22:59Z"
+    content: >
+      Revised meeting agenda published for the Trout Creek Community Development
+      District board meeting scheduled for June 25, 2026. Agenda available as PDF
+      download from the district website. Covers district business including
+      operations, finances, and governance items.
+    topic_classification:
+      primary_topic: "county_government"
+      secondary_topics:
+        - "public_notices"
+    resident_interest:
+      score: "MEDIUM"
+      reasons:
+        - "Meeting agenda affects CDD residents in Trout Creek/Shearwater area"
+        - "Topics may include assessments, maintenance, and community governance"
+        - "Standard monthly board meeting with routine business"
+    confidence: "HIGH"
+
+  - item_id: "trout_creek_cdd-002"
+    source_id: "trout_creek_cdd"
+    source_item_url: "https://troutcreekcdd.com/"
+    title: "Trout Creek CDD Workshop Meeting Scheduled — July 7, 2026"
+    source_created_at: "2026-06-23T19:59:04Z"
+    extracted_at: "2026-06-26T12:22:59Z"
+    content: >
+      Trout Creek Community Development District will hold a Workshop Meeting
+      on July 7, 2026 at 10:00 AM. Workshop meetings typically address specific
+      district topics such as budget planning, infrastructure projects, or policy
+      discussions in a less formal setting than regular meetings.
+    topic_classification:
+      primary_topic: "county_government"
+      secondary_topics:
+        - "community_events"
+        - "infrastructure"
+    resident_interest:
+      score: "MEDIUM"
+      reasons:
+        - "Workshop meetings may address topics directly affecting Shearwater residents"
+        - "Public participation opportunity for CDD residents"
+        - "Workshops often cover substantive policy or budget matters"
+    confidence: "MEDIUM"
+
+  - item_id: "trout_creek_cdd-003"
+    source_id: "trout_creek_cdd"
+    source_item_url: "https://troutcreekcdd.com/"
+    title: "Trout Creek CDD Regular Meeting Scheduled — July 23, 2026"
+    source_created_at: "2026-06-23T19:59:04Z"
+    extracted_at: "2026-06-26T12:22:59Z"
+    content: >
+      Trout Creek Community Development District will hold its Regular Monthly
+      Board Meeting on July 23, 2026 at 6:00 PM. Regular meetings cover district
+      operations, financial reports, approvals, and resident input. Meetings are
+      open to the public.
+    topic_classification:
+      primary_topic: "county_government"
+      secondary_topics:
+        - "community_events"
+        - "public_notices"
+    resident_interest:
+      score: "MEDIUM"
+      reasons:
+        - "Regular board meeting for Trout Creek CDD governance"
+        - "Open to Shearwater community residents"
+        - "Routine monthly business with potential operational decisions"
+    confidence: "MEDIUM"

@@ -1,0 +1,87 @@
+# =============================================================================
+# SJC_Intel — Intel Items: Six Mile Creek CDD
+# Extracted: 2026-06-26
+# Source: https://sixmilecreekcdd.com/ (WordPress, no RSS items — extracted from homepage)
+# Total items: 3
+# =============================================================================
+items:
+  - item_id: "six_mile_creek_cdd-001"
+    source_id: "six_mile_creek_cdd"
+    source_item_url: "https://sixmilecreekcdd.com/"
+    title: "Six Mile Creek CDD Board of Supervisors Vacancy Announcement"
+    source_created_at: "2026-06-12T22:45:50Z"
+    extracted_at: "2026-06-26T12:22:59Z"
+    content: >
+      The Six Mile Creek Community Development District Board of Supervisors is
+      accepting applications from individuals interested in filling a vacant CDD
+      Board seat. Candidates must be registered voters residing in Six Mile Creek
+      CDD. Letters of interest or résumés must be submitted via email to
+      ssweeting@gmsnf.com no later than noon on June 30, 2026. The Board will
+      review applications and make a selection by majority vote at the next CDD
+      meeting on July 8, 2026. The appointee must file a Statement of Financial
+      Disclosure (Form 1) within 30 days.
+    topic_classification:
+      primary_topic: "county_government"
+      secondary_topics:
+        - "public_notices"
+        - "elections"
+    resident_interest:
+      score: "HIGH"
+      reasons:
+        - "Direct opportunity for residents to serve on CDD Board of Supervisors"
+        - "Board decisions affect TrailMark community assessments and operations"
+        - "Vacancy filling process with June 30 deadline requires immediate attention"
+        - "New supervisor will participate in July 8 meeting if appointed"
+    confidence: "HIGH"
+
+  - item_id: "six_mile_creek_cdd-002"
+    source_id: "six_mile_creek_cdd"
+    source_item_url: "https://sixmilecreekcdd.com/"
+    title: "Notice of Qualifying Period for Six Mile Creek CDD Board Candidates — Seats 2 and 4"
+    source_created_at: "2026-06-12T22:45:50Z"
+    extracted_at: "2026-06-26T12:22:59Z"
+    content: >
+      Notice is hereby given that the qualifying period for candidates for the
+      office of Supervisor of the Six Mile Creek Community Development District
+      commenced at noon on June 8, 2026 and closed at noon on June 12, 2026.
+      Two seats (Seats 2 and 4) are up for election, each with a four-year term.
+      Candidates must qualify with the St. Johns County Supervisor of Elections.
+      Elections are nonpartisan and will be held concurrently with the general
+      election on November 3, 2026.
+    topic_classification:
+      primary_topic: "elections"
+      secondary_topics:
+        - "county_government"
+        - "public_notices"
+    resident_interest:
+      score: "HIGH"
+      reasons:
+        - "Direct election for CDD Board seats affecting TrailMark residents"
+        - "Two board seats up for election with four-year terms"
+        - "Election coincides with November 2026 general election"
+        - "Board decisions impact CDD assessments and community governance"
+    confidence: "HIGH"
+
+  - item_id: "six_mile_creek_cdd-003"
+    source_id: "six_mile_creek_cdd"
+    source_item_url: "https://sixmilecreekcdd.com/"
+    title: "Six Mile Creek CDD Board Meeting Agenda — June 10, 2026"
+    source_created_at: "2026-06-12T22:45:50Z"
+    extracted_at: "2026-06-26T12:22:59Z"
+    content: >
+      Agenda published for the Six Mile Creek Community Development District
+      Board of Supervisors regular meeting held on June 10, 2026. Meeting
+      agenda and supporting materials available in PDF and RTF formats from the
+      district website. Covers district business including financial reports,
+      operations, and governance items.
+    topic_classification:
+      primary_topic: "county_government"
+      secondary_topics:
+        - "public_notices"
+    resident_interest:
+      score: "LOW"
+      reasons:
+        - "Past meeting (June 10, 2026) — archival reference"
+        - "Minutes or outcomes not yet published"
+        - "Routine monthly board meeting"
+    confidence: "MEDIUM"

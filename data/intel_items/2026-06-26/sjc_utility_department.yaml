@@ -1,0 +1,48 @@
+source_id: sjc_utility_department
+fetched_at: '2026-06-26T10:53:25Z'
+source_url: https://www.sjcfl.us/departments/utility-department/
+total_items: 1
+items:
+- item_id: SJC-UD-20260626-0001
+  title: SJC Utilities 2025 Annual Report Published
+  summary: 'The St. Johns County Utilities Department published its 2025 Annual Report, highlighting fiscal responsibility, reliable service delivery, environmental stewardship, and long-term infrastructure planning. Key 2025 projects include Hastings Water Treatment Plant improvements, Northwest Water Reclamation Facility expansion, wellfield expansion projects, and wastewater process upgrades on State Road 16. The report notes residential utility bills remain approximately 10 percent below the regional average.'
+  source_id: sjc_utility_department
+  source_url: https://www.sjcfl.us/departments/utility-department/
+  source_event_id: EVT-UD-20260626-0001
+  source_published_at: '2026-03-12'
+  discovered_at: '2026-06-26T10:53:25Z'
+  discovered_by: hermes-sjc_utility_department
+  topics:
+  - infrastructure
+  - county_government
+  communities: []
+  geographic_scope: county_wide
+  urgency: ongoing
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: 'The St. Johns County Utilities Department has published its 2025 Annual Report, highlighting the department''s commitment to fiscal responsibility, reliable service delivery, environmental stewardship, and long-term infrastructure planning in support of the County''s Strategic Plan.'
+  citation:
+    source_name: St. Johns County Utility Department
+    source_type: government_website
+    accessed_at: '2026-06-26T10:53:25Z'
+    url: https://www.sjcfl.us/departments/utility-department/
+  review_status: pending_review
+  primary_topic: infrastructure
+  interest_tags:
+  - utility_impact
+  - quality_of_life
+  resident_relevance:
+    summary: 'Utilities department annual report provides insight into water/wastewater infrastructure investments, rate competitiveness, and conservation efforts affecting all SJC residents.'
+    affected_audiences:
+    - residents
+    - homeowners
+    - business_owners
+    why_it_matters: 'Annual report confirms residential rates remain approximately 10 percent below regional average. Major infrastructure projects (SR 207 WRF, Hastings WTP improvements) may affect future rates and service reliability. Reclaimed water expansion benefits residents with irrigation needs.'
+    confidence: high
+    inference_notes: 'Directly from SJC Utility Department news article at https://www.sjcfl.us/sjc-utilities-2025-annual-report/. Published March 12, 2026.'
+  taxonomy_gap: null
+  human_review_required: false
+  created_at: '2026-06-26T10:53:25Z'

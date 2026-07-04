@@ -2,8 +2,8 @@
 # SJC_Intel — Editorial Review Queue
 # =============================================================================
 # Flat queue of all intel_items requiring or eligible for review.
-# Generated: 2026-06-26T09:44:58Z
-# Total entries: 89
+# Generated: 2026-07-04T04:10:06Z
+# Total entries: 132
 # =============================================================================
 
 queue:
@@ -25,6 +25,7 @@ queue:
   interest_tags:
   - utility_impact
   - quality_of_life
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -32,7 +33,6 @@ queue:
   meeting_date: 6/22/2026
   agenda_item_number: null
   application_id: null
-  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR utility ROW permit. Public notice with project
     description, district, date, and PDF evidence.'
@@ -57,6 +57,8 @@ queue:
   sensitivity: medium
   interest_tags:
   - development_watch
+  matched_filters:
+  - major_development
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -64,7 +66,6 @@ queue:
   meeting_date: 6/18/2026
   agenda_item_number: null
   application_id: ZVAR 2026000011
-  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: Bargfrede Shed variance. Correct classification.
   reviewed_at: '2026-06-26T08:33:43Z'
@@ -88,6 +89,7 @@ queue:
   sensitivity: medium
   interest_tags:
   - development_watch
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -95,7 +97,6 @@ queue:
   meeting_date: 6/18/2026
   agenda_item_number: null
   application_id: ZVAR 2026000019
-  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR development hearing notice. Application ID,
     description, and hearing date present.'
@@ -120,6 +121,7 @@ queue:
   sensitivity: medium
   interest_tags:
   - development_watch
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -127,7 +129,6 @@ queue:
   meeting_date: 6/18/2026
   agenda_item_number: null
   application_id: ZVAR 2025000027
-  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR development hearing notice. Application ID,
     description, and hearing date present.'
@@ -150,6 +151,7 @@ queue:
   interest_tags:
   - utility_impact
   - quality_of_life
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -157,7 +159,6 @@ queue:
   meeting_date: 6/16/2026
   agenda_item_number: null
   application_id: null
-  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR utility ROW permit. Public notice with project
     description, district, date, and PDF evidence.'
@@ -180,6 +181,7 @@ queue:
   interest_tags:
   - utility_impact
   - quality_of_life
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -187,7 +189,6 @@ queue:
   meeting_date: 6/16/2026
   agenda_item_number: null
   application_id: null
-  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR utility ROW permit. Public notice with project
     description, district, date, and PDF evidence.'
@@ -209,6 +210,7 @@ queue:
   sensitivity: low
   interest_tags:
   - development_watch
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -216,7 +218,6 @@ queue:
   meeting_date: 6/16/2026
   agenda_item_number: null
   application_id: null
-  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR construction/site work ROW permit. Public notice
     with project details.'
@@ -239,6 +240,7 @@ queue:
   interest_tags:
   - utility_impact
   - quality_of_life
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -246,7 +248,6 @@ queue:
   meeting_date: 6/16/2026
   agenda_item_number: null
   application_id: null
-  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR utility ROW permit. Public notice with project
     description, district, date, and PDF evidence.'
@@ -268,6 +269,7 @@ queue:
   sensitivity: low
   interest_tags:
   - development_watch
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -275,7 +277,6 @@ queue:
   meeting_date: 6/16/2026
   agenda_item_number: null
   application_id: null
-  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR construction/site work ROW permit. Public notice
     with project details.'
@@ -298,6 +299,7 @@ queue:
   interest_tags:
   - utility_impact
   - quality_of_life
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -305,7 +307,6 @@ queue:
   meeting_date: 6/16/2026
   agenda_item_number: null
   application_id: null
-  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR utility ROW permit. Public notice with project
     description, district, date, and PDF evidence.'
@@ -328,6 +329,7 @@ queue:
   interest_tags:
   - utility_impact
   - quality_of_life
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -335,7 +337,6 @@ queue:
   meeting_date: 6/16/2026
   agenda_item_number: null
   application_id: null
-  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR utility ROW permit. Public notice with project
     description, district, date, and PDF evidence.'
@@ -358,6 +359,7 @@ queue:
   interest_tags:
   - utility_impact
   - quality_of_life
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -365,7 +367,6 @@ queue:
   meeting_date: 6/16/2026
   agenda_item_number: null
   application_id: null
-  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR utility ROW permit. Public notice with project
     description, district, date, and PDF evidence.'
@@ -388,6 +389,7 @@ queue:
   interest_tags:
   - traffic_impact
   - quality_of_life
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -395,7 +397,6 @@ queue:
   meeting_date: 6/16/2026
   agenda_item_number: null
   application_id: null
-  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR road closure notice. Lane closure with project
     details.'
@@ -420,6 +421,8 @@ queue:
   sensitivity: medium
   interest_tags:
   - development_watch
+  matched_filters:
+  - major_development
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -427,7 +430,6 @@ queue:
   meeting_date: 6/16/2026
   agenda_item_number: null
   application_id: MAJMOD 2025000011
-  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR development hearing notice. Application ID,
     description, and hearing date present.'
@@ -449,6 +451,7 @@ queue:
   sensitivity: low
   interest_tags:
   - development_watch
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -456,7 +459,6 @@ queue:
   meeting_date: 6/16/2026
   agenda_item_number: null
   application_id: null
-  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR construction/site work ROW permit. Public notice
     with project details.'
@@ -481,6 +483,7 @@ queue:
   sensitivity: medium
   interest_tags:
   - development_watch
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -488,7 +491,6 @@ queue:
   meeting_date: 6/16/2026
   agenda_item_number: null
   application_id: REZ 2026000002
-  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: Golfway Centre PUD. Correct development item.
   reviewed_at: '2026-06-26T08:33:44Z'
@@ -512,6 +514,7 @@ queue:
   sensitivity: medium
   interest_tags:
   - development_watch
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -519,7 +522,6 @@ queue:
   meeting_date: 6/16/2026
   agenda_item_number: null
   application_id: REZ 2026000001
-  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR development hearing notice. Application ID,
     description, and hearing date present.'
@@ -541,6 +543,7 @@ queue:
   sensitivity: low
   interest_tags:
   - development_watch
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -548,7 +551,6 @@ queue:
   meeting_date: 6/12/2026
   agenda_item_number: null
   application_id: null
-  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR construction/site work ROW permit. Public notice
     with project details.'
@@ -570,6 +572,7 @@ queue:
   sensitivity: low
   interest_tags:
   - development_watch
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -577,7 +580,6 @@ queue:
   meeting_date: 6/12/2026
   agenda_item_number: null
   application_id: null
-  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR construction/site work ROW permit. Public notice
     with project details.'
@@ -600,6 +602,7 @@ queue:
   interest_tags:
   - utility_impact
   - quality_of_life
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -607,7 +610,6 @@ queue:
   meeting_date: 6/12/2026
   agenda_item_number: null
   application_id: null
-  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR utility ROW permit. Public notice with project
     description, district, date, and PDF evidence.'
@@ -630,6 +632,7 @@ queue:
   interest_tags:
   - utility_impact
   - quality_of_life
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -637,7 +640,6 @@ queue:
   meeting_date: 6/12/2026
   agenda_item_number: null
   application_id: null
-  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR utility ROW permit. Public notice with project
     description, district, date, and PDF evidence.'
@@ -660,6 +662,7 @@ queue:
   interest_tags:
   - utility_impact
   - quality_of_life
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -667,7 +670,6 @@ queue:
   meeting_date: 6/12/2026
   agenda_item_number: null
   application_id: null
-  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR utility ROW permit. Public notice with project
     description, district, date, and PDF evidence.'
@@ -690,6 +692,7 @@ queue:
   interest_tags:
   - utility_impact
   - quality_of_life
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -697,7 +700,6 @@ queue:
   meeting_date: 6/12/2026
   agenda_item_number: null
   application_id: null
-  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR utility ROW permit. Public notice with project
     description, district, date, and PDF evidence.'
@@ -719,6 +721,7 @@ queue:
   sensitivity: low
   interest_tags:
   - development_watch
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -726,7 +729,6 @@ queue:
   meeting_date: 6/12/2026
   agenda_item_number: null
   application_id: null
-  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR construction/site work ROW permit. Public notice
     with project details.'
@@ -748,6 +750,7 @@ queue:
   sensitivity: low
   interest_tags:
   - development_watch
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -755,7 +758,6 @@ queue:
   meeting_date: 6/12/2026
   agenda_item_number: null
   application_id: null
-  source_event_id: EVT-NBOR-20260626-0001
   reviewer: ''
   review_notes: 'Batch verified: NBOR construction/site work ROW permit. Public notice
     with project details.'
@@ -782,6 +784,7 @@ queue:
   escalation: high
   sensitivity: low
   interest_tags: []
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://www.sjcfl.us/sjc-public-surplus-goods-auction-2026/
@@ -789,7 +792,6 @@ queue:
   meeting_date: '2026-05-26T12:00:00Z'
   agenda_item_number: null
   application_id: null
-  source_event_id: ''
   reviewer: ''
   review_notes: 'Batch verified: county news medium/high item. Official press release
     with source URL.'
@@ -815,6 +817,8 @@ queue:
   escalation: low
   sensitivity: low
   interest_tags: []
+  matched_filters:
+  - emergency_alerts
   review_status: verified
   human_review_required: false
   source_url: https://www.sjcfl.us/resiliency-improvements-porpoise-point-vehicular-beach-access-ramp/
@@ -822,7 +826,6 @@ queue:
   meeting_date: '2026-05-26T12:00:00Z'
   agenda_item_number: null
   application_id: null
-  source_event_id: ''
   reviewer: ''
   review_notes: 'Batch verified: county news low-impact item. Public announcement
     with source URL.'
@@ -849,6 +852,7 @@ queue:
   escalation: high
   sensitivity: low
   interest_tags: []
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://www.sjcfl.us/sjcpls-summer-reading-program-2026/
@@ -856,7 +860,6 @@ queue:
   meeting_date: '2026-05-18T12:00:00Z'
   agenda_item_number: null
   application_id: null
-  source_event_id: ''
   reviewer: ''
   review_notes: 'Batch verified: county news medium/high item. Official press release
     with source URL.'
@@ -881,6 +884,7 @@ queue:
   escalation: low
   sensitivity: low
   interest_tags: []
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://www.sjcfl.us/sjc-earns-statewide-communications-recognition/
@@ -888,7 +892,6 @@ queue:
   meeting_date: '2026-05-14T12:00:00Z'
   agenda_item_number: null
   application_id: null
-  source_event_id: ''
   reviewer: ''
   review_notes: 'Batch verified: county news low-impact item. Public announcement
     with source URL.'
@@ -913,6 +916,8 @@ queue:
   escalation: immediate
   sensitivity: low
   interest_tags: []
+  matched_filters:
+  - utility_disruption
   review_status: verified
   human_review_required: false
   source_url: https://www.sjcfl.us/phase-iii-extreme-water-shortage-declaration-may-2026/
@@ -920,7 +925,6 @@ queue:
   meeting_date: '2026-05-13T12:00:00Z'
   agenda_item_number: null
   application_id: null
-  source_event_id: ''
   reviewer: ''
   review_notes: Phase III Extreme Water Shortage - active, ongoing. Correct classification.
     Human review not required (official county notice).
@@ -950,6 +954,8 @@ queue:
   - utility_impact
   - cost_impact
   - emergency_awareness
+  matched_filters:
+  - utility_disruption
   review_status: verified
   human_review_required: false
   source_url: https://www.sjcfl.us/departments/utility-department/
@@ -957,7 +963,6 @@ queue:
   meeting_date: '2026-05-11'
   agenda_item_number: null
   application_id: null
-  source_event_id: ''
   reviewer: ''
   review_notes: Phase III water shortage. Same event as county news. Supporting source.
   reviewed_at: '2026-06-26T08:33:34Z'
@@ -981,6 +986,9 @@ queue:
   sensitivity: low
   interest_tags:
   - utility_impact
+  matched_filters:
+  - major_development
+  - utility_disruption
   review_status: verified
   human_review_required: false
   source_url: https://www.sjcfl.us/departments/utility-department/
@@ -988,7 +996,6 @@ queue:
   meeting_date: '2026-05-26'
   agenda_item_number: null
   application_id: null
-  source_event_id: ''
   reviewer: ''
   review_notes: 'Batch verified: utility department announcement. Official county
     utility notice with source URL.'
@@ -1015,6 +1022,7 @@ queue:
   interest_tags:
   - utility_impact
   - development_watch
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://www.sjcfl.us/departments/utility-department/
@@ -1022,7 +1030,6 @@ queue:
   meeting_date: '2025-12-19'
   agenda_item_number: null
   application_id: null
-  source_event_id: ''
   reviewer: ''
   review_notes: 'Batch verified: utility department announcement. Official county
     utility notice with source URL.'
@@ -1048,6 +1055,7 @@ queue:
   sensitivity: low
   interest_tags:
   - quality_of_life
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://www.sjcfl.us/departments/utility-department/
@@ -1055,7 +1063,6 @@ queue:
   meeting_date: null
   agenda_item_number: null
   application_id: null
-  source_event_id: ''
   reviewer: ''
   review_notes: 'Batch verified: utility department announcement. Official county
     utility notice with source URL.'
@@ -1082,6 +1089,7 @@ queue:
   interest_tags:
   - utility_impact
   - safety_concern
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://www.sjcfl.us/departments/utility-department/
@@ -1089,7 +1097,6 @@ queue:
   meeting_date: null
   agenda_item_number: null
   application_id: null
-  source_event_id: ''
   reviewer: ''
   review_notes: 'Batch verified: utility department announcement. Official county
     utility notice with source URL.'
@@ -1117,6 +1124,7 @@ queue:
   sensitivity: medium
   interest_tags:
   - safety_concern
+  matched_filters: []
   review_status: verified
   human_review_required: true
   source_url: https://www.sjso.org/st-johns-county-inmate-charged-woman-arrested-for-executing-a-contraband-drop-on-restricted-law-enforcement-property/
@@ -1124,7 +1132,6 @@ queue:
   meeting_date: '2026-05-21T12:00:00Z'
   agenda_item_number: null
   application_id: null
-  source_event_id: ''
   reviewer: ''
   review_notes: Routine crime press release. Human review done. No active threat.
   reviewed_at: '2026-06-26T08:33:34Z'
@@ -1152,6 +1159,7 @@ queue:
   interest_tags:
   - community_event
   - quality_of_life
+  matched_filters: []
   review_status: verified
   human_review_required: true
   source_url: https://www.sjso.org/lifesaving-rescue-highlights-the-importance-of-local-programs-in-place-to-locate-vulnerable-individuals-and-prevent-future-emergencies/
@@ -1159,7 +1167,6 @@ queue:
   meeting_date: '2026-05-05T12:00:00Z'
   agenda_item_number: null
   application_id: null
-  source_event_id: ''
   reviewer: ''
   review_notes: Positive community story. Human review confirms.
   reviewed_at: '2026-06-26T08:33:34Z'
@@ -1185,6 +1192,8 @@ queue:
   sensitivity: medium
   interest_tags:
   - safety_concern
+  matched_filters:
+  - major_development
   review_status: archived
   human_review_required: true
   source_url: https://www.sjso.org/nine-arrested-during-sjsos-march-2026-dui-wolfpack-operation/
@@ -1192,7 +1201,6 @@ queue:
   meeting_date: '2026-04-20T12:00:00Z'
   agenda_item_number: null
   application_id: null
-  source_event_id: ''
   reviewer: ''
   review_notes: March 2026. 3+ months old. Archival.
   reviewed_at: '2026-06-26T08:33:34Z'
@@ -1220,6 +1228,7 @@ queue:
   interest_tags:
   - safety_concern
   - emergency_awareness
+  matched_filters: []
   review_status: verified
   human_review_required: true
   source_url: https://www.sjso.org/arrest-made-in-connection-to-the-2023-double-murders-of-cody-bennett-and-tre-lyons/
@@ -1227,10 +1236,1104 @@ queue:
   meeting_date: '2025-11-25T12:00:00Z'
   agenda_item_number: null
   application_id: null
-  source_event_id: ''
   reviewer: ''
   review_notes: 2023 double murder arrest. Human review confirms facts.
   reviewed_at: '2026-06-26T08:33:34Z'
+- queue_id: Q-SJC-SL-20260704-0001
+  item_id: SJC-SL-20260704-0001
+  dedupe_key: ''
+  source_id: silverleaf_discovery
+  source_file: data/intel_items/2026-07-04/silverleaf_dev_discovery.yaml
+  title: Here's your first look at SilverLeaf's new 55,000 sq. ft. mega Publix
+  summary: A massive new Publix — one of the chain's largest at 55,701 sq. ft. — has
+    opened at 1975 SilverLeaf Parkway, giving SilverLeaf residents a full-service
+    grocery with specialty departments including a Pours café serving beer and wine,
+    a scratch bakery, custom-cut meats, fresh seafood, a full-service p
+  beat: development
+  topics:
+  - development
+  - infrastructure
+  signal: unknown
+  urgency: ongoing
+  escalation: low
+  sensitivity: low
+  interest_tags:
+  - development_watch
+  - property_values
+  - quality_of_life
+  matched_filters:
+  - neighborhood_silverleaf
+  - corridor_cr210
+  - silverleaf_northwest_dev
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://sjcitizen.com/heres-your-first-look-at-silverleafs-new-55000-sq-ft-mega-publix/
+  discovered_at: '2026-07-04T08:00:00Z'
+  meeting_date: '2026-03-26'
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-SL-20260704-0002
+  item_id: SJC-SL-20260704-0002
+  dedupe_key: ''
+  source_id: silverleaf_discovery
+  source_file: data/intel_items/2026-07-04/silverleaf_dev_discovery.yaml
+  title: 'Nailed it: St. Johns officials give sneak peek of new Silverleaf K-8 school'
+  summary: A new 190,000 sq. ft., three-story K-8 school in SilverLeaf reached its
+    structural milestone with a topping-out ceremony. The 73-classroom school will
+    serve ~1,500 students when it opens for the 2026–2027 school year, part of a district-wide
+    push to alleviate overcrowding — over 13,000 students coun
+  beat: education
+  topics:
+  - development
+  - education
+  signal: unknown
+  urgency: ongoing
+  escalation: low
+  sensitivity: low
+  interest_tags:
+  - development_watch
+  - property_values
+  - schools
+  matched_filters:
+  - neighborhood_silverleaf
+  - school_zoning_changes
+  - silverleaf_northwest_dev
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://sjcitizen.com/nailed-it-st-johns-officials-give-sneak-peek-of-new-silverleaf-k-8-school/
+  discovered_at: '2026-07-04T08:15:00Z'
+  meeting_date: '2025-05-07'
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-SL-20260704-0003
+  item_id: SJC-SL-20260704-0003
+  dedupe_key: ''
+  source_id: silverleaf_discovery
+  source_file: data/intel_items/2026-07-04/silverleaf_dev_discovery.yaml
+  title: Fore! Major new 2-acre recreational attraction proposed for SilverLeaf by
+    husband and wife team
+  summary: Beach Valley Mini Golf, a 36-hole mini-golf course with a clubhouse, pavilions,
+    and parking, has been proposed on 2 acres in SilverLeaf. The husband-and-wife
+    developer team Michael and Bridgette Goolsby would lease the land from The Hutson
+    Companies, pending county Development Review Committee appro
+  beat: development
+  topics:
+  - development
+  signal: unknown
+  urgency: ongoing
+  escalation: low
+  sensitivity: low
+  interest_tags:
+  - development_watch
+  - recreation
+  - quality_of_life
+  matched_filters:
+  - neighborhood_silverleaf
+  - silverleaf_northwest_dev
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://sjcitizen.com/fore-major-new-2-acre-recreational-attraction-proposed-for-silverleaf-by-husband-and-wife-team/
+  discovered_at: '2026-07-04T08:30:00Z'
+  meeting_date: '2026-04-08'
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-SL-20260704-0004
+  item_id: SJC-SL-20260704-0004
+  dedupe_key: ''
+  source_id: silverleaf_discovery
+  source_file: data/intel_items/2026-07-04/silverleaf_dev_discovery.yaml
+  title: 'Road relief: Here''s your first look at St. Johns County''s newest highway'
+  summary: County Road 2209 opened October 28, 2025, connecting International Golf
+    Parkway to SilverLeaf Parkway with a four-lane divided roadway spanning three
+    miles. The new route aims to relieve congestion in the rapidly growing area, particularly
+    around Tocoi Creek High School which serves over 2,700 stude
+  beat: transportation
+  topics:
+  - infrastructure
+  - transportation
+  signal: unknown
+  urgency: ongoing
+  escalation: high
+  sensitivity: low
+  interest_tags:
+  - development_watch
+  - transportation
+  - quality_of_life
+  matched_filters:
+  - neighborhood_silverleaf
+  - corridor_cr210
+  - silverleaf_northwest_dev
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://sjcitizen.com/road-relief-heres-your-first-look-at-st-johns-countys-newest-highway/
+  discovered_at: '2026-07-04T08:45:00Z'
+  meeting_date: '2025-10-28'
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-SL-20260704-0005
+  item_id: SJC-SL-20260704-0005
+  dedupe_key: ''
+  source_id: silverleaf_discovery
+  source_file: data/intel_items/2026-07-04/silverleaf_dev_discovery.yaml
+  title: St. Johns County is getting two new supermarkets — and they're not Publix
+  summary: Two 61,000 sq. ft. supermarkets from a Kroger-owned chain (identified as
+    Harris Teeter) are proposed for St. Johns County — one at Veterans Parkway and
+    CR 210 West and another in a SilverLeaf shopping center. The applications represent
+    the first major non-Publix grocery competition in the area.
+  beat: development
+  topics:
+  - development
+  signal: unknown
+  urgency: ongoing
+  escalation: low
+  sensitivity: low
+  interest_tags:
+  - development_watch
+  - property_values
+  - shopping
+  matched_filters:
+  - neighborhood_silverleaf
+  - corridor_cr210
+  - silverleaf_northwest_dev
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://sjcitizen.com/st-johns-county-is-getting-two-new-supermarkets-and-theyre-not-publix/
+  discovered_at: '2026-07-04T09:00:00Z'
+  meeting_date: '2025-12-02'
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-SL-20260704-0006
+  item_id: SJC-SL-20260704-0006
+  dedupe_key: ''
+  source_id: silverleaf_discovery
+  source_file: data/intel_items/2026-07-04/silverleaf_dev_discovery.yaml
+  title: 'Exclusive: Here''s what coming to new Nocatee retail center across from
+    water park'
+  summary: An Ascension St. Vincent's primary care center is planned for a six-storefront
+    commercial strip along Crosswater Parkway in Nocatee, directly across from Splash
+    Water Park. The center will occupy three of the six units, providing adult and
+    pediatric care including physicals, screenings, and treatmen
+  beat: development
+  topics:
+  - development
+  - healthcare
+  signal: unknown
+  urgency: ongoing
+  escalation: low
+  sensitivity: low
+  interest_tags:
+  - development_watch
+  - healthcare
+  - quality_of_life
+  matched_filters:
+  - neighborhood_nocatee
+  - silverleaf_northwest_dev
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://sjcitizen.com/exclusive-heres-what-coming-to-new-nocatee-retail-center-across-from-water-park/
+  discovered_at: '2026-07-04T09:15:00Z'
+  meeting_date: '2026-06-01'
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-NBOR-20260704-0001
+  item_id: SJC-NBOR-20260704-0001
+  dedupe_key: 39baed406fb98260
+  source_id: sjc_nbor_public_notices
+  source_file: data/intel_items/2026-07-04/sjc_nbor_public_notices.yaml
+  title: SUPMAJ 2025000029 St. Thomas Island Parkway Cell Tower
+  summary: 'Public hearing: SUPMAJ 2025000029 St. Thomas Island Parkway Cell Tower
+    — Request for a Special Use Permit, pursuant to Section 2.03.26 of the Land Development
+    Code, to allow for the construction of a 180-foot monopole tower'
+  beat: site_plans_permits_construction
+  topics:
+  - development
+  - infrastructure
+  signal: unknown
+  urgency: timely
+  escalation: high
+  sensitivity: low
+  interest_tags:
+  - development_watch
+  matched_filters: []
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  discovered_at: '2026-07-04T03:44:10Z'
+  meeting_date: 7/23/2026
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-NBOR-20260704-0002
+  item_id: SJC-NBOR-20260704-0002
+  dedupe_key: 8833e9683a093ea9
+  source_id: sjc_nbor_public_notices
+  source_file: data/intel_items/2026-07-04/sjc_nbor_public_notices.yaml
+  title: REZ 2026000012 St. Augustine Airport East
+  summary: 'Public hearing: REZ 2026000012 St. Augustine Airport East — Request to
+    rezone approximately 23 acres of land from Open Rural (OR) to Airport Development
+    (AD).'
+  beat: rezoning_comp_plan_dri
+  topics:
+  - development
+  - county_government
+  - public_notices
+  signal: unknown
+  urgency: timely
+  escalation: high
+  sensitivity: medium
+  interest_tags:
+  - development_watch
+  matched_filters: []
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  discovered_at: '2026-07-04T03:44:10Z'
+  meeting_date: 7/23/2026
+  agenda_item_number: null
+  application_id: REZ 2026000012
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-NBOR-20260704-0003
+  item_id: SJC-NBOR-20260704-0003
+  dedupe_key: 05d07f85bcc910a0
+  source_id: sjc_nbor_public_notices
+  source_file: data/intel_items/2026-07-04/sjc_nbor_public_notices.yaml
+  title: NZVAR 2026000015 Coddington Driveway
+  summary: 'Public hearing: NZVAR 2026000015 Coddington Driveway — Request for a Non-Zoning
+    Variance to Section 6.04.05.C.1 and Table 6.03 of the Land Development Code to
+    allow for a Single-Family Driveway Width of 26'
+  beat: rezoning_comp_plan_dri
+  topics:
+  - development
+  - county_government
+  - public_notices
+  signal: unknown
+  urgency: timely
+  escalation: high
+  sensitivity: medium
+  interest_tags:
+  - development_watch
+  matched_filters:
+  - major_development
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  discovered_at: '2026-07-04T03:44:10Z'
+  meeting_date: 7/21/2026
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-NBOR-20260704-0004
+  item_id: SJC-NBOR-20260704-0004
+  dedupe_key: df7c09b9725c3fdf
+  source_id: sjc_nbor_public_notices
+  source_file: data/intel_items/2026-07-04/sjc_nbor_public_notices.yaml
+  title: NZVAR 2026000014 Herlth SFR
+  summary: 'Public hearing: NZVAR 2026000014 Herlth SFR — Request for Non-Zoning Variance
+    to Section 6.04.07.B.1 of the Land Development Code to allow an additional dwelling
+    unit to take access from an easeme'
+  beat: rezoning_comp_plan_dri
+  topics:
+  - development
+  - county_government
+  - public_notices
+  signal: unknown
+  urgency: timely
+  escalation: high
+  sensitivity: medium
+  interest_tags:
+  - development_watch
+  matched_filters:
+  - major_development
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  discovered_at: '2026-07-04T03:44:10Z'
+  meeting_date: 7/21/2026
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-NBOR-20260704-0005
+  item_id: SJC-NBOR-20260704-0005
+  dedupe_key: 7a42a8e4e5a3428f
+  source_id: sjc_nbor_public_notices
+  source_file: data/intel_items/2026-07-04/sjc_nbor_public_notices.yaml
+  title: NZVAR 2026000009 5325 Porter Road Extension
+  summary: 'Public hearing: NZVAR 2026000009 5325 Porter Road Extension — Request
+    for Non-Zoning Variance to Section 6.04.07.B.1 of the Land Development Code to
+    allow an additional dwelling unit to take access from an easeme'
+  beat: rezoning_comp_plan_dri
+  topics:
+  - development
+  - county_government
+  - public_notices
+  signal: unknown
+  urgency: timely
+  escalation: high
+  sensitivity: medium
+  interest_tags:
+  - development_watch
+  matched_filters:
+  - major_development
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  discovered_at: '2026-07-04T03:44:10Z'
+  meeting_date: 7/21/2026
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-NBOR-20260704-0006
+  item_id: SJC-NBOR-20260704-0006
+  dedupe_key: e7069e220e2e92cb
+  source_id: sjc_nbor_public_notices
+  source_file: data/intel_items/2026-07-04/sjc_nbor_public_notices.yaml
+  title: MAJMOD 2023000011 Canopy Shores
+  summary: 'Public hearing: MAJMOD 2023000011 Canopy Shores — Request for a Major
+    Modification to the St. Augustine Shores PUD (ORD. 1974-16, as amended) to convert
+    the allowed use for approximately 2.8 acres of '
+  beat: rezoning_comp_plan_dri
+  topics:
+  - development
+  - county_government
+  - public_notices
+  signal: unknown
+  urgency: timely
+  escalation: high
+  sensitivity: medium
+  interest_tags:
+  - development_watch
+  matched_filters:
+  - major_development
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  discovered_at: '2026-07-04T03:44:10Z'
+  meeting_date: 7/21/2026
+  agenda_item_number: null
+  application_id: MAJMOD 2023000011
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-NBOR-20260704-0007
+  item_id: SJC-NBOR-20260704-0007
+  dedupe_key: 4f14748db0da1628
+  source_id: sjc_nbor_public_notices
+  source_file: data/intel_items/2026-07-04/sjc_nbor_public_notices.yaml
+  title: CPA(SS) 2025000013 Daily´s Place
+  summary: 'Public hearing: CPA(SS) 2025000013 Daily´s Place — A request for a Small-Scale
+    Comprehensive Plan Amendment to change the Future Land Use Map designation of
+    approximately 7.7 acres of land, located at '
+  beat: rezoning_comp_plan_dri
+  topics:
+  - development
+  - county_government
+  - public_notices
+  signal: unknown
+  urgency: timely
+  escalation: high
+  sensitivity: medium
+  interest_tags:
+  - development_watch
+  matched_filters:
+  - major_development
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  discovered_at: '2026-07-04T03:44:10Z'
+  meeting_date: 7/9/2026
+  agenda_item_number: null
+  application_id: CPA(SS) 2025000013
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-NBOR-20260704-0008
+  item_id: SJC-NBOR-20260704-0008
+  dedupe_key: b41b7e508d2524ca
+  source_id: sjc_nbor_public_notices
+  source_file: data/intel_items/2026-07-04/sjc_nbor_public_notices.yaml
+  title: ZVAR 2025000035 Bushrangers Brewery
+  summary: 'Public hearing: ZVAR 2025000035 Bushrangers Brewery — Request for a Zoning
+    Variance, pursuant to Section 2.03.02.A of the Land Development Code, to allow
+    Alcoholic Beverage Sales within 1,000 feet of a Ch'
+  beat: rezoning_comp_plan_dri
+  topics:
+  - development
+  - county_government
+  - public_notices
+  signal: unknown
+  urgency: timely
+  escalation: high
+  sensitivity: medium
+  interest_tags:
+  - development_watch
+  matched_filters: []
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  discovered_at: '2026-07-04T03:44:10Z'
+  meeting_date: 7/9/2026
+  agenda_item_number: null
+  application_id: ZVAR 2025000035
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-NBOR-20260704-0009
+  item_id: SJC-NBOR-20260704-0009
+  dedupe_key: 437d0de4db3b764a
+  source_id: sjc_nbor_public_notices
+  source_file: data/intel_items/2026-07-04/sjc_nbor_public_notices.yaml
+  title: SUPMAJ 2025000030 Bushrangers Brewery
+  summary: 'Public hearing: SUPMAJ 2025000030 Bushrangers Brewery — Request for a
+    Special Use Permit, pursuant to Section 2.03.58 of the Land Development Code,
+    to allow for a Microbrewery in Industrial Warehousing (IW)'
+  beat: site_plans_permits_construction
+  topics:
+  - development
+  - infrastructure
+  signal: unknown
+  urgency: timely
+  escalation: high
+  sensitivity: low
+  interest_tags:
+  - development_watch
+  matched_filters: []
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  discovered_at: '2026-07-04T03:44:10Z'
+  meeting_date: 7/9/2026
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-NBOR-20260704-0010
+  item_id: SJC-NBOR-20260704-0010
+  dedupe_key: e77e33c0886cd0c9
+  source_id: sjc_nbor_public_notices
+  source_file: data/intel_items/2026-07-04/sjc_nbor_public_notices.yaml
+  title: NCDRB 2026000003 North Beach Camp Resort Signage
+  summary: NCDRB 2026000003 North Beach Camp Resort Signage — Requesting design approval
+    from the North Coastal Design Review Board to install a flush-mounted wall sign.
+  beat: site_plans_permits_construction
+  topics:
+  - development
+  - infrastructure
+  signal: unknown
+  urgency: timely
+  escalation: high
+  sensitivity: low
+  interest_tags:
+  - development_watch
+  matched_filters: []
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  discovered_at: '2026-07-04T03:44:10Z'
+  meeting_date: 7/8/2026
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-NBOR-20260704-0011
+  item_id: SJC-NBOR-20260704-0011
+  dedupe_key: 0279db8f2988ccaa
+  source_id: sjc_nbor_public_notices
+  source_file: data/intel_items/2026-07-04/sjc_nbor_public_notices.yaml
+  title: ARCCC 2026000004 Marsh Landing South Monument Signs
+  summary: ARCCC 2026000004 Marsh Landing South Monument Signs — Requesting design
+    approval from the Palm Valley ARCCC for two (2) new monument signs.
+  beat: site_plans_permits_construction
+  topics:
+  - development
+  - infrastructure
+  signal: unknown
+  urgency: timely
+  escalation: high
+  sensitivity: low
+  interest_tags:
+  - development_watch
+  matched_filters: []
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  discovered_at: '2026-07-04T03:44:10Z'
+  meeting_date: 6/24/2026
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-NBOR-20260704-0012
+  item_id: SJC-NBOR-20260704-0012
+  dedupe_key: 5b83f44fcfb73ed0
+  source_id: sjc_nbor_public_notices
+  source_file: data/intel_items/2026-07-04/sjc_nbor_public_notices.yaml
+  title: ARC 2026000002 Upperline Health
+  summary: ARC 2026000002 Upperline Health — Requesting design approval from the Ponte
+    Vedra ARC for a new illuminated wall sign.
+  beat: site_plans_permits_construction
+  topics:
+  - development
+  - infrastructure
+  signal: unknown
+  urgency: timely
+  escalation: high
+  sensitivity: low
+  interest_tags:
+  - development_watch
+  matched_filters: []
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  discovered_at: '2026-07-04T03:44:10Z'
+  meeting_date: 6/24/2026
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-NBOR-20260704-0013
+  item_id: SJC-NBOR-20260704-0013
+  dedupe_key: 19dfe9f3606c49ef
+  source_id: sjc_nbor_public_notices
+  source_file: data/intel_items/2026-07-04/sjc_nbor_public_notices.yaml
+  title: Buckley Cable Construction
+  summary: 'ROW permit: Buckley Cable Construction — Fiber cable'
+  beat: site_plans_permits_construction
+  topics:
+  - development
+  - infrastructure
+  signal: unknown
+  urgency: ongoing
+  escalation: low
+  sensitivity: low
+  interest_tags:
+  - development_watch
+  matched_filters: []
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  discovered_at: '2026-07-04T03:44:10Z'
+  meeting_date: 6/24/2026
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-NBOR-20260704-0014
+  item_id: SJC-NBOR-20260704-0014
+  dedupe_key: 2e18f0cb7cddda69
+  source_id: sjc_nbor_public_notices
+  source_file: data/intel_items/2026-07-04/sjc_nbor_public_notices.yaml
+  title: Comcast
+  summary: 'ROW permit: Comcast — overhead cable'
+  beat: utilities_water
+  topics:
+  - infrastructure
+  - environment
+  signal: unknown
+  urgency: ongoing
+  escalation: high
+  sensitivity: low
+  interest_tags:
+  - utility_impact
+  - quality_of_life
+  matched_filters: []
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  discovered_at: '2026-07-04T03:44:10Z'
+  meeting_date: 6/24/2026
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-NBOR-20260704-0015
+  item_id: SJC-NBOR-20260704-0015
+  dedupe_key: 2e18f0cb7cddda69
+  source_id: sjc_nbor_public_notices
+  source_file: data/intel_items/2026-07-04/sjc_nbor_public_notices.yaml
+  title: Comcast
+  summary: 'ROW permit: Comcast — new service fiber cable'
+  beat: utilities_water
+  topics:
+  - infrastructure
+  - environment
+  signal: unknown
+  urgency: ongoing
+  escalation: high
+  sensitivity: low
+  interest_tags:
+  - utility_impact
+  - quality_of_life
+  matched_filters: []
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  discovered_at: '2026-07-04T03:44:10Z'
+  meeting_date: 6/24/2026
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-NBOR-20260704-0016
+  item_id: SJC-NBOR-20260704-0016
+  dedupe_key: 2e18f0cb7cddda69
+  source_id: sjc_nbor_public_notices
+  source_file: data/intel_items/2026-07-04/sjc_nbor_public_notices.yaml
+  title: Comcast
+  summary: 'ROW permit: Comcast — new service'
+  beat: utilities_water
+  topics:
+  - infrastructure
+  - environment
+  signal: unknown
+  urgency: ongoing
+  escalation: high
+  sensitivity: low
+  interest_tags:
+  - utility_impact
+  - quality_of_life
+  matched_filters: []
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  discovered_at: '2026-07-04T03:44:10Z'
+  meeting_date: 6/24/2026
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-NBOR-20260704-0017
+  item_id: SJC-NBOR-20260704-0017
+  dedupe_key: 5f8916af2ab984fa
+  source_id: sjc_nbor_public_notices
+  source_file: data/intel_items/2026-07-04/sjc_nbor_public_notices.yaml
+  title: FPL
+  summary: 'ROW permit: FPL — Power pole'
+  beat: utilities_water
+  topics:
+  - infrastructure
+  - environment
+  signal: unknown
+  urgency: ongoing
+  escalation: high
+  sensitivity: low
+  interest_tags:
+  - utility_impact
+  - quality_of_life
+  matched_filters: []
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  discovered_at: '2026-07-04T03:44:10Z'
+  meeting_date: 6/24/2026
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-NBOR-20260704-0018
+  item_id: SJC-NBOR-20260704-0018
+  dedupe_key: '9320825648144319'
+  source_id: sjc_nbor_public_notices
+  source_file: data/intel_items/2026-07-04/sjc_nbor_public_notices.yaml
+  title: TECO
+  summary: TECO — New service
+  beat: site_plans_permits_construction
+  topics:
+  - development
+  - infrastructure
+  signal: unknown
+  urgency: timely
+  escalation: high
+  sensitivity: low
+  interest_tags:
+  - development_watch
+  matched_filters: []
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  discovered_at: '2026-07-04T03:44:10Z'
+  meeting_date: 6/24/2026
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-NBOR-20260704-0019
+  item_id: SJC-NBOR-20260704-0019
+  dedupe_key: ec8881d62c2385d0
+  source_id: sjc_nbor_public_notices
+  source_file: data/intel_items/2026-07-04/sjc_nbor_public_notices.yaml
+  title: NBR - EAST PEYTON PKWY TRAFFIC LIGHT ACTIVATION
+  summary: 'ROW permit: NBR - EAST PEYTON PKWY TRAFFIC LIGHT ACTIVATION — Project
+    Location: Three intersections on East Peyton Pkwy: Bowling Green Way, UF Health
+    North, UF Health South Project Description: Changing three exi'
+  beat: roadwork_traffic
+  topics:
+  - transportation
+  - infrastructure
+  signal: unknown
+  urgency: ongoing
+  escalation: low
+  sensitivity: low
+  interest_tags:
+  - traffic_impact
+  - quality_of_life
+  matched_filters: []
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  discovered_at: '2026-07-04T03:44:10Z'
+  meeting_date: 6/22/2026
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-NBOR-20260704-0020
+  item_id: SJC-NBOR-20260704-0020
+  dedupe_key: 3bc1a3d6d9bac20a
+  source_id: sjc_nbor_public_notices
+  source_file: data/intel_items/2026-07-04/sjc_nbor_public_notices.yaml
+  title: 'NW Sector Community Meeting: SUPMAJ 2026-09 Colee Cove Tower'
+  summary: 'Public hearing: NW Sector Community Meeting: SUPMAJ 2026-09 Colee Cove
+    Tower — NOTICE OF NORTHWEST SECTOR COMMUNITY PLANNING PUBLIC PARTICIPATION MEETING
+    REGARDING a request for a Special Use Permit Major Review (“SUPMAJ 2026-09”'
+  beat: site_plans_permits_construction
+  topics:
+  - development
+  - infrastructure
+  signal: unknown
+  urgency: timely
+  escalation: high
+  sensitivity: low
+  interest_tags:
+  - development_watch
+  matched_filters: []
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  discovered_at: '2026-07-04T03:44:10Z'
+  meeting_date: 6/22/2026
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-NBOR-20260704-0021
+  item_id: SJC-NBOR-20260704-0021
+  dedupe_key: e1e7b41af72ede8d
+  source_id: sjc_nbor_public_notices
+  source_file: data/intel_items/2026-07-04/sjc_nbor_public_notices.yaml
+  title: Comcast
+  summary: 'ROW permit: Comcast — Replacing damaged cable'
+  beat: utilities_water
+  topics:
+  - infrastructure
+  - environment
+  signal: unknown
+  urgency: ongoing
+  escalation: high
+  sensitivity: low
+  interest_tags:
+  - utility_impact
+  - quality_of_life
+  matched_filters: []
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  discovered_at: '2026-07-04T03:44:10Z'
+  meeting_date: 6/22/2026
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-NBOR-20260704-0022
+  item_id: SJC-NBOR-20260704-0022
+  dedupe_key: e1e7b41af72ede8d
+  source_id: sjc_nbor_public_notices
+  source_file: data/intel_items/2026-07-04/sjc_nbor_public_notices.yaml
+  title: Comcast
+  summary: 'ROW permit: Comcast — Fiber cable'
+  beat: utilities_water
+  topics:
+  - infrastructure
+  - environment
+  signal: unknown
+  urgency: ongoing
+  escalation: high
+  sensitivity: low
+  interest_tags:
+  - utility_impact
+  - quality_of_life
+  matched_filters: []
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  discovered_at: '2026-07-04T03:44:10Z'
+  meeting_date: 6/22/2026
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-NBOR-20260704-0023
+  item_id: SJC-NBOR-20260704-0023
+  dedupe_key: 95704f26af67775c
+  source_id: sjc_nbor_public_notices
+  source_file: data/intel_items/2026-07-04/sjc_nbor_public_notices.yaml
+  title: City of St Augustine
+  summary: 'ROW permit: City of St Augustine — New service'
+  beat: site_plans_permits_construction
+  topics:
+  - development
+  - infrastructure
+  signal: unknown
+  urgency: ongoing
+  escalation: low
+  sensitivity: low
+  interest_tags:
+  - development_watch
+  matched_filters: []
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  discovered_at: '2026-07-04T03:44:10Z'
+  meeting_date: 6/22/2026
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-NBOR-20260704-0024
+  item_id: SJC-NBOR-20260704-0024
+  dedupe_key: ae501feb398adcb4
+  source_id: sjc_nbor_public_notices
+  source_file: data/intel_items/2026-07-04/sjc_nbor_public_notices.yaml
+  title: Beaches Energy
+  summary: 'ROW permit: Beaches Energy — New service'
+  beat: utilities_water
+  topics:
+  - infrastructure
+  - environment
+  signal: unknown
+  urgency: ongoing
+  escalation: high
+  sensitivity: low
+  interest_tags:
+  - utility_impact
+  - quality_of_life
+  matched_filters: []
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  discovered_at: '2026-07-04T03:44:10Z'
+  meeting_date: 6/22/2026
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-NBOR-20260704-0025
+  item_id: SJC-NBOR-20260704-0025
+  dedupe_key: 067830a6bee1c5c8
+  source_id: sjc_nbor_public_notices
+  source_file: data/intel_items/2026-07-04/sjc_nbor_public_notices.yaml
+  title: AT&T
+  summary: 'ROW permit: AT&T — Fiber cable'
+  beat: site_plans_permits_construction
+  topics:
+  - development
+  - infrastructure
+  signal: unknown
+  urgency: ongoing
+  escalation: low
+  sensitivity: low
+  interest_tags:
+  - development_watch
+  matched_filters: []
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  discovered_at: '2026-07-04T03:44:10Z'
+  meeting_date: 6/22/2026
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-UD-20260704-0001
+  item_id: SJC-UD-20260704-0001
+  dedupe_key: e51d6b50a414ceef
+  source_id: sjc_utility_department
+  source_file: data/intel_items/2026-07-04/sjc_utility_department.yaml
+  title: St. Johns County Completes $1.6 Million Capital Improvement Project at Plantation
+    Water Treatment Plant
+  summary: 'Completed capital project: $1.6M improvement at Plantation Water Treatment
+    Plant.'
+  beat: utilities_water
+  topics:
+  - infrastructure
+  - county_government
+  signal: unknown
+  urgency: archival
+  escalation: high
+  sensitivity: low
+  interest_tags:
+  - utility_impact
+  - quality_of_life
+  matched_filters: []
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://www.sjcfl.us/departments/utility-department/
+  discovered_at: '2026-07-04T03:48:19Z'
+  meeting_date: '2026-07-04'
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-UD-20260704-0002
+  item_id: SJC-UD-20260704-0002
+  dedupe_key: b4458b0635d1caf2
+  source_id: sjc_utility_department
+  source_file: data/intel_items/2026-07-04/sjc_utility_department.yaml
+  title: St. Johns County Utility Department Earns High Moody's Rating, Reflecting
+    Strong Financial Management
+  summary: Utility Department received high Moody's rating for strong financial management.
+  beat: utilities_water
+  topics:
+  - county_government
+  signal: unknown
+  urgency: archival
+  escalation: high
+  sensitivity: low
+  interest_tags:
+  - cost_impact
+  - community_trust
+  matched_filters: []
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://www.sjcfl.us/departments/utility-department/
+  discovered_at: '2026-07-04T03:48:19Z'
+  meeting_date: '2026-07-04'
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-six_mile_creek_cdd-001
+  item_id: six_mile_creek_cdd-001
+  dedupe_key: ''
+  source_id: six_mile_creek_cdd
+  source_file: data/intel_items/2026-06-26/six_mile_creek_cdd.yaml
+  title: Six Mile Creek CDD Board of Supervisors Vacancy Announcement
+  summary: ''
+  beat: ''
+  topics: []
+  signal: unknown
+  urgency: ongoing
+  escalation: low
+  sensitivity: low
+  interest_tags: []
+  matched_filters: []
+  review_status: pending_review
+  human_review_required: false
+  source_url: ''
+  discovered_at: ''
+  meeting_date: null
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-six_mile_creek_cdd-002
+  item_id: six_mile_creek_cdd-002
+  dedupe_key: ''
+  source_id: six_mile_creek_cdd
+  source_file: data/intel_items/2026-06-26/six_mile_creek_cdd.yaml
+  title: Notice of Qualifying Period for Six Mile Creek CDD Board Candidates — Seats
+    2 and 4
+  summary: ''
+  beat: ''
+  topics: []
+  signal: unknown
+  urgency: ongoing
+  escalation: low
+  sensitivity: low
+  interest_tags: []
+  matched_filters: []
+  review_status: pending_review
+  human_review_required: false
+  source_url: ''
+  discovered_at: ''
+  meeting_date: null
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-six_mile_creek_cdd-003
+  item_id: six_mile_creek_cdd-003
+  dedupe_key: ''
+  source_id: six_mile_creek_cdd
+  source_file: data/intel_items/2026-06-26/six_mile_creek_cdd.yaml
+  title: Six Mile Creek CDD Board Meeting Agenda — June 10, 2026
+  summary: ''
+  beat: ''
+  topics: []
+  signal: unknown
+  urgency: ongoing
+  escalation: low
+  sensitivity: low
+  interest_tags: []
+  matched_filters: []
+  review_status: pending_review
+  human_review_required: false
+  source_url: ''
+  discovered_at: ''
+  meeting_date: null
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
 - queue_id: Q-SJC-BCC-20260120-0001
   item_id: SJC-BCC-20260120-0001
   dedupe_key: 6d47e00087b32f38
@@ -1253,6 +2356,7 @@ queue:
   interest_tags:
   - development_watch
   - property_values
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -1260,7 +2364,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '1'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 2050 Comp Plan transmittal. Major land-use policy.
   reviewed_at: '2026-06-26T08:33:43Z'
@@ -1286,6 +2389,7 @@ queue:
   interest_tags:
   - development_watch
   - property_values
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -1293,7 +2397,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '2'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC rezoning/development item. Land-use resolution
     from agenda PDF.'
@@ -1319,6 +2422,7 @@ queue:
   interest_tags:
   - development_watch
   - property_values
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -1326,7 +2430,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '3'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC rezoning/development item. Land-use resolution
     from agenda PDF.'
@@ -1352,6 +2455,7 @@ queue:
   interest_tags:
   - traffic_impact
   - quality_of_life
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -1359,7 +2463,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '4'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC transportation item. Road/infrastructure resolution
     from agenda PDF.'
@@ -1386,6 +2489,8 @@ queue:
   interest_tags:
   - utility_impact
   - cost_impact
+  matched_filters:
+  - utility_disruption
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -1393,7 +2498,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '5'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: Septic-to-sewer policy. Major utility infrastructure.
   reviewed_at: '2026-06-26T08:33:43Z'
@@ -1418,6 +2522,7 @@ queue:
   interest_tags:
   - utility_impact
   - cost_impact
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -1425,7 +2530,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '6'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC utility/water consent item. Utility easement
     or infrastructure resolution from agenda PDF.'
@@ -1451,6 +2555,7 @@ queue:
   interest_tags:
   - cost_impact
   - community_trust
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -1458,7 +2563,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '7'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC budget/tax item. Budget/funding resolution from
     agenda PDF.'
@@ -1483,6 +2587,8 @@ queue:
   interest_tags:
   - development_watch
   - property_values
+  matched_filters:
+  - major_development
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -1490,7 +2596,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '8'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC rezoning/development item. Land-use resolution
     from agenda PDF.'
@@ -1513,6 +2618,7 @@ queue:
   sensitivity: low
   interest_tags:
   - community_trust
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -1520,7 +2626,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '1'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Needs follow-up: BCC procurement/contract item. Limited agenda PDF
     context for resident impact assessment.; Cash Requirement Report. Routine financial
@@ -1547,6 +2652,7 @@ queue:
   interest_tags:
   - traffic_impact
   - quality_of_life
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -1554,7 +2660,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '2'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: Road impact fee transfer. Transportation funding.
   reviewed_at: '2026-06-26T08:33:43Z'
@@ -1578,6 +2683,7 @@ queue:
   interest_tags:
   - traffic_impact
   - quality_of_life
+  matched_filters: []
   review_status: archived
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -1585,7 +2691,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '3'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch archived: BCC meeting-level metadata record. Source event tracker
     — per-item extraction is in separate file.'
@@ -1611,6 +2716,8 @@ queue:
   interest_tags:
   - development_watch
   - property_values
+  matched_filters:
+  - major_development
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -1618,7 +2725,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '4'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC rezoning/development item. Land-use resolution
     from agenda PDF.'
@@ -1643,6 +2749,8 @@ queue:
   interest_tags:
   - utility_impact
   - cost_impact
+  matched_filters:
+  - utility_disruption
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -1650,7 +2758,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '5'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC utility/water consent item. Utility easement
     or infrastructure resolution from agenda PDF.'
@@ -1675,6 +2782,8 @@ queue:
   interest_tags:
   - utility_impact
   - cost_impact
+  matched_filters:
+  - utility_disruption
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -1682,7 +2791,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '6'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC utility/water consent item. Utility easement
     or infrastructure resolution from agenda PDF.'
@@ -1707,6 +2815,8 @@ queue:
   interest_tags:
   - utility_impact
   - cost_impact
+  matched_filters:
+  - utility_disruption
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -1714,7 +2824,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '7'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC utility/water consent item. Utility easement
     or infrastructure resolution from agenda PDF.'
@@ -1739,6 +2848,7 @@ queue:
   interest_tags:
   - utility_impact
   - cost_impact
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -1746,7 +2856,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '8'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC utility/water consent item. Utility easement
     or infrastructure resolution from agenda PDF.'
@@ -1769,6 +2878,7 @@ queue:
   sensitivity: low
   interest_tags:
   - community_trust
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -1776,7 +2886,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '9'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Needs follow-up: BCC procurement/contract item. Limited agenda PDF
     context for resident impact assessment.; Summer Haven parcel acquisition for conservation.
@@ -1800,6 +2909,7 @@ queue:
   sensitivity: low
   interest_tags:
   - community_trust
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -1807,7 +2917,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '10'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Needs follow-up: BCC procurement/contract item. Limited agenda PDF
     context for resident impact assessment.; Summer Haven second parcel acquisition.
@@ -1833,6 +2942,8 @@ queue:
   interest_tags:
   - traffic_impact
   - quality_of_life
+  matched_filters:
+  - corridor_sr16
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -1840,7 +2951,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '11'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC transportation item. Road/infrastructure resolution
     from agenda PDF.'
@@ -1866,6 +2976,7 @@ queue:
   interest_tags:
   - development_watch
   - property_values
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -1873,7 +2984,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '12'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC rezoning/development item. Land-use resolution
     from agenda PDF.'
@@ -1898,6 +3008,9 @@ queue:
   interest_tags:
   - utility_impact
   - cost_impact
+  matched_filters:
+  - major_development
+  - utility_disruption
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -1905,7 +3018,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '13'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC utility/water consent item. Utility easement
     or infrastructure resolution from agenda PDF.'
@@ -1929,6 +3041,7 @@ queue:
   sensitivity: low
   interest_tags:
   - community_trust
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -1936,7 +3049,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '14'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC parks/amenities item. Donation, license agreement,
     or park resolution from agenda PDF.'
@@ -1959,6 +3071,7 @@ queue:
   sensitivity: low
   interest_tags:
   - community_trust
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -1966,7 +3079,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '15'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Needs follow-up: BCC procurement/contract item. Limited agenda PDF
     context for resident impact assessment.; Accolade Avenue access easement amendment.
@@ -1991,6 +3103,7 @@ queue:
   sensitivity: low
   interest_tags:
   - community_trust
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -1998,7 +3111,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '16'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC parks/amenities item. Donation, license agreement,
     or park resolution from agenda PDF.'
@@ -2022,6 +3134,7 @@ queue:
   sensitivity: low
   interest_tags:
   - community_trust
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2029,7 +3142,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '17'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC parks/amenities item. Donation, license agreement,
     or park resolution from agenda PDF.'
@@ -2054,6 +3166,8 @@ queue:
   sensitivity: low
   interest_tags:
   - community_trust
+  matched_filters:
+  - corridor_cr210
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2061,7 +3175,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '18'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC parks/amenities item. Donation, license agreement,
     or park resolution from agenda PDF.'
@@ -2088,6 +3201,7 @@ queue:
   interest_tags:
   - utility_impact
   - cost_impact
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2095,7 +3209,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '19'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC utility/water consent item. Utility easement
     or infrastructure resolution from agenda PDF.'
@@ -2120,6 +3233,7 @@ queue:
   interest_tags:
   - utility_impact
   - cost_impact
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2127,7 +3241,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '20'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC utility/water consent item. Utility easement
     or infrastructure resolution from agenda PDF.'
@@ -2152,6 +3265,7 @@ queue:
   interest_tags:
   - utility_impact
   - cost_impact
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2159,7 +3273,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '21'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC utility/water consent item. Utility easement
     or infrastructure resolution from agenda PDF.'
@@ -2184,6 +3297,7 @@ queue:
   interest_tags:
   - utility_impact
   - cost_impact
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2191,7 +3305,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '22'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC utility/water consent item. Utility easement
     or infrastructure resolution from agenda PDF.'
@@ -2215,6 +3328,7 @@ queue:
   sensitivity: low
   interest_tags:
   - community_trust
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2222,7 +3336,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '23'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC parks/amenities item. Donation, license agreement,
     or park resolution from agenda PDF.'
@@ -2245,6 +3358,7 @@ queue:
   sensitivity: low
   interest_tags:
   - community_trust
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2252,7 +3366,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '24'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Needs follow-up: BCC procurement/contract item. Limited agenda PDF
     context for resident impact assessment.; Barrier Island Lift Station Rehabilitation
@@ -2277,6 +3390,7 @@ queue:
   sensitivity: low
   interest_tags:
   - community_trust
+  matched_filters: []
   review_status: archived
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2284,7 +3398,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '25'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Needs follow-up: BCC procurement/contract item. Limited agenda PDF
     context for resident impact assessment.; Surplus property declaration. Purely
@@ -2309,6 +3422,7 @@ queue:
   sensitivity: low
   interest_tags:
   - community_trust
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2316,7 +3430,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '26'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Needs follow-up: BCC procurement/contract item. Limited agenda PDF
     context for resident impact assessment.; Sunsetting NW Communications Tower CAB.
@@ -2343,6 +3456,7 @@ queue:
   sensitivity: low
   interest_tags:
   - community_trust
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2350,7 +3464,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '27'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC parks/amenities item. Donation, license agreement,
     or park resolution from agenda PDF.'
@@ -2374,6 +3487,7 @@ queue:
   sensitivity: low
   interest_tags:
   - community_trust
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2381,7 +3495,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '28'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Needs follow-up: BCC procurement/contract item. Limited agenda PDF
     context for resident impact assessment.; Board appointment. Routine public appointment
@@ -2406,6 +3519,8 @@ queue:
   sensitivity: low
   interest_tags:
   - community_trust
+  matched_filters:
+  - emergency_alerts
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2413,7 +3528,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '29'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC public safety item. Safety/emergency services
     resolution from agenda PDF.'
@@ -2438,6 +3552,7 @@ queue:
   sensitivity: low
   interest_tags:
   - community_trust
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2445,7 +3560,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '30'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC public safety item. Safety/emergency services
     resolution from agenda PDF.'
@@ -2468,6 +3582,9 @@ queue:
   sensitivity: low
   interest_tags:
   - community_trust
+  matched_filters:
+  - corridor_cr210
+  - corridor_sr16
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2475,7 +3592,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '31'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Needs follow-up: BCC procurement/contract item. Limited agenda PDF
     context for resident impact assessment.; USDOT BUILD grant applications for SR
@@ -2502,6 +3618,7 @@ queue:
   interest_tags:
   - cost_impact
   - community_trust
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2509,7 +3626,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '32'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC budget/tax item. Budget/funding resolution from
     agenda PDF.'
@@ -2532,6 +3648,7 @@ queue:
   sensitivity: low
   interest_tags:
   - community_trust
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2539,7 +3656,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '33'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC parks/amenities item. Donation, license agreement,
     or park resolution from agenda PDF.'
@@ -2563,6 +3679,7 @@ queue:
   sensitivity: low
   interest_tags:
   - community_trust
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2570,7 +3687,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '34'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Batch verified: BCC parks/amenities item. Donation, license agreement,
     or park resolution from agenda PDF.'
@@ -2591,6 +3707,7 @@ queue:
   sensitivity: low
   interest_tags:
   - community_trust
+  matched_filters: []
   review_status: archived
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2598,7 +3715,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '35'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Needs follow-up: BCC procurement/contract item. Limited agenda PDF
     context for resident impact assessment.; Minutes approval. Purely administrative
@@ -2622,6 +3738,7 @@ queue:
   sensitivity: low
   interest_tags:
   - community_trust
+  matched_filters: []
   review_status: archived
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2629,7 +3746,6 @@ queue:
   meeting_date: '2026-01-20'
   agenda_item_number: '36'
   application_id: null
-  source_event_id: EVT-BCC-20260120-0011
   reviewer: ''
   review_notes: 'Needs follow-up: BCC procurement/contract item. Limited agenda PDF
     context for resident impact assessment.; Proofs of publication. Routine legal
@@ -2654,6 +3770,7 @@ queue:
   interest_tags:
   - utility_impact
   - quality_of_life
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://www.sjcfl.us/news/
@@ -2661,7 +3778,6 @@ queue:
   meeting_date: '2026-06-23'
   agenda_item_number: null
   application_id: null
-  source_event_id: ''
   reviewer: ''
   review_notes: SR 207 WRF operational. Largest capital project.
   reviewed_at: '2026-06-26T08:33:44Z'
@@ -2685,6 +3801,7 @@ queue:
   interest_tags:
   - traffic_impact
   - safety_concern
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://www.sjcfl.us/news/
@@ -2692,7 +3809,6 @@ queue:
   meeting_date: '2026-06-22'
   agenda_item_number: null
   application_id: null
-  source_event_id: ''
   reviewer: ''
   review_notes: Railroad crossing closure. Active traffic impact.
   reviewed_at: '2026-06-26T08:33:44Z'
@@ -2716,6 +3832,7 @@ queue:
   sensitivity: low
   interest_tags:
   - community_event
+  matched_filters: []
   review_status: verified
   human_review_required: false
   source_url: https://www.sjcfl.us/news/
@@ -2723,7 +3840,6 @@ queue:
   meeting_date: '2026-06-24'
   agenda_item_number: null
   application_id: null
-  source_event_id: ''
   reviewer: ''
   review_notes: 'Batch verified: county news medium/high item. Official press release
     with source URL.'
@@ -2745,6 +3861,8 @@ queue:
   sensitivity: low
   interest_tags:
   - quality_of_life
+  matched_filters:
+  - major_development
   review_status: rejected_noise
   human_review_required: false
   source_url: https://www.sjcfl.us/news/
@@ -2752,7 +3870,6 @@ queue:
   meeting_date: '2026-06-25'
   agenda_item_number: null
   application_id: null
-  source_event_id: ''
   reviewer: ''
   review_notes: Recycling driver feel-good story. Not resident-impact intel.
   reviewed_at: '2026-06-26T08:33:44Z'
@@ -2776,6 +3893,8 @@ queue:
   sensitivity: low
   interest_tags:
   - emergency_awareness
+  matched_filters:
+  - emergency_alerts
   review_status: verified
   human_review_required: false
   source_url: https://www.sjcfl.us/departments/emergency-mgmt/
@@ -2783,10 +3902,42 @@ queue:
   meeting_date: '2026-06-01'
   agenda_item_number: null
   application_id: null
-  source_event_id: ''
   reviewer: ''
   review_notes: Hurricane preparedness. Seasonal awareness.
   reviewed_at: '2026-06-26T08:33:44Z'
+- queue_id: Q-SJC-UD-20260626-0001
+  item_id: SJC-UD-20260626-0001
+  dedupe_key: ''
+  source_id: sjc_utility_department
+  source_file: data/intel_items/2026-06-26/sjc_utility_department.yaml
+  title: SJC Utilities 2025 Annual Report Published
+  summary: The St. Johns County Utilities Department published its 2025 Annual Report,
+    highlighting fiscal responsibility, reliable service delivery, environmental stewardship,
+    and long-term infrastructure planning. Key 2025 projects include Hastings Water
+    Treatment Plant improvements, Northwest Water Reclamat
+  beat: infrastructure
+  topics:
+  - infrastructure
+  - county_government
+  signal: unknown
+  urgency: ongoing
+  escalation: low
+  sensitivity: low
+  interest_tags:
+  - utility_impact
+  - quality_of_life
+  matched_filters:
+  - corridor_sr16
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://www.sjcfl.us/departments/utility-department/
+  discovered_at: '2026-06-26T10:53:25Z'
+  meeting_date: '2026-03-12'
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
 - queue_id: Q-SJC-SJSO-20260626-0001
   item_id: SJC-SJSO-20260626-0001
   dedupe_key: ''
@@ -2805,6 +3956,7 @@ queue:
   sensitivity: medium
   interest_tags:
   - safety_concern
+  matched_filters: []
   review_status: verified
   human_review_required: true
   source_url: https://www.sjso.org/news-stories/
@@ -2812,7 +3964,156 @@ queue:
   meeting_date: '2026-06-22'
   agenda_item_number: null
   application_id: null
-  source_event_id: ''
   reviewer: ''
   review_notes: Jail escape plot. Human review done. No public threat.
   reviewed_at: '2026-06-26T08:33:34Z'
+- queue_id: Q-tolomato_cdd-001
+  item_id: tolomato_cdd-001
+  dedupe_key: ''
+  source_id: tolomato_cdd
+  source_file: data/intel_items/2026-06-26/tolomato_cdd.yaml
+  title: Tolomato CDD Board Meeting Agenda — June 23, 2026
+  summary: ''
+  beat: ''
+  topics: []
+  signal: unknown
+  urgency: ongoing
+  escalation: low
+  sensitivity: low
+  interest_tags: []
+  matched_filters: []
+  review_status: pending_review
+  human_review_required: false
+  source_url: ''
+  discovered_at: ''
+  meeting_date: null
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-tolomato_cdd-002
+  item_id: tolomato_cdd-002
+  dedupe_key: ''
+  source_id: tolomato_cdd
+  source_file: data/intel_items/2026-06-26/tolomato_cdd.yaml
+  title: Tolomato CDD Board Meeting Minutes — April 28, 2026
+  summary: ''
+  beat: ''
+  topics: []
+  signal: unknown
+  urgency: ongoing
+  escalation: low
+  sensitivity: low
+  interest_tags: []
+  matched_filters: []
+  review_status: pending_review
+  human_review_required: false
+  source_url: ''
+  discovered_at: ''
+  meeting_date: null
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-tolomato_cdd-003
+  item_id: tolomato_cdd-003
+  dedupe_key: ''
+  source_id: tolomato_cdd
+  source_file: data/intel_items/2026-06-26/tolomato_cdd.yaml
+  title: Tolomato CDD FY2026 Assessment Information Published
+  summary: ''
+  beat: ''
+  topics: []
+  signal: unknown
+  urgency: ongoing
+  escalation: low
+  sensitivity: low
+  interest_tags: []
+  matched_filters: []
+  review_status: pending_review
+  human_review_required: false
+  source_url: ''
+  discovered_at: ''
+  meeting_date: null
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-trout_creek_cdd-001
+  item_id: trout_creek_cdd-001
+  dedupe_key: ''
+  source_id: trout_creek_cdd
+  source_file: data/intel_items/2026-06-26/trout_creek_cdd.yaml
+  title: Trout Creek CDD Meeting Agenda — June 25, 2026 (Revised)
+  summary: ''
+  beat: ''
+  topics: []
+  signal: unknown
+  urgency: ongoing
+  escalation: low
+  sensitivity: low
+  interest_tags: []
+  matched_filters: []
+  review_status: pending_review
+  human_review_required: false
+  source_url: ''
+  discovered_at: ''
+  meeting_date: null
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-trout_creek_cdd-002
+  item_id: trout_creek_cdd-002
+  dedupe_key: ''
+  source_id: trout_creek_cdd
+  source_file: data/intel_items/2026-06-26/trout_creek_cdd.yaml
+  title: Trout Creek CDD Workshop Meeting Scheduled — July 7, 2026
+  summary: ''
+  beat: ''
+  topics: []
+  signal: unknown
+  urgency: ongoing
+  escalation: low
+  sensitivity: low
+  interest_tags: []
+  matched_filters: []
+  review_status: pending_review
+  human_review_required: false
+  source_url: ''
+  discovered_at: ''
+  meeting_date: null
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-trout_creek_cdd-003
+  item_id: trout_creek_cdd-003
+  dedupe_key: ''
+  source_id: trout_creek_cdd
+  source_file: data/intel_items/2026-06-26/trout_creek_cdd.yaml
+  title: Trout Creek CDD Regular Meeting Scheduled — July 23, 2026
+  summary: ''
+  beat: ''
+  topics: []
+  signal: unknown
+  urgency: ongoing
+  escalation: low
+  sensitivity: low
+  interest_tags: []
+  matched_filters: []
+  review_status: pending_review
+  human_review_required: false
+  source_url: ''
+  discovered_at: ''
+  meeting_date: null
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
