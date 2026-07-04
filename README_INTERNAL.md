@@ -66,6 +66,7 @@ is tip-surfacing/context unless verified by official records.
 | Dedupe index | `data/index/prior_items.yaml` | 115 unique fingerprints |
 | Review queue | `data/review_queue/queue.yaml` | 132 entries (43 pending, 83 verified) |
 | Interest filters | `registry/interest_filters.yaml` | Keyword rules for flagging priority items |
+| Tracked entities | `registry/tracked_entities.yaml` | 11 durable things watched over time |
 
 ### Agents
 | Agent | Type | File | Purpose |
@@ -112,7 +113,7 @@ tracked entities workflow (ENT-001..004) and fixing BCC agenda link gaps.
    not extractable. Need Clerk's office verification. (GAP-001)
 2. **No Hermes runtime** for automated daily monitoring. (ongoing)
 3. **No `scripts/extract_utility.py`** — utility monitoring is manual.
-4. **Tracked entities workflow not built** — ENT-001..004 in backlog.
+4. **Tracked entity → intel_item linkage not wired** — ENT-002 (queue builder integration) pending.
 5. **School district has no June coverage** — BoardDocs pilot pending.
 6. **Tier 3 (CDD) and Tier 4 (community) sources** not promoted.
 7. **Monthly closeout** — last monthly run was 2026-06-08 (26+ days ago).

@@ -20,13 +20,12 @@ This doc links to them rather than duplicating all fields.
 │    source    │────→│  source_event │────→│  intel_item  │────→│ review_queue_entry  │
 │ (registry)   │     │  (data/)      │     │  (data/)     │     │ (data/review_queue/) │
 └──────────────┘     └───────────────┘     └──────┬───────┘     └─────────────────────┘
-                                                  │
-                                                  │ (planned)
-                                                  ▼
-                                          ┌───────────────┐
-                                          │tracked_entity │
-                                          │ (registry/)   │
-                                          └───────────────┘
+                                                   │
+                                                   ▼
+                                           ┌───────────────┐
+                                           │tracked_entity │
+                                           │ (registry/)   │
+                                           └───────────────┘
 ```
 
 Supporting registries:
@@ -50,7 +49,7 @@ Supporting registries:
 | `interest_filter` | `registry/interest_filters.yaml` | One keyword-based priority rule | `id` (e.g. `utility_disruption`) | Matches intel_items via keyword scan | **implemented** |
 | `community` | `registry/communities.yaml` | One geographic community/corridor/municipality | `id` (e.g. `silverleaf`) | Referenced by intel_items, sources | **implemented** |
 | `beat_candidate` | `registry/beat_candidates.yaml` | One proposed homeowner beat | `beat_id` (e.g. `CAND-BEAT-0001`) | Maps to taxonomy topics + interest tags | **implemented** |
-| `tracked_entity` | `registry/tracked_entities.yaml` (planned) | One durable thing watched over time | `entity_id` (planned) | Has many intel_items (planned) | **planned** (ENT-001..004) |
+| `tracked_entity` | `registry/tracked_entities.yaml` | One durable thing watched over time | `entity_id` (e.g. `ENT-RETAIL-PUBLIX-SILVERLEAF`) | Has many intel_items (via tracked_entity_ids — not yet wired) | **implemented** |
 
 ---
 
@@ -87,10 +86,9 @@ One **tracked_entity** (planned) = one durable thing:
 
 ```
 source ──has_many──→ source_event ──has_many──→ intel_item ──has_one──→ review_queue_entry
-                                                    │
-                                                    │ (planned)
-                                                    ▼
-                                              tracked_entity
+                                                     │
+                                                     ▼
+                                               tracked_entity
 
 intel_item ──has_one──→ dedupe_entry (via _dedupe_key)
 intel_item ──referenced_by──→ review_queue_entry (via item_id)
@@ -99,7 +97,7 @@ intel_item ──tags──→ community (via communities[])
 intel_item ──tags──→ topic (via taxonomy.md controlled vocab)
 ```
 
-Planned:
+Pending (ENT-002):
 ```
 intel_item ──has_many──→ tracked_entity (via tracked_entity_ids[])
 tracked_entity ──has_many──→ intel_item (reverse link)
@@ -118,7 +116,7 @@ tracked_entity ──has_many──→ intel_item (reverse link)
 | `dedupe_key` | 16-char hex hash (MD5-based, deterministic) | `e686c07578f7530e` |
 | `candidate_id` | `CAND-SRC-{NNNN}` or descriptive | `CAND-SRC-0001`, `st_johns_citizen` |
 | `beat_id` | `CAND-BEAT-{NNNN}` | `CAND-BEAT-0001` |
-| `entity_id` (planned) | `ENT-{prefix}-{YYYYMMDD}-{NNNN}` (provisional) | Not yet assigned |
+| `entity_id` | `ENT-{TYPE_PREFIX}-{DESCRIPTIVE-SLUG}` | `ENT-RETAIL-PUBLIX-SILVERLEAF`, `ENT-EDU-SILVERLEAF-K8` |
 
 Item ID source prefixes observed: `NBOR`, `BCC`, `CN` (county_news), `SJSO`,
 `UTIL` (utility), `SL` (silverleaf_discovery), `EM` (emergency_management),
@@ -154,8 +152,10 @@ Free-text detail on extraction outcome (e.g. "Agenda PDF extracted (44 items).")
 ### community.status (on community)
 `active` / `observed` — whether community is actively used or just identified
 
-### tracked_entity.lifecycle_status (planned)
-Not yet designed. Likely values: `tracking` / `active` / `completed` / `dormant` / `archived`.
+### tracked_entity.lifecycle_status
+`proposed` → `approved` → `under_construction` → `completed` → `dormant` → `cancelled` → `archived`
+Non-project types: `tracked` → `dormant` → `archived`
+See `schemas/tracked_entity.schema.yaml` for field-level spec.
 
 ---
 
@@ -202,24 +202,17 @@ Concrete examples:
 
 ---
 
-## 10. Tracked Entities / ENT Placeholder
+## 10. Tracked Entities
 
-Tracked entities are **planned** (ENT-001..004 in BACKLOG.md). They represent
-durable things watched over time:
+Tracked entities are **implemented** (ENT-001 complete 2026-07-04). Registry at
+`registry/tracked_entities.yaml`, schema at `schemas/tracked_entity.schema.yaml`.
 
-- SilverLeaf master-planned community (development, schools, retail)
-- A specific CDD (Tolomato, Trout Creek, Six Mile Creek)
-- A road project (CR 2209 highway connector, SR 16 widening)
-- A development (Publix at SilverLeaf, Harris Teeter)
-- A utility project (reclaimed water expansion)
+Entity IDs follow the pattern `ENT-{TYPE_PREFIX}-{DESCRIPTIVE-SLUG}` (no date —
+entities are durable across sessions). See §6 ID Conventions.
 
-Likely future location: `registry/tracked_entities.yaml`
-
-Likely future ID: `entity_id` (pattern TBD)
-
-Likely future intel_item field: `tracked_entity_ids: ["ENT-..."]`
-
-Buddy confirmed 2026-07-04: document the gap; do not build yet.
+Intel item linkage (`tracked_entity_ids` field on intel_item) is pending ENT-002.
+Entity names/aliases are manually mirrored to `registry/interest_filters.yaml`
+until auto-generation is built.
 
 ---
 
@@ -238,10 +231,7 @@ Buddy confirmed 2026-07-04: document the gap; do not build yet.
    timestamp each. This may be too thin for future operational state (per-source
    run tracking, error counts, item volumes).
 
-4. **tracked_entities design not finalized** — Schema, ID format, lifecycle
-   status, and intel_item linkage fields are all TBD.
-
-5. **Entity proliferation risk** — Avoid creating a tracked_entity for every
+4. **Entity proliferation risk** — Avoid creating a tracked_entity for every
    one-off item. Only durable, multi-event things should get entity records.
 
 6. **Official evidence vs leads/context** — Items from official government

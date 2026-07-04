@@ -1,0 +1,170 @@
+# =============================================================================
+# SJC_Intel — Tracked Entity Schema
+# =============================================================================
+# A tracked_entity is a durable thing watched over time: a development project,
+# road, school, business, CDD, or community that may produce multiple intel
+# items across multiple monitoring sessions.
+#
+# Schema version: 1.0
+# Status: active
+# =============================================================================
+
+# --- Core identity ---
+
+entity_id:
+  type: string
+  description: >
+    Unique identifier for this tracked entity. Format:
+    ENT-{TYPE_PREFIX}-{DESCRIPTIVE-SLUG}
+    No date in the ID — entities are durable across sessions.
+  required: true
+  pattern: "^ENT-[A-Z0-9]+-[A-Z0-9a-z-]+$"
+  example: "ENT-RETAIL-PUBLIX-SILVERLEAF"
+
+entity_type:
+  type: string
+  description: >
+    Controlled vocabulary for the kind of thing being tracked.
+  required: true
+  allowed:
+    - retail_development
+    - education_facility
+    - recreational_attraction
+    - transportation_project
+    - healthcare_facility
+    - mixed_use_development
+    - hospitality
+    - residential_development
+    - road_project
+    - infrastructure_project
+    - cdd
+    - community
+    - business
+    - other
+  example: "retail_development"
+
+label:
+  type: string
+  description: Human-readable name of the entity.
+  required: true
+  example: "SilverLeaf Mega Publix"
+
+description:
+  type: string
+  description: >
+    One-to-three-sentence description of what this entity is,
+    where it is, and why it matters to residents.
+  required: false
+  example: "55,701 sq ft Publix at 1975 SilverLeaf Parkway with Pours lounge"
+
+# --- Lifecycle ---
+
+lifecycle_status:
+  type: string
+  description: >
+    Current stage of this entity's lifecycle.
+    Project types follow: proposed → approved → under_construction → completed
+    Non-project types: tracked → dormant
+  required: true
+  allowed:
+    - proposed
+    - approved
+    - under_construction
+    - completed
+    - dormant
+    - cancelled
+    - tracked
+    - archived
+  example: "completed"
+
+priority:
+  type: string
+  description: How important it is to keep this entity's status current.
+  required: true
+  allowed: [critical, high, medium, low]
+  example: "high"
+
+# --- Geographic and topical context ---
+
+communities:
+  type: array<string>
+  description: >
+    Community IDs from registry/communities.yaml that this entity
+    geographically belongs to. Optional — not all entities are
+    geographically scoped.
+  required: false
+  example: ["silverleaf"]
+
+# --- Names and search ---
+
+aliases:
+  type: array<string>
+  description: >
+    Alternative names, abbreviations, or search terms that refer to
+    this entity. Used by interest_filters and search discovery.
+  required: false
+  example: ["Publix at SilverLeaf", "1975 SilverLeaf Parkway Publix"]
+
+search_queries:
+  type: array<string>
+  description: >
+    Specific web search queries that find updates about this entity.
+    Used by Hermes search discovery workers.
+  required: false
+  example:
+    - '"SilverLeaf" Publix'
+    - '"1975 SilverLeaf Parkway"'
+
+# --- Evidence and sources ---
+
+sources:
+  type: array<object>
+  description: >
+    URLs and source references where this entity is discussed.
+    For one-off articles; an entity may have multiple sources over time.
+  required: false
+  fields:
+    url:
+      type: string
+      description: Full URL to the source content.
+    label:
+      type: string
+      description: Short label for the source.
+    source_id:
+      type: string
+      description: Reference to a registered source in registry/sources.yaml, if applicable.
+  example:
+    - url: "https://sjcitizen.com/heres-your-first-look-at-silverleafs-new-55000-sq-ft-mega-publix/"
+      label: "Grand opening article"
+      source_id: "st_johns_citizen"
+
+evidence_notes:
+  type: string
+  description: >
+    Notes on the quality and basis of evidence for this entity.
+    Use for uncertainty, privacy concerns, or attribution.
+  required: false
+  example: "Confirmed by St. Johns Citizen article. No official county record verified."
+
+# --- Audit ---
+
+last_checked:
+  type: string
+  description: >
+    ISO 8601 date when this entity's status was last verified.
+    Null if never checked after seeding.
+  required: false
+  nullable: true
+  example: "2026-07-04"
+
+tracked_since:
+  type: string
+  description: ISO 8601 date when tracking began.
+  required: true
+  example: "2026-07-04"
+
+notes:
+  type: string
+  description: Free-text notes — rationale for tracking, risks, open questions.
+  required: false
+  example: "Largest Publix in the area. Monitor for competing grocery announcements."

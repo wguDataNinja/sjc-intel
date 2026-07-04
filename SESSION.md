@@ -63,3 +63,81 @@ Buddy's GPT research thread storage.
 - `docs/reviews/codex_review_output.md` — review artifact, not active
 - `docs/repo_audit.md` — historical audit, not active
 - `docs/source_promotion/first_wave_source_promotion_packet.md` — historical
+
+---
+
+# SJC_Intel Session — 2026-07-04 (Tracked Entities Design)
+
+## Task
+Design the tracked_entities workflow using the new data model.
+
+## Summary
+Inspected all context files and produced `docs/design/tracked_entities_design.md`.
+The design resolves tracked_entity ↔ intel_item, interest_filter, community,
+and source relationships. Defines schema, entity types, lifecycle statuses,
+ID convention, and clear ENT-001 implementation boundaries. Does not create
+the registry file yet — design only per constraints.
+
+## Key Design Decisions
+- Entity IDs are descriptive slugs (`ENT-RETAIL-PUBLIX-SILVERLEAF`), not
+  date-based. Entities are durable across sessions.
+- Interest filters and tracked entities are separate concerns: filters are
+  lightweight keyword rules; entities are authoritative records.
+- Future: build_review_queue.py should load both registries and auto-tag.
+- ENT-001 scope: create registry + schema + seed ~8 entities. ENT-002..004
+  deferred (auto-tagging, Hermes prompt, stakeholder workflow doc).
+
+## Files Created
+- `docs/design/tracked_entities_design.md` — full design, schema, types,
+  lifecycle, ID convention, seed list, implementation boundaries
+
+## Files Updated
+- `SESSION.md` — appended this session record
+- `LOG.md` — appended this session record
+
+## Not Modified
+- No registry, scripts, data artifacts, or core docs changed.
+- No commits.
+
+---
+
+# SJC_Intel Session — 2026-07-04 (ENT-001 Implementation)
+
+## Task
+Implement ENT-001 tracked entities registry and schema.
+
+## Summary
+Created `registry/tracked_entities.yaml` with 10 seed entities (8 from design
+doc + 2 non-retail: SR 207 WRF, SilverLeaf community). Created
+`schemas/tracked_entity.schema.yaml`. Updated `docs/data_model.md` to mark
+tracked_entities as implemented. Updated `README_INTERNAL.md` pipeline table
+and open loops. Marked ENT-001 done in BACKLOG.md.
+
+## Files Created
+- `registry/tracked_entities.yaml` — 11 entities seeded
+- `schemas/tracked_entity.schema.yaml` — field-level spec
+
+## Files Updated
+- `docs/data_model.md` — tracked_entities marked implemented, ID convention
+  updated, lifecycle status documented, placeholder section rewritten
+- `README_INTERNAL.md` — added tracked entities row to Review Pipeline table,
+  updated open loop #4
+- `BACKLOG.md` — ENT-001: todo → done
+- `SESSION.md` — appended this session record
+- `LOG.md` — appended this session record
+
+## Entities Seeded
+1. SilverLeaf Mega Publix (retail_development, completed)
+2. Harris Teeter — SilverLeaf (retail_development, proposed)
+3. SilverLeaf K-8 School (education_facility, under_construction)
+4. Beach Valley Mini Golf (recreational_attraction, proposed)
+5. CR 2209 Connector (road_project, completed)
+6. Ascension St. Vincent's — Nocatee (healthcare_facility, proposed)
+7. Fairfield Inn & Suites — CR 210 (hospitality, proposed)
+8. Nocatee Crosswater Retail Center (mixed_use_development, under_construction)
+9. SR 207 Water Reclamation Facility Phase 2 (infrastructure_project, approved)
+10. SilverLeaf Master-Planned Community (community, tracked)
+
+## Not Modified
+- No scripts, data artifacts, or registries (other than tracked_entities) changed.
+- No commits.

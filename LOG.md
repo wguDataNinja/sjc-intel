@@ -14,3 +14,30 @@
 - Updated stale references in docs/cadence.md and docs/operator_mode.md
 
 **Validation:** All YAML valid. No data artifacts modified. No stale refs in core docs.
+
+## 2026-07-04 (Tracked Entities Design) — Design ENT workflow
+
+**Task:** Design tracked_entities workflow.
+
+**Work done:**
+- Inspected all context files (data_model, taxonomy, cadence, registry, etc.)
+- Created `docs/design/tracked_entities_design.md` with full schema, entity
+  types, lifecycle statuses, ID convention, seed list, implementation boundaries
+- Resolved entity ↔ intel_item, interest_filter, community, source relationships
+- Defined ENT-001 scope (registry + schema + seed) vs deferred (ENT-002..004)
+- Appended SESSION.md and LOG.md
+
+**Design-only session.** No files modified outside docs/design/ and session logs.
+
+## 2026-07-04 (ENT-001 Implementation) — Create tracked entities registry
+
+**Task:** Implement ENT-001 tracked entities registry.
+
+**Work done:**
+- Created `registry/tracked_entities.yaml` with 10 seed entities
+- Created `schemas/tracked_entity.schema.yaml`
+- Updated `docs/data_model.md` (marked tracked_entities as implemented)
+- Updated `README_INTERNAL.md` (pipeline table, open loops)
+- Marked ENT-001 done in BACKLOG.md
+
+**Validation:** All YAML valid. Communities cross-referenced. No scripts or data changed.

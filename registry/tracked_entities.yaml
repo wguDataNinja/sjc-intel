@@ -1,0 +1,334 @@
+# =============================================================================
+# SJC_Intel — Tracked Entities Registry
+# =============================================================================
+# Durable things watched over time. Each entity has a lifecycle status,
+# search queries, and linked intel items.
+#
+# Rules:
+# - Only create entities when multiple intel items are expected across sessions.
+# - One-off mentions do not need entities.
+# - Update lifecycle_status when new evidence arrives.
+# - Keep evidence_notes for uncertainty.
+#
+# Schema version: 1.0
+# Status: active
+# Last updated: 2026-07-04
+# Updated by: sjc-intel-architect
+# =============================================================================
+
+tracked_entities:
+
+  # --------------------------------------------------------------------------
+  # Retail Development
+  # --------------------------------------------------------------------------
+
+  - entity_id: "ENT-RETAIL-PUBLIX-SILVERLEAF"
+    entity_type: "retail_development"
+    label: "SilverLeaf Mega Publix"
+    description: >
+      55,701 sq. ft. Publix at 1975 SilverLeaf Parkway — one of the chain's
+      largest stores. Features Pours beer/wine café, scratch bakery, custom
+      meats, seafood, full-service pharmacy, and prepared food stations.
+    lifecycle_status: "completed"
+    priority: "high"
+    communities:
+      - silverleaf
+    aliases:
+      - "Publix at SilverLeaf"
+      - "1975 SilverLeaf Parkway Publix"
+      - "SilverLeaf Publix"
+    search_queries:
+      - '"SilverLeaf" Publix'
+      - '"1975 SilverLeaf Parkway" grocery'
+    sources:
+      - url: "https://sjcitizen.com/heres-your-first-look-at-silverleafs-new-55000-sq-ft-mega-publix/"
+        label: "Grand opening article"
+        source_id: "st_johns_citizen"
+      - url: "https://sjcitizen.com/go-cart-heres-when-st-johns-countys-new-supersized-publix-will-start-slinging-subs/"
+        label: "Grand opening announcement"
+        source_id: "st_johns_citizen"
+    evidence_notes: >
+      Confirmed by multiple St. Johns Citizen articles. Opened March 26, 2026.
+      No county permit record independently verified.
+    last_checked: "2026-07-04"
+    tracked_since: "2026-07-04"
+
+  - entity_id: "ENT-RETAIL-HARRIS-TEETER-SILVERLEAF"
+    entity_type: "retail_development"
+    label: "Harris Teeter — SilverLeaf"
+    description: >
+      Proposed 61,000 sq. ft. Harris Teeter (Kroger-owned) supermarket in a
+      SilverLeaf shopping center. Would be the first major non-Publix grocery
+      competition in the area.
+    lifecycle_status: "proposed"
+    priority: "medium"
+    communities:
+      - silverleaf
+    aliases:
+      - "Harris Teeter SilverLeaf"
+      - "SilverLeaf Harris Teeter"
+    search_queries:
+      - '"Harris Teeter" SilverLeaf'
+      - '"61,000" supermarket SilverLeaf'
+    sources:
+      - url: "https://sjcitizen.com/st-johns-county-is-getting-two-new-supermarkets-and-theyre-not-publix/"
+        label: "Supermarket announcement"
+        source_id: "st_johns_citizen"
+    evidence_notes: >
+      Reported by St. Johns Citizen Dec 2025. Proposed status — no permit
+      or county approval record found yet.
+    last_checked: "2026-07-04"
+    tracked_since: "2026-07-04"
+
+  # --------------------------------------------------------------------------
+  # Education Facilities
+  # --------------------------------------------------------------------------
+
+  - entity_id: "ENT-EDU-SILVERLEAF-K8"
+    entity_type: "education_facility"
+    label: "SilverLeaf K-8 School"
+    description: >
+      New 190,000 sq. ft., three-story K-8 school in SilverLeaf with 73
+      classrooms serving approximately 1,500 students. Part of district
+      strategy to reduce overcrowding (13,000+ students currently in portables).
+    lifecycle_status: "under_construction"
+    priority: "high"
+    communities:
+      - silverleaf
+    aliases:
+      - "SilverLeaf K-8"
+      - "SilverLeaf school"
+      - "SilverLeaf K-8 school QQ"
+    search_queries:
+      - '"SilverLeaf" K-8 school'
+      - '"SilverLeaf" school opening'
+      - '"SilverLeaf" elementary'
+    sources:
+      - url: "https://sjcitizen.com/nailed-it-st-johns-officials-give-sneak-peek-of-new-silverleaf-k-8-school/"
+        label: "Topping-out ceremony article"
+        source_id: "st_johns_citizen"
+    evidence_notes: >
+      Topping-out ceremony held May 2025. School expected to open for
+      2026-2027 school year (starting Aug 2026). Name not yet announced.
+    last_checked: "2026-07-04"
+    tracked_since: "2026-07-04"
+
+  # --------------------------------------------------------------------------
+  # Recreational Attractions
+  # --------------------------------------------------------------------------
+
+  - entity_id: "ENT-REC-BEACH-VALLEY-MINI-GOLF"
+    entity_type: "recreational_attraction"
+    label: "Beach Valley Mini Golf"
+    description: >
+      Proposed 36-hole miniature golf course on 2 acres in SilverLeaf, near
+      SilverLeaf Drive and St. Johns Parkway. Includes clubhouse, pavilions,
+      and parking. Developed by Michael and Bridgette Goolsby, leasing from
+      The Hutson Companies.
+    lifecycle_status: "proposed"
+    priority: "medium"
+    communities:
+      - silverleaf
+    aliases:
+      - "Beach Valley Mini Golf SilverLeaf"
+      - "SilverLeaf mini golf"
+    search_queries:
+      - '"Beach Valley Mini Golf" SilverLeaf'
+      - '"SilverLeaf" mini golf'
+    sources:
+      - url: "https://sjcitizen.com/fore-major-new-2-acre-recreational-attraction-proposed-for-silverleaf-by-husband-and-wife-team/"
+        label: "Formal application article"
+        source_id: "st_johns_citizen"
+      - url: "https://sjcitizen.com/putt-proposal-major-new-recreational-center-proposed-at-silverleaf/"
+        label: "Pre-application article"
+        source_id: "st_johns_citizen"
+    evidence_notes: >
+      Pre-application submitted Aug 2025. Formal application scheduled for
+      DRC review Apr 22, 2026. No follow-up article confirming approval or
+      denial. Status needs verification.
+    last_checked: "2026-07-04"
+    tracked_since: "2026-07-04"
+
+  # --------------------------------------------------------------------------
+  # Transportation / Road Projects
+  # --------------------------------------------------------------------------
+
+  - entity_id: "ENT-ROAD-CR-2209-CONNECTOR"
+    entity_type: "road_project"
+    label: "CR 2209 Connector (IGP to SilverLeaf Parkway)"
+    description: >
+      Three-mile, four-lane divided roadway connecting International Golf
+      Parkway to SilverLeaf Parkway. Opened October 28, 2025. Relieves
+      congestion around Tocoi Creek High School (2,700+ students) and
+      provides a direct SilverLeaf-to-IGP route.
+    lifecycle_status: "completed"
+    priority: "high"
+    communities:
+      - silverleaf
+      - cr_210_corridor
+    aliases:
+      - "CR 2209"
+      - "County Road 2209"
+      - "SilverLeaf Parkway connector"
+    search_queries:
+      - '"CR 2209" SilverLeaf'
+      - '"County Road 2209"'
+      - '"International Golf Parkway" SilverLeaf'
+    sources:
+      - url: "https://sjcitizen.com/road-relief-heres-your-first-look-at-st-johns-countys-newest-highway/"
+        label: "Opening announcement"
+        source_id: "st_johns_citizen"
+    evidence_notes: >
+      Opened Oct 28, 2025 per St. Johns Citizen. County public works
+      record not independently verified.
+    last_checked: "2026-07-04"
+    tracked_since: "2026-07-04"
+
+  # --------------------------------------------------------------------------
+  # Healthcare Facilities
+  # --------------------------------------------------------------------------
+
+  - entity_id: "ENT-HEALTH-ASCENSION-NOCATEE"
+    entity_type: "healthcare_facility"
+    label: "Ascension St. Vincent's — Nocatee"
+    description: >
+      Ascension St. Vincent's primary care center planned for a six-storefront
+      commercial strip on Crosswater Parkway in Nocatee, across from Splash
+      Water Park. Will occupy three units with adult and pediatric care.
+    lifecycle_status: "proposed"
+    priority: "high"
+    communities:
+      - nocatee
+    aliases:
+      - "Ascension St. Vincent's Nocatee"
+      - "St. Vincent's Nocatee"
+    search_queries:
+      - '"Ascension St. Vincent" Nocatee'
+      - '"Crosswater Parkway" medical'
+    sources:
+      - url: "https://sjcitizen.com/exclusive-heres-what-coming-to-new-nocatee-retail-center-across-from-water-park/"
+        label: "Exclusive announcement"
+        source_id: "st_johns_citizen"
+    evidence_notes: >
+      Reported by St. Johns Citizen Jun 2026. Retail center under
+      construction; Ascension's specific buildout timeline unclear.
+    last_checked: "2026-07-04"
+    tracked_since: "2026-07-04"
+
+  # --------------------------------------------------------------------------
+  # Hospitality
+  # --------------------------------------------------------------------------
+
+  - entity_id: "ENT-HOSP-FAIRFIELD-CR210"
+    entity_type: "hospitality"
+    label: "Fairfield Inn & Suites — CR 210"
+    description: >
+      Proposed 4-story, 61,117 sq. ft., 103-room Fairfield by Marriott Inn
+      & Suites on a 5-acre parcel west of I-95 along the CR 210 corridor,
+      near Beachwalk.
+    lifecycle_status: "proposed"
+    priority: "medium"
+    communities:
+      - cr_210_corridor
+    aliases:
+      - "Fairfield Inn CR 210"
+      - "Marriott CR 210"
+    search_queries:
+      - '"Fairfield Inn" CR 210'
+      - '"Marriott" CR 210 St. Johns'
+    sources:
+      - url: "https://sjcitizen.com/new-103-room-hotel-explored-for-growing-st-johns-commercial-corridor/"
+        label: "Hotel proposal article"
+        source_id: "st_johns_citizen"
+    evidence_notes: >
+      Reported by St. Johns Citizen May 2026. Proposed — no permit or
+      county approval record found yet.
+    last_checked: "2026-07-04"
+    tracked_since: "2026-07-04"
+
+  # --------------------------------------------------------------------------
+  # Mixed-Use Development
+  # --------------------------------------------------------------------------
+
+  - entity_id: "ENT-MIXED-NOCATEE-CROSSWATER"
+    entity_type: "mixed_use_development"
+    label: "Nocatee Crosswater Retail Center"
+    description: >
+      Six-storefront commercial strip on Crosswater Parkway in Nocatee,
+      across from Splash Water Park. Anchored by Ascension St. Vincent's
+      primary care (3 units). Additional retail tenants pending.
+    lifecycle_status: "under_construction"
+    priority: "medium"
+    communities:
+      - nocatee
+    aliases:
+      - "Crosswater Parkway retail center"
+      - "Nocatee Crosswater retail"
+    search_queries:
+      - '"Crosswater Parkway" Nocatee retail'
+      - '"Nocatee" retail center "water park"'
+    sources:
+      - url: "https://sjcitizen.com/exclusive-heres-what-coming-to-new-nocatee-retail-center-across-from-water-park/"
+        label: "Exclusive announcement"
+        source_id: "st_johns_citizen"
+    evidence_notes: >
+      Under construction per Jun 2026 article. Ascension St. Vincent's is
+      anchor tenant. Remaining storefronts not yet announced.
+    last_checked: "2026-07-04"
+    tracked_since: "2026-07-04"
+
+  # --------------------------------------------------------------------------
+  # Infrastructure Projects
+  # --------------------------------------------------------------------------
+
+  - entity_id: "ENT-INFRA-SR-207-WRF"
+    entity_type: "infrastructure_project"
+    label: "SR 207 Water Reclamation Facility Phase 2"
+    description: >
+      $191 million expansion of the SR 207 Water Reclamation Facility.
+      Previously approved. Will increase wastewater treatment capacity for
+      the growing CR 210 / SR 207 corridor.
+    lifecycle_status: "approved"
+    priority: "medium"
+    communities:
+      - cr_210_corridor
+    aliases:
+      - "SR 207 WRF Phase 2"
+      - "SR 207 water reclamation"
+    search_queries:
+      - '"SR 207" water reclamation'
+      - '"191 million" water reclamation'
+    evidence_notes: >
+      Mentioned in May 2026 backfill (utility department announcements).
+      Previously approved project. Status needs county utility verification.
+    last_checked: "2026-07-04"
+    tracked_since: "2026-07-04"
+
+  # --------------------------------------------------------------------------
+  # Community (master-planned community as tracked entity)
+  # --------------------------------------------------------------------------
+
+  - entity_id: "ENT-COMM-SILVERLEAF"
+    entity_type: "community"
+    label: "SilverLeaf Master-Planned Community"
+    description: >
+      Large master-planned community in northwestern St. Johns County near
+      the Duval County line. 11,000+ acres with single-family homes,
+      townhomes, 55+ gated community. Rapidly growing with active retail,
+      school, and road development.
+    lifecycle_status: "tracked"
+    priority: "high"
+    communities:
+      - silverleaf
+    aliases:
+      - "SilverLeaf"
+      - "SilverLeaf St. Johns"
+    search_queries:
+      - '"SilverLeaf" St. Johns development'
+      - '"SilverLeaf" news'
+    evidence_notes: >
+      Active monitoring target. Multiple intel items across retail, school,
+      road, and recreational developments. Community is the geographic
+      context for all SilverLeaf-specific entities.
+    last_checked: "2026-07-04"
+    tracked_since: "2026-07-04"
