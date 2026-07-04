@@ -2,7 +2,7 @@
 # SJC_Intel — Editorial Review Queue
 # =============================================================================
 # Flat queue of all intel_items requiring or eligible for review.
-# Generated: 2026-07-04T04:10:06Z
+# Generated: 2026-07-04T07:28:15Z
 # Total entries: 132
 # =============================================================================
 
@@ -26,6 +26,9 @@ queue:
   - utility_impact
   - quality_of_life
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -59,6 +62,9 @@ queue:
   - development_watch
   matched_filters:
   - major_development
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -90,6 +96,9 @@ queue:
   interest_tags:
   - development_watch
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -122,6 +131,9 @@ queue:
   interest_tags:
   - development_watch
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -152,6 +164,9 @@ queue:
   - utility_impact
   - quality_of_life
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -182,6 +197,9 @@ queue:
   - utility_impact
   - quality_of_life
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -211,6 +229,9 @@ queue:
   interest_tags:
   - development_watch
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -241,6 +262,9 @@ queue:
   - utility_impact
   - quality_of_life
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -270,6 +294,9 @@ queue:
   interest_tags:
   - development_watch
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -300,6 +327,9 @@ queue:
   - utility_impact
   - quality_of_life
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -330,6 +360,9 @@ queue:
   - utility_impact
   - quality_of_life
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -360,6 +393,9 @@ queue:
   - utility_impact
   - quality_of_life
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -390,6 +426,9 @@ queue:
   - traffic_impact
   - quality_of_life
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -423,6 +462,9 @@ queue:
   - development_watch
   matched_filters:
   - major_development
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -452,6 +494,9 @@ queue:
   interest_tags:
   - development_watch
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -484,6 +529,9 @@ queue:
   interest_tags:
   - development_watch
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -515,6 +563,9 @@ queue:
   interest_tags:
   - development_watch
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -544,6 +595,9 @@ queue:
   interest_tags:
   - development_watch
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -573,6 +627,9 @@ queue:
   interest_tags:
   - development_watch
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -603,6 +660,9 @@ queue:
   - utility_impact
   - quality_of_life
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -633,6 +693,9 @@ queue:
   - utility_impact
   - quality_of_life
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -663,6 +726,9 @@ queue:
   - utility_impact
   - quality_of_life
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -693,6 +759,9 @@ queue:
   - utility_impact
   - quality_of_life
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -722,6 +791,9 @@ queue:
   interest_tags:
   - development_watch
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -751,6 +823,9 @@ queue:
   interest_tags:
   - development_watch
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -785,6 +860,9 @@ queue:
   sensitivity: low
   interest_tags: []
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://www.sjcfl.us/sjc-public-surplus-goods-auction-2026/
@@ -819,6 +897,9 @@ queue:
   interest_tags: []
   matched_filters:
   - emergency_alerts
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://www.sjcfl.us/resiliency-improvements-porpoise-point-vehicular-beach-access-ramp/
@@ -853,6 +934,9 @@ queue:
   sensitivity: low
   interest_tags: []
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://www.sjcfl.us/sjcpls-summer-reading-program-2026/
@@ -885,6 +969,9 @@ queue:
   sensitivity: low
   interest_tags: []
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://www.sjcfl.us/sjc-earns-statewide-communications-recognition/
@@ -918,6 +1005,9 @@ queue:
   interest_tags: []
   matched_filters:
   - utility_disruption
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://www.sjcfl.us/phase-iii-extreme-water-shortage-declaration-may-2026/
@@ -956,6 +1046,9 @@ queue:
   - emergency_awareness
   matched_filters:
   - utility_disruption
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://www.sjcfl.us/departments/utility-department/
@@ -989,6 +1082,9 @@ queue:
   matched_filters:
   - major_development
   - utility_disruption
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://www.sjcfl.us/departments/utility-department/
@@ -1023,6 +1119,11 @@ queue:
   - utility_impact
   - development_watch
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities:
+  - ENT-INFRA-SR-207-WRF
+  entity_match_basis:
+    ENT-INFRA-SR-207-WRF: 'label: SR 207 Water Reclamation Facility Phase 2'
   review_status: verified
   human_review_required: false
   source_url: https://www.sjcfl.us/departments/utility-department/
@@ -1056,6 +1157,9 @@ queue:
   interest_tags:
   - quality_of_life
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://www.sjcfl.us/departments/utility-department/
@@ -1090,6 +1194,9 @@ queue:
   - utility_impact
   - safety_concern
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://www.sjcfl.us/departments/utility-department/
@@ -1125,6 +1232,9 @@ queue:
   interest_tags:
   - safety_concern
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: true
   source_url: https://www.sjso.org/st-johns-county-inmate-charged-woman-arrested-for-executing-a-contraband-drop-on-restricted-law-enforcement-property/
@@ -1160,6 +1270,9 @@ queue:
   - community_event
   - quality_of_life
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: true
   source_url: https://www.sjso.org/lifesaving-rescue-highlights-the-importance-of-local-programs-in-place-to-locate-vulnerable-individuals-and-prevent-future-emergencies/
@@ -1194,6 +1307,9 @@ queue:
   - safety_concern
   matched_filters:
   - major_development
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: archived
   human_review_required: true
   source_url: https://www.sjso.org/nine-arrested-during-sjsos-march-2026-dui-wolfpack-operation/
@@ -1229,6 +1345,9 @@ queue:
   - safety_concern
   - emergency_awareness
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: true
   source_url: https://www.sjso.org/arrest-made-in-connection-to-the-2023-double-murders-of-cody-bennett-and-tre-lyons/
@@ -1265,6 +1384,11 @@ queue:
   - neighborhood_silverleaf
   - corridor_cr210
   - silverleaf_northwest_dev
+  tracked_entity_ids: []
+  matched_entities:
+  - ENT-COMM-SILVERLEAF
+  entity_match_basis:
+    ENT-COMM-SILVERLEAF: 'alias: SilverLeaf'
   review_status: pending_review
   human_review_required: false
   source_url: https://sjcitizen.com/heres-your-first-look-at-silverleafs-new-55000-sq-ft-mega-publix/
@@ -1301,6 +1425,13 @@ queue:
   - neighborhood_silverleaf
   - school_zoning_changes
   - silverleaf_northwest_dev
+  tracked_entity_ids: []
+  matched_entities:
+  - ENT-EDU-SILVERLEAF-K8
+  - ENT-COMM-SILVERLEAF
+  entity_match_basis:
+    ENT-EDU-SILVERLEAF-K8: 'label: SilverLeaf K-8 School'
+    ENT-COMM-SILVERLEAF: 'alias: SilverLeaf'
   review_status: pending_review
   human_review_required: false
   source_url: https://sjcitizen.com/nailed-it-st-johns-officials-give-sneak-peek-of-new-silverleaf-k-8-school/
@@ -1336,6 +1467,13 @@ queue:
   matched_filters:
   - neighborhood_silverleaf
   - silverleaf_northwest_dev
+  tracked_entity_ids: []
+  matched_entities:
+  - ENT-REC-BEACH-VALLEY-MINI-GOLF
+  - ENT-COMM-SILVERLEAF
+  entity_match_basis:
+    ENT-REC-BEACH-VALLEY-MINI-GOLF: 'label: Beach Valley Mini Golf'
+    ENT-COMM-SILVERLEAF: 'label: SilverLeaf Master-Planned Community'
   review_status: pending_review
   human_review_required: false
   source_url: https://sjcitizen.com/fore-major-new-2-acre-recreational-attraction-proposed-for-silverleaf-by-husband-and-wife-team/
@@ -1372,6 +1510,13 @@ queue:
   - neighborhood_silverleaf
   - corridor_cr210
   - silverleaf_northwest_dev
+  tracked_entity_ids: []
+  matched_entities:
+  - ENT-ROAD-CR-2209-CONNECTOR
+  - ENT-COMM-SILVERLEAF
+  entity_match_basis:
+    ENT-ROAD-CR-2209-CONNECTOR: 'alias: County Road 2209'
+    ENT-COMM-SILVERLEAF: 'alias: SilverLeaf'
   review_status: pending_review
   human_review_required: false
   source_url: https://sjcitizen.com/road-relief-heres-your-first-look-at-st-johns-countys-newest-highway/
@@ -1407,6 +1552,11 @@ queue:
   - neighborhood_silverleaf
   - corridor_cr210
   - silverleaf_northwest_dev
+  tracked_entity_ids: []
+  matched_entities:
+  - ENT-COMM-SILVERLEAF
+  entity_match_basis:
+    ENT-COMM-SILVERLEAF: 'alias: SilverLeaf'
   review_status: pending_review
   human_review_required: false
   source_url: https://sjcitizen.com/st-johns-county-is-getting-two-new-supermarkets-and-theyre-not-publix/
@@ -1443,6 +1593,9 @@ queue:
   matched_filters:
   - neighborhood_nocatee
   - silverleaf_northwest_dev
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: https://sjcitizen.com/exclusive-heres-what-coming-to-new-nocatee-retail-center-across-from-water-park/
@@ -1473,6 +1626,9 @@ queue:
   interest_tags:
   - development_watch
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -1504,6 +1660,9 @@ queue:
   interest_tags:
   - development_watch
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -1536,6 +1695,9 @@ queue:
   - development_watch
   matched_filters:
   - major_development
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -1568,6 +1730,9 @@ queue:
   - development_watch
   matched_filters:
   - major_development
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -1600,6 +1765,9 @@ queue:
   - development_watch
   matched_filters:
   - major_development
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -1632,6 +1800,9 @@ queue:
   - development_watch
   matched_filters:
   - major_development
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -1664,6 +1835,9 @@ queue:
   - development_watch
   matched_filters:
   - major_development
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -1695,6 +1869,9 @@ queue:
   interest_tags:
   - development_watch
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -1725,6 +1902,9 @@ queue:
   interest_tags:
   - development_watch
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -1754,6 +1934,9 @@ queue:
   interest_tags:
   - development_watch
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -1783,6 +1966,9 @@ queue:
   interest_tags:
   - development_watch
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -1812,6 +1998,9 @@ queue:
   interest_tags:
   - development_watch
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -1840,6 +2029,9 @@ queue:
   interest_tags:
   - development_watch
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -1869,6 +2061,9 @@ queue:
   - utility_impact
   - quality_of_life
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -1898,6 +2093,9 @@ queue:
   - utility_impact
   - quality_of_life
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -1927,6 +2125,9 @@ queue:
   - utility_impact
   - quality_of_life
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -1956,6 +2157,9 @@ queue:
   - utility_impact
   - quality_of_life
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -1984,6 +2188,9 @@ queue:
   interest_tags:
   - development_watch
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -2015,6 +2222,9 @@ queue:
   - traffic_impact
   - quality_of_life
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -2045,6 +2255,9 @@ queue:
   interest_tags:
   - development_watch
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -2074,6 +2287,9 @@ queue:
   - utility_impact
   - quality_of_life
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -2103,6 +2319,9 @@ queue:
   - utility_impact
   - quality_of_life
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -2131,6 +2350,9 @@ queue:
   interest_tags:
   - development_watch
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -2160,6 +2382,9 @@ queue:
   - utility_impact
   - quality_of_life
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -2188,6 +2413,9 @@ queue:
   interest_tags:
   - development_watch
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
@@ -2219,6 +2447,9 @@ queue:
   - utility_impact
   - quality_of_life
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: https://www.sjcfl.us/departments/utility-department/
@@ -2248,6 +2479,9 @@ queue:
   - cost_impact
   - community_trust
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: https://www.sjcfl.us/departments/utility-department/
@@ -2273,6 +2507,9 @@ queue:
   sensitivity: low
   interest_tags: []
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: ''
@@ -2299,6 +2536,9 @@ queue:
   sensitivity: low
   interest_tags: []
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: ''
@@ -2324,6 +2564,9 @@ queue:
   sensitivity: low
   interest_tags: []
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: ''
@@ -2357,6 +2600,9 @@ queue:
   - development_watch
   - property_values
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2390,6 +2636,9 @@ queue:
   - development_watch
   - property_values
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2423,6 +2672,9 @@ queue:
   - development_watch
   - property_values
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2456,6 +2708,9 @@ queue:
   - traffic_impact
   - quality_of_life
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2491,6 +2746,9 @@ queue:
   - cost_impact
   matched_filters:
   - utility_disruption
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2523,6 +2781,9 @@ queue:
   - utility_impact
   - cost_impact
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2556,6 +2817,9 @@ queue:
   - cost_impact
   - community_trust
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2589,6 +2853,9 @@ queue:
   - property_values
   matched_filters:
   - major_development
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2619,6 +2886,9 @@ queue:
   interest_tags:
   - community_trust
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2653,6 +2923,9 @@ queue:
   - traffic_impact
   - quality_of_life
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2684,6 +2957,9 @@ queue:
   - traffic_impact
   - quality_of_life
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: archived
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2718,6 +2994,9 @@ queue:
   - property_values
   matched_filters:
   - major_development
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2751,6 +3030,9 @@ queue:
   - cost_impact
   matched_filters:
   - utility_disruption
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2784,6 +3066,9 @@ queue:
   - cost_impact
   matched_filters:
   - utility_disruption
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2817,6 +3102,9 @@ queue:
   - cost_impact
   matched_filters:
   - utility_disruption
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2849,6 +3137,9 @@ queue:
   - utility_impact
   - cost_impact
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2879,6 +3170,9 @@ queue:
   interest_tags:
   - community_trust
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2910,6 +3204,9 @@ queue:
   interest_tags:
   - community_trust
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2944,6 +3241,9 @@ queue:
   - quality_of_life
   matched_filters:
   - corridor_sr16
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -2977,6 +3277,9 @@ queue:
   - development_watch
   - property_values
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -3011,6 +3314,9 @@ queue:
   matched_filters:
   - major_development
   - utility_disruption
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -3042,6 +3348,9 @@ queue:
   interest_tags:
   - community_trust
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -3072,6 +3381,9 @@ queue:
   interest_tags:
   - community_trust
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -3104,6 +3416,9 @@ queue:
   interest_tags:
   - community_trust
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -3135,6 +3450,9 @@ queue:
   interest_tags:
   - community_trust
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -3168,6 +3486,9 @@ queue:
   - community_trust
   matched_filters:
   - corridor_cr210
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -3202,6 +3523,9 @@ queue:
   - utility_impact
   - cost_impact
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -3234,6 +3558,9 @@ queue:
   - utility_impact
   - cost_impact
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -3266,6 +3593,9 @@ queue:
   - utility_impact
   - cost_impact
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -3298,6 +3628,9 @@ queue:
   - utility_impact
   - cost_impact
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -3329,6 +3662,9 @@ queue:
   interest_tags:
   - community_trust
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -3359,6 +3695,9 @@ queue:
   interest_tags:
   - community_trust
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -3391,6 +3730,9 @@ queue:
   interest_tags:
   - community_trust
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: archived
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -3423,6 +3765,9 @@ queue:
   interest_tags:
   - community_trust
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -3457,6 +3802,9 @@ queue:
   interest_tags:
   - community_trust
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -3488,6 +3836,9 @@ queue:
   interest_tags:
   - community_trust
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -3521,6 +3872,9 @@ queue:
   - community_trust
   matched_filters:
   - emergency_alerts
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -3553,6 +3907,9 @@ queue:
   interest_tags:
   - community_trust
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -3585,6 +3942,11 @@ queue:
   matched_filters:
   - corridor_cr210
   - corridor_sr16
+  tracked_entity_ids: []
+  matched_entities:
+  - ENT-ROAD-CR-2209-CONNECTOR
+  entity_match_basis:
+    ENT-ROAD-CR-2209-CONNECTOR: 'alias: CR 2209'
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -3619,6 +3981,9 @@ queue:
   - cost_impact
   - community_trust
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -3649,6 +4014,9 @@ queue:
   interest_tags:
   - community_trust
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -3680,6 +4048,9 @@ queue:
   interest_tags:
   - community_trust
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -3708,6 +4079,9 @@ queue:
   interest_tags:
   - community_trust
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: archived
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -3739,6 +4113,9 @@ queue:
   interest_tags:
   - community_trust
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: archived
   human_review_required: false
   source_url: https://stjohnsclerk.com/board-records/agendas/
@@ -3771,6 +4148,11 @@ queue:
   - utility_impact
   - quality_of_life
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities:
+  - ENT-INFRA-SR-207-WRF
+  entity_match_basis:
+    ENT-INFRA-SR-207-WRF: 'alias: SR 207 water reclamation'
   review_status: verified
   human_review_required: false
   source_url: https://www.sjcfl.us/news/
@@ -3802,6 +4184,9 @@ queue:
   - traffic_impact
   - safety_concern
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://www.sjcfl.us/news/
@@ -3833,6 +4218,9 @@ queue:
   interest_tags:
   - community_event
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://www.sjcfl.us/news/
@@ -3863,6 +4251,9 @@ queue:
   - quality_of_life
   matched_filters:
   - major_development
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: rejected_noise
   human_review_required: false
   source_url: https://www.sjcfl.us/news/
@@ -3895,6 +4286,9 @@ queue:
   - emergency_awareness
   matched_filters:
   - emergency_alerts
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: false
   source_url: https://www.sjcfl.us/departments/emergency-mgmt/
@@ -3928,6 +4322,9 @@ queue:
   - quality_of_life
   matched_filters:
   - corridor_sr16
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: https://www.sjcfl.us/departments/utility-department/
@@ -3957,6 +4354,9 @@ queue:
   interest_tags:
   - safety_concern
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: verified
   human_review_required: true
   source_url: https://www.sjso.org/news-stories/
@@ -3982,6 +4382,9 @@ queue:
   sensitivity: low
   interest_tags: []
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: ''
@@ -4007,6 +4410,9 @@ queue:
   sensitivity: low
   interest_tags: []
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: ''
@@ -4032,6 +4438,9 @@ queue:
   sensitivity: low
   interest_tags: []
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: ''
@@ -4057,6 +4466,9 @@ queue:
   sensitivity: low
   interest_tags: []
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: ''
@@ -4082,6 +4494,9 @@ queue:
   sensitivity: low
   interest_tags: []
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: ''
@@ -4107,6 +4522,9 @@ queue:
   sensitivity: low
   interest_tags: []
   matched_filters: []
+  tracked_entity_ids: []
+  matched_entities: []
+  entity_match_basis: {}
   review_status: pending_review
   human_review_required: false
   source_url: ''

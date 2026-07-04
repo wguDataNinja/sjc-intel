@@ -1,4 +1,4 @@
-generated_at: '2026-07-04T04:10:06Z'
+generated_at: '2026-07-04T07:28:15Z'
 total_entries: 132
 pending_review: 43
 by_source:
@@ -57,12 +57,21 @@ interest_filter_matches:
   school_zoning_changes: 1
   neighborhood_nocatee: 1
   corridor_sr16: 3
-total_prioritized_items: 32
+entity_matches:
+  ENT-INFRA-SR-207-WRF: 2
+  ENT-COMM-SILVERLEAF: 5
+  ENT-EDU-SILVERLEAF-K8: 1
+  ENT-REC-BEACH-VALLEY-MINI-GOLF: 1
+  ENT-ROAD-CR-2209-CONNECTOR: 2
+total_entity_matches: 11
+total_prioritized_items: 34
 prioritized_items:
 - item_id: SJC-NBOR-20260626-0002
   title: ZVAR 2026000011 Bargfrede Shed (PRIDE 2601876)
   matched_filters:
   - major_development
+  matched_entities: []
+  entity_match_basis: {}
   escalation: high
   source: sjc_nbor_public_notices
   discovered_at: '2026-06-26T07:16:16Z'
@@ -70,6 +79,8 @@ prioritized_items:
   title: MAJMOD 2025000011 Golfway Centre PUD
   matched_filters:
   - major_development
+  matched_entities: []
+  entity_match_basis: {}
   escalation: high
   source: sjc_nbor_public_notices
   discovered_at: '2026-06-26T07:16:16Z'
@@ -78,6 +89,8 @@ prioritized_items:
     Beach Access Ramp
   matched_filters:
   - emergency_alerts
+  matched_entities: []
+  entity_match_basis: {}
   escalation: low
   source: sjc_county_news
   discovered_at: '2026-06-03T04:00:00Z'
@@ -85,6 +98,8 @@ prioritized_items:
   title: St. Johns County Enters Phase III Extreme Water Shortage Declaration
   matched_filters:
   - utility_disruption
+  matched_entities: []
+  entity_match_basis: {}
   escalation: immediate
   source: sjc_county_news
   discovered_at: '2026-06-03T04:00:00Z'
@@ -92,6 +107,8 @@ prioritized_items:
   title: Phase III Extreme Water Shortage Declaration — Active
   matched_filters:
   - utility_disruption
+  matched_entities: []
+  entity_match_basis: {}
   escalation: immediate
   source: sjc_utility_department
   discovered_at: '2026-06-03T23:30:00Z'
@@ -100,13 +117,27 @@ prioritized_items:
   matched_filters:
   - major_development
   - utility_disruption
+  matched_entities: []
+  entity_match_basis: {}
   escalation: high
+  source: sjc_utility_department
+  discovered_at: '2026-06-03T23:30:00Z'
+- item_id: SJC-UTIL-20260603-0003
+  title: $191 Million SR 207 Water Reclamation Facility Phase 2 Approved
+  matched_filters: []
+  matched_entities:
+  - ENT-INFRA-SR-207-WRF
+  entity_match_basis:
+    ENT-INFRA-SR-207-WRF: 'label: SR 207 Water Reclamation Facility Phase 2'
+  escalation: low
   source: sjc_utility_department
   discovered_at: '2026-06-03T23:30:00Z'
 - item_id: SJC-SJSO-20260603-0003
   title: Nine arrested during SJSOs March 2026 DUI Wolfpack Operation
   matched_filters:
   - major_development
+  matched_entities: []
+  entity_match_basis: {}
   escalation: high
   source: sjso_news_stories
   discovered_at: '2026-06-03T06:00:00Z'
@@ -116,6 +147,10 @@ prioritized_items:
   - neighborhood_silverleaf
   - corridor_cr210
   - silverleaf_northwest_dev
+  matched_entities:
+  - ENT-COMM-SILVERLEAF
+  entity_match_basis:
+    ENT-COMM-SILVERLEAF: 'alias: SilverLeaf'
   escalation: low
   source: silverleaf_discovery
   discovered_at: '2026-07-04T08:00:00Z'
@@ -125,6 +160,12 @@ prioritized_items:
   - neighborhood_silverleaf
   - school_zoning_changes
   - silverleaf_northwest_dev
+  matched_entities:
+  - ENT-EDU-SILVERLEAF-K8
+  - ENT-COMM-SILVERLEAF
+  entity_match_basis:
+    ENT-EDU-SILVERLEAF-K8: 'label: SilverLeaf K-8 School'
+    ENT-COMM-SILVERLEAF: 'alias: SilverLeaf'
   escalation: low
   source: silverleaf_discovery
   discovered_at: '2026-07-04T08:15:00Z'
@@ -134,6 +175,12 @@ prioritized_items:
   matched_filters:
   - neighborhood_silverleaf
   - silverleaf_northwest_dev
+  matched_entities:
+  - ENT-REC-BEACH-VALLEY-MINI-GOLF
+  - ENT-COMM-SILVERLEAF
+  entity_match_basis:
+    ENT-REC-BEACH-VALLEY-MINI-GOLF: 'label: Beach Valley Mini Golf'
+    ENT-COMM-SILVERLEAF: 'label: SilverLeaf Master-Planned Community'
   escalation: low
   source: silverleaf_discovery
   discovered_at: '2026-07-04T08:30:00Z'
@@ -143,6 +190,12 @@ prioritized_items:
   - neighborhood_silverleaf
   - corridor_cr210
   - silverleaf_northwest_dev
+  matched_entities:
+  - ENT-ROAD-CR-2209-CONNECTOR
+  - ENT-COMM-SILVERLEAF
+  entity_match_basis:
+    ENT-ROAD-CR-2209-CONNECTOR: 'alias: County Road 2209'
+    ENT-COMM-SILVERLEAF: 'alias: SilverLeaf'
   escalation: high
   source: silverleaf_discovery
   discovered_at: '2026-07-04T08:45:00Z'
@@ -152,6 +205,10 @@ prioritized_items:
   - neighborhood_silverleaf
   - corridor_cr210
   - silverleaf_northwest_dev
+  matched_entities:
+  - ENT-COMM-SILVERLEAF
+  entity_match_basis:
+    ENT-COMM-SILVERLEAF: 'alias: SilverLeaf'
   escalation: low
   source: silverleaf_discovery
   discovered_at: '2026-07-04T09:00:00Z'
@@ -161,6 +218,8 @@ prioritized_items:
   matched_filters:
   - neighborhood_nocatee
   - silverleaf_northwest_dev
+  matched_entities: []
+  entity_match_basis: {}
   escalation: low
   source: silverleaf_discovery
   discovered_at: '2026-07-04T09:15:00Z'
@@ -168,6 +227,8 @@ prioritized_items:
   title: NZVAR 2026000015 Coddington Driveway
   matched_filters:
   - major_development
+  matched_entities: []
+  entity_match_basis: {}
   escalation: high
   source: sjc_nbor_public_notices
   discovered_at: '2026-07-04T03:44:10Z'
@@ -175,6 +236,8 @@ prioritized_items:
   title: NZVAR 2026000014 Herlth SFR
   matched_filters:
   - major_development
+  matched_entities: []
+  entity_match_basis: {}
   escalation: high
   source: sjc_nbor_public_notices
   discovered_at: '2026-07-04T03:44:10Z'
@@ -182,6 +245,8 @@ prioritized_items:
   title: NZVAR 2026000009 5325 Porter Road Extension
   matched_filters:
   - major_development
+  matched_entities: []
+  entity_match_basis: {}
   escalation: high
   source: sjc_nbor_public_notices
   discovered_at: '2026-07-04T03:44:10Z'
@@ -189,6 +254,8 @@ prioritized_items:
   title: MAJMOD 2023000011 Canopy Shores
   matched_filters:
   - major_development
+  matched_entities: []
+  entity_match_basis: {}
   escalation: high
   source: sjc_nbor_public_notices
   discovered_at: '2026-07-04T03:44:10Z'
@@ -196,6 +263,8 @@ prioritized_items:
   title: CPA(SS) 2025000013 Daily´s Place
   matched_filters:
   - major_development
+  matched_entities: []
+  entity_match_basis: {}
   escalation: high
   source: sjc_nbor_public_notices
   discovered_at: '2026-07-04T03:44:10Z'
@@ -204,6 +273,8 @@ prioritized_items:
     the Board of County Commi
   matched_filters:
   - utility_disruption
+  matched_entities: []
+  entity_match_basis: {}
   escalation: high
   source: sjc_bcc_calendar
   discovered_at: '2026-06-26T08:07:51Z'
@@ -211,6 +282,8 @@ prioritized_items:
   title: Median Opening - Shores Boulevard.  The Board directed staff during the December
   matched_filters:
   - major_development
+  matched_entities: []
+  entity_match_basis: {}
   escalation: high
   source: sjc_bcc_calendar
   discovered_at: '2026-06-26T08:07:51Z'
@@ -219,6 +292,8 @@ prioritized_items:
     impact fee
   matched_filters:
   - major_development
+  matched_entities: []
+  entity_match_basis: {}
   escalation: high
   source: sjc_bcc_calendar
   discovered_at: '2026-06-26T08:07:51Z'
@@ -227,6 +302,8 @@ prioritized_items:
     a Schedule of
   matched_filters:
   - utility_disruption
+  matched_entities: []
+  entity_match_basis: {}
   escalation: high
   source: sjc_bcc_calendar
   discovered_at: '2026-06-26T08:07:51Z'
@@ -235,6 +312,8 @@ prioritized_items:
     a Bill
   matched_filters:
   - utility_disruption
+  matched_entities: []
+  entity_match_basis: {}
   escalation: high
   source: sjc_bcc_calendar
   discovered_at: '2026-06-26T08:07:51Z'
@@ -243,6 +322,8 @@ prioritized_items:
     a Schedule of
   matched_filters:
   - utility_disruption
+  matched_entities: []
+  entity_match_basis: {}
   escalation: high
   source: sjc_bcc_calendar
   discovered_at: '2026-06-26T08:07:51Z'
@@ -251,6 +332,8 @@ prioritized_items:
     the
   matched_filters:
   - corridor_sr16
+  matched_entities: []
+  entity_match_basis: {}
   escalation: high
   source: sjc_bcc_calendar
   discovered_at: '2026-06-26T08:07:51Z'
@@ -260,6 +343,8 @@ prioritized_items:
   matched_filters:
   - major_development
   - utility_disruption
+  matched_entities: []
+  entity_match_basis: {}
   escalation: high
   source: sjc_bcc_calendar
   discovered_at: '2026-06-26T08:07:51Z'
@@ -268,6 +353,8 @@ prioritized_items:
     between the County and St
   matched_filters:
   - corridor_cr210
+  matched_entities: []
+  entity_match_basis: {}
   escalation: high
   source: sjc_bcc_calendar
   discovered_at: '2026-06-26T08:07:51Z'
@@ -276,6 +363,8 @@ prioritized_items:
     Convenience and Necessit
   matched_filters:
   - emergency_alerts
+  matched_entities: []
+  entity_match_basis: {}
   escalation: high
   source: sjc_bcc_calendar
   discovered_at: '2026-06-26T08:07:51Z'
@@ -285,13 +374,29 @@ prioritized_items:
   matched_filters:
   - corridor_cr210
   - corridor_sr16
+  matched_entities:
+  - ENT-ROAD-CR-2209-CONNECTOR
+  entity_match_basis:
+    ENT-ROAD-CR-2209-CONNECTOR: 'alias: CR 2209'
   escalation: normal
   source: sjc_bcc_calendar
   discovered_at: '2026-06-26T08:07:51Z'
+- item_id: SJC-CN-20260626-0001
+  title: SJC's Largest-Ever Capital Improvement Project Now Serving Residents
+  matched_filters: []
+  matched_entities:
+  - ENT-INFRA-SR-207-WRF
+  entity_match_basis:
+    ENT-INFRA-SR-207-WRF: 'alias: SR 207 water reclamation'
+  escalation: high
+  source: sjc_county_news
+  discovered_at: '2026-06-26T07:30:00Z'
 - item_id: SJC-CN-20260626-0004
   title: SJC Highlights Special Bond Between Recycling Driver and Three-Year-Old Resident
   matched_filters:
   - major_development
+  matched_entities: []
+  entity_match_basis: {}
   escalation: low
   source: sjc_county_news
   discovered_at: '2026-06-26T07:30:00Z'
@@ -299,6 +404,8 @@ prioritized_items:
   title: Residents Urged to Prepare as 2026 Atlantic Hurricane Season Begins
   matched_filters:
   - emergency_alerts
+  matched_entities: []
+  entity_match_basis: {}
   escalation: high
   source: sjc_emergency_management
   discovered_at: '2026-06-26T07:40:00Z'
@@ -306,6 +413,8 @@ prioritized_items:
   title: SJC Utilities 2025 Annual Report Published
   matched_filters:
   - corridor_sr16
+  matched_entities: []
+  entity_match_basis: {}
   escalation: low
   source: sjc_utility_department
   discovered_at: '2026-06-26T10:53:25Z'

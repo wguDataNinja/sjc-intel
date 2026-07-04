@@ -19,6 +19,7 @@ QUEUE_DIR = "data/review_queue"
 QUEUE_FILE = f"{QUEUE_DIR}/queue.yaml"
 SUMMARY_FILE = f"{QUEUE_DIR}/summary.yaml"
 FILTERS_FILE = "registry/interest_filters.yaml"
+ENTITIES_FILE = "registry/tracked_entities.yaml"
 SKIP_FILES = {"daily_cycle_summary.yaml", "bcc_weekly_summary.yaml", "bcc_calibration_notes.md"}
 SKIP_DIRS = {".deprecated"}  # Skip deprecated files and source_event directories
 SKIP_PREFIXES = {".deprecated"}  # Files ending with .deprecated
@@ -79,6 +80,110 @@ def load_interest_filters():
 
 
 INTEREST_FILTERS = load_interest_filters()
+
+
+def load_tracked_entities():
+    """Load tracked entities from registry."""
+    if not os.path.exists(ENTITIES_FILE):
+        return []
+    try:
+        with open(ENTITIES_FILE) as f:
+            data = yaml.safe_load(f)
+        return data.get("tracked_entities", [])
+    except Exception as e:
+        print(f"  WARNING: Could not load tracked entities: {e}", file=__import__('sys').stderr)
+        return []
+
+
+TRACKED_ENTITIES = load_tracked_entities()
+
+
+def build_entity_match_map(entities):
+    """Build a mapping from entity_id to distinctive match phrases.
+    
+    Uses label and aliases as match phrases. Each phrase is case-insensitive
+    and checked as a substring against item title, summary, and raw_excerpt.
+    """
+    match_map = {}
+    for ent in entities:
+        eid = ent["entity_id"]
+        phrases = set()
+        # Label
+        label = ent.get("label", "")
+        if label:
+            phrases.add(label.lower())
+        # Aliases
+        for alias in ent.get("aliases", []):
+            if alias:
+                phrases.add(alias.lower())
+        if phrases:
+            match_map[eid] = list(phrases)
+    return match_map
+
+
+ENTITY_MATCH_MAP = build_entity_match_map(TRACKED_ENTITIES)
+
+
+def apply_entity_matching(item):
+    """Match intel item against tracked entities. Returns list of entity IDs.
+    
+    Match rules (in order):
+    1. Explicit tracked_entity_ids on the item win always.
+    2. Label/alias exact substring match (case-insensitive) against
+       title, summary, raw_excerpt.
+    
+    Precision over recall: only label and aliases are matched, not
+    search_queries or description. Generic single-word matches are avoided
+    by requiring aliases to be multi-word phrases chosen by the entity author.
+    """
+    # Rule 1: Explicit IDs on the item
+    explicit = item.get("tracked_entity_ids", [])
+    if explicit:
+        return list(explicit)
+    
+    # Rule 2: Substring match against label and aliases
+    text_fields = {
+        "title": str(item.get("title", "")).lower(),
+        "summary": str(item.get("summary", "")).lower(),
+        "raw_excerpt": str(item.get("raw_excerpt", "")).lower(),
+    }
+    search_text = " ".join(text_fields.values())
+    
+    matches = []
+    for eid, phrases in ENTITY_MATCH_MAP.items():
+        for phrase in phrases:
+            if phrase in search_text:
+                matches.append(eid)
+                break
+    
+    return matches
+
+
+def get_match_basis(item, entity_id):
+    """Return a short string describing why this entity matched."""
+    text_fields = {
+        "title": str(item.get("title", "")).lower(),
+        "summary": str(item.get("summary", "")).lower(),
+        "raw_excerpt": str(item.get("raw_excerpt", "")).lower(),
+    }
+    search_text = " ".join(text_fields.values())
+    
+    # Check explicit first
+    if entity_id in item.get("tracked_entity_ids", []):
+        return "explicit"
+    
+    # Check label and aliases
+    for ent in TRACKED_ENTITIES:
+        if ent["entity_id"] != entity_id:
+            continue
+        label = ent.get("label", "").lower()
+        if label and label in search_text:
+            return f"label: {ent['label']}"
+        for alias in ent.get("aliases", []):
+            if alias.lower() in search_text:
+                return f"alias: {alias}"
+    
+    return "unknown"
 
 
 def apply_interest_filters(item):
@@ -215,6 +320,10 @@ def collect_items():
 
                 escalation = compute_escalation(item)
                 matched_filters = apply_interest_filters(item)
+                matched_entities = apply_entity_matching(item)
+                entity_match_basis = {}
+                for eid in matched_entities:
+                    entity_match_basis[eid] = get_match_basis(item, eid)
                 app_id = extract_app_id(
                     item.get("raw_excerpt", "") + item.get("summary", ""),
                     title
@@ -240,6 +349,9 @@ def collect_items():
                     "sensitivity": sensitivity,
                     "interest_tags": interest_tags,
                     "matched_filters": matched_filters,
+                    "tracked_entity_ids": item.get("tracked_entity_ids", []),
+                    "matched_entities": matched_entities,
+                    "entity_match_basis": entity_match_basis,
                     "review_status": review_status,
                     "human_review_required": human_review,
                     "source_url": source_url,
@@ -292,6 +404,7 @@ def build_summary(entries):
     by_signal = defaultdict(int)
     by_urgency = defaultdict(int)
     by_filter = defaultdict(list)
+    by_entity = defaultdict(list)
     human_review = []
 
     for e in entries:
@@ -303,20 +416,25 @@ def build_summary(entries):
         if e.get("matched_filters"):
             for fid in e["matched_filters"]:
                 by_filter[fid].append(e["item_id"])
+        if e.get("matched_entities"):
+            for eid in e["matched_entities"]:
+                by_entity[eid].append(e["item_id"])
         if e["human_review_required"]:
             human_review.append(e["item_id"])
 
     oldest = sorted(entries, key=lambda x: x["discovered_at"])[:5]
     urgent_items = [e for e in entries if e["escalation"] in ("immediate", "high")][:10]
 
-    # Build prioritized items list from filter matches
+    # Build prioritized items list from filter matches + entity matches
     prioritized_items = []
     for e in entries:
-        if e.get("matched_filters"):
+        if e.get("matched_filters") or e.get("matched_entities"):
             prioritized_items.append({
                 "item_id": e["item_id"],
                 "title": e["title"][:100],
-                "matched_filters": e["matched_filters"],
+                "matched_filters": e.get("matched_filters", []),
+                "matched_entities": e.get("matched_entities", []),
+                "entity_match_basis": e.get("entity_match_basis", {}),
                 "escalation": e["escalation"],
                 "source": e["source_id"],
                 "discovered_at": e["discovered_at"],
@@ -332,6 +450,8 @@ def build_summary(entries):
         "by_signal": dict(by_signal),
         "by_urgency": dict(by_urgency),
         "interest_filter_matches": {fid: len(items) for fid, items in by_filter.items()},
+        "entity_matches": {eid: len(items) for eid, items in by_entity.items()},
+        "total_entity_matches": sum(len(items) for items in by_entity.values()),
         "total_prioritized_items": len(prioritized_items),
         "prioritized_items": prioritized_items,
         "human_review_count": len(human_review),
@@ -391,6 +511,10 @@ def main():
     summary = build_summary(entries)
     print(f"   Pending review: {summary['pending_review']}")
     print(f"   By escalation: {summary['by_escalation']}")
+
+    print(f"   Entity matches: {summary.get('entity_matches', {})}")
+    if summary.get('total_entity_matches', 0) > 0:
+        print(f"   Total entity-matched items: {summary['total_entity_matches']}")
 
     print("\n5. Writing queue artifacts...")
     write_queue(entries, summary)

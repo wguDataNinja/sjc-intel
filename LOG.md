@@ -41,3 +41,17 @@
 - Marked ENT-001 done in BACKLOG.md
 
 **Validation:** All YAML valid. Communities cross-referenced. No scripts or data changed.
+
+## 2026-07-04 (ENT-002 Implementation) — Tracked entity matching and queue integration
+
+**Task:** Integrate tracked entities into intel_item schema and review queue builder.
+
+**Work done:**
+- Updated `schemas/intel_item.schema.yaml` with optional `tracked_entity_ids`
+- Updated `scripts/build_review_queue.py` with entity loading, matching, and queue fields
+- Rebuilt review queue: 11 entity matches across 8 items, 0 false positives
+- Updated `docs/data_model.md`, `README_INTERNAL.md`, `BACKLOG.md`
+- Marked ENT-002 done
+
+**Matching:** Exact label/alias substring match. Precision over recall.
+**Validation:** 114 review states preserved. Idempotent. 0 source_events leaked.

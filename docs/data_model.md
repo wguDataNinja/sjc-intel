@@ -43,7 +43,7 @@ Supporting registries:
 | `source` | `registry/sources.yaml` | One monitored public source | `source_id` (e.g. `sjc_nbor_public_notices`) | Has many source_events, is referenced by intel_items | **implemented** |
 | `source_candidate` | `registry/source_candidates.yaml` | One candidate source awaiting promotion | `candidate_id` (e.g. `CAND-SRC-0001`) | Promotes to source | **implemented** |
 | `source_event` | `data/source_events/{date}/{source_id}.yaml` | One source occurrence (meeting, fetch, snapshot, press batch) | `event_id` (e.g. `EVT-BCC-20260120-0011`) | Belongs to source; has many intel_items | **implemented** (NBOR, BCC, utility active; partial coverage) |
-| `intel_item` | `data/intel_items/{date}/{source_id}.yaml` | One extracted resident-impact finding | `item_id` (e.g. `SJC-NBOR-20260704-0001`) | Belongs to source_event; links to tracked_entity (planned); is reviewed via review_queue_entry | **implemented** |
+| `intel_item` | `data/intel_items/{date}/{source_id}.yaml` | One extracted resident-impact finding | `item_id` (e.g. `SJC-NBOR-20260704-0001`) | Belongs to source_event; links to tracked_entity via tracked_entity_ids[]; is reviewed via review_queue_entry | **implemented** |
 | `review_queue_entry` | `data/review_queue/queue.yaml` | One editorial review task for one intel item | `queue_id` (e.g. `Q-SJC-NBOR-20260626-0001`) | References one intel_item | **implemented** |
 | `dedupe_entry` | `data/index/prior_items.yaml` | One known intel item fingerprint | `key` (16-char hex hash) | References one intel_item | **implemented** |
 | `interest_filter` | `registry/interest_filters.yaml` | One keyword-based priority rule | `id` (e.g. `utility_disruption`) | Matches intel_items via keyword scan | **implemented** |
@@ -97,10 +97,10 @@ intel_item ──tags──→ community (via communities[])
 intel_item ──tags──→ topic (via taxonomy.md controlled vocab)
 ```
 
-Pending (ENT-002):
+Implemented (ENT-002):
 ```
-intel_item ──has_many──→ tracked_entity (via tracked_entity_ids[])
-tracked_entity ──has_many──→ intel_item (reverse link)
+intel_item ──has_many──→ tracked_entity (via tracked_entity_ids[], inferred by queue builder)
+tracked_entity ──has_many──→ intel_item (reverse link, via review queue matching)
 ```
 
 ---
@@ -210,9 +210,12 @@ Tracked entities are **implemented** (ENT-001 complete 2026-07-04). Registry at
 Entity IDs follow the pattern `ENT-{TYPE_PREFIX}-{DESCRIPTIVE-SLUG}` (no date —
 entities are durable across sessions). See §6 ID Conventions.
 
-Intel item linkage (`tracked_entity_ids` field on intel_item) is pending ENT-002.
-Entity names/aliases are manually mirrored to `registry/interest_filters.yaml`
-until auto-generation is built.
+Intel item linkage (`tracked_entity_ids` field on intel_item + queue builder
+matching) is implemented (ENT-002 complete 2026-07-04). The review queue builder
+loads `registry/tracked_entities.yaml` and matches entity labels and aliases
+against intel item title, summary, and raw_excerpt. Entity matches are stored
+in `matched_entities` and `entity_match_basis` fields on queue entries.
+Explicit `tracked_entity_ids` on intel items always win over inferred matches.
 
 ---
 

@@ -327,6 +327,17 @@ reviewer_notes:
   required: false
   example: "Confirmed with SJSO PIO. Verified suspect name redacted per policy."
 
+# --- Linked entities ---
+
+tracked_entity_ids:
+  type: array<string>
+  description: >
+    Entity IDs from registry/tracked_entities.yaml that this intel item
+    is explicitly linked to. Not required — entities can also be inferred
+    by the review queue builder at build time.
+  required: false
+  example: ["ENT-RETAIL-PUBLIX-SILVERLEAF"]
+
 # --- Deprecation / replacement ---
 
 superseded_by:

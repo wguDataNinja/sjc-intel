@@ -141,3 +141,55 @@ and open loops. Marked ENT-001 done in BACKLOG.md.
 ## Not Modified
 - No scripts, data artifacts, or registries (other than tracked_entities) changed.
 - No commits.
+
+---
+
+# SJC_Intel Session — 2026-07-04 (ENT-002 Implementation)
+
+## Task
+Implement ENT-002 tracked-entity matching and queue integration.
+
+## Summary
+Updated intel_item.schema.yaml with optional `tracked_entity_ids` field.
+Updated scripts/build_review_queue.py to load registry/tracked_entities.yaml
+and match entity labels/aliases against intel item text fields (title,
+summary, raw_excerpt). Matching is conservative exact-phrase substring,
+prioritizing precision over recall. Queue entries gain `matched_entities`,
+`entity_match_basis`, and `tracked_entity_ids` fields. Summary gains
+`entity_matches` and `total_entity_matches`.
+
+## Files Changed
+- `schemas/intel_item.schema.yaml` — added tracked_entity_ids field
+- `scripts/build_review_queue.py` — added entity loading, matching, and
+  queue field integration
+- `data/review_queue/queue.yaml` — rebuilt with entity matches
+- `data/review_queue/summary.yaml` — rebuilt with entity match counts
+- `docs/data_model.md` — marked ENT-002 as implemented, updated relationship
+  map and entity linkage section
+- `README_INTERNAL.md` — updated open loop #4
+- `BACKLOG.md` — ENT-002: todo → done
+- `SESSION.md` — appended this session record
+- `LOG.md` — appended this session record
+
+## Match Results
+- 11 entity matches across 8 unique items
+- Matched entities: ENT-COMM-SILVERLEAF(5), ENT-INFRA-SR-207-WRF(2),
+  ENT-ROAD-CR-2209-CONNECTOR(2), ENT-EDU-SILVERLEAF-K8(1),
+  ENT-REC-BEACH-VALLEY-MINI-GOLF(1)
+- False positives: 0
+- False negatives: expected (Publix, Harris Teeter, Ascension, Fairfield Inn,
+  Nocatee Crosswater) — acceptable due to conservative exact-phrase matching
+- Review states preserved: 114 unchanged
+- Idempotent: confirmed across 3 runs
+
+## Matching Algorithm
+1. Explicit `tracked_entity_ids` on item win (future use)
+2. Entity label + aliases matched as exact case-insensitive substrings
+   against title, summary, raw_excerpt
+3. Match basis recorded (label/alias, which phrase matched)
+
+## Scope Notes
+- Hermes entity-search prompt deferred (not in ENT-002 scope as revised)
+- Interest filters NOT modified or auto-generated
+- No new entities added
+- No lifecycle statuses changed

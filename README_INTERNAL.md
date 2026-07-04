@@ -113,7 +113,7 @@ tracked entities workflow (ENT-001..004) and fixing BCC agenda link gaps.
    not extractable. Need Clerk's office verification. (GAP-001)
 2. **No Hermes runtime** for automated daily monitoring. (ongoing)
 3. **No `scripts/extract_utility.py`** — utility monitoring is manual.
-4. **Tracked entity → intel_item linkage not wired** — ENT-002 (queue builder integration) pending.
+4. **Tracked entity → intel_item linkage wired** — ENT-002 complete. Queue builder matches entity labels/aliases. No Hermes entity-search prompt yet (ENT-002 scope reduced).
 5. **School district has no June coverage** — BoardDocs pilot pending.
 6. **Tier 3 (CDD) and Tier 4 (community) sources** not promoted.
 7. **Monthly closeout** — last monthly run was 2026-06-08 (26+ days ago).

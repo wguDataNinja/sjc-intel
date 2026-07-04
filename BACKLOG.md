@@ -104,7 +104,7 @@ Status values: `todo`, `in_progress`, `blocked`, `done`, `deferred`.
 | ID | Title | Status | Priority | Dependencies | Owner/Agent | Next Action |
 |----|-------|--------|----------|--------------|-------------|-------------|
 | ENT-001 | Create tracked_entities.yaml registry and schema | done | high | none | sjc-intel-architect | Registry created (11 entities), schema created, data_model.md and README_INTERNAL.md updated. See docs/design/tracked_entities_design.md for design. |
-| ENT-002 | Create `prompts/hermes_entity_search_task.md` | todo | high | ENT-001 | sjc-intel-architect | Hermes contract for running entity-directed search queries against tracked_entities.yaml |
+| ENT-002 | Integrate tracked entities into intel_item schema and review queue builder | done | high | ENT-001 | sjc-intel-architect | Added tracked_entity_ids to intel_item schema. Queue builder loads entities and matches labels/aliases. 11 entity matches across 8 items. No false positives. Hermes entity-search prompt deferred (reduced scope). |
 | ENT-003 | Populate tracked_entities from Silverleaf discoveries | todo | high | ENT-001 | sjc-intel-architect | Add 6+ entities with search queries, source URLs, and status from July 4 discovery run |
 | ENT-004 | Document stakeholder interest onboarding process | todo | medium | ENT-001 | sjc-intel-architect | Write docs/tracked_entities.md with workflow for "Buddy finds interesting thing → add to tracking → pipeline discovers updates" |
 
