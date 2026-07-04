@@ -40,6 +40,7 @@ Multiple topics are allowed when an item spans categories.
 | `housing` | Affordable housing, residential development | Housing policy, development proposals |
 | `taxes` | Property tax, tax collection, deadlines | Tax notices, deadlines, payment information |
 | `elections` | Voting, registration, candidates, ballots | Election notices, voter registration deadlines |
+| `cdd_governance` | Community Development District board meetings, budgets, assessments, vacancies, elections, and district operations | CDD meeting agendas, workshop notices, board vacancies, assessment schedules, district governance actions |
 | `general_government` | Catch-all for unclassified government notices | Use only when no other topic is clearly applicable |
 
 ### Classification Rule
@@ -51,12 +52,11 @@ If the topic is unclear from the source content, use `general_government`.
 Do not expand the topic list until real extracted items prove the need, but
 track these as likely proposals:
 
-- `cdd_governance` — CDD meetings, budgets, assessments, packets, district
-  debt, amenity rules, and district infrastructure.
 - `public_records` — Clerk records, official records, board records, deeds,
   liens, tax deeds, and VAB context.
 - `permit_status` — permit search/status, certificate of occupancy, plan review,
   and vertical-construction movement.
+- *(cdd_governance promoted to canonical topic 2026-06-26)*
 - *(budget_millage promoted to canonical topic 2026-06-26)*
 
 Use `taxonomy_gap` on intel items when these are materially clearer than the
@@ -96,7 +96,7 @@ interest tags, and source families; they are not canonical item values yet.
 | `transportation` | `transportation`, `infrastructure`, `public_safety` | `traffic_impact`, `safety_concern`, `quality_of_life` |
 | `school_capacity` | `education`, `development` | `school_zones`, `property_values`, `traffic_impact` |
 | `utilities_water` | `infrastructure`, `environment`, `emergency_alerts`, `water_restrictions` | `utility_impact`, `cost_impact`, `emergency_awareness` |
-| `cdd_governance` | `county_government`, `taxes`, `parks_recreation`, `infrastructure` | `cost_impact`, `quality_of_life`, `property_values` |
+| `cdd_governance` | `cdd_governance`, `taxes`, `parks_recreation`, `infrastructure` | `cost_impact`, `quality_of_life`, `property_values` |
 | `taxes_exemptions_trim_vab` | `taxes`, `county_government` | `cost_impact`, `property_values` |
 | `public_safety_livability` | `public_safety`, `crime`, `transportation` | `safety_concern`, `quality_of_life` |
 | `retail_openings` | `economic_development`, `development` | `quality_of_life`, `property_values`, `traffic_impact` |

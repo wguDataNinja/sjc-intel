@@ -33,3 +33,9 @@ Thumbs.db
 
 # Node (OpenCode runtime)
 node_modules/
+
+# Hermes worker runtime (regenerated per session)
+runtime/
+
+# Auto-generated Hermes worker context (regenerated per session)
+WORKER_CONTEXT.md

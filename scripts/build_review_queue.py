@@ -18,6 +18,7 @@ INTEL_ITEMS_DIR = "data/intel_items"
 QUEUE_DIR = "data/review_queue"
 QUEUE_FILE = f"{QUEUE_DIR}/queue.yaml"
 SUMMARY_FILE = f"{QUEUE_DIR}/summary.yaml"
+FILTERS_FILE = "registry/interest_filters.yaml"
 SKIP_FILES = {"daily_cycle_summary.yaml", "bcc_weekly_summary.yaml", "bcc_calibration_notes.md"}
 SKIP_DIRS = {".deprecated"}  # Skip deprecated files and source_event directories
 SKIP_PREFIXES = {".deprecated"}  # Files ending with .deprecated
@@ -62,6 +63,47 @@ ACTIVE_EMERGENCY_KEYWORDS = [
     "boil water", "boil notice", "evacuation", "shelter in place",
     "hazmat", "active shooter", "amber alert", "emergency declaration",
 ]
+
+
+def load_interest_filters():
+    """Load interest filters from registry."""
+    if not os.path.exists(FILTERS_FILE):
+        return []
+    try:
+        with open(FILTERS_FILE) as f:
+            data = yaml.safe_load(f)
+        return data.get("interest_filters", [])
+    except Exception as e:
+        print(f"  WARNING: Could not load interest filters: {e}", file=__import__('sys').stderr)
+        return []
+
+
+INTEREST_FILTERS = load_interest_filters()
+
+
+def apply_interest_filters(item):
+    """Check item against all interest filters. Returns list of matching filter IDs."""
+    if not INTEREST_FILTERS:
+        return []
+
+    text_fields = {
+        "title": str(item.get("title", "")).lower(),
+        "summary": str(item.get("summary", "")).lower(),
+        "raw_excerpt": str(item.get("raw_excerpt", "")).lower(),
+        "description": str(item.get("description", "")).lower(),
+        "communities": " ".join(str(c).lower() for c in item.get("communities", [])),
+    }
+
+    matches = []
+    for flt in INTEREST_FILTERS:
+        fields_to_check = flt.get("match_on", ["title", "summary"])
+        text_to_search = " ".join(text_fields.get(f, "") for f in fields_to_check)
+        for kw in flt.get("keywords", []):
+            if kw.lower() in text_to_search:
+                matches.append(flt["id"])
+                break
+
+    return matches
 
 
 def compute_escalation(item):
@@ -172,6 +214,7 @@ def collect_items():
                 discovered_at = item.get("discovered_at", item.get("source_published_at", ""))
 
                 escalation = compute_escalation(item)
+                matched_filters = apply_interest_filters(item)
                 app_id = extract_app_id(
                     item.get("raw_excerpt", "") + item.get("summary", ""),
                     title
@@ -196,6 +239,7 @@ def collect_items():
                     "escalation": escalation,
                     "sensitivity": sensitivity,
                     "interest_tags": interest_tags,
+                    "matched_filters": matched_filters,
                     "review_status": review_status,
                     "human_review_required": human_review,
                     "source_url": source_url,
@@ -247,6 +291,7 @@ def build_summary(entries):
     by_escalation = defaultdict(int)
     by_signal = defaultdict(int)
     by_urgency = defaultdict(int)
+    by_filter = defaultdict(list)
     human_review = []
 
     for e in entries:
@@ -255,11 +300,27 @@ def build_summary(entries):
         by_escalation[e["escalation"]] += 1
         by_signal[e["signal"]] += 1
         by_urgency[e["urgency"]] += 1
+        if e.get("matched_filters"):
+            for fid in e["matched_filters"]:
+                by_filter[fid].append(e["item_id"])
         if e["human_review_required"]:
             human_review.append(e["item_id"])
 
     oldest = sorted(entries, key=lambda x: x["discovered_at"])[:5]
     urgent_items = [e for e in entries if e["escalation"] in ("immediate", "high")][:10]
+
+    # Build prioritized items list from filter matches
+    prioritized_items = []
+    for e in entries:
+        if e.get("matched_filters"):
+            prioritized_items.append({
+                "item_id": e["item_id"],
+                "title": e["title"][:100],
+                "matched_filters": e["matched_filters"],
+                "escalation": e["escalation"],
+                "source": e["source_id"],
+                "discovered_at": e["discovered_at"],
+            })
 
     return {
         "generated_at": now,
@@ -270,6 +331,9 @@ def build_summary(entries):
         "by_escalation": dict(by_escalation),
         "by_signal": dict(by_signal),
         "by_urgency": dict(by_urgency),
+        "interest_filter_matches": {fid: len(items) for fid, items in by_filter.items()},
+        "total_prioritized_items": len(prioritized_items),
+        "prioritized_items": prioritized_items,
         "human_review_count": len(human_review),
         "human_review_item_ids": human_review[:10],
         "oldest_pending": [

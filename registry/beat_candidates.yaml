@@ -76,7 +76,7 @@ candidates:
     example_search_terms: ['"Tolomato CDD"', '"Trout Creek CDD"', '"assessment hearing"']
     communities: ["nocatee", "shearwater", "trailmark", "beachwalk", "beacon_lake"]
     monitor_cadence: "weekly; monthly otherwise"
-    related_taxonomy_terms: ["county_government", "taxes", "parks_recreation", "cost_impact", "quality_of_life"]
+    related_taxonomy_terms: ["cdd_governance", "county_government", "taxes", "parks_recreation", "cost_impact", "quality_of_life"]
     review_status: "pending_review"
     promotion_decision: "recommend_canonical_interest_group"
     notes: "Deep Research made CDD governance a first-class homeowner source family."

@@ -565,8 +565,9 @@ candidates:
     evidence_from_report: >
       Report identifies Tolomato CDD as a public-governance companion for
       Nocatee assessments, schedules, and district information.
-    review_status: "pending_review"
-    promotion_decision: "recommend_promotion"
+    review_status: "reviewed"
+    promotion_decision: "promoted"
+    canonical_source_id: "tolomato_cdd"
     notes: "CDD governance is first-class after Deep Research."
 
   - candidate_id: "CAND-SRC-0027"
@@ -622,8 +623,9 @@ candidates:
     evidence_from_report: >
       Report calls Trout Creek CDD a strong public-governance source for
       Shearwater-area infrastructure and assessments.
-    review_status: "pending_review"
-    promotion_decision: "recommend_promotion"
+    review_status: "reviewed"
+    promotion_decision: "promoted"
+    canonical_source_id: "trout_creek_cdd"
     notes: "CDD monitor candidate."
 
   - candidate_id: "CAND-SRC-0030"
@@ -660,8 +662,9 @@ candidates:
     evidence_from_report: >
       Report identifies Six Mile Creek CDD as the core governance companion for
       TrailMark.
-    review_status: "pending_review"
-    promotion_decision: "recommend_promotion"
+    review_status: "reviewed"
+    promotion_decision: "promoted"
+    canonical_source_id: "six_mile_creek_cdd"
     notes: "CDD monitor candidate."
 
   - candidate_id: "CAND-SRC-0032"

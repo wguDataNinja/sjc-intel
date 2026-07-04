@@ -26,9 +26,11 @@ except ImportError:
 
 CLERK_URL = "https://stjohnsclerk.com/board-records/agendas/"
 USER_AGENT = "Mozilla/5.0 (SJC_Intel BCC Extractor/1.0)"
-OUTPUT_DIR = "data/intel_items/2026-06-26"
+BASE_INTEL_DIR = "data/intel_items"
+BASE_SOURCE_EVENTS_DIR = "data/source_events"
 PDF_FIXTURE_DIR = "tests/fixtures"
 TEXT_FIXTURE_DIR = "tests/fixtures"
+SOURCE_EVENT_PREFIX = "EVT-BCC"
 
 
 # ── Deterministic PDF URLs ──────────────────────────────────────────────
@@ -385,6 +387,58 @@ def map_topics(beat):
     return mapping.get(beat, ["county_government"])
 
 
+# ── Source Event Generation ──────────────────────────────────────────────
+
+def write_source_events(meeting_events, output_date, fetched_at):
+    """Write source_event records for processed BCC meetings."""
+    se_dir = os.path.join(BASE_SOURCE_EVENTS_DIR, output_date)
+    os.makedirs(se_dir, exist_ok=True)
+
+    se_path = os.path.join(se_dir, "sjc_bcc_calendar.yaml")
+    source_event_data = {
+        "source_id": "sjc_bcc_calendar",
+        "generated_at": fetched_at,
+        "total_events": len(meeting_events),
+        "events": meeting_events,
+    }
+    with open(se_path, "w") as f:
+        yaml.dump(source_event_data, f, default_flow_style=False, sort_keys=False, allow_unicode=True)
+    print(f"Wrote {len(meeting_events)} source events to {se_path}")
+
+
+def build_meeting_event(meeting_date, meeting_info, item_ids, status, extraction_status, source_health, notes=""):
+    """Build a source event record for a single BCC meeting."""
+    parts = meeting_date.split("/")
+    yr, m, d = parts[2], parts[0].zfill(2), parts[1].zfill(2)
+    if len(yr) == 2:
+        yr = "20" + yr
+    iso_date = f"{yr}-{m}-{d}"
+    compact = iso_date.replace("-", "")
+
+    return {
+        "event_id": f"EVT-BCC-{compact}-0001",
+        "source_id": "sjc_bcc_calendar",
+        "event_type": "meeting",
+        "title": f"BCC Regular Meeting — {iso_date}",
+        "event_date": iso_date,
+        "discovered_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "source_url": CLERK_URL,
+        "document_urls": {
+            "agenda": meeting_info.get("agenda_url", ""),
+            "minutes": meeting_info.get("minutes_url", ""),
+        },
+        "status": status,
+        "extraction_status": extraction_status,
+        "source_health": source_health,
+        "extracted_item_ids": sorted(item_ids),
+        "related_source_event_ids": [],
+        "notes": notes,
+        "raw_source_file": "tests/fixtures/clerk_agendas.html",
+        "created_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+    }
+
+
 # ── Main ────────────────────────────────────────────────────────────────
 
 def main():
@@ -394,6 +448,9 @@ def main():
     if not HAS_PYPDF:
         print("ERROR: pypdf is required. Install: pip install pypdf")
         sys.exit(1)
+
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    today_iso = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
     # 1. Fetch Clerk page
     print("\n1. Fetching Clerk Board Records page...")
@@ -426,11 +483,10 @@ def main():
             else:
                 print(f"   {m['date']}: agenda URL reported but 404")
 
-    # 4. Process the latest accessible agenda (May 19) + fixture (Jan 20)
+    # 4. Process the latest accessible agenda + fixture (Jan 20)
     print("\n3. Processing agenda PDFs...")
     all_items = []
-    today = "2026-06-26"
-    now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    meeting_events = []
 
     pdfs_to_process = [
         ("tests/fixtures/1202026_agenda.pdf", "1/20/2026", "fixture"),
@@ -464,23 +520,42 @@ def main():
         items = parse_agenda_items(text, meeting_date_str)
         print(f"     Parsed {len(items)} agenda items")
 
+        # Build source event for this meeting
+        try:
+            parts = meeting_date_str.split("/")
+            yr = parts[2]
+            if len(yr) == 2:
+                yr = "20" + yr
+            iso_date = f"{yr}-{parts[0].zfill(2)}-{parts[1].zfill(2)}"
+        except:
+            iso_date = meeting_date_str
+
+        compact = iso_date.replace("-", "")
+        if source_type == "fixture":
+            event_id = f"EVT-BCC-{compact}-0001"
+        else:
+            event_id = f"EVT-BCC-{today_iso.replace('-', '')}-0001"
+
+        # Build meeting info dict for source event
+        meeting_info = {}
+        for m in meetings:
+            try:
+                m_parts = m["date"].split("/")
+                m_yr = m_parts[2] if len(m_parts[2]) == 4 else "20" + m_parts[2]
+                m_iso = f"{m_yr}-{m_parts[0].zfill(2)}-{m_parts[1].zfill(2)}"
+                if m_iso == iso_date:
+                    meeting_info = m
+                    break
+            except:
+                pass
+
         # Classify and normalize
         for i, item in enumerate(items):
             signal = classify_resident_impact(item["text"], item["title"])
             beat = map_beat(item["action_type"], signal, item["text"], item["title"])
             topics = map_topics(beat)
 
-            # Generate intel_item
-            try:
-                parts = meeting_date_str.split("/")
-                yr = parts[2]
-                if len(yr) == 2:
-                    yr = "20" + yr
-                iso_date = f"{yr}-{parts[0].zfill(2)}-{parts[1].zfill(2)}"
-            except:
-                iso_date = meeting_date_str
-
-            item_id = f"SJC-BCC-{iso_date.replace('-', '')}-{i+1:04d}"
+            item_id = f"SJC-BCC-{compact}-{i+1:04d}"
             dedupe_key = hashlib.sha256(
                 f"sjc_bcc_calendar||{iso_date}||{item['number']}||{item['title'][:60]}".encode()
             ).hexdigest()[:16]
@@ -504,6 +579,7 @@ def main():
                 "summary": summary,
                 "source_id": "sjc_bcc_calendar",
                 "source_url": CLERK_URL,
+                "source_event_id": event_id,
                 "source_published_at": iso_date,
                 "discovered_at": now,
                 "discovered_by": "hermes-sjc_bcc_calendar",
@@ -544,12 +620,33 @@ def main():
             }
             all_items.append(record)
 
+        # Build source event for this meeting
+        item_ids = [r["item_id"] for r in all_items if r["_meeting_date"] == iso_date]
+        if meeting_info:
+            status = "extracted"
+            extraction_status = f"{len(item_ids)} agenda items extracted from PDF."
+            source_health = "accessible"
+            if meeting_info.get("agenda_link_broken"):
+                status = "extracted"
+                extraction_status = f"{len(item_ids)} items extracted via expected URL (Clerk link was broken)."
+                source_health = "accessible"
+            event = build_meeting_event(
+                meeting_date=meeting_date_str,
+                meeting_info=meeting_info,
+                item_ids=item_ids,
+                status=status,
+                extraction_status=extraction_status,
+                source_health=source_health,
+                notes="",
+            )
+            meeting_events.append(event)
+
     # 5. Write output
-    print(f"\n4. Writing output...")
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    intel_dir = os.path.join(BASE_INTEL_DIR, today_iso)
+    os.makedirs(intel_dir, exist_ok=True)
 
     # Agenda items
-    items_path = f"{OUTPUT_DIR}/sjc_bcc_agenda_items.yaml"
+    items_path = os.path.join(intel_dir, "sjc_bcc_agenda_items.yaml")
     output = {
         "source_id": "sjc_bcc_calendar",
         "fetched_at": now,
@@ -560,6 +657,10 @@ def main():
     with open(items_path, "w") as f:
         yaml.dump(output, f, default_flow_style=False, sort_keys=False, allow_unicode=True)
     print(f"   Wrote {len(all_items)} agenda items to {items_path}")
+
+    # Source events
+    if meeting_events:
+        write_source_events(meeting_events, today_iso, now)
 
     # Summary
     signals = {}
@@ -572,6 +673,7 @@ def main():
 
     print(f"\n  === Summary ===")
     print(f"  Total agenda items extracted: {len(all_items)}")
+    print(f"  Source events created: {len(meeting_events)}")
     print(f"  By signal: {signals}")
     print(f"  By beat: {beats}")
     print(f"  By action type: {action_types}")

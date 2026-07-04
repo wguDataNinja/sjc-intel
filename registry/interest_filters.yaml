@@ -1,0 +1,219 @@
+# =============================================================================
+# SJC_Intel — Interest Filters Registry
+# =============================================================================
+# Defines keyword-based interest filters that flag items as high-priority.
+# When an item's title, summary, or description matches any keyword in a
+# filter, the item gets tagged with that filter ID in the review queue.
+#
+# Schema version: 1.0
+# Status: active
+# Last updated: 2026-07-04
+# Updated by: sjc-intel-architect
+# =============================================================================
+
+interest_filters:
+
+  # ---------------------------------------------------------------------------
+  # Neighborhoods — specific subdivisions, streets, or areas
+  # ---------------------------------------------------------------------------
+
+  - id: "neighborhood_silverleaf"
+    label: "SilverLeaf Area"
+    type: "neighborhood"
+    priority_boost: "high"
+    match_on: ["title", "summary", "raw_excerpt", "description"]
+    keywords:
+      - "silverleaf"
+      - "silver leaf"
+      - "silverleaf parkway"
+      - "silver forest"
+      - "silverleaf k-8"
+      - "silverleaf publix"
+      - "beach valley mini golf"
+      - "silverleaf drive"
+    notes: >
+      SilverLeaf master-planned community in northwestern St. Johns County.
+      Includes specific developments: SilverLeaf Parkway, Silver Forest Dr,
+      SilverLeaf K-8 school, Beach Valley Mini Golf, SilverLeaf Publix.
+      All items mentioning this community or its specific locations.
+
+  - id: "neighborhood_cherry_elm"
+    label: "Cherry Elm Area"
+    type: "neighborhood"
+    priority_boost: "high"
+    match_on: ["title", "summary", "raw_excerpt", "description"]
+    keywords:
+      - "cherry elm"
+    notes: >
+      Cherry Elm neighborhood or street. All items mentioning this area.
+
+  - id: "neighborhood_nocatee"
+    label: "Nocatee Area"
+    type: "neighborhood"
+    priority_boost: "high"
+    match_on: ["title", "summary", "raw_excerpt", "description", "communities"]
+    keywords:
+      - "nocatee"
+    notes: >
+      Nocatee master-planned community in northern St. Johns County.
+      High-growth area with active development.
+
+  # ---------------------------------------------------------------------------
+  # Growth Corridors — major roads and development axes
+  # ---------------------------------------------------------------------------
+
+  - id: "corridor_cr210"
+    label: "CR 210 Corridor"
+    type: "corridor"
+    priority_boost: "high"
+    match_on: ["title", "summary", "raw_excerpt", "description", "communities"]
+    keywords:
+      - "cr 210"
+      - "county road 210"
+      - "international golf parkway"
+      - "cr 2209"
+      - "county road 2209"
+      - "st. johns parkway"
+      - "st johns parkway"
+      - "silverleaf parkway"
+      - "longleaf pines"
+    notes: >
+      County Road 210 corridor and surrounding northwest St. Johns road
+      network — major east-west arterial and connecting roads serving
+      SilverLeaf, Nocatee, and the CR 210 growth corridor.
+
+  - id: "corridor_sr16"
+    label: "SR 16 Corridor"
+    type: "corridor"
+    priority_boost: "high"
+    match_on: ["title", "summary", "raw_excerpt", "description", "communities"]
+    keywords:
+      - "sr 16"
+      - "state road 16"
+    notes: >
+      State Road 16 corridor connecting I-95 to St. Augustine.
+
+  # ---------------------------------------------------------------------------
+  # School-related — attendance zones, new schools, capacity
+  # ---------------------------------------------------------------------------
+
+  - id: "school_zoning_changes"
+    label: "School Attendance Zone Changes"
+    type: "school"
+    priority_boost: "high"
+    match_on: ["title", "summary", "raw_excerpt"]
+    keywords:
+      - "attendance zone"
+      - "school zoning"
+      - "rezoning"
+      - "school boundary"
+      - "new school"
+      - "k-8"
+      - "silverleaf school"
+      - "nocatee school"
+    notes: >
+      School attendance zone changes, new school construction, or rezoning
+      affecting where kids go to school.
+
+  # ---------------------------------------------------------------------------
+  # Development — new construction, rezonings, major projects
+  # ---------------------------------------------------------------------------
+
+  - id: "silverleaf_northwest_dev"
+    label: "Silverleaf/NW St. Johns Development"
+    type: "development"
+    priority_boost: "high"
+    match_on: ["title", "summary", "raw_excerpt", "description"]
+    keywords:
+      - "silverleaf"
+      - "beach valley mini golf"
+      - "nocatee publix"
+      - "silverleaf publix"
+      - "harris teeter"
+      - "silverleaf k-8"
+      - "ascension st. vincent"
+      - "waters edge"
+      - "water lily"
+      - "nocatee water park"
+      - "crosswater parkway"
+      - "valley ridge"
+      - "burbank"
+      - "shores fine wine"
+      - "bodybar pilates nocatee"
+      - "marketplace at nocatee"
+      - "fairfield inn cr 210"
+      - "marriott cr 210"
+      - "taco bell cr 210"
+      - "etown"
+      - "everrange"
+      - "beachwalk"
+      - "margaritaville"
+    notes: >
+      Active development projects in the Silverleaf/Nocatee/northwest
+      St. Johns growth corridor. Includes Publix, Harris Teeter, K-8
+      school, shopping centers, hotels, restaurants, and mixed-use
+      developments serving these communities.
+
+  - id: "major_development"
+    label: "Major Development Projects"
+    type: "development"
+    priority_boost: "high"
+    match_on: ["title", "summary", "raw_excerpt", "description"]
+    keywords:
+      - "rezoning"
+      - "pud"
+      - "comp plan"
+      - "development order"
+      - "plat"
+      - "subdivision"
+      - "dri"
+      - "planned unit development"
+      - "land use"
+    notes: >
+      Major development actions — rezonings, PUD modifications, comp plan
+      amendments, and large subdivision approvals.
+
+  # ---------------------------------------------------------------------------
+  # Utilities and infrastructure — boil notices, road work, water
+  # ---------------------------------------------------------------------------
+
+  - id: "utility_disruption"
+    label: "Utility Disruptions"
+    type: "utility"
+    priority_boost: "high"
+    match_on: ["title", "summary", "raw_excerpt"]
+    keywords:
+      - "boil water"
+      - "boil notice"
+      - "outage"
+      - "chlorine"
+      - "water main"
+      - "sewer"
+      - "irrigation"
+      - "watering restriction"
+      - "water shortage"
+      - "phase iii"
+    notes: >
+      Boil water notices, water outages, sewer issues, and water
+      restriction changes. High homeowner pain index.
+
+  # ---------------------------------------------------------------------------
+  # Emergency — hurricanes, evacuations, alerts
+  # ---------------------------------------------------------------------------
+
+  - id: "emergency_alerts"
+    label: "Emergency Alerts"
+    type: "emergency"
+    priority_boost: "immediate"
+    match_on: ["title", "summary", "raw_excerpt"]
+    keywords:
+      - "evacuation"
+      - "hurricane"
+      - "tropical storm"
+      - "flood"
+      - "emergency"
+      - "shelter"
+      - "alert"
+      - "warning"
+    notes: >
+      Emergency alerts and severe weather. Flagged as immediate priority.

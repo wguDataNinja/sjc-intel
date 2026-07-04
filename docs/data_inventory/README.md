@@ -7,8 +7,8 @@ contributed, and what's missing. Managed by the `data-inventory` agent role.
 
 | Time Period | Status | Items | Source Families | Artifacts |
 |-------------|--------|-------|-----------------|-----------|
-| May 2026 | ✅ Complete | 21 | county, utilities, schools, sheriff, emergency mgmt | `data/monthly/2026-05/` |
-| June 1-3, 2026 | ⏳ Partial | 7 | utility, school | Live monitor pilots |
+| May 2026 | ✅ First pass | 21 | county, utilities, schools, sheriff, emergency mgmt | `data/monthly/2026-05/` |
+| June 2026 (total) | ⏳ Live monitoring | **114** | county_decision, utilities_water, planning_development, permit_construction, roads_transportation, public_safety, emergency_mgmt | `data/intel_items/` |
 | Pre-May 2026 | ❌ Not started | 0 | — | — |
 
 ## Planned Windows

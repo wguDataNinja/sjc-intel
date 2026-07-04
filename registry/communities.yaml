@@ -46,7 +46,8 @@ communities:
     notes: >
       Major growth area in northwestern St. Johns County near the Duval
       County line. Large-scale residential and mixed-use development.
-    status: "observed"
+      Includes neighborhoods like Cherry Elm, Cherrywood, and Silverleaf Village.
+    status: "active"
 
   - id: "nocatee"
     name: "Nocatee"
@@ -218,4 +219,14 @@ communities:
     notes: >
       Specific area within Vilano Beach, near the beach access ramp.
       Identified during sjc_county_news pilot.
+    status: "active"
+
+  - id: "cherry_elm"
+    name: "Cherry Elm"
+    type: "neighborhood"
+    parent_area: "silverleaf"
+    notes: >
+      Neighborhood within the SilverLeaf master-planned community in
+      northwestern St. Johns County. Mentioned by resident as area of
+      specific interest.
     status: "active"

@@ -253,6 +253,90 @@ sources:
     discovered_by: "hermes-discovery-worker"
 
   # ---------------------------------------------------------------------------
+  # Priority 2 — CDD Community Development Districts (promoted 2026-06-26)
+  # ---------------------------------------------------------------------------
+
+  - source_id: "tolomato_cdd"
+    name: "Tolomato CDD"
+    description: >
+      Tolomato Community Development District. CDD governance source for
+      Nocatee area. Meeting notices, assessments, district operations.
+    url: "https://mytcdd.com/"
+    base_domain: "mytcdd.com"
+    source_type: "official_special_district"
+    relevance: "HIGH"
+    monitor_frequency: "weekly"
+    automatable: "LIKELY"
+    status: "active"
+    topics:
+      - county_government
+      - taxes
+      - parks_recreation
+      - infrastructure
+    communities:
+      - nocatee
+    notes: >
+      GoDaddy static site, no RSS. Scrapeable HTML. CDD governance source
+      for Nocatee area. Meeting notices, assessments, district operations.
+      Last HTTP 200 confirmed 2026-06-26.
+    discovered_at: "2026-06-26T12:00:00Z"
+    discovered_by: "hermes-discovery-worker"
+
+  - source_id: "trout_creek_cdd"
+    name: "Trout Creek CDD"
+    description: >
+      Trout Creek Community Development District. CDD governance source for
+      Shearwater. Meeting notices, assessments, district operations.
+    url: "https://troutcreekcdd.com/"
+    base_domain: "troutcreekcdd.com"
+    source_type: "official_special_district"
+    relevance: "HIGH"
+    monitor_frequency: "weekly"
+    automatable: "YES"
+    status: "active"
+    topics:
+      - county_government
+      - taxes
+      - parks_recreation
+      - infrastructure
+    communities:
+      - shearwater
+    notes: >
+      WordPress (Jupiter theme), RSS feed at /feed confirmed active (last
+      build 2026-06-23). CDD governance source for Shearwater. Meeting
+      notices, assessments, district operations. RSS enables easy automated
+      polling.
+    discovered_at: "2026-06-26T12:00:00Z"
+    discovered_by: "hermes-discovery-worker"
+
+  - source_id: "six_mile_creek_cdd"
+    name: "Six Mile Creek CDD"
+    description: >
+      Six Mile Creek Community Development District. CDD governance source
+      for TrailMark. Meeting notices, assessments, district operations.
+    url: "https://sixmilecreekcdd.com/"
+    base_domain: "sixmilecreekcdd.com"
+    source_type: "official_special_district"
+    relevance: "HIGH"
+    monitor_frequency: "weekly"
+    automatable: "YES"
+    status: "active"
+    topics:
+      - county_government
+      - taxes
+      - parks_recreation
+      - infrastructure
+    communities:
+      - trailmark
+    notes: >
+      WordPress (Jupiter theme), RSS feed at /feed confirmed active (last
+      build 2026-06-12). CDD governance source for TrailMark. Meeting
+      notices, assessments, district operations. RSS enables easy automated
+      polling.
+    discovered_at: "2026-06-26T12:00:00Z"
+    discovered_by: "hermes-discovery-worker"
+
+  # ---------------------------------------------------------------------------
   # Priority 3 — Medium Relevance, Monthly Monitoring
   # ---------------------------------------------------------------------------
 
@@ -261,8 +345,8 @@ sources:
     description: >
       St. Johns County Property Appraiser office. Property records,
       assessments, parcel data, and real estate intelligence.
-    url: "https://www.sjcpa.us/"
-    base_domain: "sjcpa.us"
+    url: "https://www.sjcpa.gov/"
+    base_domain: "sjcpa.gov"
     source_type: "government_portal"
     relevance: "MEDIUM"
     monitor_frequency: "monthly"
