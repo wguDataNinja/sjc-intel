@@ -12,8 +12,9 @@ A future worker should begin in this order:
 3. Repo-local `LOG.md` — durable activity log
 4. **This document** (`docs/VPS_CONTINUITY.md`) — project-specific VPS status
 5. `ivy-control/vps/worker-control/reports/STRONG_AGENTIC_EXECUTION_REPORT.md` — most recent execution report
-6. `ivy-control/vps/worker-control/reports/REAL_DATA_PILOT_GATE_ASSESSMENT_20260706.md` — current Gate status
-7. `ivy-control/vps/worker-control/reports/POST_FOUNDATION_TO_VPS_ROADMAP.md` — forward roadmap
+6. `ivy-control/vps/worker-control/reports/VPS_POSTGRES_CAPACITY_GATE_20260706.md` — current VPS PostgreSQL capacity decision
+7. `ivy-control/vps/worker-control/reports/REAL_DATA_PILOT_GATE_ASSESSMENT_20260706.md` — current Gate status
+8. `ivy-control/vps/worker-control/reports/POST_FOUNDATION_TO_VPS_ROADMAP.md` — forward roadmap
 
 ### Where Recent Work Was Logged
 
@@ -28,6 +29,7 @@ A future worker should begin in this order:
 | Pilot loader tests | `tests/test_pilot_loader.py` (11 tests PASS) |
 | VPS continuity | This file |
 | GitHub-readiness report | `ivy-control/vps/worker-control/reports/SJC_TRADERIE_GITHUB_AND_DOCS_READINESS.md` |
+| VPS capacity Gate | `ivy-control/vps/worker-control/reports/VPS_POSTGRES_CAPACITY_GATE_20260706.md` |
 
 ### Authority Rule
 
@@ -48,7 +50,27 @@ This document summarizes project state. Ivy-Control (`/Users/buddy/projects/ivy-
 | Pilot loader (`scripts/pilot_loader.py`) | ✅ Implemented, tested (11 tests) | dry-run/plan/apply/rollback/parity modes, writer-role-only |
 | File authority (YAML/JSON) | ✅ Current source of truth | `data/` directory — not yet loaded to PG |
 | Real-data ingestion | ❌ Not started | Blocked on pilot Gate approval |
+| VPS PostgreSQL primary | ❌ Not approved | Current VPS failed capacity Gate on 2026-07-06 |
 | VPS deployment | ❌ Not started | No services, no timers, no checkout |
+
+## VPS Capacity Gate — 2026-07-06
+
+The current `ih-market-vps` failed the PostgreSQL 16 capacity Gate for SJC Intel. PostgreSQL was not installed on the VPS, no SJC database was provisioned there, and no real-data pilot was executed.
+
+Blocking evidence from the Gate:
+
+- root filesystem 89% used with ~4.3 GB free;
+- 2.0 GiB swap in use;
+- active Chrome/browser, Idle Hacking collector, WGU, and private-search workloads;
+- `/home/scraper/data/private/chat` at 13 GB;
+- no passwordless sudo path for non-interactive provisioning/firewall verification;
+- pending reboot before service-start behavior can be trusted.
+
+Current authority after the failed Gate:
+
+- Mac PostgreSQL 16 remains the active verified foundation, fallback, and migration source.
+- SJC is not approved to use the current VPS as PostgreSQL primary.
+- Preferred next option is a dedicated PostgreSQL VPS, minimum 2 vCPU / 4 GB RAM / 80 GB disk, or a resized current host of at least 4 vCPU / 8 GB RAM / 80 GB disk after cleanup, reboot verification, root/sudo maintenance access, and root filesystem below 70%.
 
 ---
 
@@ -58,6 +80,7 @@ This document summarizes project state. Ivy-Control (`/Users/buddy/projects/ivy-
 |----------|------|---------|
 | Database Authority Gate execution report | `ivy-control/vps/worker-control/reports/DATABASE_AUTHORITY_GATE_EXECUTION_REPORT.md` | Live PostgreSQL state, roles, schemas, privileges |
 | Deployment workflow | `ivy-control/vps/DEPLOYMENT_WORKFLOW.md` | Canonical Mac→GitHub→VPS deployment model |
+| VPS capacity Gate | `ivy-control/vps/worker-control/reports/VPS_POSTGRES_CAPACITY_GATE_20260706.md` | Current VPS failed PostgreSQL capacity Gate |
 | Post-foundation roadmap | `ivy-control/vps/worker-control/reports/POST_FOUNDATION_TO_VPS_ROADMAP.md` | Current forward roadmap with SJC pilot sequence |
 | Real-data pilot Gate assessment | `ivy-control/vps/worker-control/reports/REAL_DATA_PILOT_GATE_ASSESSMENT_20260706.md` | SJC Gate status and pilot candidate definition |
 | SJC/Traderie readiness report | `ivy-control/vps/worker-control/reports/SJC_TRADERIE_GITHUB_AND_DOCS_READINESS.md` | Pilot loader, GitHub readiness, docs inventory |
@@ -95,13 +118,13 @@ The following pre-foundation documents contain useful repository state facts tha
 ## Next Repository-Local Steps
 
 1. Dry-run and plan verification: `python3 scripts/pilot_loader.py --dry-run --json`
-2. Pilot Gate approval (Buddy)
-3. Fresh pre-load backup: `pg_dump -Fc -Z 9 ...` + manifest
-4. Bounded pilot: `python3 scripts/pilot_loader.py --apply --limit 10 --eligible-only`
-5. Parity: `python3 scripts/pilot_loader.py --parity`
-6. Rollback proof: `python3 scripts/pilot_loader.py --rollback`
-7. Delete-and-reimport proof: apply → delete → re-apply → compare digest
-8. Git cleanup and CI addition
+2. Select dedicated DB VPS or resize/clean current VPS and rerun capacity Gate
+3. Pilot Gate approval (Buddy)
+4. Fresh pre-load backup: `pg_dump -Fc -Z 9 ...` + manifest
+5. Bounded pilot: `python3 scripts/pilot_loader.py --apply --limit 10 --eligible-only`
+6. Parity: `python3 scripts/pilot_loader.py --parity`
+7. Rollback proof: `python3 scripts/pilot_loader.py --rollback`
+8. Delete-and-reimport proof: apply → delete → re-apply → compare digest
 9. Reviewed commits + GitHub push
 10. Exact-SHA VPS deployment preparation
 11. Shadow operation (VPS health-only timers)
@@ -131,9 +154,9 @@ python3 scripts/pilot_loader.py --parity
 ## CI / GitHub Readiness
 
 Current gaps:
-- No GitHub Actions workflow (needs Python syntax, tests, migration checks, dry-run)
-- No deploy/ directory
-- Pilot-readiness documentation needs formalizing
+- GitHub Actions workflow exists and passed locally via `python3 -m pytest tests/ -v`
+- `deploy/` directory exists with inert service/timer templates
+- Pilot-readiness documentation exists, but current VPS failed the PostgreSQL capacity Gate
 - AGENTS.md references obsolete agents
 
 See `ivy-control/vps/worker-control/reports/SJC_TRADERIE_GITHUB_AND_DOCS_READINESS.md` for full readiness status.

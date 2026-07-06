@@ -1,5 +1,19 @@
 # SJC_Intel Session Log
 
+## 2026-07-06 — VPS PostgreSQL capacity Gate failed
+
+**Task:** Determine whether current `ih-market-vps` can safely host PostgreSQL 16 for SJC Intel.
+
+**Result:** Failed Gate. PostgreSQL was not installed on the VPS, no SJC database was provisioned there, and no real-data pilot was executed.
+
+**Evidence:** `ivy-control/vps/worker-control/reports/VPS_POSTGRES_CAPACITY_GATE_20260706.md`.
+
+**Key findings:** VPS root filesystem 89% used (~4.3 GB free), 2.0 GiB swap in use, active Chrome/Idle Hacking collector/WGU/private-search workloads, private chat archive 13 GB, no passwordless sudo, pending reboot.
+
+**SJC validation:** `python3 -m pytest tests/ -v` passed 104/104; `python3 scripts/validate.py` passed; `scripts/pilot_loader.py --dry-run --eligible-only --json` selected 10 NBOR records with digest `6c0008d2855daf6c07fc4c0f2dda5478856cae775927bcc54cdda790571254b4`.
+
+**Current authority:** Mac PostgreSQL 16 remains active foundation/fallback. Current VPS is not approved as SJC PostgreSQL primary.
+
 ## 2026-07-04 (Doc Consolidation) — Reduce doc sprawl, add git/logging policy
 
 **Task:** Consolidate project docs, define Git policy, formalize logging practice.

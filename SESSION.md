@@ -21,6 +21,16 @@ No real data ingested. No VPS deployment.
 See `docs/VPS_CONTINUITY.md` for continuity details.
 See ivy-control `vps/worker-control/reports/STRONG_AGENTIC_EXECUTION_REPORT.md` for full execution evidence.
 
+## VPS PostgreSQL Capacity Gate Failed (2026-07-06)
+
+The current `ih-market-vps` was inspected for SJC Intel PostgreSQL 16 hosting and failed the capacity Gate. PostgreSQL was not installed on the VPS and no SJC database was provisioned there.
+
+Key blockers: root filesystem 89% used with ~4.3 GB free, 2.0 GiB swap in use, active Chrome/collector/WGU/private-search workloads, 13 GB private chat archive, no passwordless sudo path for provisioning/firewall verification, and pending reboot.
+
+Current authority: Mac PostgreSQL 16 remains the active verified foundation, fallback, and migration source. SJC is pre-pilot-ready locally, but the current VPS is not approved as PostgreSQL primary.
+
+Evidence: `ivy-control/vps/worker-control/reports/VPS_POSTGRES_CAPACITY_GATE_20260706.md`.
+
 ## Changes Made
 
 ### Rewritten
