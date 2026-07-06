@@ -34,6 +34,26 @@ Recommended default where evidence remains incomplete:
 | Backup retention | 7 daily, 4 weekly local VPS dumps; 14 daily during cutover on Mac | Longer retention if disk permits | Capacity check and restore drill | Before PostgreSQL Cutover Gate |
 | Browser/form sources | Defer to hardening phase | Playwright/Camoufox proof | Source-by-source probe | Before adding those sources to timers |
 
+## Lane Context
+
+This VPS roadmap primarily serves the **durable knowledge lane** (projects,
+schools, businesses, roads, government decisions, utilities, expected dates,
+construction, openings, long-term change). Two additional lanes exist in the
+broader product direction but are not yet ready for VPS deployment sequencing:
+
+- **Live incident lane** (crashes, closures, flooding) — dependent on source
+  feasibility investigation and SilverLeaf geographic registry. Incident data
+  is transient (hours to days), structurally different from intel items, and
+  may not require VPS hosting (local capture is acceptable).
+- **Agentic investigation lane** (targeted news/social searches, evidence
+  extraction, reconciliation) — dependent on LLM infrastructure and search
+  provider integration. Planned for a later phase after the durable lane is
+  on VPS and the incident lane is proven locally.
+
+See `docs/planning/SJC_PRODUCT_AND_SOURCING_DIRECTION_20260706.md` for the
+full three-lane architecture. See `docs/planning/SJC_DIRECTION_RECONCILIATION_20260706.md`
+for the reconciliation of these lanes with existing VPS planning.
+
 ## Target End State
 
 SJC Intel runs deterministic source checks on the VPS, stores structured source events, intel items, scheduler executions, health snapshots, and artifact metadata in `sjc_intel`, and exports sanitized health JSON for ivy-control. Manual review, source promotion, monthly closeout, publication, deep research, and resident-interest judgment remain human-gated.
@@ -52,6 +72,9 @@ SJC Intel runs deterministic source checks on the VPS, stores structured source 
 | Nocatee/community sources | 4 hardening | Needs extractor and source contract |
 | FDOT/SJRWMD/roads | 4 hardening | Needs extractor and cadence design |
 | Development tracker/permit portal | 6 deferred | Browser/form/API discovery required |
+| Live incident capture (FHP, FL511) | 6 deferred | Source feasibility investigation first; distinct transient data model |
+| Agentic investigation (news/social search) | 6 deferred | Requires LLM infrastructure, search provider, and review gates |
+| SilverLeaf geographic registry | 5 local/manual long term | YAML-based, parallel to VPS work; becomes PG data after VPS PostGIS |
 | Dedupe index rebuild | 2 shadow/parity | Deterministic YAML scan |
 | Review queue rebuild | 3 HITL gate design | State-changing review queue must be gated |
 | Review status updates | 5 local/manual long term | Editorial state |
