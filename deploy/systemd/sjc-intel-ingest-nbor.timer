@@ -1,0 +1,16 @@
+# SJC Intel — NBOR public notices ingestion timer
+# DO NOT INSTALL OR ENABLE WITHOUT SCHEDULER GATE
+#
+# Schedule: daily — NBOR posts new notices each business day.
+# RandomizedDelaySec prevents thundering herd on shared VPS.
+
+[Unit]
+Description=SJC Intel — NBOR public notices ingestion timer
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+RandomizedDelaySec=300
+
+[Install]
+WantedBy=timers.target

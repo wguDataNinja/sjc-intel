@@ -1,0 +1,46 @@
+# SJC Intel — PostgreSQL backup
+# DO NOT INSTALL OR ENABLE WITHOUT SCHEDULER GATE
+#
+# PG readiness: checks SJC_INTEL_PG_ADAPTER_ENABLED and SJC_INTEL_PG_URL.
+#   If PG is not enabled, service exits 0 with a log message (nothing to back up).
+#   If PG is enabled, runs pg_dump, computes SHA-256 checksum, writes manifest.
+# File fallback: YAML artifacts under data/ and registry/ are Git-tracked;
+#   no database dependency for source-of-truth until PostgreSQL Cutover Gate.
+# Health: after backup, health_export.py should update
+#   ${SJC_INTEL_HEALTH_OUTPUT} with backup_state.
+# Exit: non-zero if pg_dump fails, checksum mismatch, or manifest write fails.
+# Timeout: 1800s (30 min) — pg_dump with compress=9 can be slow on small VPS.
+
+[Unit]
+Description=SJC Intel — PostgreSQL backup
+After=network-online.target
+Documentation=https://github.com/anomalyco/sjc_intel
+
+[Service]
+Type=oneshot
+User=scraper
+WorkingDirectory=/home/scraper/apps/sjc-intel
+EnvironmentFile=/home/scraper/config/sjc_intel.env
+ExecStart=/bin/bash -c '\
+  if [ "${SJC_INTEL_PG_ADAPTER_ENABLED}" != "true" ]; then \
+    echo "PG disabled — backup skipped"; exit 0; \
+  fi; \
+  exec 9>/home/scraper/data/sjc-intel/.locks/backup-postgres.lock && \
+  flock -n 9 || exit 0; \
+  TIMESTAMP=$(date -u +%%Y%%m%%dT%%H%%M%%SZ); \
+  BACKUP_DIR="${SJC_INTEL_BACKUP_ROOT:-/home/scraper/backups/postgres/sjc-intel}"; \
+  mkdir -p "${BACKUP_DIR}"; \
+  pg_dump --dbname="${SJC_INTEL_PG_URL}" --format=custom --compress=9 \
+    --file="${BACKUP_DIR}/sjc_intel_${TIMESTAMP}.dump" && \
+  cd "${BACKUP_DIR}" && \
+  sha256sum "sjc_intel_${TIMESTAMP}.dump" > "sjc_intel_${TIMESTAMP}.dump.sha256" && \
+  echo "Backup complete: sjc_intel_${TIMESTAMP}.dump" \
+'
+Restart=on-failure
+RestartSec=60
+TimeoutStartSec=1800
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=timers.target

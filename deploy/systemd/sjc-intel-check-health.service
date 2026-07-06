@@ -1,0 +1,31 @@
+# SJC Intel — Health check
+# DO NOT INSTALL OR ENABLE WITHOUT SCHEDULER GATE
+#
+# PG readiness: checks SJC_INTEL_PG_ADAPTER_ENABLED.
+#   false (default) → health check verifies file-based storage (YAML queues).
+#   true → additionally pings sjc_intel database via pg_adapter.
+# File fallback: health JSON is always written to ${SJC_INTEL_HEALTH_OUTPUT}
+#   regardless of PG state.
+# Health: output is a sanitized JSON per SHARED-003 health contract.
+# Exit: non-zero if critical health checks fail (disk, data freshness, queue
+#   backlog exceeding threshold).
+
+[Unit]
+Description=SJC Intel — health check
+After=network-online.target
+Documentation=https://github.com/anomalyco/sjc_intel
+
+[Service]
+Type=oneshot
+User=scraper
+WorkingDirectory=/home/scraper/apps/sjc-intel
+EnvironmentFile=/home/scraper/config/sjc_intel.env
+ExecStart=/bin/bash -c 'exec 9>/home/scraper/data/sjc-intel/.locks/health.lock && flock -n 9 || exit 0; exec /home/scraper/apps/sjc-intel/scripts/health_export.py'
+Restart=on-failure
+RestartSec=30
+TimeoutStartSec=300
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=timers.target

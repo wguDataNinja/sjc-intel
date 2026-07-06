@@ -1,0 +1,30 @@
+# SJC Intel — Dedupe index rebuild
+# DO NOT INSTALL OR ENABLE WITHOUT SCHEDULER GATE
+#
+# PG readiness: checks SJC_INTEL_PG_ADAPTER_ENABLED.
+#   false (default) → reads data/intel_items/*.yaml from filesystem.
+#   true → reads from intel_items table in sjc_intel database.
+# File fallback: file-based dedupe index at data/index/prior_items.yaml is
+#   authoritative until PostgreSQL Cutover Gate.
+# Health: after run, health_export.py should update ${SJC_INTEL_HEALTH_OUTPUT}.
+# Exit: non-zero if rebuild fails or index is corrupted.
+
+[Unit]
+Description=SJC Intel — dedupe index rebuild
+After=network-online.target
+Documentation=https://github.com/anomalyco/sjc_intel
+
+[Service]
+Type=oneshot
+User=scraper
+WorkingDirectory=/home/scraper/apps/sjc-intel
+EnvironmentFile=/home/scraper/config/sjc_intel.env
+ExecStart=/bin/bash -c 'exec 9>/home/scraper/data/sjc-intel/.locks/dedupe.lock && flock -n 9 || exit 0; exec /home/scraper/apps/sjc-intel/scripts/rebuild_dedupe_index.py'
+Restart=on-failure
+RestartSec=30
+TimeoutStartSec=300
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=timers.target

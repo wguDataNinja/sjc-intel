@@ -1,0 +1,17 @@
+# SJC Intel — Review queue build timer
+# DO NOT INSTALL OR ENABLE WITHOUT SCHEDULER GATE
+#
+# Schedule: daily — review queue is rebuilt once per day after ingestion
+# and dedupe have completed.
+# RandomizedDelaySec staggers the run within the daily window.
+
+[Unit]
+Description=SJC Intel — review queue build timer
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+RandomizedDelaySec=300
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,29 @@
+# SJC Intel — BCC agenda ingestion
+# DO NOT INSTALL OR ENABLE WITHOUT SCHEDULER GATE
+#
+# PG readiness: checks SJC_INTEL_PG_ADAPTER_ENABLED.
+#   false (default) → file adapter writes YAML to data/source_events/.
+#   true → PG adapter writes to sjc_intel database.
+# File fallback: file adapter is authoritative until PostgreSQL Cutover Gate.
+# Health: after run, health_export.py should update ${SJC_INTEL_HEALTH_OUTPUT}.
+# Exit: non-zero if required extraction fails or produces zero items.
+
+[Unit]
+Description=SJC Intel — BCC agenda ingestion
+After=network-online.target
+Documentation=https://github.com/anomalyco/sjc_intel
+
+[Service]
+Type=oneshot
+User=scraper
+WorkingDirectory=/home/scraper/apps/sjc-intel
+EnvironmentFile=/home/scraper/config/sjc_intel.env
+ExecStart=/bin/bash -c 'exec 9>/home/scraper/data/sjc-intel/.locks/bcc-agenda.lock && flock -n 9 || exit 0; exec /home/scraper/apps/sjc-intel/scripts/extract_bcc_agenda.py'
+Restart=on-failure
+RestartSec=30
+TimeoutStartSec=300
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=timers.target

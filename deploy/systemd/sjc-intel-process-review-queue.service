@@ -1,0 +1,30 @@
+# SJC Intel — Review queue build
+# DO NOT INSTALL OR ENABLE WITHOUT SCHEDULER GATE
+#
+# PG readiness: checks SJC_INTEL_PG_ADAPTER_ENABLED.
+#   false (default) → reads data/intel_items/*.yaml from filesystem.
+#   true → reads from intel_items and dedupe tables in sjc_intel database.
+# File fallback: queue.yaml is written to data/review_queue/ — authoritative
+#   until PostgreSQL Cutover Gate.
+# Health: after run, health_export.py should update ${SJC_INTEL_HEALTH_OUTPUT}.
+# Exit: non-zero if build fails or queue is empty when items exist.
+
+[Unit]
+Description=SJC Intel — review queue build
+After=network-online.target
+Documentation=https://github.com/anomalyco/sjc_intel
+
+[Service]
+Type=oneshot
+User=scraper
+WorkingDirectory=/home/scraper/apps/sjc-intel
+EnvironmentFile=/home/scraper/config/sjc_intel.env
+ExecStart=/bin/bash -c 'exec 9>/home/scraper/data/sjc-intel/.locks/review-queue.lock && flock -n 9 || exit 0; exec /home/scraper/apps/sjc-intel/scripts/build_review_queue.py'
+Restart=on-failure
+RestartSec=30
+TimeoutStartSec=300
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=timers.target

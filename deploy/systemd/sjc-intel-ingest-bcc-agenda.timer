@@ -1,0 +1,17 @@
+# SJC Intel — BCC agenda ingestion timer
+# DO NOT INSTALL OR ENABLE WITHOUT SCHEDULER GATE
+#
+# Schedule: weekly — BCC agenda is typically posted 5-7 days before each
+# regular meeting (1st and 3rd Tuesday of the month).
+# RandomizedDelaySec prevents thundering herd on shared VPS.
+
+[Unit]
+Description=SJC Intel — BCC agenda ingestion timer
+
+[Timer]
+OnCalendar=weekly
+Persistent=true
+RandomizedDelaySec=600
+
+[Install]
+WantedBy=timers.target

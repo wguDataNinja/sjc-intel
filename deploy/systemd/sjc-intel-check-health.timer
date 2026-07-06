@@ -1,0 +1,16 @@
+# SJC Intel — Health check timer
+# DO NOT INSTALL OR ENABLE WITHOUT SCHEDULER GATE
+#
+# Schedule: every 2 hours — monitors data freshness, disk usage, queue
+# backlog, and PG connectivity so Hermes and dashboard have recent data.
+# No randomization needed — health checks do not contend with ingestion.
+
+[Unit]
+Description=SJC Intel — health check timer
+
+[Timer]
+OnCalendar=*-*-* *:00/2:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

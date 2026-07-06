@@ -1,0 +1,17 @@
+# SJC Intel — Dedupe index rebuild timer
+# DO NOT INSTALL OR ENABLE WITHOUT SCHEDULER GATE
+#
+# Schedule: every 6 hours — runs after ingestion windows to catch new items.
+# Persistent=true catches up after downtime.
+# RandomizedDelaySec staggers the exact start within the 6-hour window.
+
+[Unit]
+Description=SJC Intel — dedupe index rebuild timer
+
+[Timer]
+OnCalendar=*-*-* 00,06,12,18:00:00
+Persistent=true
+RandomizedDelaySec=180
+
+[Install]
+WantedBy=timers.target

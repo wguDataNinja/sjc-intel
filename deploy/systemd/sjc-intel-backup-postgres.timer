@@ -1,0 +1,16 @@
+# SJC Intel — PostgreSQL backup timer
+# DO NOT INSTALL OR ENABLE WITHOUT SCHEDULER GATE
+#
+# Schedule: daily at 04:00 local time (low-activity window).
+# No randomization — backup timing should be predictable for monitoring.
+# Backup/Restore Gate must be approved before enabling.
+
+[Unit]
+Description=SJC Intel — PostgreSQL backup timer
+
+[Timer]
+OnCalendar=*-*-* 04:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target
