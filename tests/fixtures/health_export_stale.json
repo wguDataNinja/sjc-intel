@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-20T14:30:00Z",
+  "project": "sjc_intel",
+  "workflow": "daily_ingest",
+  "status": "warn",
+  "last_success": "2026-06-20T14:25:00Z",
+  "freshness": 864000,
+  "expected_cadence": 86400,
+  "volume_24h": 0,
+  "incident": true,
+  "degraded_reason_code": "freshness_exceeded",
+  "backup_state": "stale",
+  "migration_version": "20260705_001_create_health_schema",
+  "source_reachability": "degraded",
+  "monthly_closeout_age": 18,
+  "dedupe_index_size": 142,
+  "review_queue_pending": 23,
+  "source_count": 28,
+  "tracked_entity_count": 12
+}

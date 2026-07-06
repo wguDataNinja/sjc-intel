@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-05T14:30:00Z",
+  "project": "sjc_intel",
+  "workflow": "daily_ingest",
+  "status": "ok",
+  "last_success": "2026-07-05T14:25:00Z",
+  "freshness": 300,
+  "expected_cadence": 86400,
+  "volume_24h": 47,
+  "incident": false,
+  "degraded_reason_code": null,
+  "backup_state": "ok",
+  "error_message_private": "Connection refused to database",
+  "ip_address": "192.168.1.1",
+  "filesystem_path": "/home/scraper/data/sjc_intel/raw",
+  "api_key": "sk-abc123def456",
+  "stack_trace": "Traceback: File \"/home/scraper/apps/sjc_intel/ingest.py\", line 42, in main\npsycopg2.OperationalError: connection refused"
+}

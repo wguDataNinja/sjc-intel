@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-05T14:30:00Z",
+  "project": "sjc_intel",
+  "workflow": "daily_ingest",
+  "status": "ok",
+  "last_success": "2026-07-05T14:25:00Z",
+  "freshness": 300,
+  "expected_cadence": 86400,
+  "volume_24h": 47,
+  "incident": false,
+  "degraded_reason_code": null,
+  "backup_state": "ok",
+  "migration_version": null,
+  "source_reachability": "ok",
+  "monthly_closeout_age": 3,
+  "dedupe_index_size": 142,
+  "review_queue_pending": 5,
+  "source_count": 28,
+  "tracked_entity_count": 12
+}

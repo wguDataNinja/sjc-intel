@@ -1,0 +1,9 @@
+tracked_entities:
+  - entity_id: "ENT-TEST-FIXTURE-ENTITY"
+    entity_type: "other"
+    label: "Test Fixture Entity"
+    description: "A test entity for adapter testing."
+    lifecycle_status: "tracked"
+    priority: "low"
+    communities: []
+    tracked_since: "2026-07-05"

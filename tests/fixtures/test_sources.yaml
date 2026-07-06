@@ -1,0 +1,16 @@
+sources:
+  - source_id: "test_source"
+    name: "Test Source"
+    description: "A test source for adapter testing."
+    url: "https://example.com/"
+    base_domain: "example.com"
+    source_type: "wordpress_blog"
+    relevance: "HIGH"
+    monitor_frequency: "daily"
+    automatable: "YES"
+    status: "active"
+    topics:
+      - public_safety
+      - development
+    communities: []
+    notes: "Test source fixture."
