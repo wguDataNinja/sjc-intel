@@ -8,6 +8,10 @@ UNION ALL SELECT 'row_count_app.source_events', COUNT(*) FROM app.source_events
 UNION ALL SELECT 'row_count_app.intel_items', COUNT(*) FROM app.intel_items
 UNION ALL SELECT 'row_count_app.tracked_entities', COUNT(*) FROM app.tracked_entities
 UNION ALL SELECT 'row_count_app.review_queue_entries', COUNT(*) FROM app.review_queue_entries
+UNION ALL SELECT 'row_count_app.source_retention_policies', COUNT(*) FROM app.source_retention_policies
+UNION ALL SELECT 'row_count_app.raw_artifact_records', COUNT(*) FROM app.raw_artifact_records
+UNION ALL SELECT 'row_count_app.pipeline_runs', COUNT(*) FROM app.pipeline_runs
+UNION ALL SELECT 'row_count_app.metric_snapshots', COUNT(*) FROM app.metric_snapshots
 UNION ALL SELECT 'row_count_health.health_runs', COUNT(*) FROM health.health_runs
 UNION ALL SELECT 'row_count_health.workflow_status', COUNT(*) FROM health.workflow_status;
 
@@ -40,11 +44,15 @@ WITH expected(table_schema, table_name) AS (
         ('app','beat_candidates'),
         ('app','communities'),
         ('app','search_terms'),
+        ('app','source_retention_policies'),
+        ('app','raw_artifact_records'),
+        ('app','pipeline_runs'),
+        ('app','metric_snapshots'),
         ('health','health_runs'),
         ('health','workflow_status')
 )
 SELECT 'expected_tables_exist' AS check_name,
-       CASE WHEN COUNT(c.oid) = 20 THEN 'PASS' ELSE 'FAIL' END AS result,
+       CASE WHEN COUNT(c.oid) = 24 THEN 'PASS' ELSE 'FAIL' END AS result,
        COUNT(c.oid) AS found
 FROM expected e
 LEFT JOIN pg_namespace n ON n.nspname = e.table_schema
@@ -60,7 +68,7 @@ WHERE n.nspname IN ('app','archive','health')
   AND r.rolname = 'sjc_intel_owner';
 
 SELECT 'table_ownership' AS check_name,
-       CASE WHEN COUNT(*) = 20 THEN 'PASS' ELSE 'FAIL' END AS result,
+       CASE WHEN COUNT(*) = 24 THEN 'PASS' ELSE 'FAIL' END AS result,
        COUNT(*) AS owned_tables
 FROM pg_class c
 JOIN pg_namespace n ON n.oid = c.relnamespace
@@ -70,20 +78,20 @@ WHERE n.nspname IN ('app','health')
   AND r.rolname = 'sjc_intel_owner';
 
 SELECT 'migration_versions' AS check_name,
-       CASE WHEN COUNT(*) IN (0, 9) THEN 'PASS' ELSE 'FAIL' END AS result,
+       CASE WHEN COUNT(*) IN (0, 11) THEN 'PASS' ELSE 'FAIL' END AS result,
        ARRAY_AGG(version ORDER BY version) AS versions
 FROM app.sjc_intel_migrations
-WHERE version BETWEEN 1 AND 9;
+WHERE version BETWEEN 1 AND 11;
 
 SELECT 'primary_keys' AS check_name,
-       CASE WHEN COUNT(*) >= 18 THEN 'PASS' ELSE 'FAIL' END AS result,
+       CASE WHEN COUNT(*) >= 22 THEN 'PASS' ELSE 'FAIL' END AS result,
        COUNT(*) AS pk_count
 FROM information_schema.table_constraints
 WHERE table_schema IN ('app','health')
   AND constraint_type = 'PRIMARY KEY';
 
 SELECT 'foreign_keys' AS check_name,
-       CASE WHEN COUNT(*) >= 12 THEN 'PASS' ELSE 'FAIL' END AS result,
+       CASE WHEN COUNT(*) >= 17 THEN 'PASS' ELSE 'FAIL' END AS result,
        COUNT(*) AS fk_count
 FROM information_schema.table_constraints
 WHERE table_schema = 'app'
@@ -160,21 +168,21 @@ BEGIN
     END IF;
 
     IF (SELECT COUNT(*) FROM pg_class c JOIN pg_namespace n ON n.oid = c.relnamespace JOIN pg_roles r ON r.oid = c.relowner
-        WHERE n.nspname IN ('app','health') AND c.relkind = 'r' AND r.rolname = 'sjc_intel_owner') <> 20 THEN
+        WHERE n.nspname IN ('app','health') AND c.relkind = 'r' AND r.rolname = 'sjc_intel_owner') <> 24 THEN
         failures := array_append(failures, 'table_ownership');
     END IF;
 
-    IF (SELECT COUNT(*) FROM app.sjc_intel_migrations WHERE version BETWEEN 1 AND 9) NOT IN (0, 9) THEN
+    IF (SELECT COUNT(*) FROM app.sjc_intel_migrations WHERE version BETWEEN 1 AND 11) NOT IN (0, 11) THEN
         failures := array_append(failures, 'migration_versions');
     END IF;
 
     IF (SELECT COUNT(*) FROM information_schema.table_constraints
-        WHERE table_schema IN ('app','health') AND constraint_type = 'PRIMARY KEY') < 18 THEN
+        WHERE table_schema IN ('app','health') AND constraint_type = 'PRIMARY KEY') < 22 THEN
         failures := array_append(failures, 'primary_keys');
     END IF;
 
     IF (SELECT COUNT(*) FROM information_schema.table_constraints
-        WHERE table_schema = 'app' AND constraint_type = 'FOREIGN KEY') < 12 THEN
+        WHERE table_schema = 'app' AND constraint_type = 'FOREIGN KEY') < 17 THEN
         failures := array_append(failures, 'foreign_keys');
     END IF;
 

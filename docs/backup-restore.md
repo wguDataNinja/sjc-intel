@@ -20,7 +20,7 @@
 
 ```bash
 pg_dump \
-  --dbname="${SJC_INTEL_PG_URL}" \
+  --dbname="${SJC_INTEL_PG_BACKUP_URL:-${SJC_INTEL_PG_READER_URL}}" \
   --format=custom \
   --compress=9 \
   --file="${BACKUP_DIR}/sjc_intel_${TIMESTAMP}.dump"
@@ -47,8 +47,8 @@ Manifest fields per Codex Session 1 §7:
 | created_by_role | `sjc_intel_backup` |
 | postgres_version | `16` |
 | schema_version | `<health contract schema version>` |
-| migration_version | `<latest migration filename stem>` |
-| source_host_label | `ih-market-vps` |
+| migration_version | `<latest migration filename stem; currently 20260706_011 after new migrations apply>` |
+| source_host_label | `macbook-development` or `ih-market-vps` |
 | source_cluster_label | `sjc_intel` |
 | file_size_bytes | `<bytes>` |
 | tables_included | `<table list>` |
@@ -99,8 +99,10 @@ pg_restore \
   "${DUMP_PATH}/sjc_intel_${TIMESTAMP}.dump"
 
 # Run validation queries
+psql -d sjc_intel_restore_drill -f db/validation/999_full_validation.sql
 psql -d sjc_intel_restore_drill -c "SELECT count(*) FROM app.sources;"
 psql -d sjc_intel_restore_drill -c "SELECT count(*) FROM app.intel_items;"
+psql -d sjc_intel_restore_drill -c "SELECT count(*) FROM app.metric_snapshots;"
 psql -d sjc_intel_restore_drill -c "SELECT max(discovered_at) FROM app.intel_items;"
 psql -d sjc_intel_restore_drill -c "SELECT version, applied_at FROM app.sjc_intel_migrations ORDER BY applied_at;"
 

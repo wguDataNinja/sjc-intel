@@ -458,3 +458,63 @@ Pilot remains blocked until a real PostgreSQL adapter or loader is implemented. 
 
 ## Next Action
 Implement a real writer-safe PostgreSQL loader/adapter with dry-run/plan/apply, reject reporting, rollback by selected `item_id`, delete-and-reimport proof, and parity before any Gate-approved load.
+
+---
+
+# SJC_Intel Session — 2026-07-06 (Portable PostgreSQL Adapter, Retention, Snapshots)
+
+## Summary
+Moved SJC from a placeholder PostgreSQL adapter toward a portable
+PostgreSQL-backed application architecture while preserving file authority and
+pilot Gates. No VPS PostgreSQL installation, real-data pilot, service cutover,
+or destructive pruning was performed.
+
+## Implemented
+- `scripts/pg_adapter.py` now supports reader/writer PostgreSQL connections,
+  parameterized reads/lists, transactional intel-item/source/dedupe upserts,
+  sanitized health checks, and file-field mapping.
+- `scripts/storage_adapter.py` now keeps file fallback available for PG read
+  paths when configured.
+- Migrations `20260706_010` and `20260706_011` add retention/pipeline metadata
+  and compact metric snapshots.
+- `scripts/retention.py` provides source-by-source retention policy dry runs
+  and non-destructive prune selectors.
+- `scripts/metrics_snapshot.py` generates deterministic compact metric
+  snapshots from the selected backend; PostgreSQL writes remain separately
+  gated.
+- `scripts/portability_check.py` checks migration ordering, rollback coverage,
+  validation versioning, owner-role use, env documentation, and Mac-path
+  portability.
+- Docs added for PostgreSQL adapter behavior, retention, snapshots, and future
+  news-ingestion boundaries.
+
+## Current Authority
+- File-backed data remains the application source of truth.
+- Mac PostgreSQL remains the active development foundation, migration source,
+  fallback, and restore-verification target.
+- `ih-market-vps` remains the intended later PostgreSQL host under current
+  operator authority, but no VPS database work was performed in this session.
+- The prior VPS capacity Gate is historical evidence, not a permanent host
+  rejection.
+
+## Validation
+- `python3 -m pytest tests/test_adapter.py tests/test_retention.py tests/test_metrics_snapshot.py -q` — 29 passed.
+- `bash scripts/migration_readiness_check.sh` — 8 passed, 0 failed.
+- `python3 scripts/retention.py --json` — 28 source policies, no destructive actions.
+- `python3 scripts/metrics_snapshot.py --backend file --json` — 49 snapshots generated, 0 written.
+- `python3 -m pytest tests/ -v` — 109 passed.
+- `python3 scripts/validate.py` — all checks passed.
+- `python3 scripts/portability_check.py` — PASS.
+- Mac PostgreSQL development database migrated from version 9 to version 11.
+- `db/validation/999_full_validation.sql` — PASS after migration and after restore.
+- Pre-migration backup: `sjc_intel_pre_migration_20260706T163703Z.dump`, checksum OK.
+- Post-migration backup: `sjc_intel_post_migration_20260706T163728Z.dump`, checksum OK.
+- Restore verification: temporary restore DB reached migration version 11, validation PASS, restore DB dropped.
+- Pilot dry-run and plan both preserve the selected 10-record NBOR set and digest
+  `6c0008d2855daf6c07fc4c0f2dda5478856cae775927bcc54cdda790571254b4`.
+
+## Remaining Before Pilot Apply
+- Obtain explicit pilot apply approval before any real-data mutation.
+- Provide runtime reader/writer credentials through approved local environment
+  files before live adapter connection tests are run outside rollback-only SQL
+  role probes.

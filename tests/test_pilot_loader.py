@@ -87,5 +87,5 @@ def test_plan_mode():
     )
     assert result.returncode == 0
     report = json.loads(result.stdout)
-    assert report["mode"] == "dry-run"
+    assert report["mode"] == "plan"
     assert "simulated_inserts" in report

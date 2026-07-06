@@ -153,26 +153,54 @@ class TestPgAdapterEnabled:
 
     def setup_method(self):
         os.environ["SJC_INTEL_PG_ADAPTER_ENABLED"] = "true"
-        self.adapter = PgAdapter()
+        self.conn = FakeConnection()
+        self.adapter = PgAdapter(connection_factory=lambda readonly=True: self.conn)
 
     def teardown_method(self):
         os.environ["SJC_INTEL_PG_ADAPTER_ENABLED"] = "false"
 
-    def test_read_item_returns_none_on_fallback(self):
-        result = self.adapter.read_item("any-id")
-        assert result is None
+    def test_read_item_queries_known_tables(self):
+        self.conn.cursor_obj.rows = [{"item_id": "SJC-TEST-1", "title": "Test"}]
+        result = self.adapter.read_item("SJC-TEST-1")
+        assert result["item_id"] == "SJC-TEST-1"
+        assert "SELECT * FROM app.intel_items" in self.conn.cursor_obj.executed[0][0]
 
-    def test_list_items_returns_empty_on_fallback(self):
+    def test_list_items_reads_intel_items(self):
+        self.conn.cursor_obj.rows = [{"item_id": "SJC-TEST-1", "source_id": "test"}]
         result = self.adapter.list_items()
-        assert result == []
+        assert result == [{"item_id": "SJC-TEST-1", "source_id": "test"}]
+        assert "FROM app.intel_items" in self.conn.cursor_obj.executed[0][0]
 
-    def test_write_item_returns_false_on_fallback(self):
-        result = self.adapter.write_item("any-id", {})
-        assert result is False
+    def test_write_item_uses_transaction_and_upserts_dedupe(self):
+        result = self.adapter.write_item(
+            "SJC-TEST-1",
+            {
+                "title": "Test",
+                "summary": "Summary",
+                "source_id": "test_source",
+                "source_url": "https://example.com/test",
+                "_dedupe_key": "test-source::test",
+                "_signal": "high_signal",
+                "created_at": "2026-07-06T00:00:00Z",
+            },
+        )
+        assert result is True
+        assert self.conn.committed is True
+        sql_text = "\n".join(sql for sql, _params in self.conn.cursor_obj.executed)
+        assert "INSERT INTO app.sources" in sql_text
+        assert "INSERT INTO app.intel_items" in sql_text
+        assert "INSERT INTO app.dedupe_index_entries" in sql_text
 
-    def test_get_health_returns_error(self):
+    def test_get_health_returns_ok(self):
+        self.conn.cursor_obj.rows_by_execute = [
+            [{"pg_version": "PostgreSQL 16", "database_name": "sjc_intel", "database_user": "sjc_intel_reader"}],
+            [{"count": 3}],
+            [{"count": 2}],
+        ]
         health = self.adapter.get_health()
-        assert health["status"] == "error"
+        assert health["status"] == "ok"
+        assert health["database"] == "sjc_intel"
+        assert health["intel_items"] == 3
 
 
 class TestStorageFacade:
@@ -203,3 +231,51 @@ class TestStorageFacade:
         assert len(items) > 0
         health = facade.get_health()
         assert health["status"] in ("disabled", "error")
+
+
+class FakeConnection:
+    def __init__(self):
+        self.cursor_obj = FakeCursor()
+        self.committed = False
+        self.rolled_back = False
+        self.closed = False
+
+    def cursor(self):
+        return self.cursor_obj
+
+    def commit(self):
+        self.committed = True
+
+    def rollback(self):
+        self.rolled_back = True
+
+    def close(self):
+        self.closed = True
+
+
+class FakeCursor:
+    def __init__(self):
+        self.executed = []
+        self.rows = []
+        self.rows_by_execute = []
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc, tb):
+        return False
+
+    def execute(self, sql, params=None):
+        self.executed.append((sql, params))
+        if self.rows_by_execute:
+            self.rows = self.rows_by_execute.pop(0)
+
+    def fetchone(self):
+        if not self.rows:
+            return None
+        return self.rows.pop(0)
+
+    def fetchall(self):
+        rows = self.rows
+        self.rows = []
+        return rows

@@ -42,7 +42,7 @@ is tip-surfacing/context unless verified by official records.
 ### Sources
 | Status | Count | Details |
 |--------|-------|---------|
-| Canonical | 24 | Tier 1 (10 official stacks) + Tier 2 (5 school/transport/weather/civic) + 9 pre-existing |
+| Canonical | 28 | Registry sources in `registry/sources.yaml`, including official records, school/transport/weather/civic, local media, and aliases |
 | Candidates | 46 | Awaiting review/promotion |
 | Deferred | 13 | Lower priority |
 | Duplicates | 6 | Already covered by canonical |
@@ -90,10 +90,23 @@ is tip-surfacing/context unless verified by official records.
 
 ## Current Phase
 
-**Monitor operations and workflow consolidation.** Tier 1+2 sources promoted,
-May 2026 backfill complete, daily-ready monitors running (NBOR, utility),
-review queue operational with interest filter integration. Next focus is
-tracked entities workflow (ENT-001..004) and fixing BCC agenda link gaps.
+**Portable PostgreSQL-backed application architecture while preserving file
+authority.** File-backed YAML/JSON remains the operating source of truth.
+Mac-hosted PostgreSQL 16 remains the active development foundation, migration
+source, fallback, and restore-verification target. The current `ih-market-vps`
+remains the intended later PostgreSQL host, but PostgreSQL is not installed on
+the VPS in this phase.
+
+Implemented PostgreSQL work now includes:
+
+- general application-facing PostgreSQL adapter (`scripts/pg_adapter.py`);
+- backend selection and file fallback (`scripts/storage_adapter.py`);
+- retention/pipeline metadata migrations (`20260706_010...`);
+- compact metric snapshot migration and generator (`20260706_011...`,
+  `scripts/metrics_snapshot.py`);
+- non-destructive retention dry-run tooling (`scripts/retention.py`);
+- portability check (`scripts/portability_check.py`);
+- future news-ingestion boundaries (`docs/news_ingestion_readiness.md`).
 
 ## Core Docs
 
@@ -106,6 +119,10 @@ tracked entities workflow (ENT-001..004) and fixing BCC agenda link gaps.
 | `docs/taxonomy.md` | Controlled vocabularies, beats, source families |
 | `docs/discovery_loops.md` | How the six discovery loops work |
 | `docs/operator_mode.md` | Session startup routine and task selection |
+| `docs/postgresql_adapter.md` | PostgreSQL adapter and backend-selection contract |
+| `docs/retention.md` | Source-by-source retention and pruning dry-run behavior |
+| `docs/snapshots_and_metrics.md` | Compact metric snapshot behavior |
+| `docs/news_ingestion_readiness.md` | Later relevant-news extension boundaries |
 
 ## Open Loops
 
@@ -138,6 +155,9 @@ python3 scripts/build_review_queue.py           # Rebuild review queue
 python3 scripts/extract_nbor.py                 # Fetch and parse NBOR page
 python3 scripts/extract_bcc_agenda.py           # Fetch BCC agenda items
 python3 scripts/batch_review.py                 # Batch review operations
+python3 scripts/retention.py --json             # Non-destructive retention policy dry run
+python3 scripts/metrics_snapshot.py --backend file --json
+python3 scripts/portability_check.py            # Non-mutating migration/env portability checks
 ```
 
 ## Agent Cautions

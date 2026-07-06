@@ -190,3 +190,56 @@ facing output. Next roadmap must decide: deepen, expand, or automate.
 - This entry appended
 - VPS_CONTINUITY.md updated with "Read first" reading order
 - CI, deploy docs, and commit boundaries still pending
+
+## 2026-07-06 — Portable PostgreSQL adapter, retention, and snapshots
+
+**Task:** Begin the next SJC implementation phase: complete the general
+PostgreSQL adapter, integrate it without cutting over file authority, add
+retention/pruning support, compact snapshots, and Mac-to-VPS portability checks.
+
+**Work done:**
+- Replaced the intentional `PgAdapter` stub with real reader/writer connection
+  handling, parameterized reads/lists, transactional item/source/dedupe upserts,
+  signal/file-field normalization, rollback-on-failure behavior, and sanitized
+  health output.
+- Kept `FileAdapter` as default authority and kept file fallback available for
+  PG read/list paths.
+- Added migrations 10 and 11 for source retention policies, raw-artifact
+  metadata, pipeline runs, and metric snapshots, plus rollback and validation
+  files.
+- Added `scripts/retention.py` dry-run policy/prune-selector tooling.
+- Added `scripts/metrics_snapshot.py` deterministic snapshot generation.
+- Added `scripts/portability_check.py` for non-mutating migration/env/host
+  portability checks.
+- Added docs: `docs/postgresql_adapter.md`, `docs/retention.md`,
+  `docs/snapshots_and_metrics.md`, `docs/news_ingestion_readiness.md`.
+- Updated environment and continuity documentation for the current authority:
+  Mac PostgreSQL remains fallback/development; file authority remains active;
+  `ih-market-vps` remains intended future host; no dedicated DB VPS
+  recommendation.
+
+**Validation so far:**
+- `python3 -m pytest tests/test_adapter.py tests/test_retention.py tests/test_metrics_snapshot.py -q` — 29 passed.
+- `bash scripts/migration_readiness_check.sh` — 8 passed, 0 failed.
+- `python3 scripts/retention.py --json` — 28 source policies, no destructive actions.
+- `python3 scripts/metrics_snapshot.py --backend file --json` — 49 snapshots generated, 0 written.
+- `python3 -m pytest tests/ -v` — 109 passed.
+- `python3 scripts/validate.py` — all checks passed.
+- `python3 scripts/portability_check.py` — PASS.
+- Mac PostgreSQL migrated to version 11 and full SQL validation passed.
+- Pre-migration backup checksum OK:
+  `sjc_intel_pre_migration_20260706T163703Z.dump`.
+- Post-migration backup checksum OK:
+  `sjc_intel_post_migration_20260706T163728Z.dump`.
+- Restore verification passed against a temporary database; restore database was
+  dropped after evidence capture.
+- Rollback-only role probes confirmed writer insert, reader select, monitor
+  health access, reader insert denial, and monitor app-schema denial.
+- Pilot dry-run and plan both preserve the selected NBOR 10-record digest
+  `6c0008d2855daf6c07fc4c0f2dda5478856cae775927bcc54cdda790571254b4`.
+
+**Not done:**
+- No VPS PostgreSQL installation.
+- No real-data pilot apply.
+- No production service/timer activation.
+- No destructive pruning.

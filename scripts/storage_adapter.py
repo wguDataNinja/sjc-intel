@@ -25,7 +25,12 @@ class StorageFacade:
 
     def _resolve_fallback(self):
         if isinstance(self._primary, PgAdapter):
-            if os.environ.get("SJC_INTEL_ADAPTER_BACKEND", "file") != "pg":
+            fallback_enabled = os.environ.get("SJC_INTEL_FILE_FALLBACK_ENABLED", "true").lower() in (
+                "true",
+                "1",
+                "yes",
+            )
+            if fallback_enabled:
                 return FileAdapter()
         return None
 

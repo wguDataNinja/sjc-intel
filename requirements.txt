@@ -2,3 +2,5 @@
 # Install: pip install -r requirements.txt
 
 pypdf>=5.0.0
+psycopg2-binary>=2.9.9
+PyYAML>=6.0.0

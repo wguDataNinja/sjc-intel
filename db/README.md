@@ -35,6 +35,14 @@ Key sources:
 - §10 SJC migration and parity plan
 - `ivy-control/vps/shared-conventions.md` §4 Migration File Layout
 
+Current implementation notes:
+- `20260706_010_create_retention_and_pipeline_tables.sql` adds retention
+  policy, raw-artifact metadata, and pipeline-run metadata tables.
+- `20260706_011_create_metric_snapshots.sql` adds compact aggregate snapshots
+  for later API/UI reads.
+- File-backed authority remains active until a later cutover Gate.
+- PostgreSQL adapter behavior is documented in `docs/postgresql_adapter.md`.
+
 ## Database Authority Gate
 
 No migration may be applied against a live `sjc_intel` database without:
