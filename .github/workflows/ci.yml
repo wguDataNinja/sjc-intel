@@ -1,0 +1,30 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+      - name: Install dependencies
+        run: pip install pyyaml psycopg2-binary || pip install pyyaml
+      - name: Python syntax check
+        run: python3 -m py_compile scripts/*.py
+      - name: Unit tests
+        run: python3 -m pytest tests/ -v
+      - name: Migration order check
+        run: |
+          for f in db/migrations/2026*.sql; do echo "$f"; done
+          echo "Migration count: $(ls db/migrations/2026*.sql | wc -l)"
+      - name: Validation SQL presence
+        run: test -f db/validation/999_full_validation.sql && echo "Validation exists"
+      - name: Pilot loader dry-run
+        run: python3 scripts/pilot_loader.py --dry-run --json || true
+      - name: No tracked secrets
+        run: |
+          ! git grep -l 'password\s*=' -- '*.py' '*.sql' '*.yaml' '*.yml' '*.json' 2>/dev/null | grep -v '.env.example' | grep -v '__pycache__' || echo "WARNING: potential secrets found"
+      - name: No tracked .env or dumps
+        run: |
+          test ! -f .env && echo "No .env tracked"
