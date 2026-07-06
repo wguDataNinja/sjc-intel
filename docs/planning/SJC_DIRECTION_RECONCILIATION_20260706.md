@@ -345,4 +345,148 @@ no autonomous news agent, no paywall bypass, no full-body archive.
 
 Add a lane context section and note about deferred items.
 
-<｜｜DSML｜｜parameter name="editFile" value="true" />
+---
+
+## 7. Repository Archaeology: Prior LLM/Browser/Search Work
+
+### 7.1 What Exists in the SJC Repo
+
+| File | Purpose | Agent/Model | Tool | Status | Notes |
+|------|---------|-------------|------|--------|-------|
+| `.opencode/agents/sjc-intel-architect.md` | Interactive architect agent | opencode-go/qwen3.5-plus | `webfetch` (ask), `websearch` (ask) | **Active interactive** | Can perform ad hoc web fetches and searches with user confirmation. Used for source investigation. |
+| `.opencode/agents/sjc-intel-source-watch.md` | Source discovery and health agent | (interactive) | OpenCode `websearch`, `webfetch` | **Active interactive** | Designed to discover new sources and check source health. No automated schedules. |
+| `prompts/hermes_search_discovery_task.md` | Search discovery task contract | Hermes worker (unspecified) | Presumed `websearch`/`webfetch` | **Template only** | Describes search terms, scope, and output format. Never executed — no Hermes runtime. |
+| `prompts/silverleaf_search_discovery_task.md` | SilverLeaf-specific search task | Hermes worker | Presumed `websearch`/`webfetch` | **Template only** | Lists 10 SilverLeaf developments with keywords. Never executed. |
+| `prompts/known_source_monitor_task.md` | Known-source monitoring task | Hermes worker | HTTP GET (described) | **Template only** | Step-by-step fetch→extract→classify workflow. No runtime exists. |
+| `docs/monitoring_workflow.md` | Monitoring workflow spec | N/A | HTTP GET, `webfetch` | **Design doc** | Describes the 9-step workflow. Hermes-compatible but not automated. |
+| `scripts/extract_nbor.py` | NBOR page collector | Deterministic | `urllib.request` HTTP GET | **Active** | Direct HTTP GET, no browser. Server-rendered HTML. |
+| `scripts/extract_bcc_agenda.py` | BCC agenda collector | Deterministic | `urllib.request` HTTP GET + PDF download | **Active** | Clerk HTML parsed, PDF downloaded via HTTP. |
+
+**Key finding: SJC has NO automated search execution, NO browser automation,
+NO LLM inference, and NO running Hermes agents.** All collection is manual
+ad-hoc via interactive agents or direct script execution.
+
+### 7.2 What Exists in ivy-control
+
+| Module | Path | Purpose | Status | Reuse for SJC? |
+|--------|------|---------|--------|----------------|
+| `portable/browser_search/` | `ivy-control/portable/browser_search/` | Multi-tier web search: SearXNG + Camofox + CloakBrowser | **Experimental** | **Low.** Designed for general web browsing (Camofox is a Camouflage browser automation tool). Requires Camofox API key. Overengineered for SJC's needs unless a specific source requires browser rendering. |
+| `portable/browser_search/research/` | Same, `research/` subdir | Research scripts for browser-search infrastructure | **Draft/experimental** | Contains `camofox/`, `cloak/`, `check.sh`, `setup.sh`. Not production-ready. |
+| `hermes/ivy_agent.md` | `ivy-control/hermes/` | IVY agent — repo manager/health checker | **Active** | **None for search.** IVY is a management layer, not a search/retrieval runtime. |
+| `hermes/ivy_tools.md` | `ivy-control/hermes/` | Tool definitions for IVY agent | **Active** | Tools are: `resolve_project`, `build_packet`, `check_adherence`, `build_smart_tree`, `read_queue`, `note_save`. **No web search tool.** |
+| `DISCOVERY_GAP.md` | `ivy-control/` | Gap analysis across portfolio repos | **Draft** | Could inform source gap tracking but has no executable search infrastructure. |
+
+**Key finding: ivy-control/portable provides browser automation infrastructure
+but it is experimental and designed for general web browsing, not structured
+data collection for SJC. No shared LLM provider or search abstraction exists
+in ivy-control that SJC could reuse.**
+
+### 7.3 What Exists in Cross-Repo (Known from Prior Reports)
+
+From the previous cross-repo comparison:
+
+- **bsda_courses** has a mature multi-provider LLM abstraction (`scripts/llm_provider.py`)
+  with OpenAI, Anthropic, Ollama, and opencode-go. Structured JSON output via
+  `response_schema`. This is the strongest candidate for reuse — but it lives in
+  another repository and would need to be ported or referenced.
+
+- **idlehacking_kb** has a clean LLM provider interface (`scripts/llm/provider_interface.py`)
+  with abstract `invoke()`, `LLMConfig`, `LLMResult`, `RunMetadata`, and
+  `FixtureProvider`. Also has `Privacly.py` for content classification and
+  redaction. Strong provenance tracking.
+
+**Neither is directly available for import.** They are in separate repos with
+different dependency trees. SJC would need to either:
+- Port the abstraction layer (2-3 sessions)
+- Reference as a git submodule (complex, adds coupling)
+- Build a simpler SJC-specific client (1 session)
+
+### 7.4 Current Collection Methods: Verified Inventory
+
+| Source | Method | Deterministic? | Active? | Notes |
+|--------|--------|---------------|---------|-------|
+| NBOR public notices | `urllib.request` HTTP GET | ✅ Deterministic | ✅ Active (75 items) | Plain HTML, server-rendered ASP.NET. No browser needed. |
+| BCC agenda | `urllib.request` HTTP GET + PDF (pypdf) | ✅ Deterministic | ✅ Active (44 items) | Clerk HTML parsed; PDF text extracted. No browser. June links broken. |
+| County news | Manual `webfetch` (interactive agent) | ✅ Manual deterministic | ✅ Active (9 items) | WordPress blog, no extractor script. |
+| SJSO news | Manual `webfetch` (interactive agent) | ✅ Manual deterministic | ✅ Active (5 items) | WordPress blog, same pattern as county news. |
+| Utility department | Manual `webfetch` | ✅ Manual deterministic | ✅ Active (8 items) | County WordPress page. Sidebar has announcements. |
+| Emergency management | Manual `webfetch` | ✅ Manual deterministic | ✅ Active (1 item, seasonal) | County page. Seasonal — hurricane prep only. |
+| CDD sources (3) | Manual `webfetch` (via Hermes backfill) | ✅ Manual deterministic | ✅ Active (3 each) | WordPress + GoDaddy sites. RSS feeds available for 2 of 3. |
+| SilverLeaf/media discovery | Manual research (interactive agent) | ✅ Manual deterministic | ✅ Active (6 items, one-shot) | St. Johns Citizen site search. One-shot discovery, not recurring. |
+| School stack (BoardDocs) | Not collected | N/A | ❌ Not active | Browser automation likely needed for agenda packet access. |
+| Development tracker | Not collected | N/A | ❌ Not active | Interactive GIS map — browser automation likely needed. |
+| Permit status | Not collected | N/A | ❌ Not active | Form interaction — browser automation likely. |
+| FHP incidents | Not collected | N/A | ❌ Not active | Source feasibility investigation needed. |
+| FL511 incidents/cameras | Not collected | N/A | ❌ Not active | Permitted integration methods unclear. |
+| School news (athletics, etc.) | Not collected | N/A | ❌ Not active | Requires agentic search — no existing infrastructure. |
+| Business/commercial news | Not collected | N/A | ❌ Not active | Requires agentic search or news API. |
+| Community events/achievements | Not collected | N/A | ❌ Not active | Requires agentic search or community site monitoring. |
+
+### 7.5 Classification of Sources for the Three-Lane Architecture
+
+| Source Class | Lane | Recommended Method | Infrastructure Needed |
+|-------------|------|-------------------|----------------------|
+| Government HTML (NBOR, BCC, county news, SJSO, utility, emergency, CDDs) | **Durable knowledge** | Deterministic HTTP GET + HTML/PDF parsing | Extractor scripts + scheduler (VPS) |
+| FHP live incidents | **Live incident** | Deterministic (likely structured endpoint) | FHP adapter + geographic filter + incident schema |
+| FL511 incidents/alerts | **Live incident** | Likely deterministic structured endpoint | FL511 adapter (terms review first) |
+| FL511 cameras | **Live incident (observations)** | Permitted embedded map only; no automated capture | Camera terms review — likely defer |
+| Traffic flow (TomTom/Google) | **Live incident (deferred)** | API-based (paid, pilot) | API key, budget, historical baseline |
+| School news, athletics, activities | **Agentic investigation** | Scheduled agentic search | Search provider (Google/Bing API), LLM for relevance filtering, review queue |
+| Business openings/closures | **Agentic investigation** | Scheduled agentic search | Same as above |
+| Community achievements | **Agentic investigation** | Event-triggered or scheduled search | Same as above |
+| Official social accounts | **Agentic investigation (corroboration)** | Optional, event-triggered | LLM for relevance; system must function without X |
+| SilverLeaf registry (boundaries, streets, schools) | **Geographic foundation** | Manual research + curation | Desktop research + county GIS + OSM |
+
+### 7.6 Reuse Recommendations
+
+| What SJC Needs | Reuse From | How | Effort |
+|----------------|-----------|-----|--------|
+| Web search for agentic investigation | OpenCode `websearch` tool | Already available in sjc-intel-architect agent with `ask` permission. Use interactively for pilot phase. | **Zero — already exists.** |
+| HTTP fetch for deterministic collection | Existing `urllib.request` pattern | Already used in `extract_nbor.py` and `extract_bcc_agenda.py`. Standard pattern for all new deterministic collectors. | **Zero — already exists.** |
+| LLM provider abstraction | bsda_courses `scripts/llm_provider.py` (cross-repo) | Port or adapt the multi-provider pattern. Not importable directly — needs local copy. | 2 sessions |
+| LLM run provenance | idlehacking_kb `RunMetadata` (cross-repo) | Port the dataclass pattern. Small — ~50 lines of Python. | 0.5 session |
+| Browser automation (if needed) | ivy-control `portable/browser_search/` | Available but experimental. Would need Camofox setup. Only use for sources that genuinely require JS rendering (development tracker, permit portal, BoardDocs). | 1 session setup |
+| Search result relevance | OpenCode tool or LLM call | No existing pipeline. Would need LLM call with relevance prompt + structured output schema. | 1-2 sessions |
+| Geographic point-in-polygon | `shapely` library (Python) | No existing repo infrastructure. Simple pip install. | 0.5 session |
+| Incident data model | No prior work — new design | New table design from reconciliation doc (§3). | 1 session |
+
+### 7.7 Implications for the Agentic-Search Design
+
+1. **No production search infrastructure exists.** The agentic-search lane must
+   be built from scratch. It cannot inherit from existing SJC code.
+
+2. **The OpenCode `websearch` tool is the fastest path to a pilot.** Rather than
+   building a search API integration first, use the agent's built-in search
+   capability for initial discovery runs. This proves the concept and informs
+   the API-based design.
+
+3. **Browser automation is NOT needed for most planned sources.** FHP and FL511
+   likely have structured endpoints. St. Johns Citizen and News4Jax are
+   standard web pages. Browser automation should remain a last resort, used
+   only for confirmed JS-dependent sources (development tracker, permit portal).
+
+4. **The Hermes search task prompts are templates for a runtime that doesn't
+   exist.** They describe the desired workflow but have never been executed.
+   They should either be retired (if the agentic-search lane takes a different
+   approach) or updated to match whatever search infrastructure is built.
+
+5. **The `silverleaf_search_discovery_task.md` prompt already lists the 10
+   target developments.** This is directly reusable as the initial search
+   manifest for the agentic-search lane. The keywords and source URLs can seed
+   the search template registry.
+
+6. **SJC-specific LLM work should start with a thin provider wrapper**, not a
+   full multi-provider abstraction. One provider (opencode-go, already
+   configured) is sufficient for pilot. Add provider abstraction only when a
+   second provider is needed.
+
+7. **The geographic registry is deliberately separate from search.** The
+   registry defines what to search for (entity names, aliases, streets, schools).
+   The search infrastructure executes queries. They connect through the search
+   template registry (`{entity.name}`, `{street.name}`, `{school.name}`).
+
+8. **Incident detection does NOT require search.** FHP/FL511 are deterministic
+   structured feeds. Agentic search is reserved for enrichment and
+   reconciliation after an incident is detected.
+
+
