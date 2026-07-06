@@ -1,0 +1,180 @@
+{
+  "schema_version": "evidence_packet.v1",
+  "generated_at": "2026-07-06",
+  "project": "sjc_intel",
+  "dataset_summary": {
+    "total_intel_items": 182,
+    "total_source_events": 15,
+    "total_review_queue_entries": 132,
+    "total_unique_dedupe_keys": 115,
+    "sources_producing": 10,
+    "date_directories": 4,
+    "schema_variants": 3
+  },
+  "items_per_source": {
+    "sjc_nbor_public_notices": 75,
+    "sjc_bcc_calendar": 44,
+    "sjc_county_news": 9,
+    "sjc_utility_department": 8,
+    "st_johns_citizen": 6,
+    "sjso_news_stories": 5,
+    "six_mile_creek_cdd": 3,
+    "tolomato_cdd": 3,
+    "trout_creek_cdd": 3,
+    "sjc_emergency_management": 1
+  },
+  "items_per_topic": {
+    "infrastructure": 83,
+    "development": 54,
+    "environment": 45,
+    "county_government": 44,
+    "public_notices": 27,
+    "community_events": 11,
+    "transportation": 9,
+    "public_safety": 8,
+    "parks_recreation": 8,
+    "crime": 4,
+    "education": 2,
+    "library": 2,
+    "emergency_alerts": 2,
+    "health_wellness": 2,
+    "taxes": 2
+  },
+  "items_per_review_status": {
+    "verified": 108,
+    "pending_review": 63,
+    "no_status": 9,
+    "archived": 1,
+    "rejected_noise": 1
+  },
+  "urgent_items": [
+    "SJC-UTIL-20260603-0001",
+    "SJC-CN-20260603-0005"
+  ],
+  "high_sensitivity_items": [
+    "SJC-SJSO-20260603-0004"
+  ],
+  "human_review_required": [
+    "SJC-SJSO-20260603-0001",
+    "SJC-SJSO-20260603-0002",
+    "SJC-SJSO-20260603-0003",
+    "SJC-SJSO-20260603-0004",
+    "SJC-SJSO-20260626-0001"
+  ],
+  "cross_source_clusters": [
+    {
+      "id": "sr_207_wrf",
+      "entity": "ENT-INFRA-SR-207-WRF",
+      "relationship": "same_project_different_milestones",
+      "items": ["SJC-UTIL-20260603-0003", "SJC-CN-20260626-0001"],
+      "confidence": "high"
+    },
+    {
+      "id": "phase_iii_water",
+      "relationship": "same_event_different_sources",
+      "items": ["SJC-UTIL-20260603-0001", "SJC-CN-20260603-0005"],
+      "confidence": "high"
+    },
+    {
+      "id": "bushrangers_brewery",
+      "relationship": "same_entity_two_permits",
+      "items": ["SJC-NBOR-20260704-0008", "SJC-NBOR-20260704-0009"],
+      "confidence": "high"
+    },
+    {
+      "id": "nbor_duplicate_files",
+      "relationship": "exact_duplicate_wrong_directory",
+      "items": {
+        "2026-06-08": "SJC-NBOR-20260626-0001 to -0025",
+        "2026-06-26": "SJC-NBOR-20260626-0001 to -0025"
+      },
+      "confidence": "high",
+      "note": "Same fetched_at timestamp, different review_status, two directories"
+    }
+  ],
+  "cdd_items_missing_metadata": [
+    "tolomato_cdd-001", "tolomato_cdd-002", "tolomato_cdd-003",
+    "six_mile_creek_cdd-001", "six_mile_creek_cdd-002", "six_mile_creek_cdd-003",
+    "trout_creek_cdd-001", "trout_creek_cdd-002", "trout_creek_cdd-003"
+  ],
+  "items_without_source_event": [
+    "SJC-UTIL-20260603-0001", "SJC-UTIL-20260603-0002", "SJC-UTIL-20260603-0003",
+    "SJC-UTIL-20260603-0004", "SJC-UTIL-20260603-0005",
+    "SJC-UTIL-20260704-0001", "SJC-UTIL-20260704-0002",
+    "SJC-CN-20260603-0001", "SJC-CN-20260603-0002", "SJC-CN-20260603-0003",
+    "SJC-CN-20260603-0004", "SJC-CN-20260603-0005",
+    "SJC-CN-20260626-0001", "SJC-CN-20260626-0002", "SJC-CN-20260626-0003",
+    "SJC-CN-20260626-0004",
+    "SJC-SJSO-20260603-0001", "SJC-SJSO-20260603-0002",
+    "SJC-SJSO-20260603-0003", "SJC-SJSO-20260603-0004",
+    "SJC-SJSO-20260626-0001",
+    "SJC-SL-20260704-0001", "SJC-SL-20260704-0002", "SJC-SL-20260704-0003",
+    "SJC-SL-20260704-0004", "SJC-SL-20260704-0005", "SJC-SL-20260704-0006",
+    "SJC-EM-20260626-0001",
+    "tolomato_cdd-001", "tolomato_cdd-002", "tolomato_cdd-003",
+    "six_mile_creek_cdd-001", "six_mile_creek_cdd-002", "six_mile_creek_cdd-003",
+    "trout_creek_cdd-001", "trout_creek_cdd-002", "trout_creek_cdd-003"
+  ],
+  "candidate_entities": [
+    {"name": "Bushrangers Brewery", "type": "business", "items": 2, "sources": ["sjc_nbor_public_notices"]},
+    {"name": "St. Thomas Island Cell Tower", "type": "infrastructure_project", "items": 1, "sources": ["sjc_nbor_public_notices"]},
+    {"name": "Nothing Putt Fun", "type": "business", "items": 1, "sources": ["sjc_bcc_calendar"]},
+    {"name": "Porpoise Point Beach Access", "type": "infrastructure_project", "items": 1, "sources": ["sjc_county_news"]},
+    {"name": "Canopy Shores PUD", "type": "development_project", "items": 1, "sources": ["sjc_nbor_public_notices"]},
+    {"name": "Daily's Place", "type": "business", "items": 1, "sources": ["sjc_nbor_public_notices"]},
+    {"name": "Deerfield Estates", "type": "development_project", "items": 1, "sources": ["sjc_bcc_calendar"]},
+    {"name": "Trailmark East Subdivision", "type": "development_project", "items": 1, "sources": ["sjc_bcc_calendar"]},
+    {"name": "Flagler Estates", "type": "neighborhood", "items": 1, "sources": ["sjc_bcc_calendar"]},
+    {"name": "Summer Haven", "type": "neighborhood", "items": 2, "sources": ["sjc_bcc_calendar"]},
+    {"name": "Tolomato CDD", "type": "cdd", "items": 3, "sources": ["tolomato_cdd"]},
+    {"name": "Six Mile Creek CDD", "type": "cdd", "items": 3, "sources": ["six_mile_creek_cdd"]},
+    {"name": "Trout Creek CDD", "type": "cdd", "items": 3, "sources": ["trout_creek_cdd"]}
+  ],
+  "candidate_events": [
+    {"type": "public_hearing", "count": 25, "example": "SJC-NBOR-20260704-0001"},
+    {"type": "row_permit", "count": 40, "example": "SJC-NBOR-20260626-0001"},
+    {"type": "bcc_agenda_item", "count": 44, "example": "SJC-BCC-20260120-0002"},
+    {"type": "water_restriction", "count": 2, "example": "SJC-UTIL-20260603-0001"},
+    {"type": "project_milestone", "count": 2, "example": "SJC-CN-20260626-0001"},
+    {"type": "cdd_meeting", "count": 4, "example": "tolomato_cdd-001"},
+    {"type": "cdd_election", "count": 2, "example": "six_mile_creek_cdd-002"},
+    {"type": "emergency_notice", "count": 3, "example": "SJC-EM-20260626-0001"}
+  ],
+  "community_gap": {
+    "items_with_community": 13,
+    "items_without_community": 169,
+    "items_with_coordinates": 0,
+    "items_with_address_in_text": 25
+  },
+  "llm_opportunities_by_item_count": [
+    {"stage": "entity_extraction", "items_benefiting": 150, "note": "All NBOR + BCC + SJSO items have entities in text"},
+    {"stage": "location_extraction", "items_benefiting": 75, "note": "NBOR descriptions contain addresses"},
+    {"stage": "event_extraction", "items_benefiting": 150, "note": "Events are present but not structured"},
+    {"stage": "claim_extraction", "items_benefiting": 100, "note": "Substantive items with actionable claims"},
+    {"stage": "relationship_linking", "items_benefiting": 20, "note": "Known clusters + likely hidden ones"},
+    {"stage": "near_duplicate_detection", "items_benefiting": 40, "note": "ROW items with identical titles"}
+  ],
+  "most_informative_items": [
+    "SJC-UTIL-20260603-0001",
+    "SJC-SL-20260704-0001",
+    "SJC-BCC-20260120-0002",
+    "SJC-CN-20260626-0001",
+    "SJC-NBOR-20260704-0001"
+  ],
+  "resident_opportunities": [
+    "water_restriction_alert",
+    "silverleaf_development_roundup",
+    "cdd_governance_summary",
+    "weekly_development_watch",
+    "monthly_bcc_summary",
+    "public_hearing_calendar",
+    "emergency_preparedness",
+    "road_work_alerts",
+    "public_safety_digest",
+    "project_milestones_tracker"
+  ],
+  "report_files": [
+    "docs/reviews/SJC_ACTUAL_DATA_EVIDENCE_PACKET_20260706.md",
+    "docs/reviews/SJC_ACTUAL_DATA_EVIDENCE_PACKET_20260706.json"
+  ]
+}
