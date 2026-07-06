@@ -12,6 +12,15 @@ Archived two stale discovery docs (ST_JOHNS_COUNTY_INTELLIGENCE.md,
 discovery_test.md) to docs/archive/. Created logs/conversations/ for
 Buddy's GPT research thread storage.
 
+## PostgreSQL Foundation Complete (2026-07-06)
+
+All 9 schema migrations applied, validated, backed up, and restore-drilled PASS.
+Pilot loader at `scripts/pilot_loader.py` — dry-run/plan/apply/rollback/parity, 11 tests.
+No real data ingested. No VPS deployment.
+
+See `docs/VPS_CONTINUITY.md` for continuity details.
+See ivy-control `vps/worker-control/reports/STRONG_AGENTIC_EXECUTION_REPORT.md` for full execution evidence.
+
 ## Changes Made
 
 ### Rewritten
@@ -294,3 +303,148 @@ Then read all required SJC_Intel and ivy-control context files and produced `doc
 ## Current Dirty State
 - `docs/reviews/codex_roadmap_preflight.md` untracked (from prior session, not part of this work)
 - `docs/reviews/sjc_vps_codex_roadmap_prompt.md` untracked (created this session; not committed per constraint)
+
+---
+
+# SJC_Intel Session — 2026-07-05 (SJC-010 PRE_GITHUB Remediation)
+
+## Task
+SJC-010: PRE_GITHUB minimum remediation for sjc_intel. Add/improve `.gitignore`, `.env.example`, validation command, pytest test harness, and documentation. LICENSE deferred (portfolio decision not finalized).
+
+## Assignment Authority
+- `vps/worker-control/reports/first-wave/SHARED-009.md` — batch plan defining SJC-010 scope
+- `vps/worker-control/reports/first-wave/SHARED-010.md` — durable closeout standard (capability-based, not filename-based)
+- `vps/PORTFOLIO_REPO_STANDARD.md` — PRE_GITHUB_MINIMUM criteria
+- `vps/audits/maturity/sjc-intel.md` — maturity audit: testing CRITICAL, GitHub blockers
+- SJC-010 assignment instructions (session prompt)
+
+## Files Changed
+
+### Modified
+- `.gitignore` — added `.venv/`, `venv/`, `*.key`, `*.pem`
+- `README.md` — added Setup and Validation sections
+- `SESSION.md` — appended this session record
+
+### Created
+- `.env.example` — documented current (no env vars) and future env vars
+- `pytest.ini` — pytest configuration
+- `scripts/validate.py` — deterministic offline validation script
+- `tests/conftest.py` — pytest fixtures (fixture_dir, schema_dir, nbor_html, bcc_agenda_text, etc.)
+- `tests/test_schemas.py` — YAML schema validation tests (4 schemas)
+- `tests/test_bcc_parser.py` — BCC agenda parser tests (12 tests)
+- `tests/test_nbor_parser.py` — NBOR parser tests (7 tests)
+- `tests/test_scripts_compile.py` — all script compilation tests (1 test across 8 scripts)
+
+### Not Modified (intentional)
+- LICENSE not added — portfolio license choice not finalized per SHARED-009 finding
+- No extraction scripts touched
+- No data artifacts modified
+- No source monitors added
+- No VPS, PostgreSQL, scheduler, service, or remote access
+
+## Validation Results
+- `python3 scripts/validate.py` — ALL PASSED (schema parse, script compile, fixture presence)
+- `python3 -m pytest tests/ -v` — 25/25 passed
+- `rg -n '/Users/buddy/'` — hardcoded paths exist in `README_INTERNAL.md:10` (informational metadata field) and `docs/reviews/` (planning artifacts, not functional source). No functional hardcoded paths in scripts, configs, or schemas.
+- `git status --short` — shows only expected modified/untracked files
+- No secrets in any diff
+
+## Current Git State
+```
+ M .gitignore
+?? .env.example
+?? pytest.ini
+?? scripts/validate.py
+?? tests/conftest.py
+?? tests/test_bcc_parser.py
+?? tests/test_nbor_parser.py
+?? tests/test_schemas.py
+?? tests/test_scripts_compile.py
+```
+
+## Stop/Escalation Conditions
+- **LICENSE deferred**: Portfolio license choice not finalized per SHARED-009. Requires Buddy decision before adding MIT or other license file.
+- No secrets or private data discovered.
+- No VPS/remote access required or performed.
+- No tests require live services, production data, or network.
+
+## Next Steps
+1. Buddy to decide portfolio LICENSE default for publishable repos
+2. SJC-010 report at `vps/worker-control/reports/first-wave/SJC-010.md`
+3. Future VPS work depends on license decision and SJC-010 acceptance
+
+---
+
+# SJC_Intel Session — 2026-07-05 (SJC-006 Adapter and Shadow-Parity Package)
+
+## Task
+Implement storage adapter interface, file/PG backends, shadow-parity comparison, and comprehensive tests. Part of Batch 1 VPS migration.
+
+## Summary
+Built the adapter boundary layer specified in Codex Session 1 §10 (SJC migration and parity plan). File adapter is the DEFAULT and AUTHORITATIVE backend — reads/writes existing YAML files in `data/intel_items/`, `registry/`, `data/source_events/`, `data/review_queue/`. PG adapter implements the same interface but is disabled by default (`SJC_INTEL_PG_ADAPTER_ENABLED=false`), every method guards with `if not self._enabled: raise RuntimeError(...)`. Parity report compares file vs PG and produces deterministic JSON. All 93 tests pass (34 new + 59 existing).
+
+## Architecture Decisions
+- **Generic entity_type routing**: `list_items(filter)` supports `entity_type` filter to route to sources, tracked_entities, queue_entries, source_events, or default intel items
+- **Date-prefix lookup**: `read_item` extracts date from item_id (`SJC-{prefix}-{YYYYMMDD}-{NNNN}`) for efficient directory targeting
+- **Upsert semantics**: `write_item` uses item_id as stable key — updates existing or appends new item in target date directory
+- **StorageFacade primary/fallback**: when PG is primary and fails (or is disabled), automatically falls back to file adapter with warning logging
+- **No psycopg2 dependency**: PG adapter raises NotImplementedError for actual DB methods — concrete implementation deferred to SJC-004
+
+## Files Created
+- `scripts/adapter_base.py`
+- `scripts/file_adapter.py`
+- `scripts/pg_adapter.py`
+- `scripts/storage_adapter.py`
+- `scripts/parity_report.py`
+- `tests/test_adapter.py` (22 tests)
+- `tests/test_parity.py` (10 tests)
+- `tests/fixtures/test_intel_items.yaml`
+- `tests/fixtures/test_sources.yaml`
+- `tests/fixtures/test_tracked_entities.yaml`
+
+## Files Modified
+- `.env.example` — added adapter PG configuration variables
+
+## Validation
+- `python3 -m pytest tests/ -v` — 93/93 passed (34 new + 59 existing)
+- All adapter tests pass: FileAdapter reads/writes/idempotency, PgAdapter disabled raises, PgAdapter enabled falls back, StorageFacade primary/fallback
+- Parity report produces valid JSON, detects disabled PG, compares counts/fields/dedupe keys
+- No data artifacts modified
+- No live DB connection or production ingestion
+- File remains authoritative backend
+
+## Gates Preserved
+- File is primary: no change to production data authority
+- PG disabled by default: explicit env var required
+- No production ingestion, scraping, or network calls
+- YAML fallback intact: PG failure falls back to file adapter
+- All 59 existing tests pass
+
+## Report
+- `ivy-control/vps/worker-control/reports/implementation-batch-1/SJC-006.md`
+
+---
+
+# SJC_Intel Session — 2026-07-06 (Pilot Readiness Dry-Run)
+
+## Summary
+SJC Intel was evaluated for a bounded real-data PostgreSQL pilot. No live ingest was executed.
+
+## Decision
+Pilot remains blocked until a real PostgreSQL adapter or loader is implemented. Current `scripts/pg_adapter.py` is intentionally disabled by default and its real query/upsert/connection methods raise `NotImplementedError`.
+
+## New Artifact
+- `scripts/pilot_readiness_report.py` — non-mutating dry-run report for deterministic pilot subset selection, required-field checks, duplicate `item_id` checks, duplicate dedupe-key checks, rollback model, and delete-and-reimport model.
+
+## Current Candidate
+- Command: `python3 scripts/pilot_readiness_report.py --eligible-only --json`
+- Source: `sjc_nbor_public_notices`
+- Count: 10
+- Digest: `6c0008d2855daf6c07fc4c0f2dda5478856cae775927bcc54cdda790571254b4`
+- Status: `BLOCKED` because PG adapter is not live.
+
+## Validation
+- `python3 -m pytest tests/test_adapter.py tests/test_parity.py` — 34/34 passed.
+
+## Next Action
+Implement a real writer-safe PostgreSQL loader/adapter with dry-run/plan/apply, reject reporting, rollback by selected `item_id`, delete-and-reimport proof, and parity before any Gate-approved load.

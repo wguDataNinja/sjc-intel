@@ -105,3 +105,74 @@ facing output. Next roadmap must decide: deepen, expand, or automate.
 - Produced `docs/reviews/sjc_vps_codex_roadmap_prompt.md` — self-contained Codex prompt requiring ROADMAP.md with 15+ sections, worker session tables, decision tables, phase dependency graphs
 
 **Validation:** Post-commit status clean. Only `docs/reviews/codex_roadmap_preflight.md` (prior session) and `docs/reviews/sjc_vps_codex_roadmap_prompt.md` (this session, not committed per constraint) remain untracked. Codex not run. ROADMAP.md not overwritten.
+
+## 2026-07-05 (SJC-010 PRE_GITHUB Remediation) — Harden repo for GitHub readiness
+
+**Task:** SJC-010: add `.env.example`, harden `.gitignore`, create validation command, add pytest test harness using 7 existing fixture files.
+
+**Work done:**
+- Hardened `.gitignore` (added `.venv/`, `venv/`, `*.key`, `*.pem`)
+- Created `.env.example` documenting current (none) and future env vars
+- Created `scripts/validate.py` — deterministic offline validation
+- Created `pytest.ini` + 4 test files (25 total tests, all pass)
+- Updated `README.md` with Setup and Validation sections
+- Updated `SESSION.md` and `LOG.md`
+
+**LICENSE deferred:** Portfolio license choice not finalized per SHARED-009. Requires Buddy decision.
+
+**Validation:** 25/25 pytest pass. Validation script passes. No functional `/Users/buddy/` hardcoded paths in source/config. No secrets. No VPS access.
+
+## 2026-07-05 (SJC-006 Adapter and Shadow-Parity Package)
+
+**Task:** Implement storage adapter interface, file/PG adapters, parity report, and tests.
+
+**Work done:**
+- Created `scripts/adapter_base.py` — abstract StorageAdapter with read_item, write_item, list_items, get_health
+- Created `scripts/file_adapter.py` — FileAdapter reads/writes existing YAML files in data/, registry/ (AUTHORITATIVE default)
+- Created `scripts/pg_adapter.py` — PgAdapter with same interface, disabled by default (SJC_INTEL_PG_ADAPTER_ENABLED=false)
+- Created `scripts/storage_adapter.py` — StorageFacade with primary/fallback pattern, create_adapter factory
+- Created `scripts/parity_report.py` — ParityReport for shadow comparison between file and PG backends
+- Created `tests/fixtures/test_intel_items.yaml`, `test_sources.yaml`, `test_tracked_entities.yaml` — synthetic test data
+- Created `tests/test_adapter.py` — 22 tests for all adapter methods, PG disabled/enabled, storage facade
+- Created `tests/test_parity.py` — 10 tests for parity comparison, report structure, known-fixture validation
+- Updated `.env.example` — added adapter PG configuration vars
+
+**Validation:** 93/93 pytest pass (34 new + 59 existing). No regressions. No data artifacts modified. No live DB connection. No production ingestion. File remains authoritative.
+
+## 2026-07-06 (Pilot Readiness Dry-Run)
+
+**Task:** Evaluate SJC Intel for a bounded real-data PostgreSQL pilot after empty foundation migration.
+
+**Work done:**
+- Created `scripts/pilot_readiness_report.py`.
+- Added deterministic eligible subset selection for `sjc_nbor_public_notices`.
+- Proved the clean candidate subset is 10 records with digest `6c0008d2855daf6c07fc4c0f2dda5478856cae775927bcc54cdda790571254b4`.
+- Confirmed live pilot is blocked because `scripts/pg_adapter.py` is still disabled/not implemented for real PostgreSQL reads and writes.
+
+**Validation:**
+- `python3 scripts/pilot_readiness_report.py --eligible-only --json` — report generated, `gate_status=BLOCKED` as expected.
+- `python3 -m pytest tests/test_adapter.py tests/test_parity.py` — 34/34 passed.
+- No source YAML files modified.
+- No real data loaded into PostgreSQL.
+
+## 2026-07-06 — PostgreSQL foundation, pilot-loader implementation, VPS continuity
+
+**Work done:**
+- Schema migrations (20260705_001-009) applied and validated — PASS
+- 999_full_validation.sql confirmed — all checks PASS
+- Clean baseline backup created and checksum verified — `manifest_clean_20260706T064146Z.yaml`
+- Restore drill PASS — restored temp DB, validated ownership, cleaned up
+- `scripts/pilot_loader.py` created with dry-run/plan/apply/rollback/parity modes
+- `tests/test_pilot_loader.py` created — 11 tests PASS
+- `docs/VPS_CONTINUITY.md` created — durable VPS continuity record
+- All migrations forward-only, no real data ingested, no VPS deployment
+
+**Evidence:** See `ivy-control/vps/worker-control/reports/STRONG_AGENTIC_EXECUTION_REPORT.md` for full execution details.
+
+## 2026-07-06 — Documentation reconciliation and evidence index
+
+**Work done:**
+- Pre-existing SESSION.md and LOG.md entries preserved
+- This entry appended
+- VPS_CONTINUITY.md updated with "Read first" reading order
+- CI, deploy docs, and commit boundaries still pending
