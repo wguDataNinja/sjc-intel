@@ -1,0 +1,39 @@
+# Sample tracked entity fixture — fake data, not production
+# Use for migration rehearsal only
+
+entity_id: "ENT-RETAIL-PUBLIX-SILVERLEAF"
+entity_type: "retail_development"
+label: "SilverLeaf Mega Publix"
+description: "55,701 sq ft Publix at 1975 SilverLeaf Parkway with Pours lounge"
+lifecycle_status: "completed"
+priority: "high"
+communities:
+  - silverleaf
+aliases:
+  - "Publix at SilverLeaf"
+  - "1975 SilverLeaf Parkway Publix"
+search_queries:
+  - '"SilverLeaf" Publix'
+  - '"1975 SilverLeaf Parkway"'
+evidence_notes: "Confirmed by St. Johns Citizen article."
+tracked_since: "2026-07-04"
+notes: "Largest Publix in the area."
+---
+entity_id: "ENT-ROADS-CR210WIDENING"
+entity_type: "road_project"
+label: "CR-210 West Widening"
+description: "Widening of CR-210 from two to four lanes between I-95 and US-1"
+lifecycle_status: "under_construction"
+priority: "high"
+communities:
+  - silverleaf
+  - fruit_cove
+aliases:
+  - "County Road 210 widening"
+  - "CR-210 expansion"
+search_queries:
+  - '"CR 210" widening'
+  - '"County Road 210" construction'
+evidence_notes: "FDOT project website."
+tracked_since: "2026-07-04"
+notes: "Major commute corridor. Monitor for completion timeline."

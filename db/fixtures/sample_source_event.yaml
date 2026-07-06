@@ -1,0 +1,31 @@
+# Sample source event fixture — fake data, not production
+# Use for migration rehearsal only
+
+event_id: "EVT-BCC-20260705-0001"
+source_id: "sjc_bcc_calendar"
+event_type: "meeting"
+title: "BCC Regular Meeting — July 7, 2026"
+event_date: "2026-07-07"
+discovered_at: "2026-07-05T08:00:00Z"
+source_url: "https://stjohnsclerk.com/board-records/agendas/"
+document_urls:
+  agenda: "https://stjohnsclerk.com/wp-content/uploads/2026/07/070726bcc.pdf"
+  video: "https://www.sjcfl.us/govtv/"
+status: "extracted"
+extraction_status: "Extracted 3 intel items from agenda PDF"
+source_health: "accessible"
+notes: ""
+created_at: "2026-07-05T08:30:00Z"
+---
+event_id: "EVT-SJSO-20260705-0001"
+source_id: "sjso_news_stories"
+event_type: "page_snapshot"
+title: "SJSO News Page Snapshot — July 5, 2026"
+event_date: "2026-07-05"
+discovered_at: "2026-07-05T14:00:00Z"
+source_url: "https://www.sjso.org/news-stories/"
+status: "extracted"
+extraction_status: "Extracted 1 intel item from news page"
+source_health: "accessible"
+notes: ""
+created_at: "2026-07-05T14:15:00Z"

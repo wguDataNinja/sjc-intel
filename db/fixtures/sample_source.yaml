@@ -1,0 +1,38 @@
+# Sample source fixture — fake data, not production
+# Use for migration rehearsal only
+
+source_id: sjso_news_stories
+name: "SJSO News Stories"
+description: "Sheriff's Office press releases, arrest reports, and incident alerts."
+url: "https://www.sjso.org/news-stories/"
+base_domain: "sjso.org"
+source_type: "wordpress_blog"
+relevance: "HIGH"
+monitor_frequency: "daily"
+automatable: "YES"
+status: "active"
+topics:
+  - public_safety
+  - arrests
+  - incidents
+  - press_releases
+communities: []
+notes: "WordPress blog, no RSS feed. HTML parsing required."
+---
+source_id: sjc_bcc_calendar
+name: "SJC BCC Calendar"
+description: "Board of County Commissioners meeting calendar and agendas."
+url: "https://stjohnsclerk.com/board-records/agendas/"
+base_domain: "stjohnsclerk.com"
+source_type: "document_management"
+relevance: "HIGH"
+monitor_frequency: "weekly"
+automatable: "PARTIALLY"
+status: "active"
+topics:
+  - government
+  - county_commission
+  - agenda
+  - public_meeting
+communities: []
+notes: "PDF extraction required. Links occasionally break."

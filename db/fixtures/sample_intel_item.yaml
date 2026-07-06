@@ -1,0 +1,59 @@
+# Sample intel item fixture — fake data, not production
+# Use for migration rehearsal only
+
+item_id: "SJC-SJSO-20260705-0001"
+title: "SJSO Responds to Vehicle Accident on I-95"
+summary: "SJSO responded to a multi-vehicle accident on I-95 near exit 305. No fatalities reported."
+source_id: "sjso_news_stories"
+source_url: "https://www.sjso.org/news-stories/i95-accident-july-2026/"
+source_published_at: "2026-07-05T14:30:00Z"
+discovered_at: "2026-07-05T14:45:00Z"
+discovered_by: "test-fixture"
+topics:
+  - public_safety
+  - traffic
+  - incident
+communities: []
+geographic_scope: "county_wide"
+urgency: "timely"
+verification_status: "source_confirmed"
+sensitivity: "low"
+recommended_channels:
+  - website_review_queue
+raw_excerpt: "SJSO units responded to a multi-vehicle accident on I-95 near exit 305 at approximately 2:30 PM."
+review_status: "pending_review"
+human_review_required: false
+created_at: "2026-07-05T14:45:00Z"
+updated_at: "2026-07-05T14:45:00Z"
+_dedupe_key: "a1b2c3d4e5f6a7b8"
+_beat: "public_safety"
+_signal: "medium"
+---
+item_id: "SJC-BCC-20260705-0001"
+title: "BCC Regular Meeting — July 7, 2026"
+summary: "Regular BCC meeting agenda includes development approvals and budget discussion."
+source_id: "sjc_bcc_calendar"
+source_url: "https://stjohnsclerk.com/board-records/agendas/july2026/"
+source_published_at: "2026-07-05T08:00:00Z"
+discovered_at: "2026-07-05T08:30:00Z"
+discovered_by: "test-fixture"
+topics:
+  - government
+  - county_commission
+  - public_meeting
+communities:
+  - st_johns_county
+geographic_scope: "county_wide"
+urgency: "timely"
+verification_status: "unverified"
+sensitivity: "low"
+recommended_channels:
+  - website_review_queue
+raw_excerpt: "The Board of County Commissioners will meet on July 7, 2026 at 9:00 AM in the County Auditorium."
+review_status: "pending_review"
+human_review_required: false
+created_at: "2026-07-05T08:30:00Z"
+updated_at: "2026-07-05T08:30:00Z"
+_dedupe_key: "b2c3d4e5f6a7b8c9"
+_beat: "government"
+_signal: "medium"
