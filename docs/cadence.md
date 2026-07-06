@@ -19,7 +19,9 @@ When Buddy says "get to work":
 
 1. Read `docs/cadence.md` (this file).
 2. Read `README_INTERNAL.md` and `BACKLOG.md`.
-3. Read `logs/runs/README.md` for the run-log format.
+3. Read `docs/planning/SJC_PRODUCT_AND_SOURCING_DIRECTION_20260706.md` if
+   product-direction context is needed for task selection.
+4. Read `logs/runs/README.md` for the run-log format.
 4. Check `logs/runs/daily/LAST_RUN` for the last daily run timestamp.
 5. Check `logs/runs/weekly/LAST_RUN` for the last weekly run timestamp.
 6. Check `logs/runs/monthly/LAST_RUN` for the last monthly run timestamp.

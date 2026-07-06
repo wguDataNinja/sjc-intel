@@ -1,6 +1,6 @@
 # SJC_Intel Backlog
 
-Last updated: 2026-06-26
+Last updated: 2026-07-06
 
 Status values: `todo`, `in_progress`, `blocked`, `done`, `deferred`.
 
@@ -114,3 +114,23 @@ Status values: `todo`, `in_progress`, `blocked`, `done`, `deferred`.
 |----|-------|--------|----------|--------------|-------------|-------------|
 | PUB-001 | Define public product name | deferred | low | editorial pipeline | Buddy | Decide later |
 | PUB-002 | Build newsletter/website pipeline | deferred | low | review/corrections workflow | future | Not in current scope |
+
+## Product Direction / Planning (from 2026-07-06 planning session)
+
+| ID | Title | Status | Priority | Dependencies | Owner/Agent | Next Action |
+|----|-------|--------|----------|--------------|-------------|-------------|
+| DIR-001 | Create SilverLeaf geographic registry | todo | **critical** | none | sjc-intel-architect | Research authoritative SilverLeaf boundary sources; draft registry schema |
+| DIR-002 | Design three-lane architecture doc | todo | high | DIR-001 | sjc-intel-architect | Draft durable/live/investigation lane boundaries and data flow |
+| DIR-003 | Investigate FHP incident page data source | todo | high | none | sjc-intel-architect | Determine whether structured JSON endpoint or browser automation required |
+| DIR-004 | Investigate FL511 incident and camera integration | todo | high | none | sjc-intel-architect | Document permitted integration methods and rate limits |
+| DIR-005 | Design live incident schema and adapter interface | todo | high | DIR-003, DIR-004 | sjc-intel-architect | Normalized incident record for crashes, closures, flooding, utility work |
+| DIR-006 | Design agentic investigation framework | todo | medium | DIR-002 | sjc-intel-architect | Search trigger, evidence extraction, reconciliation, review gate boundaries |
+| DIR-007 | Design coordinate-based geographic filtering | todo | medium | DIR-001 | sjc-intel-architect | Point-in-polygon test, corridor proximity, PostGIS requirements |
+| DIR-008 | Research PostGIS readiness for current PG schema | todo | medium | none | sjc-intel-architect | Check whether PostGIS extension is available and what migrations are needed |
+| DIR-009 | Map SilverLeaf internal streets and entrances | todo | medium | DIR-001 | sjc-intel-architect | Compile from official plats, county GIS, and OSM |
+| DIR-010 | Identify schools serving SilverLeaf by school year | todo | medium | DIR-001 | sjc-intel-architect | Attendance zone maps, feeder patterns, school-year-effective relationships |
+| DIR-011 | Define I-95 and I-295 commute segments for monitoring | todo | medium | DIR-001 | sjc-intel-architect | Exact start/end anchors, exits, mile markers, direction |
+| DIR-012 | Evaluate traffic API providers for congestion pilot | todo | low | none | Buddy | Compare TomTom/Google/Apple pricing, free tier, pilot feasibility |
+| DIR-013 | Design school sourcing expansion (athletics, activities, recognition) | todo | low | DIR-010 | sjc-intel-architect | Search templates for school sports, awards, student accomplishments |
+| DIR-014 | Research county GIS and parcel data availability | todo | low | none | sjc-intel-architect | Determine whether county provides GIS downloads or API |
+| DIR-015 | Retire or update stale planning docs for new direction | todo | low | DIR-001 | sjc-intel-architect | Review discovery_loops.md, monitor specs, and source registry for alignment |

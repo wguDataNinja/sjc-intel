@@ -29,6 +29,10 @@ about St. Johns County, Florida — focused on master-planned communities,
 government decisions, utilities, schools, roads, and development. It produces
 structured intelligence items for editorial review, not published news.
 
+**Product direction:** First public product is SilverLeaf neighborhood
+intelligence. Internal collection remains countywide and regional. See
+`docs/planning/SJC_PRODUCT_AND_SOURCING_DIRECTION_20260706.md`.
+
 Operates in **supervised operator mode**: no cron, no launchd, no scheduled
 automation. Buddy says "get to work", the agent evaluates cadence via
 LAST_RUN markers, picks the smallest safe task, executes or delegates,
@@ -90,14 +94,27 @@ is tip-surfacing/context unless verified by official records.
 
 ## Current Phase
 
-**Portable PostgreSQL-backed application architecture while preserving file
-authority.** File-backed YAML/JSON remains the operating source of truth.
-Mac-hosted PostgreSQL 16 remains the active development foundation, migration
-source, fallback, and restore-verification target. The current `ih-market-vps`
-remains the intended later PostgreSQL host, but PostgreSQL is not installed on
-the VPS in this phase.
+**Product direction and sourcing strategy established.** See
+`docs/planning/SJC_PRODUCT_AND_SOURCING_DIRECTION_20260706.md` for the full
+authority summary, accepted decisions, and roadmap implications.
 
-Implemented PostgreSQL work now includes:
+Strategic priorities (not implementation orders):
+
+1. **SilverLeaf geographic registry** — foundational dependency for all
+   public-facing work. Boundary, neighborhoods, streets, schools, roads,
+   aliases, and exclusion rules.
+2. **Three-lane architecture** — durable knowledge (existing pipeline),
+   live incident (new), agentic investigation (new).
+3. **Geographic and coordinate-based filtering** — point-in-polygon,
+   corridor proximity, PostGIS readiness.
+4. **Live incident sourcing** — FHP, FL511, county notices, emergency
+   management (source feasibility investigation open).
+5. **Agentic sourcing framework** — targeted news/social searches,
+   evidence extraction, reconciliation, proposed updates.
+6. **School sourcing expansion** — athletics, activities, recognition,
+   community achievements beyond BoardDocs.
+
+PostgreSQL foundation work (file authority preserved):
 
 - general application-facing PostgreSQL adapter (`scripts/pg_adapter.py`);
 - backend selection and file fallback (`scripts/storage_adapter.py`);
@@ -123,6 +140,7 @@ Implemented PostgreSQL work now includes:
 | `docs/retention.md` | Source-by-source retention and pruning dry-run behavior |
 | `docs/snapshots_and_metrics.md` | Compact metric snapshot behavior |
 | `docs/news_ingestion_readiness.md` | Later relevant-news extension boundaries |
+| `docs/planning/SJC_PRODUCT_AND_SOURCING_DIRECTION_20260706.md` | Product direction and sourcing strategy |
 
 ## Open Loops
 
@@ -134,6 +152,13 @@ Implemented PostgreSQL work now includes:
 5. **School district has no June coverage** — BoardDocs pilot pending.
 6. **Tier 3 (CDD) and Tier 4 (community) sources** not promoted.
 7. **Monthly closeout** — last monthly run was 2026-06-08 (26+ days ago).
+8. **SilverLeaf geographic registry** — foundational but not started. Needs
+   boundary, neighborhoods, streets, schools, roads, and aliases.
+   (see `docs/planning/SJC_PRODUCT_AND_SOURCING_DIRECTION_20260706.md`)
+9. **Live incident lane** — FHP source adapter and normalized incident schema
+   not started. (see planning doc)
+10. **Agentic investigation framework** — search infrastructure, LLM
+    integration, and review gates not designed. (see planning doc)
 
 ## Durable Decisions
 
@@ -146,6 +171,15 @@ Implemented PostgreSQL work now includes:
 - Memory stays concise; narrative history belongs in logs.
 - Public sources only. No private groups or login-gated portals.
 - Source candidates reviewed before canonical promotion.
+- **First public product: SilverLeaf neighborhood intelligence.** (per
+  `docs/planning/SJC_PRODUCT_AND_SOURCING_DIRECTION_20260706.md`)
+- **Three-lane architecture:** durable knowledge, live incident, agentic
+  investigation.
+- **Deterministic official capture first** — agentic search enriches but
+  does not replace.
+- **Geographic registry is foundational** — SilverLeaf boundary and
+  coordinate-based filtering before public launch.
+- **Social media is corroboration only** — not sole primary detection.
 
 ## Safe Commands
 

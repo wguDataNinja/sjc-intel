@@ -4,6 +4,8 @@
 **Status:** Planning artifact only. No implementation authorized.  
 **Scope:** `/Users/buddy/projects/sjc_intel`, shared VPS/PostgreSQL conventions, future `sjc_intel` PostgreSQL database, health output, backups, systemd timers, and GitHub readiness.
 
+See `docs/planning/SJC_PRODUCT_AND_SOURCING_DIRECTION_20260706.md` for the broader product direction that this VPS roadmap supports.
+
 ## Architecture Assessment
 
 Verified facts:
