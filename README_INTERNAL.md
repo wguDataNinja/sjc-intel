@@ -141,6 +141,7 @@ PostgreSQL foundation work (file authority preserved):
 | `docs/snapshots_and_metrics.md` | Compact metric snapshot behavior |
 | `docs/news_ingestion_readiness.md` | Later relevant-news extension boundaries |
 | `docs/planning/SJC_PRODUCT_AND_SOURCING_DIRECTION_20260706.md` | Product direction and sourcing strategy |
+| `docs/planning/SJC_PROMPT_LED_DISCOVERY_STANDARDS_20260706.md` | Prompt-led discovery standards and architecture |
 
 ## Open Loops
 
