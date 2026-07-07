@@ -33,7 +33,8 @@ Before searching, read:
 
 - `AGENTS.md` — git policy, logging rules, safety rules
 - `README_INTERNAL.md` — product direction, durable decisions, agent cautions
-- `registry/tracked_entities.yaml` — current tracked entities
+- `registry/search_profiles.yaml` — search profiles (tier, cadence, terms)
+- `registry/tracked_entities.yaml` — canonical entity names, aliases, types
 - `registry/communities.yaml` — geographic communities and neighborhoods
 - `docs/taxonomy.md` — controlled vocabularies for classification
 
@@ -41,15 +42,19 @@ Before searching, read:
 
 ## 4. Inputs
 
-You derive search subjects dynamically from these registry files. There is no
-separate search-profiles file yet.
+You derive search subjects dynamically from `registry/search_profiles.yaml`.
+Each profile references communities and entities by ID. Canonical names,
+aliases, and types are resolved from `registry/communities.yaml` and
+`registry/tracked_entities.yaml`.
 
-| Source | What to Extract |
-|--------|----------------|
-| `registry/communities.yaml` | All entries where `parent_area: silverleaf` and `status: active` |
-| `registry/tracked_entities.yaml` | All entries where `communities` includes `silverleaf` or `cr_210_corridor` AND `lifecycle_status` is NOT `completed` (unless recent evidence warrants a check) |
-| `registry/tracked_entities.yaml` | `ENT-COMM-SILVERLEAF` and its aliases, `ENT-RETAIL-PUBLIX-SILVERLEAF` (anchor tenant), `ENT-RETAIL-HARRIS-TEETER-SILVERLEAF` (unconfirmed, mark as such) |
-| `registry/communities.yaml` | The `silverleaf` master entry and all 11 directory-confirmed neighborhoods |
+| Source | How to Use |
+|--------|------------|
+| `registry/search_profiles.yaml` | Select all profiles where `enabled: true`. Use `query_templates`, `additional_terms`, `provisional_terms`, `exclude_terms`, and `preferred_domains` per profile. |
+| `registry/search_profiles.yaml` | Use `cadence` for metadata only — do not self-schedule. The human operator decides when to run. |
+| `registry/tracked_entities.yaml` | Resolve `entity_ids` from profiles to canonical `label`, `aliases`, `entity_type`, `lifecycle_status`, `communities`, `evidence_notes` |
+| `registry/communities.yaml` | Resolve `community_ids` from profiles to canonical `name`, `type`, `parent_area`, `status` |
+| Prompt defaults | Max subjects, queries, fetch pages, and time limits from section 11 if not overridden by profile |
+| Explicit ID lists | Profile `include_descendants: true` means neighborhoods with `parent_area: silverleaf` and entities with `communities: silverleaf` are implicitly included |
 
 ---
 
@@ -85,64 +90,73 @@ separate search-profiles file yet.
 
 ## 7. Workflow
 
-### Step 1 — Derive subjects
+### Step 1 — Derive subjects from search profiles
 
-Read `registry/communities.yaml` and `registry/tracked_entities.yaml`.
+Read `registry/search_profiles.yaml`. Select all profiles where `enabled: true`.
 
-Build a subject list containing:
+For each profile:
 
-a. **Master community:** SilverLeaf (ENT-COMM-SILVERLEAF) and spelling
-   variation "Silver Leaf"
-b. **Neighborhoods:** all 11 directory-confirmed neighborhoods
-   (sl_brandon_lakes through sl_waterford_lakes) plus cherry_elm
-c. **Active projects:** SilverLeaf K-8 School (ENT-EDU-SILVERLEAF-K8),
-   Beach Valley Mini Golf (ENT-REC-BEACH-VALLEY-MINI-GOLF)
-d. **Commercial entities:** Silverleaf Commons (ENT-RETAIL-SILVERLEAF-COMMONS),
-   Silverleaf Market (ENT-RETAIL-SILVERLEAF-MARKET),
-   Shoppes of St. Johns Parkway (ENT-RETAIL-SHOPS-ST-JOHNS-PKWY) —
-   adjacent, include for resident impact
-e. **Provisional:** CR 16A / SilverLeaf Parkway Grocery Center
-   (ENT-RETAIL-CR16A-SL-PKWY-GROCERY) — mark queries as unconfirmed
-f. **Anchor tenant:** Publix (ENT-RETAIL-PUBLIX-SILVERLEAF)
-g. **Unconfirmed anchor:** Harris Teeter (ENT-RETAIL-HARRIS-TEETER-SILVERLEAF) —
-   search but label all results with the entity's unconfirmed status
-h. **Completed but notable:** CR 2209 Connector
-   (ENT-ROAD-CR-2209-CONNECTOR) — check for follow-up only
-i. **Healthcare:** Baptist SilverLeaf Medical Campus
-   (ENT-HEALTH-BAPTIST-SILVERLEAF)
+a. **Resolve entity IDs:** For each `entity_id`, read `registry/tracked_entities.yaml`
+   to get canonical `label`, `aliases`, `entity_type`, `lifecycle_status`,
+   `communities`. If `include_descendants: true`, also include all entities
+   whose `communities` includes a community referenced by this profile.
 
-For each subject, note:
-- canonical name
-- aliases (from registry)
-- community association
-- lifecycle status
-- entity ID for cross-reference
+b. **Resolve community IDs:** For each `community_id`, read
+   `registry/communities.yaml` to get canonical `name`, `type`, `parent_area`,
+   `status`. If `include_descendants: true` and `parent_area` matches, include
+   child neighborhoods.
+
+c. **Apply query templates:** For each resolved entity or community, generate
+   queries by substituting `{name}` with the canonical name and each alias.
+   Add `additional_terms` as modifiers. Add `provisional_terms` with clear
+   labeling (prefix with "unconfirmed:" in the query context).
+
+d. **Apply exclusions:** Skip subjects matching `exclude_terms` when the
+   subject is already covered by another profile.
+
+e. **Respect tier:** Run all enabled profiles regardless of their declared
+   `cadence`. Cadence is metadata for the human operator — do not self-schedule.
+
+For each subject, record:
+- canonical name and aliases (from canonical registries)
+- entity ID and/or community ID
+- lifecycle status (for entities)
+- tier and cadence from the profile (for operator reference, not self-scheduling)
 
 Log a suppression reason for any subject you skip. Every subject must
 result in: at least one search, a logged suppression, or a logged
 duplicate/covered-by-parent decision.
 
-### Step 2 — Generate queries
+### Step 2 — Generate queries from profile terms
 
-For each selected subject, generate bounded query combinations from:
+For each subject, generate queries using the profile's `query_templates`,
+`additional_terms`, and `provisional_terms`.
 
-- Canonical name
-- Aliases
-- Parent community ("SilverLeaf" or "St. Johns")
-- Project type or entity type
-- Relevant road or intersection (from entity description when available)
-- Identifying anchor tenant (Publix for Silverleaf Market)
-- "St. Johns County" or "St. Augustine" for geographic scope
-- Recency context where appropriate
+Substitute `{name}` in templates with:
+- The canonical name from the canonical registry
+- Each alias from the canonical registry (one query per alias)
+- Add `additional_terms` as keyword modifiers
+- Add `provisional_terms` with explicit "unconfirmed" labeling
 
-Limit to 3 queries per subject. Query examples:
+Limit to `max_queries` per subject from the profile (default: 3).
+
+Example query construction for a profile with:
+- entity label: "Silverleaf Market"
+- aliases: ["Silverleaf Market shopping center"]
+- query_template: '"{name}" "St. Johns"'
+- additional_terms: ["grocery"]
+
+Resulting queries:
+```
+"Silverleaf Market" "St. Johns" grocery
+"Silverleaf Market shopping center" "St. Johns" grocery
+```
+
+For provisional terms (from `provisional_terms`), add them as additional
+queries with explicit uncertainty context:
 
 ```
-"SilverLeaf K-8 school" St. Johns
-"Silverleaf Commons" St. Johns
-"Baptist Health" SilverLeaf medical campus
-"Beach Valley Mini Golf" SilverLeaf
-"Harris Teeter" SilverLeaf St. Johns (note: unconfirmed anchor)
+"Harris Teeter" "SilverLeaf" "St. Johns"  (unconfirmed anchor)
 ```
 
 ### Step 3 — Search

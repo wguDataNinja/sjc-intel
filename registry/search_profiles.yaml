@@ -1,0 +1,258 @@
+# =============================================================================
+# SJC_Intel — Search Profiles Registry
+# =============================================================================
+# Search behavior configuration for agentic discovery. References entities and
+# communities by ID from tracked_entities.yaml and communities.yaml — does NOT
+# duplicate canonical names, aliases, types, descriptions, or statuses.
+#
+# Canonical entity facts remain authoritative in:
+#   - registry/tracked_entities.yaml
+#   - registry/communities.yaml
+#
+# Schema version: 1.0
+# Status: active
+# Last updated: 2026-07-06
+# =============================================================================
+
+schema_version: "1.0"
+
+# --- Tiers ---
+# core:     weekly search, highest priority
+# active:   weekly or biweekly
+# stable:   monthly
+# temporary: bounded by review_after or expires_at
+# dormant:  not actively searched (retained for reference)
+
+# --- Cadence values ---
+# weekly, biweekly, monthly, one_time
+
+profile_defaults:
+  max_queries: 3
+  max_results: 10
+  date_window_days: 90
+
+profiles:
+
+  # --------------------------------------------------------------------------
+  # Core SilverLeaf
+  # --------------------------------------------------------------------------
+  # Covers the master-planned community, all verified neighborhoods, broad
+  # development and community news. Uses include_descendants to pull in all
+  # child neighborhoods and SilverLeaf-associated entities.
+
+  - profile_id: "sl_core"
+    display_name: "SilverLeaf Core"
+    enabled: true
+    tier: "core"
+    cadence: "weekly"
+    community_ids:
+      - "silverleaf"
+    entity_ids:
+      - "ENT-COMM-SILVERLEAF"
+    include_descendants: true
+    query_templates:
+      - '"{name}" "St. Johns"'
+      - '"{name}" news'
+      - '"Silver Leaf" "St. Johns"'  # spelling variation
+    additional_terms:
+      - "development"
+      - "construction"
+      - "opening"
+      - "delay"
+      - "approval"
+      - "rezoning"
+    exclude_terms: []
+    preferred_domains:
+      - "sjcitizen.com"
+      - "sjcfl.us"
+      - "news4jax.com"
+      - "staugustine.com"
+      - "actionnewsjax.com"
+      - "firstcoastnews.com"
+    date_window_days: 90
+    review_after: null
+    expires_at: null
+    notes: >
+      Core SilverLeaf discovery. include_descendants=true pulls in all
+      neighborhoods with parent_area=silverleaf and all tracked entities
+      with communities=silverleaf. The "Silver Leaf" spelling variation
+      is an explicit query template, not a canonical alias.
+
+  # --------------------------------------------------------------------------
+  # Silverleaf Market (Publix-anchored)
+  # --------------------------------------------------------------------------
+  # Identity-defining anchor tenant Publix is a permitted search term.
+
+  - profile_id: "sl_market_publix"
+    display_name: "Silverleaf Market"
+    enabled: true
+    tier: "active"
+    cadence: "biweekly"
+    entity_ids:
+      - "ENT-RETAIL-SILVERLEAF-MARKET"
+    include_descendants: false
+    query_templates:
+      - '"{name}" "St. Johns"'
+      - '"Publix" "SilverLeaf"'
+    additional_terms:
+      - "grocery"
+      - "shopping center"
+    provisional_terms: []
+    exclude_terms: []
+    preferred_domains:
+      - "sjcitizen.com"
+      - "sjcfl.us"
+    date_window_days: 90
+    notes: >
+      Publix is the identity-defining anchor tenant and is used as a
+      search term (per anchor-tenant policy). Harris Teeter is NOT
+      included here — that is a separate provisional entity.
+
+  # --------------------------------------------------------------------------
+  # Silverleaf Commons
+  # --------------------------------------------------------------------------
+  # Ordinary tenants (Jersey Mike's Subs) are not standing search terms.
+
+  - profile_id: "sl_commons"
+    display_name: "Silverleaf Commons"
+    enabled: true
+    tier: "stable"
+    cadence: "monthly"
+    entity_ids:
+      - "ENT-RETAIL-SILVERLEAF-COMMONS"
+    include_descendants: false
+    query_templates:
+      - '"{name}" "St. Johns"'
+    additional_terms:
+      - "shopping"
+      - "retail"
+    provisional_terms: []
+    exclude_terms: []
+    date_window_days: 90
+    notes: >
+      Ordinary tenants (Jersey Mike's Subs) are not standing search
+      terms per tenant policy. Low-priority stable check.
+
+  # --------------------------------------------------------------------------
+  # Baptist SilverLeaf Medical Campus
+  # --------------------------------------------------------------------------
+
+  - profile_id: "sl_baptist_medical"
+    display_name: "Baptist SilverLeaf Medical Campus"
+    enabled: true
+    tier: "active"
+    cadence: "biweekly"
+    entity_ids:
+      - "ENT-HEALTH-BAPTIST-SILVERLEAF"
+    include_descendants: false
+    query_templates:
+      - '"{name}" "St. Johns"'
+      - '"Baptist Health" "SilverLeaf"'
+    additional_terms:
+      - "medical"
+      - "healthcare"
+      - "emergency"
+    provisional_terms: []
+    exclude_terms: []
+    preferred_domains:
+      - "sjcitizen.com"
+      - "baptistjax.com"
+    date_window_days: 90
+    notes: >
+      Medical campus with emergency center component. Entity_type is
+      healthcare_facility (not hospital) per current evidence.
+
+  # --------------------------------------------------------------------------
+  # CR 16A / SilverLeaf Parkway Grocery Center (Provisional)
+  # --------------------------------------------------------------------------
+  # Harris Teeter may appear only as explicitly provisional/unconfirmed.
+
+  - profile_id: "sl_cr16a_grocery"
+    display_name: "CR 16A / SL Parkway Grocery Center"
+    enabled: true
+    tier: "temporary"
+    cadence: "biweekly"
+    entity_ids:
+      - "ENT-RETAIL-CR16A-SL-PKWY-GROCERY"
+    include_descendants: false
+    query_templates:
+      - '"CR 16A" "SilverLeaf" grocery'
+      - '"SilverLeaf Parkway" grocery center'
+    additional_terms:
+      - "supermarket"
+      - "grocery"
+    provisional_terms:
+      - "Harris Teeter"      # explicitly unconfirmed — do not treat as
+      - "Kroger"              # canonical anchor without evidence
+    exclude_terms: []
+    preferred_domains:
+      - "sjcitizen.com"
+    date_window_days: 180
+    review_after: "2026-10-06"   # review after 3 months
+    expires_at: "2027-01-06"     # expire if no evidence after 6 months
+    notes: >
+      Provisional descriptive identity. Harris Teeter in provisional_terms
+      is explicitly unconfirmed. When evidence resolves the formal center
+      name or anchor tenant, update this profile. If no evidence after
+      6 months, this profile expires (review before expiry).
+
+  # --------------------------------------------------------------------------
+  # Shoppes of St. Johns Parkway (Adjacent)
+  # --------------------------------------------------------------------------
+  # Adjacent/direct-impact relationship. Not inside SilverLeaf.
+
+  - profile_id: "sl_shoppes_stjohns_pkwy"
+    display_name: "Shoppes of St. Johns Parkway"
+    enabled: true
+    tier: "stable"
+    cadence: "monthly"
+    entity_ids:
+      - "ENT-RETAIL-SHOPS-ST-JOHNS-PKWY"
+    include_descendants: false
+    query_templates:
+      - '"{name}" "St. Johns"'
+    additional_terms:
+      - "shopping"
+      - "retail"
+    provisional_terms: []
+    exclude_terms: []
+    date_window_days: 90
+    notes: >
+      Adjacent to SilverLeaf — included for resident impact. Community
+      is cr_210_corridor, not silverleaf. Low-priority stable check.
+
+  # --------------------------------------------------------------------------
+  # SilverLeaf Neighborhoods (Group)
+  # --------------------------------------------------------------------------
+  # Individual neighborhood profiles would be repetitive. The sl_core profile
+  # with include_descendants=true covers all child neighborhoods. This group
+  # profile adds neighborhood-specific terms that sl_core's broad templates
+  # might miss.
+
+  - profile_id: "sl_neighborhoods"
+    display_name: "SilverLeaf Neighborhoods"
+    enabled: true
+    tier: "stable"
+    cadence: "monthly"
+    community_ids:
+      - "silverleaf"
+    entity_ids: []
+    include_descendants: true
+    query_templates:
+      - '"{name}" "SilverLeaf" "St. Johns"'
+    additional_terms:
+      - "neighborhood"
+      - "community"
+      - "HOA"
+      - "amenities"
+    provisional_terms: []
+    exclude_terms:
+      - "shopping center"
+      - "Publix"
+      - "Harris Teeter"
+    date_window_days: 180
+    notes: >
+      Backstop for neighborhood-specific updates that the core SilverLeaf
+      profile might miss. Runs at stable/monthly cadence. Uses exclusion
+      terms to avoid duplicating commercial entity results that are
+      covered by dedicated profiles.
