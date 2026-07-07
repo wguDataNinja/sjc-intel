@@ -22,6 +22,120 @@ tracked_entities:
   # Retail Development
   # --------------------------------------------------------------------------
 
+  - entity_id: "ENT-RETAIL-SILVERLEAF-COMMONS"
+    entity_type: "retail_development"
+    label: "Silverleaf Commons"
+    description: >
+      Shopping center inside or directly associated with SilverLeaf.
+    lifecycle_status: "tracked"
+    priority: "medium"
+    communities:
+      - silverleaf
+    aliases:
+      - "Silverleaf Commons shopping center"
+    search_queries:
+      - '"Silverleaf Commons" St. Johns'
+    sources: []
+    evidence_notes: >
+      Listed in SilverLeaf official resident directory. Known tenant:
+      Jersey Mike's Subs (ordinary tenant — supporting context only,
+      not an anchor). Note spelling: "Silverleaf" (lowercase 'l') is
+      the registered name. No separate article or permit record
+      independently verified.
+    last_checked: "2026-07-06"
+    tracked_since: "2026-07-06"
+    notes: >
+      Distinguish from Silverleaf Market (separate Publix-anchored
+      center) and SilverLeaf Village (residential neighborhood in
+      communities.yaml).
+
+  - entity_id: "ENT-RETAIL-SILVERLEAF-MARKET"
+    entity_type: "retail_development"
+    label: "Silverleaf Market"
+    description: >
+      Publix-anchored shopping center in SilverLeaf. Publix is the
+      identity-defining anchor tenant. May be the center containing
+      the Publix at 1975 SilverLeaf Parkway
+      (ENT-RETAIL-PUBLIX-SILVERLEAF) — relationship to be verified.
+    lifecycle_status: "tracked"
+    priority: "medium"
+    communities:
+      - silverleaf
+    aliases:
+      - "Silverleaf Market shopping center"
+    search_queries:
+      - '"Silverleaf Market" St. Johns'
+    sources: []
+    evidence_notes: >
+      Listed in SilverLeaf official resident directory. Publix anchor
+      status noted from directory. Relationship to
+      ENT-RETAIL-PUBLIX-SILVERLEAF not yet established — the Publix
+      store may be in this center or may be a standalone store. Verify
+      center boundaries and whether 1975 SilverLeaf Parkway is within
+      this center. Note spelling: "Silverleaf" (lowercase 'l').
+    last_checked: "2026-07-06"
+    tracked_since: "2026-07-06"
+    notes: >
+      Distinguish from Silverleaf Commons (separate center, different
+      tenant mix) and SilverLeaf Village (neighborhood).
+
+  - entity_id: "ENT-RETAIL-SHOPS-ST-JOHNS-PKWY"
+    entity_type: "retail_development"
+    label: "Shoppes of St. Johns Parkway"
+    description: >
+      Shopping center adjacent to SilverLeaf near St. Johns Parkway
+      and CR 210. Affects SilverLeaf residents as a nearby shopping
+      destination but is NOT inside the SilverLeaf boundary.
+    lifecycle_status: "tracked"
+    priority: "low"
+    communities:
+      - cr_210_corridor
+    aliases:
+      - "Shoppes of St. Johns Parkway SilverLeaf"
+    search_queries:
+      - '"Shoppes of St. Johns Parkway" SilverLeaf'
+    sources: []
+    evidence_notes: >
+      Listed in SilverLeaf official resident directory as an adjacent
+      commercial area. Uses cr_210_corridor community relationship
+      (adjacent/direct-impact) rather than silverleaf.
+    last_checked: "2026-07-06"
+    tracked_since: "2026-07-06"
+
+  - entity_id: "ENT-RETAIL-CR16A-SL-PKWY-GROCERY"
+    entity_type: "retail_development"
+    label: "CR 16A and SilverLeaf Parkway Grocery Center"
+    description: >
+      Grocery-anchored shopping center at or near the intersection of
+      CR 16A and SilverLeaf Parkway. Formal center name not yet
+      verified. This is a provisional descriptive identity — do not
+      treat as a confirmed legal name.
+    lifecycle_status: "proposed"
+    priority: "low"
+    communities:
+      - silverleaf
+    aliases: []
+    search_queries:
+      - '"CR 16A" SilverLeaf grocery'
+      - '"SilverLeaf Parkway" grocery center'
+    sources: []
+    evidence_notes: >
+      Provisional identity. Formal center name not yet known. An
+      unconfirmed suspected anchor tenant (Harris Teeter) may be
+      associated with this location — this remains unconfirmed and
+      is not reflected in the description. The existing
+      ENT-RETAIL-HARRIS-TEETER-SILVERLEAF entity may describe the
+      same project, a different project, or a related development.
+      Keep separate until evidence resolves the relationship.
+    last_checked: "2026-07-06"
+    tracked_since: "2026-07-06"
+    notes: >
+      CRITICAL: Do NOT rename this to "Harris Teeter" or assume the
+      center name. If the formal center name is confirmed, update the
+      label and add an alias. If Harris Teeter is confirmed as anchor,
+      add that to the description. If they are the same project, merge
+      with ENT-RETAIL-HARRIS-TEETER-SILVERLEAF.
+
   - entity_id: "ENT-RETAIL-PUBLIX-SILVERLEAF"
     entity_type: "retail_development"
     label: "SilverLeaf Mega Publix"
@@ -187,6 +301,37 @@ tracked_entities:
   # --------------------------------------------------------------------------
   # Healthcare Facilities
   # --------------------------------------------------------------------------
+
+  - entity_id: "ENT-HEALTH-BAPTIST-SILVERLEAF"
+    entity_type: "healthcare_facility"
+    label: "Baptist SilverLeaf Medical Campus"
+    description: >
+      Medical campus in SilverLeaf operated by Baptist Health, a major
+      regional healthcare system. Includes an emergency center
+      component. Classified as medical campus (healthcare_facility)
+      rather than hospital unless evidence supports hospital-level
+      inpatient or surgical services.
+    lifecycle_status: "tracked"
+    priority: "medium"
+    communities:
+      - silverleaf
+    aliases:
+      - "Baptist Health SilverLeaf"
+      - "Baptist Medical Campus SilverLeaf"
+    search_queries:
+      - '"Baptist" SilverLeaf medical'
+      - '"Baptist Health" SilverLeaf'
+    sources: []
+    evidence_notes: >
+      Listed in SilverLeaf official resident directory as "Baptist
+      SilverLeaf Medical Campus." Entity_type is "healthcare_facility"
+      rather than "hospital" because no evidence confirms hospital-
+      level inpatient or surgical services at this campus. Baptist
+      Health operates multiple facilities in the region; this campus
+      is a separate location from Baptist Medical Center Jacksonville
+      and Baptist Medical Center South.
+    last_checked: "2026-07-06"
+    tracked_since: "2026-07-06"
 
   - entity_id: "ENT-HEALTH-ASCENSION-NOCATEE"
     entity_type: "healthcare_facility"

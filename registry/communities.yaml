@@ -46,7 +46,8 @@ communities:
     notes: >
       Major growth area in northwestern St. Johns County near the Duval
       County line. Large-scale residential and mixed-use development.
-      Includes neighborhoods like Cherry Elm, Cherrywood, and Silverleaf Village.
+      See SilverLeaf neighborhoods section below for the complete list of
+      registered neighborhoods.
     status: "active"
 
   - id: "nocatee"
@@ -228,5 +229,114 @@ communities:
     notes: >
       Neighborhood within the SilverLeaf master-planned community in
       northwestern St. Johns County. Mentioned by resident as area of
-      specific interest.
+      specific interest. May overlap with one of the directory-confirmed
+      neighborhoods listed below.
+    status: "active"
+
+  # ---------------------------------------------------------------------------
+  # SilverLeaf Neighborhoods (from official resident directory)
+  # ---------------------------------------------------------------------------
+  # Verified from SilverLeaf official resident directory (2026-07).
+  # All are type: neighborhood, parent_area: silverleaf, status: active.
+
+  - id: "sl_brandon_lakes"
+    name: "Brandon Lakes"
+    type: "neighborhood"
+    parent_area: "silverleaf"
+    notes: >
+      Neighborhood within SilverLeaf master-planned community.
+      Verified from SilverLeaf official resident directory.
+    status: "active"
+
+  - id: "sl_brook_forest"
+    name: "Brook Forest"
+    type: "neighborhood"
+    parent_area: "silverleaf"
+    notes: >
+      Neighborhood within SilverLeaf master-planned community.
+      Verified from SilverLeaf official resident directory.
+    status: "active"
+
+  - id: "sl_elm_creek"
+    name: "Elm Creek"
+    type: "neighborhood"
+    parent_area: "silverleaf"
+    notes: >
+      Neighborhood within SilverLeaf master-planned community.
+      Verified from SilverLeaf official resident directory.
+    status: "active"
+
+  - id: "sl_holly_forest"
+    name: "Holly Forest"
+    type: "neighborhood"
+    parent_area: "silverleaf"
+    notes: >
+      Neighborhood within SilverLeaf master-planned community.
+      Verified from SilverLeaf official resident directory.
+    status: "active"
+
+  - id: "sl_johns_island"
+    name: "Johns Island"
+    type: "neighborhood"
+    parent_area: "silverleaf"
+    notes: >
+      Neighborhood within SilverLeaf master-planned community.
+      Verified from SilverLeaf official resident directory.
+    status: "active"
+
+  - id: "sl_newbrook"
+    name: "Newbrook"
+    type: "neighborhood"
+    parent_area: "silverleaf"
+    notes: >
+      Neighborhood within SilverLeaf master-planned community.
+      Verified from SilverLeaf official resident directory.
+    status: "active"
+
+  - id: "sl_silver_falls"
+    name: "Silver Falls"
+    type: "neighborhood"
+    parent_area: "silverleaf"
+    notes: >
+      Neighborhood within SilverLeaf master-planned community.
+      Verified from SilverLeaf official resident directory.
+    status: "active"
+
+  - id: "sl_silver_landing"
+    name: "Silver Landing"
+    type: "neighborhood"
+    parent_area: "silverleaf"
+    notes: >
+      Neighborhood within SilverLeaf master-planned community.
+      Verified from SilverLeaf official resident directory.
+    status: "active"
+
+  - id: "sl_silver_meadows"
+    name: "Silver Meadows"
+    type: "neighborhood"
+    parent_area: "silverleaf"
+    notes: >
+      Neighborhood within SilverLeaf master-planned community.
+      Verified from SilverLeaf official resident directory.
+    status: "active"
+
+  - id: "sl_silverleaf_village"
+    name: "SilverLeaf Village"
+    type: "neighborhood"
+    parent_area: "silverleaf"
+    notes: >
+      Residential neighborhood within SilverLeaf master-planned
+      community. Verified from SilverLeaf official resident directory.
+      IMPORTANT: Not to be confused with Silverleaf Commons (shopping
+      center) or Silverleaf Market (Publix-anchored shopping center).
+      Those are commercial entities in tracked_entities.yaml.
+    status: "active"
+
+  - id: "sl_waterford_lakes"
+    name: "Waterford Lakes"
+    type: "neighborhood"
+    parent_area: "silverleaf"
+    notes: >
+      Neighborhood within SilverLeaf master-planned community.
+      Verified from SilverLeaf official resident directory.
     status: "active"
