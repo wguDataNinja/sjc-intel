@@ -9,7 +9,7 @@ agent_context:
     ecosystem: ivy
     home: /Users/buddy/projects/sjc_intel
     git:
-      branch: main
+      branch: master
       policy: Commit after meaningful sessions. Stage explicit paths only.
         Conventional commits: feat, fix, docs, chore, data.
         Never commit secrets, .env, raw transcripts.
