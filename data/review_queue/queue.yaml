@@ -2,8 +2,8 @@
 # SJC_Intel — Editorial Review Queue
 # =============================================================================
 # Flat queue of all intel_items requiring or eligible for review.
-# Generated: 2026-07-04T07:28:15Z
-# Total entries: 132
+# Generated: 2026-08-02T12:40:03Z
+# Total entries: 137
 # =============================================================================
 
 queue:
@@ -837,6 +837,206 @@ queue:
   review_notes: 'Batch verified: NBOR construction/site work ROW permit. Public notice
     with project details.'
   reviewed_at: '2026-06-26T08:38:05Z'
+- queue_id: Q-SJC-SL-20260706-0001
+  item_id: SJC-SL-20260706-0001
+  dedupe_key: ''
+  source_id: silverleaf_discovery
+  source_file: data/intel_items/2026-07-06/agentic_search_results.yaml
+  title: Man charged in connection with SilverLeaf murder case faces ICE detainer
+  summary: St. Johns Citizen reports that a man charged in connection with the SilverLeaf
+    murder case faces an ICE detainer. Article URL not resolved during discovery;
+    content and claims not yet verified.
+  beat: crime
+  topics:
+  - crime
+  - public_safety
+  signal: unknown
+  urgency: timely
+  escalation: high
+  sensitivity: high
+  interest_tags:
+  - safety_concern
+  matched_filters:
+  - neighborhood_silverleaf
+  - silverleaf_northwest_dev
+  tracked_entity_ids:
+  - ENT-COMM-SILVERLEAF
+  matched_entities:
+  - ENT-COMM-SILVERLEAF
+  entity_match_basis:
+    ENT-COMM-SILVERLEAF: explicit
+  review_status: pending_review
+  human_review_required: true
+  source_url: https://sjcitizen.com/man-charged-in-connection-with-silverleaf-murder-case-faces-ice-detainer/
+  discovered_at: '2026-07-06T21:15:00Z'
+  meeting_date: null
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-SL-20260706-0002
+  item_id: SJC-SL-20260706-0002
+  dedupe_key: ''
+  source_id: silverleaf_discovery
+  source_file: data/intel_items/2026-07-06/agentic_search_results.yaml
+  title: Man Charged with Shooting Three at SilverLeaf Construction Site, Killing
+    One, Identified by Police
+  summary: St. Johns Citizen reports that a man has been charged with shooting three
+    people at a SilverLeaf construction site, killing one, and has been identified
+    by police. Article URL not resolved during discovery; details not yet verified.
+  beat: crime
+  topics:
+  - crime
+  - public_safety
+  signal: unknown
+  urgency: timely
+  escalation: high
+  sensitivity: high
+  interest_tags:
+  - safety_concern
+  - emergency_awareness
+  matched_filters:
+  - neighborhood_silverleaf
+  - silverleaf_northwest_dev
+  tracked_entity_ids:
+  - ENT-COMM-SILVERLEAF
+  matched_entities:
+  - ENT-COMM-SILVERLEAF
+  entity_match_basis:
+    ENT-COMM-SILVERLEAF: explicit
+  review_status: pending_review
+  human_review_required: true
+  source_url: https://sjcitizen.com/man-charged-with-shooting-three-at-silverleaf-construction-site-killing-one-identified-by-police/
+  discovered_at: '2026-07-06T21:15:00Z'
+  meeting_date: null
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-SL-20260706-0003
+  item_id: SJC-SL-20260706-0003
+  dedupe_key: ''
+  source_id: silverleaf_discovery
+  source_file: data/intel_items/2026-07-06/agentic_search_results.yaml
+  title: Suspected lightning strike zaps St. Augustine home in SilverLeaf
+  summary: St. Johns Citizen reports a suspected lightning strike at a home in SilverLeaf.
+    Low-sensitivity weather/emergency item. Article URL not resolved during discovery;
+    date not yet verified.
+  beat: emergency_weather_fire_flood
+  topics:
+  - emergency
+  - environment
+  signal: unknown
+  urgency: ongoing
+  escalation: low
+  sensitivity: low
+  interest_tags:
+  - emergency_awareness
+  - safety_concern
+  matched_filters:
+  - neighborhood_silverleaf
+  - silverleaf_northwest_dev
+  - emergency_alerts
+  tracked_entity_ids:
+  - ENT-COMM-SILVERLEAF
+  matched_entities:
+  - ENT-COMM-SILVERLEAF
+  entity_match_basis:
+    ENT-COMM-SILVERLEAF: explicit
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://sjcitizen.com/suspected-lightning-strike-zaps-st-augustine-home-in-silverleaf/
+  discovered_at: '2026-07-06T21:15:00Z'
+  meeting_date: null
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-SL-20260706-0004
+  item_id: SJC-SL-20260706-0004
+  dedupe_key: ''
+  source_id: silverleaf_discovery
+  source_file: data/intel_items/2026-07-06/agentic_search_results.yaml
+  title: Officials give update on 6-year-old airlifted out of Silverleaf amenities
+    center over the weekend
+  summary: St. Johns Citizen reports that officials gave an update on a 6-year-old
+    who was airlifted out of the Silverleaf amenities center over the weekend. Article
+    URL not resolved during discovery; details not yet verified.
+  beat: public_safety
+  topics:
+  - public_safety
+  - health_wellness
+  signal: unknown
+  urgency: timely
+  escalation: high
+  sensitivity: high
+  interest_tags:
+  - safety_concern
+  - emergency_awareness
+  matched_filters:
+  - neighborhood_silverleaf
+  - silverleaf_northwest_dev
+  tracked_entity_ids:
+  - ENT-COMM-SILVERLEAF
+  matched_entities:
+  - ENT-COMM-SILVERLEAF
+  entity_match_basis:
+    ENT-COMM-SILVERLEAF: explicit
+  review_status: pending_review
+  human_review_required: true
+  source_url: https://sjcitizen.com/officials-give-update-on-6-year-old-airlifted-out-of-silverleaf-amenities-center/
+  discovered_at: '2026-07-06T21:15:00Z'
+  meeting_date: null
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
+- queue_id: Q-SJC-SL-20260706-0005
+  item_id: SJC-SL-20260706-0005
+  dedupe_key: ''
+  source_id: silverleaf_discovery
+  source_file: data/intel_items/2026-07-06/agentic_search_results.yaml
+  title: St. Johns Pizza favorite Bala's close to opening second location in Silverleaf
+  summary: St. Johns Citizen reports that Bala's, a local pizza favorite, is close
+    to opening a second location in Silverleaf. Article URL not resolved during discovery;
+    location not yet verified.
+  beat: development
+  topics:
+  - development
+  signal: unknown
+  urgency: ongoing
+  escalation: low
+  sensitivity: low
+  interest_tags:
+  - development_watch
+  - shopping
+  - quality_of_life
+  matched_filters:
+  - neighborhood_silverleaf
+  - silverleaf_northwest_dev
+  tracked_entity_ids:
+  - ENT-COMM-SILVERLEAF
+  - ENT-RETAIL-SILVERLEAF-COMMONS
+  matched_entities:
+  - ENT-COMM-SILVERLEAF
+  - ENT-RETAIL-SILVERLEAF-COMMONS
+  entity_match_basis:
+    ENT-COMM-SILVERLEAF: explicit
+    ENT-RETAIL-SILVERLEAF-COMMONS: explicit
+  review_status: pending_review
+  human_review_required: false
+  source_url: https://sjcitizen.com/bala-s-close-to-opening-second-location-in-silverleaf/
+  discovered_at: '2026-07-06T21:15:00Z'
+  meeting_date: null
+  agenda_item_number: null
+  application_id: null
+  reviewer: ''
+  review_notes: ''
+  reviewed_at: ''
 - queue_id: Q-SJC-CN-20260603-0001
   item_id: SJC-CN-20260603-0001
   dedupe_key: ''

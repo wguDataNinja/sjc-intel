@@ -1,0 +1,164 @@
+run_id: "SRCH-20260706-0001"
+prompt_version: "agentic_silverleaf_discovery.v1"
+agent: "sjc-intel-architect"
+model: "opencode-go/deepseek-v4-flash"
+mode: scheduled
+trigger: null
+
+profile_ids_executed:
+  - "sl_core"
+  - "sl_market_publix"
+  - "sl_baptist_medical"
+
+entity_ids_searched:
+  - "ENT-COMM-SILVERLEAF"
+  - "ENT-RETAIL-SILVERLEAF-MARKET"
+  - "ENT-HEALTH-BAPTIST-SILVERLEAF"
+
+entity_ids_implicit_includes_descendants:
+  - "ENT-RETAIL-SILVERLEAF-COMMONS"
+  - "ENT-RETAIL-PUBLIX-SILVERLEAF"
+  - "ENT-RETAIL-HARRIS-TEETER-SILVERLEAF"
+  - "ENT-EDU-SILVERLEAF-K8"
+  - "ENT-REC-BEACH-VALLEY-MINI-GOLF"
+  - "ENT-ROAD-CR-2209-CONNECTOR"
+  - "ENT-RETAIL-CR16A-SL-PKWY-GROCERY"
+
+community_ids_searched:
+  - "silverleaf"
+
+started_at: "2026-07-06T21:00:00Z"
+completed_at: "2026-07-06T21:30:00Z"
+
+queries_issued:
+  - profile_id: "sl_core"
+    query: 'sjcitizen.com site search for "SilverLeaf"'
+    source: "https://www.sjcitizen.com/?s=SilverLeaf"
+    result_count: 10
+    urls_considered:
+      - url: "https://sjcitizen.com/man-charged-in-connection-with-silverleaf-murder-case-faces-ice-detainer/"
+        fetch_status: unavailable
+        match_class: probable
+        reason: "URL not resolved — search result title indicates follow-up to existing crime coverage"
+      - url: "https://sjcitizen.com/heres-your-first-look-at-silverleafs-new-55000-sq-ft-mega-publix/"
+        fetch_status: duplicate
+        match_class: duplicate
+        duplicate_of: "SJC-SL-20260704-0001"
+      - url: "https://sjcitizen.com/fore-major-new-2-acre-recreational-attraction-proposed-for-silverleaf/"
+        fetch_status: duplicate
+        match_class: duplicate
+        duplicate_of: "SJC-SL-20260704-0003"
+      - url: "https://sjcitizen.com/putt-proposal-major-new-recreational-center-proposed-at-silverleaf/"
+        fetch_status: duplicate
+        match_class: duplicate
+        duplicate_of: "SJC-SL-20260704-0003"
+      - url: "https://sjcitizen.com/nailed-it-st-johns-officials-give-sneak-peek-of-new-silverleaf-k-8-school/"
+        fetch_status: duplicate
+        match_class: duplicate
+        duplicate_of: "SJC-SL-20260704-0002"
+      - url: "https://sjcitizen.com/shop-til-you-drop-supersized-silverleaf-publix/"
+        fetch_status: not_fetched
+        match_class: duplicate
+        duplicate_of: "historical — covered by existing Publix entity context"
+
+    new_candidate_titles:
+      - title: "Man charged in connection with SilverLeaf murder case faces ICE detainer"
+        match_class: probable
+      - title: "Man Charged with Shooting Three at SilverLeaf Construction Site, Killing One, Identified by Police"
+        match_class: exact
+      - title: "Suspected lightning strike zaps St. Augustine home in SilverLeaf"
+        match_class: exact
+      - title: "Officials give update on 6-year-old airlifted out of Silverleaf amenities center over the weekend"
+        match_class: exact
+      - title: "St. Johns Pizza favorite Bala's close to opening second location in Silverleaf"
+        match_class: exact
+
+  - profile_id: "sl_core"
+    query: '"SilverLeaf" "St. Johns" development construction site:sjcfl.us'
+    source: "https://www.sjcfl.us/news/"
+    result_count: 4
+    urls_considered:
+      - url: "https://www.sjcfl.us/news/"
+        fetch_status: fetched
+        match_class: related
+        reason: "County news page — no SilverLeaf-specific items found. Recent items cover county-wide topics."
+
+  - profile_id: "sl_market_publix"
+    query: '"Publix" "SilverLeaf" site:sjcitizen.com'
+    source: "https://www.sjcitizen.com/?s=Publix+SilverLeaf"
+    result_count: 1
+    urls_considered:
+      - url: "https://sjcitizen.com/heres-your-first-look-at-silverleafs-new-55000-sq-ft-mega-publix/"
+        fetch_status: duplicate
+        match_class: duplicate
+        duplicate_of: "SJC-SL-20260704-0001"
+    no_match_note: "No new articles about Silverleaf Market or its Publix anchor found beyond the existing opening coverage."
+
+  - profile_id: "sl_market_publix"
+    query: '"Silverleaf Market" "St. Johns"'
+    source: "sjcitizen.com search"
+    result_count: 0
+    urls_considered: []
+    match_class: no_match
+    no_match_note: "No search results for 'Silverleaf Market' on sjcitizen.com. This entity name is from the resident directory and may not be used in public articles."
+
+  - profile_id: "sl_baptist_medical"
+    query: '"Baptist Health" "SilverLeaf"'
+    source: "https://www.sjcitizen.com/?s=Baptist+Health"
+    result_count: 0
+    urls_considered: []
+    match_class: no_match
+    no_match_note: "No SilverLeaf-specific Baptist Health articles found on sjcitizen.com."
+
+  - profile_id: "sl_baptist_medical"
+    query: '"Baptist SilverLeaf Medical Campus"'
+    source: "www.baptistjax.com"
+    result_count: 0
+    urls_considered:
+      - url: "https://www.baptistjax.com/locations/silverleaf"
+        fetch_status: 404
+        match_class: no_match
+    no_match_note: "Baptist Health website has no public page for a SilverLeaf location at the expected URL. Entity name is from resident directory — not yet confirmed by Baptist Health's own site."
+
+urls_fetched: 2
+errors:
+  - subject: "sjcitizen.com article URLs"
+    error_class: timeout
+    retry_count: 1
+    resolution: "Article pages timed out. Search results page provided titles and dates."
+  - subject: "baptistjax.com/locations/silverleaf"
+    error_class: persistent_error
+    retry_count: 0
+    resolution: "404 — location page does not exist. Noted in no_match."
+
+summary:
+  profiles_executed: 3
+  subjects_searched: 3
+  total_new_candidates: 5
+  duplicates_found: 5
+  by_match_class:
+    exact: 4
+    probable: 1
+    related: 1
+    unverified: 0
+    irrelevant: 0
+    no_match: 3
+
+duplicate_decisions:
+  - title: "SilverLeaf Mega Publix article"
+    existing_item_id: "SJC-SL-20260704-0001"
+    basis: matching title and entity
+  - title: "Beach Valley Mini Golf articles (2)"
+    existing_item_id: "SJC-SL-20260704-0003"
+    basis: matching title and entity
+  - title: "SilverLeaf K-8 school article"
+    existing_item_id: "SJC-SL-20260704-0002"
+    basis: matching title and entity
+  - title: "Publix grand opening/specs article"
+    basis: covered by existing Publix entity context
+
+files_written:
+  - "data/search_runs/2026-07-06/SRCH-20260706-0001.yaml"
+  - "data/intel_items/2026-07-06/agentic_search_results.yaml"
+
+validation: "yaml parse OK"

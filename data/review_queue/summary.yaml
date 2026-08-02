@@ -1,12 +1,12 @@
-generated_at: '2026-07-04T07:28:15Z'
-total_entries: 132
-pending_review: 43
+generated_at: '2026-08-02T12:40:03Z'
+total_entries: 137
+pending_review: 48
 by_source:
   sjc_nbor_public_notices: 50
+  silverleaf_discovery: 11
   sjc_county_news: 9
   sjc_utility_department: 8
   sjso_news_stories: 5
-  silverleaf_discovery: 6
   six_mile_creek_cdd: 3
   sjc_bcc_calendar: 44
   sjc_emergency_management: 1
@@ -17,54 +17,55 @@ by_beat:
   rezoning_comp_plan_dri: 19
   site_plans_permits_construction: 17
   roadwork_traffic: 3
+  crime: 5
+  emergency_weather_fire_flood: 2
+  public_safety: 2
+  development: 5
   ? ''
   : 14
   environment: 1
   infrastructure: 5
-  crime: 3
-  public_safety: 1
-  development: 4
   education: 1
   transportation: 5
   taxes_exemptions_trim_vab: 2
   local_government_budget_procurement: 11
   parks_amenities: 10
   public_safety_livability: 3
-  emergency_weather_fire_flood: 1
 by_escalation:
-  high: 88
-  low: 35
+  high: 91
+  low: 37
   immediate: 2
   normal: 7
 by_signal:
-  unknown: 88
+  unknown: 93
   high_signal: 35
   medium_signal: 7
   routine_noise: 1
   low_signal: 1
 by_urgency:
-  ongoing: 52
-  timely: 28
+  ongoing: 54
+  timely: 31
   urgent: 2
   archival: 50
 interest_filter_matches:
   major_development: 13
-  emergency_alerts: 3
+  neighborhood_silverleaf: 10
+  silverleaf_northwest_dev: 11
+  emergency_alerts: 4
   utility_disruption: 8
-  neighborhood_silverleaf: 5
   corridor_cr210: 5
-  silverleaf_northwest_dev: 6
   school_zoning_changes: 1
   neighborhood_nocatee: 1
   corridor_sr16: 3
 entity_matches:
+  ENT-COMM-SILVERLEAF: 10
+  ENT-RETAIL-SILVERLEAF-COMMONS: 1
   ENT-INFRA-SR-207-WRF: 2
-  ENT-COMM-SILVERLEAF: 5
   ENT-EDU-SILVERLEAF-K8: 1
   ENT-REC-BEACH-VALLEY-MINI-GOLF: 1
   ENT-ROAD-CR-2209-CONNECTOR: 2
-total_entity_matches: 11
-total_prioritized_items: 34
+total_entity_matches: 17
+total_prioritized_items: 39
 prioritized_items:
 - item_id: SJC-NBOR-20260626-0002
   title: ZVAR 2026000011 Bargfrede Shed (PRIDE 2601876)
@@ -84,6 +85,71 @@ prioritized_items:
   escalation: high
   source: sjc_nbor_public_notices
   discovered_at: '2026-06-26T07:16:16Z'
+- item_id: SJC-SL-20260706-0001
+  title: Man charged in connection with SilverLeaf murder case faces ICE detainer
+  matched_filters:
+  - neighborhood_silverleaf
+  - silverleaf_northwest_dev
+  matched_entities:
+  - ENT-COMM-SILVERLEAF
+  entity_match_basis:
+    ENT-COMM-SILVERLEAF: explicit
+  escalation: high
+  source: silverleaf_discovery
+  discovered_at: '2026-07-06T21:15:00Z'
+- item_id: SJC-SL-20260706-0002
+  title: Man Charged with Shooting Three at SilverLeaf Construction Site, Killing
+    One, Identified by Police
+  matched_filters:
+  - neighborhood_silverleaf
+  - silverleaf_northwest_dev
+  matched_entities:
+  - ENT-COMM-SILVERLEAF
+  entity_match_basis:
+    ENT-COMM-SILVERLEAF: explicit
+  escalation: high
+  source: silverleaf_discovery
+  discovered_at: '2026-07-06T21:15:00Z'
+- item_id: SJC-SL-20260706-0003
+  title: Suspected lightning strike zaps St. Augustine home in SilverLeaf
+  matched_filters:
+  - neighborhood_silverleaf
+  - silverleaf_northwest_dev
+  - emergency_alerts
+  matched_entities:
+  - ENT-COMM-SILVERLEAF
+  entity_match_basis:
+    ENT-COMM-SILVERLEAF: explicit
+  escalation: low
+  source: silverleaf_discovery
+  discovered_at: '2026-07-06T21:15:00Z'
+- item_id: SJC-SL-20260706-0004
+  title: Officials give update on 6-year-old airlifted out of Silverleaf amenities
+    center over the weekend
+  matched_filters:
+  - neighborhood_silverleaf
+  - silverleaf_northwest_dev
+  matched_entities:
+  - ENT-COMM-SILVERLEAF
+  entity_match_basis:
+    ENT-COMM-SILVERLEAF: explicit
+  escalation: high
+  source: silverleaf_discovery
+  discovered_at: '2026-07-06T21:15:00Z'
+- item_id: SJC-SL-20260706-0005
+  title: St. Johns Pizza favorite Bala's close to opening second location in Silverleaf
+  matched_filters:
+  - neighborhood_silverleaf
+  - silverleaf_northwest_dev
+  matched_entities:
+  - ENT-COMM-SILVERLEAF
+  - ENT-RETAIL-SILVERLEAF-COMMONS
+  entity_match_basis:
+    ENT-COMM-SILVERLEAF: explicit
+    ENT-RETAIL-SILVERLEAF-COMMONS: explicit
+  escalation: low
+  source: silverleaf_discovery
+  discovered_at: '2026-07-06T21:15:00Z'
 - item_id: SJC-CN-20260603-0002
   title: SJC Highlights Long-Term Resiliency Improvements at Porpoise Point Vehicular
     Beach Access Ramp
@@ -418,8 +484,11 @@ prioritized_items:
   escalation: low
   source: sjc_utility_department
   discovered_at: '2026-06-26T10:53:25Z'
-human_review_count: 5
+human_review_count: 8
 human_review_item_ids:
+- SJC-SL-20260706-0001
+- SJC-SL-20260706-0002
+- SJC-SL-20260706-0004
 - SJC-SJSO-20260603-0001
 - SJC-SJSO-20260603-0002
 - SJC-SJSO-20260603-0003

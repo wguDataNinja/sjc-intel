@@ -4,7 +4,7 @@
 # Tracks item fingerprints for deduplication across monitor cycles.
 #
 # Schema version: 1.1
-# Last updated: 2026-07-04
+# Last updated: 2026-08-02
 # Updated by: rebuild_dedupe_index.py
 # =============================================================================
 
@@ -867,4 +867,41 @@ prior_items:
   source_id: sjc_utility_department
   beat: utilities_water
   discovered_at: '2026-07-04T03:48:19Z'
+  status: pending_review
+- key: e2773617ea19a13c
+  item_id: SJC-SL-20260706-0001
+  title: Man charged in connection with SilverLeaf murder case faces ICE detainer
+  source_id: silverleaf_discovery
+  beat: crime
+  discovered_at: '2026-07-06T21:15:00Z'
+  status: pending_review
+- key: b8129f23d5b4a7f8
+  item_id: SJC-SL-20260706-0002
+  title: Man Charged with Shooting Three at SilverLeaf Construction Site, Killing
+    One, Identified by Police
+  source_id: silverleaf_discovery
+  beat: crime
+  discovered_at: '2026-07-06T21:15:00Z'
+  status: pending_review
+- key: c63916fbd46e5cf0
+  item_id: SJC-SL-20260706-0003
+  title: Suspected lightning strike zaps St. Augustine home in SilverLeaf
+  source_id: silverleaf_discovery
+  beat: emergency_weather_fire_flood
+  discovered_at: '2026-07-06T21:15:00Z'
+  status: pending_review
+- key: 59d857d9c92300d2
+  item_id: SJC-SL-20260706-0004
+  title: Officials give update on 6-year-old airlifted out of Silverleaf amenities
+    center over the weekend
+  source_id: silverleaf_discovery
+  beat: public_safety
+  discovered_at: '2026-07-06T21:15:00Z'
+  status: pending_review
+- key: 381481ff78f89c73
+  item_id: SJC-SL-20260706-0005
+  title: St. Johns Pizza favorite Bala's close to opening second location in Silverleaf
+  source_id: silverleaf_discovery
+  beat: development
+  discovered_at: '2026-07-06T21:15:00Z'
   status: pending_review
