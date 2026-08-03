@@ -1,54 +1,56 @@
-generated_at: '2026-08-02T12:40:03Z'
-total_entries: 137
-pending_review: 48
+generated_at: '2026-08-03T06:04:50Z'
+total_entries: 167
+pending_review: 78
 by_source:
-  sjc_nbor_public_notices: 50
+  sjc_nbor_public_notices: 75
   silverleaf_discovery: 11
-  sjc_county_news: 9
+  sjc_county_news: 13
   sjc_utility_department: 8
-  sjso_news_stories: 5
+  sjso_news_stories: 6
   six_mile_creek_cdd: 3
   sjc_bcc_calendar: 44
   sjc_emergency_management: 1
   tolomato_cdd: 3
   trout_creek_cdd: 3
 by_beat:
-  utilities_water: 32
-  rezoning_comp_plan_dri: 19
-  site_plans_permits_construction: 17
-  roadwork_traffic: 3
+  utilities_water: 33
+  rezoning_comp_plan_dri: 36
+  site_plans_permits_construction: 23
+  roadwork_traffic: 5
   crime: 5
   emergency_weather_fire_flood: 2
-  public_safety: 2
+  public_safety: 3
   development: 5
   ? ''
   : 14
   environment: 1
   infrastructure: 5
   education: 1
-  transportation: 5
+  transportation: 6
+  community_services: 1
+  county_government: 1
   taxes_exemptions_trim_vab: 2
   local_government_budget_procurement: 11
   parks_amenities: 10
   public_safety_livability: 3
 by_escalation:
-  high: 91
-  low: 37
+  high: 116
+  low: 42
   immediate: 2
   normal: 7
 by_signal:
-  unknown: 93
+  unknown: 123
   high_signal: 35
   medium_signal: 7
   routine_noise: 1
   low_signal: 1
 by_urgency:
-  ongoing: 54
-  timely: 31
+  ongoing: 58
+  timely: 54
   urgent: 2
-  archival: 50
+  archival: 53
 interest_filter_matches:
-  major_development: 13
+  major_development: 22
   neighborhood_silverleaf: 10
   silverleaf_northwest_dev: 11
   emergency_alerts: 4
@@ -65,7 +67,7 @@ entity_matches:
   ENT-REC-BEACH-VALLEY-MINI-GOLF: 1
   ENT-ROAD-CR-2209-CONNECTOR: 2
 total_entity_matches: 17
-total_prioritized_items: 39
+total_prioritized_items: 48
 prioritized_items:
 - item_id: SJC-NBOR-20260626-0002
   title: ZVAR 2026000011 Bargfrede Shed (PRIDE 2601876)
@@ -334,6 +336,87 @@ prioritized_items:
   escalation: high
   source: sjc_nbor_public_notices
   discovered_at: '2026-07-04T03:44:10Z'
+- item_id: SJC-NBOR-20260802-0001
+  title: CPA(SS) 2025000011 Moseley Property
+  matched_filters:
+  - major_development
+  matched_entities: []
+  entity_match_basis: {}
+  escalation: high
+  source: sjc_nbor_public_notices
+  discovered_at: '2026-08-02T13:02:01Z'
+- item_id: SJC-NBOR-20260802-0002
+  title: 'NW Sector Community Meeting: CPA(SS)2025-07 & MAJMOD 2025-08 Bartram Grove'
+  matched_filters:
+  - major_development
+  matched_entities: []
+  entity_match_basis: {}
+  escalation: high
+  source: sjc_nbor_public_notices
+  discovered_at: '2026-08-02T13:02:01Z'
+- item_id: SJC-NBOR-20260802-0003
+  title: CPA(SS) 2025000013 Daily´s Place
+  matched_filters:
+  - major_development
+  matched_entities: []
+  entity_match_basis: {}
+  escalation: high
+  source: sjc_nbor_public_notices
+  discovered_at: '2026-08-02T13:02:01Z'
+- item_id: SJC-NBOR-20260802-0004
+  title: PVZVAR 2026000004 110 Overlook Drive
+  matched_filters:
+  - major_development
+  matched_entities: []
+  entity_match_basis: {}
+  escalation: high
+  source: sjc_nbor_public_notices
+  discovered_at: '2026-08-02T13:02:01Z'
+- item_id: SJC-NBOR-20260802-0005
+  title: MAJMOD 2026000007 Our Lady Star of the Sea PUD
+  matched_filters:
+  - major_development
+  matched_entities: []
+  entity_match_basis: {}
+  escalation: high
+  source: sjc_nbor_public_notices
+  discovered_at: '2026-08-02T13:02:01Z'
+- item_id: SJC-NBOR-20260802-0021
+  title: NZVAR 2026000015 Coddington Driveway
+  matched_filters:
+  - major_development
+  matched_entities: []
+  entity_match_basis: {}
+  escalation: high
+  source: sjc_nbor_public_notices
+  discovered_at: '2026-08-02T13:02:01Z'
+- item_id: SJC-NBOR-20260802-0022
+  title: NZVAR 2026000014 Herlth SFR
+  matched_filters:
+  - major_development
+  matched_entities: []
+  entity_match_basis: {}
+  escalation: high
+  source: sjc_nbor_public_notices
+  discovered_at: '2026-08-02T13:02:01Z'
+- item_id: SJC-NBOR-20260802-0023
+  title: NZVAR 2026000009 5325 Porter Road Extension
+  matched_filters:
+  - major_development
+  matched_entities: []
+  entity_match_basis: {}
+  escalation: high
+  source: sjc_nbor_public_notices
+  discovered_at: '2026-08-02T13:02:01Z'
+- item_id: SJC-NBOR-20260802-0025
+  title: MAJMOD 2023000011 Canopy Shores
+  matched_filters:
+  - major_development
+  matched_entities: []
+  entity_match_basis: {}
+  escalation: high
+  source: sjc_nbor_public_notices
+  discovered_at: '2026-08-02T13:02:01Z'
 - item_id: SJC-BCC-20260120-0005
   title: Septic-to-Sewer Connection Policy Discussion.   Pursuant to direction from
     the Board of County Commi

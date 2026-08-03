@@ -1,0 +1,257 @@
+# June 2026 Topic Clusters
+# Generated: 2026-08-02
+# Task: 03-monthly-cadence-closeout
+# Total items: 99 (unique)
+# Clusters: 8 (93 items)
+# Unclustered: 6
+
+clusters:
+  - cluster_id: "2026-06-cluster-001"
+    label: "BCC January 20, 2026 Meeting Agenda (Retroactive Extraction)"
+    item_ids:
+      - "SJC-BCC-20260120-0001"
+      - "SJC-BCC-20260120-0002"
+      - "SJC-BCC-20260120-0003"
+      - "SJC-BCC-20260120-0004"
+      - "SJC-BCC-20260120-0005"
+      - "SJC-BCC-20260120-0006"
+      - "SJC-BCC-20260120-0007"
+      - "SJC-BCC-20260120-0008"
+      - "SJC-BCC-20260120-0009"
+      - "SJC-BCC-20260120-0010"
+      - "SJC-BCC-20260120-0011"
+      - "SJC-BCC-20260120-0012"
+      - "SJC-BCC-20260120-0013"
+      - "SJC-BCC-20260120-0014"
+      - "SJC-BCC-20260120-0015"
+      - "SJC-BCC-20260120-0016"
+      - "SJC-BCC-20260120-0017"
+      - "SJC-BCC-20260120-0018"
+      - "SJC-BCC-20260120-0019"
+      - "SJC-BCC-20260120-0020"
+      - "SJC-BCC-20260120-0021"
+      - "SJC-BCC-20260120-0022"
+      - "SJC-BCC-20260120-0023"
+      - "SJC-BCC-20260120-0024"
+      - "SJC-BCC-20260120-0025"
+      - "SJC-BCC-20260120-0026"
+      - "SJC-BCC-20260120-0027"
+      - "SJC-BCC-20260120-0028"
+      - "SJC-BCC-20260120-0029"
+      - "SJC-BCC-20260120-0030"
+      - "SJC-BCC-20260120-0031"
+      - "SJC-BCC-20260120-0032"
+      - "SJC-BCC-20260120-0033"
+      - "SJC-BCC-20260120-0034"
+      - "SJC-BCC-20260120-0035"
+      - "SJC-BCC-20260120-0036"
+      - "SJC-BCC-20260120-0037"
+      - "SJC-BCC-20260120-0038"
+      - "SJC-BCC-20260120-0039"
+      - "SJC-BCC-20260120-0040"
+      - "SJC-BCC-20260120-0041"
+      - "SJC-BCC-20260120-0042"
+      - "SJC-BCC-20260120-0043"
+      - "SJC-BCC-20260120-0044"
+    count: 44
+    source_types:
+      - "sjc_bcc_calendar"
+    communities:
+      - "countywide"
+    beat_candidate: "county_decision_stack"
+    severity: "low"
+    rationale: >
+      All 44 BCC agenda items from the January 20, 2026 regular meeting,
+      extracted retroactively on 2026-06-26 from the Clerk's Board Records.
+      Covers 2050 Comp Plan transmittal hearing, rezonings (Nothing Putt Fun,
+      James-Cogo), utility easements, septic-to-sewer policy, budget and
+      procurement resolutions, and appointments. This is a single-meeting
+      agenda cluster providing January content coverage within the June
+      extraction. June 2 and June 16 meetings remain blocked (GAP-001).
+
+  - cluster_id: "2026-06-cluster-002"
+    label: "Phase III Extreme Water Shortage Continuation and Utility Infrastructure"
+    item_ids:
+      - "SJC-CN-20260603-0005"
+      - "SJC-UTIL-20260603-0001"
+      - "SJC-UTIL-20260603-0002"
+      - "SJC-UTIL-20260603-0003"
+      - "SJC-UTIL-20260603-0004"
+      - "SJC-UTIL-20260603-0005"
+      - "SJC-CN-20260626-0001"
+      - "SJC-UD-20260626-0001"
+    count: 8
+    source_types:
+      - "sjc_county_news"
+      - "sjc_utility_department"
+    communities:
+      - "countywide"
+    beat_candidate: "utilities_water"
+    severity: "high"
+    rationale: >
+      The dominant water story continues from May: Phase III Extreme Water
+      Shortage remains active. Supporting infrastructure items include the
+      CR 214 chlorine burnout, $191M SR 207 WRF Phase 2, $4.6M utilities lab,
+      EPA Lead-Safe service-line inventory, SR 207 WRF becoming operational
+      (county news), and the 2025 Annual Report. This cluster links the
+      continuation of the May water crisis with the largest utility capital
+      project in county history.
+
+  - cluster_id: "2026-06-cluster-003"
+    label: "NBOR Utility Right-of-Way Permits"
+    item_ids:
+      - "SJC-NBOR-20260626-0001"
+      - "SJC-NBOR-20260626-0005"
+      - "SJC-NBOR-20260626-0006"
+      - "SJC-NBOR-20260626-0008"
+      - "SJC-NBOR-20260626-0010"
+      - "SJC-NBOR-20260626-0011"
+      - "SJC-NBOR-20260626-0012"
+      - "SJC-NBOR-20260626-0020"
+      - "SJC-NBOR-20260626-0021"
+      - "SJC-NBOR-20260626-0022"
+      - "SJC-NBOR-20260626-0023"
+    count: 11
+    source_types:
+      - "sjc_nbor_public_notices"
+    communities: []
+    beat_candidate: "utilities_water"
+    severity: "medium"
+    rationale: >
+      Eleven NBOR public notices for utility right-of-way work: Comcast (6),
+      JEA (2), FPL, Beaches Energy, and AT&T. Routine ROW permits for
+      fiber/utility construction across county rights-of-way. Highest-volume
+      NBOR subcategory in the June snapshot.
+
+  - cluster_id: "2026-06-cluster-004"
+    label: "NBOR Rezonings, Variances, and PUD Modifications"
+    item_ids:
+      - "SJC-NBOR-20260626-0002"
+      - "SJC-NBOR-20260626-0003"
+      - "SJC-NBOR-20260626-0004"
+      - "SJC-NBOR-20260626-0014"
+      - "SJC-NBOR-20260626-0016"
+      - "SJC-NBOR-20260626-0017"
+    count: 6
+    source_types:
+      - "sjc_nbor_public_notices"
+    communities: []
+    beat_candidate: "rezoning_comp_plan_dri"
+    severity: "medium"
+    rationale: >
+      Land-use actions from the NBOR June snapshot: three variance hearings
+      (Bargfrede Shed, Aspinwall, Tatum), a major PUD modification
+      (Golfway Centre — commercial/office development), and two rezonings
+      (177 Surfside Ave CHT→RS-3; 3025 Old Moultrie Road). These are the
+      highest resident-impact NBOR items of the month (property values /
+      development watch).
+
+  - cluster_id: "2026-06-cluster-005"
+    label: "NBOR Site Plans and Construction Permits"
+    item_ids:
+      - "SJC-NBOR-20260626-0007"
+      - "SJC-NBOR-20260626-0009"
+      - "SJC-NBOR-20260626-0015"
+      - "SJC-NBOR-20260626-0018"
+      - "SJC-NBOR-20260626-0019"
+      - "SJC-NBOR-20260626-0024"
+      - "SJC-NBOR-20260626-0025"
+    count: 7
+    source_types:
+      - "sjc_nbor_public_notices"
+    communities: []
+    beat_candidate: "site_plans_permits_construction"
+    severity: "medium"
+    rationale: >
+      Seven NBOR site-plan / construction notices: City of St. Augustine
+      project, AT&T (2), Terracon, P&G Construction, Scott Waite, and a
+      construction ROW item. Construction-related activity in the June
+      snapshot, distinct from utility ROW permits.
+
+  - cluster_id: "2026-06-cluster-006"
+    label: "NBOR Roadwork and Transportation"
+    item_ids:
+      - "SJC-NBOR-20260626-0013"
+      - "SJC-CN-20260626-0002"
+    count: 2
+    source_types:
+      - "sjc_nbor_public_notices"
+      - "sjc_county_news"
+    communities:
+      - "st_augustine"
+    beat_candidate: "roadwork_traffic"
+    severity: "medium"
+    rationale: >
+      Two roadwork/traffic items: Farrell Marine ROW notice (NBOR) and the
+      railroad crossing maintenance closing W. King Street and Kinlaw Road
+      (county news). Both affect St. Augustine-area traffic.
+
+  - cluster_id: "2026-06-cluster-007"
+    label: "CDD Governance Activity (Six Mile Creek, Tolomato, Trout Creek)"
+    item_ids:
+      - "six_mile_creek_cdd-001"
+      - "six_mile_creek_cdd-002"
+      - "six_mile_creek_cdd-003"
+      - "tolomato_cdd-001"
+      - "tolomato_cdd-002"
+      - "tolomato_cdd-003"
+      - "trout_creek_cdd-001"
+      - "trout_creek_cdd-002"
+      - "trout_creek_cdd-003"
+    count: 9
+    source_types:
+      - "six_mile_creek_cdd"
+      - "tolomato_cdd"
+      - "trout_creek_cdd"
+    communities:
+      - "nocatee"
+      - "shearwater"
+      - "trailmark"
+    beat_candidate: "cdd_governance"
+    severity: "medium"
+    rationale: >
+      First CDD governance capture: Six Mile Creek board vacancy + qualifying
+      period (Seats 2/4) + June 10 agenda; Tolomato June 23 agenda + April 28
+      minutes + FY2026 assessments; Trout Creek June 25 agenda + July 7
+      workshop + July 23 meeting. Assessment information is a direct resident
+      cost-impact item; board elections and vacancies matter for
+      district governance.
+
+  - cluster_id: "2026-06-cluster-008"
+    label: "Public Safety and Emergency Preparedness"
+    item_ids:
+      - "SJC-SJSO-20260603-0001"
+      - "SJC-SJSO-20260603-0002"
+      - "SJC-SJSO-20260603-0003"
+      - "SJC-SJSO-20260603-0004"
+      - "SJC-SJSO-20260626-0001"
+      - "SJC-EM-20260626-0001"
+    count: 6
+    source_types:
+      - "sjso_news_stories"
+      - "sjc_emergency_management"
+    communities:
+      - "countywide"
+      - "st_augustine"
+    beat_candidate: "public_safety_livability"
+    severity: "medium"
+    rationale: >
+      Six public-safety items: SJSO contraband drop, lifesaving rescue,
+      March DUI Wolfpack (archival), 2023 double-murder arrest (high
+      sensitivity), June jail-escape-plot charges, and Emergency Management
+      hurricane-season preparedness messaging. Crime items are
+      human-review-required; the murder-arrest item is high sensitivity.
+
+unclustered:
+  - item_id: "SJC-CN-20260603-0001"
+    reason: "Single surplus-auction community event item — no related cluster"
+  - item_id: "SJC-CN-20260603-0002"
+    reason: "Single coastal infrastructure item (Porpoise Point beach ramp) — parks_amenities singleton"
+  - item_id: "SJC-CN-20260603-0003"
+    reason: "Single library summer-reading item — community_events singleton"
+  - item_id: "SJC-CN-20260603-0004"
+    reason: "Single organizational-recognition item — low resident relevance"
+  - item_id: "SJC-CN-20260626-0003"
+    reason: "Single library business-program item — community_events singleton"
+  - item_id: "SJC-CN-20260626-0004"
+    reason: "Recycling-driver feel-good story — review_status rejected_noise"

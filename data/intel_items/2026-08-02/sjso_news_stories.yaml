@@ -1,0 +1,43 @@
+monitor_cycle:
+  source_id: sjso_news_stories
+  source_name: SJSO News Stories
+  source_url: https://www.sjso.org/news-stories/
+  checked_at: '2026-08-02T14:55:00Z'
+  checked_by: hermes (direct execution — §3.5f exception, see packet 06)
+  http_status: 200
+  items_extracted: 1
+  new_items: 1
+  duplicates_skipped: 6
+items:
+- item_id: SJC-SJSO-20260802-0001
+  title: Two St. Johns County Inmates Charged for Planning Attempt to Escape from Jail
+  summary: 'Two St. Johns County inmates charged for planning an attempt to escape
+    from jail. Charges relate to an alleged escape plan by two inmates.'
+  source_id: sjso_news_stories
+  source_url: https://www.sjso.org/two-st-johns-county-inmates-charged-for-planning-attempt-escape-from-jail/
+  source_published_at: '2026-06-22T21:13:44Z'
+  discovered_at: '2026-08-02T14:55:00Z'
+  discovered_by: hermes-sjso_news_stories
+  topics:
+  - public_safety
+  - crime
+  - sjso
+  communities: []
+  geographic_scope: county_wide
+  urgency: archival
+  verification_status: source_confirmed
+  sensitivity: high
+  recommended_channels:
+  - website_review_queue
+  - human_review_required
+  review_status: pending_review
+  primary_topic: public_safety
+  interest_tags:
+  - public_safety
+  - community_trust
+  resident_relevance:
+    summary: Two inmates charged with planning a jail escape attempt.
+    affected_audiences:
+    - residents
+    why_it_matters: Two St. Johns County inmates were charged for planning an escape
+      attempt from jail. Human review required per sensitivity rules.

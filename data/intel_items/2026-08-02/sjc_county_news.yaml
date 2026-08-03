@@ -1,0 +1,144 @@
+monitor_cycle:
+  source_id: sjc_county_news
+  source_name: SJC County News
+  source_url: https://www.sjcfl.us/news/
+  checked_at: '2026-08-02T14:55:00Z'
+  checked_by: hermes (direct execution — §3.5f exception, see packet 06)
+  http_status: 200
+  items_extracted: 4
+  new_items: 4
+  duplicates_skipped: 0
+items:
+- item_id: SJC-CN-20260802-0001
+  title: County Road 16A Closures and Detours for Next Two Weekends
+  summary: 'County Road 16A closures and detours scheduled for the next two weekends
+    (three July/August weekends per URL slug). Travelers should expect detours during
+    the announced closure periods.'
+  source_id: sjc_county_news
+  source_url: https://www.sjcfl.us/county-road-16a-closures-detours-three-july-august-weekends/
+  source_published_at: '2026-07-20T17:00:00Z'
+  discovered_at: '2026-08-02T14:55:00Z'
+  discovered_by: hermes-sjc_county_news
+  topics:
+  - transportation
+  - roadwork_traffic
+  - infrastructure
+  communities: []
+  geographic_scope: county_wide
+  urgency: timely
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  review_status: pending_review
+  primary_topic: transportation
+  interest_tags:
+  - quality_of_life
+  - utility_impact
+  resident_relevance:
+    summary: Road closures and detours affecting travel.
+    affected_audiences:
+    - residents
+    - commuters
+    why_it_matters: County Road 16A closures and detours over consecutive weekends
+      affect local travel.
+- item_id: SJC-CN-20260802-0002
+  title: Daily's Withdraws Comprehensive Plan Amendment Application from August 4 BCC Agenda
+  summary: "Daily's has withdrawn its comprehensive plan amendment application from
+    the August 4 BCC agenda. The item will not be considered at the upcoming Board
+    of County Commissioners meeting."
+  source_id: sjc_county_news
+  source_url: https://www.sjcfl.us/dailys-withdraws-comp-plan-amendment-application-august-4-bcc-agenda/
+  source_published_at: '2026-07-31T20:16:36Z'
+  discovered_at: '2026-08-02T14:55:00Z'
+  discovered_by: hermes-sjc_county_news
+  topics:
+  - rezoning_comp_plan_dri
+  - county_government
+  - development
+  communities: []
+  geographic_scope: county_wide
+  urgency: timely
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  review_status: pending_review
+  primary_topic: rezoning_comp_plan_dri
+  interest_tags:
+  - development_watch
+  - community_trust
+  resident_relevance:
+    summary: Comprehensive plan amendment withdrawn from BCC agenda.
+    affected_audiences:
+    - residents
+    - developers
+    why_it_matters: A comprehensive plan amendment was withdrawn from the August 4
+      BCC agenda.
+- item_id: SJC-CN-20260802-0003
+  title: S.E.A. Community Help Resource Center Opens to Serve Rural St. Johns County
+  summary: 'S.E.A. Community Help Resource Center opens to serve rural St. Johns
+    County. New resource center providing community help services to rural residents.'
+  source_id: sjc_county_news
+  source_url: https://www.sjcfl.us/sea-community-help-resource-center-opens-to-serve-rural-sjc/
+  source_published_at: '2026-07-31T16:32:16Z'
+  discovered_at: '2026-08-02T14:55:00Z'
+  discovered_by: hermes-sjc_county_news
+  topics:
+  - community_services
+  - county_government
+  - quality_of_life
+  communities:
+  - rural_sjc
+  geographic_scope: county_wide
+  urgency: archival
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  review_status: pending_review
+  primary_topic: community_services
+  interest_tags:
+  - quality_of_life
+  - community_trust
+  resident_relevance:
+    summary: New community resource center for rural residents.
+    affected_audiences:
+    - residents
+    - rural_communities
+    why_it_matters: A community help resource center opened to serve rural St. Johns
+      County residents.
+- item_id: SJC-CN-20260802-0004
+  title: Clerk's Office Expands Public Access with New Service Center
+  summary: 'Clerk''s Office expands public access with a new service center. The
+    new center increases public access to Clerk of Court services.'
+  source_id: sjc_county_news
+  source_url: https://www.sjcfl.us/clerks-office-new-service-center-2026/
+  source_published_at: '2026-07-29T12:33:31Z'
+  discovered_at: '2026-08-02T14:55:00Z'
+  discovered_by: hermes-sjc_county_news
+  topics:
+  - county_government
+  - public_services
+  - community_services
+  communities: []
+  geographic_scope: county_wide
+  urgency: archival
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  review_status: pending_review
+  primary_topic: county_government
+  interest_tags:
+  - quality_of_life
+  - community_trust
+  resident_relevance:
+    summary: New Clerk of Court service center expands public access.
+    affected_audiences:
+    - residents
+    why_it_matters: The Clerk's Office expanded public access with a new service center.

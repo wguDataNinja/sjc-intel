@@ -1,0 +1,25 @@
+source_id: sjc_county_news
+generated_at: '2026-08-02T14:55:00Z'
+total_events: 1
+events:
+- event_id: EVT-CN-20260802-0001
+  source_id: sjc_county_news
+  event_type: page_snapshot
+  title: County News Listing Check — 2026-08-02
+  event_date: '2026-08-02'
+  discovered_at: '2026-08-02T14:55:00Z'
+  source_url: https://www.sjcfl.us/news/
+  status: extracted
+  extraction_status: 4 new items (road 16A closures, Daily's comp-plan withdrawal,
+    S.E.A. resource center, Clerk's service center). No RSS feed exists (verified
+    2026-08-02).
+  source_health: accessible
+  extracted_item_ids:
+  - SJC-CN-20260802-0001
+  - SJC-CN-20260802-0002
+  - SJC-CN-20260802-0003
+  - SJC-CN-20260802-0004
+  notes: Manual extraction — no script exists for this source. Gap period
+    2026-07-05 → 2026-08-02.
+  created_at: '2026-08-02T14:55:00Z'
+  updated_at: '2026-08-02T14:55:00Z'

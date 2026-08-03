@@ -1,0 +1,167 @@
+# July 2026 Topic Clusters
+# Generated: 2026-08-02
+# Task: 03-monthly-cadence-closeout
+# Total items: 38 (unique)
+# Clusters: 7 (37 items)
+# Unclustered: 1
+
+clusters:
+  - cluster_id: "2026-07-cluster-001"
+    label: "SilverLeaf Commercial and Retail Development"
+    item_ids:
+      - "SJC-SL-20260704-0001"
+      - "SJC-SL-20260704-0003"
+      - "SJC-SL-20260704-0005"
+      - "SJC-SL-20260704-0006"
+      - "SJC-SL-20260706-0005"
+    count: 5
+    source_types:
+      - "st_johns_citizen"
+      - "silverleaf_discovery"
+    communities:
+      - "silverleaf"
+      - "nocatee"
+    beat_candidate: "retail_openings"
+    severity: "medium"
+    rationale: >
+      Commercial development cluster: mega Publix (55k sq ft) opened at
+      SilverLeaf Parkway, two Harris Teeter supermarkets proposed (Veterans
+      Pkwy/CR 210 and SilverLeaf center), Bala's second SilverLeaf location
+      close to opening, Beach Valley Mini Golf proposal, and an Ascension
+      St. Vincent's primary care center planned in Nocatee. First non-Publix
+      grocery competition in the area. High resident interest (shopping,
+      quality of life, property values).
+
+  - cluster_id: "2026-07-cluster-002"
+    label: "SilverLeaf Schools and Infrastructure"
+    item_ids:
+      - "SJC-SL-20260704-0002"
+      - "SJC-SL-20260704-0004"
+    count: 2
+    source_types:
+      - "st_johns_citizen"
+      - "silverleaf_discovery"
+    communities:
+      - "silverleaf"
+    beat_candidate: "school_capacity"
+    severity: "medium"
+    rationale: >
+      Civic infrastructure cluster: the new SilverLeaf K-8 school
+      (190k sq ft, 73 classrooms, ~1,500 students, 2026-27 opening) reached
+      its topping-out milestone, and the CR 2209 connector highway opened,
+      relieving congestion near Tocoi Creek High School. Both are foundational
+      SilverLeaf public-product signals (school + road).
+
+  - cluster_id: "2026-07-cluster-003"
+    label: "SilverLeaf Public-Safety Incidents (Unverified Candidates)"
+    item_ids:
+      - "SJC-SL-20260706-0001"
+      - "SJC-SL-20260706-0002"
+      - "SJC-SL-20260706-0003"
+      - "SJC-SL-20260706-0004"
+    count: 4
+    source_types:
+      - "st_johns_citizen"
+      - "silverleaf_discovery"
+    communities:
+      - "silverleaf"
+    beat_candidate: "public_safety_livability"
+    severity: "high"
+    rationale: >
+      High-sensitivity public-safety cluster: ICE-detainer follow-up to the
+      SilverLeaf murder case, construction-site shooting (3 shot, 1 killed),
+      minor airlifted from amenities center, and a suspected lightning strike.
+      All are unverified (URLs unresolved), pending_review, and
+      human-review-required. No official-record confirmation in captured data.
+      Human decision required before any promotion.
+
+  - cluster_id: "2026-07-cluster-004"
+    label: "NBOR Utility Right-of-Way Permits"
+    item_ids:
+      - "SJC-NBOR-20260704-0014"
+      - "SJC-NBOR-20260704-0015"
+      - "SJC-NBOR-20260704-0016"
+      - "SJC-NBOR-20260704-0017"
+      - "SJC-NBOR-20260704-0021"
+      - "SJC-NBOR-20260704-0022"
+      - "SJC-NBOR-20260704-0024"
+    count: 7
+    source_types:
+      - "sjc_nbor_public_notices"
+    communities: []
+    beat_candidate: "utilities_water"
+    severity: "medium"
+    rationale: >
+      Seven NBOR utility ROW permits: Comcast (6) and Beaches Energy (1), plus
+      an FPL item counted under site plans in the raw extraction but
+      classified utilities_water here. Routine ROW construction permits.
+
+  - cluster_id: "2026-07-cluster-005"
+    label: "NBOR Rezonings, Variances, and Major Modifications"
+    item_ids:
+      - "SJC-NBOR-20260704-0002"
+      - "SJC-NBOR-20260704-0003"
+      - "SJC-NBOR-20260704-0004"
+      - "SJC-NBOR-20260704-0005"
+      - "SJC-NBOR-20260704-0006"
+      - "SJC-NBOR-20260704-0007"
+      - "SJC-NBOR-20260704-0008"
+    count: 7
+    source_types:
+      - "sjc_nbor_public_notices"
+    communities: []
+    beat_candidate: "rezoning_comp_plan_dri"
+    severity: "medium"
+    rationale: >
+      Land-use actions: St. Augustine Airport East rezoning, Coddington
+      Driveway, Herlth SFR, Porter Road extension (NZVAR), Canopy Shores major
+      PUD modification, Daily's Place CPA(SS), and Bushrangers Brewery
+      variance. Highest resident-impact NBOR category of the July snapshot.
+
+  - cluster_id: "2026-07-cluster-006"
+    label: "NBOR Site Plans and Construction Permits"
+    item_ids:
+      - "SJC-NBOR-20260704-0001"
+      - "SJC-NBOR-20260704-0009"
+      - "SJC-NBOR-20260704-0010"
+      - "SJC-NBOR-20260704-0011"
+      - "SJC-NBOR-20260704-0012"
+      - "SJC-NBOR-20260704-0013"
+      - "SJC-NBOR-20260704-0018"
+      - "SJC-NBOR-20260704-0020"
+      - "SJC-NBOR-20260704-0023"
+      - "SJC-NBOR-20260704-0025"
+    count: 10
+    source_types:
+      - "sjc_nbor_public_notices"
+    communities: []
+    beat_candidate: "site_plans_permits_construction"
+    severity: "medium"
+    rationale: >
+      Ten NBOR site-plan / construction notices: St. Thomas Island Parkway
+      cell tower, Bushrangers Brewery SUPMAJ, North Beach Camp Resort signage,
+      Marsh Landing monument signs, Upperline Health ARC, Buckley Cable, TECO,
+      Colee Cove Tower community meeting, City of St. Augustine, and AT&T.
+      The largest NBOR subcategory in the July snapshot.
+
+  - cluster_id: "2026-07-cluster-007"
+    label: "Utility Department Announcements"
+    item_ids:
+      - "SJC-UD-20260704-0001"
+      - "SJC-UD-20260704-0002"
+    count: 2
+    source_types:
+      - "sjc_utility_department"
+    communities:
+      - "countywide"
+    beat_candidate: "utilities_water"
+    severity: "low"
+    rationale: >
+      Two utility-department announcements: $1.6M Plantation Water Treatment
+      Plant capital improvement completion and a high Moody's rating
+      reflecting strong utility financial management. Low resident-urgency,
+      informative items.
+
+unclustered:
+  - item_id: "SJC-NBOR-20260704-0019"
+    reason: "Single roadwork item (E. Peyton Pkwy traffic light activation) — roadwork_traffic singleton"

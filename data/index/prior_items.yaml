@@ -4,7 +4,7 @@
 # Tracks item fingerprints for deduplication across monitor cycles.
 #
 # Schema version: 1.1
-# Last updated: 2026-08-02
+# Last updated: 2026-08-03
 # Updated by: rebuild_dedupe_index.py
 # =============================================================================
 
@@ -228,7 +228,7 @@ prior_items:
   title: Six Mile Creek CDD Board of Supervisors Vacancy Announcement
   source_id: six_mile_creek_cdd
   beat: unknown
-  discovered_at: '2026-07-04T04:10:06Z'
+  discovered_at: '2026-08-03T06:04:49Z'
   status: pending_review
 - key: 973aa4af1b29e75e
   item_id: six_mile_creek_cdd-002
@@ -236,14 +236,14 @@ prior_items:
     2 and 4
   source_id: six_mile_creek_cdd
   beat: unknown
-  discovered_at: '2026-07-04T04:10:06Z'
+  discovered_at: '2026-08-03T06:04:49Z'
   status: pending_review
 - key: c09e768cb8faf093
   item_id: six_mile_creek_cdd-003
   title: Six Mile Creek CDD Board Meeting Agenda — June 10, 2026
   source_id: six_mile_creek_cdd
   beat: unknown
-  discovered_at: '2026-07-04T04:10:06Z'
+  discovered_at: '2026-08-03T06:04:49Z'
   status: pending_review
 - key: 6d47e00087b32f38
   item_id: SJC-BCC-20260120-0001
@@ -624,42 +624,42 @@ prior_items:
   title: Tolomato CDD Board Meeting Agenda — June 23, 2026
   source_id: tolomato_cdd
   beat: unknown
-  discovered_at: '2026-07-04T04:10:06Z'
+  discovered_at: '2026-08-03T06:04:49Z'
   status: pending_review
 - key: 3b19bbc39ca39fd1
   item_id: tolomato_cdd-002
   title: Tolomato CDD Board Meeting Minutes — April 28, 2026
   source_id: tolomato_cdd
   beat: unknown
-  discovered_at: '2026-07-04T04:10:06Z'
+  discovered_at: '2026-08-03T06:04:49Z'
   status: pending_review
 - key: 6c7a872d174174fc
   item_id: tolomato_cdd-003
   title: Tolomato CDD FY2026 Assessment Information Published
   source_id: tolomato_cdd
   beat: unknown
-  discovered_at: '2026-07-04T04:10:06Z'
+  discovered_at: '2026-08-03T06:04:49Z'
   status: pending_review
 - key: 3eda6ec64602702a
   item_id: trout_creek_cdd-001
   title: Trout Creek CDD Meeting Agenda — June 25, 2026 (Revised)
   source_id: trout_creek_cdd
   beat: unknown
-  discovered_at: '2026-07-04T04:10:06Z'
+  discovered_at: '2026-08-03T06:04:49Z'
   status: pending_review
 - key: 6bb6553a766395a1
   item_id: trout_creek_cdd-002
   title: Trout Creek CDD Workshop Meeting Scheduled — July 7, 2026
   source_id: trout_creek_cdd
   beat: unknown
-  discovered_at: '2026-07-04T04:10:06Z'
+  discovered_at: '2026-08-03T06:04:49Z'
   status: pending_review
 - key: 87f0d06c07f16b53
   item_id: trout_creek_cdd-003
   title: Trout Creek CDD Regular Meeting Scheduled — July 23, 2026
   source_id: trout_creek_cdd
   beat: unknown
-  discovered_at: '2026-07-04T04:10:06Z'
+  discovered_at: '2026-08-03T06:04:49Z'
   status: pending_review
 - key: 09ebda76202e7eaa
   item_id: SJC-SL-20260704-0001
@@ -904,4 +904,174 @@ prior_items:
   source_id: silverleaf_discovery
   beat: development
   discovered_at: '2026-07-06T21:15:00Z'
+  status: pending_review
+- key: d96939a5b6df5418
+  item_id: SJC-CN-20260802-0001
+  title: County Road 16A Closures and Detours for Next Two Weekends
+  source_id: sjc_county_news
+  beat: transportation
+  discovered_at: '2026-08-02T14:55:00Z'
+  status: pending_review
+- key: c1c5a2c4b0deac23
+  item_id: SJC-CN-20260802-0002
+  title: Daily's Withdraws Comprehensive Plan Amendment Application from August 4
+    BCC Agenda
+  source_id: sjc_county_news
+  beat: rezoning_comp_plan_dri
+  discovered_at: '2026-08-02T14:55:00Z'
+  status: pending_review
+- key: a08c7207de625935
+  item_id: SJC-CN-20260802-0003
+  title: S.E.A. Community Help Resource Center Opens to Serve Rural St. Johns County
+  source_id: sjc_county_news
+  beat: community_services
+  discovered_at: '2026-08-02T14:55:00Z'
+  status: pending_review
+- key: 44a60eefa3b7096a
+  item_id: SJC-CN-20260802-0004
+  title: Clerk's Office Expands Public Access with New Service Center
+  source_id: sjc_county_news
+  beat: county_government
+  discovered_at: '2026-08-02T14:55:00Z'
+  status: pending_review
+- key: d7271dccea220748
+  item_id: SJC-NBOR-20260802-0001
+  title: CPA(SS) 2025000011 Moseley Property
+  source_id: sjc_nbor_public_notices
+  beat: rezoning_comp_plan_dri
+  discovered_at: '2026-08-02T13:02:01Z'
+  status: pending_review
+- key: c3ea13f64426dfc7
+  item_id: SJC-NBOR-20260802-0002
+  title: 'NW Sector Community Meeting: CPA(SS)2025-07 & MAJMOD 2025-08 Bartram Grove'
+  source_id: sjc_nbor_public_notices
+  beat: rezoning_comp_plan_dri
+  discovered_at: '2026-08-02T13:02:01Z'
+  status: pending_review
+- key: 1cead483c658a608
+  item_id: SJC-NBOR-20260802-0003
+  title: CPA(SS) 2025000013 Daily´s Place
+  source_id: sjc_nbor_public_notices
+  beat: rezoning_comp_plan_dri
+  discovered_at: '2026-08-02T13:02:01Z'
+  status: pending_review
+- key: 419b0bc995b8b8bc
+  item_id: SJC-NBOR-20260802-0004
+  title: PVZVAR 2026000004 110 Overlook Drive
+  source_id: sjc_nbor_public_notices
+  beat: rezoning_comp_plan_dri
+  discovered_at: '2026-08-02T13:02:01Z'
+  status: pending_review
+- key: f274ddc0718bf74b
+  item_id: SJC-NBOR-20260802-0005
+  title: MAJMOD 2026000007 Our Lady Star of the Sea PUD
+  source_id: sjc_nbor_public_notices
+  beat: rezoning_comp_plan_dri
+  discovered_at: '2026-08-02T13:02:01Z'
+  status: pending_review
+- key: f535db1cd187a081
+  item_id: SJC-NBOR-20260802-0006
+  title: Comcast
+  source_id: sjc_nbor_public_notices
+  beat: utilities_water
+  discovered_at: '2026-08-02T13:02:01Z'
+  status: pending_review
+- key: 9ff5f2a83d1935c9
+  item_id: SJC-NBOR-20260802-0007
+  title: 'NW Sector Meeting: CPA(SS) 2026-05&SUPMAJ 2026-08 Little Florence Fish Camp'
+  source_id: sjc_nbor_public_notices
+  beat: rezoning_comp_plan_dri
+  discovered_at: '2026-08-02T13:02:01Z'
+  status: pending_review
+- key: 846cdd8850981e07
+  item_id: SJC-NBOR-20260802-0008
+  title: ZVAR 2026000023 5025 Alta Vista Avenue
+  source_id: sjc_nbor_public_notices
+  beat: rezoning_comp_plan_dri
+  discovered_at: '2026-08-02T13:02:01Z'
+  status: pending_review
+- key: 77aa2e234fe65426
+  item_id: SJC-NBOR-20260802-0009
+  title: ZVAR 2026000020 Velkovich AFU
+  source_id: sjc_nbor_public_notices
+  beat: rezoning_comp_plan_dri
+  discovered_at: '2026-08-02T13:02:01Z'
+  status: pending_review
+- key: 8b6a6ce77048ba68
+  item_id: SJC-NBOR-20260802-0010
+  title: ZVAR 2026000017 Jackson Residence
+  source_id: sjc_nbor_public_notices
+  beat: rezoning_comp_plan_dri
+  discovered_at: '2026-08-02T13:02:01Z'
+  status: pending_review
+- key: 7b03dfa5ad2fead0
+  item_id: SJC-NBOR-20260802-0011
+  title: ZVAR 2026000016 5068 A1A S (Pool)
+  source_id: sjc_nbor_public_notices
+  beat: rezoning_comp_plan_dri
+  discovered_at: '2026-08-02T13:02:01Z'
+  status: pending_review
+- key: 8809c67c02879444
+  item_id: SJC-NBOR-20260802-0012
+  title: ZVAR 2026000014 Edgerton Exterior Stair Installation
+  source_id: sjc_nbor_public_notices
+  beat: rezoning_comp_plan_dri
+  discovered_at: '2026-08-02T13:02:01Z'
+  status: pending_review
+- key: 6288213fd8e7c5fa
+  item_id: SJC-NBOR-20260802-0013
+  title: SUPMAJ 2026000009 Colee Cove Tower
+  source_id: sjc_nbor_public_notices
+  beat: site_plans_permits_construction
+  discovered_at: '2026-08-02T13:02:01Z'
+  status: pending_review
+- key: eef67f46450e0049
+  item_id: SJC-NBOR-20260802-0016
+  title: NBR - FY 26 ST AUGUSTINE SHORES AREA - DRAINAGE IMPROVEMENTS
+  source_id: sjc_nbor_public_notices
+  beat: roadwork_traffic
+  discovered_at: '2026-08-02T13:02:01Z'
+  status: pending_review
+- key: 881d4872e487ad51
+  item_id: SJC-NBOR-20260802-0017
+  title: NBR - TREASURE BEACH - FY 26 PAVEMENT IMPROVEMENTS
+  source_id: sjc_nbor_public_notices
+  beat: roadwork_traffic
+  discovered_at: '2026-08-02T13:02:01Z'
+  status: pending_review
+- key: c21a6604a3e0108e
+  item_id: SJC-NBOR-20260802-0018
+  title: ARC 2026000006 Ponte Vedra Lodge  Club (Rotunda Roof)
+  source_id: sjc_nbor_public_notices
+  beat: site_plans_permits_construction
+  discovered_at: '2026-08-02T13:02:01Z'
+  status: pending_review
+- key: 915ca9accf82202a
+  item_id: SJC-NBOR-20260802-0019
+  title: ARC 2026000004 Our Lady Star of the Sea Church
+  source_id: sjc_nbor_public_notices
+  beat: site_plans_permits_construction
+  discovered_at: '2026-08-02T13:02:01Z'
+  status: pending_review
+- key: 3dc875fb814463c8
+  item_id: SJC-NBOR-20260802-0020
+  title: ARC 2026000002 Upperline Health
+  source_id: sjc_nbor_public_notices
+  beat: site_plans_permits_construction
+  discovered_at: '2026-08-02T13:02:01Z'
+  status: pending_review
+- key: 6774761949d27653
+  item_id: SJC-NBOR-20260802-0024
+  title: NBR - KINGS ESTATE RD & HILLTOP RD - ROADWAY IMPROVEMENTS
+  source_id: sjc_nbor_public_notices
+  beat: site_plans_permits_construction
+  discovered_at: '2026-08-02T13:02:01Z'
+  status: pending_review
+- key: 119bfd49c0b17fb0
+  item_id: SJC-SJSO-20260802-0001
+  title: Two St. Johns County Inmates Charged for Planning Attempt to Escape from
+    Jail
+  source_id: sjso_news_stories
+  beat: public_safety
+  discovered_at: '2026-08-02T14:55:00Z'
   status: pending_review

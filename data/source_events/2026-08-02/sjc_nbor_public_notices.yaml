@@ -1,0 +1,44 @@
+source_id: sjc_nbor_public_notices
+generated_at: '2026-08-02T13:02:01Z'
+total_events: 1
+events:
+- event_id: EVT-NBOR-20260802-0001
+  source_id: sjc_nbor_public_notices
+  event_type: public_notice_snapshot
+  title: NBOR Public Notices Snapshot — 2026-08-02
+  event_date: '2026-08-02'
+  discovered_at: '2026-08-02T13:02:01Z'
+  source_url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
+  status: extracted
+  extraction_status: All 25 notices extracted as intel_items.
+  source_health: accessible
+  extracted_item_ids:
+  - SJC-NBOR-20260802-0001
+  - SJC-NBOR-20260802-0002
+  - SJC-NBOR-20260802-0003
+  - SJC-NBOR-20260802-0004
+  - SJC-NBOR-20260802-0005
+  - SJC-NBOR-20260802-0006
+  - SJC-NBOR-20260802-0007
+  - SJC-NBOR-20260802-0008
+  - SJC-NBOR-20260802-0009
+  - SJC-NBOR-20260802-0010
+  - SJC-NBOR-20260802-0011
+  - SJC-NBOR-20260802-0012
+  - SJC-NBOR-20260802-0013
+  - SJC-NBOR-20260802-0014
+  - SJC-NBOR-20260802-0015
+  - SJC-NBOR-20260802-0016
+  - SJC-NBOR-20260802-0017
+  - SJC-NBOR-20260802-0018
+  - SJC-NBOR-20260802-0019
+  - SJC-NBOR-20260802-0020
+  - SJC-NBOR-20260802-0021
+  - SJC-NBOR-20260802-0022
+  - SJC-NBOR-20260802-0023
+  - SJC-NBOR-20260802-0024
+  - SJC-NBOR-20260802-0025
+  raw_source_file: tests/fixtures/nbor_raw.html
+  notes: ''
+  created_at: '2026-08-02T13:02:01Z'
+  updated_at: '2026-08-02T13:02:01Z'

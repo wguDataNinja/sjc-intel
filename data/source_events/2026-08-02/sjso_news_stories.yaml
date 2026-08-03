@@ -1,0 +1,21 @@
+source_id: sjso_news_stories
+generated_at: '2026-08-02T14:55:00Z'
+total_events: 1
+events:
+- event_id: EVT-SJSO-20260802-0001
+  source_id: sjso_news_stories
+  event_type: rss_snapshot
+  title: SJSO News Feed Check — 2026-08-02
+  event_date: '2026-08-02'
+  discovered_at: '2026-08-02T14:55:00Z'
+  source_url: https://www.sjso.org/feed/
+  status: extracted
+  extraction_status: RSS feed parsed (7 items). 1 new item (2026-06-22 jail escape
+    plan); 6 already captured in prior cycles (2026-06-03 capture + older).
+  source_health: accessible
+  extracted_item_ids:
+  - SJC-SJSO-20260802-0001
+  notes: RSS feed used for the first time (discovered 2026-08-02); prior captures
+    were HTML listing scrapes. Gap period 2026-07-05 → 2026-08-02.
+  created_at: '2026-08-02T14:55:00Z'
+  updated_at: '2026-08-02T14:55:00Z'

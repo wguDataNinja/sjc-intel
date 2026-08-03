@@ -1,0 +1,22 @@
+source_id: sjc_utility_department
+generated_at: '2026-08-02T14:28:10Z'
+total_events: 1
+events:
+- event_id: EVT-UTIL-20260802-0001
+  source_id: sjc_utility_department
+  event_type: page_snapshot
+  title: Utility Department Announcements Check — 2026-08-02
+  event_date: '2026-08-02'
+  discovered_at: '2026-08-02T14:28:10Z'
+  source_url: https://www.sjcfl.us/departments/utility-department/
+  status: checked
+  extraction_status: 0 new items. All 6 announcements on page already captured
+    in prior cycles (Phase III + SR 207 on 2026-06-03; 2025 Annual Report on
+    2026-06-26; $1.6M Plantation WTP + Moody's Aa1 rating on 2026-07-04).
+  source_health: accessible
+  extracted_item_ids: []
+  notes: Manual extraction — no script exists for this source. Page fetched
+    2026-08-02T14:17Z (HTTP 200, 355KB). Gap period 2026-07-05 → 2026-08-02
+    contains no new announcements.
+  created_at: '2026-08-02T14:28:10Z'
+  updated_at: '2026-08-02T14:28:10Z'
