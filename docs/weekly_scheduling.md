@@ -108,7 +108,7 @@ this agent**; this is the exact packet for the authorized Ivy operator.
    (start + 120 min max), and current bundle/health/log state.
 4. After elapse, verify:
    - `systemctl --user status sjc-intel-weekly-test-*` → success exit;
-   - `logs/` contains the run log with `run_status`; 
+   - `logs/` contains the run log with `run_status`;
    - health JSON exists at the declared health path;
    - bundle exists at the bundle root with `manifest.json` + `checksums.sha256`;
    - `scripts/bundle_verify.py` passes locally on the produced bundle;

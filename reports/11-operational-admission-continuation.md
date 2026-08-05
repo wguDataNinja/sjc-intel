@@ -57,4 +57,3 @@ Task 10's live evidence remains the latest safe evidence: VPS reachable, 83% dis
 2. Update Ivy control record with SHA 1be2ade in an authorized cross-repo commit.
 3. Refresh VPS capacity after reboot/workload-window review.
 4. Deploy this exact SHA only after the above; implement bundle/import/receipt as the approved runtime work.
-

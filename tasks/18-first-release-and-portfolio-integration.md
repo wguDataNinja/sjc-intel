@@ -134,7 +134,7 @@ Inspect at minimum:
 * About;
 * Data & Sources;
 * empty release;
-* 404.	
+* 404.
 
 Use real browser inspection where repository tooling supports it.
 

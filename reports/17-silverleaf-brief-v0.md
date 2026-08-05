@@ -250,7 +250,7 @@ and missing optional dates render handled states, never substitutes.
 ## 14. About
 
 Sections: what the product is; how items are selected; the exact definition of
-Reviewed; coverage & limitations; release approach (no weekly promise); 
+Reviewed; coverage & limitations; release approach (no weekly promise);
 corrections & reporting an issue (GitHub issues link + process); link to Data
 & Sources. No internal pipeline detail is exposed.
 

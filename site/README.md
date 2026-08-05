@@ -100,4 +100,3 @@ selected first.
 - Fonts use local/system fallbacks; no external font loading; no font
   binaries committed.
 - No Hugo, Ivy, VPS, database, or backend dependency.
-
