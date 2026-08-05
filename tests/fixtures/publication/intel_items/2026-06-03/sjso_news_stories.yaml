@@ -1,0 +1,19 @@
+items:
+  - item_id: SJC-SJSO-20260603-0004
+    title: Arrest made in connection to the 2023 double murders of Cody Bennett
+    summary: 'Arrest made in the 2023 double murders.'
+    source_id: sjso_news_stories
+    source_url: https://www.sjso.org/news-stories/double-murder-arrest/
+    source_published_at: '2026-06-03T10:00:00Z'
+    discovered_at: '2026-06-03T06:15:00Z'
+    created_at: '2026-06-03T06:16:00Z'
+    topics: [public_safety, crime]
+    communities: []
+    geographic_scope: county_wide
+    urgency: timely
+    verification_status: source_confirmed
+    sensitivity: high
+    raw_excerpt: 'Arrest made in connection to the 2023 double murders.'
+    review_status: verified
+    human_review_required: true
+    _dedupe_key: high01

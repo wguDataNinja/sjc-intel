@@ -1,0 +1,9 @@
+sources:
+  - source_id: sjc_utility_department
+    name: Utility Department — Water and Boil Notices
+  - source_id: sjso_news_stories
+    name: SJSO News Stories
+  - source_id: sjc_county_news
+    name: SJC County News
+  - source_id: st_johns_citizen
+    name: St. Johns Citizen

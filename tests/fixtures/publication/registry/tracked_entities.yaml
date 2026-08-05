@@ -1,0 +1,7 @@
+tracked_entities:
+  - entity_id: ENT-RETAIL-PUBLIX-SILVERLEAF
+    entity_type: retail_development
+    label: SilverLeaf Mega Publix
+  - entity_id: ENT-COMM-SILVERLEAF
+    entity_type: community
+    label: SilverLeaf Master-Planned Community

@@ -1,0 +1,148 @@
+# =============================================================================
+# SJC_Intel — Publication Decision Schema
+# =============================================================================
+# Field-level spec for the file-backed publication-decision record
+# (data/publication_decisions/{item_id}.yaml) per
+# docs/publication_release_contract.md and ROADMAP.md §3A-G2.
+#
+# This is a documentation reference consumed by the operator tool
+# (scripts/publication_decision.py) and the corpus validator
+# (scripts/validate_publication_corpus.py). It is NOT a strict JSON/YAML
+# schema enforced by a library; the tools validate the critical fields.
+#
+# Schema version: 1.0
+# =============================================================================
+
+item_id:
+  type: string
+  required: true
+  description: Canonical corpus item_id (SJC-{PREFIX}-{YYYYMMDD}-{NNNN}).
+
+publication_status:
+  type: enum
+  required: true
+  allowed: [approved, rejected, deferred, withdrawn]
+  description: >
+    Item-level publication decision. NEVER 'published' — release membership is
+    a separate, release-manifest act (contract §1/§2). 'approved' is the
+    'publication-approved' state; it still requires release selection and
+    human approval of the release.
+
+reviewer:
+  type: string
+  required: true
+  description: Human reviewer identity who made the decision.
+
+decision_timestamp:
+  type: string (ISO 8601)
+  required: true
+  description: When the decision was recorded.
+
+rationale:
+  type: string
+  required: true
+  description: Why this decision was made.
+
+origin_review_status:
+  type: string
+  required: false
+  description: review_status of the item at decision time.
+
+release_eligible:
+  type: boolean
+  required: false
+  description: Whether the decision asserts release eligibility.
+
+relevance:
+  type: enum
+  required: false
+  allowed: [in_silverleaf, near_silverleaf, countywide_impact]
+  description: >
+    Explicit editorial override of the public relevance label
+    (docs/static_release_data_contract.md §2A). When present, the exporter uses
+    this instead of deriving from the item record's communities/scope (which
+    can be county_wide even for corridor-relevant items). Never overrides the
+    separate silverleaf_relevance inclusion decision.
+
+event_date:
+  type: string (ISO 8601)
+  required: false
+  description: Explicit event/hearing/effective date shown on the item detail when available.
+
+event_date_label:
+  type: string
+  required: false
+  description: Label for event_date (e.g. "Hearing date", "Effective date").
+
+lifecycle:
+  type: string
+  required: false
+  description: Explicit lifecycle id rendered only when present (proposed, under_construction, completed, ...).
+
+lifecycle_label:
+  type: string
+  required: false
+  description: Human label for lifecycle.
+
+sensitivity_review:
+  type: string
+  required: false
+  allowed: [confirmed_low, approved_medium, blocked_high, not_assessed]
+  description: Explicit sensitivity disposition recorded by the reviewer.
+
+public_summary_override:
+  type: string
+  required: false
+  description: Approved public-facing summary override (contract §2 public-safe
+    projection); must not contain internal notes.
+
+withdrawn:
+  type: boolean
+  required: false
+  default: false
+
+withdrawal_reason:
+  type: string
+  required: false
+
+superseded_by:
+  type: string
+  required: false
+  description: item_id of the superseding item.
+
+source_attribution_confirmed:
+  type: boolean
+  required: false
+  default: false
+
+silverleaf_relevance:
+  type: object
+  required: false
+  fields:
+    decision:
+      type: enum
+      allowed: [included, excluded, needs_review, not_assessed]
+      required: true
+    rationale:
+      type: string
+      required: true
+    place_ids:
+      type: array<string>
+      required: false
+    entity_ids:
+      type: array<string>
+      required: false
+
+history:
+  type: array
+  required: false
+  description: Append-safe audit trail. Prior entries are never mutated.
+  items:
+    type: object
+    fields:
+      status:
+        type: enum
+        allowed: [approved, rejected, deferred, withdrawn]
+      reviewer: {type: string}
+      timestamp: {type: string (ISO 8601)}
+      rationale: {type: string}

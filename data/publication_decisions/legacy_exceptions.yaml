@@ -1,0 +1,119 @@
+# =============================================================================
+# SJC_Intel — Publication Legacy Exceptions
+# =============================================================================
+# Documented, machine-readable treatment for historical corpus records that do
+# not meet the strict publication-relevant contract but are retained as
+# archival evidence. These records are NEVER release candidates; they are
+# excluded from publication with a machine-readable reason.
+#
+# This file is the documented "legacy exception or exclusion" treatment
+# required by the publication release contract §3 and the corpus validator.
+# It does not repair records; it records why each is excluded.
+#
+# Schema version: 1.0
+# Status: authoritative (validator consumes it)
+# =============================================================================
+
+legacy_exceptions:
+
+  # -------------------------------------------------------------------------
+  # NBOR double-capture (2026-06-08 and 2026-06-26 files share identical
+  # item_ids). Canonical representation: 2026-06-26 file. The 06-08 capture is
+  # a duplicate capture and its records are not canonical. The review queue
+  # already dedupes these; the validator must accept the canonical file and
+  # mark the duplicate capture as non-canonical.
+  # -------------------------------------------------------------------------
+  - id: LEG-NBOR-0608-DUP
+    scope: "data/intel_items/2026-06-08/sjc_nbor_public_notices.yaml"
+    kind: duplicate_capture
+    canonical: "data/intel_items/2026-06-26/sjc_nbor_public_notices.yaml"
+    item_ids:
+      - SJC-NBOR-20260626-0001
+      - SJC-NBOR-20260626-0002
+      - SJC-NBOR-20260626-0003
+      - SJC-NBOR-20260626-0004
+      - SJC-NBOR-20260626-0005
+      - SJC-NBOR-20260626-0006
+      - SJC-NBOR-20260626-0007
+      - SJC-NBOR-20260626-0008
+      - SJC-NBOR-20260626-0009
+      - SJC-NBOR-20260626-0010
+      - SJC-NBOR-20260626-0011
+      - SJC-NBOR-20260626-0012
+      - SJC-NBOR-20260626-0013
+      - SJC-NBOR-20260626-0014
+      - SJC-NBOR-20260626-0015
+      - SJC-NBOR-20260626-0016
+      - SJC-NBOR-20260626-0017
+      - SJC-NBOR-20260626-0018
+      - SJC-NBOR-20260626-0019
+      - SJC-NBOR-20260626-0020
+      - SJC-NBOR-20260626-0021
+      - SJC-NBOR-20260626-0022
+      - SJC-NBOR-20260626-0023
+      - SJC-NBOR-20260626-0024
+      - SJC-NBOR-20260626-0025
+    treatment: non_canonical_duplicate_capture
+    reason: >
+      The 2026-06-08 NBOR capture was superseded by the identical-content
+      2026-06-26 capture. The canonical file is the 2026-06-26 record. The
+      06-08 file is retained for provenance but its item records are
+      non-canonical and excluded from release selection by default.
+
+  # -------------------------------------------------------------------------
+  # Legacy CDD records (non-standard item_id format, missing schema fields)
+  # -------------------------------------------------------------------------
+  - id: LEG-CDD-LEGACY
+    scope: "data/intel_items/2026-06-26/*_cdd.yaml"
+    kind: legacy_incomplete_record
+    item_ids:
+      - six_mile_creek_cdd-001
+      - six_mile_creek_cdd-002
+      - six_mile_creek_cdd-003
+      - tolomato_cdd-001
+      - tolomato_cdd-002
+      - tolomato_cdd-003
+      - trout_creek_cdd-001
+      - trout_creek_cdd-002
+      - trout_creek_cdd-003
+    treatment: retained_as_archival_evidence
+    reason: >
+      Pre-contract CDD records use a non-standard item_id format and lack
+      required publication fields (source_url, summary, topics,
+      review_status, sensitivity). They are retained as archival evidence
+      and are never release candidates.
+
+  # -------------------------------------------------------------------------
+  # 2026-08-02 county-news / SJSO records missing created_at
+  # -------------------------------------------------------------------------
+  - id: LEG-0802-MISSING-CREATED
+    scope: "data/intel_items/2026-08-02/*.yaml"
+    kind: incomplete_timestamp
+    item_ids:
+      - SJC-CN-20260802-0001
+      - SJC-CN-20260802-0002
+      - SJC-CN-20260802-0003
+      - SJC-CN-20260802-0004
+      - SJC-SJSO-20260802-0001
+    treatment: warning_timestamp_default
+    reason: >
+      Records created during the 2026-08-02 cadence catch-up lack an explicit
+      created_at timestamp. discovered_at is present; these are accepted with
+      a warning and not release-blocked on timestamp grounds.
+
+  # -------------------------------------------------------------------------
+  # rural_sjc community reference (SJC-CN-20260802-0003) — not in registry
+  # -------------------------------------------------------------------------
+  - id: LEG-RURAL-SJC-COMMUNITY
+    scope: "data/intel_items/2026-08-02/sjc_county_news.yaml"
+    kind: unregistered_community_reference
+    item_ids:
+      - SJC-CN-20260802-0003
+    treatment: needs_registry_fix
+    reason: >
+      Item references community 'rural_sjc' which is not registered in
+      registry/communities.yaml. Requires a registry addition or a field
+      correction in a future editorial/data task; excluded from release until
+      resolved. Flagged for the §3B-G1 SilverLeaf scope/community registry
+      task.
+

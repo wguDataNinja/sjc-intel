@@ -1,0 +1,4 @@
+events:
+  - event_id: EVT-UTIL-20260603-0001
+    source_id: sjc_utility_department
+    event_type: page_snapshot
