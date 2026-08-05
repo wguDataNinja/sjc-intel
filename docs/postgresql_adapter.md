@@ -2,11 +2,13 @@
 
 ## Current Authority
 
-File-backed data remains the operating authority until a later cutover Gate is
-explicitly approved. The PostgreSQL adapter is available for local Mac
-development, portability rehearsal, shadow reads, snapshots, and later VPS use.
+**Mode: DORMANT_FUTURE_READY.** File-backed data remains the operating
+authority until a later cutover Gate is explicitly approved. The PostgreSQL
+adapter is available for local Mac development, portability rehearsal, shadow
+reads, snapshots, and later VPS use.
 
 Do not connect application code as `sjc_intel_owner` or `sjc_intel_migrator`.
+PostgreSQL is never the corpus authority and is not a launch dependency.
 
 ## Backend Selection
 
