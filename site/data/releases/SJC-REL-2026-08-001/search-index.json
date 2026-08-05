@@ -1,0 +1,72 @@
+{
+  "environment": "real",
+  "items": [
+    {
+      "entities": [],
+      "id": "SJC-CN-20260802-0001",
+      "places": [],
+      "source": "sjc county news",
+      "source_date": "2026-07-20",
+      "summary": "weekend closures of county road 16a between timberwolf trail and river reach parkway are scheduled 8 p m friday to 5 a m monday jul 31 aug 3 and aug 7 10 for first coast expressway pipe installation detour via sr 16 and sr 13",
+      "title": "county road 16a closures and detours for next two weekends",
+      "tokens": "county road 16a closures and detours for next two weekends weekend closures of county road 16a between timberwolf trail and river reach parkway are scheduled 8 p m friday to 5 a m monday jul 31 aug 3 and aug 7 10 for first coast expressway pipe installation detour via sr 16 and sr 13 county road 16a closures and detours over consecutive weekends affect local travel transportation roads roadwork traffic infrastructure sjc county news",
+      "topics": [
+        "transportation",
+        "roadwork_traffic",
+        "infrastructure"
+      ],
+      "why_it_matters": "county road 16a closures and detours over consecutive weekends affect local travel"
+    },
+    {
+      "entities": [],
+      "id": "SJC-UTIL-20260603-0005",
+      "places": [],
+      "source": "utility department water and boil notices",
+      "source_date": "2026-06-03",
+      "summary": "the county utility is inventorying water service line materials under the epa community lead safe hub program customers may be contacted to allow an inspection of the pipe from the street to the home",
+      "title": "utility department water service line material inventory",
+      "tokens": "utility department water service line material inventory the county utility is inventorying water service line materials under the epa community lead safe hub program customers may be contacted to allow an inspection of the pipe from the street to the home lead pipe identification program affects drinking water safety some residents may be contacted for property access to inspect service lines no lead pipes confirmed this is a proactive inventory infrastructure health wellness utility department water and boil notices",
+      "topics": [
+        "infrastructure",
+        "health_wellness"
+      ],
+      "why_it_matters": "lead pipe identification program affects drinking water safety some residents may be contacted for property access to inspect service lines no lead pipes confirmed this is a proactive inventory"
+    },
+    {
+      "entities": [],
+      "id": "SJC-EM-20260626-0001",
+      "places": [
+        "countywide"
+      ],
+      "source": "emergency management and alerts",
+      "source_date": "2026-06-01",
+      "summary": "st johns county emergency management urges residents to prepare for the 2026 atlantic hurricane season which began june 1 highlights simple steps to protect lives and property",
+      "title": "residents urged to prepare as 2026 atlantic hurricane season begins",
+      "tokens": "residents urged to prepare as 2026 atlantic hurricane season begins st johns county emergency management urges residents to prepare for the 2026 atlantic hurricane season which began june 1 highlights simple steps to protect lives and property june 1 marks the start of hurricane season residents should review plans sign up for alert st johns and know their evacuation zone public safety emergency alerts environment countywide emergency management and alerts",
+      "topics": [
+        "public_safety",
+        "emergency_alerts",
+        "environment"
+      ],
+      "why_it_matters": "june 1 marks the start of hurricane season residents should review plans sign up for alert st johns and know their evacuation zone"
+    },
+    {
+      "entities": [],
+      "id": "SJC-UTIL-20260603-0001",
+      "places": [],
+      "source": "utility department water and boil notices",
+      "source_date": "2026-05-11",
+      "summary": "the phase iii extreme water shortage remains in effect outdoor irrigation is limited to one day per week and is prohibited 8 a m 6 p m reclaimed water irrigation is not included in the schedule",
+      "title": "phase iii extreme water shortage declaration active",
+      "tokens": "phase iii extreme water shortage declaration active the phase iii extreme water shortage remains in effect outdoor irrigation is limited to one day per week and is prohibited 8 a m 6 p m reclaimed water irrigation is not included in the schedule ongoing irrigation restrictions affect all properties with landscaping reclaimed water users exempt violations may result in penalties drought conditions may lead to higher water costs environment infrastructure emergency alerts utility department water and boil notices",
+      "topics": [
+        "environment",
+        "infrastructure",
+        "emergency_alerts"
+      ],
+      "why_it_matters": "ongoing irrigation restrictions affect all properties with landscaping reclaimed water users exempt violations may result in penalties drought conditions may lead to higher water costs"
+    }
+  ],
+  "release_id": "SJC-REL-2026-08-001",
+  "schema_version": "1.0"
+}

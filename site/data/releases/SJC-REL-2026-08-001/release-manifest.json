@@ -1,0 +1,21 @@
+{
+  "checksums": {
+    "release.json": "fcbdea16642f02ba82551a30fb8f3c6cfef7645a2487209fa00cc35de5b7893e",
+    "search-index.json": "c0b70d0d5731c8b489cb7e3bfb5244469fe20cc4998215f97b63dc298536e64a"
+  },
+  "created_at": "2026-08-04T12:00:00Z",
+  "environment": "real",
+  "generator_revision": "silverleaf-brief-export-1.0",
+  "item_ids": [
+    "SJC-CN-20260802-0001",
+    "SJC-UTIL-20260603-0005",
+    "SJC-EM-20260626-0001",
+    "SJC-UTIL-20260603-0001"
+  ],
+  "manifest_version": "1.0",
+  "published_at": "2026-08-04T12:00:00Z",
+  "release_id": "SJC-REL-2026-08-001",
+  "release_status": "published",
+  "reviewer": "Buddy",
+  "source_corpus_input_identity": "eb81277ea4f0e516828289d2321a6120d4a8e3c4120be3819d3679ea391d4f67"
+}

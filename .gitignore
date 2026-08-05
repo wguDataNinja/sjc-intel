@@ -45,3 +45,10 @@ runtime/
 
 # Auto-generated Hermes worker context (regenerated per session)
 WORKER_CONTEXT.md
+
+# Weekly bundle staging (transient; receipts are tracked under data/receipts/)
+data/incoming/
+
+# Generated demo site output (regenerable from site/fixtures/demo; the real
+# release under site/data/releases/ is tracked as the standalone MVP)
+site/data/demo/

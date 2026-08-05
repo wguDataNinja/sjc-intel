@@ -2,6 +2,17 @@ import os
 import yaml
 import pytest
 
+# Publication/corpus tests read the real-shaped fixture tree. Setting this at
+# conftest import time (before any test module imports scripts.publication_common)
+# makes those tests order-independent; scripts.publication_common computes its
+# paths from these at import time.
+os.environ.setdefault(
+    "SJC_INTEL_DATA_ROOT",
+    os.path.join(os.path.dirname(__file__), "fixtures", "publication"))
+os.environ.setdefault(
+    "SJC_INTEL_REGISTRY_ROOT",
+    os.path.join(os.path.dirname(__file__), "fixtures", "publication", "registry"))
+
 FIXTURE_DIR = os.path.join(os.path.dirname(__file__), "fixtures")
 SCHEMA_DIR = os.path.join(os.path.dirname(__file__), "..", "schemas")
 SCRIPT_DIR = os.path.join(os.path.dirname(__file__), "..", "scripts")

@@ -1,0 +1,313 @@
+# =============================================================================
+# SilverLeaf Brief — DEMO RELEASE FIXTURE (NONPRODUCTION)
+# =============================================================================
+# This file contains realistic EXAMPLE items used ONLY to demonstrate the v0
+# static site. It is NOT a real public release.
+#
+# - No item here has an approved publication decision.
+# - No item here has been reviewed for publication.
+# - The exporter emits this under site/data/demo/ with environment=demo.
+# - The site renders a visible "Demo preview" banner when environment=demo.
+#
+# Example categories mirror the real corpus (water shortage, school
+# construction, CR 2209 connector, development hearing, local service/retail
+# opening) as required by task 17 §17.
+# =============================================================================
+
+release_metadata:
+  release_id: "SJC-REL-DEMO-20260804"
+  published_at: "2026-08-04T00:00:00Z"
+  created_at: "2026-08-04T00:00:00Z"
+  reviewer: "Demo fixture (not a real reviewer)"
+  status: "published"
+  prior_release_id: null
+  note: >
+    Nonproduction demo fixture for SilverLeaf Brief v0. Realistic example
+    items built from public-source categories observed in the SJC_Intel
+    corpus. Not real reviewed intelligence.
+
+dimensions:
+  relevance:
+    in_silverleaf:
+      label: "In SilverLeaf"
+    near_silverleaf:
+      label: "Near SilverLeaf"
+    countywide_impact:
+      label: "Countywide impact"
+  topics:
+    water_restrictions:
+      label: "Water restrictions"
+      description: "Watering limits, drought declarations, reclaimed water changes."
+    environment:
+      label: "Environment"
+      description: "Conservation, drought, hurricanes, ecosystems."
+    infrastructure:
+      label: "Infrastructure"
+      description: "Roads, utilities, public works, facilities."
+    education:
+      label: "Schools & education"
+      description: "K-12 schools, school board, district programs."
+    development:
+      label: "Development"
+      description: "Residential/commercial construction, zoning, planning."
+    transportation:
+      label: "Transportation & roads"
+      description: "Roads, bridges, transit, traffic."
+    public_notices:
+      label: "Public notices"
+      description: "Official announcements, legal notices, hearings."
+    economic_development:
+      label: "Local business"
+      description: "Business growth, jobs, retail, commerce."
+    health_wellness:
+      label: "Health & wellness"
+      description: "Public health, healthcare facilities, wellness programs."
+  places:
+    silverleaf:
+      label: "SilverLeaf"
+      type: "master_planned_community"
+    cr_210_corridor:
+      label: "CR 210 Corridor"
+      type: "corridor"
+    sr_16_corridor:
+      label: "SR 16 Corridor"
+      type: "corridor"
+  entities:
+    ENT-EDU-SILVERLEAF-K8:
+      label: "SilverLeaf K-8 School"
+      lifecycle: "under_construction"
+      lifecycle_label: "Under construction"
+      description: "New K-8 school in SilverLeaf expected to open for the 2026-2027 school year."
+    ENT-ROAD-CR-2209-CONNECTOR:
+      label: "CR 2209 Connector"
+      lifecycle: "completed"
+      lifecycle_label: "Completed"
+      description: "Road connecting International Golf Parkway to SilverLeaf Parkway."
+    ENT-RETAIL-PUBLIX-SILVERLEAF:
+      label: "SilverLeaf Publix"
+      lifecycle: "completed"
+      lifecycle_label: "Completed"
+      description: "Large Publix grocery store at 1975 SilverLeaf Parkway."
+    ENT-RETAIL-HARRIS-TEETER-SILVERLEAF:
+      label: "Harris Teeter — SilverLeaf"
+      lifecycle: "proposed"
+      lifecycle_label: "Proposed"
+      description: "Proposed supermarket in a SilverLeaf shopping center."
+    ENT-HEALTH-BAPTIST-SILVERLEAF:
+      label: "Baptist SilverLeaf Medical Campus"
+      lifecycle: "tracked"
+      lifecycle_label: "Tracked"
+      description: "Baptist Health medical campus in SilverLeaf."
+  sources:
+    sjc_utility_department:
+      name: "St. Johns County Utility Department"
+      url: "https://www.sjcfl.us/departments/utility-department/"
+      source_type: "Government / agency website"
+    sjc_county_news:
+      name: "SJC County News"
+      url: "https://www.sjcfl.us/news/"
+      source_type: "Government / agency website"
+    sjc_school_district:
+      name: "SJC School District"
+      url: "https://www.stjohns.k12.fl.us/"
+      source_type: "Government / agency website"
+    sjc_nbor_public_notices:
+      name: "SJC Neighborhood Board of Review"
+      url: "https://webapp.sjcfl.us/webnews/NBRscreend.aspx"
+      source_type: "Government / agency website"
+    st_johns_citizen:
+      name: "St. Johns Citizen"
+      url: "https://sjcitizen.com/"
+      source_type: "Local news"
+
+items:
+
+  # -------------------------------------------------------------------------
+  # 1. Water shortage (countywide impact)
+  # -------------------------------------------------------------------------
+  - public_item_id: "DEMO-SL-20260804-0001"
+    title: "Phase III Water Shortage Continues Across St. Johns County"
+    summary: >
+      The St. Johns River Water Management District's Phase III Extreme Water
+      Shortage order remains in effect, limiting when lawns can be irrigated.
+    why_it_matters: >
+      SilverLeaf households on county water follow the irrigation schedule.
+      Fines apply for watering on non-permitted days.
+    source_name: "St. Johns County Utility Department"
+    source_url: "https://www.sjcfl.us/departments/utility-department/"
+    source_date: "2026-07-28"
+    published_date: "2026-08-04"
+    relevance: "countywide_impact"
+    topic_ids: ["water_restrictions", "environment"]
+    entity_ids: []
+    place_ids: []
+    sensitivity_display: "none"
+    verification_display: "Confirmed from source"
+
+  # -------------------------------------------------------------------------
+  # 2. School construction (in SilverLeaf)
+  # -------------------------------------------------------------------------
+  - public_item_id: "DEMO-SL-20260804-0002"
+    title: "SilverLeaf K-8 School On Track for Fall Opening"
+    summary: >
+      The new K-8 school in SilverLeaf is expected to open for the 2026-2027
+      school year, adding roughly 1,500 seats for area students.
+    why_it_matters: >
+      A new school can change attendance zones and ease crowding at nearby
+      campuses, and brings more car traffic near SilverLeaf Parkway.
+    source_name: "SJC School District"
+    source_url: "https://www.stjohns.k12.fl.us/"
+    source_date: "2026-07-22"
+    published_date: "2026-08-04"
+    relevance: "in_silverleaf"
+    topic_ids: ["education", "development"]
+    entity_ids: ["ENT-EDU-SILVERLEAF-K8"]
+    place_ids: ["silverleaf"]
+    lifecycle: "under_construction"
+    lifecycle_label: "Under construction"
+    sensitivity_display: "none"
+    verification_display: "Confirmed from source"
+
+  # -------------------------------------------------------------------------
+  # 3. CR 2209 connector (in SilverLeaf / near)
+  # -------------------------------------------------------------------------
+  - public_item_id: "DEMO-SL-20260804-0003"
+    title: "CR 2209 Connector Opens Direct Route to International Golf Parkway"
+    summary: >
+      The connector between SilverLeaf Parkway and International Golf Parkway
+      opened and shortens trips toward the county's northern commercial areas.
+    why_it_matters: >
+      SilverLeaf drivers now have a direct route to International Golf
+      Parkway, reducing dependence on CR 210 for some trips.
+    source_name: "SJC County News"
+    source_url: "https://www.sjcfl.us/news/"
+    source_date: "2025-10-28"
+    published_date: "2026-08-04"
+    relevance: "in_silverleaf"
+    topic_ids: ["transportation", "infrastructure"]
+    entity_ids: ["ENT-ROAD-CR-2209-CONNECTOR"]
+    place_ids: ["silverleaf", "cr_210_corridor"]
+    lifecycle: "completed"
+    lifecycle_label: "Completed"
+    sensitivity_display: "none"
+    verification_display: "Confirmed from source"
+
+  # -------------------------------------------------------------------------
+  # 4. Development hearing (near SilverLeaf, explicit hearing date)
+  # -------------------------------------------------------------------------
+  - public_item_id: "DEMO-SL-20260804-0004"
+    title: "Public Hearing Set for Retail Center Near CR 210"
+    summary: >
+      A proposed shopping center on the CR 210 corridor will go before the
+      county's planning board for a public hearing this fall.
+    why_it_matters: >
+      The project could bring new stores and added traffic near a corridor
+      SilverLeaf residents use for groceries and commuting.
+    source_name: "SJC Neighborhood Board of Review"
+    source_url: "https://webapp.sjcfl.us/webnews/NBRscreend.aspx"
+    source_date: "2026-07-30"
+    event_date: "2026-09-15"
+    event_date_label: "Hearing date"
+    published_date: "2026-08-04"
+    relevance: "near_silverleaf"
+    topic_ids: ["development", "public_notices"]
+    entity_ids: []
+    place_ids: ["cr_210_corridor"]
+    sensitivity_display: "none"
+    verification_display: "Confirmed from source"
+
+  # -------------------------------------------------------------------------
+  # 5. Local retail opening (in SilverLeaf)
+  # -------------------------------------------------------------------------
+  - public_item_id: "DEMO-SL-20260804-0005"
+    title: "SilverLeaf Publix Marks First Big Grocery Anchor in Community"
+    summary: >
+      The large Publix at 1975 SilverLeaf Parkway is now open, giving the
+      community a full-service grocery anchor with pharmacy and prepared food.
+    why_it_matters: >
+      A full-service grocery inside SilverLeaf shortens everyday errands for
+      residents and signals continued retail growth in the community.
+    source_name: "St. Johns Citizen"
+    source_url: "https://sjcitizen.com/"
+    source_date: "2026-03-26"
+    published_date: "2026-08-04"
+    relevance: "in_silverleaf"
+    topic_ids: ["economic_development", "development"]
+    entity_ids: ["ENT-RETAIL-PUBLIX-SILVERLEAF"]
+    place_ids: ["silverleaf"]
+    lifecycle: "completed"
+    lifecycle_label: "Completed"
+    sensitivity_display: "none"
+    verification_display: "Confirmed from source"
+
+  # -------------------------------------------------------------------------
+  # 6. Railroad crossing maintenance (near SilverLeaf)
+  # -------------------------------------------------------------------------
+  - public_item_id: "DEMO-SL-20260804-0006"
+    title: "Railroad Crossing Maintenance to Temporarily Close West King Street and Kinlaw Road"
+    summary: >
+      Scheduled crossing work will temporarily close West King Street and
+      Kinlaw Road while crews maintain the railroad crossings.
+    why_it_matters: >
+      These crossings sit on routes some SilverLeaf residents use to reach
+      western St. Johns County; plan extra time or an alternate route.
+    source_name: "SJC County News"
+    source_url: "https://www.sjcfl.us/news/"
+    source_date: "2026-06-26"
+    event_date: "2026-08-14"
+    event_date_label: "Closure starts"
+    published_date: "2026-08-04"
+    relevance: "near_silverleaf"
+    topic_ids: ["transportation", "infrastructure"]
+    entity_ids: []
+    place_ids: ["sr_16_corridor"]
+    sensitivity_display: "none"
+    verification_display: "Confirmed from source"
+
+  # -------------------------------------------------------------------------
+  # 7. Proposed supermarket (in SilverLeaf, proposal + conditional wording)
+  # -------------------------------------------------------------------------
+  - public_item_id: "DEMO-SL-20260804-0007"
+    title: "Harris Teeter Proposed for SilverLeaf Shopping Center"
+    summary: >
+      A Harris Teeter supermarket is proposed for a SilverLeaf shopping
+      center, which would give the area a second major grocery option.
+    why_it_matters: >
+      More grocery competition in SilverLeaf may improve selection and
+      prices; construction has not started and timing is not confirmed.
+    source_name: "St. Johns Citizen"
+    source_url: "https://sjcitizen.com/"
+    source_date: "2026-06-18"
+    published_date: "2026-08-04"
+    relevance: "in_silverleaf"
+    topic_ids: ["economic_development", "development"]
+    entity_ids: ["ENT-RETAIL-HARRIS-TEETER-SILVERLEAF"]
+    place_ids: ["silverleaf"]
+    lifecycle: "proposed"
+    lifecycle_label: "Proposed"
+    sensitivity_display: "none"
+    verification_display: "Confirmed from source"
+
+  # -------------------------------------------------------------------------
+  # 8. Healthcare campus (in SilverLeaf)
+  # -------------------------------------------------------------------------
+  - public_item_id: "DEMO-SL-20260804-0008"
+    title: "Baptist Medical Campus in SilverLeaf Expands Offerings"
+    summary: >
+      The Baptist SilverLeaf Medical Campus is tracked by local reporting for
+      its emergency center and planned outpatient services.
+    why_it_matters: >
+      Nearby healthcare matters for SilverLeaf families and older residents;
+      watch for updates on which services open and when.
+    source_name: "St. Johns Citizen"
+    source_url: "https://sjcitizen.com/"
+    source_date: "2026-06-02"
+    published_date: "2026-08-04"
+    relevance: "in_silverleaf"
+    topic_ids: ["health_wellness"]
+    entity_ids: ["ENT-HEALTH-BAPTIST-SILVERLEAF"]
+    place_ids: ["silverleaf"]
+    lifecycle: "tracked"
+    lifecycle_label: "Tracked"
+    sensitivity_display: "none"
+    verification_display: "Confirmed from source"

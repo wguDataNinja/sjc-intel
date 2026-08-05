@@ -160,10 +160,151 @@ def main():
     req_path = os.path.join(REPO_ROOT, "requirements.txt")
     check("requirements.txt exists", os.path.exists(req_path))
 
+    # 7. Weekly task declaration manifest
+    print("\n7. Weekly Task Declaration")
+    task_path = os.path.join(REPO_ROOT, "deploy", "sjc-weekly-task.yaml")
+    task_required = [
+        "schema_version", "task_id", "enabled", "prompt_path", "runner",
+        "profile_id", "bundle_contract_version", "approved_sources",
+        "runtime_limits", "outputs", "secrets", "activation",
+    ]
+    if os.path.exists(task_path):
+        check("deploy/sjc-weekly-task.yaml exists", True)
+        try:
+            with open(task_path) as f:
+                task_data = yaml.safe_load(f)
+            check("deploy/sjc-weekly-task.yaml parses", True)
+            missing = [k for k in task_required if k not in task_data]
+            check("  required fields present", not missing, f"missing: {missing}")
+            sources = task_data.get("approved_sources", [])
+            check(f"  approved_sources ({len(sources)})", isinstance(sources, list) and bool(sources))
+            limits = task_data.get("runtime_limits", {})
+            check("  runtime limits present", "max_wallclock_minutes" in limits and "max_fetches" in limits)
+        except Exception as e:
+            check(f"deploy/sjc-weekly-task.yaml validation failed: {e}", False)
+    else:
+        check("deploy/sjc-weekly-task.yaml missing (optional)", True)
+
+    # 8. Publication-decision foundation
+    print("\n8. Publication Decision Foundation")
+    pd_schema = os.path.join(REPO_ROOT, "schemas", "publication_decision.schema.yaml")
+    check("schemas/publication_decision.schema.yaml exists", os.path.exists(pd_schema))
+    legacy_ex = os.path.join(REPO_ROOT, "data", "publication_decisions", "legacy_exceptions.yaml")
+    if os.path.exists(legacy_ex):
+        check("data/publication_decisions/legacy_exceptions.yaml exists", True)
+        try:
+            with open(legacy_ex) as f:
+                lex = yaml.safe_load(f)
+            check("legacy_exceptions.yaml parses", True)
+            exs = lex.get("legacy_exceptions", [])
+            check(f"  exceptions defined ({len(exs)})", bool(exs))
+            for e in exs:
+                if not e.get("id") or not isinstance(e.get("item_ids"), list):
+                    check(f"  exception {e.get('id', '?')} malformed", False)
+        except Exception as e:
+            check(f"legacy_exceptions.yaml validation failed: {e}", False)
+    else:
+        check("data/publication_decisions/legacy_exceptions.yaml missing (optional)", True)
+
+    # 9. SilverLeaf Brief static site + export artifacts
+    print("\n9. SilverLeaf Brief Static Site")
+    demo_fixture = os.path.join(REPO_ROOT, "site", "fixtures", "demo", "release.yaml")
+    if os.path.exists(demo_fixture):
+        try:
+            with open(demo_fixture) as f:
+                demo = yaml.safe_load(f)
+            check("site/fixtures/demo/release.yaml parses", True)
+            items = demo.get("items", [])
+            check(f"  demo fixture items: {len(items)}", bool(items))
+            if demo.get("release_metadata", {}).get("release_id", "").startswith("SJC-REL-DEMO"):
+                check("  demo release clearly labeled SJC-REL-DEMO-*", True)
+            else:
+                check("  demo release clearly labeled SJC-REL-DEMO-*", False)
+        except Exception as e:
+            check(f"demo fixture validation failed: {e}", False)
+    else:
+        check("site/fixtures/demo/release.yaml missing (optional)", True)
+
+    demo_manifest = os.path.join(REPO_ROOT, "site", "data", "demo", "release-manifest.json")
+    if os.path.exists(demo_manifest):
+        try:
+            import json, hashlib
+            with open(demo_manifest) as f:
+                m = json.load(f)
+            check("site/data/demo/release-manifest.json parses", True)
+            check(f"  demo environment tag", m.get("environment") == "demo")
+            checks_ok = all(
+                hashlib.sha256(open(os.path.join(
+                    os.path.dirname(demo_manifest), name), "rb").read()).hexdigest() == want
+                for name, want in m.get("checksums", {}).items())
+            check("  demo artifact checksums verify", checks_ok)
+        except Exception as e:
+            check(f"demo manifest validation failed: {e}", False)
+    else:
+        check("site/data/demo/release-manifest.json missing (optional)", True)
+
+    # Site pages present + no private path leakage.
+    site_root = os.path.join(REPO_ROOT, "site")
+    expected_pages = ["index.html", "browse/index.html", "about/index.html",
+                      "sources/index.html", "404.html"]
+    present = sum(1 for p in expected_pages if os.path.exists(os.path.join(site_root, p)))
+    if present:
+        check(f"  site pages present ({present}/{len(expected_pages)})",
+              present == len(expected_pages))
+        leaks = []
+        for root, _dirs, files in os.walk(site_root):
+            for name in files:
+                if not name.endswith(".html"):
+                    continue
+                text = open(os.path.join(root, name), encoding="utf-8").read()
+                if "/Users/" in text or "/home/" in text:
+                    leaks.append(os.path.relpath(os.path.join(root, name), REPO_ROOT))
+        check("  no private paths in generated pages", not leaks, str(leaks) if leaks else "")
+    else:
+        check("  site pages present", True)  # not built yet — optional
+
+    # 10. SilverLeaf scope registry
+    print("\n10. SilverLeaf Scope Registry")
+    scope_path = os.path.join(REPO_ROOT, "registry", "silverleaf_scope.yaml")
+    scope_schema = os.path.join(REPO_ROOT, "schemas", "silverleaf_scope.schema.yaml")
+    check("registry/silverleaf_scope.yaml exists", os.path.exists(scope_path))
+    check("schemas/silverleaf_scope.schema.yaml exists", os.path.exists(scope_schema))
+    if os.path.exists(scope_path):
+        try:
+            with open(scope_path) as f:
+                scope = yaml.safe_load(f)
+            check("silverleaf_scope.yaml parses", True)
+            comm_path = os.path.join(REPO_ROOT, "registry", "communities.yaml")
+            ent_path = os.path.join(REPO_ROOT, "registry", "tracked_entities.yaml")
+            with open(comm_path) as f:
+                comm = yaml.safe_load(f)
+            with open(ent_path) as f:
+                ents = yaml.safe_load(f)
+            comm_ids = {c["id"] for c in comm.get("communities", []) if c.get("id")}
+            ent_ids = {e["entity_id"] for e in ents.get("tracked_entities", []) if e.get("entity_id")}
+            nbs = scope.get("neighborhoods", [])
+            check(f"  neighborhoods registered ({len(nbs)})", bool(nbs))
+            missing_nb = [nb["id"] for nb in nbs if nb.get("id") not in comm_ids]
+            check("  all neighborhoods exist in communities.yaml", not missing_nb, str(missing_nb))
+            devs = scope.get("developments", [])
+            missing_dev = [d["id"] for d in devs if d.get("id", "").startswith("ENT-") and d["id"] not in ent_ids]
+            check(f"  developments registered ({len(devs)})", bool(devs))
+            check("  all ENT-* developments exist in tracked_entities.yaml", not missing_dev, str(missing_dev))
+            # Run the standalone validator for the full check surface.
+            import subprocess
+            sub = subprocess.run(
+                [sys.executable, os.path.join(REPO_ROOT, "scripts", "validate_silverleaf_scope.py")],
+                capture_output=True, text=True)
+            check("  validate_silverleaf_scope.py passes", sub.returncode == 0,
+                  sub.stdout.strip().splitlines()[-1] if sub.stdout else sub.stderr[:120])
+        except Exception as e:
+            check(f"silverleaf scope validation failed: {e}", False)
+    else:
+        check("silverleaf_scope.yaml missing (optional)", True)
+
     print(f"\n{'=' * 50}")
     print(f"Result: {'ALL PASSED' if exit_code == 0 else f'{exit_code} FAILURES'}")
     sys.exit(exit_code)
-
 
 if __name__ == "__main__":
     main()
