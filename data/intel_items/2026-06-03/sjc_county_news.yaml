@@ -221,8 +221,8 @@ items:
     url: https://www.sjcfl.us/phase-iii-extreme-water-shortage-declaration-may-2026/
     additional_sources:
     - https://www.sjrwmd.com/
-  review_status: verified
-  reviewer_notes: Phase III Extreme Water Shortage - active, ongoing. Correct classification.
-    Human review not required (official county notice).
+  review_status: duplicate
+  reviewer_notes: Phase III water shortage already captured as SJC-UTIL-20260603-0001
+    on utility dept page. Keeping both is correct - different sources.
   created_at: '2026-06-03T04:15:00Z'
   updated_at: '2026-06-03T04:15:00Z'

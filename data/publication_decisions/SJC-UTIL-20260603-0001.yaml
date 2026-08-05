@@ -1,0 +1,38 @@
+# =============================================================================
+# SJC_Intel — Publication Decision
+# =============================================================================
+# Explicit human decision per docs/publication_release_contract.md.
+# Never marks an item published; release membership is a separate act.
+# =============================================================================
+
+schema_version: '1.0'
+item_id: SJC-UTIL-20260603-0001
+publication_status: approved
+reviewer: Buddy
+decision_timestamp: '2026-08-05T03:05:21Z'
+rationale: Ongoing Phase III water shortage materially affects SilverLeaf households
+  (irrigation rules); verified still active Aug 2026; medium sensitivity approved
+  editorially by Buddy.
+origin_review_status: verified
+silverleaf_relevance:
+  decision: included
+  rationale: 'Countywide-material impact: irrigation rules change local household
+    conditions.'
+  place_ids: []
+  entity_ids: []
+release_eligible: true
+source_attribution_confirmed: true
+withdrawn: false
+withdrawal_reason: null
+superseded_by: null
+relevance: countywide_impact
+public_summary_override: 'The Phase III Extreme Water Shortage remains in effect:
+  outdoor irrigation is limited to one day per week and is prohibited 8 a.m.-6 p.m.
+  Reclaimed-water irrigation is not included in the schedule.'
+history:
+- status: approved
+  reviewer: Buddy
+  timestamp: '2026-08-05T03:05:21Z'
+  rationale: Ongoing Phase III water shortage materially affects SilverLeaf households
+    (irrigation rules); verified still active Aug 2026; medium sensitivity approved
+    editorially by Buddy.

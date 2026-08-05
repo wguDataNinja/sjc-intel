@@ -1,0 +1,34 @@
+# =============================================================================
+# SJC_Intel — Publication Decision
+# =============================================================================
+# Explicit human decision per docs/publication_release_contract.md.
+# Never marks an item published; release membership is a separate act.
+# =============================================================================
+
+schema_version: '1.0'
+item_id: SJC-UTIL-20260603-0005
+publication_status: approved
+reviewer: Buddy
+decision_timestamp: '2026-08-05T03:05:21Z'
+rationale: EPA service-line inventory affects all county utility customers incl. SilverLeaf.
+origin_review_status: verified
+silverleaf_relevance:
+  decision: included
+  rationale: Countywide utility material impact.
+  place_ids: []
+  entity_ids: []
+release_eligible: true
+source_attribution_confirmed: true
+withdrawn: false
+withdrawal_reason: null
+superseded_by: null
+relevance: countywide_impact
+public_summary_override: The county utility is inventorying water service line materials
+  under the EPA Community Lead-Safe Hub program. Customers may be contacted to allow
+  an inspection of the pipe from the street to the home.
+history:
+- status: approved
+  reviewer: Buddy
+  timestamp: '2026-08-05T03:05:21Z'
+  rationale: EPA service-line inventory affects all county utility customers incl.
+    SilverLeaf.

@@ -8,9 +8,9 @@ items:
     candidate_id: "CAND-20260706-0001"
     run_id: "SRCH-20260706-0001"
     title: "Man charged in connection with SilverLeaf murder case faces ICE detainer"
-    summary: "St. Johns Citizen reports that a man charged in connection with the SilverLeaf murder case faces an ICE detainer. Article URL not resolved during discovery; content and claims not yet verified."
+    summary: "St. Johns Citizen reports that a man charged in connection with the SilverLeaf murder case faces an ICE detainer. URL verified 2026-08-02: article exists (actual title: 'Man charged in Silverleaf shooting case has ICE detainer')."
     source_id: "st_johns_citizen"
-    source_url: "https://sjcitizen.com/man-charged-in-connection-with-silverleaf-murder-case-faces-ice-detainer/"
+    source_url: "https://sjcitizen.com/man-charged-in-silverleaf-murder-case-faces-ice-detainer/"
     source_published_at: null
     discovered_at: "2026-07-06T21:15:00Z"
     discovered_by: "sjc-intel-architect"
@@ -21,7 +21,7 @@ items:
       - silverleaf
     geographic_scope: "single_community"
     urgency: "timely"
-    verification_status: "unverified"
+    verification_status: "source_confirmed"
     sensitivity: "high"
     recommended_channels:
       - "website_review_queue"
@@ -29,14 +29,16 @@ items:
     citation:
       source_name: "St. Johns Citizen"
       source_type: "local_media"
-      accessed_at: "2026-07-06T21:15:00Z"
-      url: "https://sjcitizen.com/man-charged-in-connection-with-silverleaf-murder-case-faces-ice-detainer/"
+      accessed_at: "2026-08-02T15:10:00Z"
+      url: "https://sjcitizen.com/man-charged-in-silverleaf-murder-case-faces-ice-detainer/"
     match_class: "probable"
     evidence:
       - field: "search_result_title"
         excerpt: "Man charged in connection with SilverLeaf murder case faces ICE detainer"
       - field: "relationship"
         excerpt: "Likely follow-up to existing SJC-SJSO-20260603-0004 (double murder arrest). Involves ICE detainer — new information."
+      - field: "url_verified"
+        excerpt: "2026-08-02: HTTP 200, title 'Man charged in Silverleaf shooting case has ICE detainer'. Slug differs from discovery title ('murder case' vs 'shooting case') but ICE detainer + Silverleaf confirmed in content."
     duplicate_of: null
     profile_id: "sl_core"
     review_status: "pending_review"
@@ -58,9 +60,9 @@ items:
     candidate_id: "CAND-20260706-0002"
     run_id: "SRCH-20260706-0001"
     title: "Man Charged with Shooting Three at SilverLeaf Construction Site, Killing One, Identified by Police"
-    summary: "St. Johns Citizen reports that a man has been charged with shooting three people at a SilverLeaf construction site, killing one, and has been identified by police. Article URL not resolved during discovery; details not yet verified."
+    summary: "St. Johns Citizen reports that a man has been charged with shooting three people at a SilverLeaf construction site, killing one, and has been identified by police. URL verified 2026-08-02: article exists (title matches)."
     source_id: "st_johns_citizen"
-    source_url: "https://sjcitizen.com/man-charged-with-shooting-three-at-silverleaf-construction-site-killing-one-identified-by-police/"
+    source_url: "https://sjcitizen.com/man-accused-of-shooting-three-at-silverleaf-construction-site-killing-one-identified-by-police/"
     source_published_at: null
     discovered_at: "2026-07-06T21:15:00Z"
     discovered_by: "sjc-intel-architect"
@@ -71,7 +73,7 @@ items:
       - silverleaf
     geographic_scope: "single_community"
     urgency: "timely"
-    verification_status: "unverified"
+    verification_status: "source_confirmed"
     sensitivity: "high"
     recommended_channels:
       - "website_review_queue"
@@ -79,12 +81,14 @@ items:
     citation:
       source_name: "St. Johns Citizen"
       source_type: "local_media"
-      accessed_at: "2026-07-06T21:15:00Z"
-      url: "https://sjcitizen.com/man-charged-with-shooting-three-at-silverleaf-construction-site-killing-one-identified-by-police/"
+      accessed_at: "2026-08-02T15:10:00Z"
+      url: "https://sjcitizen.com/man-accused-of-shooting-three-at-silverleaf-construction-site-killing-one-identified-by-police/"
     match_class: "exact"
     evidence:
       - field: "search_result_title"
         excerpt: "Man Charged with Shooting Three at SilverLeaf Construction Site, Killing One, Identified by Police"
+      - field: "url_verified"
+        excerpt: "2026-08-02: HTTP 200, title matches discovery exactly ('Man Charged with Shooting Three at SilverLeaf Construction Site, Killing One, Identified by Police'). Slug changed: 'charged' -> 'accused'."
     duplicate_of: null
     profile_id: "sl_core"
     review_status: "pending_review"
@@ -152,9 +156,9 @@ items:
     candidate_id: "CAND-20260706-0004"
     run_id: "SRCH-20260706-0001"
     title: "Officials give update on 6-year-old airlifted out of Silverleaf amenities center over the weekend"
-    summary: "St. Johns Citizen reports that officials gave an update on a 6-year-old who was airlifted out of the Silverleaf amenities center over the weekend. Article URL not resolved during discovery; details not yet verified."
+    summary: "St. Johns Citizen reports that officials gave an update on a 6-year-old who was airlifted out of the Silverleaf amenities center over the weekend. URL verified 2026-08-02: article exists (title matches)."
     source_id: "st_johns_citizen"
-    source_url: "https://sjcitizen.com/officials-give-update-on-6-year-old-airlifted-out-of-silverleaf-amenities-center/"
+    source_url: "https://sjcitizen.com/officials-give-update-on-6-year-old-airlifted-out-of-silverleaf-amenities-center-over-the-weekend/"
     source_published_at: null
     discovered_at: "2026-07-06T21:15:00Z"
     discovered_by: "sjc-intel-architect"
@@ -165,7 +169,7 @@ items:
       - silverleaf
     geographic_scope: "single_community"
     urgency: "timely"
-    verification_status: "unverified"
+    verification_status: "source_confirmed"
     sensitivity: "high"
     recommended_channels:
       - "website_review_queue"
@@ -173,12 +177,14 @@ items:
     citation:
       source_name: "St. Johns Citizen"
       source_type: "local_media"
-      accessed_at: "2026-07-06T21:15:00Z"
-      url: "https://sjcitizen.com/officials-give-update-on-6-year-old-airlifted-out-of-silverleaf-amenities-center/"
+      accessed_at: "2026-08-02T15:10:00Z"
+      url: "https://sjcitizen.com/officials-give-update-on-6-year-old-airlifted-out-of-silverleaf-amenities-center-over-the-weekend/"
     match_class: "exact"
     evidence:
       - field: "search_result_title"
         excerpt: "Officials give update on 6-year-old airlifted out of Silverleaf amenities center over the weekend"
+      - field: "url_verified"
+        excerpt: "2026-08-02: HTTP 200, title matches; content confirms near-drowning at Silverleaf amenities center, 6-year-old airlifted. Original slug 301-redirects to '-over-the-weekend' suffix."
     duplicate_of: null
     profile_id: "sl_core"
     review_status: "pending_review"

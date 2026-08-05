@@ -11,9 +11,9 @@ monitor_cycle:
 items:
 - item_id: SJC-CN-20260802-0001
   title: County Road 16A Closures and Detours for Next Two Weekends
-  summary: 'County Road 16A closures and detours scheduled for the next two weekends
+  summary: County Road 16A closures and detours scheduled for the next two weekends
     (three July/August weekends per URL slug). Travelers should expect detours during
-    the announced closure periods.'
+    the announced closure periods.
   source_id: sjc_county_news
   source_url: https://www.sjcfl.us/county-road-16a-closures-detours-three-july-august-weekends/
   source_published_at: '2026-07-20T17:00:00Z'
@@ -31,7 +31,7 @@ items:
   recommended_channels:
   - website_review_queue
   - weekly_brief_candidate
-  review_status: pending_review
+  review_status: verified
   primary_topic: transportation
   interest_tags:
   - quality_of_life
@@ -43,11 +43,14 @@ items:
     - commuters
     why_it_matters: County Road 16A closures and detours over consecutive weekends
       affect local travel.
+  reviewer_notes: 'Editorial review: CR 16A is a SilverLeaf access road; closures
+    verified against county page Aug 4 2026'
 - item_id: SJC-CN-20260802-0002
-  title: Daily's Withdraws Comprehensive Plan Amendment Application from August 4 BCC Agenda
-  summary: "Daily's has withdrawn its comprehensive plan amendment application from
+  title: Daily's Withdraws Comprehensive Plan Amendment Application from August 4
+    BCC Agenda
+  summary: Daily's has withdrawn its comprehensive plan amendment application from
     the August 4 BCC agenda. The item will not be considered at the upcoming Board
-    of County Commissioners meeting."
+    of County Commissioners meeting.
   source_id: sjc_county_news
   source_url: https://www.sjcfl.us/dailys-withdraws-comp-plan-amendment-application-august-4-bcc-agenda/
   source_published_at: '2026-07-31T20:16:36Z'
@@ -79,8 +82,8 @@ items:
       BCC agenda.
 - item_id: SJC-CN-20260802-0003
   title: S.E.A. Community Help Resource Center Opens to Serve Rural St. Johns County
-  summary: 'S.E.A. Community Help Resource Center opens to serve rural St. Johns
-    County. New resource center providing community help services to rural residents.'
+  summary: S.E.A. Community Help Resource Center opens to serve rural St. Johns County.
+    New resource center providing community help services to rural residents.
   source_id: sjc_county_news
   source_url: https://www.sjcfl.us/sea-community-help-resource-center-opens-to-serve-rural-sjc/
   source_published_at: '2026-07-31T16:32:16Z'
@@ -113,8 +116,8 @@ items:
       County residents.
 - item_id: SJC-CN-20260802-0004
   title: Clerk's Office Expands Public Access with New Service Center
-  summary: 'Clerk''s Office expands public access with a new service center. The
-    new center increases public access to Clerk of Court services.'
+  summary: Clerk's Office expands public access with a new service center. The new
+    center increases public access to Clerk of Court services.
   source_id: sjc_county_news
   source_url: https://www.sjcfl.us/clerks-office-new-service-center-2026/
   source_published_at: '2026-07-29T12:33:31Z'

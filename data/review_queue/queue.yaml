@@ -2,7 +2,7 @@
 # SJC_Intel — Editorial Review Queue
 # =============================================================================
 # Flat queue of all intel_items requiring or eligible for review.
-# Generated: 2026-08-03T06:04:50Z
+# Generated: 2026-08-05T03:09:40Z
 # Total entries: 167
 # =============================================================================
 
@@ -843,9 +843,9 @@ queue:
   source_id: silverleaf_discovery
   source_file: data/intel_items/2026-07-06/agentic_search_results.yaml
   title: Man charged in connection with SilverLeaf murder case faces ICE detainer
-  summary: St. Johns Citizen reports that a man charged in connection with the SilverLeaf
-    murder case faces an ICE detainer. Article URL not resolved during discovery;
-    content and claims not yet verified.
+  summary: 'St. Johns Citizen reports that a man charged in connection with the SilverLeaf
+    murder case faces an ICE detainer. URL verified 2026-08-02: article exists (actual
+    title: ''Man charged in Silverleaf shooting case has ICE detainer'').'
   beat: crime
   topics:
   - crime
@@ -867,7 +867,7 @@ queue:
     ENT-COMM-SILVERLEAF: explicit
   review_status: pending_review
   human_review_required: true
-  source_url: https://sjcitizen.com/man-charged-in-connection-with-silverleaf-murder-case-faces-ice-detainer/
+  source_url: https://sjcitizen.com/man-charged-in-silverleaf-murder-case-faces-ice-detainer/
   discovered_at: '2026-07-06T21:15:00Z'
   meeting_date: null
   agenda_item_number: null
@@ -882,9 +882,9 @@ queue:
   source_file: data/intel_items/2026-07-06/agentic_search_results.yaml
   title: Man Charged with Shooting Three at SilverLeaf Construction Site, Killing
     One, Identified by Police
-  summary: St. Johns Citizen reports that a man has been charged with shooting three
+  summary: 'St. Johns Citizen reports that a man has been charged with shooting three
     people at a SilverLeaf construction site, killing one, and has been identified
-    by police. Article URL not resolved during discovery; details not yet verified.
+    by police. URL verified 2026-08-02: article exists (title matches).'
   beat: crime
   topics:
   - crime
@@ -907,7 +907,7 @@ queue:
     ENT-COMM-SILVERLEAF: explicit
   review_status: pending_review
   human_review_required: true
-  source_url: https://sjcitizen.com/man-charged-with-shooting-three-at-silverleaf-construction-site-killing-one-identified-by-police/
+  source_url: https://sjcitizen.com/man-accused-of-shooting-three-at-silverleaf-construction-site-killing-one-identified-by-police/
   discovered_at: '2026-07-06T21:15:00Z'
   meeting_date: null
   agenda_item_number: null
@@ -962,9 +962,9 @@ queue:
   source_file: data/intel_items/2026-07-06/agentic_search_results.yaml
   title: Officials give update on 6-year-old airlifted out of Silverleaf amenities
     center over the weekend
-  summary: St. Johns Citizen reports that officials gave an update on a 6-year-old
-    who was airlifted out of the Silverleaf amenities center over the weekend. Article
-    URL not resolved during discovery; details not yet verified.
+  summary: 'St. Johns Citizen reports that officials gave an update on a 6-year-old
+    who was airlifted out of the Silverleaf amenities center over the weekend. URL
+    verified 2026-08-02: article exists (title matches).'
   beat: public_safety
   topics:
   - public_safety
@@ -987,7 +987,7 @@ queue:
     ENT-COMM-SILVERLEAF: explicit
   review_status: pending_review
   human_review_required: true
-  source_url: https://sjcitizen.com/officials-give-update-on-6-year-old-airlifted-out-of-silverleaf-amenities-center/
+  source_url: https://sjcitizen.com/officials-give-update-on-6-year-old-airlifted-out-of-silverleaf-amenities-center-over-the-weekend/
   discovered_at: '2026-07-06T21:15:00Z'
   meeting_date: null
   agenda_item_number: null
@@ -1208,7 +1208,7 @@ queue:
   tracked_entity_ids: []
   matched_entities: []
   entity_match_basis: {}
-  review_status: verified
+  review_status: duplicate
   human_review_required: false
   source_url: https://www.sjcfl.us/phase-iii-extreme-water-shortage-declaration-may-2026/
   discovered_at: '2026-06-03T04:00:00Z'
@@ -1217,8 +1217,10 @@ queue:
   application_id: null
   reviewer: ''
   review_notes: Phase III Extreme Water Shortage - active, ongoing. Correct classification.
-    Human review not required (official county notice).
-  reviewed_at: '2026-06-26T08:32:52Z'
+    Human review not required (official county notice).; Phase III water shortage
+    already captured as SJC-UTIL-20260603-0001 on utility dept page. Keeping both
+    is correct - different sources.
+  reviewed_at: '2026-08-04T21:02:26Z'
 - queue_id: Q-SJC-UTIL-20260603-0001
   item_id: SJC-UTIL-20260603-0001
   dedupe_key: ''
@@ -2717,7 +2719,7 @@ queue:
   tracked_entity_ids: []
   matched_entities: []
   entity_match_basis: {}
-  review_status: pending_review
+  review_status: verified
   human_review_required: false
   source_url: https://www.sjcfl.us/county-road-16a-closures-detours-three-july-august-weekends/
   discovered_at: '2026-08-02T14:55:00Z'
@@ -2725,8 +2727,9 @@ queue:
   agenda_item_number: null
   application_id: null
   reviewer: ''
-  review_notes: ''
-  reviewed_at: ''
+  review_notes: 'Editorial review: CR 16A is a SilverLeaf access road; closures verified
+    against county page Aug 4 2026'
+  reviewed_at: '2026-08-05T03:05:12Z'
 - queue_id: Q-SJC-CN-20260802-0002
   item_id: SJC-CN-20260802-0002
   dedupe_key: ''
