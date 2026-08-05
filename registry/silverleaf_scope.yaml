@@ -1,0 +1,354 @@
+# =============================================================================
+# SJC_Intel — SilverLeaf Scope Registry (launch-ready minimum)
+# =============================================================================
+# Defensible, non-GIS public-relevance model for SilverLeaf publication
+# (ROADMAP.md §3B-G1). This is the authoritative reference for whether an
+# intel item is "in SilverLeaf", "near SilverLeaf", or a "countywide-material"
+# item that affects SilverLeaf residents.
+#
+# Provenance vocabulary (per task 18 §4):
+#   verified        = confirmed from an authoritative registry/record present
+#                     in this repository
+#   inferred        = reasoned from repo evidence; needs confirmation, not a
+#                     boundary/GIS claim
+#   editorial-policy= a proposed rule for Buddy/GPT to approve (no repository
+#                     record asserts it yet)
+#   needs-review    = requires a human decision before use in publication
+#
+# This registry does NOT define precise boundaries, polygons, coordinates, or
+# mileage. It names stable IDs, roles, and evidence. PostGIS is not required.
+#
+# Schema version: 1.0
+# Status: active
+# Last updated: 2026-08-04
+# Updated by: sjc-intel-architect (Task 18)
+# Authority: docs/planning/SILVERLEAF_SCOPE_DECISION_PACKET_20260804.md
+# =============================================================================
+
+schema_version: "1.0"
+status: active
+last_updated: "2026-08-04"
+product: "SilverLeaf Brief"
+
+# -----------------------------------------------------------------------------
+# Canonical identity
+# -----------------------------------------------------------------------------
+community:
+  id: silverleaf
+  canonical_name: "SilverLeaf"
+  aliases:
+    - name: "Silver Leaf"
+      verification: verified
+      evidence_source: "registry/communities.yaml + registry/tracked_entities.yaml (ENT-COMM-SILVERLEAF)"
+    - name: "Silverleaf"
+      note: "lowercase-l spelling is the registered commercial spelling (Silverleaf Commons/Market); treated as an alias of the community for matching"
+      verification: verified
+      evidence_source: "registry/tracked_entities.yaml"
+  parent_area: northwest_st_johns
+  parent_verification: verified
+  name_notes: >
+    Master-planned community in northwestern St. Johns County near the Duval
+    County line. Includes residential, commercial, education, and road
+    development tracked in this repository.
+  evidence_source: "registry/communities.yaml; registry/tracked_entities.yaml ENT-COMM-SILVERLEAF"
+
+# -----------------------------------------------------------------------------
+# Neighborhoods (from SilverLeaf official resident directory)
+# -----------------------------------------------------------------------------
+neighborhoods:
+  - id: sl_brandon_lakes
+    name: "Brandon Lakes"
+    verification: verified
+    evidence_source: "registry/communities.yaml (SilverLeaf official resident directory, 2026-07)"
+  - id: sl_brook_forest
+    name: "Brook Forest"
+    verification: verified
+    evidence_source: "registry/communities.yaml (SilverLeaf official resident directory, 2026-07)"
+  - id: sl_elm_creek
+    name: "Elm Creek"
+    verification: verified
+    evidence_source: "registry/communities.yaml (SilverLeaf official resident directory, 2026-07)"
+  - id: sl_holly_forest
+    name: "Holly Forest"
+    verification: verified
+    evidence_source: "registry/communities.yaml (SilverLeaf official resident directory, 2026-07)"
+  - id: sl_johns_island
+    name: "Johns Island"
+    verification: verified
+    evidence_source: "registry/communities.yaml (SilverLeaf official resident directory, 2026-07)"
+  - id: sl_newbrook
+    name: "Newbrook"
+    verification: verified
+    evidence_source: "registry/communities.yaml (SilverLeaf official resident directory, 2026-07)"
+  - id: sl_silver_falls
+    name: "Silver Falls"
+    verification: verified
+    evidence_source: "registry/communities.yaml (SilverLeaf official resident directory, 2026-07)"
+  - id: sl_silver_landing
+    name: "Silver Landing"
+    verification: verified
+    evidence_source: "registry/communities.yaml (SilverLeaf official resident directory, 2026-07)"
+  - id: sl_silver_meadows
+    name: "Silver Meadows"
+    verification: verified
+    evidence_source: "registry/communities.yaml (SilverLeaf official resident directory, 2026-07)"
+  - id: sl_silverleaf_village
+    name: "SilverLeaf Village"
+    verification: verified
+    evidence_source: "registry/communities.yaml (SilverLeaf official resident directory, 2026-07)"
+  - id: sl_waterford_lakes
+    name: "Waterford Lakes"
+    verification: verified
+    evidence_source: "registry/communities.yaml (SilverLeaf official resident directory, 2026-07)"
+  - id: cherry_elm
+    name: "Cherry Elm"
+    note: "resident-mentioned; may overlap a directory-confirmed neighborhood"
+    verification: needs-review
+    evidence_source: "registry/communities.yaml"
+
+# -----------------------------------------------------------------------------
+# Roads
+# -----------------------------------------------------------------------------
+roads:
+  direct_serving:
+    - id: silverleaf_parkway
+      name: "SilverLeaf Parkway"
+      role: primary_internal_road
+      verification: verified
+      evidence_source: "registry/communities.yaml; registry/tracked_entities.yaml (1975 SilverLeaf Parkway)"
+    - id: cr_16a
+      name: "CR 16A"
+      role: direct_access_road
+      verification: verified
+      evidence_source: "county road notice SJC-CN-20260802-0001 (CR 16A closures); tracked_entities grocery center at CR 16A & SilverLeaf Parkway"
+    - id: st_johns_parkway_cr_2209
+      name: "St. Johns Parkway / CR 2209 connector"
+      role: direct_access_road
+      entity_id: ENT-ROAD-CR-2209-CONNECTOR
+      verification: verified
+      evidence_source: "registry/tracked_entities.yaml ENT-ROAD-CR-2209-CONNECTOR (opened Oct 2025)"
+    - id: international_golf_parkway
+      name: "International Golf Parkway"
+      role: direct_access_road
+      verification: inferred
+      evidence_source: "registry/tracked_entities.yaml ENT-ROAD-CR-2209-CONNECTOR (connector endpoint)"
+  adjacent_corridors:
+    - id: cr_210_corridor
+      name: "CR 210 Corridor"
+      role: materially_adjacent_corridor
+      verification: verified
+      evidence_source: "registry/communities.yaml"
+    - id: sr_16_corridor
+      name: "SR 16 Corridor"
+      role: materially_adjacent_corridor
+      verification: verified
+      evidence_source: "registry/communities.yaml"
+    - id: us_1_corridor
+      name: "US 1 Corridor"
+      role: materially_adjacent_corridor
+      verification: editorial-policy
+      evidence_source: "proposed adjacency; countywide arterial (no SL-specific evidence yet)"
+  boundary_notes: "No official boundary or street map is registered yet (DIR-001/009); do not claim precise limits."
+
+# -----------------------------------------------------------------------------
+# Schools
+# -----------------------------------------------------------------------------
+schools:
+  - id: ENT-EDU-SILVERLEAF-K8
+    name: "SilverLeaf K-8 School"
+    status: under_construction
+    entity_id: ENT-EDU-SILVERLEAF-K8
+    verification: verified
+    attendance_zone: needs-review
+    attendance_zone_note: "official zone map not yet registered (DIR-010)"
+    evidence_source: "registry/tracked_entities.yaml ENT-EDU-SILVERLEAF-K8"
+  - id: tocoi_creek_high
+    name: "Tocoi Creek High School"
+    status: serving_school_likely
+    verification: inferred
+    evidence_source: "CR 2209 connector evidence (registry/tracked_entities.yaml ENT-ROAD-CR-2209-CONNECTOR); attendance zone not confirmed"
+  - id: sjc_school_district
+    name: "St. Johns County School District"
+    status: district_authority
+    verification: verified
+    evidence_source: "registry/sources.yaml sjc_school_district"
+
+# -----------------------------------------------------------------------------
+# Utilities
+# -----------------------------------------------------------------------------
+utilities:
+  - id: sjc_utility_department
+    name: "St. Johns County Utility Department"
+    provider_of: [potable_water, sewer, reclaimed_water]
+    verification: verified
+    evidence_source: "registry/sources.yaml sjc_utility_department; countywide water notices affect all customers incl. SilverLeaf"
+  - id: ENT-INFRA-SR-207-WRF
+    name: "SR 207 Water Reclamation Facility Phase 2"
+    role: regional_capacity
+    verification: inferred
+    evidence_source: "registry/tracked_entities.yaml ENT-INFRA-SR-207-WRF (CR 210 / SR 207 corridor capacity)"
+
+# -----------------------------------------------------------------------------
+# Tracked developments
+# -----------------------------------------------------------------------------
+developments:
+  - id: ENT-RETAIL-PUBLIX-SILVERLEAF
+    name: "SilverLeaf Mega Publix"
+    status: completed
+    verification: verified
+    evidence_source: "registry/tracked_entities.yaml"
+  - id: ENT-RETAIL-SILVERLEAF-COMMONS
+    name: "Silverleaf Commons"
+    status: tracked
+    verification: verified
+    evidence_source: "registry/tracked_entities.yaml"
+  - id: ENT-RETAIL-SILVERLEAF-MARKET
+    name: "Silverleaf Market"
+    status: tracked
+    verification: verified
+    evidence_source: "registry/tracked_entities.yaml"
+  - id: ENT-RETAIL-HARRIS-TEETER-SILVERLEAF
+    name: "Harris Teeter — SilverLeaf"
+    status: proposed
+    verification: verified
+    evidence_source: "registry/tracked_entities.yaml (local-media sourced, proposed)"
+  - id: ENT-RETAIL-CR16A-SL-PKWY-GROCERY
+    name: "CR 16A and SilverLeaf Parkway Grocery Center"
+    status: proposed
+    verification: needs-review
+    evidence_source: "registry/tracked_entities.yaml (provisional identity)"
+  - id: ENT-RETAIL-SHOPS-ST-JOHNS-PKWY
+    name: "Shoppes of St. Johns Parkway"
+    status: tracked
+    relation: adjacent
+    verification: verified
+    evidence_source: "registry/tracked_entities.yaml (adjacent, outside boundary)"
+  - id: ENT-REC-BEACH-VALLEY-MINI-GOLF
+    name: "Beach Valley Mini Golf"
+    status: proposed
+    verification: verified
+    evidence_source: "registry/tracked_entities.yaml"
+
+# -----------------------------------------------------------------------------
+# Community businesses and services
+# -----------------------------------------------------------------------------
+businesses_services:
+  - id: balas_pizza
+    name: "Bala's Pizza — second location"
+    status: opening_likely
+    verification: needs-review
+    evidence_source: "SJC-SL-20260706-0005 (local media; URL 404 — needs source check)"
+  - id: jersey_mikes
+    name: "Jersey Mike's Subs"
+    status: tracked
+    verification: verified
+    evidence_source: "registry/tracked_entities.yaml (tenant of Silverleaf Commons)"
+  - id: ENT-HEALTH-BAPTIST-SILVERLEAF
+    name: "Baptist SilverLeaf Medical Campus"
+    status: tracked
+    verification: verified
+    evidence_source: "registry/tracked_entities.yaml"
+  - id: ENT-HEALTH-ASCENSION-NOCATEE
+    name: "Ascension St. Vincent's — Nocatee"
+    status: proposed
+    relation: adjacent_only
+    verification: verified
+    evidence_source: "registry/tracked_entities.yaml (Nocatee; adjacent-only per exclusion rule)"
+
+# -----------------------------------------------------------------------------
+# Relevance rules (direct / nearby / countywide-material)
+# -----------------------------------------------------------------------------
+relevance:
+  direct:
+    - id: in_silverleaf
+      label: "In SilverLeaf"
+      rule: >
+        Item is inside SilverLeaf or a registered SilverLeaf neighborhood, or
+        directly affects a SilverLeaf school, development, business, service,
+        or access road (SilverLeaf Parkway, CR 16A, CR 2209 connector, IGP).
+      verification: editorial-policy
+  nearby:
+    - id: near_silverleaf
+      label: "Near SilverLeaf"
+      rule: >
+        Item affects a materially adjacent corridor (CR 210, SR 16, US 1) or
+        an adjacent commercial/health center that SilverLeaf residents use,
+        without being inside the community.
+      verification: editorial-policy
+  countywide_material:
+    - id: countywide_impact
+      label: "Countywide impact"
+      rule: >
+        Countywide item may be published only when it materially affects
+        SilverLeaf residents: utility service continuity, water restrictions,
+        countywide tax/land decisions that change local conditions, or
+        public-safety conditions. Pure civic items (auctions, library promos,
+        awards) are excluded by default.
+      verification: editorial-policy
+
+# -----------------------------------------------------------------------------
+# Inclusion / exclusion rules
+# -----------------------------------------------------------------------------
+inclusion_rules:
+  - id: INC-01
+    rule: "Item is inside the SilverLeaf boundary or a registered SilverLeaf neighborhood."
+    verification: editorial-policy
+  - id: INC-02
+    rule: "Item affects a school serving SilverLeaf (SilverLeaf K-8; Tocoi Creek HS while inferred)."
+    verification: editorial-policy
+  - id: INC-03
+    rule: "Item affects a major access/commute route (SilverLeaf Parkway, CR 16A, St. Johns Parkway/CR 2209, CR 210, SR 16, IGP)."
+    verification: editorial-policy
+  - id: INC-04
+    rule: "Item changes nearby shopping, healthcare, parks, or services that SilverLeaf residents use."
+    verification: editorial-policy
+  - id: INC-05
+    rule: "Item affects taxes, utilities, zoning, or emergency conditions for SilverLeaf residents."
+    verification: editorial-policy
+  - id: INC-06
+    rule: "Notable local achievement involving SilverLeaf residents."
+    verification: editorial-policy
+
+exclusion_rules:
+  - id: EXC-01
+    rule: "Somewhere in St. Johns County is NOT sufficient (product-direction rule, 2026-07-06)."
+    verification: editorial-policy
+  - id: EXC-02
+    rule: "Nocatee-only items (crossover only for corridor/shared infrastructure)."
+    verification: editorial-policy
+  - id: EXC-03
+    rule: "RiverTown-only items."
+    verification: editorial-policy
+  - id: EXC-04
+    rule: "Beachwalk-only items unless CR 210 impact."
+    verification: editorial-policy
+  - id: EXC-05
+    rule: "Countywide items with no SilverLeaf household/commute/school impact."
+    verification: editorial-policy
+  - id: EXC-06
+    rule: "Crime/public-safety items unless explicit editorial approval."
+    verification: editorial-policy
+  - id: EXC-07
+    rule: "Items whose relevance depends on unverified local-media claims."
+    verification: editorial-policy
+
+# -----------------------------------------------------------------------------
+# Needs-review cases (decisions required before inclusion)
+# -----------------------------------------------------------------------------
+needs_review:
+  - id: SJC-SL-20260706-0001
+    note: "ICE detainer, high sensitivity; crime/legal — exclude unless explicitly approved."
+  - id: SJC-SL-20260706-0002
+    note: "Construction-site shooting, high sensitivity; crime — exclude."
+  - id: SJC-SL-20260706-0004
+    note: "Airlifted minor, high sensitivity; minors — exclude."
+  - id: SJC-SL-20260706-0003
+    note: "Lightning strike, low sensitivity; needs URL/date verification (unverified)."
+  - id: SJC-SL-20260706-0005
+    note: "Bala's second location, low sensitivity; needs URL/location verification."
+  - id: cherry_elm
+    note: "Neighborhood may overlap a directory-confirmed neighborhood."
+  - id: ENT-RETAIL-CR16A-SL-PKWY-GROCERY
+    note: "Provisional center identity; formal name not verified."
+  - id: tocoi_creek_high
+    note: "Serving-school status inferred; attendance zone authority missing (DIR-010)."

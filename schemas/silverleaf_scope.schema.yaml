@@ -1,0 +1,149 @@
+# =============================================================================
+# SJC_Intel — SilverLeaf Scope Registry Schema
+# =============================================================================
+# Field-level reference for registry/silverleaf_scope.yaml (ROADMAP.md §3B-G1,
+# task 18 §4). This is a documentation reference consumed by
+# scripts/validate.py §10 and the test suite (tests/test_silverleaf_scope.py);
+# the tools validate the critical fields.
+#
+# Schema version: 1.0
+# =============================================================================
+
+schema_version:
+  type: string
+  required: true
+
+status:
+  type: enum
+  required: true
+  allowed: [active, proposed, superseded]
+
+last_updated:
+  type: string (ISO 8601)
+  required: true
+
+community:
+  type: object
+  required: true
+  fields:
+    id: {type: string, required: true}
+    canonical_name: {type: string, required: true}
+    aliases: {type: array, items: {type: object}}
+    parent_area: {type: string, required: true}
+    parent_verification: {type: enum, allowed: [verified, inferred, editorial-policy, needs-review]}
+
+# A provenance enum shared by every scoped element.
+# provenance: verified | inferred | editorial-policy | needs-review
+PROVENANCE:
+  type: enum
+  allowed: [verified, inferred, editorial-policy, needs-review]
+  description: >
+    verified = confirmed from an authoritative registry/record in this repo;
+    inferred = reasoned from repo evidence (needs confirmation; not a GIS
+    claim); editorial-policy = proposed rule for Buddy/GPT approval;
+    needs-review = requires a human decision before publication use.
+
+neighborhoods:
+  type: array
+  required: true
+  items:
+    fields:
+      id: {type: string, required: true}     # matches a community id in communities.yaml (sl_* / cherry_elm)
+      name: {type: string, required: true}
+      verification: {type: PROVENANCE, required: true}
+      evidence_source: {type: string}
+
+roads:
+  type: object
+  required: true
+  fields:
+    direct_serving:
+      type: array
+      items:
+        fields:
+          id: {type: string, required: true}
+          name: {type: string, required: true}
+          role: {type: string, required: true}
+          entity_id: {type: string}          # optional link to tracked_entities.yaml
+          verification: {type: PROVENANCE, required: true}
+          evidence_source: {type: string}
+    adjacent_corridors:
+      type: array
+      items:
+        fields:
+          id: {type: string, required: true}  # matches a corridor community id where possible
+          name: {type: string, required: true}
+          role: {type: string, required: true}
+          verification: {type: PROVENANCE, required: true}
+
+schools:
+  type: array
+  items:
+    fields:
+      id: {type: string, required: true}
+      name: {type: string, required: true}
+      status: {type: string}
+      entity_id: {type: string}              # optional link to tracked_entities.yaml
+      verification: {type: PROVENANCE, required: true}
+      attendance_zone: {type: PROVENANCE}    # needs-review until DIR-010
+
+utilities:
+  type: array
+  items:
+    fields:
+      id: {type: string, required: true}
+      name: {type: string, required: true}
+      provider_of: {type: array, items: {type: string}}
+      verification: {type: PROVENANCE, required: true}
+
+developments:
+  type: array
+  items:
+    fields:
+      id: {type: string, required: true}     # matches a tracked entity id where applicable
+      name: {type: string, required: true}
+      status: {type: string}
+      relation: {type: string}               # e.g. adjacent
+      verification: {type: PROVENANCE, required: true}
+
+businesses_services:
+  type: array
+  items:
+    fields:
+      id: {type: string, required: true}
+      name: {type: string, required: true}
+      status: {type: string}
+      relation: {type: string}
+      verification: {type: PROVENANCE, required: true}
+
+relevance:
+  type: object
+  required: true
+  fields:
+    direct:     {type: array, items: {fields: {id, label, rule, verification}}}
+    nearby:     {type: array, items: {fields: {id, label, rule, verification}}}
+    countywide_material: {type: array, items: {fields: {id, label, rule, verification}}}
+
+inclusion_rules:
+  type: array
+  items: {fields: {id, rule, verification}}
+
+exclusion_rules:
+  type: array
+  items: {fields: {id, rule, verification}}
+
+needs_review:
+  type: array
+  items:
+    fields:
+      id: {type: string, required: true}
+      note: {type: string}
+
+# Cross-reference invariants (enforced by validate.py §10 and tests):
+# - every neighborhood.id must exist in registry/communities.yaml;
+# - every developments[].id must exist in registry/tracked_entities.yaml when
+#   it is a tracked-entity-style id (ENT-*);
+# - every entity_id link in roads/schools must exist in tracked_entities.yaml;
+# - relevance.direct ids must be in {in_silverleaf}; nearby in
+#   {near_silverleaf}; countywide_material in {countywide_impact};
+# - verification values must be in the PROVENANCE set.
