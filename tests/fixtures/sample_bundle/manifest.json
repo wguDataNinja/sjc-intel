@@ -1,0 +1,64 @@
+{
+  "bundle_schema_version": "1.0",
+  "run_id": "SJC-WK-20260803-0001",
+  "producing_git_sha": "1be2ade",
+  "producing_task_or_profile": "sjc-weekly-001",
+  "source_registry_revision": "1be2ade",
+  "window_start": "2026-08-03T10:00:00Z",
+  "window_end": "2026-08-03T11:00:00Z",
+  "retention_deadline": "2026-08-17T11:00:00Z",
+  "run_status": "completed",
+  "included_files": [
+    {
+      "path": "intel_candidates/sjc_county_news.json",
+      "size_bytes": 960,
+      "sha256": "ab4e896f86ae3d1c97273fffb2721f9bd6586d7a019a87c76c9c903efa0ce6f3"
+    },
+    {
+      "path": "logs/run.log",
+      "size_bytes": 112,
+      "sha256": "3e8370cc613ae295d72bc9affb74ee5298c928e9d55bcaff5b1e2259f05244ae"
+    },
+    {
+      "path": "run.json",
+      "size_bytes": 829,
+      "sha256": "f8f637ba51f8c56c079e8fcdb68f760a664fad602ac55cb1f15e88510ddec63c"
+    },
+    {
+      "path": "source_events/sjc_county_news.json",
+      "size_bytes": 260,
+      "sha256": "3dbfe2cbaa32f587390e31d300e0ab868fd77bfde89b7bef9a76b0ca13fe6412"
+    },
+    {
+      "path": "source_health/sjc_county_news.json",
+      "size_bytes": 184,
+      "sha256": "5d7adcb4cff56867c204776769cb47014202fa3a3d2ca5fd337552e54c324731"
+    },
+    {
+      "path": "source_proposals/proposals.json",
+      "size_bytes": 663,
+      "sha256": "37fdb931c6b2f0a65c552a16c8cec5d4c11d2e99a7d1572b36be3b3ad11ab7e9"
+    }
+  ],
+  "bundle_total_bytes": 3008,
+  "candidate_counts": {
+    "by_source": {
+      "sjc_county_news": {
+        "new": 1,
+        "duplicate": 0,
+        "partial": 0,
+        "failed": 0
+      }
+    },
+    "new": 1,
+    "duplicate": 0,
+    "partial": 0,
+    "failed": 0
+  },
+  "failure_counts": {
+    "total": 0,
+    "by_source": {},
+    "by_reason": {}
+  },
+  "replay_identity": "1.0::SJC-WK-20260803-0001::1be2ade::1be2ade"
+}

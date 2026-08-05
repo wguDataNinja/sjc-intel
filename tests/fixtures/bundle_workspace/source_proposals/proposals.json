@@ -1,0 +1,19 @@
+{
+  "source_proposals": [
+    {
+      "proposal_id": "PROP-county-0001",
+      "source_name": "Example Proposed Source",
+      "url": "https://example.org/public/",
+      "source_family": "county_government",
+      "authority_level": "official",
+      "discovered_through": "sl_core profile",
+      "evidence": "Linked from the county news page.",
+      "relevance_rationale": "Covers county public notices not yet monitored.",
+      "geographic_relevance": ["countywide"],
+      "coverage_gap_addressed": "county_government public notices",
+      "recommended_disposition": "propose",
+      "confidence": "medium",
+      "review_status": "candidate"
+    }
+  ]
+}

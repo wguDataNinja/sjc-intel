@@ -1,0 +1,9 @@
+{
+  "source_id": "sjc_county_news",
+  "checked_at": "2026-08-03T10:05:00Z",
+  "http_status": 200,
+  "latency_ms": 340,
+  "health": "accessible",
+  "retries": 0,
+  "last_error": null
+}

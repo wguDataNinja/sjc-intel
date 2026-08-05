@@ -1,0 +1,19 @@
+{
+  "receipt_schema_version": "1.0",
+  "receipt_id": "RCP-SJC-WK-20260803-0001",
+  "bundle_id": "SJC-WK-20260803-0001",
+  "run_id": "SJC-WK-20260803-0001",
+  "checksum_set_identity": "8948c443abb2e2899feb0f2953f813d5c0baa32ab41a13e1a156642c232108bf",
+  "bundle_sha256": "8948c443abb2e2899feb0f2953f813d5c0baa32ab41a13e1a156642c232108bf",
+  "imported_at": "2026-08-03T23:27:05Z",
+  "importer_git_sha": "1be2ade",
+  "files_accepted": 6,
+  "candidate_counts": 0,
+  "proposal_counts": 1,
+  "duplicate_counts": 0,
+  "rejected_counts": 0,
+  "validation_result": "PASS",
+  "staging_location": "data/incoming/SJC-WK-20260803-0001",
+  "acknowledgment_eligible": true,
+  "status": "acknowledged"
+}

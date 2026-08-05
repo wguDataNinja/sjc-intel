@@ -1,0 +1,162 @@
+# =============================================================================
+# SJC_Intel — Source Proposal Schema
+# =============================================================================
+# A source proposal is the Stage B discovery output of the weekly run. It is a
+# candidate for a future source decision ONLY. It can never promote itself
+# into registry/sources.yaml.
+#
+# Authority boundary (docs/weekly_operational_contract.md §5):
+#   discovered proposal ≠ approved source candidate
+#   approved source candidate ≠ canonical source
+#
+# Contract authority: docs/weekly_operational_contract.md §4.1
+# Schema version: 1.0
+# Last updated: 2026-08-03 (Task 13)
+# =============================================================================
+
+proposal_id:
+  type: string
+  description: "PROP-{source_family}-{NNNN} stable within the run."
+  required: true
+  example: "PROP-public_safety-0001"
+
+run_id:
+  type: string
+  description: "Run that produced this proposal (SJC-WK-...)."
+  required: true
+  example: "SJC-WK-20260803-0001"
+
+discovered_at:
+  type: string
+  description: "When the proposal was created (ISO 8601 UTC)."
+  required: true
+
+source_name:
+  type: string
+  description: "Human-readable proposed source name."
+  required: true
+
+url:
+  type: string
+  description: "Proposed public URL."
+  required: true
+
+feed_type:
+  type: string
+  description: "RSS 2.0, Atom, XML, JSON, HTML listing, or other. Null if not a feed."
+  required: false
+  example: "RSS 2.0"
+
+current_source_relationship:
+  type: string
+  description: >
+    How this relates to existing canonical sources:
+    new_source, alias, replacement_endpoint, monitor_update, duplicate,
+    or other (explain in notes).
+  required: false
+  example: "replacement_endpoint"
+
+source_family:
+  type: string
+  description: "From docs/taxonomy.md source families."
+  required: true
+  example: "public_safety"
+
+authority_level:
+  type: string
+  description: "official / local_media / community / other."
+  required: true
+  allowed: [official, local_media, community, other]
+
+geographic_relevance:
+  type: array<string>
+  description: "Communities/geography affected."
+  required: false
+  example: ["countywide"]
+
+coverage_gap_addressed:
+  type: string
+  description: "Which beat/geography gap this fills."
+  required: true
+
+evidence:
+  type: string
+  description: "Excerpts/links supporting relevance."
+  required: true
+
+technical_issue:
+  type: string
+  description: "SSL/TLS or feed issue observed, if any. Null when none."
+  required: false
+  example: "None — HTTP 200, valid RSS 2.0 XML."
+
+discovered_through:
+  type: string
+  description: "Search profile, query, and/or discovery loop."
+  required: true
+  example: "Daily cadence catch-up session 2 (2026-08-02); run log"
+
+relevance_rationale:
+  type: string
+  description: "Why residents care, tied to homeowner beats."
+  required: true
+
+recommended_disposition:
+  type: string
+  description: "propose / propose_as_new / propose_as_alias / replacement_endpoint / monitor_update / defer / reject."
+  required: true
+
+confidence:
+  type: string
+  allowed: [high, medium, low]
+  required: true
+
+review_status:
+  type: string
+  description: "candidate until a human decision; never promoted automatically."
+  required: true
+  example: "candidate"
+
+human_review_status:
+  type: string
+  description: "pending_review / under_review / decided / deferred."
+  required: false
+  example: "pending_review"
+
+next_verification_step:
+  type: string
+  description: "Concrete next evidence step before any source change."
+  required: false
+  example: "Register /feed/ as check_url in monitor_config; confirm items parse as discrete intel items for 4 weeks."
+
+notes:
+  type: string
+  required: false
+
+# --- YAML example (bundle source_proposals/proposals.json) ---
+# {
+#   "source_proposals": [
+#     {
+#       "proposal_id": "PROP-public_safety-0001",
+#       "run_id": "SJC-WK-20260803-0001",
+#       "discovered_at": "2026-08-03T23:19:48Z",
+#       "source_name": "SJSO News RSS feed",
+#       "url": "https://www.sjso.org/feed/",
+#       "feed_type": "RSS 2.0",
+#       "current_source_relationship": "replacement_endpoint",
+#       "source_family": "public_safety",
+#       "authority_level": "official",
+#       "geographic_relevance": ["countywide"],
+#       "coverage_gap_addressed": "single-fetch daily SJSO captures",
+#       "evidence": "...",
+#       "technical_issue": "None — HTTP 200, valid RSS 2.0 XML.",
+#       "discovered_through": "...",
+#       "relevance_rationale": "...",
+#       "recommended_disposition": "monitor_update",
+#       "confidence": "high",
+#       "review_status": "candidate",
+#       "human_review_status": "pending_review",
+#       "next_verification_step": "..."
+#     }
+#   ]
+# }

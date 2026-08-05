@@ -1,0 +1,77 @@
+# =============================================================================
+# SJC_Intel — Weekly Hermes/Runner Task Declaration
+# =============================================================================
+# Repository-side declaration of the bounded weekly operational task. Ivy
+# admission/review converts this into a systemd service + timer (disabled until
+# the §3E/§3F activation gates pass). Hermes (VPS assistant) reads and
+# coordinates; the run itself executes deterministically via
+# scripts/run_weekly.py — no model provider is required for Stage A.
+#
+# Contract authority: docs/weekly_operational_contract.md
+# Task prompt: prompts/sjc_weekly_ops_task.md
+# Schema version: 1.0
+# Last updated: 2026-08-03 (Task 14)
+# =============================================================================
+
+schema_version: "1.0"
+task_id: "sjc-weekly-001"
+enabled: false
+
+prompt_path: "prompts/sjc_weekly_ops_task.md"
+runner: "python3 scripts/run_weekly.py"
+profile_id: "sjc-weekly-001"
+
+bundle_contract_version: "1.0"
+
+approved_sources:
+  - "sjc_nbor_public_notices"   # deterministic script; two-source pilot anchor
+  - "sjso_news_stories"         # verified RSS 2.0 feed (PROP-public_safety-0001)
+  # - "sjc_county_news"         # pilot-passed; prompt-led (no script yet)
+
+discovery:
+  profile: "sl_core"
+  proposals_only: true
+
+runtime_limits:
+  max_wallclock_minutes: 120
+  max_fetches: 120
+  retry_ceiling: 2
+  max_candidates_per_source: 50
+  token_budget: null              # no model provider needed for Stage A
+  stop_on: [
+    "lock contention",
+    "protected-path write attempt",
+    "automatic promotion or publish",
+    "unexpected network egress",
+    "disk above 90%"
+  ]
+
+workspace:
+  root: "/home/scraper/data/sjc-intel/workspace"
+  layout: "runtime/weekly/{run_id}"   # mirror of the local convention
+
+outputs:
+  bundle_root: "/home/scraper/data/sjc-intel/bundles"
+  run_record: "run.json"
+  health: "/home/scraper/data/sjc-intel/health/sjc_intel.health.json"
+  logs: "/home/scraper/data/sjc-intel/logs"
+
+secrets:
+  required: []                    # public HTTP GET only; no credentials
+
+schedule_recommendation:
+  cadence: "weekly"
+  preferred_utc_window: "Wed 01:30-03:00 UTC"
+  rationale: "Staggers clear of WGU-Reddit ~07:00 UTC timer and backup timers; verified against current workload overlap"
+  randomized_delay_seconds: 900
+
+transfer:
+  bundle_root_out: "/home/scraper/data/sjc-intel/bundles/{run_id}"
+  mac_pull: "scp -r scraper@ih-market-vps:<bundle>/ data/incoming/"
+  mac_import: "python3 scripts/import_weekly_bundle.py data/incoming/{run_id}"
+  receipt_mirror: "/home/scraper/data/sjc-intel/ack"
+  prune_eligible_after: "verified receipt + retention_deadline (default 14d)"
+
+activation:
+  required_gates: ["§3E-G1 admission", "§3E-G2 four shadow runs", "§3F seven-day healthy window"]
+  timer_state: "disabled"

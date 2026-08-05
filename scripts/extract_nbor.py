@@ -283,6 +283,91 @@ def normalize_records(records, source="sjc_nbor_public_notices", source_event_id
 
 # ── Output ───────────────────────────────────────────────────────────────
 
+def candidate_items(items):
+    """Normalize intel_item-shaped records into bundle candidates.
+
+    Candidates are marked status/review_status = candidate (never verified,
+    never pending_review-as-accepted). outcome defaults to no_match because
+    extract_nbor does not itself dedupe; authoritative dedupe happens at
+    import/acceptance time on the Mac.
+    """
+    out = []
+    for it in items:
+        c = dict(it)
+        c["status"] = "candidate"
+        c["review_status"] = "candidate"
+        c["outcome"] = c.get("outcome", "no_match")
+        out.append(c)
+    return out
+
+
+def write_workspace_output(workspace, items, html, records, event_id=None):
+    """Write candidates/events/health/raw into an isolated run workspace.
+
+    Never writes data/intel_items/, data/source_events/, tests/fixtures/, or
+    any other corpus path. This is the workspace-safe execution mode for the
+    weekly runner and remote-style runs.
+    """
+    import os
+
+    source_id = "sjc_nbor_public_notices"
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+    intel_dir = os.path.join(workspace, "intel_candidates")
+    ev_dir = os.path.join(workspace, "source_events")
+    health_dir = os.path.join(workspace, "source_health")
+    raw_dir = os.path.join(workspace, "raw")
+    for d in (intel_dir, ev_dir, health_dir, raw_dir):
+        os.makedirs(d, exist_ok=True)
+
+    cands = candidate_items(items)
+    output = {
+        "source_id": source_id,
+        "fetched_at": now,
+        "source_url": NBOR_URL,
+        "total_items": len(cands),
+        "items": cands,
+    }
+    with open(os.path.join(intel_dir, f"{source_id}.json"), "w") as f:
+        json.dump(output, f, indent=2, sort_keys=False)
+        f.write("\n")
+
+    event = {
+        "source_id": source_id,
+        "event_id": event_id,
+        "event_type": "public_notice_snapshot",
+        "source_url": NBOR_URL,
+        "status": "extracted",
+        "extraction_status": f"{len(cands)} candidates extracted to workspace.",
+        "source_health": "accessible",
+        "generated_at": now,
+    }
+    with open(os.path.join(ev_dir, f"{source_id}.json"), "w") as f:
+        json.dump(event, f, indent=2, sort_keys=False)
+        f.write("\n")
+
+    health = {
+        "source_id": source_id,
+        "checked_at": now,
+        "http_status": 200 if html else None,
+        "bytes": len(html) if html else 0,
+        "health": "accessible" if html else "no_fetch",
+        "retries": 0,
+        "last_error": None,
+    }
+    with open(os.path.join(health_dir, f"{source_id}.json"), "w") as f:
+        json.dump(health, f, indent=2, sort_keys=False)
+        f.write("\n")
+
+    if html is not None:
+        raw_path = os.path.join(raw_dir, f"{source_id}.html")
+        with open(raw_path, "w") as f:
+            f.write(html)
+
+    print(f"Workspace output written to {workspace}")
+    print(f"  candidates: {len(cands)}  event: {event_id}")
+
+
 def write_source_event(records, items, output_date, event_id, fetched_at):
     """Build and write a source_event record for this NBOR fetch."""
     import os
@@ -381,10 +466,24 @@ def main():
     print("NBOR Extractor for SJC_Intel")
     print("=" * 50)
 
+    import argparse
+    parser = argparse.ArgumentParser(description="NBOR extractor (corpus or workspace mode).")
+    parser.add_argument("--workspace", default=None,
+                        help="Isolated run workspace dir. When set, writes candidates/events/"
+                             "health/raw there and never touches the authoritative corpus.")
+    parser.add_argument("--offline-html", default=None,
+                        help="Read HTML from this file instead of fetching (offline/test mode).")
+    args = parser.parse_args()
+
     # Fetch
     print("\n1. Fetching NBOR page...")
-    html = fetch_page()
-    print(f"   Fetched {len(html)} bytes")
+    if args.offline_html:
+        with open(args.offline_html) as f:
+            html = f.read()
+        print(f"   Read {len(html)} bytes from offline file")
+    else:
+        html = fetch_page()
+        print(f"   Fetched {len(html)} bytes")
 
     # Parse
     print("\n2. Parsing HTML rows...")
@@ -410,6 +509,11 @@ def main():
     print("\n3. Normalizing to intel_item schema...")
     items = normalize_records(records, source_event_id=event_id)
     print(f"   Generated {len(items)} normalized items")
+
+    if args.workspace:
+        write_workspace_output(args.workspace, items, html, records, event_id=event_id)
+        print("\nWorkspace mode: authoritative corpus paths untouched.")
+        return items, records
 
     # Show sample
     if items:

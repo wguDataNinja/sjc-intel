@@ -1,0 +1,107 @@
+# =============================================================================
+# SJC_Intel — Bundle Manifest Schema
+# =============================================================================
+# Authoritative field-level spec for bundle manifest.json files produced by
+# the weekly VPS operational run. Enforced by scripts/bundle_verify.py and
+# scripts/bundle_import.py.
+#
+# Contract authority: docs/weekly_operational_contract.md §7
+# Bundle schema version: 1.0
+# Last updated: 2026-08-03
+# =============================================================================
+
+bundle_schema_version: "1.0"
+
+manifest_fields:
+  bundle_schema_version:
+    type: string
+    required: true
+    description: "Must equal the bundle schema version this manifest is built for."
+  run_id:
+    type: string
+    required: true
+    pattern: "^SJC-WK-[0-9]{8}-[0-9]{4}$"
+    description: "Unique run identifier. Used for idempotent import and duplicate-bundle detection."
+  producing_git_sha:
+    type: string
+    required: true
+    description: "Pinned repository SHA executed (deployment payload revision)."
+  producing_task_or_profile:
+    type: string
+    required: true
+    description: "Hermes weekly task ID or run profile identifier."
+  source_registry_revision:
+    type: string
+    required: true
+    description: "Registry pin — Git SHA of the pinned checkout used for sources.yaml etc."
+  window_start:
+    type: string
+    required: true
+    description: "Run time window start (ISO 8601 UTC)."
+  window_end:
+    type: string
+    required: true
+    description: "Run time window end (ISO 8601 UTC)."
+  retention_deadline:
+    type: string
+    required: true
+    description: "ISO 8601 UTC deadline before which the bundle is never pruned. Default window_end + 14 days. Prune also requires a verified receipt (contract §7.7)."
+  run_status:
+    type: string
+    required: true
+    enum: ["completed", "completed_partial", "failed", "aborted"]
+    description: "completed, completed_partial, failed, or aborted."
+  included_files:
+    type: array
+    required: true
+    description: "Every file in the bundle except manifest.json and checksums.sha256."
+    item_fields:
+      path: { type: string, required: true }
+      size_bytes: { type: integer, required: true }
+      sha256: { type: string, required: true, pattern: "^[0-9a-f]{64}$" }
+  bundle_total_bytes:
+    type: integer
+    required: true
+    description: "Sum of included_files size_bytes — byte-bounds evidence for Ivy admission."
+  candidate_counts:
+    type: object
+    required: true
+    description: "Per-source counts of new/duplicate/partial/failed candidates."
+  failure_counts:
+    type: object
+    required: true
+    description: "failure_counts.total (int), failure_counts.by_source (object), failure_counts.by_reason (object)."
+  replay_identity:
+    type: string
+    required: true
+    pattern: "^1\\.0::[^:]+::[0-9a-f]{7,40}::.+$"
+    description: "Deterministic identity: {bundle_schema_version}::{run_id}::{producing_git_sha}::{source_registry_revision}."
+
+checksums:
+  algorithm: "sha256"
+  file: "checksums.sha256"
+  format: "<64-hex-hash>  <relative-path>"
+  covers: "all included files plus manifest.json; never itself"
+  sorting: "by relative path"
+
+run_json_fields:
+  run_id: { type: string, required: true }
+  run_status: { type: string, required: true }
+  started_at: { type: string, required: true }
+  ended_at: { type: string, required: true }
+  window_start: { type: string, required: true }
+  window_end: { type: string, required: true }
+  retention_deadline: { type: string, required: true }
+  profile_id: { type: string, required: true }
+  replay_identity: { type: string, required: true }
+  failure_summary: { type: object, required: true }
+
+file_layout:
+  manifest.json: "authoritative index + metadata"
+  checksums.sha256: "sha256 checksums for all included files plus manifest.json"
+  run.json: "run record (see run_json_fields)"
+  source_health/: "{source_id}.json per monitored source"
+  source_events/: "{source_id}.json per monitored source"
+  intel_candidates/: "{source_id}.json per monitored source"
+  source_proposals/: "proposals.json (may be an empty array)"
+  logs/: "run.log (bounded structured log)"

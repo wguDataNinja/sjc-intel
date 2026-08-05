@@ -1,0 +1,9 @@
+{
+  "source_id": "sjc_county_news",
+  "event_id": "EVT-CN-20260803-0001",
+  "event_type": "page_snapshot",
+  "source_url": "https://www.sjcfl.us/news/",
+  "status": "extracted",
+  "extraction_status": "1 candidate extracted",
+  "source_health": "accessible"
+}

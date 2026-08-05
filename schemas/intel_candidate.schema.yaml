@@ -1,0 +1,205 @@
+# =============================================================================
+# SJC_Intel — Intelligence Candidate Schema
+# =============================================================================
+# A bundle intelligence candidate is a normalized finding produced by the
+# weekly VPS/Hermes Stage A run BEFORE human acceptance. It is distinct from
+# an accepted corpus intel_item (schemas/intel_item.schema.yaml).
+#
+# Authority boundary (docs/weekly_operational_contract.md §5):
+#   incoming intelligence candidate ≠ accepted corpus item
+#   accepted corpus item ≠ verified item
+#   verified item ≠ published item
+#
+# Contract authority: docs/weekly_operational_contract.md §3.2
+# Schema version: 1.0
+# Last updated: 2026-08-03 (Task 13)
+# =============================================================================
+
+candidate_status:
+  type: string
+  description: >
+    Status of the candidate in the intake lifecycle.
+    staged:   verified and staged into data/incoming/{run_id}/ but not decided.
+    pending:  awaiting a human decision (same as staged, recorded on decision).
+    accepted: human-approved for import into the corpus review pipeline.
+    rejected: human-rejected; evidence retained for audit, no corpus record.
+    deferred: human-deferred pending follow-up; evidence retained.
+  allowed: [staged, pending, accepted, rejected, deferred]
+  required: false
+  example: "staged"
+
+item_id:
+  type: string
+  description: >
+    Candidate id in intel_item format: SJC-{source_prefix}-{YYYYMMDD}-{NNNN}.
+    The SAME id is reused as the corpus item_id on acceptance so provenance
+    is stable. It does NOT imply review or publication status.
+  required: true
+  example: "SJC-NBOR-20260803-0001"
+
+outcome:
+  type: string
+  description: >
+    Stage A dedupe outcome vs prior dedupe state shipped to the run.
+    no_match:   not seen before — emitted as a candidate.
+    duplicate:  matched prior state — still emitted for audit but not new.
+    partial:    partially extracted (missing field) — emitted with the
+                missing field null and this flag.
+    failed:     extraction failed — recorded in failure summary, no candidate
+                emitted for the record itself.
+  allowed: [duplicate, no_match, partial, failed]
+  required: false
+  example: "no_match"
+
+title:
+  type: string
+  required: true
+  description: Headline or title of the candidate.
+
+summary:
+  type: string
+  required: true
+  description: One-to-three-sentence factual summary.
+
+source_id:
+  type: string
+  required: true
+  description: Canonical source_id from registry/sources.yaml (or proposed
+    source_id for proposed sources). Must match the intel_candidates file name
+    source_id.
+
+source_url:
+  type: string
+  required: true
+  description: Original URL of the item on the source.
+
+source_published_at:
+  type: string
+  required: false
+  description: Source publication timestamp (ISO 8601 UTC), null if absent.
+
+discovered_at:
+  type: string
+  required: true
+  description: When the candidate was first detected (ISO 8601 UTC).
+
+raw_excerpt:
+  type: string
+  required: true
+  description: Bounded verbatim excerpt (first paragraph / key sentence).
+
+# --- Classification (controlled vocabularies from docs/taxonomy.md) ---
+
+topics:
+  type: array<string>
+  required: true
+  description: 1+ topic from docs/taxonomy.md.
+
+geographic_scope:
+  type: string
+  required: true
+  allowed: [county_wide, multi_community, single_community, neighborhood, address_specific]
+
+urgency:
+  type: string
+  required: true
+  allowed: [urgent, timely, ongoing, archival]
+
+verification_status:
+  type: string
+  required: true
+  allowed: [unverified, source_confirmed, cross_referenced, fact_checked, disputed]
+
+sensitivity:
+  type: string
+  required: true
+  allowed: [low, medium, high]
+
+communities:
+  type: array<string>
+  required: false
+
+primary_topic:
+  type: string
+  required: false
+
+interest_tags:
+  type: array<string>
+  required: false
+
+human_review_required:
+  type: boolean
+  required: true
+  description: True for crime/safety/legal/minors/controversy. Never resolved
+    by the run; flagged for human review.
+
+# --- Authority / provenance ---
+
+status:
+  type: string
+  required: true
+  description: Must be "candidate" (see candidate_status for the intake
+    lifecycle field). A candidate is NEVER verified, approved, or published.
+
+review_status:
+  type: string
+  required: true
+  description: Must be "candidate" until a human decides otherwise. Accepted
+    corpus records are re-tagged with "pending_review" on import.
+
+_origin_run_id:
+  type: string
+  required: false
+  description: Run ID that produced the candidate (SJC-WK-...).
+
+_origin_bundle_id:
+  type: string
+  required: false
+  description: Bundle/run replay identity the candidate came from.
+
+_import_decision:
+  type: string
+  required: false
+  allowed: [accept, reject, defer]
+  description: Set only by the human acceptance command.
+
+_imported_at:
+  type: string
+  required: false
+  description: Set only when accepted into the corpus.
+
+_reviewer:
+  type: string
+  required: false
+  description: Human reviewer identity for the decision.
+
+_dedupe_key:
+  type: string
+  required: false
+  description: Deterministic 16-char hex dedupe fingerprint (if the run shipped one).
+
+# --- YAML example (bundle intel_candidates/{source_id}.json) ---
+# {
+#   "source_id": "sjc_nbor_public_notices",
+#   "total_items": 1,
+#   "items": [
+#     {
+#       "item_id": "SJC-NBOR-20260803-0001",
+#       "title": "...",
+#       "summary": "...",
+#       "source_id": "sjc_nbor_public_notices",
+#       "source_url": "https://...",
+#       "outcome": "no_match",
+#       "status": "candidate",
+#       "review_status": "candidate",
+#       "topics": ["transportation"],
+#       "geographic_scope": "county_wide",
+#       "urgency": "ongoing",
+#       "verification_status": "source_confirmed",
+#       "sensitivity": "low",
+#       "raw_excerpt": "...",
+#       "human_review_required": false,
+#       "_origin_run_id": "SJC-WK-20260803-0001"
+#     }
+#   ]
+# }

@@ -1,0 +1,28 @@
+{
+  "source_id": "sjc_county_news",
+  "total_items": 1,
+  "items": [
+    {
+      "item_id": "SJC-CN-20260803-0001",
+      "title": "County Road 16A Closure Test Item",
+      "summary": "County Road 16A will close for two weekends for resurfacing.",
+      "source_id": "sjc_county_news",
+      "source_url": "https://www.sjcfl.us/test-item/",
+      "source_published_at": "2026-07-20T17:00:00Z",
+      "discovered_at": "2026-08-03T10:05:00Z",
+      "outcome": "no_match",
+      "status": "candidate",
+      "review_status": "candidate",
+      "topics": ["transportation"],
+      "geographic_scope": "county_wide",
+      "urgency": "timely",
+      "verification_status": "source_confirmed",
+      "sensitivity": "low",
+      "communities": [],
+      "primary_topic": "transportation",
+      "interest_tags": ["traffic_impact"],
+      "raw_excerpt": "County Road 16A will close for two weekends for resurfacing.",
+      "human_review_required": false
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "started_at": "2026-08-03T10:00:00Z",
+  "ended_at": "2026-08-03T23:26:12Z",
+  "profile_id": "sjc-weekly-001",
+  "failure_summary": {
+    "total": 0,
+    "by_source": {},
+    "by_reason": {}
+  },
+  "run_id": "SJC-WK-20260803-0001",
+  "run_status": "completed",
+  "window_start": "2026-08-03T10:00:00Z",
+  "window_end": "2026-08-03T11:00:00Z",
+  "retention_deadline": "2026-08-17T11:00:00Z",
+  "replay_identity": "1.0::SJC-WK-20260803-0001::1be2ade::1be2ade",
+  "candidate_counts": {
+    "by_source": {
+      "sjc_county_news": {
+        "new": 1,
+        "duplicate": 0,
+        "partial": 0,
+        "failed": 0
+      }
+    },
+    "new": 1,
+    "duplicate": 0,
+    "partial": 0,
+    "failed": 0
+  },
+  "producing_git_sha": "1be2ade",
+  "producing_task_or_profile": "sjc-weekly-001",
+  "source_registry_revision": "1be2ade"
+}
