@@ -134,8 +134,11 @@ Home must contain, in order:
 
 Trust statement (exact copy):
 
-> Human-reviewed summaries with links to original sources. Not an official
-> county or emergency-alert service.
+> Reviewed summaries with direct links to public sources.
+
+Footer disclaimer (exact copy):
+
+> Not an official government or emergency-alert service.
 
 **Ordering:** render items in the deterministic order supplied by the release
 artifact. Do **not** silently reorder by source date, topic, relevance,
@@ -161,6 +164,24 @@ Every item card must show:
 * Original source action.
 
 Limit visible metadata. Do **not** display every topic, entity, or place.
+
+### 6.1 v0 resident topic categories
+
+The public interface exposes only a small set of resident-facing topic
+categories — never raw taxonomy ids, slugs, or underscore-separated strings.
+The `display_topic` field on each release item is one of:
+
+| id | Label |
+|----|-------|
+| `roads_traffic` | Roads & Traffic |
+| `utilities_water` | Utilities & Water |
+| `emergency_preparedness` | Emergency Preparedness |
+| `schools_community` | Schools & Community |
+| `local_business` | Local Business |
+
+A release shows only the categories present in its items. Any taxonomy value
+without a resident-facing label is a release-validation failure, not a display
+concern.
 
 ## 7. Search and filters (Browse)
 
@@ -206,12 +227,12 @@ Search:
 
 ## 8. Trust language
 
-Public label: **Reviewed**
+Public label: **Reviewed** (a link to the About definition on every card)
 
 Detail explanation (exact copy):
 
-> A human reviewed this summary against the linked source for clarity,
-> relevance, and attribution before publication.
+> Each summary is reviewed against the linked source for clarity, relevance,
+> and attribution before publication.
 
 Do **not** say: *independently verified*, *verified truth*, *AI verified*,
 *official*, *guaranteed accurate*.

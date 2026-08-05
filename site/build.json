@@ -1,9 +1,9 @@
 {
   "environment": "real",
-  "generated_at": "2026-08-05T03:22:37Z",
+  "generated_at": "2026-08-05T12:20:22Z",
   "item_count": 4,
   "out_dir": "/Users/buddy/projects/sjc_intel/site",
   "release_id": "SJC-REL-2026-08-001",
-  "route_count": 17,
+  "route_count": 13,
   "source": "/Users/buddy/projects/sjc_intel/site/data/releases/SJC-REL-2026-08-001"
 }

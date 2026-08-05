@@ -51,8 +51,9 @@ class TestRouteGeneration:
         for pid in release["items"]:
             required.append(f"item/{pid['public_item_id']}/index.html")
         for it in release["items"]:
-            for t in it.get("topic_ids") or []:
-                required.append(f"topic/{t}/index.html")
+            dt = it.get("display_topic")
+            if dt:
+                required.append(f"topic/{dt}/index.html")
             for p in it.get("place_ids") or []:
                 required.append(f"place/{p}/index.html")
             for e in it.get("entity_ids") or []:
@@ -121,14 +122,14 @@ class TestSearchLogic:
 
     def test_or_within_dimension_and_across_dimensions(self):
         release, entries = self._entries()
-        # topic OR (within topic dimension)
-        st = site_search.parse_query("?topic=environment,water_restrictions")
+        # topic OR (within the v0 display-topic dimension)
+        st = site_search.parse_query("?topic=utilities_water,roads_traffic")
         results = site_search.search_and_filter(release["items"], entries, st)
         ids = [it["public_item_id"] for it in results]
-        assert "DEMO-SL-20260804-0001" in ids  # water + environment
+        assert "DEMO-SL-20260804-0001" in ids  # water -> utilities_water
         # entity filter AND with topic
         st2 = site_search.parse_query(
-            "?topic=education&entity=ENT-EDU-SILVERLEAF-K8")
+            "?topic=schools_community&entity=ENT-EDU-SILVERLEAF-K8")
         r2 = site_search.search_and_filter(release["items"], entries, st2)
         assert [it["public_item_id"] for it in r2] == ["DEMO-SL-20260804-0002"]
 
@@ -174,7 +175,7 @@ class TestSearchLogic:
 
     def test_zero_results(self):
         release, entries = self._entries()
-        st = site_search.parse_query("?q=zzzznotaword&topic=education")
+        st = site_search.parse_query("?q=zzzznotaword&topic=schools_community")
         assert site_search.search_and_filter(release["items"], entries, st) == []
 
     def test_no_query_keeps_release_order(self):
@@ -188,7 +189,7 @@ class TestSearchLogic:
 class TestCollectionRoutes:
     def test_topic_page_contains_only_matching_items(self, tmp_path):
         out, builder, release = _build_demo_site(tmp_path)
-        html = _read(out, "topic/education/index.html")
+        html = _read(out, "topic/schools_community/index.html")
         assert "DEMO-SL-20260804-0002" in html  # school item
         assert "SilverLeaf K-8 School On Track" in html
 
@@ -261,7 +262,7 @@ class TestAccessibilityStructure:
         for rel in ("index.html", "browse/index.html", "about/index.html",
                     "sources/index.html", "404.html",
                     "item/DEMO-SL-20260804-0001/index.html",
-                    "topic/education/index.html"):
+                    "topic/schools_community/index.html"):
             parser = _AccessibilityParser()
             parser.feed(_read(out, rel))
             assert parser.h1_count == 1, f"{rel}: {parser.h1_count} h1"

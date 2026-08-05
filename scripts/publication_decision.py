@@ -162,6 +162,15 @@ def build_decision(action, item, reviewer, rationale, args):
                     "public_summary_override must be a real public-facing summary "
                     "(>=10 chars); do not truncate source facts")
             record["public_summary_override"] = args.public_summary_override.strip()
+        if args.public_title_override:
+            record["public_title_override"] = args.public_title_override.strip()
+        if args.why_override:
+            if len(args.why_override.strip()) < 10:
+                raise PublicationDecisionError(
+                    "why_override must be a real resident-facing sentence (>=10 chars)")
+            record["public_why_override"] = args.why_override.strip()
+        if args.display_topic:
+            record["display_topic"] = args.display_topic
         if args.event_date:
             record["event_date"] = args.event_date
         if args.event_date_label:
@@ -235,6 +244,14 @@ def main():
         p.add_argument("--public-summary-override", default="",
                        help="approved public-facing summary override (copy-edit; "
                             "never alters the source intelligence record)")
+        p.add_argument("--public-title-override", default="",
+                       help="approved public-facing title override (copy-edit)")
+        p.add_argument("--why-override", default="",
+                       help="approved public-facing why-it-matters override (copy-edit)")
+        p.add_argument("--display-topic", choices=("roads_traffic", "utilities_water",
+                                                   "emergency_preparedness",
+                                                   "schools_community", "local_business"),
+                       help="resident-facing v0 topic category (never a raw taxonomy id)")
         p.add_argument("--event-date", default="", help="explicit event/hearing date (ISO) for display")
         p.add_argument("--event-date-label", default="", help="label for --event-date, e.g. 'Hearing date'")
         p.add_argument("--lifecycle", default="", help="explicit lifecycle id when supported")

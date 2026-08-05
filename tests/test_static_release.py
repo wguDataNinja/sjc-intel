@@ -121,6 +121,7 @@ class TestContentQuality:
             "source_date": "2026-01-01",
             "published_date": "2026-01-02",
             "relevance": "in_silverleaf",
+            "display_topic": "utilities_water",
             "topic_ids": ["infrastructure"],
             "entity_ids": [],
             "place_ids": ["silverleaf"],
@@ -148,6 +149,7 @@ class TestContentQuality:
                 "title": "t", "summary": "s", "why_it_matters": "w",
                 "source_name": "src", "source_date": "2026-01-01",
                 "published_date": "2026-01-02", "relevance": "countywide_impact",
+                "display_topic": "utilities_water",
                 "topic_ids": ["environment"]}
         res = self._ok(dict(base))
         assert not res.ok
@@ -161,7 +163,7 @@ class TestContentQuality:
                 "source_name": "src",
                 "source_url": "https://example.com/",
                 "source_date": "2026-01-01", "published_date": "2026-01-02",
-                "relevance": "maybe", "topic_ids": ["environment"]}
+                "relevance": "maybe", "display_topic": "utilities_water", "topic_ids": ["environment"]}
         res = self._ok(base)
         assert not res.ok
 
@@ -170,7 +172,7 @@ class TestContentQuality:
                 "title": "t", "summary": "s", "why_it_matters": "w",
                 "source_name": "src", "source_url": "https://e.com/",
                 "source_date": "2026-01-01", "published_date": "2026-01-02",
-                "relevance": "near_silverleaf", "topic_ids": ["environment"]}
+                "relevance": "near_silverleaf", "display_topic": "utilities_water", "topic_ids": ["environment"]}
         res = self._ok(dict(base, secret_field="x"))
         assert not res.ok
         assert "unknown" in " ".join(res.errors)
@@ -180,7 +182,7 @@ class TestContentQuality:
                 "title": "t", "summary": "s", "why_it_matters": "w",
                 "source_name": "src", "source_url": "https://e.com/",
                 "source_date": "2026-01-01", "published_date": "2026-01-02",
-                "relevance": "near_silverleaf", "topic_ids": ["environment"]}
+                "relevance": "near_silverleaf", "display_topic": "utilities_water", "topic_ids": ["environment"]}
         res = self._ok(dict(base, _dedupe_key="abc", reviewer_notes="secret"))
         assert not res.ok
 
@@ -190,7 +192,7 @@ class TestContentQuality:
                 "summary": "s", "why_it_matters": "w",
                 "source_name": "src", "source_url": "https://e.com/",
                 "source_date": "2026-01-01", "published_date": "2026-01-02",
-                "relevance": "near_silverleaf", "topic_ids": ["environment"]}
+                "relevance": "near_silverleaf", "display_topic": "utilities_water", "topic_ids": ["environment"]}
         res = self._ok(base)
         assert res.ok  # warning, not exclusion
         assert any("internal" in w for w in res.warnings)
@@ -201,6 +203,7 @@ class TestContentQuality:
                 "why_it_matters": "w", "source_name": "src",
                 "source_url": "https://e.com/", "source_date": "2026-01-01",
                 "published_date": "2026-01-02", "relevance": "in_silverleaf",
+                "display_topic": "local_business",
                 "topic_ids": ["economic_development"],
                 "lifecycle": "proposed", "lifecycle_label": "Proposed"}
         res = self._ok(base)

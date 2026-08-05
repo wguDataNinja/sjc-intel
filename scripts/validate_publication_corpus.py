@@ -368,6 +368,12 @@ class CorpusValidator:
                     "in_silverleaf", "near_silverleaf", "countywide_impact"):
                 self._check("error", "bad_relevance_override", item_id,
                             f"relevance override '{rel}' invalid")
+            dt = dec.get("display_topic")
+            if dt is not None and dt not in (
+                    "roads_traffic", "utilities_water", "emergency_preparedness",
+                    "schools_community", "local_business"):
+                self._check("error", "bad_display_topic", item_id,
+                            f"display_topic '{dt}' invalid")
             self.stats["decisions_total"] += 1
 
     def _summary(self):

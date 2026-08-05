@@ -106,6 +106,7 @@ contract* below is authoritative now.
 | `event_date_label` | string | no | approved decision/editorial | e.g. "Hearing date", "Effective date". |
 | `published_date` | string | yes | decision/release timestamp | When published in SilverLeaf Brief. |
 | `relevance` | string | yes | derived from decision | One of `in_silverleaf`, `near_silverleaf`, `countywide_impact`. |
+| `display_topic` | string | yes | approved decision / derived | Resident-facing v0 topic category. One of `roads_traffic`, `utilities_water`, `emergency_preparedness`, `schools_community`, `local_business`. The public interface shows ONLY this value — raw taxonomy ids never render. |
 | `lifecycle` | string | no | approved decision/editorial | Render only when explicitly present. |
 | `lifecycle_label` | string | no | approved decision/editorial | Human label for `lifecycle`. |
 | `topic_ids` | array<string> | yes | item `topics` | Stable taxonomy IDs. |
@@ -125,7 +126,8 @@ and portable (no registry access at runtime). It maps every stable ID used by
 release items to its public label and minimal display metadata:
 
 - `relevance` — id → `{label}`;
-- `topics` — topic id → `{label, description?}`;
+- `display_topics` — v0 resident topic id → `{label, description?}` (the only
+  topic layer exposed to the UI);
 - `places` — place id → `{label, type?}`;
 - `entities` — entity id → `{label, lifecycle?, lifecycle_label?, description?}`;
 - `sources` — source id → `{name, url?, source_type?}`.
@@ -162,6 +164,8 @@ Normalized client-search fields only. One entry per item:
 - **Normalization:** lowercase, strip punctuation, collapse whitespace.
 - No review fields, no internal notes, no raw excerpts unless approved.
 - `tokens` is the concatenated normalized searchable text for lexical search.
+- `topics` is the item's `display_topic` (resident-facing v0 category); raw
+  taxonomy ids are never exposed to client search.
 
 ## 4. release-manifest.json
 

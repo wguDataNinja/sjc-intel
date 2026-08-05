@@ -1,10 +1,3 @@
-# =============================================================================
-# SJC_Intel — Publication Decision
-# =============================================================================
-# Explicit human decision per docs/publication_release_contract.md.
-# Never marks an item published; release membership is a separate act.
-# =============================================================================
-
 schema_version: '1.0'
 item_id: SJC-EM-20260626-0001
 publication_status: approved
@@ -29,3 +22,6 @@ history:
   reviewer: Buddy
   timestamp: '2026-08-05T03:05:21Z'
   rationale: Hurricane-season preparedness is countywide material for SilverLeaf households.
+public_why_override: Hurricane season began June 1. Residents should review household
+  plans, confirm their evacuation zone, and sign up for Alert St. Johns.
+display_topic: emergency_preparedness

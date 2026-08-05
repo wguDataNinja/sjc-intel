@@ -144,11 +144,10 @@ class SiteBuilder:
         count = len(self.items)
         published = tpl.format_date(self.release.get("published_at"))
         cover = (
-            "SilverLeaf Brief covers reviewed, source-linked updates for "
-            "SilverLeaf and the surrounding corridor: county utility and "
-            "water notices, school and road developments, nearby retail and "
-            "healthcare, and countywide changes that affect residents. It is "
-            "not complete county coverage and not an emergency alert service.")
+            "This initial release includes one nearby road update and three "
+            "countywide notices with direct household relevance to SilverLeaf "
+            "residents: travel, drinking-water infrastructure, hurricane "
+            "preparedness, and irrigation restrictions.")
 
         topic_ids = self._ordered_dimension_ids("topics")
         shortcuts = ""
@@ -172,8 +171,7 @@ class SiteBuilder:
         body = (
             '<div class="page">'
             f'  <header class="hero">'
-            f'    <h1>SilverLeaf Brief</h1>'
-            f'    <p class="tagline-hero">{tpl.html_escape(tpl.TAGLINE)}</p>'
+            f'    <h1>{tpl.html_escape(tpl.TAGLINE)}</h1>'
             f'    <p class="release-date">Updated {tpl.html_escape(published or "—")}</p>'
             f'    <p class="item-count">{count} reviewed {"updates" if count != 1 else "update"}</p>'
             f'    <p class="trust">{tpl.html_escape(tpl.TRUST_STATEMENT)}</p>'
@@ -185,10 +183,10 @@ class SiteBuilder:
             f'  <section class="coverage" id="coverage" aria-labelledby="coverage-heading">'
             f'    <h2 id="coverage-heading">About this release</h2>'
             f'    <p>{tpl.html_escape(cover)}</p>'
-            f'    <p>Source data compiled before publication; links go to the '
-            f'original public records. See <a href="about/index.html">About</a> '
-            f'for methodology and <a href="sources/index.html">Data &amp; '
-            f'Sources</a> for the source directory.</p>'
+            f'    <p>Links go to the original public records. See '
+            f'<a href="about/index.html">About</a> for methodology and '
+            f'<a href="sources/index.html">Data &amp; Sources</a> for the source '
+            f'directory.</p>'
             f'  </section>'
             '</div>')
         self._write("index.html", tpl.page_shell(
@@ -337,8 +335,7 @@ class SiteBuilder:
         counter = Counter()
         if dim == "topics":
             for it in self.items:
-                for t in it.get("topic_ids") or []:
-                    counter[t] += 1
+                counter[it.get("display_topic", "utilities_water")] += 1
         elif dim == "scope":
             for it in self.items:
                 counter[it.get("relevance", "countywide_impact")] += 1
@@ -364,8 +361,14 @@ class SiteBuilder:
         return key
 
     def _ordered_dimension_ids(self, dim_key):
-        dim = {"topics": "topic_ids", "places": "place_ids",
-               "entities": "entity_ids"}[dim_key]
+        if dim_key == "topics":
+            seen = []
+            for it in self.items:
+                dt = it.get("display_topic")
+                if dt and dt not in seen:
+                    seen.append(dt)
+            return seen
+        dim = {"places": "place_ids", "entities": "entity_ids"}[dim_key]
         seen = []
         for it in self.items:
             for key in it.get(dim) or []:
@@ -378,8 +381,9 @@ class SiteBuilder:
     # ------------------------------------------------------------------ #
 
     def build_collections(self):
+        # The "topics" dimension is keyed on the v0 display_topic.
         kinds = [
-            ("topic", "topic_ids", "topics", "/topic/"),
+            ("topic", "display_topic", "topics", "/topic/"),
             ("place", "place_ids", "places", "/place/"),
             ("entity", "entity_ids", "entities", "/entity/"),
         ]
@@ -426,10 +430,11 @@ class SiteBuilder:
         pid = it["public_item_id"]
         rel_id = html_id(pid)
 
-        topics = it.get("topic_ids") or []
-        topic_labels = "".join(
-            f'<li><a href="../topic/{html_id(t)}/index.html">{html(topic_label(self.dimensions, t))}</a></li>'
-            for t in topics)
+        display_topic = it.get("display_topic") or "utilities_water"
+        topic_labels = (
+            f'<li><a href="../topic/{html_id(display_topic)}/index.html">'
+            f'{html(topic_label(self.dimensions, display_topic))}</a></li>'
+            if display_topic else "")
         places = it.get("place_ids") or []
         place_labels = "".join(
             f'<li><a href="../place/{html_id(p)}/index.html">{html(self._dimension_label("places", p))}</a></li>'
@@ -483,8 +488,8 @@ class SiteBuilder:
 
         meta_btns = " ".join([
             tpl.relevance_badge(self.dimensions, it.get("relevance", "countywide_impact")),
-            (tpl.topic_badge(self.dimensions, topics[0]) if topics else ""),
-            tpl.reviewed_badge(),
+            (tpl.topic_badge(self.dimensions, display_topic) if display_topic else ""),
+            tpl.reviewed_badge(depth),
             tpl.lifecycle_badge(it),
         ])
 
@@ -570,18 +575,18 @@ class SiteBuilder:
             '<h2 id="about-selection">How items are selected</h2>'
             '<p>Items come from public sources only: county government and '
             'utility records, school district updates, public notices, and '
-            'local reporting. A machine pipeline discovers and organizes '
-            'candidates; a human reviews each item against its source; and '
-            'only reviewed items with an explicit publication decision appear '
-            'in a release. Nothing is published automatically.</p>'
+            'local reporting. Candidates are discovered and organized from '
+            'those public records, then each item is reviewed against its '
+            'source before any publication decision. Nothing is published '
+            'automatically.</p>'
             '</section>'
             '<section aria-labelledby="about-reviewed">'
             '<h2 id="about-reviewed">What \u201cReviewed\u201d means</h2>'
-            '<p>A human reviewed this summary against the linked source for '
-            'clarity, relevance, and attribution before publication. It does '
-            'not mean independently verified, guaranteed accurate, or an '
-            'official county statement. When a source link is unavailable, '
-            'the item remains published and that state is shown.</p>'
+            '<p>Each summary is reviewed against the linked source for clarity, '
+            'relevance, and attribution before publication. It does not mean '
+            'independently verified, guaranteed accurate, or an official '
+            'county statement. When a source link is unavailable, the item '
+            'remains published and that state is shown.</p>'
             '</section>'
             '<section aria-labelledby="coverage">'
             '<h2 id="coverage">Coverage &amp; limitations</h2>'
@@ -645,7 +650,8 @@ class SiteBuilder:
                         f'{html(rec.get("name") or sid)} <span class="external-icon" '
                         f'aria-hidden="true">&#8599;</span></a>') if url else html(rec.get("name") or sid)
             source_rows.append(
-                f'<tr><td>{url_html}</td><td>{html(rec.get("source_type") or "—")}</td>'
+                f'<tr><td>{url_html}</td>'
+                f'<td>{html(rec.get("source_kind") or rec.get("source_type") or "—")}</td>'
                 f'<td>{n}</td></tr>')
         if source_rows:
             tbody_html = "".join(source_rows)
@@ -655,7 +661,7 @@ class SiteBuilder:
         public_fields = ["public_item_id", "title", "summary", "why_it_matters",
                          "source_name", "source_url (or unavailable)", "source_date",
                          "event_date (optional)", "published_date", "relevance",
-                         "lifecycle (optional)", "topic_ids", "entity_ids",
+                         "display_topic", "lifecycle (optional)", "topic_ids", "entity_ids",
                          "place_ids", "sensitivity_display", "verification_display",
                          "related_item_ids", "release_id"]
         field_lis = "".join(f"<li><code>{html(f)}</code></li>" for f in public_fields)
@@ -770,7 +776,11 @@ def html_id(value):
 
 
 def topic_label(dimensions, topic_id):
-    return ((dimensions.get("topics") or {}).get(topic_id) or {}).get("label", topic_id)
+    """Resident-facing label for a v0 display topic (never a raw taxonomy id)."""
+    rec = (dimensions.get("display_topics") or {}).get(topic_id) or {}
+    if rec.get("label"):
+        return rec["label"]
+    return tpl.V0_TOPIC_FALLBACK.get(topic_id, topic_id)
 
 
 def main():

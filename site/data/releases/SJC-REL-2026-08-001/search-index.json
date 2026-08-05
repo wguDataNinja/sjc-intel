@@ -5,32 +5,29 @@
       "entities": [],
       "id": "SJC-CN-20260802-0001",
       "places": [],
-      "source": "sjc county news",
+      "source": "st johns county",
       "source_date": "2026-07-20",
-      "summary": "weekend closures of county road 16a between timberwolf trail and river reach parkway are scheduled 8 p m friday to 5 a m monday jul 31 aug 3 and aug 7 10 for first coast expressway pipe installation detour via sr 16 and sr 13",
-      "title": "county road 16a closures and detours for next two weekends",
-      "tokens": "county road 16a closures and detours for next two weekends weekend closures of county road 16a between timberwolf trail and river reach parkway are scheduled 8 p m friday to 5 a m monday jul 31 aug 3 and aug 7 10 for first coast expressway pipe installation detour via sr 16 and sr 13 county road 16a closures and detours over consecutive weekends affect local travel transportation roads roadwork traffic infrastructure sjc county news",
+      "summary": "county road 16a is scheduled to close between timberwolf trail and river reach parkway from 8 p m friday august 7 through 5 a m monday august 10 for first coast expressway pipe installation drivers will be detoured via state roads 16 and 13",
+      "title": "county road 16a weekend closure scheduled august 7 10",
+      "tokens": "county road 16a weekend closure scheduled august 7 10 county road 16a is scheduled to close between timberwolf trail and river reach parkway from 8 p m friday august 7 through 5 a m monday august 10 for first coast expressway pipe installation drivers will be detoured via state roads 16 and 13 the closure may affect travel between silverleaf and destinations east of the community during the weekend roads traffic st johns county",
       "topics": [
-        "transportation",
-        "roadwork_traffic",
-        "infrastructure"
+        "roads_traffic"
       ],
-      "why_it_matters": "county road 16a closures and detours over consecutive weekends affect local travel"
+      "why_it_matters": "the closure may affect travel between silverleaf and destinations east of the community during the weekend"
     },
     {
       "entities": [],
       "id": "SJC-UTIL-20260603-0005",
       "places": [],
-      "source": "utility department water and boil notices",
+      "source": "st johns county utility department",
       "source_date": "2026-06-03",
       "summary": "the county utility is inventorying water service line materials under the epa community lead safe hub program customers may be contacted to allow an inspection of the pipe from the street to the home",
       "title": "utility department water service line material inventory",
-      "tokens": "utility department water service line material inventory the county utility is inventorying water service line materials under the epa community lead safe hub program customers may be contacted to allow an inspection of the pipe from the street to the home lead pipe identification program affects drinking water safety some residents may be contacted for property access to inspect service lines no lead pipes confirmed this is a proactive inventory infrastructure health wellness utility department water and boil notices",
+      "tokens": "utility department water service line material inventory the county utility is inventorying water service line materials under the epa community lead safe hub program customers may be contacted to allow an inspection of the pipe from the street to the home the inventory is intended to identify service line materials and determine whether any further action is needed some county utility customers may be contacted to allow an inspection between the street and the home utilities water st johns county utility department",
       "topics": [
-        "infrastructure",
-        "health_wellness"
+        "utilities_water"
       ],
-      "why_it_matters": "lead pipe identification program affects drinking water safety some residents may be contacted for property access to inspect service lines no lead pipes confirmed this is a proactive inventory"
+      "why_it_matters": "the inventory is intended to identify service line materials and determine whether any further action is needed some county utility customers may be contacted to allow an inspection between the street and the home"
     },
     {
       "entities": [],
@@ -38,33 +35,29 @@
       "places": [
         "countywide"
       ],
-      "source": "emergency management and alerts",
+      "source": "st johns county emergency management",
       "source_date": "2026-06-01",
       "summary": "st johns county emergency management urges residents to prepare for the 2026 atlantic hurricane season which began june 1 highlights simple steps to protect lives and property",
       "title": "residents urged to prepare as 2026 atlantic hurricane season begins",
-      "tokens": "residents urged to prepare as 2026 atlantic hurricane season begins st johns county emergency management urges residents to prepare for the 2026 atlantic hurricane season which began june 1 highlights simple steps to protect lives and property june 1 marks the start of hurricane season residents should review plans sign up for alert st johns and know their evacuation zone public safety emergency alerts environment countywide emergency management and alerts",
+      "tokens": "residents urged to prepare as 2026 atlantic hurricane season begins st johns county emergency management urges residents to prepare for the 2026 atlantic hurricane season which began june 1 highlights simple steps to protect lives and property hurricane season began june 1 residents should review household plans confirm their evacuation zone and sign up for alert st johns emergency preparedness countywide st johns county emergency management",
       "topics": [
-        "public_safety",
-        "emergency_alerts",
-        "environment"
+        "emergency_preparedness"
       ],
-      "why_it_matters": "june 1 marks the start of hurricane season residents should review plans sign up for alert st johns and know their evacuation zone"
+      "why_it_matters": "hurricane season began june 1 residents should review household plans confirm their evacuation zone and sign up for alert st johns"
     },
     {
       "entities": [],
       "id": "SJC-UTIL-20260603-0001",
       "places": [],
-      "source": "utility department water and boil notices",
+      "source": "st johns county utility department",
       "source_date": "2026-05-11",
       "summary": "the phase iii extreme water shortage remains in effect outdoor irrigation is limited to one day per week and is prohibited 8 a m 6 p m reclaimed water irrigation is not included in the schedule",
       "title": "phase iii extreme water shortage declaration active",
-      "tokens": "phase iii extreme water shortage declaration active the phase iii extreme water shortage remains in effect outdoor irrigation is limited to one day per week and is prohibited 8 a m 6 p m reclaimed water irrigation is not included in the schedule ongoing irrigation restrictions affect all properties with landscaping reclaimed water users exempt violations may result in penalties drought conditions may lead to higher water costs environment infrastructure emergency alerts utility department water and boil notices",
+      "tokens": "phase iii extreme water shortage declaration active the phase iii extreme water shortage remains in effect outdoor irrigation is limited to one day per week and is prohibited 8 a m 6 p m reclaimed water irrigation is not included in the schedule silverleaf households using potable water for irrigation must follow the one day per week schedule and avoid watering between 8 a m and 6 p m properties using reclaimed water are exempt from the one day schedule utilities water st johns county utility department",
       "topics": [
-        "environment",
-        "infrastructure",
-        "emergency_alerts"
+        "utilities_water"
       ],
-      "why_it_matters": "ongoing irrigation restrictions affect all properties with landscaping reclaimed water users exempt violations may result in penalties drought conditions may lead to higher water costs"
+      "why_it_matters": "silverleaf households using potable water for irrigation must follow the one day per week schedule and avoid watering between 8 a m and 6 p m properties using reclaimed water are exempt from the one day schedule"
     }
   ],
   "release_id": "SJC-REL-2026-08-001",

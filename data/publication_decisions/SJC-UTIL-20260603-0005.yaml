@@ -1,10 +1,3 @@
-# =============================================================================
-# SJC_Intel — Publication Decision
-# =============================================================================
-# Explicit human decision per docs/publication_release_contract.md.
-# Never marks an item published; release membership is a separate act.
-# =============================================================================
-
 schema_version: '1.0'
 item_id: SJC-UTIL-20260603-0005
 publication_status: approved
@@ -32,3 +25,7 @@ history:
   timestamp: '2026-08-05T03:05:21Z'
   rationale: EPA service-line inventory affects all county utility customers incl.
     SilverLeaf.
+public_why_override: The inventory is intended to identify service-line materials
+  and determine whether any further action is needed. Some county utility customers
+  may be contacted to allow an inspection between the street and the home.
+display_topic: utilities_water

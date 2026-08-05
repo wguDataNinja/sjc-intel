@@ -15,14 +15,23 @@ SITE_TITLE = "SilverLeaf Brief"
 TAGLINE = "What changed around SilverLeaf—and why it matters."
 
 REVIEWED_DETAIL = (
-    "A human reviewed this summary against the linked source for clarity, "
+    "Each summary is reviewed against the linked source for clarity, "
     "relevance, and attribution before publication."
 )
 TRUST_STATEMENT = (
-    "Human-reviewed summaries with links to original sources. Not an official "
-    "county or emergency-alert service."
+    "Reviewed summaries with direct links to public sources."
 )
 SOURCE_UNAVAILABLE = "The original source link is currently unavailable."
+
+# v0 resident topic label fallback (dimensions.display_topics carry the real
+# labels; this guard prevents any raw id from ever rendering).
+V0_TOPIC_FALLBACK = {
+    "roads_traffic": "Roads & Traffic",
+    "utilities_water": "Utilities & Water",
+    "emergency_preparedness": "Emergency Preparedness",
+    "schools_community": "Schools & Community",
+    "local_business": "Local Business",
+}
 
 # Relevance id -> human label (dimensions carry the label; fallback here).
 RELEVANCE_FALLBACK = {
@@ -85,14 +94,18 @@ def relevance_badge(dimensions, relevance_id):
 
 
 def topic_badge(dimensions, topic_id):
-    label = ((dimensions.get("topics") or {}).get(topic_id) or {}).get("label", topic_id)
+    """Resident-facing topic chip (v0 display topic; never a raw taxonomy id)."""
+    label = ((dimensions.get("display_topics") or {}).get(topic_id) or {}) \
+        .get("label") or V0_TOPIC_FALLBACK.get(topic_id, topic_id)
     return (f'<span class="badge badge-topic" data-topic="{html_escape(topic_id)}">'
             f'{html_escape(label)}</span>')
 
 
-def reviewed_badge():
-    return (f'<span class="badge badge-reviewed" title="{html_escape(REVIEWED_DETAIL)}">'
-            f'<span aria-hidden="true" class="badge-dot"></span>Reviewed</span>')
+def reviewed_badge(depth=0):
+    """'Reviewed' trust label; links to the About definition."""
+    return (f'<a class="badge badge-reviewed" href="{rel(depth, "about/index.html")}#reviewed" '
+            f'title="{html_escape(REVIEWED_DETAIL)}">'
+            f'<span aria-hidden="true" class="badge-dot"></span>Reviewed</a>')
 
 
 def lifecycle_badge(record):
@@ -121,24 +134,29 @@ def item_card(record, dimensions, depth):
     """The shared item card (Latest, Browse, collection routes)."""
     pid = record["public_item_id"]
     href = rel(depth, f"item/{pid}/index.html")
-    topics = record.get("topic_ids") or []
-    primary_topic = topics[0] if topics else "general_government"
+    display_topic = record.get("display_topic") or "utilities_water"
 
     meta = " ".join([
         relevance_badge(dimensions, record.get("relevance", "countywide_impact")),
-        topic_badge(dimensions, primary_topic),
-        reviewed_badge(),
+        topic_badge(dimensions, display_topic),
+        reviewed_badge(depth),
         lifecycle_badge(record),
     ])
 
     src_date = format_date(record.get("source_date"))
-    source_dl = (
-        f'<dl class="card-source">'
+    event_date = format_date(record.get("event_date"))
+    source_dl_rows = []
+    if event_date and record.get("event_date_label"):
+        source_dl_rows.append(
+            f'<div class="card-source-row"><dt>{html_escape(record["event_date_label"])}</dt>'
+            f'<dd>{html_escape(event_date)}</dd></div>')
+    source_dl_rows.append(
         f'<div class="card-source-row"><dt>Source</dt>'
-        f'<dd class="card-source-name">{html_escape(record.get("source_name") or "—")}</dd></div>'
+        f'<dd class="card-source-name">{html_escape(record.get("source_name") or "—")}</dd></div>')
+    source_dl_rows.append(
         f'<div class="card-source-row"><dt>Source published</dt>'
-        f'<dd>{html_escape(src_date) if src_date else "Not available"}</dd></div>'
-        f'</dl>')
+        f'<dd>{html_escape(src_date) if src_date else "Not available"}</dd></div>')
+    source_dl = f'<dl class="card-source">{"".join(source_dl_rows)}</dl>'
 
     return (
         f'<article class="card" data-item-id="{html_escape(pid)}">\n'
@@ -206,7 +224,7 @@ def page_shell(title, description, depth, active_nav, body, ctx,
         f'    <a href="{rel(depth, "about/index.html")}#report-an-issue">Report an issue</a>'
         f'  </nav>'
         f'  <p class="footer-release">Current release: {release_line}{env_note}</p>'
-        f'  <p class="footer-note">{html_escape(TRUST_STATEMENT)}</p>'
+        f'  <p class="footer-note">Not an official government or emergency-alert service.</p>'
         f'</footer>'
     )
 
@@ -235,7 +253,6 @@ def page_shell(title, description, depth, active_nav, body, ctx,
         f'  {demo_banner}'
         '  <header class="site-header">\n'
         f'    <p class="brand"><a href="{rel(depth, "index.html")}">SilverLeaf <span>Brief</span></a></p>\n'
-        f'    <p class="tagline">{html_escape(TAGLINE)}</p>\n'
         f'    <nav class="primary-nav" aria-label="Primary">{"" .join(nav_links)}</nav>\n'
         '  </header>\n'
         f'  <main id="main">{body}</main>\n'

@@ -1,6 +1,20 @@
 {
   "created_at": "2026-08-04T12:00:00Z",
   "dimensions": {
+    "display_topics": {
+      "emergency_preparedness": {
+        "description": "Hurricane season, alerts, and household readiness guidance.",
+        "label": "Emergency Preparedness"
+      },
+      "roads_traffic": {
+        "description": "Road closures, construction, detours, and commute impacts.",
+        "label": "Roads & Traffic"
+      },
+      "utilities_water": {
+        "description": "Drinking water, sewer, reclaimed water, and utility notices.",
+        "label": "Utilities & Water"
+      }
+    },
     "entities": {},
     "places": {
       "countywide": {
@@ -19,28 +33,24 @@
         "label": "Near SilverLeaf"
       }
     },
-    "sources": {},
-    "topics": {
-      "emergency_alerts": {
-        "label": "Emergency alerts"
+    "sources": {
+      "sjc_county_news": {
+        "name": "St. Johns County",
+        "source_kind": "County news release",
+        "source_type": "Government / agency website",
+        "url": "https://www.sjcfl.us/news/"
       },
-      "environment": {
-        "label": "Environment"
+      "sjc_emergency_management": {
+        "name": "St. Johns County Emergency Management",
+        "source_kind": "Emergency-management guidance",
+        "source_type": "government_portal",
+        "url": "https://www.sjcfl.us/departments/emergency-mgmt/"
       },
-      "health_wellness": {
-        "label": "Health & wellness"
-      },
-      "infrastructure": {
-        "label": "Infrastructure"
-      },
-      "public_safety": {
-        "label": "Public safety"
-      },
-      "roadwork_traffic": {
-        "label": "roadwork_traffic"
-      },
-      "transportation": {
-        "label": "Transportation & roads"
+      "sjc_utility_department": {
+        "name": "St. Johns County Utility Department",
+        "source_kind": "Utility notice",
+        "source_type": "government_portal",
+        "url": "https://www.sjcfl.us/departments/utility-department/"
       }
     }
   },
@@ -48,7 +58,10 @@
   "generator_revision": "silverleaf-brief-export-1.0",
   "items": [
     {
+      "display_topic": "roads_traffic",
       "entity_ids": [],
+      "event_date": "2026-08-07",
+      "event_date_label": "Closure starts",
       "place_ids": [],
       "public_item_id": "SJC-CN-20260802-0001",
       "published_date": "2026-08-05",
@@ -60,19 +73,19 @@
       "relevance": "near_silverleaf",
       "sensitivity_display": "none",
       "source_date": "2026-07-20",
-      "source_name": "SJC County News",
+      "source_name": "St. Johns County",
       "source_url": "https://www.sjcfl.us/county-road-16a-closures-detours-three-july-august-weekends/",
-      "summary": "Weekend closures of County Road 16A between Timberwolf Trail and River Reach Parkway are scheduled 8 p.m. Friday to 5 a.m. Monday (Jul 31-Aug 3 and Aug 7-10) for First Coast Expressway pipe installation. Detour via SR 16 and SR 13.",
-      "title": "County Road 16A Closures and Detours for Next Two Weekends",
+      "summary": "County Road 16A is scheduled to close between Timberwolf Trail and River Reach Parkway from 8 p.m. Friday, August 7, through 5 a.m. Monday, August 10, for First Coast Expressway pipe installation. Drivers will be detoured via State Roads 16 and 13.",
+      "title": "County Road 16A Weekend Closure Scheduled August 7–10",
       "topic_ids": [
         "transportation",
-        "roadwork_traffic",
         "infrastructure"
       ],
       "verification_display": "Confirmed from source",
-      "why_it_matters": "County Road 16A closures and detours over consecutive weekends affect local travel."
+      "why_it_matters": "The closure may affect travel between SilverLeaf and destinations east of the community during the weekend."
     },
     {
+      "display_topic": "utilities_water",
       "entity_ids": [],
       "place_ids": [],
       "public_item_id": "SJC-UTIL-20260603-0005",
@@ -85,7 +98,7 @@
       "relevance": "countywide_impact",
       "sensitivity_display": "none",
       "source_date": "2026-06-03",
-      "source_name": "Utility Department — Water and Boil Notices",
+      "source_name": "St. Johns County Utility Department",
       "source_url": "https://www.sjcfl.us/departments/utility-department/",
       "summary": "The county utility is inventorying water service line materials under the EPA Community Lead-Safe Hub program. Customers may be contacted to allow an inspection of the pipe from the street to the home.",
       "title": "Utility Department Water Service Line Material Inventory",
@@ -94,9 +107,10 @@
         "health_wellness"
       ],
       "verification_display": "Confirmed from source",
-      "why_it_matters": "Lead pipe identification program affects drinking water safety. Some residents may be contacted for property access to inspect service lines. No lead pipes confirmed; this is a proactive inventory.\n"
+      "why_it_matters": "The inventory is intended to identify service-line materials and determine whether any further action is needed. Some county utility customers may be contacted to allow an inspection between the street and the home."
     },
     {
+      "display_topic": "emergency_preparedness",
       "entity_ids": [],
       "place_ids": [
         "countywide"
@@ -110,7 +124,7 @@
       "relevance": "countywide_impact",
       "sensitivity_display": "none",
       "source_date": "2026-06-01",
-      "source_name": "Emergency Management and Alerts",
+      "source_name": "St. Johns County Emergency Management",
       "source_url": "https://www.sjcfl.us/departments/emergency-mgmt/",
       "summary": "St. Johns County Emergency Management urges residents to prepare for the 2026 Atlantic Hurricane Season, which began June 1. Highlights simple steps to protect lives and property.",
       "title": "Residents Urged to Prepare as 2026 Atlantic Hurricane Season Begins",
@@ -120,9 +134,10 @@
         "environment"
       ],
       "verification_display": "Confirmed from source",
-      "why_it_matters": "June 1 marks the start of hurricane season. Residents should review plans, sign up for Alert St. Johns, and know their evacuation zone."
+      "why_it_matters": "Hurricane season began June 1. Residents should review household plans, confirm their evacuation zone, and sign up for Alert St. Johns."
     },
     {
+      "display_topic": "utilities_water",
       "entity_ids": [],
       "place_ids": [],
       "public_item_id": "SJC-UTIL-20260603-0001",
@@ -136,7 +151,7 @@
       "relevance": "countywide_impact",
       "sensitivity_display": "reviewed_sensitive",
       "source_date": "2026-05-11",
-      "source_name": "Utility Department — Water and Boil Notices",
+      "source_name": "St. Johns County Utility Department",
       "source_url": "https://www.sjcfl.us/departments/utility-department/",
       "summary": "The Phase III Extreme Water Shortage remains in effect: outdoor irrigation is limited to one day per week and is prohibited 8 a.m.-6 p.m. Reclaimed-water irrigation is not included in the schedule.",
       "title": "Phase III Extreme Water Shortage Declaration — Active",
@@ -146,7 +161,7 @@
         "emergency_alerts"
       ],
       "verification_display": "Confirmed from source",
-      "why_it_matters": "Ongoing irrigation restrictions affect all properties with landscaping. Reclaimed water users exempt. Violations may result in penalties. Drought conditions may lead to higher water costs.\n"
+      "why_it_matters": "SilverLeaf households using potable water for irrigation must follow the one-day-per-week schedule and avoid watering between 8 a.m. and 6 p.m. Properties using reclaimed water are exempt from the one-day schedule."
     }
   ],
   "prior_release_id": null,

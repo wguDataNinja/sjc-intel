@@ -1,10 +1,3 @@
-# =============================================================================
-# SJC_Intel — Publication Decision
-# =============================================================================
-# Explicit human decision per docs/publication_release_contract.md.
-# Never marks an item published; release membership is a separate act.
-# =============================================================================
-
 schema_version: '1.0'
 item_id: SJC-UTIL-20260603-0001
 publication_status: approved
@@ -36,3 +29,7 @@ history:
   rationale: Ongoing Phase III water shortage materially affects SilverLeaf households
     (irrigation rules); verified still active Aug 2026; medium sensitivity approved
     editorially by Buddy.
+public_why_override: SilverLeaf households using potable water for irrigation must
+  follow the one-day-per-week schedule and avoid watering between 8 a.m. and 6 p.m.
+  Properties using reclaimed water are exempt from the one-day schedule.
+display_topic: utilities_water

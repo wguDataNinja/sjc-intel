@@ -113,7 +113,7 @@
   }
 
   function labelFor(dim, key) {
-    var map = dim === "topic" ? dimensions.topics
+    var map = dim === "topic" ? dimensions.display_topics
             : dim === "place" ? dimensions.places
             : dim === "entity" ? dimensions.entities
             : dimensions.relevance;

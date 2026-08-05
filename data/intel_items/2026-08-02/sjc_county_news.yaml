@@ -21,7 +21,6 @@ items:
   discovered_by: hermes-sjc_county_news
   topics:
   - transportation
-  - roadwork_traffic
   - infrastructure
   communities: []
   geographic_scope: county_wide

@@ -41,6 +41,32 @@ RELEVANCE_LABELS = {
     "countywide_impact": "Countywide impact",
 }
 
+# v0 resident-facing topic categories. The public interface shows ONLY these
+# (never raw taxonomy ids). One display_topic per item; filters and collection
+# routes are keyed on it.
+V0_TOPICS = {
+    "roads_traffic": {
+        "label": "Roads & Traffic",
+        "description": "Road closures, construction, detours, and commute impacts.",
+    },
+    "utilities_water": {
+        "label": "Utilities & Water",
+        "description": "Drinking water, sewer, reclaimed water, and utility notices.",
+    },
+    "emergency_preparedness": {
+        "label": "Emergency Preparedness",
+        "description": "Hurricane season, alerts, and household readiness guidance.",
+    },
+    "schools_community": {
+        "label": "Schools & Community",
+        "description": "Schools, community facilities, and neighborhood life.",
+    },
+    "local_business": {
+        "label": "Local Business",
+        "description": "Retail, dining, and services opening or changing in the area.",
+    },
+}
+
 # SilverLeaf community IDs and adjacency corridors (from registry/communities).
 _SILVERLEAF_PLACES = {"silverleaf"}
 _SILVERLEAF_NEIGHBORHOOD_PREFIX = "sl_"
@@ -61,6 +87,7 @@ PUBLIC_ITEM_FIELDS = {
     "event_date_label",
     "published_date",
     "relevance",
+    "display_topic",
     "lifecycle",
     "lifecycle_label",
     "topic_ids",
@@ -247,9 +274,16 @@ def validate_public_item(record):
 
     # Required resident-facing copy.
     for field in ("public_item_id", "title", "summary", "why_it_matters",
-                  "source_name", "source_date", "published_date", "relevance"):
+                  "source_name", "source_date", "published_date", "relevance",
+                  "display_topic"):
         if _blank(record.get(field)):
             result.errors.append(f"missing required field: {field}")
+
+    # Display topic must be a resident-facing v0 category (never a raw id).
+    if record.get("display_topic") not in V0_TOPICS:
+        result.errors.append(
+            f"display_topic '{record.get('display_topic')}' not in "
+            f"{sorted(V0_TOPICS)}")
 
     # Stable public ID shape.
     if not _blank(record.get("public_item_id")):
@@ -297,13 +331,17 @@ def validate_public_item(record):
 # --------------------------------------------------------------------------- #
 
 def build_search_index(release, dimensions):
-    """Normalized client-search fields for search-index.json."""
+    """Normalized client-search fields for search-index.json.
+
+    The searchable topic dimension is the v0 display_topic (resident-facing);
+    raw taxonomy ids are never exposed to client search.
+    """
     entries = []
     for item in release.get("items", []):
         pid = item["public_item_id"]
-        topic_labels = " ".join(
-            (dimensions.get("topics", {}).get(t, {}) or {}).get("label", t)
-            for t in (item.get("topic_ids") or []))
+        display_topic = item.get("display_topic")
+        topic_labels = (dimensions.get("display_topics", {})
+                        .get(display_topic, {}) or {}).get("label", display_topic or "")
         place_labels = " ".join(
             (dimensions.get("places", {}).get(p, {}) or {}).get("label", p)
             for p in (item.get("place_ids") or []))
@@ -325,7 +363,7 @@ def build_search_index(release, dimensions):
             "title": normalize_text(item.get("title")),
             "summary": normalize_text(item.get("summary")),
             "why_it_matters": normalize_text(item.get("why_it_matters")),
-            "topics": list(item.get("topic_ids") or []),
+            "topics": [display_topic] if display_topic else [],
             "places": list(item.get("place_ids") or []),
             "entities": list(item.get("entity_ids") or []),
             "source": normalize_text(item.get("source_name")),

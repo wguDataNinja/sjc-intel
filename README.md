@@ -17,8 +17,9 @@ reviewed, source-linked periodic intelligence for the SilverLeaf area.
   utility feeds, and local media — no private or login-gated content.
 - **Evidence-first.** Every item carries its original source URL, an observed
   timestamp, and a bounded verbatim excerpt.
-- **Human-reviewed.** Machine-produced candidates become corpus items only
-  through explicit human decisions; nothing is published automatically.
+- **Reviewed before publication.** Machine-produced candidates become corpus
+  items only through explicit review decisions; nothing is published
+  automatically.
 - **Mac-authoritative.** The durable corpus, review state, and release history
   live in the file-backed repository. A bounded VPS worker may prepare
   transfer bundles; it never writes the corpus or publishes.

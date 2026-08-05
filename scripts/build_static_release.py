@@ -46,6 +46,7 @@ from static_release_common import (  # noqa: E402
     PUBLIC_ITEM_FIELDS,
     RELEASE_SCHEMA_VERSION,
     RELEVANCE_LABELS,
+    V0_TOPICS,
     build_release_dict,
     build_search_index,
     compute_related_item_ids,
@@ -107,6 +108,62 @@ SOURCE_TYPE_LABELS = {
     "rss": "Official news feed",
 }
 
+# Standardized resident-facing source names (never expose internal registry
+# labels such as "SJC County News" or "Emergency Management and Alerts").
+PUBLIC_SOURCE_NAMES = {
+    "sjc_county_news": "St. Johns County",
+    "sjc_utility_department": "St. Johns County Utility Department",
+    "sjc_emergency_management": "St. Johns County Emergency Management",
+    "sjc_nbor_public_notices": "St. Johns County Neighborhood Board of Review",
+    "sjc_school_district": "St. Johns County School District",
+    "st_johns_citizen": "St. Johns Citizen",
+}
+
+# Per-source kind label shown with the source name in the Data & Sources table.
+PUBLIC_SOURCE_KINDS = {
+    "sjc_county_news": "County news release",
+    "sjc_utility_department": "Utility notice",
+    "sjc_emergency_management": "Emergency-management guidance",
+    "sjc_nbor_public_notices": "Public notice",
+    "sjc_school_district": "School district update",
+    "st_johns_citizen": "Local news",
+}
+
+
+def _public_source_name(source_id, fallback):
+    return PUBLIC_SOURCE_NAMES.get(source_id, fallback)
+
+
+# Deterministic fallback: primary taxonomy topic -> v0 resident category.
+V0_FROM_TOPIC = {
+    "transportation": "roads_traffic",
+    "roadwork_traffic": "roads_traffic",
+    "infrastructure": "utilities_water",
+    "water_restrictions": "utilities_water",
+    "environment": "utilities_water",
+    "health_wellness": "utilities_water",
+    "emergency_alerts": "emergency_preparedness",
+    "public_safety": "emergency_preparedness",
+    "education": "schools_community",
+    "development": "local_business",
+    "economic_development": "local_business",
+}
+
+
+def _derive_display_topic(item):
+    primary = item.get("primary_topic") or (item.get("topics") or [None])[0]
+    return V0_FROM_TOPIC.get(primary, "utilities_water")
+
+
+def build_display_topics(items):
+    """Return the v0 resident-topic dimension entries present in a release."""
+    present = {}
+    for it in items:
+        dt = it.get("display_topic")
+        if dt and dt in V0_TOPICS:
+            present[dt] = dict(V0_TOPICS[dt])
+    return present
+
 
 # --------------------------------------------------------------------------- #
 # Real-mode projection
@@ -138,15 +195,26 @@ def project_item(item, decision, release_id):
     event_date = decision.get("event_date") if decision else None
     event_date_label = decision.get("event_date_label") if decision else None
 
+    # Editorial overrides (never alter the source intelligence record).
+    title = (decision or {}).get("public_title_override") or proj["title"]
+    why = ((decision or {}).get("public_why_override")
+           or (item.get("resident_relevance") or {}).get("why_it_matters")
+           or proj["summary"])
+    source_name = _public_source_name(item.get("source_id"), proj["source_name"])
+    display_topic = (decision or {}).get("display_topic")
+    if display_topic not in V0_TOPICS:
+        display_topic = _derive_display_topic(item)
+
     record = {
         "public_item_id": proj["item_id"],
-        "title": proj["title"],
+        "title": title,
         "summary": proj["summary"],
-        "why_it_matters": proj["why_it_matters"],
-        "source_name": proj["source_name"],
+        "why_it_matters": why,
+        "source_name": source_name,
         "source_date": date_val,
         "published_date": str((decision or {}).get("decision_timestamp") or "")[:10],
         "relevance": (decision or {}).get("relevance") or derive_relevance(item, decision),
+        "display_topic": display_topic,
         "topic_ids": list(proj["topics"] or []),
         "entity_ids": list(proj["entity_ids"] or []),
         "place_ids": list(proj["place_ids"] or []),
@@ -174,16 +242,26 @@ def project_item(item, decision, release_id):
 # Dimensions
 # --------------------------------------------------------------------------- #
 
-def _dimensions(selected_items, environment):
-    """Build the self-describing dimensions block from registry + items."""
+def _dimensions(original_items, projected_items):
+    """Build the self-describing dimensions block from registry + items.
+
+    `original_items` carry source_id/topics (registry lookups); `projected_items`
+    carry display_topic. The public interface exposes only the v0 display
+    topics; granular taxonomy ids never appear without a label.
+    """
     sources = load_sources()
     relevance = {rid: {"label": label}
                  for rid, label in sorted(RELEVANCE_LABELS.items())}
 
-    topics = {}
-    for it in selected_items:
-        for t in it.get("topic_ids") or []:
-            topics.setdefault(t, {"label": TOPIC_LABELS.get(t, t)})
+    display_topics = build_display_topics(projected_items)
+
+    # Granular topic ids must ALL have a resident label (raw-id leak guard).
+    for it in original_items:
+        for t in it.get("topics") or []:
+            if t not in TOPIC_LABELS:
+                raise ReleaseExportError(
+                    f"topic '{t}' on {it['item_id']} has no resident-facing label; "
+                    "raw taxonomy ids must never reach the public interface")
 
     places = {}
     try:
@@ -194,8 +272,8 @@ def _dimensions(selected_items, environment):
         comm_map = {c["id"]: c for c in comm.get("communities", [])}
     except Exception:
         comm_map = {}
-    for it in selected_items:
-        for p in it.get("place_ids") or []:
+    for it in original_items:
+        for p in it.get("communities") or []:
             rec = comm_map.get(p)
             places[p] = {"label": (rec or {}).get("name", p)}
             if rec and rec.get("type"):
@@ -210,8 +288,8 @@ def _dimensions(selected_items, environment):
         ent_map = {e["entity_id"]: e for e in ent.get("tracked_entities", [])}
     except Exception:
         ent_map = {}
-    for it in selected_items:
-        for e in it.get("entity_ids") or []:
+    for it in original_items:
+        for e in it.get("tracked_entity_ids") or []:
             rec = ent_map.get(e)
             entry = {"label": (rec or {}).get("label", e)}
             if rec and rec.get("lifecycle_status"):
@@ -222,12 +300,15 @@ def _dimensions(selected_items, environment):
             entities[e] = entry
 
     src_entries = {}
-    for it in selected_items:
+    for it in original_items:
         sid = it.get("source_id")
         if not sid:
             continue
         rec = sources.get(sid) or {}
-        entry = {"name": (rec.get("name") or it.get("source_name") or sid)}
+        entry = {
+            "name": _public_source_name(sid, rec.get("name") or sid),
+            "source_kind": PUBLIC_SOURCE_KINDS.get(sid, rec.get("source_type") or ""),
+        }
         if rec.get("url"):
             entry["url"] = rec["url"]
         if rec.get("source_type"):
@@ -237,7 +318,7 @@ def _dimensions(selected_items, environment):
 
     return {
         "relevance": relevance,
-        "topics": topics,
+        "display_topics": display_topics,
         "places": places,
         "entities": entities,
         "sources": src_entries,
@@ -270,7 +351,7 @@ def build_demo_release(fixture_path, release_id, published_at, created_at,
     """Assemble a demo release dict from an explicit fixture."""
     data = _load_fixture(fixture_path)
     meta = data.get("release_metadata") or {}
-    dimensions = data.get("dimensions") or {}
+    dimensions = dict(data.get("dimensions") or {})
     items = list(data.get("items") or [])
 
     env_release_id = release_id or meta.get("release_id")
@@ -287,6 +368,9 @@ def build_demo_release(fixture_path, release_id, published_at, created_at,
         raise ReleaseExportError(
             "demo fixture content-quality errors:\n" +
             "\n".join(f"  {r.item_id}: {err}" for r in errors for err in r.errors))
+
+    # The public topic dimension is always the v0 display-topics layer.
+    dimensions["display_topics"] = build_display_topics(items)
 
     related = compute_related_item_ids(items)
     for it in items:
@@ -457,7 +541,8 @@ def build_real_release(release_id, generator_revision, args):
             "content-quality errors in selected items:\n" +
             "\n".join(f"  {r.item_id}: {err}" for r in errors for err in r.errors))
 
-    dimensions = _dimensions(public_items, "real")
+    dimensions = _dimensions(
+        [by_id[pid] for pid in selected_ids], public_items)
 
     now = args.now
     if not now:
