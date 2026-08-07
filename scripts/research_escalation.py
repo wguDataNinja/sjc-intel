@@ -320,10 +320,10 @@ def research_resolution(proposal: dict[str, Any], queries: list[str],
         "generated_at": now(),
     }
     if persist:
-        records = read(ROOT / "data" / "adaptive_discovery" / "research_resolutions.yaml",
+        records = read(Path(root) / "research_resolutions.yaml",
                        {"resolutions": []})
         records["resolutions"].append({k: v for k, v in record.items() if k not in ("findings", "receipts")})
-        write(ROOT / "data" / "adaptive_discovery" / "research_resolutions.yaml", records)
+        write(Path(root) / "research_resolutions.yaml", records)
     return record
 
 

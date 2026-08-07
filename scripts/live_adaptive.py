@@ -458,6 +458,7 @@ def run_pilot(run_id, queries, root=DURABLE, runtime_root=None, budget=3, timeou
         if not research_queries:
             continue
         record = research_resolution(proposal, research_queries,
+                                     root=r,
                                      budget=ResearchBudget(max_queries=2, max_results_per_query=5, timeout=timeout),
                                      persist=True)
         escalations.append({k: v for k, v in record.items() if k not in ("findings", "receipts")})
