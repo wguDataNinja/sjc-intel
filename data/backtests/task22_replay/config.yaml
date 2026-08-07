@@ -1,0 +1,34 @@
+schema_version: '1.0'
+backtest_id: task22_replay
+start: '2025-05-05'
+end: '2026-08-03'
+review_mode: evaluator_accepts_evidence_backed
+max_revision_attempts: 2
+search_budget_per_week: 8
+seed_entities:
+- id: seed-sjc-county
+  label: St. Johns County government
+  aliases: []
+  available_on: '2025-05-05'
+evaluator_baseline:
+- subject: School QQ
+  priority: high
+- subject: Magnolia Oaks Academy
+  priority: high
+- subject: CR 2209 connector
+  priority: high
+- subject: First Coast Expressway access
+  priority: high
+- subject: SilverLeaf Mega Publix
+  priority: high
+- subject: Harris Teeter SilverLeaf
+  priority: high
+- subject: Baptist SilverLeaf campus
+  priority: high
+- subject: Phase III water shortage
+  priority: high
+- subject: hurricane preparedness
+  priority: high
+- subject: growth and construction
+  priority: high
+  kind: lane

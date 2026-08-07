@@ -1,0 +1,143 @@
+week_start: '2025-12-01'
+available_on: '2025-12-08'
+findings:
+- id: EV-20251202-HARRIS
+  title: Harris Teeter proposed for SilverLeaf grocery center
+  subject: Harris Teeter SilverLeaf
+  event_type: proposed
+  available_on: '2025-12-02'
+  source: st_johns_citizen
+  lane: retail and amenities
+accepted:
+- proposal_id: ADP-20251201-ENT-15487b945d
+  type: entity
+  simulated_week: '2025-12-01'
+  subject: Harris Teeter SilverLeaf
+  evidence:
+  - id: EV-20251202-HARRIS
+    source: st_johns_citizen
+    available_on: '2025-12-02'
+    excerpt: Harris Teeter proposed for SilverLeaf grocery center
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - approval
+  - construction
+  - opening
+  proposed_searches:
+  - '"Harris Teeter" SilverLeaf'
+  proposed_sources: []
+  cost: 1
+  confidence: high
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2025-12-08'
+- proposal_id: ADP-20251201-SEA-b4fefdeec3
+  type: search_profile
+  simulated_week: '2025-12-01'
+  subject: Harris Teeter SilverLeaf
+  evidence:
+  - id: EV-20251202-HARRIS
+    source: st_johns_citizen
+    available_on: '2025-12-02'
+    excerpt: Harris Teeter proposed for SilverLeaf grocery center
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones: []
+  proposed_searches:
+  - '"Harris Teeter" SilverLeaf'
+  proposed_sources: []
+  cost: 2
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2025-12-08'
+- proposal_id: ADP-20251201-TIM-bec5f950a6
+  type: timeline_reconciliation
+  simulated_week: '2025-12-01'
+  subject: Harris Teeter SilverLeaf
+  evidence:
+  - id: EV-20251202-HARRIS
+    source: st_johns_citizen
+    available_on: '2025-12-02'
+    excerpt: Harris Teeter proposed for SilverLeaf grocery center
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - proposed
+  proposed_searches:
+  - '"Harris Teeter SilverLeaf" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2025-12-08'
+- proposal_id: ADP-20251201-MIL-6c714cc2fe
+  type: milestone
+  simulated_week: '2025-12-01'
+  subject: Harris Teeter SilverLeaf
+  evidence:
+  - id: EV-20251202-HARRIS
+    source: st_johns_citizen
+    available_on: '2025-12-02'
+    excerpt: Harris Teeter proposed for SilverLeaf grocery center
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - approval
+  - construction
+  - opening
+  proposed_searches:
+  - '"Harris Teeter SilverLeaf" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2025-12-08'
+  milestone_due:
+    approval: '2026-04-01'
+    construction: '2026-07-01'
+    opening: '2026-12-01'
+- proposal_id: ADP-20251201-COV-f8ea7f0e79
+  type: coverage_lane
+  simulated_week: '2025-12-01'
+  subject: retail and amenities
+  evidence:
+  - id: EV-20251202-HARRIS
+    source: st_johns_citizen
+    available_on: '2025-12-02'
+    excerpt: Harris Teeter proposed for SilverLeaf grocery center
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones: []
+  proposed_searches:
+  - '"retail and amenities" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Multiple resident changes need a durable editorial lane.
+  resulting_state_transition: visible_next_week
+  available_on: '2025-12-08'
+rejected: []

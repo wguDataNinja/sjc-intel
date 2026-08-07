@@ -1,0 +1,37 @@
+week_start: '2026-07-27'
+available_on: '2026-08-03'
+findings:
+- id: EV-20260728-CR210
+  title: CR 210 and CR 2209 intersection safety meetings scheduled
+  subject: CR 2209 connector
+  event_type: safety_meeting
+  available_on: '2026-07-28'
+  source: sjc_county_news
+  lane: roads and mobility
+accepted:
+- proposal_id: ADP-20260727-TIM-cd9fce73a2
+  type: timeline_reconciliation
+  simulated_week: '2026-07-27'
+  subject: CR 2209 connector
+  evidence:
+  - id: EV-20260728-CR210
+    source: sjc_county_news
+    available_on: '2026-07-28'
+    excerpt: CR 210 and CR 2209 intersection safety meetings scheduled
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - safety_meeting
+  proposed_searches:
+  - '"CR 2209 connector" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-08-03'
+rejected: []

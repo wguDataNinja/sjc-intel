@@ -1,0 +1,395 @@
+run_id: task22_replay-20260511
+simulated_week_start: '2026-05-11'
+simulated_week_end: '2026-05-17'
+visible_state_cutoff: '2026-05-11'
+query_cutoff: '2026-05-17'
+evaluation_cutoff: '2026-05-17'
+starting_visible_state:
+  entities:
+  - id: seed-sjc-county
+    label: St. Johns County government
+    aliases: []
+    available_on: '2025-05-05'
+  - id: ADP-20250505-ENT-afc8a23444
+    label: School QQ
+    aliases: []
+    available_on: '2025-05-12'
+  - id: ADP-20250818-ENT-3a2a458085
+    label: CR 2209 connector
+    aliases: []
+    available_on: '2025-08-25'
+  - id: ADP-20251201-ENT-15487b945d
+    label: Harris Teeter SilverLeaf
+    aliases: []
+    available_on: '2025-12-08'
+  - id: ADP-20260323-ENT-1c45991949
+    label: SilverLeaf Mega Publix
+    aliases: []
+    available_on: '2026-03-30'
+  search_profiles:
+  - subject: School QQ
+    queries: &id001
+    - '"School QQ" St. Johns'
+    - '"SilverLeaf" K-8 school'
+    budget: 2
+    available_on: '2025-05-12'
+  - subject: CR 2209 connector
+    queries: &id002
+    - '"CR 2209" St. Johns'
+    - '"SilverLeaf Parkway" roadwork'
+    budget: 2
+    available_on: '2025-08-25'
+  - subject: Harris Teeter SilverLeaf
+    queries: &id003
+    - '"Harris Teeter" SilverLeaf'
+    budget: 2
+    available_on: '2025-12-08'
+  - subject: SilverLeaf Mega Publix
+    queries: &id004
+    - '"Publix" SilverLeaf'
+    budget: 2
+    available_on: '2026-03-30'
+  lanes:
+  - growth and construction
+  - roads and mobility
+  - schools and families
+  - retail and amenities
+  milestones:
+  - subject: School QQ
+    expected:
+    - naming
+    - attendance boundaries
+    - opening
+    milestone_due:
+      naming: '2025-10-01'
+      attendance boundaries: '2026-02-01'
+      opening: '2026-08-15'
+    available_on: '2025-05-12'
+  - subject: CR 2209 connector
+    expected:
+    - traffic shift
+    - opening
+    - completion
+    milestone_due:
+      traffic shift: '2025-10-01'
+      opening: '2025-11-01'
+      completion: '2026-01-15'
+    available_on: '2025-08-25'
+  - subject: School QQ
+    expected:
+    - naming
+    - opening
+    milestone_due: {}
+    available_on: '2025-09-22'
+  - subject: School QQ
+    expected:
+    - official naming
+    - opening
+    milestone_due: {}
+    available_on: '2025-09-29'
+  - subject: Harris Teeter SilverLeaf
+    expected:
+    - approval
+    - construction
+    - opening
+    milestone_due:
+      approval: '2026-04-01'
+      construction: '2026-07-01'
+      opening: '2026-12-01'
+    available_on: '2025-12-08'
+  - subject: SilverLeaf Mega Publix
+    expected:
+    - tenant announcements
+    milestone_due:
+      tenant announcements: '2026-06-01'
+    available_on: '2026-03-30'
+sources_monitored:
+- sjc_utility_department
+searches_executed:
+- subject: School QQ
+  queries: *id001
+  yielded: false
+- subject: CR 2209 connector
+  queries: *id002
+  yielded: false
+- subject: Harris Teeter SilverLeaf
+  queries: *id003
+  yielded: false
+- subject: SilverLeaf Mega Publix
+  queries: *id004
+  yielded: false
+source_health_outcomes:
+- source: sjc_utility_department
+  status: historical_evidence_available
+findings:
+- id: EV-20260511-WATER
+  title: Phase III water shortage declaration affects St. Johns County households
+  subject: Phase III water shortage
+  event_type: declared
+  available_on: '2026-05-11'
+  source: sjc_utility_department
+  lane: utilities and household operations
+no_match_results:
+- School QQ
+- CR 2209 connector
+- Harris Teeter SilverLeaf
+- SilverLeaf Mega Publix
+important_new_subjects:
+- Phase III water shortage
+proposals:
+- proposal_id: ADP-20260511-ENT-ef50b02ced
+  type: entity
+  simulated_week: '2026-05-11'
+  subject: Phase III water shortage
+  evidence:
+  - &id005
+    id: EV-20260511-WATER
+    source: sjc_utility_department
+    available_on: '2026-05-11'
+    excerpt: Phase III water shortage declaration affects St. Johns County households
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones: &id007
+  - restriction update
+  - rescission
+  proposed_searches: &id006
+  - '"St. Johns County" water shortage'
+  proposed_sources: []
+  cost: 1
+  confidence: high
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: proposed
+  reviewer: null
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-05-18'
+- proposal_id: ADP-20260511-SEA-9ea787b567
+  type: search_profile
+  simulated_week: '2026-05-11'
+  subject: Phase III water shortage
+  evidence:
+  - *id005
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones: []
+  proposed_searches: *id006
+  proposed_sources: []
+  cost: 2
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: proposed
+  reviewer: null
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-05-18'
+- proposal_id: ADP-20260511-TIM-2dd94ae4bb
+  type: timeline_reconciliation
+  simulated_week: '2026-05-11'
+  subject: Phase III water shortage
+  evidence:
+  - *id005
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - declared
+  proposed_searches:
+  - '"Phase III water shortage" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: proposed
+  reviewer: null
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-05-18'
+- proposal_id: ADP-20260511-MIL-96acfb3ab5
+  type: milestone
+  simulated_week: '2026-05-11'
+  subject: Phase III water shortage
+  evidence:
+  - *id005
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones: *id007
+  proposed_searches:
+  - '"Phase III water shortage" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: proposed
+  reviewer: null
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-05-18'
+  milestone_due:
+    restriction update: '2026-07-01'
+    rescission: '2026-09-01'
+- proposal_id: ADP-20260511-COV-0ee5b78b5a
+  type: coverage_lane
+  simulated_week: '2026-05-11'
+  subject: utilities and household operations
+  evidence:
+  - *id005
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones: []
+  proposed_searches:
+  - '"utilities and household operations" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: proposed
+  reviewer: null
+  rationale: Multiple resident changes need a durable editorial lane.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-05-18'
+unresolved_gaps:
+- coverage not yet established
+false_positives: []
+evaluator:
+  decision: pass
+  accepted:
+  - proposal_id: ADP-20260511-ENT-ef50b02ced
+    type: entity
+    simulated_week: '2026-05-11'
+    subject: Phase III water shortage
+    evidence:
+    - id: EV-20260511-WATER
+      source: sjc_utility_department
+      available_on: '2026-05-11'
+      excerpt: Phase III water shortage declaration affects St. Johns County households
+    resident_impact: resident-relevant durable change
+    expected_duration: multi-week
+    anticipated_milestones:
+    - restriction update
+    - rescission
+    proposed_searches:
+    - '"St. Johns County" water shortage'
+    proposed_sources: []
+    cost: 1
+    confidence: high
+    risks: []
+    proposer: resident-coverage-strategist
+    review_status: accepted
+    reviewer: historical-evaluator
+    rationale: Evidence supports durable follow-up.
+    resulting_state_transition: visible_next_week
+    available_on: '2026-05-18'
+  - proposal_id: ADP-20260511-SEA-9ea787b567
+    type: search_profile
+    simulated_week: '2026-05-11'
+    subject: Phase III water shortage
+    evidence:
+    - id: EV-20260511-WATER
+      source: sjc_utility_department
+      available_on: '2026-05-11'
+      excerpt: Phase III water shortage declaration affects St. Johns County households
+    resident_impact: resident-relevant durable change
+    expected_duration: multi-week
+    anticipated_milestones: []
+    proposed_searches:
+    - '"St. Johns County" water shortage'
+    proposed_sources: []
+    cost: 2
+    confidence: medium
+    risks: []
+    proposer: resident-coverage-strategist
+    review_status: accepted
+    reviewer: historical-evaluator
+    rationale: Evidence supports durable follow-up.
+    resulting_state_transition: visible_next_week
+    available_on: '2026-05-18'
+  - proposal_id: ADP-20260511-TIM-2dd94ae4bb
+    type: timeline_reconciliation
+    simulated_week: '2026-05-11'
+    subject: Phase III water shortage
+    evidence:
+    - id: EV-20260511-WATER
+      source: sjc_utility_department
+      available_on: '2026-05-11'
+      excerpt: Phase III water shortage declaration affects St. Johns County households
+    resident_impact: resident-relevant durable change
+    expected_duration: multi-week
+    anticipated_milestones:
+    - declared
+    proposed_searches:
+    - '"Phase III water shortage" St. Johns'
+    proposed_sources: []
+    cost: 1
+    confidence: medium
+    risks: []
+    proposer: resident-coverage-strategist
+    review_status: accepted
+    reviewer: historical-evaluator
+    rationale: Evidence supports durable follow-up.
+    resulting_state_transition: visible_next_week
+    available_on: '2026-05-18'
+  - proposal_id: ADP-20260511-MIL-96acfb3ab5
+    type: milestone
+    simulated_week: '2026-05-11'
+    subject: Phase III water shortage
+    evidence:
+    - id: EV-20260511-WATER
+      source: sjc_utility_department
+      available_on: '2026-05-11'
+      excerpt: Phase III water shortage declaration affects St. Johns County households
+    resident_impact: resident-relevant durable change
+    expected_duration: multi-week
+    anticipated_milestones:
+    - restriction update
+    - rescission
+    proposed_searches:
+    - '"Phase III water shortage" St. Johns'
+    proposed_sources: []
+    cost: 1
+    confidence: medium
+    risks: []
+    proposer: resident-coverage-strategist
+    review_status: accepted
+    reviewer: historical-evaluator
+    rationale: Evidence supports durable follow-up.
+    resulting_state_transition: visible_next_week
+    available_on: '2026-05-18'
+    milestone_due:
+      restriction update: '2026-07-01'
+      rescission: '2026-09-01'
+  - proposal_id: ADP-20260511-COV-0ee5b78b5a
+    type: coverage_lane
+    simulated_week: '2026-05-11'
+    subject: utilities and household operations
+    evidence:
+    - id: EV-20260511-WATER
+      source: sjc_utility_department
+      available_on: '2026-05-11'
+      excerpt: Phase III water shortage declaration affects St. Johns County households
+    resident_impact: resident-relevant durable change
+    expected_duration: multi-week
+    anticipated_milestones: []
+    proposed_searches:
+    - '"utilities and household operations" St. Johns'
+    proposed_sources: []
+    cost: 1
+    confidence: medium
+    risks: []
+    proposer: resident-coverage-strategist
+    review_status: accepted
+    reviewer: historical-evaluator
+    rationale: Multiple resident changes need a durable editorial lane.
+    resulting_state_transition: visible_next_week
+    available_on: '2026-05-18'
+  rejected: []
+accepted_changes_visible_next_week:
+- ADP-20260511-ENT-ef50b02ced
+- ADP-20260511-SEA-9ea787b567
+- ADP-20260511-TIM-2dd94ae4bb
+- ADP-20260511-MIL-96acfb3ab5
+- ADP-20260511-COV-0ee5b78b5a
+hidden_evaluator_metrics: withheld_from_generator

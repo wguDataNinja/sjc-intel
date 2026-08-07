@@ -1,0 +1,357 @@
+run_id: task22_replay-20251201
+simulated_week_start: '2025-12-01'
+simulated_week_end: '2025-12-07'
+visible_state_cutoff: '2025-12-01'
+query_cutoff: '2025-12-07'
+evaluation_cutoff: '2025-12-07'
+starting_visible_state:
+  entities:
+  - id: seed-sjc-county
+    label: St. Johns County government
+    aliases: []
+    available_on: '2025-05-05'
+  - id: ADP-20250505-ENT-afc8a23444
+    label: School QQ
+    aliases: []
+    available_on: '2025-05-12'
+  - id: ADP-20250818-ENT-3a2a458085
+    label: CR 2209 connector
+    aliases: []
+    available_on: '2025-08-25'
+  search_profiles:
+  - subject: School QQ
+    queries: &id001
+    - '"School QQ" St. Johns'
+    - '"SilverLeaf" K-8 school'
+    budget: 2
+    available_on: '2025-05-12'
+  - subject: CR 2209 connector
+    queries: &id002
+    - '"CR 2209" St. Johns'
+    - '"SilverLeaf Parkway" roadwork'
+    budget: 2
+    available_on: '2025-08-25'
+  lanes:
+  - growth and construction
+  - roads and mobility
+  - schools and families
+  milestones:
+  - subject: School QQ
+    expected:
+    - naming
+    - attendance boundaries
+    - opening
+    milestone_due:
+      naming: '2025-10-01'
+      attendance boundaries: '2026-02-01'
+      opening: '2026-08-15'
+    available_on: '2025-05-12'
+  - subject: CR 2209 connector
+    expected:
+    - traffic shift
+    - opening
+    - completion
+    milestone_due:
+      traffic shift: '2025-10-01'
+      opening: '2025-11-01'
+      completion: '2026-01-15'
+    available_on: '2025-08-25'
+  - subject: School QQ
+    expected:
+    - naming
+    - opening
+    milestone_due: {}
+    available_on: '2025-09-22'
+  - subject: School QQ
+    expected:
+    - official naming
+    - opening
+    milestone_due: {}
+    available_on: '2025-09-29'
+sources_monitored:
+- st_johns_citizen
+searches_executed:
+- subject: School QQ
+  queries: *id001
+  yielded: false
+- subject: CR 2209 connector
+  queries: *id002
+  yielded: false
+source_health_outcomes:
+- source: st_johns_citizen
+  status: historical_evidence_available
+findings:
+- id: EV-20251202-HARRIS
+  title: Harris Teeter proposed for SilverLeaf grocery center
+  subject: Harris Teeter SilverLeaf
+  event_type: proposed
+  available_on: '2025-12-02'
+  source: st_johns_citizen
+  lane: retail and amenities
+no_match_results:
+- School QQ
+- CR 2209 connector
+important_new_subjects:
+- Harris Teeter SilverLeaf
+proposals:
+- proposal_id: ADP-20251201-ENT-15487b945d
+  type: entity
+  simulated_week: '2025-12-01'
+  subject: Harris Teeter SilverLeaf
+  evidence:
+  - &id003
+    id: EV-20251202-HARRIS
+    source: st_johns_citizen
+    available_on: '2025-12-02'
+    excerpt: Harris Teeter proposed for SilverLeaf grocery center
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones: &id005
+  - approval
+  - construction
+  - opening
+  proposed_searches: &id004
+  - '"Harris Teeter" SilverLeaf'
+  proposed_sources: []
+  cost: 1
+  confidence: high
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: proposed
+  reviewer: null
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2025-12-08'
+- proposal_id: ADP-20251201-SEA-b4fefdeec3
+  type: search_profile
+  simulated_week: '2025-12-01'
+  subject: Harris Teeter SilverLeaf
+  evidence:
+  - *id003
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones: []
+  proposed_searches: *id004
+  proposed_sources: []
+  cost: 2
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: proposed
+  reviewer: null
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2025-12-08'
+- proposal_id: ADP-20251201-TIM-bec5f950a6
+  type: timeline_reconciliation
+  simulated_week: '2025-12-01'
+  subject: Harris Teeter SilverLeaf
+  evidence:
+  - *id003
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - proposed
+  proposed_searches:
+  - '"Harris Teeter SilverLeaf" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: proposed
+  reviewer: null
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2025-12-08'
+- proposal_id: ADP-20251201-MIL-6c714cc2fe
+  type: milestone
+  simulated_week: '2025-12-01'
+  subject: Harris Teeter SilverLeaf
+  evidence:
+  - *id003
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones: *id005
+  proposed_searches:
+  - '"Harris Teeter SilverLeaf" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: proposed
+  reviewer: null
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2025-12-08'
+  milestone_due:
+    approval: '2026-04-01'
+    construction: '2026-07-01'
+    opening: '2026-12-01'
+- proposal_id: ADP-20251201-COV-f8ea7f0e79
+  type: coverage_lane
+  simulated_week: '2025-12-01'
+  subject: retail and amenities
+  evidence:
+  - *id003
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones: []
+  proposed_searches:
+  - '"retail and amenities" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: proposed
+  reviewer: null
+  rationale: Multiple resident changes need a durable editorial lane.
+  resulting_state_transition: visible_next_week
+  available_on: '2025-12-08'
+unresolved_gaps:
+- coverage not yet established
+false_positives: []
+evaluator:
+  decision: pass
+  accepted:
+  - proposal_id: ADP-20251201-ENT-15487b945d
+    type: entity
+    simulated_week: '2025-12-01'
+    subject: Harris Teeter SilverLeaf
+    evidence:
+    - id: EV-20251202-HARRIS
+      source: st_johns_citizen
+      available_on: '2025-12-02'
+      excerpt: Harris Teeter proposed for SilverLeaf grocery center
+    resident_impact: resident-relevant durable change
+    expected_duration: multi-week
+    anticipated_milestones:
+    - approval
+    - construction
+    - opening
+    proposed_searches:
+    - '"Harris Teeter" SilverLeaf'
+    proposed_sources: []
+    cost: 1
+    confidence: high
+    risks: []
+    proposer: resident-coverage-strategist
+    review_status: accepted
+    reviewer: historical-evaluator
+    rationale: Evidence supports durable follow-up.
+    resulting_state_transition: visible_next_week
+    available_on: '2025-12-08'
+  - proposal_id: ADP-20251201-SEA-b4fefdeec3
+    type: search_profile
+    simulated_week: '2025-12-01'
+    subject: Harris Teeter SilverLeaf
+    evidence:
+    - id: EV-20251202-HARRIS
+      source: st_johns_citizen
+      available_on: '2025-12-02'
+      excerpt: Harris Teeter proposed for SilverLeaf grocery center
+    resident_impact: resident-relevant durable change
+    expected_duration: multi-week
+    anticipated_milestones: []
+    proposed_searches:
+    - '"Harris Teeter" SilverLeaf'
+    proposed_sources: []
+    cost: 2
+    confidence: medium
+    risks: []
+    proposer: resident-coverage-strategist
+    review_status: accepted
+    reviewer: historical-evaluator
+    rationale: Evidence supports durable follow-up.
+    resulting_state_transition: visible_next_week
+    available_on: '2025-12-08'
+  - proposal_id: ADP-20251201-TIM-bec5f950a6
+    type: timeline_reconciliation
+    simulated_week: '2025-12-01'
+    subject: Harris Teeter SilverLeaf
+    evidence:
+    - id: EV-20251202-HARRIS
+      source: st_johns_citizen
+      available_on: '2025-12-02'
+      excerpt: Harris Teeter proposed for SilverLeaf grocery center
+    resident_impact: resident-relevant durable change
+    expected_duration: multi-week
+    anticipated_milestones:
+    - proposed
+    proposed_searches:
+    - '"Harris Teeter SilverLeaf" St. Johns'
+    proposed_sources: []
+    cost: 1
+    confidence: medium
+    risks: []
+    proposer: resident-coverage-strategist
+    review_status: accepted
+    reviewer: historical-evaluator
+    rationale: Evidence supports durable follow-up.
+    resulting_state_transition: visible_next_week
+    available_on: '2025-12-08'
+  - proposal_id: ADP-20251201-MIL-6c714cc2fe
+    type: milestone
+    simulated_week: '2025-12-01'
+    subject: Harris Teeter SilverLeaf
+    evidence:
+    - id: EV-20251202-HARRIS
+      source: st_johns_citizen
+      available_on: '2025-12-02'
+      excerpt: Harris Teeter proposed for SilverLeaf grocery center
+    resident_impact: resident-relevant durable change
+    expected_duration: multi-week
+    anticipated_milestones:
+    - approval
+    - construction
+    - opening
+    proposed_searches:
+    - '"Harris Teeter SilverLeaf" St. Johns'
+    proposed_sources: []
+    cost: 1
+    confidence: medium
+    risks: []
+    proposer: resident-coverage-strategist
+    review_status: accepted
+    reviewer: historical-evaluator
+    rationale: Evidence supports durable follow-up.
+    resulting_state_transition: visible_next_week
+    available_on: '2025-12-08'
+    milestone_due:
+      approval: '2026-04-01'
+      construction: '2026-07-01'
+      opening: '2026-12-01'
+  - proposal_id: ADP-20251201-COV-f8ea7f0e79
+    type: coverage_lane
+    simulated_week: '2025-12-01'
+    subject: retail and amenities
+    evidence:
+    - id: EV-20251202-HARRIS
+      source: st_johns_citizen
+      available_on: '2025-12-02'
+      excerpt: Harris Teeter proposed for SilverLeaf grocery center
+    resident_impact: resident-relevant durable change
+    expected_duration: multi-week
+    anticipated_milestones: []
+    proposed_searches:
+    - '"retail and amenities" St. Johns'
+    proposed_sources: []
+    cost: 1
+    confidence: medium
+    risks: []
+    proposer: resident-coverage-strategist
+    review_status: accepted
+    reviewer: historical-evaluator
+    rationale: Multiple resident changes need a durable editorial lane.
+    resulting_state_transition: visible_next_week
+    available_on: '2025-12-08'
+  rejected: []
+accepted_changes_visible_next_week:
+- ADP-20251201-ENT-15487b945d
+- ADP-20251201-SEA-b4fefdeec3
+- ADP-20251201-TIM-bec5f950a6
+- ADP-20251201-MIL-6c714cc2fe
+- ADP-20251201-COV-f8ea7f0e79
+hidden_evaluator_metrics: withheld_from_generator

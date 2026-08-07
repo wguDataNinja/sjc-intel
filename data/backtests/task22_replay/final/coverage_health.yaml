@@ -1,0 +1,152 @@
+generated_at: '2026-08-03'
+overdue_milestones:
+- subject: School QQ
+  milestone: attendance boundaries
+  due_on: '2026-02-01'
+  available_on: '2025-05-12'
+  realizing_events:
+  - attendance_boundaries
+- subject: CR 2209 connector
+  milestone: traffic shift
+  due_on: '2025-10-01'
+  available_on: '2025-08-25'
+  realizing_events:
+  - traffic_shift
+- subject: Harris Teeter SilverLeaf
+  milestone: approval
+  due_on: '2026-04-01'
+  available_on: '2025-12-08'
+  realizing_events:
+  - approved
+- subject: Harris Teeter SilverLeaf
+  milestone: construction
+  due_on: '2026-07-01'
+  available_on: '2025-12-08'
+  realizing_events:
+  - construction_started
+  - under_construction
+- subject: SilverLeaf Mega Publix
+  milestone: tenant announcements
+  due_on: '2026-06-01'
+  available_on: '2026-03-30'
+  realizing_events:
+  - tenant_announcement
+- subject: Phase III water shortage
+  milestone: restriction update
+  due_on: '2026-07-01'
+  available_on: '2026-05-18'
+  realizing_events:
+  - restriction_update
+- subject: Baptist SilverLeaf campus
+  milestone: official site
+  due_on: '2026-08-01'
+  available_on: '2026-07-13'
+  realizing_events:
+  - official_site
+met_milestones:
+- subject: School QQ
+  milestone: naming
+  due_on: '2025-10-01'
+  available_on: '2025-05-12'
+  realizing_events:
+  - naming_process
+  - official_naming
+- subject: CR 2209 connector
+  milestone: completion
+  due_on: '2026-01-15'
+  available_on: '2025-08-25'
+  realizing_events:
+  - completion
+  - opened
+- subject: CR 2209 connector
+  milestone: opening
+  due_on: '2025-11-01'
+  available_on: '2025-08-25'
+  realizing_events:
+  - first_day
+  - opened
+- subject: hurricane preparedness
+  milestone: seasonal update
+  due_on: '2026-07-01'
+  available_on: '2026-06-08'
+  realizing_events:
+  - preparedness_update
+stale_subjects:
+- Harris Teeter SilverLeaf
+- Phase III water shortage
+- School QQ
+- SilverLeaf Mega Publix
+- St. Johns County government
+- hurricane preparedness
+search_yield:
+  profiles:
+  - Baptist SilverLeaf campus
+  - CR 2209 connector
+  - First Coast Expressway access
+  - Harris Teeter SilverLeaf
+  - Phase III water shortage
+  - School QQ
+  - SilverLeaf Mega Publix
+  - SilverLeaf commercial tenants
+  - SilverLeaf shopping center expansion
+  - hurricane preparedness
+  yielded_profiles:
+  - Baptist SilverLeaf campus
+  - CR 2209 connector
+  - First Coast Expressway access
+  - Harris Teeter SilverLeaf
+  - Phase III water shortage
+  - School QQ
+  - SilverLeaf Mega Publix
+  - SilverLeaf commercial tenants
+  - SilverLeaf shopping center expansion
+  - hurricane preparedness
+  profile_yield_rate: 1.0
+  query_attempts: 324
+source_freshness:
+  florida_dot:
+    first: '2026-07-20'
+    last: '2026-07-20'
+  silverleaf_resident_directory:
+    first: '2026-07-06'
+    last: '2026-07-06'
+  sjc_county_news:
+    first: '2025-08-20'
+    last: '2026-07-28'
+  sjc_emergency_management:
+    first: '2026-06-01'
+    last: '2026-06-01'
+  sjc_school_district:
+    first: '2025-09-15'
+    last: '2026-07-22'
+  sjc_utility_department:
+    first: '2026-05-11'
+    last: '2026-05-11'
+  st_johns_citizen:
+    first: '2025-05-07'
+    last: '2026-06-18'
+lane_coverage:
+  total_weeks: 66
+  lanes:
+    growth and construction:
+      weeks_covered: 2
+      coverage_rate: 0.03
+    healthcare and services:
+      weeks_covered: 1
+      coverage_rate: 0.015
+    preparedness:
+      weeks_covered: 1
+      coverage_rate: 0.015
+    retail and amenities:
+      weeks_covered: 3
+      coverage_rate: 0.045
+    roads and mobility:
+      weeks_covered: 4
+      coverage_rate: 0.061
+    schools and families:
+      weeks_covered: 4
+      coverage_rate: 0.061
+    utilities and household operations:
+      weeks_covered: 1
+      coverage_rate: 0.015
+false_positives: 0

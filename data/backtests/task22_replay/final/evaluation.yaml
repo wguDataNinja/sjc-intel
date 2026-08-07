@@ -1,0 +1,35 @@
+item_recall: 1.0
+subject_recall: 1.0
+resident_coverage_recall: 1.0
+precision: 0.818
+subjects_found:
+- Baptist SilverLeaf campus
+- CR 2209 connector
+- First Coast Expressway access
+- Harris Teeter SilverLeaf
+- Magnolia Oaks Academy
+- Phase III water shortage
+- School QQ
+- SilverLeaf Mega Publix
+- hurricane preparedness
+subjects_missed: []
+lanes_found:
+- growth and construction
+lanes_missed: []
+accepted_proposals: 56
+proposal_acceptance_rate: 1.0
+overdue_milestones: 7
+met_milestones: 4
+stale_subjects:
+- Harris Teeter SilverLeaf
+- Phase III water shortage
+- School QQ
+- SilverLeaf Mega Publix
+- St. Johns County government
+- hurricane preparedness
+false_positives: 0
+leakage_violations: 0
+formulas:
+  item_recall: baseline subject findings / baseline subjects (fixture-level proxy)
+  resident_coverage_recall: high-priority subjects and lanes found / high-priority
+    baseline subjects and lanes

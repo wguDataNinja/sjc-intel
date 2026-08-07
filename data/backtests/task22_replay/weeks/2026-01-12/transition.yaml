@@ -1,0 +1,37 @@
+week_start: '2026-01-12'
+available_on: '2026-01-19'
+findings:
+- id: EV-20260116-SCHOOL-NAME
+  title: School QQ officially named Magnolia Oaks Academy
+  subject: School QQ
+  event_type: official_naming
+  available_on: '2026-01-16'
+  source: sjc_school_district
+  lane: schools and families
+accepted:
+- proposal_id: ADP-20260112-TIM-132fa6c44c
+  type: timeline_reconciliation
+  simulated_week: '2026-01-12'
+  subject: School QQ
+  evidence:
+  - id: EV-20260116-SCHOOL-NAME
+    source: sjc_school_district
+    available_on: '2026-01-16'
+    excerpt: School QQ officially named Magnolia Oaks Academy
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - official_naming
+  proposed_searches:
+  - '"School QQ" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-01-19'
+rejected: []

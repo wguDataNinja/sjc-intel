@@ -1,0 +1,52 @@
+schema_version: '1.0'
+entities:
+- id: seed-sjc-county
+  label: St. Johns County government
+  aliases: []
+  available_on: '2025-05-05'
+- id: ADP-20250505-ENT-afc8a23444
+  label: School QQ
+  aliases: []
+  available_on: '2025-05-12'
+search_profiles:
+- subject: School QQ
+  queries:
+  - '"School QQ" St. Johns'
+  - '"SilverLeaf" K-8 school'
+  budget: 2
+  available_on: '2025-05-12'
+lanes:
+- growth and construction
+milestones:
+- subject: School QQ
+  expected:
+  - naming
+  - attendance boundaries
+  - opening
+  milestone_due:
+    naming: '2025-10-01'
+    attendance boundaries: '2026-02-01'
+    opening: '2026-08-15'
+  available_on: '2025-05-12'
+timelines:
+- subject: School QQ
+  event: construction_started
+  available_on: '2025-05-12'
+accepted_proposals:
+- ADP-20250505-ENT-afc8a23444
+- ADP-20250505-SEA-2841f20ba4
+- ADP-20250505-TIM-39727d98b4
+- ADP-20250505-MIL-0a0c0cfda2
+- ADP-20250505-COV-b7f2b82ad2
+rejected_proposals: []
+findings:
+- id: EV-20250507-SCHOOL
+  title: SilverLeaf K-8 School QQ topping-out ceremony
+  subject: School QQ
+  event_type: construction_started
+  available_on: '2025-05-07'
+  source: st_johns_citizen
+  lane: growth and construction
+gaps:
+- coverage not yet established
+last_week: '2025-07-07'

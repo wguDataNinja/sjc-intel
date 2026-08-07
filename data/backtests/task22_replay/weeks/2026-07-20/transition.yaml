@@ -1,0 +1,202 @@
+week_start: '2026-07-20'
+available_on: '2026-07-27'
+findings:
+- id: EV-20260720-FCE
+  title: First Coast Expressway access work creates CR 16A closures
+  subject: First Coast Expressway access
+  event_type: closure
+  available_on: '2026-07-20'
+  source: florida_dot
+  lane: roads and mobility
+- id: EV-20260722-MAGNOLIA
+  title: Magnolia Oaks Academy opens in SilverLeaf
+  subject: Magnolia Oaks Academy
+  event_type: opened
+  available_on: '2026-07-22'
+  source: sjc_school_district
+  lane: schools and families
+accepted:
+- proposal_id: ADP-20260720-ENT-7170ec84b3
+  type: entity
+  simulated_week: '2026-07-20'
+  subject: First Coast Expressway access
+  evidence:
+  - id: EV-20260720-FCE
+    source: florida_dot
+    available_on: '2026-07-20'
+    excerpt: First Coast Expressway access work creates CR 16A closures
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - closure_end
+  - access_opening
+  proposed_searches:
+  - '"First Coast Expressway" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: high
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-07-27'
+- proposal_id: ADP-20260720-SEA-075c2e5bef
+  type: search_profile
+  simulated_week: '2026-07-20'
+  subject: First Coast Expressway access
+  evidence:
+  - id: EV-20260720-FCE
+    source: florida_dot
+    available_on: '2026-07-20'
+    excerpt: First Coast Expressway access work creates CR 16A closures
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones: []
+  proposed_searches:
+  - '"First Coast Expressway" St. Johns'
+  proposed_sources: []
+  cost: 2
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-07-27'
+- proposal_id: ADP-20260720-TIM-4c1c946dac
+  type: timeline_reconciliation
+  simulated_week: '2026-07-20'
+  subject: First Coast Expressway access
+  evidence:
+  - id: EV-20260720-FCE
+    source: florida_dot
+    available_on: '2026-07-20'
+    excerpt: First Coast Expressway access work creates CR 16A closures
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - closure
+  proposed_searches:
+  - '"First Coast Expressway access" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-07-27'
+- proposal_id: ADP-20260720-MIL-2f05626328
+  type: milestone
+  simulated_week: '2026-07-20'
+  subject: First Coast Expressway access
+  evidence:
+  - id: EV-20260720-FCE
+    source: florida_dot
+    available_on: '2026-07-20'
+    excerpt: First Coast Expressway access work creates CR 16A closures
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - closure_end
+  - access_opening
+  proposed_searches:
+  - '"First Coast Expressway access" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-07-27'
+  milestone_due:
+    closure_end: '2026-08-15'
+    access_opening: '2026-12-01'
+- proposal_id: ADP-20260720-ALI-65c5c9c669
+  type: alias
+  simulated_week: '2026-07-20'
+  subject: Magnolia Oaks Academy
+  evidence:
+  - id: EV-20260722-MAGNOLIA
+    source: sjc_school_district
+    available_on: '2026-07-22'
+    excerpt: Magnolia Oaks Academy opens in SilverLeaf
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones: []
+  proposed_searches:
+  - '"Magnolia Oaks Academy" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: high
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-07-27'
+  target: School QQ
+- proposal_id: ADP-20260720-TIM-4789d12128
+  type: timeline_reconciliation
+  simulated_week: '2026-07-20'
+  subject: Magnolia Oaks Academy
+  evidence:
+  - id: EV-20260722-MAGNOLIA
+    source: sjc_school_district
+    available_on: '2026-07-22'
+    excerpt: Magnolia Oaks Academy opens in SilverLeaf
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - opened
+  proposed_searches:
+  - '"Magnolia Oaks Academy" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-07-27'
+- proposal_id: ADP-20260720-MIL-b3ee6c1bfe
+  type: milestone
+  simulated_week: '2026-07-20'
+  subject: Magnolia Oaks Academy
+  evidence:
+  - id: EV-20260722-MAGNOLIA
+    source: sjc_school_district
+    available_on: '2026-07-22'
+    excerpt: Magnolia Oaks Academy opens in SilverLeaf
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - first_day
+  - programs
+  proposed_searches:
+  - '"Magnolia Oaks Academy" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-07-27'
+  milestone_due:
+    first_day: '2026-08-10'
+    programs: '2026-09-15'
+rejected: []

@@ -1,0 +1,85 @@
+week_start: '2026-06-15'
+available_on: '2026-06-22'
+findings:
+- id: EV-20260618-RETAIL
+  title: New fitness and dining tenants sign at SilverLeaf commercial center
+  subject: SilverLeaf commercial tenants
+  event_type: tenant_announcement
+  available_on: '2026-06-18'
+  source: st_johns_citizen
+  lane: retail and amenities
+accepted:
+- proposal_id: ADP-20260615-ENT-998aecef3a
+  type: entity
+  simulated_week: '2026-06-15'
+  subject: SilverLeaf commercial tenants
+  evidence:
+  - id: EV-20260618-RETAIL
+    source: st_johns_citizen
+    available_on: '2026-06-18'
+    excerpt: New fitness and dining tenants sign at SilverLeaf commercial center
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones: []
+  proposed_searches:
+  - '"SilverLeaf" tenants'
+  proposed_sources: []
+  cost: 1
+  confidence: high
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-06-22'
+- proposal_id: ADP-20260615-SEA-750b8219b4
+  type: search_profile
+  simulated_week: '2026-06-15'
+  subject: SilverLeaf commercial tenants
+  evidence:
+  - id: EV-20260618-RETAIL
+    source: st_johns_citizen
+    available_on: '2026-06-18'
+    excerpt: New fitness and dining tenants sign at SilverLeaf commercial center
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones: []
+  proposed_searches:
+  - '"SilverLeaf" tenants'
+  proposed_sources: []
+  cost: 2
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-06-22'
+- proposal_id: ADP-20260615-TIM-0b1735c0f4
+  type: timeline_reconciliation
+  simulated_week: '2026-06-15'
+  subject: SilverLeaf commercial tenants
+  evidence:
+  - id: EV-20260618-RETAIL
+    source: st_johns_citizen
+    available_on: '2026-06-18'
+    excerpt: New fitness and dining tenants sign at SilverLeaf commercial center
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - tenant_announcement
+  proposed_searches:
+  - '"SilverLeaf commercial tenants" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-06-22'
+rejected: []

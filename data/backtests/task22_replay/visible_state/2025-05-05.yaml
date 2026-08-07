@@ -1,0 +1,16 @@
+schema_version: '1.0'
+entities:
+- id: seed-sjc-county
+  label: St. Johns County government
+  aliases: []
+  available_on: '2025-05-05'
+search_profiles: []
+lanes: []
+milestones: []
+timelines: []
+accepted_proposals: []
+rejected_proposals: []
+findings: []
+gaps:
+- coverage not yet established
+last_week: null

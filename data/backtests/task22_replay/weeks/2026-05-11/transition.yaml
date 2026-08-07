@@ -1,0 +1,140 @@
+week_start: '2026-05-11'
+available_on: '2026-05-18'
+findings:
+- id: EV-20260511-WATER
+  title: Phase III water shortage declaration affects St. Johns County households
+  subject: Phase III water shortage
+  event_type: declared
+  available_on: '2026-05-11'
+  source: sjc_utility_department
+  lane: utilities and household operations
+accepted:
+- proposal_id: ADP-20260511-ENT-ef50b02ced
+  type: entity
+  simulated_week: '2026-05-11'
+  subject: Phase III water shortage
+  evidence:
+  - id: EV-20260511-WATER
+    source: sjc_utility_department
+    available_on: '2026-05-11'
+    excerpt: Phase III water shortage declaration affects St. Johns County households
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - restriction update
+  - rescission
+  proposed_searches:
+  - '"St. Johns County" water shortage'
+  proposed_sources: []
+  cost: 1
+  confidence: high
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-05-18'
+- proposal_id: ADP-20260511-SEA-9ea787b567
+  type: search_profile
+  simulated_week: '2026-05-11'
+  subject: Phase III water shortage
+  evidence:
+  - id: EV-20260511-WATER
+    source: sjc_utility_department
+    available_on: '2026-05-11'
+    excerpt: Phase III water shortage declaration affects St. Johns County households
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones: []
+  proposed_searches:
+  - '"St. Johns County" water shortage'
+  proposed_sources: []
+  cost: 2
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-05-18'
+- proposal_id: ADP-20260511-TIM-2dd94ae4bb
+  type: timeline_reconciliation
+  simulated_week: '2026-05-11'
+  subject: Phase III water shortage
+  evidence:
+  - id: EV-20260511-WATER
+    source: sjc_utility_department
+    available_on: '2026-05-11'
+    excerpt: Phase III water shortage declaration affects St. Johns County households
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - declared
+  proposed_searches:
+  - '"Phase III water shortage" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-05-18'
+- proposal_id: ADP-20260511-MIL-96acfb3ab5
+  type: milestone
+  simulated_week: '2026-05-11'
+  subject: Phase III water shortage
+  evidence:
+  - id: EV-20260511-WATER
+    source: sjc_utility_department
+    available_on: '2026-05-11'
+    excerpt: Phase III water shortage declaration affects St. Johns County households
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - restriction update
+  - rescission
+  proposed_searches:
+  - '"Phase III water shortage" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-05-18'
+  milestone_due:
+    restriction update: '2026-07-01'
+    rescission: '2026-09-01'
+- proposal_id: ADP-20260511-COV-0ee5b78b5a
+  type: coverage_lane
+  simulated_week: '2026-05-11'
+  subject: utilities and household operations
+  evidence:
+  - id: EV-20260511-WATER
+    source: sjc_utility_department
+    available_on: '2026-05-11'
+    excerpt: Phase III water shortage declaration affects St. Johns County households
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones: []
+  proposed_searches:
+  - '"utilities and household operations" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Multiple resident changes need a durable editorial lane.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-05-18'
+rejected: []

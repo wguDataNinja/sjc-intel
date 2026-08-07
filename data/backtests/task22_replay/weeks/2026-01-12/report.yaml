@@ -1,0 +1,179 @@
+run_id: task22_replay-20260112
+simulated_week_start: '2026-01-12'
+simulated_week_end: '2026-01-18'
+visible_state_cutoff: '2026-01-12'
+query_cutoff: '2026-01-18'
+evaluation_cutoff: '2026-01-18'
+starting_visible_state:
+  entities:
+  - id: seed-sjc-county
+    label: St. Johns County government
+    aliases: []
+    available_on: '2025-05-05'
+  - id: ADP-20250505-ENT-afc8a23444
+    label: School QQ
+    aliases: []
+    available_on: '2025-05-12'
+  - id: ADP-20250818-ENT-3a2a458085
+    label: CR 2209 connector
+    aliases: []
+    available_on: '2025-08-25'
+  - id: ADP-20251201-ENT-15487b945d
+    label: Harris Teeter SilverLeaf
+    aliases: []
+    available_on: '2025-12-08'
+  search_profiles:
+  - subject: School QQ
+    queries: &id001
+    - '"School QQ" St. Johns'
+    - '"SilverLeaf" K-8 school'
+    budget: 2
+    available_on: '2025-05-12'
+  - subject: CR 2209 connector
+    queries: &id002
+    - '"CR 2209" St. Johns'
+    - '"SilverLeaf Parkway" roadwork'
+    budget: 2
+    available_on: '2025-08-25'
+  - subject: Harris Teeter SilverLeaf
+    queries: &id003
+    - '"Harris Teeter" SilverLeaf'
+    budget: 2
+    available_on: '2025-12-08'
+  lanes:
+  - growth and construction
+  - roads and mobility
+  - schools and families
+  - retail and amenities
+  milestones:
+  - subject: School QQ
+    expected:
+    - naming
+    - attendance boundaries
+    - opening
+    milestone_due:
+      naming: '2025-10-01'
+      attendance boundaries: '2026-02-01'
+      opening: '2026-08-15'
+    available_on: '2025-05-12'
+  - subject: CR 2209 connector
+    expected:
+    - traffic shift
+    - opening
+    - completion
+    milestone_due:
+      traffic shift: '2025-10-01'
+      opening: '2025-11-01'
+      completion: '2026-01-15'
+    available_on: '2025-08-25'
+  - subject: School QQ
+    expected:
+    - naming
+    - opening
+    milestone_due: {}
+    available_on: '2025-09-22'
+  - subject: School QQ
+    expected:
+    - official naming
+    - opening
+    milestone_due: {}
+    available_on: '2025-09-29'
+  - subject: Harris Teeter SilverLeaf
+    expected:
+    - approval
+    - construction
+    - opening
+    milestone_due:
+      approval: '2026-04-01'
+      construction: '2026-07-01'
+      opening: '2026-12-01'
+    available_on: '2025-12-08'
+sources_monitored:
+- sjc_school_district
+searches_executed:
+- subject: School QQ
+  queries: *id001
+  yielded: true
+- subject: CR 2209 connector
+  queries: *id002
+  yielded: false
+- subject: Harris Teeter SilverLeaf
+  queries: *id003
+  yielded: false
+source_health_outcomes:
+- source: sjc_school_district
+  status: historical_evidence_available
+findings:
+- id: EV-20260116-SCHOOL-NAME
+  title: School QQ officially named Magnolia Oaks Academy
+  subject: School QQ
+  event_type: official_naming
+  available_on: '2026-01-16'
+  source: sjc_school_district
+  lane: schools and families
+no_match_results:
+- CR 2209 connector
+- Harris Teeter SilverLeaf
+important_new_subjects:
+- School QQ
+proposals:
+- proposal_id: ADP-20260112-TIM-132fa6c44c
+  type: timeline_reconciliation
+  simulated_week: '2026-01-12'
+  subject: School QQ
+  evidence:
+  - id: EV-20260116-SCHOOL-NAME
+    source: sjc_school_district
+    available_on: '2026-01-16'
+    excerpt: School QQ officially named Magnolia Oaks Academy
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - official_naming
+  proposed_searches:
+  - '"School QQ" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: proposed
+  reviewer: null
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-01-19'
+unresolved_gaps:
+- coverage not yet established
+false_positives: []
+evaluator:
+  decision: pass
+  accepted:
+  - proposal_id: ADP-20260112-TIM-132fa6c44c
+    type: timeline_reconciliation
+    simulated_week: '2026-01-12'
+    subject: School QQ
+    evidence:
+    - id: EV-20260116-SCHOOL-NAME
+      source: sjc_school_district
+      available_on: '2026-01-16'
+      excerpt: School QQ officially named Magnolia Oaks Academy
+    resident_impact: resident-relevant durable change
+    expected_duration: multi-week
+    anticipated_milestones:
+    - official_naming
+    proposed_searches:
+    - '"School QQ" St. Johns'
+    proposed_sources: []
+    cost: 1
+    confidence: medium
+    risks: []
+    proposer: resident-coverage-strategist
+    review_status: accepted
+    reviewer: historical-evaluator
+    rationale: Evidence supports durable follow-up.
+    resulting_state_transition: visible_next_week
+    available_on: '2026-01-19'
+  rejected: []
+accepted_changes_visible_next_week:
+- ADP-20260112-TIM-132fa6c44c
+hidden_evaluator_metrics: withheld_from_generator

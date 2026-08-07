@@ -1,0 +1,150 @@
+week_start: '2025-08-18'
+available_on: '2025-08-25'
+findings:
+- id: EV-20250820-CR2209
+  title: CR 2209 connector expansion begins between SilverLeaf Parkway and SR 16
+  subject: CR 2209 connector
+  event_type: construction_started
+  available_on: '2025-08-20'
+  source: sjc_county_news
+  lane: roads and mobility
+accepted:
+- proposal_id: ADP-20250818-ENT-3a2a458085
+  type: entity
+  simulated_week: '2025-08-18'
+  subject: CR 2209 connector
+  evidence:
+  - id: EV-20250820-CR2209
+    source: sjc_county_news
+    available_on: '2025-08-20'
+    excerpt: CR 2209 connector expansion begins between SilverLeaf Parkway and SR
+      16
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - traffic shift
+  - opening
+  - completion
+  proposed_searches:
+  - '"CR 2209" St. Johns'
+  - '"SilverLeaf Parkway" roadwork'
+  proposed_sources: []
+  cost: 1
+  confidence: high
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2025-08-25'
+- proposal_id: ADP-20250818-SEA-39095a80ce
+  type: search_profile
+  simulated_week: '2025-08-18'
+  subject: CR 2209 connector
+  evidence:
+  - id: EV-20250820-CR2209
+    source: sjc_county_news
+    available_on: '2025-08-20'
+    excerpt: CR 2209 connector expansion begins between SilverLeaf Parkway and SR
+      16
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones: []
+  proposed_searches:
+  - '"CR 2209" St. Johns'
+  - '"SilverLeaf Parkway" roadwork'
+  proposed_sources: []
+  cost: 2
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2025-08-25'
+- proposal_id: ADP-20250818-TIM-b36685f275
+  type: timeline_reconciliation
+  simulated_week: '2025-08-18'
+  subject: CR 2209 connector
+  evidence:
+  - id: EV-20250820-CR2209
+    source: sjc_county_news
+    available_on: '2025-08-20'
+    excerpt: CR 2209 connector expansion begins between SilverLeaf Parkway and SR
+      16
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - construction_started
+  proposed_searches:
+  - '"CR 2209 connector" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2025-08-25'
+- proposal_id: ADP-20250818-MIL-d4458e0417
+  type: milestone
+  simulated_week: '2025-08-18'
+  subject: CR 2209 connector
+  evidence:
+  - id: EV-20250820-CR2209
+    source: sjc_county_news
+    available_on: '2025-08-20'
+    excerpt: CR 2209 connector expansion begins between SilverLeaf Parkway and SR
+      16
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - traffic shift
+  - opening
+  - completion
+  proposed_searches:
+  - '"CR 2209 connector" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2025-08-25'
+  milestone_due:
+    traffic shift: '2025-10-01'
+    opening: '2025-11-01'
+    completion: '2026-01-15'
+- proposal_id: ADP-20250818-COV-69873e5a23
+  type: coverage_lane
+  simulated_week: '2025-08-18'
+  subject: roads and mobility
+  evidence:
+  - id: EV-20250820-CR2209
+    source: sjc_county_news
+    available_on: '2025-08-20'
+    excerpt: CR 2209 connector expansion begins between SilverLeaf Parkway and SR
+      16
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones: []
+  proposed_searches:
+  - '"roads and mobility" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Multiple resident changes need a durable editorial lane.
+  resulting_state_transition: visible_next_week
+  available_on: '2025-08-25'
+rejected: []

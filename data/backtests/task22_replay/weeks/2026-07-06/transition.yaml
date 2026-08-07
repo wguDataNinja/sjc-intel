@@ -1,0 +1,143 @@
+week_start: '2026-07-06'
+available_on: '2026-07-13'
+findings:
+- id: EV-20260706-BAPTIST
+  title: Baptist SilverLeaf campus listed as a resident-serving facility
+  subject: Baptist SilverLeaf campus
+  event_type: facility_identified
+  available_on: '2026-07-06'
+  source: silverleaf_resident_directory
+  lane: healthcare and services
+accepted:
+- proposal_id: ADP-20260706-ENT-42b80dd494
+  type: entity
+  simulated_week: '2026-07-06'
+  subject: Baptist SilverLeaf campus
+  evidence:
+  - id: EV-20260706-BAPTIST
+    source: silverleaf_resident_directory
+    available_on: '2026-07-06'
+    excerpt: Baptist SilverLeaf campus listed as a resident-serving facility
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - official site
+  - construction
+  - opening
+  proposed_searches:
+  - '"Baptist" SilverLeaf health'
+  proposed_sources: []
+  cost: 1
+  confidence: high
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-07-13'
+- proposal_id: ADP-20260706-SEA-88606acac2
+  type: search_profile
+  simulated_week: '2026-07-06'
+  subject: Baptist SilverLeaf campus
+  evidence:
+  - id: EV-20260706-BAPTIST
+    source: silverleaf_resident_directory
+    available_on: '2026-07-06'
+    excerpt: Baptist SilverLeaf campus listed as a resident-serving facility
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones: []
+  proposed_searches:
+  - '"Baptist" SilverLeaf health'
+  proposed_sources: []
+  cost: 2
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-07-13'
+- proposal_id: ADP-20260706-TIM-1e020c8908
+  type: timeline_reconciliation
+  simulated_week: '2026-07-06'
+  subject: Baptist SilverLeaf campus
+  evidence:
+  - id: EV-20260706-BAPTIST
+    source: silverleaf_resident_directory
+    available_on: '2026-07-06'
+    excerpt: Baptist SilverLeaf campus listed as a resident-serving facility
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - facility_identified
+  proposed_searches:
+  - '"Baptist SilverLeaf campus" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-07-13'
+- proposal_id: ADP-20260706-MIL-5374d2fd13
+  type: milestone
+  simulated_week: '2026-07-06'
+  subject: Baptist SilverLeaf campus
+  evidence:
+  - id: EV-20260706-BAPTIST
+    source: silverleaf_resident_directory
+    available_on: '2026-07-06'
+    excerpt: Baptist SilverLeaf campus listed as a resident-serving facility
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - official site
+  - construction
+  - opening
+  proposed_searches:
+  - '"Baptist SilverLeaf campus" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-07-13'
+  milestone_due:
+    official site: '2026-08-01'
+    construction: '2026-10-01'
+    opening: '2027-01-01'
+- proposal_id: ADP-20260706-COV-a83bfe9cb3
+  type: coverage_lane
+  simulated_week: '2026-07-06'
+  subject: healthcare and services
+  evidence:
+  - id: EV-20260706-BAPTIST
+    source: silverleaf_resident_directory
+    available_on: '2026-07-06'
+    excerpt: Baptist SilverLeaf campus listed as a resident-serving facility
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones: []
+  proposed_searches:
+  - '"healthcare and services" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Multiple resident changes need a durable editorial lane.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-07-13'
+rejected: []

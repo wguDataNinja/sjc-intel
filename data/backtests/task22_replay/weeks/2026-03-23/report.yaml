@@ -1,0 +1,325 @@
+run_id: task22_replay-20260323
+simulated_week_start: '2026-03-23'
+simulated_week_end: '2026-03-29'
+visible_state_cutoff: '2026-03-23'
+query_cutoff: '2026-03-29'
+evaluation_cutoff: '2026-03-29'
+starting_visible_state:
+  entities:
+  - id: seed-sjc-county
+    label: St. Johns County government
+    aliases: []
+    available_on: '2025-05-05'
+  - id: ADP-20250505-ENT-afc8a23444
+    label: School QQ
+    aliases: []
+    available_on: '2025-05-12'
+  - id: ADP-20250818-ENT-3a2a458085
+    label: CR 2209 connector
+    aliases: []
+    available_on: '2025-08-25'
+  - id: ADP-20251201-ENT-15487b945d
+    label: Harris Teeter SilverLeaf
+    aliases: []
+    available_on: '2025-12-08'
+  search_profiles:
+  - subject: School QQ
+    queries: &id001
+    - '"School QQ" St. Johns'
+    - '"SilverLeaf" K-8 school'
+    budget: 2
+    available_on: '2025-05-12'
+  - subject: CR 2209 connector
+    queries: &id002
+    - '"CR 2209" St. Johns'
+    - '"SilverLeaf Parkway" roadwork'
+    budget: 2
+    available_on: '2025-08-25'
+  - subject: Harris Teeter SilverLeaf
+    queries: &id003
+    - '"Harris Teeter" SilverLeaf'
+    budget: 2
+    available_on: '2025-12-08'
+  lanes:
+  - growth and construction
+  - roads and mobility
+  - schools and families
+  - retail and amenities
+  milestones:
+  - subject: School QQ
+    expected:
+    - naming
+    - attendance boundaries
+    - opening
+    milestone_due:
+      naming: '2025-10-01'
+      attendance boundaries: '2026-02-01'
+      opening: '2026-08-15'
+    available_on: '2025-05-12'
+  - subject: CR 2209 connector
+    expected:
+    - traffic shift
+    - opening
+    - completion
+    milestone_due:
+      traffic shift: '2025-10-01'
+      opening: '2025-11-01'
+      completion: '2026-01-15'
+    available_on: '2025-08-25'
+  - subject: School QQ
+    expected:
+    - naming
+    - opening
+    milestone_due: {}
+    available_on: '2025-09-22'
+  - subject: School QQ
+    expected:
+    - official naming
+    - opening
+    milestone_due: {}
+    available_on: '2025-09-29'
+  - subject: Harris Teeter SilverLeaf
+    expected:
+    - approval
+    - construction
+    - opening
+    milestone_due:
+      approval: '2026-04-01'
+      construction: '2026-07-01'
+      opening: '2026-12-01'
+    available_on: '2025-12-08'
+sources_monitored:
+- st_johns_citizen
+searches_executed:
+- subject: School QQ
+  queries: *id001
+  yielded: false
+- subject: CR 2209 connector
+  queries: *id002
+  yielded: false
+- subject: Harris Teeter SilverLeaf
+  queries: *id003
+  yielded: false
+source_health_outcomes:
+- source: st_johns_citizen
+  status: historical_evidence_available
+findings:
+- id: EV-20260326-PUBLIX
+  title: SilverLeaf Mega Publix opens at 1975 SilverLeaf Parkway
+  subject: SilverLeaf Mega Publix
+  event_type: opened
+  available_on: '2026-03-26'
+  source: st_johns_citizen
+  lane: retail and amenities
+no_match_results:
+- School QQ
+- CR 2209 connector
+- Harris Teeter SilverLeaf
+important_new_subjects:
+- SilverLeaf Mega Publix
+proposals:
+- proposal_id: ADP-20260323-ENT-1c45991949
+  type: entity
+  simulated_week: '2026-03-23'
+  subject: SilverLeaf Mega Publix
+  evidence:
+  - &id004
+    id: EV-20260326-PUBLIX
+    source: st_johns_citizen
+    available_on: '2026-03-26'
+    excerpt: SilverLeaf Mega Publix opens at 1975 SilverLeaf Parkway
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones: &id006
+  - tenant announcements
+  proposed_searches: &id005
+  - '"Publix" SilverLeaf'
+  proposed_sources: []
+  cost: 1
+  confidence: high
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: proposed
+  reviewer: null
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-03-30'
+- proposal_id: ADP-20260323-SEA-52bcc542db
+  type: search_profile
+  simulated_week: '2026-03-23'
+  subject: SilverLeaf Mega Publix
+  evidence:
+  - *id004
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones: []
+  proposed_searches: *id005
+  proposed_sources: []
+  cost: 2
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: proposed
+  reviewer: null
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-03-30'
+- proposal_id: ADP-20260323-TIM-3ff6221590
+  type: timeline_reconciliation
+  simulated_week: '2026-03-23'
+  subject: SilverLeaf Mega Publix
+  evidence:
+  - *id004
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - opened
+  proposed_searches:
+  - '"SilverLeaf Mega Publix" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: proposed
+  reviewer: null
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-03-30'
+- proposal_id: ADP-20260323-MIL-97cd6fae9b
+  type: milestone
+  simulated_week: '2026-03-23'
+  subject: SilverLeaf Mega Publix
+  evidence:
+  - *id004
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones: *id006
+  proposed_searches:
+  - '"SilverLeaf Mega Publix" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: proposed
+  reviewer: null
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-03-30'
+  milestone_due:
+    tenant announcements: '2026-06-01'
+unresolved_gaps:
+- coverage not yet established
+false_positives: []
+evaluator:
+  decision: pass
+  accepted:
+  - proposal_id: ADP-20260323-ENT-1c45991949
+    type: entity
+    simulated_week: '2026-03-23'
+    subject: SilverLeaf Mega Publix
+    evidence:
+    - id: EV-20260326-PUBLIX
+      source: st_johns_citizen
+      available_on: '2026-03-26'
+      excerpt: SilverLeaf Mega Publix opens at 1975 SilverLeaf Parkway
+    resident_impact: resident-relevant durable change
+    expected_duration: multi-week
+    anticipated_milestones:
+    - tenant announcements
+    proposed_searches:
+    - '"Publix" SilverLeaf'
+    proposed_sources: []
+    cost: 1
+    confidence: high
+    risks: []
+    proposer: resident-coverage-strategist
+    review_status: accepted
+    reviewer: historical-evaluator
+    rationale: Evidence supports durable follow-up.
+    resulting_state_transition: visible_next_week
+    available_on: '2026-03-30'
+  - proposal_id: ADP-20260323-SEA-52bcc542db
+    type: search_profile
+    simulated_week: '2026-03-23'
+    subject: SilverLeaf Mega Publix
+    evidence:
+    - id: EV-20260326-PUBLIX
+      source: st_johns_citizen
+      available_on: '2026-03-26'
+      excerpt: SilverLeaf Mega Publix opens at 1975 SilverLeaf Parkway
+    resident_impact: resident-relevant durable change
+    expected_duration: multi-week
+    anticipated_milestones: []
+    proposed_searches:
+    - '"Publix" SilverLeaf'
+    proposed_sources: []
+    cost: 2
+    confidence: medium
+    risks: []
+    proposer: resident-coverage-strategist
+    review_status: accepted
+    reviewer: historical-evaluator
+    rationale: Evidence supports durable follow-up.
+    resulting_state_transition: visible_next_week
+    available_on: '2026-03-30'
+  - proposal_id: ADP-20260323-TIM-3ff6221590
+    type: timeline_reconciliation
+    simulated_week: '2026-03-23'
+    subject: SilverLeaf Mega Publix
+    evidence:
+    - id: EV-20260326-PUBLIX
+      source: st_johns_citizen
+      available_on: '2026-03-26'
+      excerpt: SilverLeaf Mega Publix opens at 1975 SilverLeaf Parkway
+    resident_impact: resident-relevant durable change
+    expected_duration: multi-week
+    anticipated_milestones:
+    - opened
+    proposed_searches:
+    - '"SilverLeaf Mega Publix" St. Johns'
+    proposed_sources: []
+    cost: 1
+    confidence: medium
+    risks: []
+    proposer: resident-coverage-strategist
+    review_status: accepted
+    reviewer: historical-evaluator
+    rationale: Evidence supports durable follow-up.
+    resulting_state_transition: visible_next_week
+    available_on: '2026-03-30'
+  - proposal_id: ADP-20260323-MIL-97cd6fae9b
+    type: milestone
+    simulated_week: '2026-03-23'
+    subject: SilverLeaf Mega Publix
+    evidence:
+    - id: EV-20260326-PUBLIX
+      source: st_johns_citizen
+      available_on: '2026-03-26'
+      excerpt: SilverLeaf Mega Publix opens at 1975 SilverLeaf Parkway
+    resident_impact: resident-relevant durable change
+    expected_duration: multi-week
+    anticipated_milestones:
+    - tenant announcements
+    proposed_searches:
+    - '"SilverLeaf Mega Publix" St. Johns'
+    proposed_sources: []
+    cost: 1
+    confidence: medium
+    risks: []
+    proposer: resident-coverage-strategist
+    review_status: accepted
+    reviewer: historical-evaluator
+    rationale: Evidence supports durable follow-up.
+    resulting_state_transition: visible_next_week
+    available_on: '2026-03-30'
+    milestone_due:
+      tenant announcements: '2026-06-01'
+  rejected: []
+accepted_changes_visible_next_week:
+- ADP-20260323-ENT-1c45991949
+- ADP-20260323-SEA-52bcc542db
+- ADP-20260323-TIM-3ff6221590
+- ADP-20260323-MIL-97cd6fae9b
+hidden_evaluator_metrics: withheld_from_generator

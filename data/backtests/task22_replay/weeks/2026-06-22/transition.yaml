@@ -1,0 +1,116 @@
+week_start: '2026-06-22'
+available_on: '2026-06-29'
+findings:
+- id: EV-20260625-SHOPPING
+  title: County approves site plan for SilverLeaf shopping center expansion
+  subject: SilverLeaf shopping center expansion
+  event_type: approved
+  available_on: '2026-06-25'
+  source: sjc_county_news
+  lane: growth and construction
+accepted:
+- proposal_id: ADP-20260622-ENT-561ceea8b9
+  type: entity
+  simulated_week: '2026-06-22'
+  subject: SilverLeaf shopping center expansion
+  evidence:
+  - id: EV-20260625-SHOPPING
+    source: sjc_county_news
+    available_on: '2026-06-25'
+    excerpt: County approves site plan for SilverLeaf shopping center expansion
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - construction
+  - opening
+  proposed_searches:
+  - '"SilverLeaf" shopping center expansion'
+  proposed_sources: []
+  cost: 1
+  confidence: high
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-06-29'
+- proposal_id: ADP-20260622-SEA-94c525fcc2
+  type: search_profile
+  simulated_week: '2026-06-22'
+  subject: SilverLeaf shopping center expansion
+  evidence:
+  - id: EV-20260625-SHOPPING
+    source: sjc_county_news
+    available_on: '2026-06-25'
+    excerpt: County approves site plan for SilverLeaf shopping center expansion
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones: []
+  proposed_searches:
+  - '"SilverLeaf" shopping center expansion'
+  proposed_sources: []
+  cost: 2
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-06-29'
+- proposal_id: ADP-20260622-TIM-ee71eaaa99
+  type: timeline_reconciliation
+  simulated_week: '2026-06-22'
+  subject: SilverLeaf shopping center expansion
+  evidence:
+  - id: EV-20260625-SHOPPING
+    source: sjc_county_news
+    available_on: '2026-06-25'
+    excerpt: County approves site plan for SilverLeaf shopping center expansion
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - approved
+  proposed_searches:
+  - '"SilverLeaf shopping center expansion" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-06-29'
+- proposal_id: ADP-20260622-MIL-e85d979d59
+  type: milestone
+  simulated_week: '2026-06-22'
+  subject: SilverLeaf shopping center expansion
+  evidence:
+  - id: EV-20260625-SHOPPING
+    source: sjc_county_news
+    available_on: '2026-06-25'
+    excerpt: County approves site plan for SilverLeaf shopping center expansion
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - construction
+  - opening
+  proposed_searches:
+  - '"SilverLeaf shopping center expansion" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-06-29'
+  milestone_due:
+    construction: '2026-09-01'
+    opening: '2027-03-01'
+rejected: []

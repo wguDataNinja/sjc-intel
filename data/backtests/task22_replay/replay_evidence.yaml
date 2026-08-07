@@ -1,0 +1,155 @@
+# Frozen, minimal, date-indexed replay feed.  It is a fixture distilled from
+# public repository evidence, not a copy of the production corpus. Each row is
+# released only in its own simulated week; no future rows are visible.
+# milestone_due dates exercise overdue/met detection; absence means "no claim".
+- id: EV-20250507-SCHOOL
+  available_on: "2025-05-07"
+  source: st_johns_citizen
+  title: SilverLeaf K-8 School QQ topping-out ceremony
+  subject: School QQ
+  event_type: construction_started
+  lane: growth and construction
+  confidence: high
+  expected_milestones: [naming, attendance boundaries, opening]
+  milestone_due: {naming: "2025-10-01", attendance boundaries: "2026-02-01", opening: "2026-08-15"}
+  queries: ['"School QQ" St. Johns', '"SilverLeaf" K-8 school']
+- id: EV-20250820-CR2209
+  available_on: "2025-08-20"
+  source: sjc_county_news
+  title: CR 2209 connector expansion begins between SilverLeaf Parkway and SR 16
+  subject: CR 2209 connector
+  event_type: construction_started
+  lane: roads and mobility
+  confidence: high
+  expected_milestones: [traffic shift, opening, completion]
+  milestone_due: {traffic shift: "2025-10-01", opening: "2025-11-01", completion: "2026-01-15"}
+  queries: ['"CR 2209" St. Johns', '"SilverLeaf Parkway" roadwork']
+- id: EV-20250915-SCHOOL
+  available_on: "2025-09-15"
+  source: sjc_school_district
+  title: School QQ under construction for 2026-2027 school year
+  subject: School QQ
+  event_type: under_construction
+  lane: schools and families
+  expected_milestones: [naming, opening]
+- id: EV-20250925-NAMING
+  available_on: "2025-09-25"
+  source: sjc_school_district
+  title: School QQ community naming and mascot engagement
+  subject: School QQ
+  event_type: naming_process
+  lane: schools and families
+  expected_milestones: [official naming, opening]
+- id: EV-20251028-CR2209
+  available_on: "2025-10-28"
+  source: sjc_county_news
+  title: CR 2209 connector opens
+  subject: CR 2209 connector
+  event_type: opened
+  lane: roads and mobility
+  milestone_due: {completion: "2026-01-15"}
+- id: EV-20251202-HARRIS
+  available_on: "2025-12-02"
+  source: st_johns_citizen
+  title: Harris Teeter proposed for SilverLeaf grocery center
+  subject: Harris Teeter SilverLeaf
+  event_type: proposed
+  lane: retail and amenities
+  expected_milestones: [approval, construction, opening]
+  milestone_due: {approval: "2026-04-01", construction: "2026-07-01", opening: "2026-12-01"}
+  queries: ['"Harris Teeter" SilverLeaf']
+- id: EV-20260326-PUBLIX
+  available_on: "2026-03-26"
+  source: st_johns_citizen
+  title: SilverLeaf Mega Publix opens at 1975 SilverLeaf Parkway
+  subject: SilverLeaf Mega Publix
+  event_type: opened
+  lane: retail and amenities
+  expected_milestones: [tenant announcements]
+  milestone_due: {tenant announcements: "2026-06-01"}
+  queries: ['"Publix" SilverLeaf']
+- id: EV-20260511-WATER
+  available_on: "2026-05-11"
+  source: sjc_utility_department
+  title: Phase III water shortage declaration affects St. Johns County households
+  subject: Phase III water shortage
+  event_type: declared
+  lane: utilities and household operations
+  expected_milestones: [restriction update, rescission]
+  milestone_due: {restriction update: "2026-07-01", rescission: "2026-09-01"}
+  queries: ['"St. Johns County" water shortage']
+- id: EV-20260601-HURRICANE
+  available_on: "2026-06-01"
+  source: sjc_emergency_management
+  title: Hurricane preparedness resources published for residents
+  subject: hurricane preparedness
+  event_type: preparedness_update
+  lane: preparedness
+  expected_milestones: [seasonal update]
+  milestone_due: {seasonal update: "2026-07-01"}
+- id: EV-20260706-BAPTIST
+  available_on: "2026-07-06"
+  source: silverleaf_resident_directory
+  title: Baptist SilverLeaf campus listed as a resident-serving facility
+  subject: Baptist SilverLeaf campus
+  event_type: facility_identified
+  lane: healthcare and services
+  expected_milestones: [official site, construction, opening]
+  milestone_due: {official site: "2026-08-01", construction: "2026-10-01", opening: "2027-01-01"}
+  queries: ['"Baptist" SilverLeaf health']
+- id: EV-20260720-FCE
+  available_on: "2026-07-20"
+  source: florida_dot
+  title: First Coast Expressway access work creates CR 16A closures
+  subject: First Coast Expressway access
+  event_type: closure
+  lane: roads and mobility
+  expected_milestones: [closure_end, access_opening]
+  milestone_due: {closure_end: "2026-08-15", access_opening: "2026-12-01"}
+  queries: ['"First Coast Expressway" St. Johns']
+- id: EV-20260722-MAGNOLIA
+  available_on: "2026-07-22"
+  source: sjc_school_district
+  title: Magnolia Oaks Academy opens in SilverLeaf
+  subject: Magnolia Oaks Academy
+  alias_for: School QQ
+  event_type: opened
+  lane: schools and families
+  expected_milestones: [first_day, programs]
+  milestone_due: {first_day: "2026-08-10", programs: "2026-09-15"}
+  queries: ['"Magnolia Oaks Academy"']
+- id: EV-20260625-SHOPPING
+  available_on: "2026-06-25"
+  source: sjc_county_news
+  title: County approves site plan for SilverLeaf shopping center expansion
+  subject: SilverLeaf shopping center expansion
+  event_type: approved
+  lane: growth and construction
+  confidence: high
+  expected_milestones: [construction, opening]
+  milestone_due: {construction: "2026-09-01", opening: "2027-03-01"}
+  queries: ['"SilverLeaf" shopping center expansion']
+- id: EV-20260728-CR210
+  available_on: "2026-07-28"
+  source: sjc_county_news
+  title: CR 210 and CR 2209 intersection safety meetings scheduled
+  subject: CR 2209 connector
+  event_type: safety_meeting
+  lane: roads and mobility
+  milestone_due: {traffic shift: "2025-10-01", completion: "2026-01-15"}
+- id: EV-20260116-SCHOOL-NAME
+  available_on: "2026-01-16"
+  source: sjc_school_district
+  title: School QQ officially named Magnolia Oaks Academy
+  subject: School QQ
+  event_type: official_naming
+  lane: schools and families
+- id: EV-20260618-RETAIL
+  available_on: "2026-06-18"
+  source: st_johns_citizen
+  title: New fitness and dining tenants sign at SilverLeaf commercial center
+  subject: SilverLeaf commercial tenants
+  event_type: tenant_announcement
+  lane: retail and amenities
+  confidence: high
+  queries: ['"SilverLeaf" tenants']

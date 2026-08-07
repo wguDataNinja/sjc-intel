@@ -1,0 +1,423 @@
+schema_version: '1.0'
+entities:
+- id: seed-sjc-county
+  label: St. Johns County government
+  aliases: []
+  available_on: '2025-05-05'
+- id: ADP-20250505-ENT-afc8a23444
+  label: School QQ
+  aliases:
+  - value: Magnolia Oaks Academy
+    first_seen: '2026-07-27'
+    evidence:
+    - id: EV-20260722-MAGNOLIA
+      source: sjc_school_district
+      available_on: '2026-07-22'
+      excerpt: Magnolia Oaks Academy opens in SilverLeaf
+  available_on: '2025-05-12'
+- id: ADP-20250818-ENT-3a2a458085
+  label: CR 2209 connector
+  aliases: []
+  available_on: '2025-08-25'
+- id: ADP-20251201-ENT-15487b945d
+  label: Harris Teeter SilverLeaf
+  aliases: []
+  available_on: '2025-12-08'
+- id: ADP-20260323-ENT-1c45991949
+  label: SilverLeaf Mega Publix
+  aliases: []
+  available_on: '2026-03-30'
+- id: ADP-20260511-ENT-ef50b02ced
+  label: Phase III water shortage
+  aliases: []
+  available_on: '2026-05-18'
+- id: ADP-20260601-ENT-fc38c79361
+  label: hurricane preparedness
+  aliases: []
+  available_on: '2026-06-08'
+- id: ADP-20260615-ENT-998aecef3a
+  label: SilverLeaf commercial tenants
+  aliases: []
+  available_on: '2026-06-22'
+- id: ADP-20260622-ENT-561ceea8b9
+  label: SilverLeaf shopping center expansion
+  aliases: []
+  available_on: '2026-06-29'
+- id: ADP-20260706-ENT-42b80dd494
+  label: Baptist SilverLeaf campus
+  aliases: []
+  available_on: '2026-07-13'
+- id: ADP-20260720-ENT-7170ec84b3
+  label: First Coast Expressway access
+  aliases: []
+  available_on: '2026-07-27'
+search_profiles:
+- subject: School QQ
+  queries:
+  - '"School QQ" St. Johns'
+  - '"SilverLeaf" K-8 school'
+  budget: 2
+  available_on: '2025-05-12'
+- subject: CR 2209 connector
+  queries:
+  - '"CR 2209" St. Johns'
+  - '"SilverLeaf Parkway" roadwork'
+  budget: 2
+  available_on: '2025-08-25'
+- subject: Harris Teeter SilverLeaf
+  queries:
+  - '"Harris Teeter" SilverLeaf'
+  budget: 2
+  available_on: '2025-12-08'
+- subject: SilverLeaf Mega Publix
+  queries:
+  - '"Publix" SilverLeaf'
+  budget: 2
+  available_on: '2026-03-30'
+- subject: Phase III water shortage
+  queries:
+  - '"St. Johns County" water shortage'
+  budget: 2
+  available_on: '2026-05-18'
+- subject: hurricane preparedness
+  queries:
+  - '"hurricane preparedness" St. Johns'
+  budget: 2
+  available_on: '2026-06-08'
+- subject: SilverLeaf commercial tenants
+  queries:
+  - '"SilverLeaf" tenants'
+  budget: 2
+  available_on: '2026-06-22'
+- subject: SilverLeaf shopping center expansion
+  queries:
+  - '"SilverLeaf" shopping center expansion'
+  budget: 2
+  available_on: '2026-06-29'
+- subject: Baptist SilverLeaf campus
+  queries:
+  - '"Baptist" SilverLeaf health'
+  budget: 2
+  available_on: '2026-07-13'
+- subject: First Coast Expressway access
+  queries:
+  - '"First Coast Expressway" St. Johns'
+  budget: 2
+  available_on: '2026-07-27'
+lanes:
+- growth and construction
+- roads and mobility
+- schools and families
+- retail and amenities
+- utilities and household operations
+- preparedness
+- healthcare and services
+milestones:
+- subject: School QQ
+  expected:
+  - naming
+  - attendance boundaries
+  - opening
+  milestone_due:
+    naming: '2025-10-01'
+    attendance boundaries: '2026-02-01'
+    opening: '2026-08-15'
+  available_on: '2025-05-12'
+- subject: CR 2209 connector
+  expected:
+  - traffic shift
+  - opening
+  - completion
+  milestone_due:
+    traffic shift: '2025-10-01'
+    opening: '2025-11-01'
+    completion: '2026-01-15'
+  available_on: '2025-08-25'
+- subject: School QQ
+  expected:
+  - naming
+  - opening
+  milestone_due: {}
+  available_on: '2025-09-22'
+- subject: School QQ
+  expected:
+  - official naming
+  - opening
+  milestone_due: {}
+  available_on: '2025-09-29'
+- subject: Harris Teeter SilverLeaf
+  expected:
+  - approval
+  - construction
+  - opening
+  milestone_due:
+    approval: '2026-04-01'
+    construction: '2026-07-01'
+    opening: '2026-12-01'
+  available_on: '2025-12-08'
+- subject: SilverLeaf Mega Publix
+  expected:
+  - tenant announcements
+  milestone_due:
+    tenant announcements: '2026-06-01'
+  available_on: '2026-03-30'
+- subject: Phase III water shortage
+  expected:
+  - restriction update
+  - rescission
+  milestone_due:
+    restriction update: '2026-07-01'
+    rescission: '2026-09-01'
+  available_on: '2026-05-18'
+- subject: hurricane preparedness
+  expected:
+  - seasonal update
+  milestone_due:
+    seasonal update: '2026-07-01'
+  available_on: '2026-06-08'
+- subject: SilverLeaf shopping center expansion
+  expected:
+  - construction
+  - opening
+  milestone_due:
+    construction: '2026-09-01'
+    opening: '2027-03-01'
+  available_on: '2026-06-29'
+- subject: Baptist SilverLeaf campus
+  expected:
+  - official site
+  - construction
+  - opening
+  milestone_due:
+    official site: '2026-08-01'
+    construction: '2026-10-01'
+    opening: '2027-01-01'
+  available_on: '2026-07-13'
+- subject: First Coast Expressway access
+  expected:
+  - closure_end
+  - access_opening
+  milestone_due:
+    closure_end: '2026-08-15'
+    access_opening: '2026-12-01'
+  available_on: '2026-07-27'
+- subject: Magnolia Oaks Academy
+  expected:
+  - first_day
+  - programs
+  milestone_due:
+    first_day: '2026-08-10'
+    programs: '2026-09-15'
+  available_on: '2026-07-27'
+timelines:
+- subject: School QQ
+  event: construction_started
+  available_on: '2025-05-12'
+- subject: CR 2209 connector
+  event: construction_started
+  available_on: '2025-08-25'
+- subject: School QQ
+  event: under_construction
+  available_on: '2025-09-22'
+- subject: School QQ
+  event: naming_process
+  available_on: '2025-09-29'
+- subject: CR 2209 connector
+  event: opened
+  available_on: '2025-11-03'
+- subject: Harris Teeter SilverLeaf
+  event: proposed
+  available_on: '2025-12-08'
+- subject: School QQ
+  event: official_naming
+  available_on: '2026-01-19'
+- subject: SilverLeaf Mega Publix
+  event: opened
+  available_on: '2026-03-30'
+- subject: Phase III water shortage
+  event: declared
+  available_on: '2026-05-18'
+- subject: hurricane preparedness
+  event: preparedness_update
+  available_on: '2026-06-08'
+- subject: SilverLeaf commercial tenants
+  event: tenant_announcement
+  available_on: '2026-06-22'
+- subject: SilverLeaf shopping center expansion
+  event: approved
+  available_on: '2026-06-29'
+- subject: Baptist SilverLeaf campus
+  event: facility_identified
+  available_on: '2026-07-13'
+- subject: First Coast Expressway access
+  event: closure
+  available_on: '2026-07-27'
+- subject: Magnolia Oaks Academy
+  event: opened
+  available_on: '2026-07-27'
+accepted_proposals:
+- ADP-20250505-ENT-afc8a23444
+- ADP-20250505-SEA-2841f20ba4
+- ADP-20250505-TIM-39727d98b4
+- ADP-20250505-MIL-0a0c0cfda2
+- ADP-20250505-COV-b7f2b82ad2
+- ADP-20250818-ENT-3a2a458085
+- ADP-20250818-SEA-39095a80ce
+- ADP-20250818-TIM-b36685f275
+- ADP-20250818-MIL-d4458e0417
+- ADP-20250818-COV-69873e5a23
+- ADP-20250915-TIM-532647d9ae
+- ADP-20250915-MIL-87a1c2cec6
+- ADP-20250915-COV-9bf540d07e
+- ADP-20250922-TIM-e36bb63c8e
+- ADP-20250922-MIL-040f203874
+- ADP-20251027-TIM-bc8f65d798
+- ADP-20251201-ENT-15487b945d
+- ADP-20251201-SEA-b4fefdeec3
+- ADP-20251201-TIM-bec5f950a6
+- ADP-20251201-MIL-6c714cc2fe
+- ADP-20251201-COV-f8ea7f0e79
+- ADP-20260112-TIM-132fa6c44c
+- ADP-20260323-ENT-1c45991949
+- ADP-20260323-SEA-52bcc542db
+- ADP-20260323-TIM-3ff6221590
+- ADP-20260323-MIL-97cd6fae9b
+- ADP-20260511-ENT-ef50b02ced
+- ADP-20260511-SEA-9ea787b567
+- ADP-20260511-TIM-2dd94ae4bb
+- ADP-20260511-MIL-96acfb3ab5
+- ADP-20260511-COV-0ee5b78b5a
+- ADP-20260601-ENT-fc38c79361
+- ADP-20260601-SEA-b156e89ff4
+- ADP-20260601-TIM-db4e679a0e
+- ADP-20260601-MIL-52a16ac1dc
+- ADP-20260601-COV-698fe97ebe
+- ADP-20260615-ENT-998aecef3a
+- ADP-20260615-SEA-750b8219b4
+- ADP-20260615-TIM-0b1735c0f4
+- ADP-20260622-ENT-561ceea8b9
+- ADP-20260622-SEA-94c525fcc2
+- ADP-20260622-TIM-ee71eaaa99
+- ADP-20260622-MIL-e85d979d59
+- ADP-20260706-ENT-42b80dd494
+- ADP-20260706-SEA-88606acac2
+- ADP-20260706-TIM-1e020c8908
+- ADP-20260706-MIL-5374d2fd13
+- ADP-20260706-COV-a83bfe9cb3
+- ADP-20260720-ENT-7170ec84b3
+- ADP-20260720-SEA-075c2e5bef
+- ADP-20260720-TIM-4c1c946dac
+- ADP-20260720-MIL-2f05626328
+- ADP-20260720-ALI-65c5c9c669
+- ADP-20260720-TIM-4789d12128
+- ADP-20260720-MIL-b3ee6c1bfe
+rejected_proposals: []
+findings:
+- id: EV-20250507-SCHOOL
+  title: SilverLeaf K-8 School QQ topping-out ceremony
+  subject: School QQ
+  event_type: construction_started
+  available_on: '2025-05-07'
+  source: st_johns_citizen
+  lane: growth and construction
+- id: EV-20250820-CR2209
+  title: CR 2209 connector expansion begins between SilverLeaf Parkway and SR 16
+  subject: CR 2209 connector
+  event_type: construction_started
+  available_on: '2025-08-20'
+  source: sjc_county_news
+  lane: roads and mobility
+- id: EV-20250915-SCHOOL
+  title: School QQ under construction for 2026-2027 school year
+  subject: School QQ
+  event_type: under_construction
+  available_on: '2025-09-15'
+  source: sjc_school_district
+  lane: schools and families
+- id: EV-20250925-NAMING
+  title: School QQ community naming and mascot engagement
+  subject: School QQ
+  event_type: naming_process
+  available_on: '2025-09-25'
+  source: sjc_school_district
+  lane: schools and families
+- id: EV-20251028-CR2209
+  title: CR 2209 connector opens
+  subject: CR 2209 connector
+  event_type: opened
+  available_on: '2025-10-28'
+  source: sjc_county_news
+  lane: roads and mobility
+- id: EV-20251202-HARRIS
+  title: Harris Teeter proposed for SilverLeaf grocery center
+  subject: Harris Teeter SilverLeaf
+  event_type: proposed
+  available_on: '2025-12-02'
+  source: st_johns_citizen
+  lane: retail and amenities
+- id: EV-20260116-SCHOOL-NAME
+  title: School QQ officially named Magnolia Oaks Academy
+  subject: School QQ
+  event_type: official_naming
+  available_on: '2026-01-16'
+  source: sjc_school_district
+  lane: schools and families
+- id: EV-20260326-PUBLIX
+  title: SilverLeaf Mega Publix opens at 1975 SilverLeaf Parkway
+  subject: SilverLeaf Mega Publix
+  event_type: opened
+  available_on: '2026-03-26'
+  source: st_johns_citizen
+  lane: retail and amenities
+- id: EV-20260511-WATER
+  title: Phase III water shortage declaration affects St. Johns County households
+  subject: Phase III water shortage
+  event_type: declared
+  available_on: '2026-05-11'
+  source: sjc_utility_department
+  lane: utilities and household operations
+- id: EV-20260601-HURRICANE
+  title: Hurricane preparedness resources published for residents
+  subject: hurricane preparedness
+  event_type: preparedness_update
+  available_on: '2026-06-01'
+  source: sjc_emergency_management
+  lane: preparedness
+- id: EV-20260618-RETAIL
+  title: New fitness and dining tenants sign at SilverLeaf commercial center
+  subject: SilverLeaf commercial tenants
+  event_type: tenant_announcement
+  available_on: '2026-06-18'
+  source: st_johns_citizen
+  lane: retail and amenities
+- id: EV-20260625-SHOPPING
+  title: County approves site plan for SilverLeaf shopping center expansion
+  subject: SilverLeaf shopping center expansion
+  event_type: approved
+  available_on: '2026-06-25'
+  source: sjc_county_news
+  lane: growth and construction
+- id: EV-20260706-BAPTIST
+  title: Baptist SilverLeaf campus listed as a resident-serving facility
+  subject: Baptist SilverLeaf campus
+  event_type: facility_identified
+  available_on: '2026-07-06'
+  source: silverleaf_resident_directory
+  lane: healthcare and services
+- id: EV-20260720-FCE
+  title: First Coast Expressway access work creates CR 16A closures
+  subject: First Coast Expressway access
+  event_type: closure
+  available_on: '2026-07-20'
+  source: florida_dot
+  lane: roads and mobility
+- id: EV-20260722-MAGNOLIA
+  title: Magnolia Oaks Academy opens in SilverLeaf
+  subject: Magnolia Oaks Academy
+  event_type: opened
+  available_on: '2026-07-22'
+  source: sjc_school_district
+  lane: schools and families
+gaps:
+- coverage not yet established
+last_week: '2026-07-20'

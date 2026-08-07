@@ -1,0 +1,88 @@
+week_start: '2025-09-15'
+available_on: '2025-09-22'
+findings:
+- id: EV-20250915-SCHOOL
+  title: School QQ under construction for 2026-2027 school year
+  subject: School QQ
+  event_type: under_construction
+  available_on: '2025-09-15'
+  source: sjc_school_district
+  lane: schools and families
+accepted:
+- proposal_id: ADP-20250915-TIM-532647d9ae
+  type: timeline_reconciliation
+  simulated_week: '2025-09-15'
+  subject: School QQ
+  evidence:
+  - id: EV-20250915-SCHOOL
+    source: sjc_school_district
+    available_on: '2025-09-15'
+    excerpt: School QQ under construction for 2026-2027 school year
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - under_construction
+  proposed_searches:
+  - '"School QQ" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2025-09-22'
+- proposal_id: ADP-20250915-MIL-87a1c2cec6
+  type: milestone
+  simulated_week: '2025-09-15'
+  subject: School QQ
+  evidence:
+  - id: EV-20250915-SCHOOL
+    source: sjc_school_district
+    available_on: '2025-09-15'
+    excerpt: School QQ under construction for 2026-2027 school year
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - naming
+  - opening
+  proposed_searches:
+  - '"School QQ" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2025-09-22'
+  milestone_due: {}
+- proposal_id: ADP-20250915-COV-9bf540d07e
+  type: coverage_lane
+  simulated_week: '2025-09-15'
+  subject: schools and families
+  evidence:
+  - id: EV-20250915-SCHOOL
+    source: sjc_school_district
+    available_on: '2025-09-15'
+    excerpt: School QQ under construction for 2026-2027 school year
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones: []
+  proposed_searches:
+  - '"schools and families" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Multiple resident changes need a durable editorial lane.
+  resulting_state_transition: visible_next_week
+  available_on: '2025-09-22'
+rejected: []

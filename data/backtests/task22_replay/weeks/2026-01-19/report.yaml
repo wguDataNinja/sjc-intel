@@ -1,0 +1,118 @@
+run_id: task22_replay-20260119
+simulated_week_start: '2026-01-19'
+simulated_week_end: '2026-01-25'
+visible_state_cutoff: '2026-01-19'
+query_cutoff: '2026-01-25'
+evaluation_cutoff: '2026-01-25'
+starting_visible_state:
+  entities:
+  - id: seed-sjc-county
+    label: St. Johns County government
+    aliases: []
+    available_on: '2025-05-05'
+  - id: ADP-20250505-ENT-afc8a23444
+    label: School QQ
+    aliases: []
+    available_on: '2025-05-12'
+  - id: ADP-20250818-ENT-3a2a458085
+    label: CR 2209 connector
+    aliases: []
+    available_on: '2025-08-25'
+  - id: ADP-20251201-ENT-15487b945d
+    label: Harris Teeter SilverLeaf
+    aliases: []
+    available_on: '2025-12-08'
+  search_profiles:
+  - subject: School QQ
+    queries: &id001
+    - '"School QQ" St. Johns'
+    - '"SilverLeaf" K-8 school'
+    budget: 2
+    available_on: '2025-05-12'
+  - subject: CR 2209 connector
+    queries: &id002
+    - '"CR 2209" St. Johns'
+    - '"SilverLeaf Parkway" roadwork'
+    budget: 2
+    available_on: '2025-08-25'
+  - subject: Harris Teeter SilverLeaf
+    queries: &id003
+    - '"Harris Teeter" SilverLeaf'
+    budget: 2
+    available_on: '2025-12-08'
+  lanes:
+  - growth and construction
+  - roads and mobility
+  - schools and families
+  - retail and amenities
+  milestones:
+  - subject: School QQ
+    expected:
+    - naming
+    - attendance boundaries
+    - opening
+    milestone_due:
+      naming: '2025-10-01'
+      attendance boundaries: '2026-02-01'
+      opening: '2026-08-15'
+    available_on: '2025-05-12'
+  - subject: CR 2209 connector
+    expected:
+    - traffic shift
+    - opening
+    - completion
+    milestone_due:
+      traffic shift: '2025-10-01'
+      opening: '2025-11-01'
+      completion: '2026-01-15'
+    available_on: '2025-08-25'
+  - subject: School QQ
+    expected:
+    - naming
+    - opening
+    milestone_due: {}
+    available_on: '2025-09-22'
+  - subject: School QQ
+    expected:
+    - official naming
+    - opening
+    milestone_due: {}
+    available_on: '2025-09-29'
+  - subject: Harris Teeter SilverLeaf
+    expected:
+    - approval
+    - construction
+    - opening
+    milestone_due:
+      approval: '2026-04-01'
+      construction: '2026-07-01'
+      opening: '2026-12-01'
+    available_on: '2025-12-08'
+sources_monitored: []
+searches_executed:
+- subject: School QQ
+  queries: *id001
+  yielded: false
+- subject: CR 2209 connector
+  queries: *id002
+  yielded: false
+- subject: Harris Teeter SilverLeaf
+  queries: *id003
+  yielded: false
+source_health_outcomes: []
+findings: []
+no_match_results:
+- School QQ
+- CR 2209 connector
+- Harris Teeter SilverLeaf
+important_new_subjects: []
+proposals: []
+unresolved_gaps:
+- coverage not yet established
+false_positives: []
+evaluator:
+  decision: pass
+  accepted: []
+  rejected: []
+accepted_changes_visible_next_week: []
+hidden_evaluator_metrics: withheld_from_generator

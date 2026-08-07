@@ -1,0 +1,179 @@
+run_id: task22_replay-20260608
+simulated_week_start: '2026-06-08'
+simulated_week_end: '2026-06-14'
+visible_state_cutoff: '2026-06-08'
+query_cutoff: '2026-06-14'
+evaluation_cutoff: '2026-06-14'
+starting_visible_state:
+  entities:
+  - id: seed-sjc-county
+    label: St. Johns County government
+    aliases: []
+    available_on: '2025-05-05'
+  - id: ADP-20250505-ENT-afc8a23444
+    label: School QQ
+    aliases: []
+    available_on: '2025-05-12'
+  - id: ADP-20250818-ENT-3a2a458085
+    label: CR 2209 connector
+    aliases: []
+    available_on: '2025-08-25'
+  - id: ADP-20251201-ENT-15487b945d
+    label: Harris Teeter SilverLeaf
+    aliases: []
+    available_on: '2025-12-08'
+  - id: ADP-20260323-ENT-1c45991949
+    label: SilverLeaf Mega Publix
+    aliases: []
+    available_on: '2026-03-30'
+  - id: ADP-20260511-ENT-ef50b02ced
+    label: Phase III water shortage
+    aliases: []
+    available_on: '2026-05-18'
+  - id: ADP-20260601-ENT-fc38c79361
+    label: hurricane preparedness
+    aliases: []
+    available_on: '2026-06-08'
+  search_profiles:
+  - subject: School QQ
+    queries: &id001
+    - '"School QQ" St. Johns'
+    - '"SilverLeaf" K-8 school'
+    budget: 2
+    available_on: '2025-05-12'
+  - subject: CR 2209 connector
+    queries: &id002
+    - '"CR 2209" St. Johns'
+    - '"SilverLeaf Parkway" roadwork'
+    budget: 2
+    available_on: '2025-08-25'
+  - subject: Harris Teeter SilverLeaf
+    queries: &id003
+    - '"Harris Teeter" SilverLeaf'
+    budget: 2
+    available_on: '2025-12-08'
+  - subject: SilverLeaf Mega Publix
+    queries: &id004
+    - '"Publix" SilverLeaf'
+    budget: 2
+    available_on: '2026-03-30'
+  - subject: Phase III water shortage
+    queries: &id005
+    - '"St. Johns County" water shortage'
+    budget: 2
+    available_on: '2026-05-18'
+  - subject: hurricane preparedness
+    queries: &id006
+    - '"hurricane preparedness" St. Johns'
+    budget: 2
+    available_on: '2026-06-08'
+  lanes:
+  - growth and construction
+  - roads and mobility
+  - schools and families
+  - retail and amenities
+  - utilities and household operations
+  - preparedness
+  milestones:
+  - subject: School QQ
+    expected:
+    - naming
+    - attendance boundaries
+    - opening
+    milestone_due:
+      naming: '2025-10-01'
+      attendance boundaries: '2026-02-01'
+      opening: '2026-08-15'
+    available_on: '2025-05-12'
+  - subject: CR 2209 connector
+    expected:
+    - traffic shift
+    - opening
+    - completion
+    milestone_due:
+      traffic shift: '2025-10-01'
+      opening: '2025-11-01'
+      completion: '2026-01-15'
+    available_on: '2025-08-25'
+  - subject: School QQ
+    expected:
+    - naming
+    - opening
+    milestone_due: {}
+    available_on: '2025-09-22'
+  - subject: School QQ
+    expected:
+    - official naming
+    - opening
+    milestone_due: {}
+    available_on: '2025-09-29'
+  - subject: Harris Teeter SilverLeaf
+    expected:
+    - approval
+    - construction
+    - opening
+    milestone_due:
+      approval: '2026-04-01'
+      construction: '2026-07-01'
+      opening: '2026-12-01'
+    available_on: '2025-12-08'
+  - subject: SilverLeaf Mega Publix
+    expected:
+    - tenant announcements
+    milestone_due:
+      tenant announcements: '2026-06-01'
+    available_on: '2026-03-30'
+  - subject: Phase III water shortage
+    expected:
+    - restriction update
+    - rescission
+    milestone_due:
+      restriction update: '2026-07-01'
+      rescission: '2026-09-01'
+    available_on: '2026-05-18'
+  - subject: hurricane preparedness
+    expected:
+    - seasonal update
+    milestone_due:
+      seasonal update: '2026-07-01'
+    available_on: '2026-06-08'
+sources_monitored: []
+searches_executed:
+- subject: School QQ
+  queries: *id001
+  yielded: false
+- subject: CR 2209 connector
+  queries: *id002
+  yielded: false
+- subject: Harris Teeter SilverLeaf
+  queries: *id003
+  yielded: false
+- subject: SilverLeaf Mega Publix
+  queries: *id004
+  yielded: false
+- subject: Phase III water shortage
+  queries: *id005
+  yielded: false
+- subject: hurricane preparedness
+  queries: *id006
+  yielded: false
+source_health_outcomes: []
+findings: []
+no_match_results:
+- School QQ
+- CR 2209 connector
+- Harris Teeter SilverLeaf
+- SilverLeaf Mega Publix
+- Phase III water shortage
+- hurricane preparedness
+important_new_subjects: []
+proposals: []
+unresolved_gaps:
+- coverage not yet established
+false_positives: []
+evaluator:
+  decision: pass
+  accepted: []
+  rejected: []
+accepted_changes_visible_next_week: []
+hidden_evaluator_metrics: withheld_from_generator

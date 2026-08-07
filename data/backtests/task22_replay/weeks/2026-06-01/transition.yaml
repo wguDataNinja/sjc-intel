@@ -1,0 +1,137 @@
+week_start: '2026-06-01'
+available_on: '2026-06-08'
+findings:
+- id: EV-20260601-HURRICANE
+  title: Hurricane preparedness resources published for residents
+  subject: hurricane preparedness
+  event_type: preparedness_update
+  available_on: '2026-06-01'
+  source: sjc_emergency_management
+  lane: preparedness
+accepted:
+- proposal_id: ADP-20260601-ENT-fc38c79361
+  type: entity
+  simulated_week: '2026-06-01'
+  subject: hurricane preparedness
+  evidence:
+  - id: EV-20260601-HURRICANE
+    source: sjc_emergency_management
+    available_on: '2026-06-01'
+    excerpt: Hurricane preparedness resources published for residents
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - seasonal update
+  proposed_searches:
+  - '"hurricane preparedness" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: high
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-06-08'
+- proposal_id: ADP-20260601-SEA-b156e89ff4
+  type: search_profile
+  simulated_week: '2026-06-01'
+  subject: hurricane preparedness
+  evidence:
+  - id: EV-20260601-HURRICANE
+    source: sjc_emergency_management
+    available_on: '2026-06-01'
+    excerpt: Hurricane preparedness resources published for residents
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones: []
+  proposed_searches:
+  - '"hurricane preparedness" St. Johns'
+  proposed_sources: []
+  cost: 2
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-06-08'
+- proposal_id: ADP-20260601-TIM-db4e679a0e
+  type: timeline_reconciliation
+  simulated_week: '2026-06-01'
+  subject: hurricane preparedness
+  evidence:
+  - id: EV-20260601-HURRICANE
+    source: sjc_emergency_management
+    available_on: '2026-06-01'
+    excerpt: Hurricane preparedness resources published for residents
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - preparedness_update
+  proposed_searches:
+  - '"hurricane preparedness" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-06-08'
+- proposal_id: ADP-20260601-MIL-52a16ac1dc
+  type: milestone
+  simulated_week: '2026-06-01'
+  subject: hurricane preparedness
+  evidence:
+  - id: EV-20260601-HURRICANE
+    source: sjc_emergency_management
+    available_on: '2026-06-01'
+    excerpt: Hurricane preparedness resources published for residents
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - seasonal update
+  proposed_searches:
+  - '"hurricane preparedness" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-06-08'
+  milestone_due:
+    seasonal update: '2026-07-01'
+- proposal_id: ADP-20260601-COV-698fe97ebe
+  type: coverage_lane
+  simulated_week: '2026-06-01'
+  subject: preparedness
+  evidence:
+  - id: EV-20260601-HURRICANE
+    source: sjc_emergency_management
+    available_on: '2026-06-01'
+    excerpt: Hurricane preparedness resources published for residents
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones: []
+  proposed_searches:
+  - '"preparedness" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Multiple resident changes need a durable editorial lane.
+  resulting_state_transition: visible_next_week
+  available_on: '2026-06-08'
+rejected: []

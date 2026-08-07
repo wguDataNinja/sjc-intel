@@ -1,0 +1,56 @@
+run_id: task22_replay-20250804
+simulated_week_start: '2025-08-04'
+simulated_week_end: '2025-08-10'
+visible_state_cutoff: '2025-08-04'
+query_cutoff: '2025-08-10'
+evaluation_cutoff: '2025-08-10'
+starting_visible_state:
+  entities:
+  - id: seed-sjc-county
+    label: St. Johns County government
+    aliases: []
+    available_on: '2025-05-05'
+  - id: ADP-20250505-ENT-afc8a23444
+    label: School QQ
+    aliases: []
+    available_on: '2025-05-12'
+  search_profiles:
+  - subject: School QQ
+    queries: &id001
+    - '"School QQ" St. Johns'
+    - '"SilverLeaf" K-8 school'
+    budget: 2
+    available_on: '2025-05-12'
+  lanes:
+  - growth and construction
+  milestones:
+  - subject: School QQ
+    expected:
+    - naming
+    - attendance boundaries
+    - opening
+    milestone_due:
+      naming: '2025-10-01'
+      attendance boundaries: '2026-02-01'
+      opening: '2026-08-15'
+    available_on: '2025-05-12'
+sources_monitored: []
+searches_executed:
+- subject: School QQ
+  queries: *id001
+  yielded: false
+source_health_outcomes: []
+findings: []
+no_match_results:
+- School QQ
+important_new_subjects: []
+proposals: []
+unresolved_gaps:
+- coverage not yet established
+false_positives: []
+evaluator:
+  decision: pass
+  accepted: []
+  rejected: []
+accepted_changes_visible_next_week: []
+hidden_evaluator_metrics: withheld_from_generator

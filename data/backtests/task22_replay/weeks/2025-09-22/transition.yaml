@@ -1,0 +1,64 @@
+week_start: '2025-09-22'
+available_on: '2025-09-29'
+findings:
+- id: EV-20250925-NAMING
+  title: School QQ community naming and mascot engagement
+  subject: School QQ
+  event_type: naming_process
+  available_on: '2025-09-25'
+  source: sjc_school_district
+  lane: schools and families
+accepted:
+- proposal_id: ADP-20250922-TIM-e36bb63c8e
+  type: timeline_reconciliation
+  simulated_week: '2025-09-22'
+  subject: School QQ
+  evidence:
+  - id: EV-20250925-NAMING
+    source: sjc_school_district
+    available_on: '2025-09-25'
+    excerpt: School QQ community naming and mascot engagement
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - naming_process
+  proposed_searches:
+  - '"School QQ" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2025-09-29'
+- proposal_id: ADP-20250922-MIL-040f203874
+  type: milestone
+  simulated_week: '2025-09-22'
+  subject: School QQ
+  evidence:
+  - id: EV-20250925-NAMING
+    source: sjc_school_district
+    available_on: '2025-09-25'
+    excerpt: School QQ community naming and mascot engagement
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - official naming
+  - opening
+  proposed_searches:
+  - '"School QQ" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2025-09-29'
+  milestone_due: {}
+rejected: []

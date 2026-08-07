@@ -1,0 +1,37 @@
+week_start: '2025-10-27'
+available_on: '2025-11-03'
+findings:
+- id: EV-20251028-CR2209
+  title: CR 2209 connector opens
+  subject: CR 2209 connector
+  event_type: opened
+  available_on: '2025-10-28'
+  source: sjc_county_news
+  lane: roads and mobility
+accepted:
+- proposal_id: ADP-20251027-TIM-bc8f65d798
+  type: timeline_reconciliation
+  simulated_week: '2025-10-27'
+  subject: CR 2209 connector
+  evidence:
+  - id: EV-20251028-CR2209
+    source: sjc_county_news
+    available_on: '2025-10-28'
+    excerpt: CR 2209 connector opens
+  resident_impact: resident-relevant durable change
+  expected_duration: multi-week
+  anticipated_milestones:
+  - opened
+  proposed_searches:
+  - '"CR 2209 connector" St. Johns'
+  proposed_sources: []
+  cost: 1
+  confidence: medium
+  risks: []
+  proposer: resident-coverage-strategist
+  review_status: accepted
+  reviewer: historical-evaluator
+  rationale: Evidence supports durable follow-up.
+  resulting_state_transition: visible_next_week
+  available_on: '2025-11-03'
+rejected: []

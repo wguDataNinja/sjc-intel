@@ -1,0 +1,183 @@
+schema_version: '1.0'
+entities:
+- id: seed-sjc-county
+  label: St. Johns County government
+  aliases: []
+  available_on: '2025-05-05'
+- id: ADP-20250505-ENT-afc8a23444
+  label: School QQ
+  aliases: []
+  available_on: '2025-05-12'
+- id: ADP-20250818-ENT-3a2a458085
+  label: CR 2209 connector
+  aliases: []
+  available_on: '2025-08-25'
+- id: ADP-20251201-ENT-15487b945d
+  label: Harris Teeter SilverLeaf
+  aliases: []
+  available_on: '2025-12-08'
+search_profiles:
+- subject: School QQ
+  queries:
+  - '"School QQ" St. Johns'
+  - '"SilverLeaf" K-8 school'
+  budget: 2
+  available_on: '2025-05-12'
+- subject: CR 2209 connector
+  queries:
+  - '"CR 2209" St. Johns'
+  - '"SilverLeaf Parkway" roadwork'
+  budget: 2
+  available_on: '2025-08-25'
+- subject: Harris Teeter SilverLeaf
+  queries:
+  - '"Harris Teeter" SilverLeaf'
+  budget: 2
+  available_on: '2025-12-08'
+lanes:
+- growth and construction
+- roads and mobility
+- schools and families
+- retail and amenities
+milestones:
+- subject: School QQ
+  expected:
+  - naming
+  - attendance boundaries
+  - opening
+  milestone_due:
+    naming: '2025-10-01'
+    attendance boundaries: '2026-02-01'
+    opening: '2026-08-15'
+  available_on: '2025-05-12'
+- subject: CR 2209 connector
+  expected:
+  - traffic shift
+  - opening
+  - completion
+  milestone_due:
+    traffic shift: '2025-10-01'
+    opening: '2025-11-01'
+    completion: '2026-01-15'
+  available_on: '2025-08-25'
+- subject: School QQ
+  expected:
+  - naming
+  - opening
+  milestone_due: {}
+  available_on: '2025-09-22'
+- subject: School QQ
+  expected:
+  - official naming
+  - opening
+  milestone_due: {}
+  available_on: '2025-09-29'
+- subject: Harris Teeter SilverLeaf
+  expected:
+  - approval
+  - construction
+  - opening
+  milestone_due:
+    approval: '2026-04-01'
+    construction: '2026-07-01'
+    opening: '2026-12-01'
+  available_on: '2025-12-08'
+timelines:
+- subject: School QQ
+  event: construction_started
+  available_on: '2025-05-12'
+- subject: CR 2209 connector
+  event: construction_started
+  available_on: '2025-08-25'
+- subject: School QQ
+  event: under_construction
+  available_on: '2025-09-22'
+- subject: School QQ
+  event: naming_process
+  available_on: '2025-09-29'
+- subject: CR 2209 connector
+  event: opened
+  available_on: '2025-11-03'
+- subject: Harris Teeter SilverLeaf
+  event: proposed
+  available_on: '2025-12-08'
+- subject: School QQ
+  event: official_naming
+  available_on: '2026-01-19'
+accepted_proposals:
+- ADP-20250505-ENT-afc8a23444
+- ADP-20250505-SEA-2841f20ba4
+- ADP-20250505-TIM-39727d98b4
+- ADP-20250505-MIL-0a0c0cfda2
+- ADP-20250505-COV-b7f2b82ad2
+- ADP-20250818-ENT-3a2a458085
+- ADP-20250818-SEA-39095a80ce
+- ADP-20250818-TIM-b36685f275
+- ADP-20250818-MIL-d4458e0417
+- ADP-20250818-COV-69873e5a23
+- ADP-20250915-TIM-532647d9ae
+- ADP-20250915-MIL-87a1c2cec6
+- ADP-20250915-COV-9bf540d07e
+- ADP-20250922-TIM-e36bb63c8e
+- ADP-20250922-MIL-040f203874
+- ADP-20251027-TIM-bc8f65d798
+- ADP-20251201-ENT-15487b945d
+- ADP-20251201-SEA-b4fefdeec3
+- ADP-20251201-TIM-bec5f950a6
+- ADP-20251201-MIL-6c714cc2fe
+- ADP-20251201-COV-f8ea7f0e79
+- ADP-20260112-TIM-132fa6c44c
+rejected_proposals: []
+findings:
+- id: EV-20250507-SCHOOL
+  title: SilverLeaf K-8 School QQ topping-out ceremony
+  subject: School QQ
+  event_type: construction_started
+  available_on: '2025-05-07'
+  source: st_johns_citizen
+  lane: growth and construction
+- id: EV-20250820-CR2209
+  title: CR 2209 connector expansion begins between SilverLeaf Parkway and SR 16
+  subject: CR 2209 connector
+  event_type: construction_started
+  available_on: '2025-08-20'
+  source: sjc_county_news
+  lane: roads and mobility
+- id: EV-20250915-SCHOOL
+  title: School QQ under construction for 2026-2027 school year
+  subject: School QQ
+  event_type: under_construction
+  available_on: '2025-09-15'
+  source: sjc_school_district
+  lane: schools and families
+- id: EV-20250925-NAMING
+  title: School QQ community naming and mascot engagement
+  subject: School QQ
+  event_type: naming_process
+  available_on: '2025-09-25'
+  source: sjc_school_district
+  lane: schools and families
+- id: EV-20251028-CR2209
+  title: CR 2209 connector opens
+  subject: CR 2209 connector
+  event_type: opened
+  available_on: '2025-10-28'
+  source: sjc_county_news
+  lane: roads and mobility
+- id: EV-20251202-HARRIS
+  title: Harris Teeter proposed for SilverLeaf grocery center
+  subject: Harris Teeter SilverLeaf
+  event_type: proposed
+  available_on: '2025-12-02'
+  source: st_johns_citizen
+  lane: retail and amenities
+- id: EV-20260116-SCHOOL-NAME
+  title: School QQ officially named Magnolia Oaks Academy
+  subject: School QQ
+  event_type: official_naming
+  available_on: '2026-01-16'
+  source: sjc_school_district
+  lane: schools and families
+gaps:
+- coverage not yet established
+last_week: '2026-03-02'
