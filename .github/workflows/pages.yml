@@ -1,0 +1,67 @@
+name: Deploy SilverLeaf Brief to GitHub Pages
+
+# Builds the public static SilverLeaf Brief site and publishes ONLY the
+# `site/` output to GitHub Pages. Runtime files, reports, registries,
+# adaptive-discovery state, and private operational material are never
+# uploaded. No scheduler activation; manual dispatch and push-to-branch only.
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - "site/**"
+      - "scripts/build_static_site.py"
+      - "scripts/build_static_release.py"
+      - "data/publication_decisions/**"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install pyyaml pypdf
+
+      - name: Build the static site
+        run: python3 scripts/build_static_site.py
+
+      - name: Verify public output only (no internal artifacts)
+        run: |
+          test -f site/index.html
+          test -d site/browse
+          test -d site/data/releases
+          # site/ must contain no runtime, report, registry, or governance files
+          if find site -type f | grep -E '(runtime/|reports/|registry/|data/adaptive_discovery|pending_proposals|decisions\.yaml|accepted_state)' ; then
+            echo "internal artifact leaked into site/" >&2
+            exit 1
+          fi
+          echo "site/ contains public output only"
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

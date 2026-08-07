@@ -1,0 +1,21 @@
+schema_version: "1.0"
+title: Adaptive discovery proposal
+required:
+  - proposal_id
+  - type
+  - simulated_week
+  - subject
+  - evidence
+  - resident_impact
+  - confidence
+  - review_status
+  - resulting_state_transition
+properties:
+  type:
+    enum: [entity, alias, project, place, source, search_profile, milestone, coverage_lane, timeline_reconciliation]
+  review_status:
+    enum: [proposed, accepted, rejected, deferred, superseded]
+  evidence:
+    min_items: 1
+  resulting_state_transition:
+    enum: [visible_next_week, none]

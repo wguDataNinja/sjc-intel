@@ -6,6 +6,7 @@ verified.
 **Authority:** `docs/weekly_operational_contract.md` (the contract),
 `ROADMAP.md` §§3E–3F, `prompts/known_source_monitor_task.md` (Stage-A rules),
 `docs/discovery_loops.md` (Stage-B rules).
+**Entry point:** `docs/hermes_weekly_entrypoint.md` (read before this prompt).
 **Separated concerns:** this file is the repository-side task contract. Provider
 credentials, systemd scheduling, and privileged deployment are Ivy-side and are
 delivered only in the authorized privileged packet (`reports/12-...` §11).
@@ -41,6 +42,61 @@ contract in `docs/weekly_operational_contract.md` §3.2.
 Use the discovery profile named in the envelope (default `registry/search_profiles.yaml`
 → `sl_core`). Run ONE bounded pass. Search only for public sources. Produce
 source proposals per `docs/weekly_operational_contract.md` §4.1. Never promote.
+
+## 4.1 Research escalation (Stage B2)
+
+For any adaptive discovery lead whose identity, geography, currency, or source
+support is ambiguous, run bounded follow-up research BEFORE the proposal reaches
+a human. See `docs/live_adaptive_operations.md` and
+`scripts/research_escalation.py`.
+
+Trigger research when any of the following applies:
+
+- **Identity uncertainty** — possible but unconfirmed tenant; temporary vs
+  final project name; two developments may be confused; a "Harris Teeter-size"
+  store rather than a named tenant; similar entity names in different places.
+- **Geographic conflict** — evidence may concern SR 16/Inman Road instead of
+  SilverLeaf Parkway; correct name but wrong cited project; resident relevance
+  depends on an uncertain location.
+- **Stale evidence** — the latest source is months old; a milestone should have
+  arrived; the search profile rests on an old article.
+- **Conflicting sources** — media says planned; company has not announced;
+  county uses a generic project name; newer reporting changes the picture.
+- **Material resident importance** — school, hospital, major road, expressway
+  access, major shopping center, large residential development, major utility.
+
+Run each escalation with bounded limits (default max 8 queries, 10 results per
+query, official sources first, local reporting second) and produce a
+research-resolution record with confirmed facts, strong inferences, conflicting
+evidence, unresolved questions, recommended canonical name/aliases/state, and a
+recommended action (`ACCEPT`, `ACCEPT_QUALIFIED`, `DEFER`, `REJECT`,
+`RESEARCH_AGAIN`). Every query writes a receipt. Stop when identity is
+confirmed, disproven, a qualified tracked subject is supportable, or the budget
+is exhausted. Do not loop research endlessly.
+
+The strategist or proposal generator must NOT evaluate its own research; the
+independent evaluator or checker applies the recommended action. An
+`ACCEPT_QUALIFIED` result means the subject is tracked with explicit uncertainty
+(e.g., "SilverLeaf grocery center — possible Harris Teeter"); never record a
+confirmed tenant without a first-party source.
+
+## 4.2 Resident Coverage Editor (editorial QA, no searching)
+
+After the Resident Coverage Strategist has processed the week's normalized
+findings, run the Resident Coverage Editor before independent evaluation and
+human-facing reporting. It inspects the current corpus/accepted subjects,
+recent findings, stale subjects, expected milestones, publication coverage, and
+unresolved resident questions. It must write structured findings with:
+`coverage_gap_id`, `coverage_lane`, `subject`, `resident_question`,
+`current_state`, `why_this_is_a_gap`, `last_meaningful_update`,
+`expected_next_milestone`, `existing_search_profiles`,
+`recommended_research`, `recommended_priority`, and `recommended_action`.
+
+Allowed actions are `SEARCH_NOW`, `ADD_SEARCH_PROFILE`, `REFRESH_SOURCE`,
+`EXPECT_MILESTONE`, `CREATE_TIMELINE_PROPOSAL`, `CREATE_ENTITY_PROPOSAL`,
+`NO_ACTION`, and `ESCALATE_TO_HUMAN`. The editor must not search, approve, or
+apply its own recommendations; they go through the normal strategist,
+research-escalation, independent-evaluator, and human-review gates.
 
 ## 5. Data you may read
 

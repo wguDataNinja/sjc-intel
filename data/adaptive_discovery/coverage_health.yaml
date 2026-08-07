@@ -1,0 +1,26 @@
+mode: supervised-live-pilot
+generated_at: '2026-08-07T06:33:38Z'
+run_id: SJC-LIVE-20260807-2604
+fresh:
+- Baptist SilverLeaf campus
+- CR 2209 connector
+- First Coast Expressway access
+- Magnolia Oaks Academy
+- Publix at Silverleaf Market
+- SilverLeaf grocery center — possible Harris Teeter
+stale:
+- CR 2209 connector
+- First Coast Expressway access
+- Publix at Silverleaf Market
+missed_milestones: []
+no_yield_queries:
+- '"CR 16A" grocery SilverLeaf'
+- '"CR 2209 connector"'
+- '"Silverleaf Retail Marketplace"'
+source_gaps: []
+lanes_covered:
+- healthcare and services
+- retail and amenities
+- roads and mobility
+- schools and families
+unanswered_questions: []

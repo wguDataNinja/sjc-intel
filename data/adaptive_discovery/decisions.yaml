@@ -1,0 +1,1052 @@
+decisions:
+- decision_id: DEC-0139dcfedd6f
+  proposal_id: LIVE-ad9eee3e390e
+  action: accept
+  reviewer: Buddy
+  rationale: verified via official source
+  at: '2026-08-06T04:13:43Z'
+  proposed_state_transition: isolated adaptive state only; never canonical registry
+  proposal:
+    proposal_id: LIVE-ad9eee3e390e
+    type: entity
+    subject: Magnolia Oaks Academy
+    mode: supervised-live-pilot
+    run_id: SJC-LIVE-20260806-0201
+    evidence:
+    - url: https://news.google.com/rss/articles/CBMi0wFBVV95cUxOYzJzTjVBR1dMdk5CQmF3d1NCaFZSMVdIOU5saDNoemgyLWhBMlh0MXRpOXhSNlA4UkNzY0xoZmpsQ1ExZ3J1ei1rbmpTX2hPM2hjUS1oNnlkWXhVaVZWU2lBQ0E1WXZ3eFRQcGJXVjNEbXJYT2V5eEtuWVZYNThCYlFzQ3JzbUFESTFiMWZ4cjB1WU9EQUVBZnFuVENMVURuZzJCclluXzA4S05rSjlhQ2E4dE53MWxvWEFaOWNZYzd4U0tlV0xXaUQ0MXhBX3dZbC04?oc=5
+      title: Magnolia Oaks Academy set to open doors in SilverLeaf community for 2026-2027
+        school year - News4JAX
+      date: '2026-07-22T07:00:00Z'
+      query_id: SJC-LIVE-20260806-0201-Q01
+    resident_impact: Potentially relevant to SilverLeaf residents; human verification
+      required.
+    expected_benefit: persistent follow-up in the isolated adaptive state
+    cost_or_budget: 1
+    risk: RSS result/identity may be incomplete or duplicate
+    proposed_state_transition: isolated adaptive state only; never canonical registry
+    status: accepted
+    created_at: '2026-08-06T04:13:23Z'
+    evaluator:
+      decision: accepted
+      rationale: shape valid, evidence present
+      run_id: SJC-LIVE-20260806-0201
+    decision_id: DEC-0139dcfedd6f
+- decision_id: DEC-6762797dcd16
+  proposal_id: LIVE-ad9eee3e390e
+  action: rollback
+  reviewer: Buddy
+  rationale: undo to reset state
+  at: '2026-08-06T04:13:44Z'
+  reverses: DEC-0139dcfedd6f
+- decision_id: DEC-c95c5382bdde
+  proposal_id: LIVE-b19cc8fc4ed7
+  action: edited
+  reviewer: Buddy
+  rationale: Canonical name from official Publix source; retain resident-known aliases
+  at: '2026-08-07T05:59:09Z'
+  edit:
+    subject:
+      from: SilverLeaf Mega Publix
+      to: Publix at Silverleaf Market
+    aliases:
+      from: []
+      to:
+      - SilverLeaf Mega Publix
+      - Silverleaf Publix
+      - Publix Silverleaf Market
+  original_proposal:
+    proposal_id: LIVE-b19cc8fc4ed7
+    type: entity
+    subject: SilverLeaf Mega Publix
+    mode: supervised-live-pilot
+    run_id: SJC-LIVE-20260806-0201
+    evidence:
+    - url: https://news.google.com/rss/articles/CBMirAFBVV95cUxOQ2d3VzJSckcwd3RMektxdWlPdEQyVGFTMlBJRWg4T3lISUNXVDlIU00tSE5JeVYyMEIzY3RGNG1Tb0NiSTEwZWUydEF5c25IT0JOVEdSSHpVUzlZeVJvMHhNTDFjcjhtcHd6dXNIdTc2NnNneEE0eHN4TWJFQmhMMzhxTThXeXFaUG5JRjg0ZTZ2V1ZUZDRyTnRfTXlwcm5iZDRna0Foc0pBV19x?oc=5
+      title: Publix opens new store in St. Augustine, Florida - Publix
+      date: '2026-03-26T07:00:00Z'
+      query_id: SJC-LIVE-20260806-0201-Q03
+    resident_impact: Potentially relevant to SilverLeaf residents; human verification
+      required.
+    expected_benefit: persistent follow-up in the isolated adaptive state
+    cost_or_budget: 1
+    risk: RSS result/identity may be incomplete or duplicate
+    proposed_state_transition: isolated adaptive state only; never canonical registry
+    status: pending_human_review
+    created_at: '2026-08-06T04:13:23Z'
+    evaluator:
+      decision: accepted
+      rationale: shape valid, evidence present
+      run_id: SJC-LIVE-20260806-0201
+- decision_id: DEC-46542cb9a8d7
+  proposal_id: LIVE-0f19a7c7afb8
+  action: edited
+  reviewer: Buddy
+  rationale: Update subject and recurring queries to canonical Publix name
+  at: '2026-08-07T05:59:14Z'
+  edit:
+    subject:
+      from: SilverLeaf Mega Publix
+      to: Publix at Silverleaf Market
+    queries:
+      from: []
+      to:
+      - '"Publix at Silverleaf Market"'
+      - '"Silverleaf Market" tenants'
+      - '"SilverLeaf Publix" opening'
+      - '"Silverleaf Market" development'
+  original_proposal:
+    proposal_id: LIVE-0f19a7c7afb8
+    type: search_profile
+    subject: SilverLeaf Mega Publix
+    mode: supervised-live-pilot
+    run_id: SJC-LIVE-20260806-0201
+    evidence:
+    - url: https://news.google.com/rss/articles/CBMirAFBVV95cUxOQ2d3VzJSckcwd3RMektxdWlPdEQyVGFTMlBJRWg4T3lISUNXVDlIU00tSE5JeVYyMEIzY3RGNG1Tb0NiSTEwZWUydEF5c25IT0JOVEdSSHpVUzlZeVJvMHhNTDFjcjhtcHd6dXNIdTc2NnNneEE0eHN4TWJFQmhMMzhxTThXeXFaUG5JRjg0ZTZ2V1ZUZDRyTnRfTXlwcm5iZDRna0Foc0pBV19x?oc=5
+      title: Publix opens new store in St. Augustine, Florida - Publix
+      date: '2026-03-26T07:00:00Z'
+      query_id: SJC-LIVE-20260806-0201-Q03
+    resident_impact: Potentially relevant to SilverLeaf residents; human verification
+      required.
+    expected_benefit: persistent follow-up in the isolated adaptive state
+    cost_or_budget: 1
+    risk: RSS result/identity may be incomplete or duplicate
+    proposed_state_transition: isolated adaptive state only; never canonical registry
+    status: pending_human_review
+    created_at: '2026-08-06T04:13:23Z'
+    evaluator:
+      decision: accepted
+      rationale: shape valid, evidence present
+      run_id: SJC-LIVE-20260806-0201
+- decision_id: DEC-a11f99e0d4cf
+  proposal_id: LIVE-3f8d214dd1f9
+  action: edited
+  reviewer: Buddy
+  rationale: 'Qualified identity per Task 25: project strongly matches Harris Teeter
+    prototype but tenant unconfirmed by first-party source; research escalation ACCEPT_QUALIFIED'
+  at: '2026-08-07T05:59:19Z'
+  edit:
+    subject:
+      from: Harris Teeter SilverLeaf
+      to: SilverLeaf grocery center — possible Harris Teeter
+    recommended_canonical_name: SilverLeaf grocery center — possible Harris Teeter
+    aliases:
+      from: []
+      to:
+      - Harris Teeter SilverLeaf (unconfirmed)
+      - SilverLeaf grocery center
+    location:
+      from: null
+      to: CR 16A and SilverLeaf Parkway
+    queries:
+      from: []
+      to:
+      - '"SilverLeaf" "Harris Teeter"'
+      - '"SilverLeaf Parkway" grocery'
+      - '"CR 16A" grocery SilverLeaf'
+      - '"Silverleaf Retail Marketplace"'
+      - '"SilverLeaf grocery center"'
+  original_proposal:
+    proposal_id: LIVE-3f8d214dd1f9
+    type: entity
+    subject: Harris Teeter SilverLeaf
+    mode: supervised-live-pilot
+    run_id: SJC-LIVE-20260806-0202
+    evidence:
+    - url: https://news.google.com/rss/articles/CBMitAFBVV95cUxOeW9raHI4Y2pjc1hab2VpeEo0bFRYY3FMREgtTC14NGMzN2FRT2tnMm1XQ2ZZRkVaMi1NcDQtYzBqLUl6QjJGS0JYZ3p2WmpNaXRJaVVmX1VHZjRobk9CYllHZEJkcmg3cHd1cGNhSjVYek1vOUliZVR4ZmFGRGZjVXVLRVVCWXNxYmRwb0tfeF9aQkpVRkNLeEltUjZlcnhNaHhkVndMYVNHV1pJdDNJNFdtakU?oc=5
+      title: Another St. Johns County Harris Teeter-size grocery store proposed -
+        Jacksonville Daily Record
+      date: '2026-05-15T07:00:00Z'
+      query_id: SJC-LIVE-20260806-0202-Q02
+    resident_impact: Potentially relevant to SilverLeaf residents; human verification
+      required.
+    expected_benefit: persistent follow-up in the isolated adaptive state
+    cost_or_budget: 1
+    risk: RSS result/identity may be incomplete or duplicate
+    proposed_state_transition: isolated adaptive state only; never canonical registry
+    status: pending_human_review
+    created_at: '2026-08-06T04:13:25Z'
+    evaluator:
+      decision: accepted
+      rationale: shape valid, evidence present
+      run_id: SJC-LIVE-20260806-0202
+- decision_id: DEC-ef339187e3b3
+  proposal_id: LIVE-706bccd9f626
+  action: edited
+  reviewer: Buddy
+  rationale: Qualified subject and recurring research queries for unconfirmed tenant
+  at: '2026-08-07T05:59:24Z'
+  edit:
+    subject:
+      from: Harris Teeter SilverLeaf
+      to: SilverLeaf grocery center — possible Harris Teeter
+    queries:
+      from: []
+      to:
+      - '"SilverLeaf" "Harris Teeter"'
+      - '"SilverLeaf Parkway" grocery'
+      - '"CR 16A" grocery SilverLeaf'
+      - '"Silverleaf Retail Marketplace"'
+      - '"SilverLeaf grocery center"'
+  original_proposal:
+    proposal_id: LIVE-706bccd9f626
+    type: search_profile
+    subject: Harris Teeter SilverLeaf
+    mode: supervised-live-pilot
+    run_id: SJC-LIVE-20260806-0202
+    evidence:
+    - url: https://news.google.com/rss/articles/CBMitAFBVV95cUxOeW9raHI4Y2pjc1hab2VpeEo0bFRYY3FMREgtTC14NGMzN2FRT2tnMm1XQ2ZZRkVaMi1NcDQtYzBqLUl6QjJGS0JYZ3p2WmpNaXRJaVVmX1VHZjRobk9CYllHZEJkcmg3cHd1cGNhSjVYek1vOUliZVR4ZmFGRGZjVXVLRVVCWXNxYmRwb0tfeF9aQkpVRkNLeEltUjZlcnhNaHhkVndMYVNHV1pJdDNJNFdtakU?oc=5
+      title: Another St. Johns County Harris Teeter-size grocery store proposed -
+        Jacksonville Daily Record
+      date: '2026-05-15T07:00:00Z'
+      query_id: SJC-LIVE-20260806-0202-Q02
+    resident_impact: Potentially relevant to SilverLeaf residents; human verification
+      required.
+    expected_benefit: persistent follow-up in the isolated adaptive state
+    cost_or_budget: 1
+    risk: RSS result/identity may be incomplete or duplicate
+    proposed_state_transition: isolated adaptive state only; never canonical registry
+    status: pending_human_review
+    created_at: '2026-08-06T04:13:25Z'
+    evaluator:
+      decision: accepted
+      rationale: shape valid, evidence present
+      run_id: SJC-LIVE-20260806-0202
+- decision_id: DEC-885924dcb65b
+  proposal_id: LIVE-c625d46d3eb0
+  action: edited
+  reviewer: Buddy
+  rationale: Preserve uncertainty in timeline state; no 'Harris Teeter confirmed'
+    claim
+  at: '2026-08-07T05:59:24Z'
+  edit:
+    subject:
+      from: Harris Teeter SilverLeaf
+      to: SilverLeaf grocery center — possible Harris Teeter
+    timeline_state:
+      from: null
+      to: grocery-anchored shopping center proposed; plans match Harris Teeter prototype;
+        project under county review; tenant remains unconfirmed
+  original_proposal:
+    proposal_id: LIVE-c625d46d3eb0
+    type: timeline_reconciliation
+    subject: Harris Teeter SilverLeaf
+    mode: supervised-live-pilot
+    run_id: SJC-LIVE-20260806-0202
+    evidence:
+    - url: https://news.google.com/rss/articles/CBMitAFBVV95cUxOeW9raHI4Y2pjc1hab2VpeEo0bFRYY3FMREgtTC14NGMzN2FRT2tnMm1XQ2ZZRkVaMi1NcDQtYzBqLUl6QjJGS0JYZ3p2WmpNaXRJaVVmX1VHZjRobk9CYllHZEJkcmg3cHd1cGNhSjVYek1vOUliZVR4ZmFGRGZjVXVLRVVCWXNxYmRwb0tfeF9aQkpVRkNLeEltUjZlcnhNaHhkVndMYVNHV1pJdDNJNFdtakU?oc=5
+      title: Another St. Johns County Harris Teeter-size grocery store proposed -
+        Jacksonville Daily Record
+      date: '2026-05-15T07:00:00Z'
+      query_id: SJC-LIVE-20260806-0202-Q02
+    resident_impact: Potentially relevant to SilverLeaf residents; human verification
+      required.
+    expected_benefit: persistent follow-up in the isolated adaptive state
+    cost_or_budget: 1
+    risk: RSS result/identity may be incomplete or duplicate
+    proposed_state_transition: isolated adaptive state only; never canonical registry
+    status: pending_human_review
+    created_at: '2026-08-06T04:13:25Z'
+    evaluator:
+      decision: accepted
+      rationale: shape valid, evidence present
+      run_id: SJC-LIVE-20260806-0202
+- decision_id: DEC-fddf9b7c9bba
+  proposal_id: LIVE-ad9eee3e390e
+  action: accept
+  reviewer: Buddy
+  rationale: Approved per Task 25 decision set; evidence verified against public source
+  at: '2026-08-07T05:59:28Z'
+  proposed_state_transition: isolated adaptive state only; never canonical registry
+  proposal:
+    proposal_id: LIVE-ad9eee3e390e
+    type: entity
+    subject: Magnolia Oaks Academy
+    mode: supervised-live-pilot
+    run_id: SJC-LIVE-20260806-0201
+    evidence:
+    - url: https://news.google.com/rss/articles/CBMi0wFBVV95cUxOYzJzTjVBR1dMdk5CQmF3d1NCaFZSMVdIOU5saDNoemgyLWhBMlh0MXRpOXhSNlA4UkNzY0xoZmpsQ1ExZ3J1ei1rbmpTX2hPM2hjUS1oNnlkWXhVaVZWU2lBQ0E1WXZ3eFRQcGJXVjNEbXJYT2V5eEtuWVZYNThCYlFzQ3JzbUFESTFiMWZ4cjB1WU9EQUVBZnFuVENMVURuZzJCclluXzA4S05rSjlhQ2E4dE53MWxvWEFaOWNZYzd4U0tlV0xXaUQ0MXhBX3dZbC04?oc=5
+      title: Magnolia Oaks Academy set to open doors in SilverLeaf community for 2026-2027
+        school year - News4JAX
+      date: '2026-07-22T07:00:00Z'
+      query_id: SJC-LIVE-20260806-0201-Q01
+    resident_impact: Potentially relevant to SilverLeaf residents; human verification
+      required.
+    expected_benefit: persistent follow-up in the isolated adaptive state
+    cost_or_budget: 1
+    risk: RSS result/identity may be incomplete or duplicate
+    proposed_state_transition: isolated adaptive state only; never canonical registry
+    status: accepted
+    created_at: '2026-08-06T04:13:23Z'
+    evaluator:
+      decision: accepted
+      rationale: shape valid, evidence present
+      run_id: SJC-LIVE-20260806-0201
+    decision_id: DEC-fddf9b7c9bba
+- decision_id: DEC-a6084bdfd4d2
+  proposal_id: LIVE-b19cc8fc4ed7
+  action: accept
+  reviewer: Buddy
+  rationale: Approved per Task 25 decision set; evidence verified against public source
+  at: '2026-08-07T05:59:29Z'
+  proposed_state_transition: isolated adaptive state only; never canonical registry
+  proposal:
+    proposal_id: LIVE-b19cc8fc4ed7
+    type: entity
+    subject: Publix at Silverleaf Market
+    mode: supervised-live-pilot
+    run_id: SJC-LIVE-20260806-0201
+    evidence:
+    - url: https://news.google.com/rss/articles/CBMirAFBVV95cUxOQ2d3VzJSckcwd3RMektxdWlPdEQyVGFTMlBJRWg4T3lISUNXVDlIU00tSE5JeVYyMEIzY3RGNG1Tb0NiSTEwZWUydEF5c25IT0JOVEdSSHpVUzlZeVJvMHhNTDFjcjhtcHd6dXNIdTc2NnNneEE0eHN4TWJFQmhMMzhxTThXeXFaUG5JRjg0ZTZ2V1ZUZDRyTnRfTXlwcm5iZDRna0Foc0pBV19x?oc=5
+      title: Publix opens new store in St. Augustine, Florida - Publix
+      date: '2026-03-26T07:00:00Z'
+      query_id: SJC-LIVE-20260806-0201-Q03
+    resident_impact: Potentially relevant to SilverLeaf residents; human verification
+      required.
+    expected_benefit: persistent follow-up in the isolated adaptive state
+    cost_or_budget: 1
+    risk: RSS result/identity may be incomplete or duplicate
+    proposed_state_transition: isolated adaptive state only; never canonical registry
+    status: accepted
+    created_at: '2026-08-06T04:13:23Z'
+    evaluator:
+      decision: accepted
+      rationale: shape valid, evidence present
+      run_id: SJC-LIVE-20260806-0201
+    aliases: &id001
+    - SilverLeaf Mega Publix
+    - Silverleaf Publix
+    - Publix Silverleaf Market
+    edits:
+    - at: '2026-08-07T05:59:09Z'
+      by: Buddy
+      reason: Canonical name from official Publix source; retain resident-known aliases
+      changes:
+        subject:
+          from: SilverLeaf Mega Publix
+          to: Publix at Silverleaf Market
+        aliases:
+          from: []
+          to: *id001
+    decision_id: DEC-a6084bdfd4d2
+- decision_id: DEC-c0ffb03f7c90
+  proposal_id: LIVE-476ade9e84c0
+  action: accept
+  reviewer: Buddy
+  rationale: Approved per Task 25 decision set; evidence verified against public source
+  at: '2026-08-07T05:59:29Z'
+  proposed_state_transition: isolated adaptive state only; never canonical registry
+  proposal:
+    proposal_id: LIVE-476ade9e84c0
+    type: entity
+    subject: Baptist SilverLeaf campus
+    mode: supervised-live-pilot
+    run_id: SJC-LIVE-20260806-0202
+    evidence:
+    - url: https://news.google.com/rss/articles/CBMi1AFBVV95cUxNWlRnYVNwSXJQRmk3UDEybm1BNDFzOWxHckdYX1huUGZRZHZhUTBPaDRUTHN2cXk5MWFqbFpUbzYzYVVLN1RBU0pVUjZkU1VTVFZOVHBXQmdRQzJDTVZrS2dkSnJwd09IYUJ4QzVZcnNRVy10UVJOR3psQXpnazBQS3JUbklFMGhSekUxZVVPdE5oNHN3WldOc3pnOGlPUzhweHJRVDN3aDNtNkdTWTBHMU14RHJGNHFKamRFcGxJZ0dHRHZyMWkwanFpMHdkUlRrTkdtUQ?oc=5
+      title: Baptist Health opens SilverLeaf outpatient medical campus to serve growing
+        St. Johns County - News4JAX
+      date: '2026-06-22T07:00:00Z'
+      query_id: SJC-LIVE-20260806-0202-Q03
+    resident_impact: Potentially relevant to SilverLeaf residents; human verification
+      required.
+    expected_benefit: persistent follow-up in the isolated adaptive state
+    cost_or_budget: 1
+    risk: RSS result/identity may be incomplete or duplicate
+    proposed_state_transition: isolated adaptive state only; never canonical registry
+    status: accepted
+    created_at: '2026-08-06T04:13:25Z'
+    evaluator:
+      decision: accepted
+      rationale: shape valid, evidence present
+      run_id: SJC-LIVE-20260806-0202
+    decision_id: DEC-c0ffb03f7c90
+- decision_id: DEC-8f24e1af4805
+  proposal_id: LIVE-74cf426eb727
+  action: accept
+  reviewer: Buddy
+  rationale: Approved per Task 25 decision set; evidence verified against public source
+  at: '2026-08-07T05:59:29Z'
+  proposed_state_transition: isolated adaptive state only; never canonical registry
+  proposal:
+    proposal_id: LIVE-74cf426eb727
+    type: entity
+    subject: CR 2209 connector
+    mode: supervised-live-pilot
+    run_id: SJC-LIVE-20260806-0201
+    evidence:
+    - url: https://news.google.com/rss/articles/CBMizwFBVV95cUxPalE2Rm4ySmowX3R2ZjJNYnRhSkI1ak9NeVp3Zlh1aE1fMHJXWHJlRkg3ek5DbEN3YmQwRjFRSjdzblp3SndDNVVmVGRua0hIek9LekE1VER5d2RPMmNqTmoyTWVCQWkwMjFad2tseDAtUk92b0dDOFFRSEtFSlN5RXY5YXIyTjAtekk1T055UGprb2dPNFlqbEZyOW01R2lnblVZSkFHdFlXUzNqTzlaVV94cXBwclpxVzVyTHJmbVBMUkhrbncwem5VTEZzY3fSAeMBQVVfeXFMUDROQ2w1N2dpUkRoWnhnZXY1UjZ2WDA4NFBDNTRUbXNpcDJLTjU4SFVTTDgwRE5SNVdlZ3hGclF1ZVd0X0tIaFE3ZFllb01HRGpORWpIbnlSV216T0NOSEtKU3RZeGdvc2tiSDAxZnlkMms4dXEzQUJSZFJFbFVxSnZCRk1ITGJyQ1JqMVBWMXBSZjVYcy0zbnVaMzQyeEtEWU5UOWk4Y0gzUGowMi1TbUJKa3kxRnlNbkNpMTZPTzBqUUlCRUZlc3BqcF9YeE9IRXBxamtoalRLb1Y0TXRfV1M1Nkk?oc=5
+      title: St. Johns County to hold meetings on CR 210 and CR 2209 intersection
+        changes - Action News Jax
+      date: '2026-03-31T07:00:00Z'
+      query_id: SJC-LIVE-20260806-0201-Q02
+    resident_impact: Potentially relevant to SilverLeaf residents; human verification
+      required.
+    expected_benefit: persistent follow-up in the isolated adaptive state
+    cost_or_budget: 1
+    risk: RSS result/identity may be incomplete or duplicate
+    proposed_state_transition: isolated adaptive state only; never canonical registry
+    status: accepted
+    created_at: '2026-08-06T04:13:23Z'
+    evaluator:
+      decision: accepted
+      rationale: shape valid, evidence present
+      run_id: SJC-LIVE-20260806-0201
+    decision_id: DEC-8f24e1af4805
+- decision_id: DEC-ffca85b442b1
+  proposal_id: LIVE-bab9fbe90d95
+  action: accept
+  reviewer: Buddy
+  rationale: Approved per Task 25 decision set; evidence verified against public source
+  at: '2026-08-07T05:59:30Z'
+  proposed_state_transition: isolated adaptive state only; never canonical registry
+  proposal:
+    proposal_id: LIVE-bab9fbe90d95
+    type: entity
+    subject: First Coast Expressway access
+    mode: supervised-live-pilot
+    run_id: SJC-LIVE-20260806-0202
+    evidence:
+    - url: https://news.google.com/rss/articles/CBMixgFBVV95cUxOa2kycXNTY00yUGs3cnBJcWk0OUVCbkpYOTJPdkJycHI3Y0tMbWxkSFpkNDdIYk1DOGN2aVUzT3JLQmFCd1FFbmh4dmRGSEhPSGRQSExybW9xZFBuSE0yNm5zUVU3V3BLbDZ4Rjk0UjFXUHBxZk9pS0dIYjAyZTIxWmd3Q0J3THpqb09ZZHRsNFl0Y1BVckZfd1RJdUJPR2Q4cGp0NEVTZXA0VXZOY0l2Z1NseGdjNmNGT2p6WDMxOTRSMzFNcEE?oc=5
+      title: FDOT sets open house in St. Johns County for First Coast Expressway final
+        phase - Jacksonville Daily Record
+      date: '2026-01-27T08:00:00Z'
+      query_id: SJC-LIVE-20260806-0202-Q01
+    resident_impact: Potentially relevant to SilverLeaf residents; human verification
+      required.
+    expected_benefit: persistent follow-up in the isolated adaptive state
+    cost_or_budget: 1
+    risk: RSS result/identity may be incomplete or duplicate
+    proposed_state_transition: isolated adaptive state only; never canonical registry
+    status: accepted
+    created_at: '2026-08-06T04:13:25Z'
+    evaluator:
+      decision: accepted
+      rationale: shape valid, evidence present
+      run_id: SJC-LIVE-20260806-0202
+    decision_id: DEC-ffca85b442b1
+- decision_id: DEC-9d4bb07bc654
+  proposal_id: LIVE-3f8d214dd1f9
+  action: accept
+  reviewer: Buddy
+  rationale: 'Qualified tracked subject: project exists, tenant unconfirmed (ACCEPT_QUALIFIED
+    research outcome)'
+  at: '2026-08-07T05:59:35Z'
+  proposed_state_transition: isolated adaptive state only; never canonical registry
+  proposal:
+    proposal_id: LIVE-3f8d214dd1f9
+    type: entity
+    subject: SilverLeaf grocery center — possible Harris Teeter
+    mode: supervised-live-pilot
+    run_id: SJC-LIVE-20260806-0202
+    evidence:
+    - url: https://news.google.com/rss/articles/CBMitAFBVV95cUxOeW9raHI4Y2pjc1hab2VpeEo0bFRYY3FMREgtTC14NGMzN2FRT2tnMm1XQ2ZZRkVaMi1NcDQtYzBqLUl6QjJGS0JYZ3p2WmpNaXRJaVVmX1VHZjRobk9CYllHZEJkcmg3cHd1cGNhSjVYek1vOUliZVR4ZmFGRGZjVXVLRVVCWXNxYmRwb0tfeF9aQkpVRkNLeEltUjZlcnhNaHhkVndMYVNHV1pJdDNJNFdtakU?oc=5
+      title: Another St. Johns County Harris Teeter-size grocery store proposed -
+        Jacksonville Daily Record
+      date: '2026-05-15T07:00:00Z'
+      query_id: SJC-LIVE-20260806-0202-Q02
+    resident_impact: Potentially relevant to SilverLeaf residents; human verification
+      required.
+    expected_benefit: persistent follow-up in the isolated adaptive state
+    cost_or_budget: 1
+    risk: RSS result/identity may be incomplete or duplicate
+    proposed_state_transition: isolated adaptive state only; never canonical registry
+    status: accepted
+    created_at: '2026-08-06T04:13:25Z'
+    evaluator:
+      decision: accepted
+      rationale: shape valid, evidence present
+      run_id: SJC-LIVE-20260806-0202
+    recommended_canonical_name: SilverLeaf grocery center — possible Harris Teeter
+    aliases: &id002
+    - Harris Teeter SilverLeaf (unconfirmed)
+    - SilverLeaf grocery center
+    location: CR 16A and SilverLeaf Parkway
+    queries: &id003
+    - '"SilverLeaf" "Harris Teeter"'
+    - '"SilverLeaf Parkway" grocery'
+    - '"CR 16A" grocery SilverLeaf'
+    - '"Silverleaf Retail Marketplace"'
+    - '"SilverLeaf grocery center"'
+    edits:
+    - at: '2026-08-07T05:59:19Z'
+      by: Buddy
+      reason: 'Qualified identity per Task 25: project strongly matches Harris Teeter
+        prototype but tenant unconfirmed by first-party source; research escalation
+        ACCEPT_QUALIFIED'
+      changes:
+        subject:
+          from: Harris Teeter SilverLeaf
+          to: SilverLeaf grocery center — possible Harris Teeter
+        recommended_canonical_name: SilverLeaf grocery center — possible Harris Teeter
+        aliases:
+          from: []
+          to: *id002
+        location:
+          from: null
+          to: CR 16A and SilverLeaf Parkway
+        queries:
+          from: []
+          to: *id003
+    decision_id: DEC-9d4bb07bc654
+- decision_id: DEC-6f0a53d69b03
+  proposal_id: LIVE-030b26e86bbf
+  action: accept
+  reviewer: Buddy
+  rationale: Internal coverage-planning lane per Task 25
+  at: '2026-08-07T05:59:35Z'
+  proposed_state_transition: isolated adaptive state only; never canonical registry
+  proposal:
+    proposal_id: LIVE-030b26e86bbf
+    type: coverage_lane
+    subject: schools and families
+    mode: supervised-live-pilot
+    run_id: SJC-LIVE-20260806-0201
+    evidence:
+    - url: https://news.google.com/rss/articles/CBMi0wFBVV95cUxOYzJzTjVBR1dMdk5CQmF3d1NCaFZSMVdIOU5saDNoemgyLWhBMlh0MXRpOXhSNlA4UkNzY0xoZmpsQ1ExZ3J1ei1rbmpTX2hPM2hjUS1oNnlkWXhVaVZWU2lBQ0E1WXZ3eFRQcGJXVjNEbXJYT2V5eEtuWVZYNThCYlFzQ3JzbUFESTFiMWZ4cjB1WU9EQUVBZnFuVENMVURuZzJCclluXzA4S05rSjlhQ2E4dE53MWxvWEFaOWNZYzd4U0tlV0xXaUQ0MXhBX3dZbC04?oc=5
+      title: Magnolia Oaks Academy set to open doors in SilverLeaf community for 2026-2027
+        school year - News4JAX
+      date: '2026-07-22T07:00:00Z'
+      query_id: SJC-LIVE-20260806-0201-Q01
+    resident_impact: Potentially relevant to SilverLeaf residents; human verification
+      required.
+    expected_benefit: persistent follow-up in the isolated adaptive state
+    cost_or_budget: 1
+    risk: RSS result/identity may be incomplete or duplicate
+    proposed_state_transition: isolated adaptive state only; never canonical registry
+    status: accepted
+    created_at: '2026-08-06T04:13:23Z'
+    evaluator:
+      decision: accepted
+      rationale: shape valid, evidence present
+      run_id: SJC-LIVE-20260806-0201
+    decision_id: DEC-6f0a53d69b03
+- decision_id: DEC-41d59dbd7898
+  proposal_id: LIVE-6eef856c960b
+  action: accept
+  reviewer: Buddy
+  rationale: Internal coverage-planning lane per Task 25
+  at: '2026-08-07T05:59:36Z'
+  proposed_state_transition: isolated adaptive state only; never canonical registry
+  proposal:
+    proposal_id: LIVE-6eef856c960b
+    type: coverage_lane
+    subject: roads and mobility
+    mode: supervised-live-pilot
+    run_id: SJC-LIVE-20260806-0201
+    evidence:
+    - url: https://news.google.com/rss/articles/CBMizwFBVV95cUxPalE2Rm4ySmowX3R2ZjJNYnRhSkI1ak9NeVp3Zlh1aE1fMHJXWHJlRkg3ek5DbEN3YmQwRjFRSjdzblp3SndDNVVmVGRua0hIek9LekE1VER5d2RPMmNqTmoyTWVCQWkwMjFad2tseDAtUk92b0dDOFFRSEtFSlN5RXY5YXIyTjAtekk1T055UGprb2dPNFlqbEZyOW01R2lnblVZSkFHdFlXUzNqTzlaVV94cXBwclpxVzVyTHJmbVBMUkhrbncwem5VTEZzY3fSAeMBQVVfeXFMUDROQ2w1N2dpUkRoWnhnZXY1UjZ2WDA4NFBDNTRUbXNpcDJLTjU4SFVTTDgwRE5SNVdlZ3hGclF1ZVd0X0tIaFE3ZFllb01HRGpORWpIbnlSV216T0NOSEtKU3RZeGdvc2tiSDAxZnlkMms4dXEzQUJSZFJFbFVxSnZCRk1ITGJyQ1JqMVBWMXBSZjVYcy0zbnVaMzQyeEtEWU5UOWk4Y0gzUGowMi1TbUJKa3kxRnlNbkNpMTZPTzBqUUlCRUZlc3BqcF9YeE9IRXBxamtoalRLb1Y0TXRfV1M1Nkk?oc=5
+      title: St. Johns County to hold meetings on CR 210 and CR 2209 intersection
+        changes - Action News Jax
+      date: '2026-03-31T07:00:00Z'
+      query_id: SJC-LIVE-20260806-0201-Q02
+    resident_impact: Potentially relevant to SilverLeaf residents; human verification
+      required.
+    expected_benefit: persistent follow-up in the isolated adaptive state
+    cost_or_budget: 1
+    risk: RSS result/identity may be incomplete or duplicate
+    proposed_state_transition: isolated adaptive state only; never canonical registry
+    status: accepted
+    created_at: '2026-08-06T04:13:23Z'
+    evaluator:
+      decision: accepted
+      rationale: shape valid, evidence present
+      run_id: SJC-LIVE-20260806-0201
+    decision_id: DEC-41d59dbd7898
+- decision_id: DEC-f15f816cabda
+  proposal_id: LIVE-fc3ae8103d4e
+  action: accept
+  reviewer: Buddy
+  rationale: Internal coverage-planning lane per Task 25
+  at: '2026-08-07T05:59:36Z'
+  proposed_state_transition: isolated adaptive state only; never canonical registry
+  proposal:
+    proposal_id: LIVE-fc3ae8103d4e
+    type: coverage_lane
+    subject: retail and amenities
+    mode: supervised-live-pilot
+    run_id: SJC-LIVE-20260806-0201
+    evidence:
+    - url: https://news.google.com/rss/articles/CBMirAFBVV95cUxOQ2d3VzJSckcwd3RMektxdWlPdEQyVGFTMlBJRWg4T3lISUNXVDlIU00tSE5JeVYyMEIzY3RGNG1Tb0NiSTEwZWUydEF5c25IT0JOVEdSSHpVUzlZeVJvMHhNTDFjcjhtcHd6dXNIdTc2NnNneEE0eHN4TWJFQmhMMzhxTThXeXFaUG5JRjg0ZTZ2V1ZUZDRyTnRfTXlwcm5iZDRna0Foc0pBV19x?oc=5
+      title: Publix opens new store in St. Augustine, Florida - Publix
+      date: '2026-03-26T07:00:00Z'
+      query_id: SJC-LIVE-20260806-0201-Q03
+    resident_impact: Potentially relevant to SilverLeaf residents; human verification
+      required.
+    expected_benefit: persistent follow-up in the isolated adaptive state
+    cost_or_budget: 1
+    risk: RSS result/identity may be incomplete or duplicate
+    proposed_state_transition: isolated adaptive state only; never canonical registry
+    status: accepted
+    created_at: '2026-08-06T04:13:23Z'
+    evaluator:
+      decision: accepted
+      rationale: shape valid, evidence present
+      run_id: SJC-LIVE-20260806-0201
+    decision_id: DEC-f15f816cabda
+- decision_id: DEC-7b98f070560c
+  proposal_id: LIVE-60f81408c018
+  action: accept
+  reviewer: Buddy
+  rationale: Internal coverage-planning lane per Task 25
+  at: '2026-08-07T05:59:36Z'
+  proposed_state_transition: isolated adaptive state only; never canonical registry
+  proposal:
+    proposal_id: LIVE-60f81408c018
+    type: coverage_lane
+    subject: healthcare and services
+    mode: supervised-live-pilot
+    run_id: SJC-LIVE-20260806-0202
+    evidence:
+    - url: https://news.google.com/rss/articles/CBMi1AFBVV95cUxNWlRnYVNwSXJQRmk3UDEybm1BNDFzOWxHckdYX1huUGZRZHZhUTBPaDRUTHN2cXk5MWFqbFpUbzYzYVVLN1RBU0pVUjZkU1VTVFZOVHBXQmdRQzJDTVZrS2dkSnJwd09IYUJ4QzVZcnNRVy10UVJOR3psQXpnazBQS3JUbklFMGhSekUxZVVPdE5oNHN3WldOc3pnOGlPUzhweHJRVDN3aDNtNkdTWTBHMU14RHJGNHFKamRFcGxJZ0dHRHZyMWkwanFpMHdkUlRrTkdtUQ?oc=5
+      title: Baptist Health opens SilverLeaf outpatient medical campus to serve growing
+        St. Johns County - News4JAX
+      date: '2026-06-22T07:00:00Z'
+      query_id: SJC-LIVE-20260806-0202-Q03
+    resident_impact: Potentially relevant to SilverLeaf residents; human verification
+      required.
+    expected_benefit: persistent follow-up in the isolated adaptive state
+    cost_or_budget: 1
+    risk: RSS result/identity may be incomplete or duplicate
+    proposed_state_transition: isolated adaptive state only; never canonical registry
+    status: accepted
+    created_at: '2026-08-06T04:13:25Z'
+    evaluator:
+      decision: accepted
+      rationale: shape valid, evidence present
+      run_id: SJC-LIVE-20260806-0202
+    decision_id: DEC-7b98f070560c
+- decision_id: DEC-da40751d4f61
+  proposal_id: LIVE-04b7748729e1
+  action: accept
+  reviewer: Buddy
+  rationale: Active recurring search profile per Task 25; subject verified
+  at: '2026-08-07T05:59:42Z'
+  proposed_state_transition: isolated adaptive state only; never canonical registry
+  proposal:
+    proposal_id: LIVE-04b7748729e1
+    type: search_profile
+    subject: Magnolia Oaks Academy
+    mode: supervised-live-pilot
+    run_id: SJC-LIVE-20260806-0201
+    evidence:
+    - url: https://news.google.com/rss/articles/CBMi0wFBVV95cUxOYzJzTjVBR1dMdk5CQmF3d1NCaFZSMVdIOU5saDNoemgyLWhBMlh0MXRpOXhSNlA4UkNzY0xoZmpsQ1ExZ3J1ei1rbmpTX2hPM2hjUS1oNnlkWXhVaVZWU2lBQ0E1WXZ3eFRQcGJXVjNEbXJYT2V5eEtuWVZYNThCYlFzQ3JzbUFESTFiMWZ4cjB1WU9EQUVBZnFuVENMVURuZzJCclluXzA4S05rSjlhQ2E4dE53MWxvWEFaOWNZYzd4U0tlV0xXaUQ0MXhBX3dZbC04?oc=5
+      title: Magnolia Oaks Academy set to open doors in SilverLeaf community for 2026-2027
+        school year - News4JAX
+      date: '2026-07-22T07:00:00Z'
+      query_id: SJC-LIVE-20260806-0201-Q01
+    resident_impact: Potentially relevant to SilverLeaf residents; human verification
+      required.
+    expected_benefit: persistent follow-up in the isolated adaptive state
+    cost_or_budget: 1
+    risk: RSS result/identity may be incomplete or duplicate
+    proposed_state_transition: isolated adaptive state only; never canonical registry
+    status: accepted
+    created_at: '2026-08-06T04:13:23Z'
+    evaluator:
+      decision: accepted
+      rationale: shape valid, evidence present
+      run_id: SJC-LIVE-20260806-0201
+    decision_id: DEC-da40751d4f61
+- decision_id: DEC-4fd25b20dcc8
+  proposal_id: LIVE-0f19a7c7afb8
+  action: accept
+  reviewer: Buddy
+  rationale: Active recurring search profile per Task 25; subject verified
+  at: '2026-08-07T05:59:42Z'
+  proposed_state_transition: isolated adaptive state only; never canonical registry
+  proposal:
+    proposal_id: LIVE-0f19a7c7afb8
+    type: search_profile
+    subject: Publix at Silverleaf Market
+    mode: supervised-live-pilot
+    run_id: SJC-LIVE-20260806-0201
+    evidence:
+    - url: https://news.google.com/rss/articles/CBMirAFBVV95cUxOQ2d3VzJSckcwd3RMektxdWlPdEQyVGFTMlBJRWg4T3lISUNXVDlIU00tSE5JeVYyMEIzY3RGNG1Tb0NiSTEwZWUydEF5c25IT0JOVEdSSHpVUzlZeVJvMHhNTDFjcjhtcHd6dXNIdTc2NnNneEE0eHN4TWJFQmhMMzhxTThXeXFaUG5JRjg0ZTZ2V1ZUZDRyTnRfTXlwcm5iZDRna0Foc0pBV19x?oc=5
+      title: Publix opens new store in St. Augustine, Florida - Publix
+      date: '2026-03-26T07:00:00Z'
+      query_id: SJC-LIVE-20260806-0201-Q03
+    resident_impact: Potentially relevant to SilverLeaf residents; human verification
+      required.
+    expected_benefit: persistent follow-up in the isolated adaptive state
+    cost_or_budget: 1
+    risk: RSS result/identity may be incomplete or duplicate
+    proposed_state_transition: isolated adaptive state only; never canonical registry
+    status: accepted
+    created_at: '2026-08-06T04:13:23Z'
+    evaluator:
+      decision: accepted
+      rationale: shape valid, evidence present
+      run_id: SJC-LIVE-20260806-0201
+    queries: &id004
+    - '"Publix at Silverleaf Market"'
+    - '"Silverleaf Market" tenants'
+    - '"SilverLeaf Publix" opening'
+    - '"Silverleaf Market" development'
+    edits:
+    - at: '2026-08-07T05:59:14Z'
+      by: Buddy
+      reason: Update subject and recurring queries to canonical Publix name
+      changes:
+        subject:
+          from: SilverLeaf Mega Publix
+          to: Publix at Silverleaf Market
+        queries:
+          from: []
+          to: *id004
+    decision_id: DEC-4fd25b20dcc8
+- decision_id: DEC-d24c84c0fd2d
+  proposal_id: LIVE-9cff5aeb112e
+  action: accept
+  reviewer: Buddy
+  rationale: Active recurring search profile per Task 25; subject verified
+  at: '2026-08-07T05:59:42Z'
+  proposed_state_transition: isolated adaptive state only; never canonical registry
+  proposal:
+    proposal_id: LIVE-9cff5aeb112e
+    type: search_profile
+    subject: Baptist SilverLeaf campus
+    mode: supervised-live-pilot
+    run_id: SJC-LIVE-20260806-0202
+    evidence:
+    - url: https://news.google.com/rss/articles/CBMi1AFBVV95cUxNWlRnYVNwSXJQRmk3UDEybm1BNDFzOWxHckdYX1huUGZRZHZhUTBPaDRUTHN2cXk5MWFqbFpUbzYzYVVLN1RBU0pVUjZkU1VTVFZOVHBXQmdRQzJDTVZrS2dkSnJwd09IYUJ4QzVZcnNRVy10UVJOR3psQXpnazBQS3JUbklFMGhSekUxZVVPdE5oNHN3WldOc3pnOGlPUzhweHJRVDN3aDNtNkdTWTBHMU14RHJGNHFKamRFcGxJZ0dHRHZyMWkwanFpMHdkUlRrTkdtUQ?oc=5
+      title: Baptist Health opens SilverLeaf outpatient medical campus to serve growing
+        St. Johns County - News4JAX
+      date: '2026-06-22T07:00:00Z'
+      query_id: SJC-LIVE-20260806-0202-Q03
+    resident_impact: Potentially relevant to SilverLeaf residents; human verification
+      required.
+    expected_benefit: persistent follow-up in the isolated adaptive state
+    cost_or_budget: 1
+    risk: RSS result/identity may be incomplete or duplicate
+    proposed_state_transition: isolated adaptive state only; never canonical registry
+    status: accepted
+    created_at: '2026-08-06T04:13:25Z'
+    evaluator:
+      decision: accepted
+      rationale: shape valid, evidence present
+      run_id: SJC-LIVE-20260806-0202
+    decision_id: DEC-d24c84c0fd2d
+- decision_id: DEC-46700c0ba799
+  proposal_id: LIVE-7d08478f8645
+  action: accept
+  reviewer: Buddy
+  rationale: Active recurring search profile per Task 25; subject verified
+  at: '2026-08-07T05:59:42Z'
+  proposed_state_transition: isolated adaptive state only; never canonical registry
+  proposal:
+    proposal_id: LIVE-7d08478f8645
+    type: search_profile
+    subject: CR 2209 connector
+    mode: supervised-live-pilot
+    run_id: SJC-LIVE-20260806-0201
+    evidence:
+    - url: https://news.google.com/rss/articles/CBMizwFBVV95cUxPalE2Rm4ySmowX3R2ZjJNYnRhSkI1ak9NeVp3Zlh1aE1fMHJXWHJlRkg3ek5DbEN3YmQwRjFRSjdzblp3SndDNVVmVGRua0hIek9LekE1VER5d2RPMmNqTmoyTWVCQWkwMjFad2tseDAtUk92b0dDOFFRSEtFSlN5RXY5YXIyTjAtekk1T055UGprb2dPNFlqbEZyOW01R2lnblVZSkFHdFlXUzNqTzlaVV94cXBwclpxVzVyTHJmbVBMUkhrbncwem5VTEZzY3fSAeMBQVVfeXFMUDROQ2w1N2dpUkRoWnhnZXY1UjZ2WDA4NFBDNTRUbXNpcDJLTjU4SFVTTDgwRE5SNVdlZ3hGclF1ZVd0X0tIaFE3ZFllb01HRGpORWpIbnlSV216T0NOSEtKU3RZeGdvc2tiSDAxZnlkMms4dXEzQUJSZFJFbFVxSnZCRk1ITGJyQ1JqMVBWMXBSZjVYcy0zbnVaMzQyeEtEWU5UOWk4Y0gzUGowMi1TbUJKa3kxRnlNbkNpMTZPTzBqUUlCRUZlc3BqcF9YeE9IRXBxamtoalRLb1Y0TXRfV1M1Nkk?oc=5
+      title: St. Johns County to hold meetings on CR 210 and CR 2209 intersection
+        changes - Action News Jax
+      date: '2026-03-31T07:00:00Z'
+      query_id: SJC-LIVE-20260806-0201-Q02
+    resident_impact: Potentially relevant to SilverLeaf residents; human verification
+      required.
+    expected_benefit: persistent follow-up in the isolated adaptive state
+    cost_or_budget: 1
+    risk: RSS result/identity may be incomplete or duplicate
+    proposed_state_transition: isolated adaptive state only; never canonical registry
+    status: accepted
+    created_at: '2026-08-06T04:13:23Z'
+    evaluator:
+      decision: accepted
+      rationale: shape valid, evidence present
+      run_id: SJC-LIVE-20260806-0201
+    decision_id: DEC-46700c0ba799
+- decision_id: DEC-9b425c28145a
+  proposal_id: LIVE-55b639933dba
+  action: accept
+  reviewer: Buddy
+  rationale: Active recurring search profile per Task 25; subject verified
+  at: '2026-08-07T05:59:43Z'
+  proposed_state_transition: isolated adaptive state only; never canonical registry
+  proposal:
+    proposal_id: LIVE-55b639933dba
+    type: search_profile
+    subject: First Coast Expressway access
+    mode: supervised-live-pilot
+    run_id: SJC-LIVE-20260806-0202
+    evidence:
+    - url: https://news.google.com/rss/articles/CBMixgFBVV95cUxOa2kycXNTY00yUGs3cnBJcWk0OUVCbkpYOTJPdkJycHI3Y0tMbWxkSFpkNDdIYk1DOGN2aVUzT3JLQmFCd1FFbmh4dmRGSEhPSGRQSExybW9xZFBuSE0yNm5zUVU3V3BLbDZ4Rjk0UjFXUHBxZk9pS0dIYjAyZTIxWmd3Q0J3THpqb09ZZHRsNFl0Y1BVckZfd1RJdUJPR2Q4cGp0NEVTZXA0VXZOY0l2Z1NseGdjNmNGT2p6WDMxOTRSMzFNcEE?oc=5
+      title: FDOT sets open house in St. Johns County for First Coast Expressway final
+        phase - Jacksonville Daily Record
+      date: '2026-01-27T08:00:00Z'
+      query_id: SJC-LIVE-20260806-0202-Q01
+    resident_impact: Potentially relevant to SilverLeaf residents; human verification
+      required.
+    expected_benefit: persistent follow-up in the isolated adaptive state
+    cost_or_budget: 1
+    risk: RSS result/identity may be incomplete or duplicate
+    proposed_state_transition: isolated adaptive state only; never canonical registry
+    status: accepted
+    created_at: '2026-08-06T04:13:25Z'
+    evaluator:
+      decision: accepted
+      rationale: shape valid, evidence present
+      run_id: SJC-LIVE-20260806-0202
+    decision_id: DEC-9b425c28145a
+- decision_id: DEC-367cdcfe5e1f
+  proposal_id: LIVE-706bccd9f626
+  action: accept
+  reviewer: Buddy
+  rationale: Active recurring search profile per Task 25; subject verified
+  at: '2026-08-07T05:59:43Z'
+  proposed_state_transition: isolated adaptive state only; never canonical registry
+  proposal:
+    proposal_id: LIVE-706bccd9f626
+    type: search_profile
+    subject: SilverLeaf grocery center — possible Harris Teeter
+    mode: supervised-live-pilot
+    run_id: SJC-LIVE-20260806-0202
+    evidence:
+    - url: https://news.google.com/rss/articles/CBMitAFBVV95cUxOeW9raHI4Y2pjc1hab2VpeEo0bFRYY3FMREgtTC14NGMzN2FRT2tnMm1XQ2ZZRkVaMi1NcDQtYzBqLUl6QjJGS0JYZ3p2WmpNaXRJaVVmX1VHZjRobk9CYllHZEJkcmg3cHd1cGNhSjVYek1vOUliZVR4ZmFGRGZjVXVLRVVCWXNxYmRwb0tfeF9aQkpVRkNLeEltUjZlcnhNaHhkVndMYVNHV1pJdDNJNFdtakU?oc=5
+      title: Another St. Johns County Harris Teeter-size grocery store proposed -
+        Jacksonville Daily Record
+      date: '2026-05-15T07:00:00Z'
+      query_id: SJC-LIVE-20260806-0202-Q02
+    resident_impact: Potentially relevant to SilverLeaf residents; human verification
+      required.
+    expected_benefit: persistent follow-up in the isolated adaptive state
+    cost_or_budget: 1
+    risk: RSS result/identity may be incomplete or duplicate
+    proposed_state_transition: isolated adaptive state only; never canonical registry
+    status: accepted
+    created_at: '2026-08-06T04:13:25Z'
+    evaluator:
+      decision: accepted
+      rationale: shape valid, evidence present
+      run_id: SJC-LIVE-20260806-0202
+    queries: &id005
+    - '"SilverLeaf" "Harris Teeter"'
+    - '"SilverLeaf Parkway" grocery'
+    - '"CR 16A" grocery SilverLeaf'
+    - '"Silverleaf Retail Marketplace"'
+    - '"SilverLeaf grocery center"'
+    edits:
+    - at: '2026-08-07T05:59:24Z'
+      by: Buddy
+      reason: Qualified subject and recurring research queries for unconfirmed tenant
+      changes:
+        subject:
+          from: Harris Teeter SilverLeaf
+          to: SilverLeaf grocery center — possible Harris Teeter
+        queries:
+          from: []
+          to: *id005
+    decision_id: DEC-367cdcfe5e1f
+- decision_id: DEC-2307b1ee771b
+  proposal_id: LIVE-833d0d9beed7
+  action: accept
+  reviewer: Buddy
+  rationale: Magnolia identity progression School QQ -> SilverLeaf K-8 -> Magnolia
+    Oaks Academy -> opening, per SJCSD evidence
+  at: '2026-08-07T05:59:49Z'
+  proposed_state_transition: isolated adaptive state only; never canonical registry
+  proposal:
+    proposal_id: LIVE-833d0d9beed7
+    type: timeline_reconciliation
+    subject: Magnolia Oaks Academy
+    mode: supervised-live-pilot
+    run_id: SJC-LIVE-20260806-0201
+    evidence:
+    - url: https://news.google.com/rss/articles/CBMi0wFBVV95cUxOYzJzTjVBR1dMdk5CQmF3d1NCaFZSMVdIOU5saDNoemgyLWhBMlh0MXRpOXhSNlA4UkNzY0xoZmpsQ1ExZ3J1ei1rbmpTX2hPM2hjUS1oNnlkWXhVaVZWU2lBQ0E1WXZ3eFRQcGJXVjNEbXJYT2V5eEtuWVZYNThCYlFzQ3JzbUFESTFiMWZ4cjB1WU9EQUVBZnFuVENMVURuZzJCclluXzA4S05rSjlhQ2E4dE53MWxvWEFaOWNZYzd4U0tlV0xXaUQ0MXhBX3dZbC04?oc=5
+      title: Magnolia Oaks Academy set to open doors in SilverLeaf community for 2026-2027
+        school year - News4JAX
+      date: '2026-07-22T07:00:00Z'
+      query_id: SJC-LIVE-20260806-0201-Q01
+    resident_impact: Potentially relevant to SilverLeaf residents; human verification
+      required.
+    expected_benefit: persistent follow-up in the isolated adaptive state
+    cost_or_budget: 1
+    risk: RSS result/identity may be incomplete or duplicate
+    proposed_state_transition: isolated adaptive state only; never canonical registry
+    status: accepted
+    created_at: '2026-08-06T04:13:23Z'
+    evaluator:
+      decision: accepted
+      rationale: shape valid, evidence present
+      run_id: SJC-LIVE-20260806-0201
+    decision_id: DEC-2307b1ee771b
+- decision_id: DEC-0c3e57cead74
+  proposal_id: LIVE-c625d46d3eb0
+  action: accept
+  reviewer: Buddy
+  rationale: Timeline preserves uncertainty; no confirmed-tenant claim
+  at: '2026-08-07T05:59:49Z'
+  proposed_state_transition: isolated adaptive state only; never canonical registry
+  proposal:
+    proposal_id: LIVE-c625d46d3eb0
+    type: timeline_reconciliation
+    subject: SilverLeaf grocery center — possible Harris Teeter
+    mode: supervised-live-pilot
+    run_id: SJC-LIVE-20260806-0202
+    evidence:
+    - url: https://news.google.com/rss/articles/CBMitAFBVV95cUxOeW9raHI4Y2pjc1hab2VpeEo0bFRYY3FMREgtTC14NGMzN2FRT2tnMm1XQ2ZZRkVaMi1NcDQtYzBqLUl6QjJGS0JYZ3p2WmpNaXRJaVVmX1VHZjRobk9CYllHZEJkcmg3cHd1cGNhSjVYek1vOUliZVR4ZmFGRGZjVXVLRVVCWXNxYmRwb0tfeF9aQkpVRkNLeEltUjZlcnhNaHhkVndMYVNHV1pJdDNJNFdtakU?oc=5
+      title: Another St. Johns County Harris Teeter-size grocery store proposed -
+        Jacksonville Daily Record
+      date: '2026-05-15T07:00:00Z'
+      query_id: SJC-LIVE-20260806-0202-Q02
+    resident_impact: Potentially relevant to SilverLeaf residents; human verification
+      required.
+    expected_benefit: persistent follow-up in the isolated adaptive state
+    cost_or_budget: 1
+    risk: RSS result/identity may be incomplete or duplicate
+    proposed_state_transition: isolated adaptive state only; never canonical registry
+    status: accepted
+    created_at: '2026-08-06T04:13:25Z'
+    evaluator:
+      decision: accepted
+      rationale: shape valid, evidence present
+      run_id: SJC-LIVE-20260806-0202
+    timeline_state: grocery-anchored shopping center proposed; plans match Harris
+      Teeter prototype; project under county review; tenant remains unconfirmed
+    edits:
+    - at: '2026-08-07T05:59:24Z'
+      by: Buddy
+      reason: Preserve uncertainty in timeline state; no 'Harris Teeter confirmed'
+        claim
+      changes:
+        subject:
+          from: Harris Teeter SilverLeaf
+          to: SilverLeaf grocery center — possible Harris Teeter
+        timeline_state:
+          from: null
+          to: grocery-anchored shopping center proposed; plans match Harris Teeter
+            prototype; project under county review; tenant remains unconfirmed
+    decision_id: DEC-0c3e57cead74
+- decision_id: DEC-1f0588eb6dd0
+  proposal_id: LIVE-0285b35d3662
+  action: defer
+  reviewer: Buddy
+  rationale: Valid subject but insufficient exact milestone payload; Hermes to research
+    in next bounded run
+  at: '2026-08-07T05:59:50Z'
+  proposed_state_transition: isolated adaptive state only; never canonical registry
+  proposal:
+    proposal_id: LIVE-0285b35d3662
+    type: timeline_reconciliation
+    subject: SilverLeaf Mega Publix
+    mode: supervised-live-pilot
+    run_id: SJC-LIVE-20260806-0201
+    evidence:
+    - url: https://news.google.com/rss/articles/CBMirAFBVV95cUxOQ2d3VzJSckcwd3RMektxdWlPdEQyVGFTMlBJRWg4T3lISUNXVDlIU00tSE5JeVYyMEIzY3RGNG1Tb0NiSTEwZWUydEF5c25IT0JOVEdSSHpVUzlZeVJvMHhNTDFjcjhtcHd6dXNIdTc2NnNneEE0eHN4TWJFQmhMMzhxTThXeXFaUG5JRjg0ZTZ2V1ZUZDRyTnRfTXlwcm5iZDRna0Foc0pBV19x?oc=5
+      title: Publix opens new store in St. Augustine, Florida - Publix
+      date: '2026-03-26T07:00:00Z'
+      query_id: SJC-LIVE-20260806-0201-Q03
+    resident_impact: Potentially relevant to SilverLeaf residents; human verification
+      required.
+    expected_benefit: persistent follow-up in the isolated adaptive state
+    cost_or_budget: 1
+    risk: RSS result/identity may be incomplete or duplicate
+    proposed_state_transition: isolated adaptive state only; never canonical registry
+    status: defered
+    created_at: '2026-08-06T04:13:23Z'
+    evaluator:
+      decision: accepted
+      rationale: shape valid, evidence present
+      run_id: SJC-LIVE-20260806-0201
+    decision_id: DEC-1f0588eb6dd0
+- decision_id: DEC-d9a053e1f1f4
+  proposal_id: LIVE-05c5ea4073e1
+  action: defer
+  reviewer: Buddy
+  rationale: Valid subject but insufficient exact milestone payload; Hermes to research
+    in next bounded run
+  at: '2026-08-07T05:59:50Z'
+  proposed_state_transition: isolated adaptive state only; never canonical registry
+  proposal:
+    proposal_id: LIVE-05c5ea4073e1
+    type: timeline_reconciliation
+    subject: Baptist SilverLeaf campus
+    mode: supervised-live-pilot
+    run_id: SJC-LIVE-20260806-0202
+    evidence:
+    - url: https://news.google.com/rss/articles/CBMi1AFBVV95cUxNWlRnYVNwSXJQRmk3UDEybm1BNDFzOWxHckdYX1huUGZRZHZhUTBPaDRUTHN2cXk5MWFqbFpUbzYzYVVLN1RBU0pVUjZkU1VTVFZOVHBXQmdRQzJDTVZrS2dkSnJwd09IYUJ4QzVZcnNRVy10UVJOR3psQXpnazBQS3JUbklFMGhSekUxZVVPdE5oNHN3WldOc3pnOGlPUzhweHJRVDN3aDNtNkdTWTBHMU14RHJGNHFKamRFcGxJZ0dHRHZyMWkwanFpMHdkUlRrTkdtUQ?oc=5
+      title: Baptist Health opens SilverLeaf outpatient medical campus to serve growing
+        St. Johns County - News4JAX
+      date: '2026-06-22T07:00:00Z'
+      query_id: SJC-LIVE-20260806-0202-Q03
+    resident_impact: Potentially relevant to SilverLeaf residents; human verification
+      required.
+    expected_benefit: persistent follow-up in the isolated adaptive state
+    cost_or_budget: 1
+    risk: RSS result/identity may be incomplete or duplicate
+    proposed_state_transition: isolated adaptive state only; never canonical registry
+    status: defered
+    created_at: '2026-08-06T04:13:25Z'
+    evaluator:
+      decision: accepted
+      rationale: shape valid, evidence present
+      run_id: SJC-LIVE-20260806-0202
+    decision_id: DEC-d9a053e1f1f4
+- decision_id: DEC-d28cbcaf6f89
+  proposal_id: LIVE-caf4c3d8e30e
+  action: defer
+  reviewer: Buddy
+  rationale: Valid subject but insufficient exact milestone payload; Hermes to research
+    in next bounded run
+  at: '2026-08-07T05:59:50Z'
+  proposed_state_transition: isolated adaptive state only; never canonical registry
+  proposal:
+    proposal_id: LIVE-caf4c3d8e30e
+    type: timeline_reconciliation
+    subject: CR 2209 connector
+    mode: supervised-live-pilot
+    run_id: SJC-LIVE-20260806-0201
+    evidence:
+    - url: https://news.google.com/rss/articles/CBMizwFBVV95cUxPalE2Rm4ySmowX3R2ZjJNYnRhSkI1ak9NeVp3Zlh1aE1fMHJXWHJlRkg3ek5DbEN3YmQwRjFRSjdzblp3SndDNVVmVGRua0hIek9LekE1VER5d2RPMmNqTmoyTWVCQWkwMjFad2tseDAtUk92b0dDOFFRSEtFSlN5RXY5YXIyTjAtekk1T055UGprb2dPNFlqbEZyOW01R2lnblVZSkFHdFlXUzNqTzlaVV94cXBwclpxVzVyTHJmbVBMUkhrbncwem5VTEZzY3fSAeMBQVVfeXFMUDROQ2w1N2dpUkRoWnhnZXY1UjZ2WDA4NFBDNTRUbXNpcDJLTjU4SFVTTDgwRE5SNVdlZ3hGclF1ZVd0X0tIaFE3ZFllb01HRGpORWpIbnlSV216T0NOSEtKU3RZeGdvc2tiSDAxZnlkMms4dXEzQUJSZFJFbFVxSnZCRk1ITGJyQ1JqMVBWMXBSZjVYcy0zbnVaMzQyeEtEWU5UOWk4Y0gzUGowMi1TbUJKa3kxRnlNbkNpMTZPTzBqUUlCRUZlc3BqcF9YeE9IRXBxamtoalRLb1Y0TXRfV1M1Nkk?oc=5
+      title: St. Johns County to hold meetings on CR 210 and CR 2209 intersection
+        changes - Action News Jax
+      date: '2026-03-31T07:00:00Z'
+      query_id: SJC-LIVE-20260806-0201-Q02
+    resident_impact: Potentially relevant to SilverLeaf residents; human verification
+      required.
+    expected_benefit: persistent follow-up in the isolated adaptive state
+    cost_or_budget: 1
+    risk: RSS result/identity may be incomplete or duplicate
+    proposed_state_transition: isolated adaptive state only; never canonical registry
+    status: defered
+    created_at: '2026-08-06T04:13:23Z'
+    evaluator:
+      decision: accepted
+      rationale: shape valid, evidence present
+      run_id: SJC-LIVE-20260806-0201
+    decision_id: DEC-d28cbcaf6f89
+- decision_id: DEC-3f18cf856487
+  proposal_id: LIVE-1f7b9d109de0
+  action: defer
+  reviewer: Buddy
+  rationale: Valid subject but insufficient exact milestone payload; Hermes to research
+    in next bounded run
+  at: '2026-08-07T05:59:51Z'
+  proposed_state_transition: isolated adaptive state only; never canonical registry
+  proposal:
+    proposal_id: LIVE-1f7b9d109de0
+    type: timeline_reconciliation
+    subject: First Coast Expressway access
+    mode: supervised-live-pilot
+    run_id: SJC-LIVE-20260806-0202
+    evidence:
+    - url: https://news.google.com/rss/articles/CBMixgFBVV95cUxOa2kycXNTY00yUGs3cnBJcWk0OUVCbkpYOTJPdkJycHI3Y0tMbWxkSFpkNDdIYk1DOGN2aVUzT3JLQmFCd1FFbmh4dmRGSEhPSGRQSExybW9xZFBuSE0yNm5zUVU3V3BLbDZ4Rjk0UjFXUHBxZk9pS0dIYjAyZTIxWmd3Q0J3THpqb09ZZHRsNFl0Y1BVckZfd1RJdUJPR2Q4cGp0NEVTZXA0VXZOY0l2Z1NseGdjNmNGT2p6WDMxOTRSMzFNcEE?oc=5
+      title: FDOT sets open house in St. Johns County for First Coast Expressway final
+        phase - Jacksonville Daily Record
+      date: '2026-01-27T08:00:00Z'
+      query_id: SJC-LIVE-20260806-0202-Q01
+    resident_impact: Potentially relevant to SilverLeaf residents; human verification
+      required.
+    expected_benefit: persistent follow-up in the isolated adaptive state
+    cost_or_budget: 1
+    risk: RSS result/identity may be incomplete or duplicate
+    proposed_state_transition: isolated adaptive state only; never canonical registry
+    status: defered
+    created_at: '2026-08-06T04:13:25Z'
+    evaluator:
+      decision: accepted
+      rationale: shape valid, evidence present
+      run_id: SJC-LIVE-20260806-0202
+    decision_id: DEC-3f18cf856487
