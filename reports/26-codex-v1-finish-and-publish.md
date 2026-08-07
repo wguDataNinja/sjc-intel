@@ -5,7 +5,7 @@
 
 ## Executive result
 
-SJC_Intel v1 was reconciled into three auditable commits, validated, pushed to
+SJC_Intel v1 was reconciled into four auditable commits, validated, pushed to
 GitHub, and published as the standalone SilverLeaf Brief through GitHub Pages.
 The first real supervised adaptive weekly cycle exercised all accepted profile
 queries, two bounded research escalations, independent evaluation, and the new
@@ -64,6 +64,22 @@ scheduler; the exact handoff is below.
 - Public-run evidence: `runtime/adaptive_discovery/runs/SJC-LIVE-20260807-2604/`.
 - Release: `SJC-REL-2026-08-001`; site source links and relative asset paths
   were checked by the static-site and Pages tests.
+- GitHub Pages workflow run `31154575133` succeeded for deployment SHA
+  `ed05b3d9aa0fe09735be7ca931c5770126f2b520`:
+  <https://github.com/wguDataNinja/sjc-intel/actions/runs/31154575133>.
+- Public verification: root Latest, Browse, About, Data & Sources, an item,
+  topic, and place route all returned HTTP 200. Browse exposes search and
+  filters; the public HTML contains the real release ID and no internal-path
+  markers. `/latest/` is intentionally not a generated route; Latest is `/`.
+
+## Pages configuration reconciliation
+
+GitHub Pages had Actions enabled but its protected `github-pages` environment
+allowed only the stale `main` branch. The repository’s active branch and
+workflow are `master`, so the default branch was reconciled to `master` and a
+`master` branch deployment policy was added to the existing environment. The
+first two rejected runs provided the clear protection-rule evidence; the final
+run above deployed successfully. No branch-based Pages source was used.
 
 ## Resident coverage outcome
 
