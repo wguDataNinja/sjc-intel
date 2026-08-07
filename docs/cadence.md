@@ -8,9 +8,15 @@
 
 ## 1. How Cadence Works
 
-SJC_Intel operates on daily, weekly, and monthly rhythms. There is no scheduler.
+SJC_Intel operates on daily, weekly, and monthly rhythms. SJC has no local
+scheduler; an Ivy-owned VPS timer remains a separate privileged activation
+step. Supervised/manual weekly operation is ready.
 When the agent runs, it checks `logs/runs/` to determine what work is overdue,
 then picks the highest-priority unblocked task that fits the cadence.
+
+Adaptive discovery remains supervised: a weekly run may generate proposals,
+but a separate review accepts state transitions for the following week. The
+historical/restartable harness is `docs/adaptive_discovery_backtest.md`.
 
 **Missed days are acceptable.** Missed full weeks should be avoided. Monthly
 tasks can slip by a few days.

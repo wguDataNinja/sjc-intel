@@ -83,7 +83,10 @@ Not yet automated via Hermes.
 the public web for community names, neighborhood names, school names,
 roads, corridors, builders, developments, and topics.
 
-**Trigger:** Weekly or after registry changes.
+**Trigger:** Weekly or after registry changes. Adaptive operation uses an
+explicit visible-state cutoff, bounded search budget, independent proposal
+evaluation, and next-week-only accepted transitions; see
+`docs/adaptive_discovery_backtest.md`.
 
 **Inputs:**
 - Search term list generated from `registry/communities.yaml`,

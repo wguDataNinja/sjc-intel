@@ -62,11 +62,16 @@ Return nothing else.
 
 | Artifact | Location | Purpose |
 |----------|----------|---------|
-| Worker reports | `runtime/workers/<session-id>.md` | Permanent record of what was done |
+| Worker reports | `runtime/workers/<session-id>.md` | Generic bounded-task record; weekly Hermes uses its own workspace contract |
 | Extracted items | `data/intel_items/<YYYY-MM-DD>/<source_id>.yaml` | Daily extraction output |
 | Backlog patches | Inline `BACKLOG.md` patch | Always update backlog after every completed session |
 | Context updates | Inline `WORKER_CONTEXT.md` patch | Log every session outcome here |
 | Registry changes | Inline patch to `registry/*.yaml` | Source-of-truth — never overwrite whole file |
+
+For `sjc-weekly-001`, `docs/hermes_weekly_entrypoint.md` and
+`docs/weekly_operational_contract.md` override the generic worker-output
+location: the worker writes only to `runtime/weekly/<run-id>/` and its verified
+bundle. It never writes the corpus directly.
 
 ## 4. Token Discipline
 

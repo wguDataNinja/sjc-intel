@@ -8,6 +8,21 @@ a resident-interest perspective, and write the output as intel_item records.
 Do **not** publish, route to channels, or update live dedupe indexes unless
 explicitly instructed. This is a supervised collection task.
 
+## Execution mode and write boundary
+
+This prompt supports two explicitly different modes. The dispatch envelope
+must name one; if it does not, stop and ask the orchestrator.
+
+| Mode | Use when | Write destination |
+|---|---|---|
+| `direct_supervised` | A human explicitly authorizes a local source monitor | `data/intel_items/{YYYY-MM-DD}/{source_id}.yaml` |
+| `weekly_bundle` | Hermes runs `prompts/sjc_weekly_ops_task.md` | Only the isolated weekly workspace: `intel_candidates/{source_id}.json`, `source_events/{source_id}.json`, and raw evidence |
+
+In `weekly_bundle` mode, records remain `candidate` and the worker must never
+write `data/intel_items/`, `data/source_events/`, `data/review_queue/`,
+`data/index/`, or `registry/`. The human import/review workflow owns any later
+corpus transition.
+
 ## Inputs
 
 You receive:
@@ -128,7 +143,8 @@ Item ID format: `SJC-{source_prefix}-{YYYYMMDD}-{NNNN}`
 - `NNNN`: sequential zero-padded number per source per day
 
 All fields from Steps 4-5 must be populated. Set:
-- `review_status`: `"pending_review"`
+- `review_status`: `"pending_review"` for `direct_supervised`; `"candidate"`
+  for `weekly_bundle`
 - `discovered_at`: current timestamp
 - `discovered_by`: `"hermes-{source_id}"`
 - `created_at`: current timestamp
@@ -146,8 +162,13 @@ All fields from Steps 4-5 must be populated. Set:
 
 ### Step 8: Write output
 
-Write all new intel_items as a single YAML file at:
-`data/intel_items/{YYYY-MM-DD}/{source_id}.yaml`
+In `direct_supervised` mode, write all new intel_items as a single YAML file
+at `data/intel_items/{YYYY-MM-DD}/{source_id}.yaml`.
+
+In `weekly_bundle` mode, write a candidate JSON payload at
+`intel_candidates/{source_id}.json` within the supplied workspace, using the
+weekly candidate contract. Write the source-event record beside it in
+`source_events/`. Do not create an intel-item YAML file.
 
 The file must contain a `items:` key with the array of item records. Use
 standard YAML formatting. Include a header comment with the date, source_id,
@@ -169,7 +190,8 @@ monitor_summary:
 
 | File | Required? | Contents |
 |------|-----------|----------|
-| `data/intel_items/{YYYY-MM-DD}/{source_id}.yaml` | Yes | All new intel items |
+| Direct supervised: `data/intel_items/{YYYY-MM-DD}/{source_id}.yaml` | Yes | All new intel items |
+| Weekly bundle: `intel_candidates/{source_id}.json` | Yes | Candidate items only |
 | Monitor summary (inline return) | Yes | Status of this monitor cycle |
 
 ## Reference Paths (from repo root)

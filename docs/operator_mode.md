@@ -7,15 +7,18 @@ repo state without requiring the project to be re-explained.
 
 ## Startup Routine
 
-1. Read `README_INTERNAL.md`.
-2. Read the concise memory file.
-3. Read `BACKLOG.md`.
-4. Read `docs/cadence.md` and `logs/runs/README.md`.
-5. Check `logs/runs/daily/LAST_RUN`, `logs/runs/weekly/LAST_RUN`,
+1. Read `README_INTERNAL.md`, then `CURRENT_BRIEF.md` (the canonical current
+   operational status and decision handoff).
+2. If `CURRENT_BRIEF.md` shows pending proposals or a live-pilot run, read
+   `docs/live_adaptive_operations.md` for the review/receipt/budget contract.
+3. Read the concise memory file.
+4. Read `BACKLOG.md`.
+5. Read `docs/cadence.md` and `logs/runs/README.md`.
+6. Check `logs/runs/daily/LAST_RUN`, `logs/runs/weekly/LAST_RUN`,
    `logs/runs/monthly/LAST_RUN` to determine what cadence work is due.
-6. Select the highest-priority unblocked task from the due cadence buckets
+7. Select the highest-priority unblocked task from the due cadence buckets
    that does not require explicit approval.
-7. Announce the selected task and why.
+8. Announce the selected task and why.
 
 ## How To Pick Next Work
 

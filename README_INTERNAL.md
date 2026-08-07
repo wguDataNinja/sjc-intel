@@ -24,6 +24,10 @@ agent_context:
 
 ## What This Repo Is
 
+> **Start here for current operations:** [CURRENT_BRIEF.md](CURRENT_BRIEF.md)
+> is the canonical, generated human status. It identifies mode, health, latest
+> run, pending decisions, risks, and the next supervised action.
+
 SJC_Intel discovers, monitors, classifies, and organizes public information
 about St. Johns County, Florida — focused on master-planned communities,
 government decisions, utilities, schools, roads, and development. It produces
@@ -40,6 +44,13 @@ and writes a meta-run log.
 
 Official records are the first authority for consequential claims. Local media
 is tip-surfacing/context unless verified by official records.
+
+## Public website
+
+The deployable, static **SilverLeaf Brief** is in [site/](site/): it contains a
+reviewed four-item release across 13 generated routes and is published through
+GitHub Pages at <https://wgudataninja.github.io/sjc-intel/>. Build, preview,
+validation, and deployment instructions are in [`site/README.md`](site/README.md).
 
 ## Current Architecture
 
@@ -98,6 +109,38 @@ is tip-surfacing/context unless verified by official records.
 `docs/planning/SJC_PRODUCT_AND_SOURCING_DIRECTION_20260706.md` for the full
 authority summary, accepted decisions, and roadmap implications.
 
+**Adaptive discovery replay implemented (Task 22).** The file-backed,
+historically isolated weekly harness, evaluator, proposal state, and operator
+commands are documented in `docs/adaptive_discovery_backtest.md`. It is a
+simulation/verification tool only; production remains supervised and does not
+auto-promote any registry or review state.
+
+**Supervised live adaptive-discovery pilot (Task 23).** `CURRENT_BRIEF.md`
+is the canonical generated operational brief (mode, health, findings,
+coverage, pending decisions, next run). Bounded live discovery runs with
+per-query receipts and budgets through a provider-neutral adapter; every
+proposal is reviewed by a human via `review_adaptive_proposal.py`. Live
+governance authority is versioned under `data/adaptive_discovery/`; volatile
+run artifacts remain under `runtime/adaptive_discovery/`. See
+`docs/live_adaptive_operations.md`.
+
+**Research escalation + proposal resolution (Task 25).** Ambiguous proposals
+(identity uncertainty, geographic conflict, stale evidence, conflicting
+sources, or material resident importance) trigger bounded follow-up research
+via `scripts/research_adaptive_proposal.py` before human review; the result is
+a research-resolution record with a recommended action. Proposals can be
+edited (canonical name, aliases, location, queries, timeline language) with a
+preserved original and history, then accepted as the corrected record.
+Current accepted adaptive subjects and active recurring searches are listed in
+`CURRENT_BRIEF.md`.
+
+**v1 finish pass (Task 26).** The first supervised weekly adaptive cycle ran
+against all accepted profiles with receipts, bounded research escalation,
+independent evaluation, and the Resident Coverage Editor. It generated no new
+pending proposals after canonical-alias reconciliation; the editor identified
+utilities, preparedness, and government-decision coverage as next profile
+gaps. See `CURRENT_BRIEF.md` and `reports/26-codex-v1-finish-and-publish.md`.
+
 Strategic priorities (not implementation orders):
 
 1. **SilverLeaf geographic registry** — foundational dependency for all
@@ -133,6 +176,10 @@ PostgreSQL foundation work (file authority preserved):
 | `AGENTS.md` | Agent roles, git policy, logging rules |
 | `BACKLOG.md` | All actionable tasks with status |
 | `docs/cadence.md` | Daily/weekly/monthly rhythms with LAST_RUN markers |
+| `docs/live_adaptive_operations.md` | Supervised live discovery, research escalation, receipts, budgets, proposal review, health |
+| `docs/hermes_weekly_entrypoint.md` | Hermes weekly-run entry point, scope boundary, and handoff |
+| `docs/human_review.md` | Human decisions across adaptive proposals, bundles, and publication |
+| `site/README.md` | Static SilverLeaf Brief build, validation, preview, and deployment guide |
 | `docs/taxonomy.md` | Controlled vocabularies, beats, source families |
 | `docs/discovery_loops.md` | How the six discovery loops work |
 | `docs/operator_mode.md` | Session startup routine and task selection |

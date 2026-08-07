@@ -92,6 +92,17 @@ Bounded agentic search enriches discovery by finding new public sources and
 gaps, always subject to the same human-review boundary. It does not replace
 deterministic capture and never operates outside an explicit budget.
 
+### Adaptive coverage loop
+
+The Resident Coverage Strategist can propose durable subjects, aliases, search
+profiles, milestones, timeline links, and coverage lanes. The Resident Coverage
+Editor then independently asks what a SilverLeaf resident would expect to know
+that remains missing, stale, weakly tracked, or under-researched; it can only
+recommend bounded follow-up. A separate evaluator checks evidence and
+historical availability; accepted changes become usable only in the next weekly
+run. The file-backed replay contract is documented in
+`docs/adaptive_discovery_backtest.md`.
+
 ## 8. Evidence and review model
 
 Every item retains:

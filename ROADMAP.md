@@ -351,6 +351,10 @@ git status --short
 ~~~
 
 Tasks add only real task-specific checks. Future-tool commands are proposed until implemented. Reports record starting/final Git state, changed paths, exact command results, provenance, risks, unresolved decisions, and the next bounded task. Passing tests never authorize deployment, publishing, scheduler activation, source promotion, or database mutation.
+
+Task 22 added an isolated historical adaptive-discovery harness. Its proposal
+and evaluator contract is ready for supervised production adaptation, but it
+does not authorize live search scheduling, automatic promotion, or publication.
 +
 
 ## §8. Builder packet and GPT coordination requirements

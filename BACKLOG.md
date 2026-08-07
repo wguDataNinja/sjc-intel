@@ -1,6 +1,6 @@
 # SJC_Intel Backlog
 
-Last updated: 2026-08-02
+Last updated: 2026-08-06
 
 Status values: `todo`, `in_progress`, `blocked`, `done`, `deferred`.
 
@@ -12,6 +12,7 @@ Status values: `todo`, `in_progress`, `blocked`, `done`, `deferred`.
 | OP-002 | Define operator mode docs | done | high | none | sjc-intel-architect | Use `docs/operator_mode.md` |
 || OP-003 | Define Hermes task contracts | done | high | source promotion review | sjc-intel-architect | Created docs/hermes_task_contract.md. Standardized worker prompt format, middle review format, output conventions, token discipline, session lifecycle. |
 | OP-004 | Trim stale narrative memory | done | high | logs available | sjc-intel-architect | Keep memory concise |
+| OP-005 | Add Hermes weekly entry point and human-review guide | done | high | Task 23 state separation | sjc-intel-architect | Use `docs/hermes_weekly_entrypoint.md` and `docs/human_review.md`; SJC-side supervised-run gates passed Task 26, Ivy timer gate remains separate |
 
 ## Deep Research Ingestion
 
