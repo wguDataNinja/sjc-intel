@@ -75,8 +75,8 @@ The UI must answer, in order:
 - **Static-only:** all data comes from a deterministic static release
   (`release.json`, `search-index.json`, `release-manifest.json`); no API, no
   server, no VPS dependency. Works offline on the static host.
-- **Published-only:** only items with an explicit human publication decision
-  and release membership appear. Nothing else.
+- **Published-only:** only policy-classified `AUTO_PUBLISHABLE` items or
+  approved human exceptions with release membership appear. Nothing else.
 - **Source-linked:** every item links to the original public source. The source
   remains authoritative; summaries are editorial context.
 - **Honest scope:** explicitly not an alert system, not complete county

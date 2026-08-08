@@ -6,11 +6,21 @@
 
 ## 1. Authority and state separation
 
-Review determines whether an item is factually/editorially acceptable. Publication determines whether a reviewed item belongs in a named public release. They are separate.
+Review determines whether an item is factually/editorially acceptable. The
+publication policy then classifies reviewed evidence as default-publishable or
+an exception. A named release is the auditable public representation of that
+policy-selected set. They are separate.
 
-- `review_status` remains the corpus/review-queue state; `verified` is never a publication authorization.
-- A publication record or release manifest is the authoritative file-compatible representation for public membership. It references immutable `item_id` values and does not rewrite source evidence.
-- Only Buddy or an explicitly authorized human editorial reviewer may publish, withdraw, or approve a release.
+- `review_status` remains the corpus/review-queue state; `verified` is never
+  enough on its own. `docs/PUBLICATION_POLICY.md` defines the additional
+  public-source, relevance, safety, and projection requirements.
+- A release manifest is the authoritative file-compatible representation for
+  public membership. It references immutable `item_id` values and does not
+  rewrite source evidence. Individual publication records are durable human
+  exceptions/overrides, not a required record for every ordinary item.
+- Only Buddy or an explicitly authorized human editorial reviewer may deploy,
+  withdraw, correct, or approve an exception. The VPS never creates public
+  membership.
 - The VPS may produce candidates and operational evidence only; it never creates publication membership.
 
 ## 2. Required release semantics
@@ -22,8 +32,10 @@ An included item must have all of:
 1. a canonical, unique `item_id` selected deterministically when legacy duplicate representations exist;
 2. `review_status: verified` or an explicitly approved equivalent;
 3. valid title, summary, source ID, original source URL, source/discovery timestamp, topic(s), sensitivity, and required controlled references;
-4. an explicit SilverLeaf relevance decision of `included` with rationale and stable matching place/entity/community IDs;
-5. no unresolved high-sensitivity restriction; medium/high sensitivity needs explicit editorial publication approval;
+4. `AUTO_PUBLISHABLE` classification under `docs/PUBLICATION_POLICY.md`, or a
+   recorded approved human exception with stable matching place/entity/community IDs;
+5. no unresolved sensitivity restriction; medium/high sensitivity requires a
+   recorded editorial exception;
 6. a public-safe projection with no internal notes, reviewer/private fields, raw file paths, secrets, credentials, or unapproved raw excerpts.
 
 A withdrawn item is removed from future releases and recorded with withdrawal timestamp/reason category. Existing release artifacts are retained for audit/rollback; a correction produces a new release or an explicit supersession, never silent mutation.
@@ -65,10 +77,11 @@ Required implementation tests include valid release, unreviewed item, unpublishe
 
 1. Validate corpus and release candidates.
 2. Generate a draft release and inspect count/diff/negative-case report.
-3. Human reviewer approves publication membership.
+3. Human reviewer resolves the exceptions surfaced by the classifier and
+   authorizes the named release/deployment when required by the operating
+   workflow.
 4. Generate final manifest and static artifacts; preserve the prior release.
 5. Deploy only through the portfolio-site's approved workflow.
 6. Roll back by restoring the prior verified release artifacts; withdraw/correct through a new explicit release decision.
 
 A failed export, checksum mismatch, missing attribution, unavailable source link, public-field leak, or unresolved relevance/sensitivity decision stops the workflow before deployment.
-

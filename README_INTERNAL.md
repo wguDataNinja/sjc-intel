@@ -28,6 +28,12 @@ agent_context:
 > is the canonical, generated human status. It identifies mode, health, latest
 > run, pending decisions, risks, and the next supervised action.
 
+> **Product-side editorial state:** [CURRENT_PUBLICATION_PLAN.md](CURRENT_PUBLICATION_PLAN.md)
+> is the canonical generated view of what the public SilverLeaf Brief contains
+> (Latest, Browse, timelines), what is ready next, what needs source checks,
+> and where coverage is sparse. It is distinct from CURRENT_BRIEF.md
+> (operational health).
+
 SJC_Intel discovers, monitors, classifies, and organizes public information
 about St. Johns County, Florida — focused on master-planned communities,
 government decisions, utilities, schools, roads, and development. It produces
@@ -47,10 +53,11 @@ is tip-surfacing/context unless verified by official records.
 
 ## Public website
 
-The deployable, static **SilverLeaf Brief** is in [site/](site/): it contains a
-reviewed four-item release across 13 generated routes and is published through
-GitHub Pages at <https://wgudataninja.github.io/sjc-intel/>. Build, preview,
-validation, and deployment instructions are in [`site/README.md`](site/README.md).
+The deployable, static **SilverLeaf Brief** is in [site/](site/): the current
+local release `SJC-REL-2026-08-002` contains seven policy-selected items across
+16 generated routes. It is not deployed until the normal approved GitHub Pages
+workflow is run. Build, preview, validation, and deployment instructions are
+in [`site/README.md`](site/README.md).
 
 ## Current Architecture
 
@@ -141,6 +148,50 @@ pending proposals after canonical-alias reconciliation; the editor identified
 utilities, preparedness, and government-decision coverage as next profile
 gaps. See `CURRENT_BRIEF.md` and `reports/26-codex-v1-finish-and-publish.md`.
 
+**Exception-based publication policy (Task 27).**
+`docs/PUBLICATION_POLICY.md` makes verified, public-source,
+resident-relevant, low-sensitivity items publishable by default. The release
+selector derives `AUTO_PUBLISHABLE`, `NEEDS_HUMAN_REVIEW`, `EXCLUDE`, and
+`NEEDS_MORE_RESEARCH` without altering evidence records; individual publication
+decisions remain human exceptions, corrections, and withdrawals. The seven-item
+local release preserves `SJC-REL-2026-08-001` as its rollback predecessor.
+
+**SilverLeaf geographic evidence registry (DIR-001, in progress).** The
+existing non-GIS scope registry now records three official county planning
+authorities and explicitly separates legal DRI/PUD context from the editorial
+resident scope. No polygon, coordinates, or point-containment logic is loaded
+until a reviewed official geometry source is acquired. See
+`docs/silverleaf_geographic_registry.md`.
+
+**SilverLeaf school-service authority (DIR-010, in progress).** The scope
+registry now contains the official 2026–27 K-8 QQ/Magnolia Oaks partial
+SilverLeaf service relationship, anchored to the district's approved plan and
+zoning page. It does not make individual address or future-year assignments;
+Tocoi Creek High remains unverified as a serving school. See
+`docs/silverleaf_school_service.md`.
+
+**SilverLeaf mobility scope (DIR-009/DIR-011, in progress).** The mobility
+registry defines source-backed direct, nearby, and contextual road segments
+and prevents generic I-95, SR 16, or CR 210 notices from being treated as
+SilverLeaf alerts. Internal roads/entrances and live-incident monitoring remain
+unregistered. See `docs/silverleaf_mobility_scope.md`.
+
+**Model B resident publication (Tasks 28–29).** `reports/28` established that
+the sparse site was caused mostly by pipeline/review-state debt, not weak
+evidence; `reports/29` implemented the recommended broader resident
+publication. Historical monthly backfill now reaches the publication
+classifier, corroborated local media and qualified-posture items can publish,
+and Release `SJC-REL-2026-08-003` (34 items) is the current local release with
+`CURRENT_PUBLICATION_PLAN.md` as the product-side editorial state. The public
+site remains on `SJC-REL-2026-08-001` until a deployment is explicitly
+authorized.
+
+**Hermes historical production backtest (Task 30).** The full 66-week
+Hermes-operated replay (2025-05-05 → 2026-08-03) completed with Resident
+Coverage Recall 0.933; the harness, prompt, provenance manifest, and durable
+results live under `data/hermes_backtests/hermes-sjc-v1/`. See
+`reports/30-hermes-production-backtest-preparation.md`.
+
 Strategic priorities (not implementation orders):
 
 1. **SilverLeaf geographic registry** — foundational dependency for all
@@ -179,8 +230,13 @@ PostgreSQL foundation work (file authority preserved):
 | `docs/live_adaptive_operations.md` | Supervised live discovery, research escalation, receipts, budgets, proposal review, health |
 | `docs/hermes_weekly_entrypoint.md` | Hermes weekly-run entry point, scope boundary, and handoff |
 | `docs/human_review.md` | Human decisions across adaptive proposals, bundles, and publication |
+| `docs/PUBLICATION_POLICY.md` | Default publication classification and exception boundaries |
+| `CURRENT_PUBLICATION_PLAN.md` | Canonical product-side editorial state (what the site contains, ready-next, gaps) |
 | `site/README.md` | Static SilverLeaf Brief build, validation, preview, and deployment guide |
 | `docs/taxonomy.md` | Controlled vocabularies, beats, source families |
+| `docs/silverleaf_geographic_registry.md` | SilverLeaf legal-planning evidence, editorial scope, and future geometry gate |
+| `docs/silverleaf_school_service.md` | School-year-specific SilverLeaf service evidence and address-assignment limits |
+| `docs/silverleaf_mobility_scope.md` | Source-backed road segment scope, notice-selection rules, and exclusions |
 | `docs/discovery_loops.md` | How the six discovery loops work |
 | `docs/operator_mode.md` | Session startup routine and task selection |
 | `docs/postgresql_adapter.md` | PostgreSQL adapter and backend-selection contract |

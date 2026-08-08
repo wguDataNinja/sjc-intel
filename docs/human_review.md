@@ -13,7 +13,7 @@ Read this after `CURRENT_BRIEF.md` or after importing a verified weekly bundle.
 | Adaptive discovery proposal | `data/adaptive_discovery/` | `CURRENT_BRIEF.md` + proposal detail | Track it in isolated adaptive state, reject/defer, or roll back |
 | Weekly candidate item | `data/incoming/<run-id>/` | Imported bundle candidate evidence | Add as `pending_review`, reject, or defer |
 | Source proposal | `data/incoming/<run-id>/` | Bundle source-proposal evidence | Record a proposal/rejection/deferral only |
-| Editorial/public release | Publication decision + release contract | Existing review queue and release workflow | Verify and explicitly approve/withdraw publication membership |
+| Editorial/public release exception | Publication policy + release contract | Policy-classification report and release workflow | Resolve only sensitive, ambiguous, excluded, or override cases |
 
 Do not use an adaptive acceptance as proof that an item is verified or public.
 Do not use an imported candidate as permission to promote a source or publish.
@@ -93,9 +93,12 @@ state, and research resolutions are also versioned there.
   editorial review before any public use.
 - Is the proposed change narrowly reversible and correctly classified?
 
-## Publication is a separate final gate
+## Publication is an exception-based final gate
 
-Use `docs/publication_release_contract.md` and the existing publication
-decision workflow only after an item is verified and editorially approved.
-The static [SilverLeaf Brief](../site/index.html) contains reviewed release
-items only. Nothing in this guide automatically changes it.
+Read `docs/PUBLICATION_POLICY.md` before reviewing public content. Ordinary
+verified, public-source, resident-relevant, low-sensitivity items are
+`AUTO_PUBLISHABLE` by default; the classifier surfaces only exceptions.
+Use `docs/publication_release_contract.md` and the publication-decision tool
+to record a sensitive/ambiguous exception, defer it, reject it, withdraw it,
+or correct it. The static [SilverLeaf Brief](../site/index.html) changes only
+when an authorized release is generated and deployed.

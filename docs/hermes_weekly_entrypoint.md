@@ -51,6 +51,34 @@ creates structured gap findings and recommends bounded next actions only; it
 does not search, accept, or edit state. The weekly run retains its output with
 the evidence artifact, and `CURRENT_BRIEF.md` surfaces the material gaps.
 
+## Product-side editorial state (publication plan)
+
+The weekly run maintains the product-side editorial state in
+`CURRENT_PUBLICATION_PLAN.md` (generator: `scripts/build_publication_plan.py`),
+distinct from `CURRENT_BRIEF.md`. After a weekly run, the operator refreshes it
+by:
+
+1. updating findings and reconciling low-risk pending records (bounded);
+2. researching ambiguous high-value subjects (research escalation);
+3. evaluating publication eligibility (policy classifier + decisions);
+4. updating timelines and marking latest/browse/context/timeline roles;
+5. identifying Latest candidates, Browse/context candidates, and coverage gaps;
+6. regenerating `CURRENT_PUBLICATION_PLAN.md`;
+7. regenerating `CURRENT_BRIEF.md`.
+
+The publication plan surfaces editorial exceptions and coverage gaps; it never
+auto-publishes sensitive exceptions. Crime, minors, allegations, private
+information, and unsupported rumor remain excluded or human-gated.
+
+## Adaptive-state-to-corpus check
+
+An accepted adaptive subject must not remain lead-only indefinitely. When an
+accepted subject produces meaningful evidence, normalize it into a candidate
+intel item, preserve source evidence, and route it through normal
+review/classification. The coverage-health editor and the publication plan
+surface any accepted high-priority subject with no corpus item after one
+weekly cycle.
+
 ## One supervised weekly run
 
 The dispatch envelope must provide the pinned checkout SHA, a new run ID,

@@ -4,8 +4,8 @@
 **Authority:** `docs/publication_release_contract.md` §4–§5; the v0 UI
 specification (`docs/public_ui_v0_spec.md`) is authoritative for product/UI
 behavior and links here.
-**Owner:** Buddy for publication decisions; implementation follows an approved
-task packet.
+**Owner:** Buddy for policy and human exceptions; implementation follows an
+approved task packet.
 **Last reconciled:** 2026-08-04 (Task 17).
 
 This contract defines the exact static artifacts the SilverLeaf Brief site
@@ -107,6 +107,9 @@ contract* below is authoritative now.
 | `published_date` | string | yes | decision/release timestamp | When published in SilverLeaf Brief. |
 | `relevance` | string | yes | derived from decision | One of `in_silverleaf`, `near_silverleaf`, `countywide_impact`. |
 | `display_topic` | string | yes | approved decision / derived | Resident-facing v0 topic category. One of `roads_traffic`, `utilities_water`, `emergency_preparedness`, `schools_community`, `local_business`. The public interface shows ONLY this value — raw taxonomy ids never render. |
+| `role` | string | no | approved decision/editorial | Editorial product role: `latest`, `browse`, `context`, or `timeline`. Set by a human editorial decision, never inferred from recency. Absent means the item is treated as `latest` (Home). |
+| `qualified` | boolean | no | approved decision/editorial | `true` for a confirmed subject with unresolved details (e.g., an unconfirmed tenant). |
+| `qualified_label` | string | no | approved decision/editorial | Public-safe label for the qualified posture, e.g. "Tenant unconfirmed". |
 | `lifecycle` | string | no | approved decision/editorial | Render only when explicitly present. |
 | `lifecycle_label` | string | no | approved decision/editorial | Human label for `lifecycle`. |
 | `topic_ids` | array<string> | yes | item `topics` | Stable taxonomy IDs. |
@@ -216,7 +219,8 @@ Before a release is eligible:
 1. Corpus validator (`scripts/validate_publication_corpus.py`) passes with 0
    blocking errors.
 2. Selector (`scripts/select_publication_items.py --check`) returns the
-   approved, reviewed, SilverLeaf-included item set.
+   `AUTO_PUBLISHABLE` set plus any approved human exceptions, as defined by
+   `docs/PUBLICATION_POLICY.md`.
 3. The exporter (`scripts/build_static_release.py`) projects only allowlisted
    fields; denylist check passes (see §8).
 4. Content-quality validation passes for every exported item (required
