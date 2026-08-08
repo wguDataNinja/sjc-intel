@@ -728,6 +728,185 @@ sources:
     discovered_at: "2026-06-03T12:00:00Z"
     discovered_by: "deep-research-extraction"
 
+  # ---------------------------------------------------------------------------
+  # Backfill source family (registered 2026-08-07, Task 29). Historical monthly
+  # backfill records reference these source IDs; registering them makes the
+  # backfill corpus visible to publication classification with official
+  # source attribution. They are the same district/agency families already
+  # registered, identified by the page actually captured during backfill.
+  # ---------------------------------------------------------------------------
+
+  - source_id: "sjcsd_main_site"
+    name: "SJC School District — main site"
+    description: >
+      St. Johns County School District main website pages (school sites,
+      district pages). Source family alias of sjc_school_district used by
+      Aug–Sep 2025 backfill records.
+    url: "https://www.stjohns.k12.fl.us/"
+    base_domain: "stjohns.k12.fl.us"
+    source_type: "wordpress_portal"
+    relevance: "HIGH"
+    monitor_frequency: "weekly"
+    automatable: "YES"
+    status: "verified"
+    topics: ["education", "school_board", "district_news"]
+    communities: []
+    notes: >
+      Backfill source family (Task 29). Registered so SJC-BF-* school records
+      reach the publication classifier with official source attribution.
+    discovered_at: "2026-08-07T12:00:00Z"
+    discovered_by: "sjc-intel-architect (Task 29)"
+
+  - source_id: "sjcsd_news"
+    name: "SJC School District — news"
+    description: >
+      St. Johns County School District news page. Source family alias of
+      sjc_school_district used by Aug–Sep 2025 backfill records.
+    url: "https://www.stjohns.k12.fl.us/news/"
+    base_domain: "stjohns.k12.fl.us"
+    source_type: "wordpress_portal"
+    relevance: "HIGH"
+    monitor_frequency: "weekly"
+    automatable: "YES"
+    status: "verified"
+    topics: ["education", "school_board", "district_news"]
+    communities: []
+    notes: >
+      Backfill source family (Task 29). Registered so SJC-BF-* school records
+      reach the publication classifier with official source attribution.
+    discovered_at: "2026-08-07T12:00:00Z"
+    discovered_by: "sjc-intel-architect (Task 29)"
+
+  - source_id: "sjcsd_new_schools"
+    name: "SJC School District — new schools"
+    description: >
+      St. Johns County School District new-school construction page
+      (K-8 School QQ/RR). Source family alias of sjc_school_district used by
+      Aug–Sep 2025 backfill records.
+    url: "https://www.stjohns.k12.fl.us/newschools/"
+    base_domain: "stjohns.k12.fl.us"
+    source_type: "government_portal"
+    relevance: "HIGH"
+    monitor_frequency: "weekly"
+    automatable: "YES"
+    status: "verified"
+    topics: ["education", "development"]
+    communities: []
+    notes: >
+      Backfill source family (Task 29). Registered so SJC-BF-* school records
+      reach the publication classifier with official source attribution.
+    discovered_at: "2026-08-07T12:00:00Z"
+    discovered_by: "sjc-intel-architect (Task 29)"
+
+  - source_id: "sjc_bcc"
+    name: "SJC Board of County Commissioners (backfill alias)"
+    description: >
+      St. Johns County Board of County Commissioners calendar/agenda source
+      family alias of sjc_bcc_calendar used by backfill records.
+    url: "https://www.sjcfl.us/bcc-calendar/"
+    base_domain: "sjcfl.us"
+    source_type: "government_portal"
+    relevance: "HIGH"
+    monitor_frequency: "weekly"
+    automatable: "MODERATE"
+    status: "verified"
+    topics: ["county_government", "public_notices", "development", "taxes"]
+    communities: []
+    notes: >
+      Backfill source family (Task 29). Registered so backfill BCC records
+      reach the publication classifier with official source attribution.
+    discovered_at: "2026-08-07T12:00:00Z"
+    discovered_by: "sjc-intel-architect (Task 29)"
+
+  - source_id: "web_discovery"
+    name: "Web discovery (backfill)"
+    description: >
+      General public web-discovery source family used by a small number of
+      backfill records whose page was captured from a discovery search.
+    url: "https://www.sjcfl.us/"
+    base_domain: "sjcfl.us"
+    source_type: "wordpress_blog"
+    relevance: "MEDIUM"
+    monitor_frequency: "manual"
+    automatable: "NO"
+    status: "verified"
+    topics: ["general_government", "community_events"]
+    communities: []
+    notes: >
+      Backfill source family (Task 29). Registered so the backfill corpus
+      reaches the publication classifier with an identifiable source.
+    discovered_at: "2026-08-07T12:00:00Z"
+    discovered_by: "sjc-intel-architect (Task 29)"
+
+  # ---------------------------------------------------------------------------
+  # First-party / media sources (registered 2026-08-07, Task 29). Required so
+  # the new Model B corpus items (Baptist campus, Silverleaf Market growth)
+  # carry registered source attribution and can classify with corroboration.
+  # ---------------------------------------------------------------------------
+
+  - source_id: "baptist_health"
+    name: "Baptist Health"
+    description: >
+      Baptist Health (baptistjax.com), the regional health system operating
+      the SilverLeaf outpatient medical campus. First-party corporate source
+      for facts about its own facilities.
+    url: "https://www.baptistjax.com/"
+    base_domain: "baptistjax.com"
+    source_type: "wordpress_blog"
+    relevance: "HIGH"
+    monitor_frequency: "weekly"
+    automatable: "NO"
+    status: "verified"
+    topics: ["health_wellness", "economic_development"]
+    communities: []
+    notes: >
+      First-party corporate source for Baptist SilverLeaf campus facts
+      (Task 29). Registered for the Model B publication corpus.
+    discovered_at: "2026-08-07T12:00:00Z"
+    discovered_by: "sjc-intel-architect (Task 29)"
+
+  - source_id: "jax_daily_record"
+    name: "Jacksonville Daily Record"
+    description: >
+      Jacksonville Daily Record (jaxdailyrecord.com), professional regional
+      business/development news outlet. Local-media source reporting on
+      SilverLeaf development, permits, and tenants.
+    url: "https://www.jaxdailyrecord.com/"
+    base_domain: "jaxdailyrecord.com"
+    source_type: "local_media"
+    relevance: "HIGH"
+    monitor_frequency: "weekly"
+    automatable: "NO"
+    status: "verified"
+    topics: ["development", "economic_development", "infrastructure"]
+    communities: []
+    notes: >
+      Local media source (Task 29). Records from this outlet may publish under
+      the corroborated local-media rule with recorded corroboration evidence.
+    discovered_at: "2026-08-07T12:00:00Z"
+    discovered_by: "sjc-intel-architect (Task 29)"
+
+  - source_id: "news4jax"
+    name: "News4JAX"
+    description: >
+      News4JAX (news4jax.com), Jacksonville-area broadcast/online news outlet.
+      Local-media source reporting on SilverLeaf school, healthcare, and
+      construction milestones.
+    url: "https://www.news4jax.com/"
+    base_domain: "news4jax.com"
+    source_type: "local_media"
+    relevance: "HIGH"
+    monitor_frequency: "weekly"
+    automatable: "NO"
+    status: "verified"
+    topics: ["education", "health_wellness", "infrastructure"]
+    communities: []
+    notes: >
+      Local media source (Task 29). Records from this outlet may publish under
+      the corroborated local-media rule with recorded corroboration evidence.
+    discovered_at: "2026-08-07T12:00:00Z"
+    discovered_by: "sjc-intel-architect (Task 29)"
+
   - source_id: "fdot_district_two_nflroads"
     name: "FDOT District Two and NFLRoads"
     description: >

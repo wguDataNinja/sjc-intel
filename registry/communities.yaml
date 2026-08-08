@@ -337,6 +337,37 @@ communities:
     type: "neighborhood"
     parent_area: "silverleaf"
     notes: >
-      Neighborhood within SilverLeaf master-planned community.
-      Verified from SilverLeaf official resident directory.
+      SilverLeaf neighborhood from the official resident directory.
+    status: "active"
+
+  # ---------------------------------------------------------------------------
+  # Additional registered communities (Task 29) — referenced by the
+  # Aug–Sep 2025 backfill corpus so historical records validate and classify.
+  # ---------------------------------------------------------------------------
+
+  - id: "hallowes_cove"
+    name: "Hallowes Cove"
+    type: "master_planned_community"
+    parent_area: "northwest_st_johns"
+    notes: >
+      Master-planned community in northwestern St. Johns County near
+      SilverLeaf; Hallowes Cove Academy (K-8) serves the growing corridor.
+    status: "active"
+
+  - id: "north_beach"
+    name: "North Beaches"
+    type: "county_area"
+    parent_area: "northeast_st_johns"
+    notes: >
+      Unincorporated beach area north of St. Augustine (Mickler's Landing,
+      Ponte Vedra north); used by backfill utility records.
+    status: "active"
+
+  - id: "hastings"
+    name: "Hastings"
+    type: "county_area"
+    parent_area: "southwest_st_johns"
+    notes: >
+      Rural community in southwest St. Johns County; used by backfill
+      community-facility records.
     status: "active"

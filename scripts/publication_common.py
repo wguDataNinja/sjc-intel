@@ -28,6 +28,7 @@ _DATA_ROOT = os.environ.get("SJC_INTEL_DATA_ROOT", os.path.join(REPO_ROOT, "data
 _REG_ROOT = os.environ.get("SJC_INTEL_REGISTRY_ROOT", os.path.join(REPO_ROOT, "registry"))
 
 INTEL_ITEMS_DIR = os.path.join(_DATA_ROOT, "intel_items")
+MONTHLY_DIR = os.path.join(_DATA_ROOT, "monthly")
 SOURCE_EVENTS_DIR = os.path.join(_DATA_ROOT, "source_events")
 DECISIONS_DIR = os.path.join(_DATA_ROOT, "publication_decisions")
 LEGACY_EXCEPTIONS_FILE = os.path.join(DECISIONS_DIR, "legacy_exceptions.yaml")
@@ -41,6 +42,14 @@ DECISION_SCHEMA_VERSION = "1.0"
 # release-level membership and is intentionally absent here.
 PUBLICATION_STATUSES = ("approved", "rejected", "deferred", "withdrawn")
 
+# Editorial product roles for public release items (docs/PUBLICATION_POLICY.md
+# Model B). ``latest`` = current/recent/active change on the Home briefing;
+# ``browse`` = durable resident knowledge; ``context`` = background supporting
+# another item or timeline; ``timeline`` = merged history of one durable
+# subject. A role is set by a human editorial decision and never inferred from
+# recency alone.
+EDITORIAL_ROLES = ("latest", "browse", "context", "timeline")
+
 SILVERLEAF_DECISIONS = ("included", "excluded", "needs_review", "not_assessed")
 
 VALID_SENSITIVITIES = ("low", "medium", "high")
@@ -51,9 +60,11 @@ CANONICAL_REVIEW_STATUSES = {
 }
 
 # Item ID format for the SJC corpus (publication-relevant records).
+# Canonical items use a YYYYMMDD date (SJC-CN-20260626-0001); historical
+# backfill records use a YYYYMM period (SJC-BF-202508-0001). Both are valid.
 # Legacy records (e.g. CDD items) predate this format and are documented in
 # legacy_exceptions.yaml.
-ITEM_ID_RE = re.compile(r"^SJC-[A-Z0-9]+-\d{8}-\d{4}$")
+ITEM_ID_RE = re.compile(r"^SJC-[A-Z0-9]+-\d{6,8}-\d{4}$")
 
 # Fields that must never appear in a public projection, regardless of source.
 INTERNAL_ONLY_FIELDS = {
@@ -142,10 +153,57 @@ def legacy_treatment_for_item(item_id):
 
 
 def iter_intel_items():
-    """Yield (rel_path, item) for every intel item record in the corpus."""
+    """Yield (rel_path, item) for every canonical intel item record in the corpus.
+
+    The canonical read path for the publication classifier and validator.
+
+    Ordering and authority:
+    1. ``data/intel_items/**`` records (ordinary canonical items) are yielded
+       first and win on item_id.
+    2. Backfill intelligence records under ``data/monthly/*/discovered_items.yaml``
+       are then included unless their item_id duplicates an intel_items record.
+       This makes historical backfill (e.g. SJC-BF-*) visible to publication
+       classification without moving or rewriting historical data.
+    3. Monthly wraps, topic clusters, and source-gap notes are NOT intel items
+       and are never yielded.
+    """
+    seen = set()
+    for rel, item in _iter_intel_items_intel():
+        seen.add(item["item_id"])
+        yield rel, item
+    for rel, item in iter_backfill_items():
+        if item["item_id"] in seen:
+            continue
+        seen.add(item["item_id"])
+        yield rel, item
+
+
+def _iter_intel_items_intel():
+    """Yield intel items from data/intel_items/ only."""
     for fpath in sorted(glob.glob(os.path.join(INTEL_ITEMS_DIR, "*", "*.yaml"))):
         if fpath.endswith(".deprecated") or ".deprecated" in fpath:
             continue
+        try:
+            data = load_yaml(fpath)
+        except Exception:
+            continue
+        recs = data.get("items") if isinstance(data, dict) else data
+        if not isinstance(recs, list):
+            continue
+        rel = os.path.relpath(fpath, REPO_ROOT)
+        for item in recs:
+            if isinstance(item, dict) and item.get("item_id"):
+                yield rel, item
+
+
+def iter_backfill_items():
+    """Yield (rel_path, item) for backfill intelligence records.
+
+    Reads only ``discovered_items.yaml`` under ``data/monthly/<period>/``.
+    Non-item monthly artifacts (wraps, topic clusters, source gaps) are
+    structurally excluded. Reusable for future backfills.
+    """
+    for fpath in sorted(glob.glob(os.path.join(MONTHLY_DIR, "*", "discovered_items.yaml"))):
         try:
             data = load_yaml(fpath)
         except Exception:

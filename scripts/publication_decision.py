@@ -31,6 +31,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from publication_common import (  # noqa: E402
     DECISION_SCHEMA_VERSION,
     DECISIONS_DIR,
+    EDITORIAL_ROLES,
     ITEM_ID_RE,
     PUBLICATION_STATUSES,
     SILVERLEAF_DECISIONS,
@@ -67,23 +68,13 @@ class PublicationDecisionError(Exception):
 
 
 def find_item(item_id):
-    """Locate an item record across the corpus by item_id."""
+    """Locate an item record across the corpus (intel_items + backfill)."""
     import glob
     import yaml
-    root = os.environ.get("SJC_INTEL_DATA_ROOT", os.path.join(
-        os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data"))
-    for fpath in sorted(glob.glob(os.path.join(root, "intel_items", "*", "*.yaml"))):
-        try:
-            with open(fpath) as f:
-                data = yaml.safe_load(f)
-        except Exception:
-            continue
-        recs = data.get("items") if isinstance(data, dict) else data
-        if not isinstance(recs, list):
-            continue
-        for item in recs:
-            if isinstance(item, dict) and item.get("item_id") == item_id:
-                return fpath, item
+    from publication_common import iter_intel_items
+    for rel, item in iter_intel_items():
+        if item.get("item_id") == item_id:
+            return rel, item
     return None, None
 
 
@@ -156,6 +147,28 @@ def build_decision(action, item, reviewer, rationale, args):
         record.setdefault("superseded_by", None)
         if args.relevance:
             record["relevance"] = args.relevance
+        role = getattr(args, "role", None)
+        if role:
+            record["role"] = role
+        if getattr(args, "qualified", False):
+            record["qualified"] = True
+            if getattr(args, "qualified_label", None):
+                record["qualified_label"] = args.qualified_label
+        corr = getattr(args, "corroboration", None)
+        if corr:
+            parsed = []
+            for entry in corr:
+                if isinstance(entry, dict):
+                    parsed.append(entry)
+                    continue
+                parts = str(entry).split("|")
+                if len(parts) == 3:
+                    parsed.append({"source": parts[0].strip(),
+                                   "url": parts[1].strip(),
+                                   "kind": parts[2].strip()})
+                else:
+                    parsed.append({"source": str(entry).strip()})
+            record["corroboration"] = parsed
         if args.public_summary_override:
             if len(args.public_summary_override.strip()) < 10:
                 raise PublicationDecisionError(
@@ -238,6 +251,15 @@ def main():
         p.add_argument("--silverleaf-rationale", default="", help="relevance rationale")
         p.add_argument("--relevance", choices=("in_silverleaf", "near_silverleaf", "countywide_impact"),
                        help="explicit public relevance label override (editorial)")
+        p.add_argument("--role", choices=sorted(EDITORIAL_ROLES),
+                       help="editorial product role: latest/browse/context/timeline")
+        p.add_argument("--qualified", action="store_true",
+                       help="publish as qualified (confirmed subject, unresolved detail)")
+        p.add_argument("--qualified-label", default="",
+                       help="public label for the qualified posture, e.g. 'Tenant unconfirmed'")
+        p.add_argument("--corroboration", nargs="*", default=[],
+                       help="corroboration evidence entries, each 'source|url|kind' "
+                            "(kind: official|first_party|local_media)")
         p.add_argument("--place-ids", nargs="*", default=[], help="matching community/place IDs")
         p.add_argument("--entity-ids", nargs="*", default=[], help="matching entity IDs")
         p.add_argument("--reason", default="", help="withdrawal reason (withdraw)")
