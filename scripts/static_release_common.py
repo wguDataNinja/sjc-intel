@@ -28,6 +28,10 @@ import re
 # the exporter --generator-revision flag for deployment traceability.
 GENERATOR_REVISION = "silverleaf-brief-export-1.0"
 
+# Editorial product roles (see publication_common.EDITORIAL_ROLES). Validated
+# on public release items so a role typo cannot leak into the public interface.
+EDITORIAL_ROLES = ("latest", "browse", "context", "timeline")
+
 RELEASE_SCHEMA_VERSION = "1.0"
 SEARCH_INDEX_SCHEMA_VERSION = "1.0"
 MANIFEST_VERSION = "1.0"
@@ -88,6 +92,9 @@ PUBLIC_ITEM_FIELDS = {
     "published_date",
     "relevance",
     "display_topic",
+    "role",
+    "qualified",
+    "qualified_label",
     "lifecycle",
     "lifecycle_label",
     "topic_ids",
@@ -284,6 +291,15 @@ def validate_public_item(record):
         result.errors.append(
             f"display_topic '{record.get('display_topic')}' not in "
             f"{sorted(V0_TOPICS)}")
+
+    # Editorial role must be a known product role (latest/browse/context/timeline).
+    if record.get("role") is not None and record.get("role") not in EDITORIAL_ROLES:
+        result.errors.append(
+            f"role '{record.get('role')}' not in {sorted(EDITORIAL_ROLES)}")
+
+    # Qualified items must carry a public-safe label (or the default is used).
+    if record.get("qualified") is not None and not isinstance(record.get("qualified"), bool):
+        result.errors.append("qualified must be a boolean")
 
     # Stable public ID shape.
     if not _blank(record.get("public_item_id")):

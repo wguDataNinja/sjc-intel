@@ -90,6 +90,25 @@ TOPIC_LABELS = {
     "elections": "Elections",
     "cdd_governance": "CDD governance",
     "general_government": "General government",
+    "rezoning_comp_plan_dri": "Zoning and land use",
+    "site_plans_permits_construction": "Permits and construction",
+    "roadwork_traffic": "Roadwork and traffic",
+    "emergency_weather_fire_flood": "Emergency, weather, and floods",
+    "community_services": "Community services",
+    "public_services": "Public services",
+    "public_safety_livability": "Safety and livability",
+    "school_capacity": "School capacity",
+    "taxes_exemptions_trim_vab": "Property taxes and TRIM",
+    "permits_construction": "Permits and construction",
+    "healthcare": "Healthcare",
+    "utility": "Utilities",
+    "weather": "Weather",
+    "emergency": "Emergency",
+    "coastal": "Coastal",
+    "government": "Government",
+    "events": "Community events",
+    "quality_of_life": "Quality of life",
+    "sjso": "Sheriff's office",
 }
 
 VERIFICATION_DISPLAY = {
@@ -186,7 +205,7 @@ def _verification_display(item):
     return "Reviewed from source"
 
 
-def project_item(item, decision, release_id):
+def project_item(item, decision, release_id, published_at=None):
     """Map a selected corpus item + decision to a public release item (§2A)."""
     proj = public_projection(item, decision)
     date_val = _source_date(item)
@@ -204,6 +223,9 @@ def project_item(item, decision, release_id):
     display_topic = (decision or {}).get("display_topic")
     if display_topic not in V0_TOPICS:
         display_topic = _derive_display_topic(item)
+    role = (decision or {}).get("role")
+    qualified = bool((decision or {}).get("qualified"))
+    qualified_label = (decision or {}).get("qualified_label")
 
     record = {
         "public_item_id": proj["item_id"],
@@ -212,7 +234,7 @@ def project_item(item, decision, release_id):
         "why_it_matters": why,
         "source_name": source_name,
         "source_date": date_val,
-        "published_date": str((decision or {}).get("decision_timestamp") or "")[:10],
+        "published_date": str((decision or {}).get("decision_timestamp") or published_at or "")[:10],
         "relevance": (decision or {}).get("relevance") or derive_relevance(item, decision),
         "display_topic": display_topic,
         "topic_ids": list(proj["topics"] or []),
@@ -223,6 +245,12 @@ def project_item(item, decision, release_id):
         "verification_display": _verification_display(item),
         "release_id": release_id,
     }
+    if role:
+        record["role"] = role
+    if qualified:
+        record["qualified"] = True
+        if qualified_label:
+            record["qualified_label"] = qualified_label
     if is_valid_url(proj.get("source_url")):
         record["source_url"] = proj["source_url"]
     else:
@@ -413,6 +441,8 @@ def main():
     ap.add_argument("--published-at", default=None, help="ISO-8601 published_at override")
     ap.add_argument("--now", default=None, help="ISO-8601 created_at override (byte-stable builds)")
     ap.add_argument("--reviewer", default=None, help="manifest reviewer identity (real releases)")
+    ap.add_argument("--prior-release-id", default=None,
+                    help="prior verified release ID for rollback identity (real mode)")
     ap.add_argument("--generator-revision", default=GENERATOR_REVISION)
     ap.add_argument("--window-start", default=None, help="release window start (real mode)")
     ap.add_argument("--window-end", default=None, help="release window end (real mode)")
@@ -508,6 +538,9 @@ def build_real_release(release_id, generator_revision, args):
 
     decisions = load_all_decisions()
     items = list(iter_intel_items())
+    now = args.now
+    if not now:
+        now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     sel = selector(decisions, items,
                    window_start=_parse_window(args.window_start),
                    window_end=_parse_window(args.window_end))
@@ -524,7 +557,9 @@ def build_real_release(release_id, generator_revision, args):
         if not item:
             raise ReleaseExportError(f"selected item {pid} not found in corpus")
         decision = decisions.get(pid)
-        public_items.append(project_item(item, decision, release_id))
+        public_items.append(project_item(
+            item, decision, release_id,
+            published_at=args.published_at or now))
 
     related = compute_related_item_ids(public_items)
     for it in public_items:
@@ -544,9 +579,6 @@ def build_real_release(release_id, generator_revision, args):
     dimensions = _dimensions(
         [by_id[pid] for pid in selected_ids], public_items)
 
-    now = args.now
-    if not now:
-        now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     published = args.published_at or now
     identity = sha256_bytes(
         "\n".join(sorted(pid for pid in selected_ids)).encode("utf-8"))
@@ -556,6 +588,7 @@ def build_real_release(release_id, generator_revision, args):
         published_at=published, created_at=now,
         generator_revision=generator_revision,
         source_identity=identity,
+        prior_release_id=getattr(args, "prior_release_id", None),
     )
     if not args.reviewer:
         raise ReleaseExportError(

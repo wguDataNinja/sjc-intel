@@ -116,6 +116,30 @@ def lifecycle_badge(record):
             f'{html_escape(label)}</span>')
 
 
+# Public labels for the editorial product role (latest/browse/context/timeline).
+ROLE_LABELS = {
+    "latest": "Latest",
+    "browse": "Browse",
+    "context": "Context",
+    "timeline": "Timeline",
+}
+
+
+def role_badge(record):
+    role = record.get("role") or "browse"
+    label = ROLE_LABELS.get(role, role.title())
+    return (f'<span class="badge badge-role" data-role="{html_escape(role)}">'
+            f'{html_escape(label)}</span>')
+
+
+def qualified_badge(record):
+    if not record.get("qualified"):
+        return ""
+    label = record.get("qualified_label") or "Details unconfirmed"
+    return (f'<span class="badge badge-qualified" title="{html_escape(label)}">'
+            f'<span aria-hidden="true">&#9888;</span> {html_escape(label)}</span>')
+
+
 def source_link(record, depth):
     """Original source action; handles the unavailable state."""
     url = record.get("source_url")
@@ -139,6 +163,8 @@ def item_card(record, dimensions, depth):
     meta = " ".join([
         relevance_badge(dimensions, record.get("relevance", "countywide_impact")),
         topic_badge(dimensions, display_topic),
+        role_badge(record),
+        qualified_badge(record),
         reviewed_badge(depth),
         lifecycle_badge(record),
     ])

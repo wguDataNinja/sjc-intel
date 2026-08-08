@@ -54,6 +54,24 @@ def _bucket(p):
             "milestone": "milestones", "alias": "aliases"}.get(kind)
 
 
+def publication_summary():
+    """Return policy counts without creating decisions or release artifacts."""
+    try:
+        sys.path.insert(0, str(ROOT / "scripts"))
+        from publication_common import iter_intel_items, load_all_decisions, load_sources
+        from publication_policy import classify_item
+        from collections import Counter
+        counts = Counter()
+        for _, item in iter_intel_items():
+            classification, _ = classify_item(
+                item, load_all_decisions().get(item["item_id"]), load_sources(),
+                as_of=dt.datetime.now(dt.timezone.utc))
+            counts[classification] += 1
+        return dict(counts)
+    except Exception:
+        return {}
+
+
 def render(mode, run_id, snapshot, generated_at, root=None, artifact_root=None):
     r = initialize(root or DURABLE)
     artifacts = Path(artifact_root) if artifact_root is not None else (RUNTIME if root is None else r)
@@ -83,6 +101,11 @@ def render(mode, run_id, snapshot, generated_at, root=None, artifact_root=None):
     findings = run.get("normalized_findings", [])
     proposals = run.get("proposals", [])
     rejected = run.get("evaluator_rejected", [])
+    publication = publication_summary()
+    auto_count = publication.get("AUTO_PUBLISHABLE", 0)
+    review_count = publication.get("NEEDS_HUMAN_REVIEW", 0)
+    research_count = publication.get("NEEDS_MORE_RESEARCH", 0)
+    excluded_count = publication.get("EXCLUDE", 0)
 
     rows = "\n".join(
         f"| {k} | {v['status']} | [{v['evidence_artifact']}](<{v['evidence_artifact']}>) | {v.get('action_required') or 'None'} |"
@@ -124,7 +147,10 @@ def render(mode, run_id, snapshot, generated_at, root=None, artifact_root=None):
         remaining.append("- No pending adaptive proposals; no routine research decision remains for Buddy.")
     else:
         remaining.append("- Pending proposals exist; inspect via review CLI.")
-    remaining.append("- Publication/source-promotion decisions remain with Buddy (not auto-resolved).")
+    remaining.append(
+        f"- Publication exceptions: {review_count} need human review; "
+        f"{research_count} need more research; {excluded_count} are excluded. "
+        "Routine auto-publishable items do not need one-by-one approval.")
 
     # Active search profiles from accepted state.
     active = []
@@ -157,6 +183,7 @@ def render(mode, run_id, snapshot, generated_at, root=None, artifact_root=None):
         f"- Pipeline health: **{pipeline_health}**; operator status: **{operator_status}**.",
         "- No registry, review-queue, publication-decision, or public-release mutation occurred.",
         f"- Buddy attention: {len(pending)} pending proposal(s); {accepted_total} accepted adaptive state records.",
+        f"- Publication policy: {auto_count} auto-publishable; {review_count} human-review exceptions; {research_count} research exceptions.",
     ]
     if warnings:
         summary.extend(f"- WARNING: {w}" for w in warnings)
@@ -174,7 +201,7 @@ def render(mode, run_id, snapshot, generated_at, root=None, artifact_root=None):
 **Pipeline health:** {pipeline_health}
 **Operator status:** {operator_status}
 **Overall status:** {overall}
-**Publication status:** No automatic publication; opportunities are suggestions only.
+**Publication status:** Exception-based policy active: {auto_count} auto-publishable; {review_count} require human review; {research_count} require more research; {excluded_count} excluded. No deployment occurs automatically.
 **Scheduler status:** SJC is ready for supervised weekly operation; Ivy scheduler activation remains a separate privileged gate.
 **Deployment status:** GitHub Pages deployment is verified at https://wgudataninja.github.io/sjc-intel/.
 
@@ -218,7 +245,10 @@ Last successful run: `{run_id}` at {cutoff}. Next expected run: supervised weekl
 {active_block}
 
 ## Publication opportunities
-- Any listed finding may warrant source verification and a future review-queue candidate; none is verified, approved, or published by this workflow.
+- `{auto_count}` canonical items currently classify as `AUTO_PUBLISHABLE` under `docs/PUBLICATION_POLICY.md`; a named release remains a local build until an authorized deployment.
+- `{review_count}` exceptions need human review and `{research_count}` need more research; the classifier, not a blanket manual-release gate, supplies their reasons.
+- Any live finding still needs source verification and corpus review before it can enter a public release.
+- Product-side editorial state (what the site contains, ready-next, coverage gaps): [CURRENT_PUBLICATION_PLAN.md](CURRENT_PUBLICATION_PLAN.md).
 
 ## Risks and failures
 - Mode is `{mode}`, not autonomous production. Google News RSS provides discovery leads, not primary evidence.

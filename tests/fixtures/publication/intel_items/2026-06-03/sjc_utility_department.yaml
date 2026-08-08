@@ -25,6 +25,7 @@ items:
     discovered_at: '2026-06-03T23:30:00Z'
     created_at: '2026-06-03T23:30:00Z'
     topics: [infrastructure, environment]
+    primary_topic: infrastructure
     communities: []
     geographic_scope: county_wide
     urgency: ongoing
@@ -32,6 +33,9 @@ items:
     sensitivity: low
     raw_excerpt: 'Free chlorine burnout June 1–21.'
     review_status: verified
+    resident_relevance:
+      why_it_matters: Customers may notice a temporary treatment change in household water.
+      affected_audiences: [residents, homeowners]
     _dedupe_key: def456
   - item_id: SJC-UTIL-20260603-0003
     title: $191 Million SR 207 Water Reclamation Facility Phase 2 Approved

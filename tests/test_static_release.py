@@ -272,10 +272,10 @@ class TestRealMode:
         })
         return build_real_release("SJC-REL-TEST", src.GENERATOR_REVISION, Args())
 
-    def test_real_mode_zero_items_without_decisions(self, tmp_path, monkeypatch):
+    def test_real_mode_policy_selects_default_eligible_items_without_decisions(self, tmp_path, monkeypatch):
         release, reviewer, warnings = self._run(tmp_path, monkeypatch, keep_decisions=())
         assert release["environment"] == "real"
-        assert release["items"] == []
+        assert release["items"]
         assert reviewer == "Buddy"
 
     def test_real_mode_selects_approved_first_release(self, tmp_path, monkeypatch):

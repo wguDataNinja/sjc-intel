@@ -141,13 +141,20 @@ class SiteBuilder:
 
     def build_latest(self):
         depth = 0
-        count = len(self.items)
+        all_count = len(self.items)
+        latest_items = [it for it in self.items if it.get("role") in (None, "latest")]
+        if any(it.get("role") for it in self.items):
+            latest_items = [it for it in self.items if it.get("role") == "latest"]
+        count = len(latest_items)
         published = tpl.format_date(self.release.get("published_at"))
+        browse = "Browse" if all_count != count else None
         cover = (
-            "This initial release includes one nearby road update and three "
-            "countywide notices with direct household relevance to SilverLeaf "
-            "residents: travel, drinking-water infrastructure, hurricane "
-            "preparedness, and irrigation restrictions.")
+            f"This release includes {count} current updates on Latest — schools, "
+            "roads, healthcare, retail, utilities, and preparedness — plus a "
+            "Browse corpus of durable neighborhood context and timelines."
+            if browse else
+            "Reviewed updates with direct links to public sources — schools, "
+            "roads, healthcare, retail, utilities, and preparedness.")
 
         topic_ids = self._ordered_dimension_ids("topics")
         shortcuts = ""
@@ -159,14 +166,21 @@ class SiteBuilder:
                 for tid in topic_ids)
             shortcuts = f'<nav class="topic-shortcuts" aria-label="Browse by topic">{chips}</nav>'
 
-        if self.items:
-            cards = "\n".join(tpl.item_card(it, self.dimensions, depth) for it in self.items)
+        if latest_items:
+            cards = "\n".join(tpl.item_card(it, self.dimensions, depth) for it in latest_items)
         else:
             cards = tpl.empty_state(
                 "No reviewed intelligence published yet",
                 "Nothing has been approved for publication in this release. "
                 "Check back after the next review.",
                 depth, [("Browse by topic", "browse/index.html")])
+
+        browse_note = ""
+        if browse:
+            browse_note = (
+                f'<p>See <a href="browse/index.html">Browse</a> for all '
+                f'{all_count} reviewed updates, including historical context '
+                f'and timelines.</p>')
 
         body = (
             '<div class="page">'
@@ -183,6 +197,7 @@ class SiteBuilder:
             f'  <section class="coverage" id="coverage" aria-labelledby="coverage-heading">'
             f'    <h2 id="coverage-heading">About this release</h2>'
             f'    <p>{tpl.html_escape(cover)}</p>'
+            f'    {browse_note}'
             f'    <p>Links go to the original public records. See '
             f'<a href="about/index.html">About</a> for methodology and '
             f'<a href="sources/index.html">Data &amp; Sources</a> for the source '
@@ -299,10 +314,11 @@ class SiteBuilder:
     def _render_filter_groups(self, depth):
         groups = []
         counts = {dim: self._dimension_counts(dim) for dim in
-                  ("topics", "scope", "places", "entities")}
+                  ("topics", "scope", "roles", "places", "entities")}
         config = [
             ("topics", "Topic", "topic", "topic", True),
             ("scope", "Relevance", "scope", "scope", True),
+            ("roles", "Edition", "role", "role", True),
             ("places", "Place", "place", "place", False),
             ("entities", "Entity", "entity", "entity", False),
         ]
@@ -336,6 +352,9 @@ class SiteBuilder:
         if dim == "topics":
             for it in self.items:
                 counter[it.get("display_topic", "utilities_water")] += 1
+        elif dim == "roles":
+            for it in self.items:
+                counter[it.get("role") or "latest"] += 1
         elif dim == "scope":
             for it in self.items:
                 counter[it.get("relevance", "countywide_impact")] += 1
@@ -352,6 +371,8 @@ class SiteBuilder:
     def _dimension_label(self, dim, key):
         if dim == "topics":
             return topic_label(self.dimensions, key)
+        if dim == "roles":
+            return tpl.ROLE_LABELS.get(key, key.title())
         if dim == "scope":
             return tpl.relevance_label(self.dimensions, key)
         if dim == "places":
@@ -489,6 +510,8 @@ class SiteBuilder:
         meta_btns = " ".join([
             tpl.relevance_badge(self.dimensions, it.get("relevance", "countywide_impact")),
             (tpl.topic_badge(self.dimensions, display_topic) if display_topic else ""),
+            tpl.role_badge(it),
+            tpl.qualified_badge(it),
             tpl.reviewed_badge(depth),
             tpl.lifecycle_badge(it),
         ])

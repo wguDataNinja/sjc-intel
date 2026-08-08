@@ -42,6 +42,11 @@ def _eligibility_item(item_id="SJC-UTIL-20260603-0002"):
         "communities": [],
         "geographic_scope": "county_wide",
         "verification_status": "source_confirmed",
+        "primary_topic": "infrastructure",
+        "resident_relevance": {
+            "why_it_matters": "This official infrastructure update affects county households.",
+            "affected_audiences": ["residents"],
+        },
     })
 
 
@@ -132,11 +137,10 @@ class TestPublicationProjection:
 
 
 class TestSelector:
-    def test_nothing_selected_without_decisions(self):
+    def test_policy_selects_ordinary_item_without_decision(self):
         items = list(iter_intel_items())
         r = selector({}, items, window_start=TEST_WINDOW[0], window_end=TEST_WINDOW[1])
-        assert r["selected"] == []
-        assert "no_publication_decision" in r["counts"]
+        assert "SJC-UTIL-20260603-0002" in r["selected"]
 
     def test_verified_low_sensitivity_with_approval_selected(self):
         items = list(iter_intel_items())
@@ -150,18 +154,11 @@ class TestSelector:
         r = selector(decisions, items, window_start=TEST_WINDOW[0], window_end=TEST_WINDOW[1])
         assert "SJC-UTIL-20260603-0002" in r["selected"]
 
-    def test_high_sensitivity_excluded_even_with_approval(self):
+    def test_high_sensitivity_requires_human_review(self):
         items = list(iter_intel_items())
-        decisions = {
-            "SJC-SJSO-20260603-0004": {
-                "publication_status": "approved",
-                "release_eligible": True,
-                "silverleaf_relevance": {"decision": "included"},
-            }
-        }
-        r = selector(decisions, items, window_start=TEST_WINDOW[0], window_end=TEST_WINDOW[1])
+        r = selector({}, items, window_start=TEST_WINDOW[0], window_end=TEST_WINDOW[1])
         assert "SJC-SJSO-20260603-0004" not in r["selected"]
-        assert "high_sensitivity" in r["counts"]
+        assert "sensitivity_or_personal_harm_exception" in r["counts"]
 
     def test_pending_item_excluded_even_with_decision(self):
         items = list(iter_intel_items())
@@ -186,7 +183,7 @@ class TestSelector:
         }
         r = selector(decisions, items, window_start=TEST_WINDOW[0], window_end=TEST_WINDOW[1])
         assert "SJC-UTIL-20260603-0002" not in r["selected"]
-        assert "withdrawn" in r["counts"]
+        assert "human_publication_exclusion" in r["counts"]
 
     def test_superseded_item_excluded(self):
         items = list(iter_intel_items())
@@ -200,8 +197,10 @@ class TestSelector:
         assert "SJC-CN-20260603-0006" not in r["selected"]
         assert "superseded" in r["counts"]
 
-    def test_missing_silverleaf_decision_excluded(self):
-        items = list(iter_intel_items())
+    def test_human_approval_without_scope_does_not_bypass_relevance(self):
+        items = [_eligibility_item()]
+        items[0][1].pop("primary_topic")
+        items[0][1].pop("resident_relevance")
         decisions = {
             "SJC-UTIL-20260603-0002": {
                 "publication_status": "approved",
@@ -210,7 +209,7 @@ class TestSelector:
         }
         r = selector(decisions, items, window_start=TEST_WINDOW[0], window_end=TEST_WINDOW[1])
         assert "SJC-UTIL-20260603-0002" not in r["selected"]
-        assert "missing_silverleaf_decision" in r["counts"]
+        assert "missing_resident_scope" in r["counts"]
 
     def test_deterministic_ordering(self):
         items = list(iter_intel_items())

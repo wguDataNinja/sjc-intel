@@ -1,0 +1,267 @@
+{
+  "created_at": "2026-08-07T12:00:00Z",
+  "dimensions": {
+    "display_topics": {
+      "emergency_preparedness": {
+        "description": "Hurricane season, alerts, and household readiness guidance.",
+        "label": "Emergency Preparedness"
+      },
+      "roads_traffic": {
+        "description": "Road closures, construction, detours, and commute impacts.",
+        "label": "Roads & Traffic"
+      },
+      "utilities_water": {
+        "description": "Drinking water, sewer, reclaimed water, and utility notices.",
+        "label": "Utilities & Water"
+      }
+    },
+    "entities": {},
+    "places": {
+      "countywide": {
+        "label": "Countywide",
+        "type": "countywide"
+      }
+    },
+    "relevance": {
+      "countywide_impact": {
+        "label": "Countywide impact"
+      },
+      "in_silverleaf": {
+        "label": "In SilverLeaf"
+      },
+      "near_silverleaf": {
+        "label": "Near SilverLeaf"
+      }
+    },
+    "sources": {
+      "sjc_county_news": {
+        "name": "St. Johns County",
+        "source_kind": "County news release",
+        "source_type": "Government / agency website",
+        "url": "https://www.sjcfl.us/news/"
+      },
+      "sjc_emergency_management": {
+        "name": "St. Johns County Emergency Management",
+        "source_kind": "Emergency-management guidance",
+        "source_type": "government_portal",
+        "url": "https://www.sjcfl.us/departments/emergency-mgmt/"
+      },
+      "sjc_utility_department": {
+        "name": "St. Johns County Utility Department",
+        "source_kind": "Utility notice",
+        "source_type": "government_portal",
+        "url": "https://www.sjcfl.us/departments/utility-department/"
+      }
+    }
+  },
+  "environment": "real",
+  "generator_revision": "silverleaf-brief-export-1.0",
+  "items": [
+    {
+      "display_topic": "roads_traffic",
+      "entity_ids": [],
+      "event_date": "2026-08-07",
+      "event_date_label": "Closure starts",
+      "place_ids": [],
+      "public_item_id": "SJC-CN-20260802-0001",
+      "published_date": "2026-08-05",
+      "related_item_ids": [
+        "SJC-CN-20260626-0001",
+        "SJC-UTIL-20260603-0003",
+        "SJC-UTIL-20260603-0001",
+        "SJC-UTIL-20260603-0004",
+        "SJC-UTIL-20260603-0005"
+      ],
+      "release_id": "SJC-REL-2026-08-002",
+      "relevance": "near_silverleaf",
+      "sensitivity_display": "none",
+      "source_date": "2026-07-20",
+      "source_name": "St. Johns County",
+      "source_url": "https://www.sjcfl.us/county-road-16a-closures-detours-three-july-august-weekends/",
+      "summary": "County Road 16A is scheduled to close between Timberwolf Trail and River Reach Parkway from 8 p.m. Friday, August 7, through 5 a.m. Monday, August 10, for First Coast Expressway pipe installation. Drivers will be detoured via State Roads 16 and 13.",
+      "title": "County Road 16A Weekend Closure Scheduled August 7–10",
+      "topic_ids": [
+        "transportation",
+        "infrastructure"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "The closure may affect travel between SilverLeaf and destinations east of the community during the weekend."
+    },
+    {
+      "display_topic": "utilities_water",
+      "entity_ids": [],
+      "place_ids": [],
+      "public_item_id": "SJC-CN-20260626-0001",
+      "published_date": "2026-08-07",
+      "related_item_ids": [
+        "SJC-CN-20260802-0001",
+        "SJC-EM-20260626-0001",
+        "SJC-UTIL-20260603-0003",
+        "SJC-UTIL-20260603-0001",
+        "SJC-UTIL-20260603-0004",
+        "SJC-UTIL-20260603-0005"
+      ],
+      "release_id": "SJC-REL-2026-08-002",
+      "relevance": "countywide_impact",
+      "sensitivity_display": "none",
+      "source_date": "2026-06-23",
+      "source_name": "St. Johns County",
+      "source_url": "https://www.sjcfl.us/news/",
+      "summary": "St. Johns County's $191.8 million SR 207 Water Reclamation Facility is now operational, protecting water resources and expanding reclaimed water capacity.",
+      "title": "SJC's Largest-Ever Capital Improvement Project Now Serving Residents",
+      "topic_ids": [
+        "infrastructure",
+        "environment"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "Expanded reclaimed water capacity supports growth and drought resilience. Largest single infrastructure investment in county history."
+    },
+    {
+      "display_topic": "utilities_water",
+      "entity_ids": [],
+      "place_ids": [],
+      "public_item_id": "SJC-UTIL-20260603-0004",
+      "published_date": "2026-08-07",
+      "related_item_ids": [
+        "SJC-CN-20260626-0001",
+        "SJC-CN-20260802-0001",
+        "SJC-UTIL-20260603-0003",
+        "SJC-UTIL-20260603-0001",
+        "SJC-UTIL-20260603-0005"
+      ],
+      "release_id": "SJC-REL-2026-08-002",
+      "relevance": "countywide_impact",
+      "sensitivity_display": "none",
+      "source_date": "2026-06-03",
+      "source_name": "St. Johns County Utility Department",
+      "source_url": "https://www.sjcfl.us/departments/utility-department/",
+      "summary": "St. Johns County celebrated completion of the new $4.6 million Utilities Lab with a ribbon-cutting ceremony. The lab features corrosion-resistant cabinets, walk-in cooler for sample storage, lab sinks with de-ionized water, and backup generator.\n",
+      "title": "$4.6 Million Utilities Lab Ribbon-Cutting and Open House",
+      "topic_ids": [
+        "infrastructure"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "Improved water testing lab supports water quality monitoring and compliance. Indirect benefit to all county water customers.\n"
+    },
+    {
+      "display_topic": "utilities_water",
+      "entity_ids": [],
+      "place_ids": [],
+      "public_item_id": "SJC-UTIL-20260603-0005",
+      "published_date": "2026-08-05",
+      "related_item_ids": [
+        "SJC-CN-20260626-0001",
+        "SJC-CN-20260802-0001",
+        "SJC-UTIL-20260603-0003",
+        "SJC-UTIL-20260603-0001",
+        "SJC-UTIL-20260603-0004"
+      ],
+      "release_id": "SJC-REL-2026-08-002",
+      "relevance": "countywide_impact",
+      "sensitivity_display": "none",
+      "source_date": "2026-06-03",
+      "source_name": "St. Johns County Utility Department",
+      "source_url": "https://www.sjcfl.us/departments/utility-department/",
+      "summary": "The county utility is inventorying water service line materials under the EPA Community Lead-Safe Hub program. Customers may be contacted to allow an inspection of the pipe from the street to the home.",
+      "title": "Utility Department Water Service Line Material Inventory",
+      "topic_ids": [
+        "infrastructure",
+        "health_wellness"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "The inventory is intended to identify service-line materials and determine whether any further action is needed. Some county utility customers may be contacted to allow an inspection between the street and the home."
+    },
+    {
+      "display_topic": "emergency_preparedness",
+      "entity_ids": [],
+      "place_ids": [
+        "countywide"
+      ],
+      "public_item_id": "SJC-EM-20260626-0001",
+      "published_date": "2026-08-05",
+      "related_item_ids": [
+        "SJC-CN-20260626-0001",
+        "SJC-UTIL-20260603-0001"
+      ],
+      "release_id": "SJC-REL-2026-08-002",
+      "relevance": "countywide_impact",
+      "sensitivity_display": "none",
+      "source_date": "2026-06-01",
+      "source_name": "St. Johns County Emergency Management",
+      "source_url": "https://www.sjcfl.us/departments/emergency-mgmt/",
+      "summary": "St. Johns County Emergency Management urges residents to prepare for the 2026 Atlantic Hurricane Season, which began June 1. Highlights simple steps to protect lives and property.",
+      "title": "Residents Urged to Prepare as 2026 Atlantic Hurricane Season Begins",
+      "topic_ids": [
+        "public_safety",
+        "emergency_alerts",
+        "environment"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "Hurricane season began June 1. Residents should review household plans, confirm their evacuation zone, and sign up for Alert St. Johns."
+    },
+    {
+      "display_topic": "utilities_water",
+      "entity_ids": [],
+      "place_ids": [],
+      "public_item_id": "SJC-UTIL-20260603-0001",
+      "published_date": "2026-08-05",
+      "related_item_ids": [
+        "SJC-CN-20260626-0001",
+        "SJC-CN-20260802-0001",
+        "SJC-EM-20260626-0001",
+        "SJC-UTIL-20260603-0003",
+        "SJC-UTIL-20260603-0004",
+        "SJC-UTIL-20260603-0005"
+      ],
+      "release_id": "SJC-REL-2026-08-002",
+      "relevance": "countywide_impact",
+      "sensitivity_display": "reviewed_sensitive",
+      "source_date": "2026-05-11",
+      "source_name": "St. Johns County Utility Department",
+      "source_url": "https://www.sjcfl.us/departments/utility-department/",
+      "summary": "The Phase III Extreme Water Shortage remains in effect: outdoor irrigation is limited to one day per week and is prohibited 8 a.m.-6 p.m. Reclaimed-water irrigation is not included in the schedule.",
+      "title": "Phase III Extreme Water Shortage Declaration — Active",
+      "topic_ids": [
+        "environment",
+        "infrastructure",
+        "emergency_alerts"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "SilverLeaf households using potable water for irrigation must follow the one-day-per-week schedule and avoid watering between 8 a.m. and 6 p.m. Properties using reclaimed water are exempt from the one-day schedule."
+    },
+    {
+      "display_topic": "utilities_water",
+      "entity_ids": [],
+      "place_ids": [],
+      "public_item_id": "SJC-UTIL-20260603-0003",
+      "published_date": "2026-08-07",
+      "related_item_ids": [
+        "SJC-CN-20260626-0001",
+        "SJC-CN-20260802-0001",
+        "SJC-UTIL-20260603-0001",
+        "SJC-UTIL-20260603-0004",
+        "SJC-UTIL-20260603-0005"
+      ],
+      "release_id": "SJC-REL-2026-08-002",
+      "relevance": "countywide_impact",
+      "sensitivity_display": "none",
+      "source_date": "2025-12-19",
+      "source_name": "St. Johns County Utility Department",
+      "source_url": "https://www.sjcfl.us/departments/utility-department/",
+      "summary": "St. Johns County BOCC approved Phase 2 of the State Road 207 Water Reclamation Facility Project, awarding a $191.8M design-build agreement with Jacobs Project Management Co. for the new facility and associated improvements.\n",
+      "title": "$191 Million SR 207 Water Reclamation Facility Phase 2 Approved",
+      "topic_ids": [
+        "infrastructure",
+        "county_government"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "Large-scale water reclamation infrastructure supports continued growth in the SR 207 corridor and southern St. Johns County. Construction timeline and rate impacts are not yet specified.\n"
+    }
+  ],
+  "prior_release_id": "SJC-REL-2026-08-001",
+  "published_at": "2026-08-07T12:00:00Z",
+  "release_id": "SJC-REL-2026-08-002",
+  "schema_version": "1.0",
+  "source_corpus_input_identity": "e8a9574a018fb3819c1396d35ac99889af9d80ef650163cc9b18012533743d6a",
+  "status": "published"
+}

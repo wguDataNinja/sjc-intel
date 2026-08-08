@@ -19,8 +19,8 @@ The demo fixture (`site/fixtures/demo/`) is for development/preview only.
 
 | Task | Command |
 |------|---------|
-| Approve items (first release) | `python3 scripts/publication_decision.py approve --item-id <id> --reviewer <name> --silverleaf included --relevance <label> [--public-summary-override "..."]` |
-| Build a real release (approved items only) | `python3 scripts/build_static_release.py --release-id <id> --reviewer "<name>" --window-start ... --window-end ...` |
+| Resolve a publication exception | `python3 scripts/publication_decision.py approve --item-id <id> --reviewer <name> --silverleaf included --relevance <label> [--public-summary-override "..."]` |
+| Build a real release (policy-selected items) | `python3 scripts/build_static_release.py --release-id <id> --reviewer "<name>" --prior-release-id <prior-id> --window-start ... --window-end ...` |
 | Build the demo release | `python3 scripts/build_static_release.py --release-id SJC-REL-DEMO-20260804 --demo` |
 | Check a release without writing | `python3 scripts/build_static_release.py --release-id <id> --check` |
 | Generate the site (real release default) | `python3 scripts/build_static_site.py` |
@@ -31,17 +31,17 @@ The demo fixture (`site/fixtures/demo/`) is for development/preview only.
 
 ## First release (recorded)
 
-`SJC-REL-2026-08-001` — 4 reviewed items (water shortage, hurricane
-preparedness, service-line inventory, CR 16A closures) approved by Buddy on
-2026-08-04. Regenerate with the window flags used at approval:
-`--window-start 2026-05-01 --window-end 2026-08-04`.
+`SJC-REL-2026-08-002` — 7 local policy-selected items, generated 2026-08-07
+with `SJC-REL-2026-08-001` retained as its rollback predecessor. It has not
+been deployed by this task. Regenerate with:
+`--window-start 2025-01-01 --window-end 2026-08-07T23:59:59Z`.
 
 ## Release input
 
-- **Real releases** come from approved publication decisions only
-  (`data/publication_decisions/`). The exporter validates the full corpus,
-  runs the deterministic selector, projects reviewed + SilverLeaf-included
-  items, validates content quality, and emits `release.json`,
+- **Real releases** come from `AUTO_PUBLISHABLE` items under
+  [`docs/PUBLICATION_POLICY.md`](../docs/PUBLICATION_POLICY.md), plus approved
+  human exceptions (`data/publication_decisions/`). The exporter validates the
+  full corpus, runs the deterministic selector, validates content quality, and emits `release.json`,
   `search-index.json`, and `release-manifest.json` under
   `site/data/releases/{release-id}/`.
 - **Demo mode** reads the explicit fixture `site/fixtures/demo/release.yaml`

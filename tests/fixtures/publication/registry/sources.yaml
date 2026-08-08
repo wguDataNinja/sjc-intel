@@ -1,9 +1,13 @@
 sources:
   - source_id: sjc_utility_department
     name: Utility Department — Water and Boil Notices
+    source_type: government_portal
   - source_id: sjso_news_stories
     name: SJSO News Stories
+    source_type: wordpress_blog
   - source_id: sjc_county_news
     name: SJC County News
+    source_type: wordpress_blog
   - source_id: st_johns_citizen
     name: St. Johns Citizen
+    source_type: local_media
