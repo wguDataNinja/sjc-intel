@@ -1,0 +1,108 @@
+week_start: '2026-05-11'
+week_end: '2026-05-17'
+entries:
+- item_id: SJC-BF-202605-0001
+  week_date: 2026-05-13
+  source_id: sjc_county_news
+  source_name: St. Johns County
+  title: St. Johns County Enters Phase III Extreme Water Shortage Declaration
+  summary: 'The St. Johns River Water Management District (SJRWMD) issued a Phase
+    III Extreme Water Shortage Declaration effective May 11, 2026, due to Extreme
+    Drought (D3) conditions. Residential irrigation limited to one day per week. Reclaimed
+    water is exempt.
+
+    '
+  source_published_at: '2026-05-13'
+  topics:
+  - environment
+  - infrastructure
+  - emergency_alerts
+  sensitivity: medium
+  review_status: pending_review
+- item_id: SJC-CN-20260603-0004
+  week_date: 2026-05-14
+  source_id: sjc_county_news
+  source_name: St. Johns County
+  title: St. Johns County Earns Statewide Communications Recognition
+  summary: 'St. Johns County received the Florida Municipal Communicators Association''s
+    Certificate of Excellence in Government Communications and the Outstanding Award
+    for Collaborative Marketing Campaign for its Inside SJC video series. This is
+    the second consecutive year the County has earned the Certificate of Excellence.
+
+    '
+  source_published_at: '2026-05-14T12:00:00Z'
+  topics:
+  - county_government
+  - organizational_excellence
+  - community_trust
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-CN-20260603-0005
+  week_date: 2026-05-13
+  source_id: sjc_county_news
+  source_name: St. Johns County
+  title: St. Johns County Enters Phase III Extreme Water Shortage Declaration
+  summary: 'The St. Johns River Water Management District issued a Phase III Extreme
+    Water Shortage Declaration affecting St. Johns and six other counties due to Extreme
+    Drought (D3) conditions — the most severe level recorded in Florida since 2000.
+    Mandatory water restrictions limit landscape irrigation to one day per week.
+
+    '
+  source_published_at: '2026-05-13T12:00:00Z'
+  topics:
+  - environment
+  - public_notices
+  - emergency
+  sensitivity: low
+  review_status: duplicate
+- item_id: SJC-UTIL-20260603-0001
+  week_date: 2026-05-11
+  source_id: sjc_utility_department
+  source_name: St. Johns County Utility Department
+  title: Phase III Extreme Water Shortage Declaration — Active
+  summary: 'SJRWMD Phase III Extreme Water Shortage remains in effect as of June 2026
+    due to Extreme Drought (D3). Residential irrigation limited to one day per week,
+    prohibited 8 a.m. to 6 p.m. Reclaimed water exempt. This is the most severe water
+    shortage declaration since 2000.
+
+    '
+  source_published_at: '2026-05-11'
+  topics:
+  - environment
+  - infrastructure
+  - emergency_alerts
+  sensitivity: medium
+  review_status: verified
+- item_id: SJC-BF-202605-0014
+  week_date: 2026-05-12
+  source_id: sjcsd_boarddocs
+  source_name: St. Johns County School District / BoardDocs
+  title: SJCSD School Board Meeting — May 12, 2026
+  summary: 'St. Johns County School Board held a regular meeting on May 12, 2026.
+    Video archive available. Agenda items included budget, operations, and policy
+    matters.
+
+    '
+  source_published_at: '2026-05-12'
+  topics:
+  - education
+  - county_government
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-BF-202605-0005
+  week_date: 2026-05-11
+  source_id: sjrwmd_watering_restrictions
+  source_name: St. Johns River Water Management District
+  title: SJRWMD Phase III Extreme Water Shortage — One-Day-Per-Week Irrigation
+  summary: 'SJRWMD Phase III Extreme Water Shortage effective May 11. Residential
+    watering limited to one day per week between 8 a.m. and 6 p.m. Reclaimed water
+    exempt. Extreme Drought (D3) conditions cited.
+
+    '
+  source_published_at: '2026-05-11'
+  topics:
+  - environment
+  - infrastructure
+  - emergency_alerts
+  sensitivity: medium
+  review_status: verified

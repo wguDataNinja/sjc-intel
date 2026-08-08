@@ -1,0 +1,11 @@
+month: 2025-10
+weeks: 4
+new_subjects:
+- CR 2209 connector
+search_profiles: []
+aliases: []
+lanes: []
+timeline_events: 1
+editor_gaps: 9
+false_positives: 0
+findings: 1

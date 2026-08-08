@@ -1,0 +1,193 @@
+week_start: '2026-05-25'
+week_end: '2026-05-31'
+entries:
+- item_id: SJC-BF-202605-0003
+  week_date: 2026-05-26
+  source_id: sjc_county_news
+  source_name: St. Johns County
+  title: Surplus Goods Public Auction Scheduled for June 20
+  summary: 'St. Johns County will hold a public surplus auction on Saturday, June
+    20, at 2416 Dobbs Road. County-owned surplus goods available to the public.
+
+    '
+  source_published_at: '2026-05-26'
+  topics:
+  - county_government
+  - public_notices
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-BF-202605-0004
+  week_date: 2026-05-26
+  source_id: sjc_county_news
+  source_name: St. Johns County
+  title: SJC Highlights Long-Term Resiliency Improvements at Porpoise Point Beach
+    Access Ramp
+  summary: 'St. Johns County completed approximately $524,000 in resiliency improvements
+    at Porpoise Point Vehicular Beach Access Ramp, improving flood mitigation and
+    long-term durability.
+
+    '
+  source_published_at: '2026-05-26'
+  topics:
+  - coastal_projects
+  - infrastructure
+  - environment
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-CN-20260603-0001
+  week_date: 2026-05-26
+  source_id: sjc_county_news
+  source_name: St. Johns County
+  title: Surplus Goods Public Auction Scheduled for June 20
+  summary: 'St. Johns County will hold a public surplus auction on Saturday, June
+    20, at 2416 Dobbs Road in St. Augustine. Preview opportunities are available June
+    19 and the morning of the auction. All items sell to the highest bidder with no
+    minimums.
+
+    '
+  source_published_at: '2026-05-26T12:00:00Z'
+  topics:
+  - county_government
+  - public_notices
+  - events
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-CN-20260603-0002
+  week_date: 2026-05-26
+  source_id: sjc_county_news
+  source_name: St. Johns County
+  title: SJC Highlights Long-Term Resiliency Improvements at Porpoise Point Vehicular
+    Beach Access Ramp
+  summary: 'St. Johns County completed approximately $524,000 in resiliency improvements
+    at the Porpoise Point Vehicular Beach Access Ramp in Vilano Beach. The project
+    added a paved access point, upgraded gate infrastructure, and a concrete-encapsulated
+    seawall to improve flood mitigation and coastal resiliency.
+
+    '
+  source_published_at: '2026-05-26T12:00:00Z'
+  topics:
+  - infrastructure
+  - coastal_projects
+  - environment
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-BF-202605-0021
+  week_date: 2026-05-26
+  source_id: sjc_emergency_management
+  source_name: St. Johns County Emergency Management
+  title: SJC Emergency Management — Hurricane Season Preparedness Messaging
+  summary: 'St. Johns County Emergency Management began hurricane season preparedness
+    messaging in May 2026 ahead of the June 1 start of hurricane season, promoting
+    awareness, alerts, and readiness.
+
+    '
+  source_published_at: '2026-05-26'
+  topics:
+  - public_safety
+  - emergency_alerts
+  - environment
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-BF-202605-0007
+  week_date: 2026-05-27
+  source_id: sjc_school_district
+  source_name: St. Johns County School District
+  title: SJCSD Student Code of Conduct Survey Results Published
+  summary: 'St. Johns County School District published results of the public survey
+    on the Student Code of Conduct conducted in March 2026. Results will inform annual
+    review and updates.
+
+    '
+  source_published_at: '2026-05-27'
+  topics:
+  - education
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-BF-202605-0008
+  week_date: 2026-05-26
+  source_id: sjc_school_district
+  source_name: St. Johns County School District
+  title: SJCSD Launches St. Johns Compass Program for August 2026
+  summary: 'St. Johns County School District announced St. Johns Compass, a new program
+    launching August 2026 to expand access to high-quality public education for eligible
+    students.
+
+    '
+  source_published_at: '2026-05-26'
+  topics:
+  - education
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-BF-202605-0009
+  week_date: 2026-05-27
+  source_id: sjc_school_district
+  source_name: St. Johns County School District
+  title: SJCSD Program of Choice Space Available Application Period Open
+  summary: 'St. Johns County School District space available application period for
+    Programs of Choice is open through June 30, 2026, or until all seats are filled.
+
+    '
+  source_published_at: '2026-05-27'
+  topics:
+  - education
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-BF-202605-0012
+  week_date: 2026-05-29
+  source_id: sjc_school_district
+  source_name: St. Johns County School District
+  title: SJCSD Family Tech Toolkit Virtual Sessions Announced
+  summary: 'St. Johns County School District announced a series of virtual Family
+    Tech Toolkit sessions starting May 29 to help families support their child''s
+    learning using district-approved digital tools.
+
+    '
+  source_published_at: '2026-05-29'
+  topics:
+  - education
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-BF-202605-0015
+  week_date: 2026-05-26
+  source_id: sjc_school_district
+  source_name: St. Johns County School District
+  title: SJCSD STAR Awards 2026
+  summary: 'St. Johns County School District held the STAR Awards 2026, recognizing
+    outstanding students, teachers, and staff across the district.
+
+    '
+  source_published_at: '2026-05-26'
+  topics:
+  - education
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-BF-202605-0006
+  week_date: 2026-05-26
+  source_id: sjc_utility_department
+  source_name: St. Johns County Utility Department
+  title: County Utility Department Announces June Chlorine Burnout Maintenance
+  summary: 'St. Johns County Utility Department announced a free chlorine burnout
+    at the CR 214 Water Treatment Plant beginning June 1 for approximately 21 days
+    to maintain distribution system water quality.
+
+    '
+  source_published_at: '2026-05-26'
+  topics:
+  - infrastructure
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-UTIL-20260603-0002
+  week_date: 2026-05-26
+  source_id: sjc_utility_department
+  source_name: St. Johns County Utility Department
+  title: Free Chlorine Burnout Scheduled June 1–21
+  summary: 'The County Road 214 Water Treatment Plant is conducting a free chlorine
+    burnout from June 1 to June 21 to enhance water quality. Water remains safe to
+    drink. Customers may notice slight discoloration, cloudiness, or chlorine odor.
+
+    '
+  source_published_at: '2026-05-26'
+  topics:
+  - infrastructure
+  sensitivity: low
+  review_status: verified

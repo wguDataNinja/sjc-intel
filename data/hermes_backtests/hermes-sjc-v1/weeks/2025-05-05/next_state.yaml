@@ -1,0 +1,93 @@
+available_on: '2025-05-05'
+sources:
+- source_id: sjc_county_news
+  name: St. Johns County government news
+  kind: official
+- source_id: sjc_school_district
+  name: St. Johns County School District
+  kind: official
+- source_id: sjcsd_news
+  name: St. Johns County School District — news
+  kind: official
+- source_id: sjcsd_main_site
+  name: St. Johns County School District — school pages
+  kind: official
+- source_id: sjcsd_new_schools
+  name: St. Johns County School District — new school construction
+  kind: official
+- source_id: sjc_property_appraiser
+  name: County Property Appraiser
+  kind: official
+- source_id: sjc_tax_collector
+  name: County Tax Collector
+  kind: official
+- source_id: sjc_budget_transparency
+  name: County budget and transparency
+  kind: official
+- source_id: sjc_utility_department
+  name: St. Johns County Utility Department
+  kind: official
+- source_id: sjc_nbor_public_notices
+  name: County public notices (NBOR)
+  kind: official
+- source_id: sjc_bcc_calendar
+  name: County Commission calendar
+  kind: official
+- source_id: sjc_pza_boards
+  name: Planning and Zoning boards
+  kind: official
+- source_id: sjc_emergency_management
+  name: County Emergency Management
+  kind: official
+- source_id: sjrwmd_watering_restrictions
+  name: SJRWMD watering restrictions
+  kind: official
+- source_id: fdot_district_two_nflroads
+  name: FDOT District Two / NFLRoads
+  kind: official
+- source_id: nws_jacksonville
+  name: National Weather Service Jacksonville
+  kind: official
+- source_id: st_johns_citizen
+  name: St. Johns Citizen (local news)
+  kind: local_media
+entities:
+- id: seed-community-silverleaf
+  label: SilverLeaf master-planned community
+  aliases: []
+  available_on: '2025-05-05'
+  notes: General context only; no resident subject claims seeded.
+- id: HP-20250505-ENT-SCHOOLQQ
+  label: SilverLeaf K-8 School (School QQ)
+  aliases: []
+  available_on: '2025-05-05'
+  evidence:
+  - feed_id: SJC-SL-20260704-0002
+    source_date: '2025-05-07'
+search_profiles:
+- subject: SilverLeaf K-8 School (School QQ)
+  queries:
+  - '"School QQ" St. Johns'
+  - '"SilverLeaf" K-8 school'
+  budget: 2
+  available_on: '2025-05-05'
+lanes:
+- schools and families
+milestones:
+- subject: SilverLeaf K-8 School (School QQ)
+  expected:
+  - naming
+  - attendance boundaries
+  - opening
+  milestone_due:
+    naming: '2025-10-01'
+    attendance boundaries: '2026-02-01'
+    opening: '2026-08-15'
+  available_on: '2025-05-05'
+timelines:
+- subject: SilverLeaf K-8 School (School QQ)
+  event: topping-out
+  available_on: '2025-05-05'
+accepted_proposals: []
+rejected_proposals: []
+last_week: null

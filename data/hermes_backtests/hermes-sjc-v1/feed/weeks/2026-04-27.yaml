@@ -1,0 +1,18 @@
+week_start: '2026-04-27'
+week_end: '2026-05-03'
+entries:
+- item_id: SJC-BF-202605-0018
+  week_date: 2026-05-01
+  source_id: sjc_school_district
+  source_name: St. Johns County School District
+  title: SJCSD CTE Awards 2026
+  summary: 'St. Johns County School District held the Career and Technical Education
+    (CTE) Awards 2026, recognizing achievement in career-technical programs.
+
+    '
+  source_published_at: '2026-05-01'
+  topics:
+  - education
+  - economic_development
+  sensitivity: low
+  review_status: pending_review

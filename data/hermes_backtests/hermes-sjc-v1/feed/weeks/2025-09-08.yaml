@@ -1,0 +1,58 @@
+week_start: '2025-09-08'
+week_end: '2025-09-14'
+entries:
+- item_id: SJC-BF-202509-0009
+  week_date: 2025-09-10
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: Northern Marsh Landing Entrance Closed — Emergency Water Main Repair
+  summary: A 12-inch water main break at Marsh Landing caused the closure of the northern
+    entrance. Emergency repair crews responded to the break affecting the Marsh Landing
+    community in Ponte Vedra.
+  source_published_at: '2025-09-10'
+  topics:
+  - emergency
+  - utility
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-BF-202509-0010
+  week_date: 2025-09-10
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: 'UPDATE: Northern Marsh Landing Remains Closed for Water Main Repair'
+  summary: Follow-up update from St. Johns County confirming the northern Marsh Landing
+    entrance remained closed as emergency water main repair work continued. Residents
+    were advised to use alternate routes.
+  source_published_at: '2025-09-10'
+  topics:
+  - emergency
+  - utility
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-BF-202509-0011
+  week_date: 2025-09-08
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: Traffic Signal at U.S. 1 and Pine Island Road Fully Operational
+  summary: The new traffic signal at U.S. 1 and Pine Island Road became fully operational,
+    completing a $2.8 million intersection improvement project that includes turning
+    lanes and enhanced safety features for the growing southern corridor.
+  source_published_at: '2025-09-08'
+  topics:
+  - transportation
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-BF-202509-0017
+  week_date: 2025-09-12
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: Beach Services & Lighthouse Preserve Historic Shipwreck Fragments
+  summary: St. Johns County Beach Services reported fragments of a historic shipwreck
+    exposed at the St. Augustine Lighthouse Archaeological Preserve, resulting from
+    ongoing coastal erosion and storm activity during the peak of hurricane season.
+  source_published_at: '2025-09-12'
+  topics:
+  - emergency
+  - coastal
+  sensitivity: low
+  review_status: pending_review

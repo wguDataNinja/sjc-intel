@@ -1,0 +1,10 @@
+- finding_id: F-20251201-0001
+  subject: "SilverLeaf grocery center / possible Harris Teeter"
+  title: "Two new supermarkets proposed for St. Johns County, one in a SilverLeaf center"
+  summary: "Two 61,000 sq ft Kroger-owned supermarkets are proposed, one at Veterans Parkway/CR 210 West and one in a SilverLeaf shopping center. The reporting names Harris Teeter, but the tenant is not officially confirmed by the company."
+  source: st_johns_citizen
+  source_date: "2025-12-02"
+  feed_id: SJC-SL-20260704-0005
+  lane: retail and amenities
+  resident_importance: high
+  evidence: [{feed_id: SJC-SL-20260704-0005, source_date: "2025-12-02"}]

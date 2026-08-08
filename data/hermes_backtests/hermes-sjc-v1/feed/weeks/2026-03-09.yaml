@@ -1,0 +1,21 @@
+week_start: '2026-03-09'
+week_end: '2026-03-15'
+entries:
+- item_id: SJC-UD-20260626-0001
+  week_date: 2026-03-12
+  source_id: sjc_utility_department
+  source_name: St. Johns County Utility Department
+  title: SJC Utilities 2025 Annual Report Published
+  summary: The St. Johns County Utilities Department published its 2025 Annual Report,
+    highlighting fiscal responsibility, reliable service delivery, environmental stewardship,
+    and long-term infrastructure planning. Key 2025 projects include Hastings Water
+    Treatment Plant improvements, Northwest Water Reclamation Facility expansion,
+    wellfield expansion projects, and wastewater process upgrades on State Road 16.
+    The report notes residential utility bills remain approximately 10 percent below
+    the regional average.
+  source_published_at: '2026-03-12'
+  topics:
+  - infrastructure
+  - county_government
+  sensitivity: low
+  review_status: pending_review

@@ -1,0 +1,14 @@
+# Feed overrides (Task 30 §6). Dated public records that are historically real
+# but exist only as live-search leads in the repo, not as dated corpus items.
+# They are part of the versioned backtest fixture and are clearly tagged
+# review_status: historical_override so they are distinguishable from corpus
+# records in the feed. This keeps the historical feed from inheriting the
+# corpus's capture gaps while never claiming these are corpus items.
+- item_id: OV-20260722-MAGNOLIA
+  week_date: "2026-07-22"
+  source_id: news4jax
+  source_name: "News4JAX"
+  title: "Magnolia Oaks Academy set to open doors in SilverLeaf community for 2026-2027 school year"
+  summary: "St. Johns County School District's new SilverLeaf K-8 campus, now named Magnolia Oaks Academy, is set to open for the 2026-2027 school year."
+  topics: [education]
+  sensitivity: low

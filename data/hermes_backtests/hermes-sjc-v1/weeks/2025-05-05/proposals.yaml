@@ -1,0 +1,52 @@
+- proposal_id: HP-20250505-ENT-SCHOOLQQ
+  type: entity
+  subject: "SilverLeaf K-8 School (School QQ)"
+  simulated_week: "2025-05-05"
+  evidence: [{feed_id: SJC-SL-20260704-0002, source_date: "2025-05-07"}]
+  resident_impact: "The neighborhood school opening and attendance boundary are top resident questions for the next two years."
+  expected_duration: "multi-year"
+  anticipated_milestones: [naming, attendance boundaries, opening]
+  proposed_searches: ['"School QQ" St. Johns', '"SilverLeaf" K-8 school']
+  proposed_sources: [sjc_school_district]
+  cost: 2
+  confidence: high
+  risks: [school name not yet announced; attendance zone unknown]
+  rationale: "Durable construction milestone for the most neighborhood-specific school project."
+  review_status: proposed
+- proposal_id: HP-20250505-SP-SCHOOLQQ
+  type: search_profile
+  subject: "SilverLeaf K-8 School (School QQ)"
+  simulated_week: "2025-05-05"
+  evidence: [{feed_id: SJC-SL-20260704-0002, source_date: "2025-05-07"}]
+  resident_impact: "Recurring searches keep the school opening, naming, and zoning visible."
+  expected_duration: "multi-year"
+  proposed_searches: ['"School QQ" St. Johns', '"SilverLeaf" K-8 school']
+  cost: 2
+  confidence: high
+  rationale: "Profile to monitor construction -> naming -> opening milestones."
+  review_status: proposed
+- proposal_id: HP-20250505-LANE-SCHOOLS
+  type: coverage_lane
+  subject: "schools and families"
+  simulated_week: "2025-05-05"
+  evidence: [{feed_id: SJC-SL-20260704-0002, source_date: "2025-05-07"}]
+  resident_impact: "School capacity and openings are a persistent resident concern."
+  rationale: "A durable editorial lane for school and family coverage."
+  review_status: proposed
+- proposal_id: HP-20250505-MIL-SCHOOLQQ
+  type: milestone
+  subject: "SilverLeaf K-8 School (School QQ)"
+  simulated_week: "2025-05-05"
+  evidence: [{feed_id: SJC-SL-20260704-0002, source_date: "2025-05-07"}]
+  anticipated_milestones: [naming, attendance boundaries, opening]
+  milestone_due: {naming: "2025-10-01", attendance boundaries: "2026-02-01", opening: "2026-08-15"}
+  rationale: "Expected naming, boundary, and opening milestones for the new K-8."
+  review_status: proposed
+- proposal_id: HP-20250505-TL-SCHOOLQQ
+  type: timeline_reconciliation
+  subject: "SilverLeaf K-8 School (School QQ)"
+  simulated_week: "2025-05-05"
+  evidence: [{feed_id: SJC-SL-20260704-0002, source_date: "2025-05-07"}]
+  anticipated_milestones: [topping-out]
+  rationale: "Start the school construction timeline at its structural milestone."
+  review_status: proposed

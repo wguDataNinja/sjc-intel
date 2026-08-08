@@ -1,0 +1,56 @@
+- proposal_id: HP-20260622-ENT-BAPTIST
+  type: entity
+  subject: "Baptist SilverLeaf campus"
+  simulated_week: "2026-06-22"
+  evidence: [{feed_id: SJC-SL-20260807-0002, source_date: "2026-06-23"}]
+  resident_impact: "First hospital-grade medical presence in SilverLeaf."
+  expected_duration: "ongoing"
+  anticipated_milestones: [opened, expansion]
+  proposed_searches: ['"Baptist" SilverLeaf medical', '"Baptist Health" SilverLeaf']
+  proposed_sources: [baptist_health]
+  cost: 2
+  confidence: high
+  rationale: "Durable healthcare subject; watch services/expansion."
+  review_status: proposed
+- proposal_id: HP-20260622-SP-BAPTIST
+  type: search_profile
+  subject: "Baptist SilverLeaf campus"
+  simulated_week: "2026-06-22"
+  evidence: [{feed_id: SJC-SL-20260807-0002, source_date: "2026-06-23"}]
+  resident_impact: "Track campus services, helipad, and expansion."
+  expected_duration: "ongoing"
+  proposed_searches: ['"Baptist SilverLeaf" campus', '"Baptist Health" SilverLeaf']
+  cost: 2
+  confidence: high
+  rationale: "Monitor campus evolution."
+  review_status: proposed
+- proposal_id: HP-20260622-ENT-WRF
+  type: entity
+  subject: "SR 207 Water Reclamation Facility"
+  simulated_week: "2026-06-22"
+  evidence: [{feed_id: SJC-CN-20260626-0001, source_date: "2026-06-23"}]
+  resident_impact: "Reclaimed-water capacity underpins SilverLeaf irrigation and growth."
+  expected_duration: "ongoing"
+  anticipated_milestones: [operational]
+  proposed_searches: ['"SR 207" water reclamation', '"water reclamation" St. Johns']
+  proposed_sources: [sjc_utility_department]
+  cost: 1
+  confidence: high
+  rationale: "Utility infrastructure subject with household relevance."
+  review_status: proposed
+- proposal_id: HP-20260622-LANE-HEALTH
+  type: coverage_lane
+  subject: "healthcare and services"
+  simulated_week: "2026-06-22"
+  evidence: [{feed_id: SJC-SL-20260807-0002, source_date: "2026-06-23"}]
+  resident_impact: "Healthcare access is a persistent resident concern."
+  rationale: "Durable editorial lane for healthcare and services."
+  review_status: proposed
+- proposal_id: HP-20260622-LANE-UTIL
+  type: coverage_lane
+  subject: "utilities and household operations"
+  simulated_week: "2026-06-22"
+  evidence: [{feed_id: SJC-CN-20260626-0001, source_date: "2026-06-23"}]
+  resident_impact: "Water/sewer operations affect every household."
+  rationale: "Durable editorial lane for utilities and household operations."
+  review_status: proposed

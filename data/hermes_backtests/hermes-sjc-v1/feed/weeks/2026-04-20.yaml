@@ -1,0 +1,20 @@
+week_start: '2026-04-20'
+week_end: '2026-04-26'
+entries:
+- item_id: SJC-SJSO-20260603-0003
+  week_date: 2026-04-20
+  source_id: sjso_news_stories
+  source_name: St. Johns County Sheriff's Office
+  title: Nine arrested during SJSOs March 2026 DUI Wolfpack Operation
+  summary: 'SJSO and partner agencies conducted a countywide DUI Wolfpack Operation
+    on March 20-21, 2026, resulting in nine DUI arrests and 173 traffic stops. The
+    operation was dedicated to Mark Sabri, who was killed by an impaired driver in
+    2024.
+
+    '
+  source_published_at: '2026-04-20T12:00:00Z'
+  topics:
+  - public_safety
+  - crime
+  sensitivity: medium
+  review_status: archived

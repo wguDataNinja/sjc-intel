@@ -1,0 +1,16 @@
+week_start: '2026-07-20'
+entries:
+- item_id: SJC-CN-20260802-0001
+  week_date: 2026-07-20
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: County Road 16A Closures and Detours for Next Two Weekends
+  summary: County Road 16A closures and detours scheduled for the next two weekends
+    (three July/August weekends per URL slug). Travelers should expect detours during
+    the announced closure periods.
+  source_published_at: '2026-07-20T17:00:00Z'
+  topics:
+  - transportation
+  - infrastructure
+  sensitivity: low
+  review_status: verified

@@ -1,0 +1,34 @@
+- proposal_id: HP-20260323-ENT-PUBLIX
+  type: entity
+  subject: "Publix / Silverleaf Market"
+  simulated_week: "2026-03-23"
+  evidence: [{feed_id: SJC-SL-20260704-0001, source_date: "2026-03-26"}]
+  resident_impact: "The neighborhood grocery anchor is now open."
+  expected_duration: "ongoing"
+  anticipated_milestones: [opened, tenant announcements]
+  proposed_searches: ['"SilverLeaf" Publix', '"Silverleaf Market" tenants']
+  proposed_sources: [st_johns_citizen]
+  cost: 1
+  confidence: high
+  rationale: "Durable retail anchor subject with tenant-growth follow-up."
+  review_status: proposed
+- proposal_id: HP-20260323-SP-PUBLIX
+  type: search_profile
+  subject: "Publix / Silverleaf Market"
+  simulated_week: "2026-03-23"
+  evidence: [{feed_id: SJC-SL-20260704-0001, source_date: "2026-03-26"}]
+  resident_impact: "Track center tenants and outparcel growth."
+  expected_duration: "ongoing"
+  proposed_searches: ['"Silverleaf Market" tenants', '"SilverLeaf Parkway" retail']
+  cost: 1
+  confidence: high
+  rationale: "Profile for tenant/center evolution."
+  review_status: proposed
+- proposal_id: HP-20260323-TL-PUBLIX
+  type: timeline_reconciliation
+  subject: "Publix / Silverleaf Market"
+  simulated_week: "2026-03-23"
+  evidence: [{feed_id: SJC-SL-20260704-0001, source_date: "2026-03-26"}]
+  anticipated_milestones: [opened]
+  rationale: "Record the opening on the retail timeline."
+  review_status: proposed

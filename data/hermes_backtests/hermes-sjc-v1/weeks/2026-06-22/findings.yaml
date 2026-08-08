@@ -1,0 +1,20 @@
+- finding_id: F-20260622-0001
+  subject: "Baptist SilverLeaf campus"
+  title: "Baptist Health opens SilverLeaf outpatient medical campus"
+  summary: "Baptist Health opened its first-phase SilverLeaf outpatient medical campus, adding imaging, labs, and physician services to the community."
+  source: baptist_health
+  source_date: "2026-06-23"
+  feed_id: SJC-SL-20260807-0002
+  lane: healthcare and services
+  resident_importance: high
+  evidence: [{feed_id: SJC-SL-20260807-0002, source_date: "2026-06-23"}]
+- finding_id: F-20260622-0002
+  subject: "SR 207 Water Reclamation Facility"
+  title: "County's largest capital project now serving residents"
+  summary: "The $191.8M SR 207 Water Reclamation Facility, the largest capital improvement in county history, is now operating, expanding reclaimed-water capacity."
+  source: sjc_county_news
+  source_date: "2026-06-23"
+  feed_id: SJC-CN-20260626-0001
+  lane: utilities and household operations
+  resident_importance: high
+  evidence: [{feed_id: SJC-CN-20260626-0001, source_date: "2026-06-23"}]

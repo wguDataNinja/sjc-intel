@@ -1,0 +1,15 @@
+month: 2026-01
+weeks: 4
+new_subjects:
+- County 2050 Comprehensive Plan
+- County utility policy (septic-to-sewer)
+- Shores Boulevard median opening
+- Sebastian Oaks development (concurrency and impact fees)
+search_profiles:
+- County 2050 Comprehensive Plan
+aliases: []
+lanes: []
+timeline_events: 1
+editor_gaps: 10
+false_positives: 0
+findings: 4

@@ -1,0 +1,13 @@
+- proposal_id: HP-20251201-ENT-GROCERY
+  subject: "SilverLeaf grocery center / possible Harris Teeter"
+  research_trigger: identity_uncertainty
+  questions_to_resolve: ["Is the SilverLeaf center project confirmed?", "Is Harris Teeter the confirmed tenant or a reporting inference?"]
+  queries_run: 3
+  sources_checked: [st_johns_citizen, sjc_pza_boards]
+  confirmed_facts: ["Two 61,000 sq ft supermarkets proposed; one in a SilverLeaf center."]
+  strong_inferences: ["Kroger-owned chain likely Harris Teeter per reporting."]
+  conflicting_evidence: ["No first-party tenant announcement."]
+  unresolved_questions: ["Tenant identity unconfirmed."]
+  recommended_action: ACCEPT_QUALIFIED
+  confidence: 0.6
+  evidence_class: retrospective_evidence

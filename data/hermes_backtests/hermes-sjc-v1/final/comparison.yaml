@@ -1,0 +1,70 @@
+accepted_proposals_total: 97
+aliases_learned:
+- target: SilverLeaf K-8 School (School QQ)
+  value: Magnolia Oaks Academy
+  week: '2026-07-20'
+as_of: '2026-08-03'
+discovery_week_by_subject:
+  Baptist SilverLeaf campus: '2026-06-22'
+  CR 210 widening: '2025-08-04'
+  CR 2209 connector: '2025-08-18'
+  Phase III water shortage / irrigation restrictions: '2025-08-04'
+  Publix / Silverleaf Market: '2026-03-23'
+  SR 16 / International Golf Parkway improvements: '2025-08-18'
+  SR 207 Water Reclamation Facility: '2025-08-04'
+  School QQ / Magnolia Oaks Academy: '2025-05-05'
+  SilverLeaf grocery center / possible Harris Teeter: '2025-12-01'
+  hurricane preparedness: '2025-09-01'
+editor_gaps_total: 168
+findings_total: 68
+lanes_created:
+- healthcare and services
+- preparedness
+- retail and amenities
+- roads and mobility
+- schools and families
+- utilities and household operations
+lanes_found:
+- healthcare and services
+- preparedness
+- retail and amenities
+- roads and mobility
+- schools and families
+- utilities and household operations
+lanes_missed: []
+note: Hidden evaluator; never exposed to a Hermes week packet.
+resident_coverage_recall: 0.933
+search_profiles_created:
+- Ascension St. Vincent's primary care (Nocatee Crosswater)
+- Bala's Pizza (SilverLeaf second location)
+- Baptist SilverLeaf campus
+- Beach Valley Mini Golf (SilverLeaf)
+- CR 16A access road
+- CR 210 widening
+- CR 2209 connector
+- County 2050 Comprehensive Plan
+- County FY2026 budget and property taxes
+- Four Mile Road / SR 16 intersection improvements
+- Hallowes Cove Academy (new SJCSD school)
+- Hurricane and emergency preparedness
+- Phase III water shortage / irrigation restrictions
+- Publix / Silverleaf Market
+- SR 207 Water Reclamation Facility
+- SilverLeaf K-8 School (School QQ)
+- SilverLeaf area school attendance zoning
+- SilverLeaf grocery center / possible Harris Teeter
+subjects_found:
+- Baptist SilverLeaf campus
+- CR 210 widening
+- CR 2209 connector
+- Phase III water shortage / irrigation restrictions
+- Publix / Silverleaf Market
+- SR 16 / International Golf Parkway improvements
+- SR 207 Water Reclamation Facility
+- School QQ / Magnolia Oaks Academy
+- SilverLeaf grocery center / possible Harris Teeter
+- hurricane preparedness
+subjects_missed:
+- First Coast Expressway / I-95 access
+- school zoning / attendance boundaries
+weeks_completed: 66

@@ -1,0 +1,117 @@
+week_start: '2026-07-20'
+available_on: '2026-07-27'
+accepted:
+- proposal_id: HP-20260720-ALIAS-MAGNOLIA
+  type: alias
+  subject: Magnolia Oaks Academy
+  target: SilverLeaf K-8 School (School QQ)
+  simulated_week: '2026-07-20'
+  evidence:
+  - feed_id: OV-20260722-MAGNOLIA
+    source_date: '2026-07-22'
+  resident_impact: Residents need the official school name.
+  rationale: Official district naming reconciles School QQ / SilverLeaf K-8 to Magnolia
+    Oaks Academy.
+  confidence: high
+  review_status: accepted
+  reviewer: hermes-simulated-evaluator
+- proposal_id: HP-20260720-MIL-SCHOOLQQ
+  type: milestone
+  subject: SilverLeaf K-8 School (School QQ)
+  simulated_week: '2026-07-20'
+  evidence:
+  - feed_id: OV-20260722-MAGNOLIA
+    source_date: '2026-07-22'
+  anticipated_milestones:
+  - official_naming
+  - opening
+  milestone_due:
+    opening: '2026-08-15'
+  rationale: Name announced; opening imminent for 2026-27.
+  review_status: accepted
+  reviewer: hermes-simulated-evaluator
+- proposal_id: HP-20260720-ENT-CR16A
+  type: entity
+  subject: CR 16A access road
+  simulated_week: '2026-07-20'
+  evidence:
+  - feed_id: SJC-CN-20260802-0001
+    source_date: '2026-07-20'
+  resident_impact: CR 16A is a direct SilverLeaf access road.
+  expected_duration: ongoing
+  anticipated_milestones:
+  - closures
+  proposed_searches:
+  - '"CR 16A" SilverLeaf'
+  - '"County Road 16A" closure'
+  proposed_sources:
+  - sjc_county_news
+  cost: 1
+  confidence: high
+  rationale: Track access-road closures and detours.
+  review_status: accepted
+  reviewer: hermes-simulated-evaluator
+- proposal_id: HP-20260720-SP-CR16A
+  type: search_profile
+  subject: CR 16A access road
+  simulated_week: '2026-07-20'
+  evidence:
+  - feed_id: SJC-CN-20260802-0001
+    source_date: '2026-07-20'
+  resident_impact: Keep closure/detour impact visible.
+  expected_duration: ongoing
+  proposed_searches:
+  - '"CR 16A" SilverLeaf'
+  cost: 1
+  confidence: high
+  rationale: Monitor access-road changes.
+  review_status: accepted
+  reviewer: hermes-simulated-evaluator
+- proposal_id: HP-20260720-TL-SCHOOLQQ
+  type: timeline_reconciliation
+  subject: SilverLeaf K-8 School (School QQ)
+  simulated_week: '2026-07-20'
+  evidence:
+  - feed_id: OV-20260722-MAGNOLIA
+    source_date: '2026-07-22'
+  anticipated_milestones:
+  - official_naming
+  rationale: Timeline now reaches the official name and opening.
+  review_status: accepted
+  reviewer: hermes-simulated-evaluator
+rejected: []
+accepted_ids:
+- HP-20260720-ALIAS-MAGNOLIA
+- HP-20260720-MIL-SCHOOLQQ
+- HP-20260720-ENT-CR16A
+- HP-20260720-SP-CR16A
+- HP-20260720-TL-SCHOOLQQ
+rejected_ids: []
+findings:
+- finding_id: F-20260720-0001
+  subject: SilverLeaf K-8 School (School QQ)
+  title: Magnolia Oaks Academy set to open in SilverLeaf for 2026-2027
+  summary: The district's SilverLeaf K-8 campus is now named Magnolia Oaks Academy
+    and is set to open for the 2026-2027 school year. This reconciles the placeholder
+    School QQ / SilverLeaf K-8 with the official name.
+  source: news4jax
+  source_date: '2026-07-22'
+  feed_id: OV-20260722-MAGNOLIA
+  lane: schools and families
+  resident_importance: high
+  evidence:
+  - feed_id: OV-20260722-MAGNOLIA
+    source_date: '2026-07-22'
+- finding_id: F-20260720-0002
+  subject: CR 16A access road
+  title: CR 16A closures and detours for upcoming weekends
+  summary: County Road 16A, a SilverLeaf access road, will close with detours over
+    consecutive July/August weekends.
+  source: sjc_county_news
+  source_date: '2026-07-20'
+  feed_id: SJC-CN-20260802-0001
+  lane: roads and mobility
+  resident_importance: high
+  evidence:
+  - feed_id: SJC-CN-20260802-0001
+    source_date: '2026-07-20'

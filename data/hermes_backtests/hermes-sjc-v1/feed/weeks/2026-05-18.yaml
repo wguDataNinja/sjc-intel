@@ -1,0 +1,146 @@
+week_start: '2026-05-18'
+week_end: '2026-05-24'
+entries:
+- item_id: SJC-BF-202605-0002
+  week_date: 2026-05-18
+  source_id: sjc_county_news
+  source_name: St. Johns County
+  title: Public Library Announces 2026 Summer Reading Program
+  summary: 'St. Johns County Public Library System (SJCPLS) announced ''Stars, Stripes,
+    and Stories'' Summer Reading Program with events at all six branches.
+
+    '
+  source_published_at: '2026-05-18'
+  topics:
+  - library
+  - community_events
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-CN-20260603-0003
+  week_date: 2026-05-18
+  source_id: sjc_county_news
+  source_name: St. Johns County
+  title: Public Library Announces 2026 Summer Reading Program
+  summary: 'The St. Johns County Public Library System announced its "Stars, Stripes,
+    and Stories" Summer Reading Program running May 31 through July 25. The program
+    features free reading logs with prizes, over 100 events, story times, book clubs,
+    and STEM offerings across all six library branches.
+
+    '
+  source_published_at: '2026-05-18T12:00:00Z'
+  topics:
+  - education
+  - community_events
+  - library
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-BF-202605-0010
+  week_date: 2026-05-21
+  source_id: sjc_school_district
+  source_name: St. Johns County School District
+  title: 'SJCSD Real Talk: Internet Safety and Responsibility Podcast'
+  summary: 'St. Johns County School District, in conjunction with the 7th Judicial
+    Circuit State Attorney''s Office, produced a podcast on internet safety featuring
+    the Superintendent''s Student Advisory Council.
+
+    '
+  source_published_at: '2026-05-21'
+  topics:
+  - education
+  - public_safety
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-BF-202605-0011
+  week_date: 2026-05-18
+  source_id: sjc_school_district
+  source_name: St. Johns County School District
+  title: Community Support for SJCSD Half-Cent Sales Surtax and One Mill Confirmed
+  summary: 'St. Johns County voters approved continuing the half-cent sales surtax
+    for school capital outlay and adding one mill of operating millage to preserve
+    educational programs during the November 2024 election. Impact continues into
+    2026.
+
+    '
+  source_published_at: '2026-05-18'
+  topics:
+  - education
+  - taxes
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-BF-202605-0013
+  week_date: 2026-05-21
+  source_id: sjc_school_district
+  source_name: St. Johns County School District (citing Ponte Vedra Recorder)
+  title: SJCSD Maintains 'A' Grade — District-Wide Achievement
+  summary: 'St. Johns County schools maintained an ''A'' grade, as reported by the
+    Ponte Vedra Recorder and referenced by the school district on May 21.
+
+    '
+  source_published_at: '2026-05-21'
+  topics:
+  - education
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-BF-202605-0016
+  week_date: 2026-05-22
+  source_id: sjc_school_district
+  source_name: St. Johns County School District
+  title: SJCSD All Access with Dr. Asplen — Beachside High School Visit
+  summary: 'Superintendent Dr. Asplen visited Beachside High School, featuring the
+    Academy of Veterinary and Biomedical Sciences and a leadership class discussion.
+
+    '
+  source_published_at: '2026-05-22'
+  topics:
+  - education
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-BF-202605-0017
+  week_date: 2026-05-20
+  source_id: sjc_school_district
+  source_name: St. Johns County School District
+  title: SJCSD Graduation — St. Augustine High School 2025-26
+  summary: 'St. Augustine High School held its 2025-26 graduation ceremony. Video
+    archive available.
+
+    '
+  source_published_at: '2026-05-20'
+  topics:
+  - education
+  - community_events
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-BF-202605-0019
+  week_date: 2026-05-21
+  source_id: sjso_news_stories
+  source_name: St. Johns County Sheriff's Office
+  title: SJSO Inmate Charged; Woman Arrested for Contraband Drop on Law Enforcement
+    Property
+  summary: 'A St. Johns County inmate was charged and a woman arrested for executing
+    a contraband drop on restricted law enforcement property at the SJSO facility.
+
+    '
+  source_published_at: '2026-05-21'
+  topics:
+  - public_safety
+  - crime
+  sensitivity: medium
+  review_status: pending_review
+- item_id: SJC-SJSO-20260603-0001
+  week_date: 2026-05-21
+  source_id: sjso_news_stories
+  source_name: St. Johns County Sheriff's Office
+  title: St. Johns County inmate charged; woman arrested for executing a contraband
+    drop on restricted law enforcement property
+  summary: 'SJSO inmate Devin Delaney and his girlfriend Jacqueline Mottor, both 20,
+    were charged after planning a contraband drop of nicotine products onto restricted
+    SJSO property. Deputies found Delaney with 14 nicotine pouches; Mottor was arrested
+    for introduction of contraband and trespassing.
+
+    '
+  source_published_at: '2026-05-21T12:00:00Z'
+  topics:
+  - public_safety
+  - crime
+  sensitivity: medium
+  review_status: verified

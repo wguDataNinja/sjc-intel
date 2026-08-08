@@ -1,0 +1,86 @@
+week_start: '2025-08-11'
+week_end: '2025-08-17'
+entries:
+- item_id: SJC-BF-202508-0015
+  week_date: 2025-08-12
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: North Beach Water Meter Upgrades Nearly Complete
+  summary: St. Johns County neared completion of a sweeping water meter upgrade program
+    in the North Beach area, replacing old meters with new smart meters to boost accuracy
+    and conservation following the county's acquisition of the utility system.
+  source_published_at: '2025-08-12'
+  topics:
+  - permits_construction
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-BF-202508-0023
+  week_date: 2025-08-12
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: County Administrator Joy Andrews Sends Community Letter to Residents
+  summary: St. Johns County Administrator Joy Andrews published an August 2025 community
+    letter providing updates and information about how the county is investing in
+    the future, covering key projects, services, and initiatives for residents.
+  source_published_at: '2025-08-12'
+  topics:
+  - general_government
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-BF-202508-0001
+  week_date: 2025-08-15
+  source_id: sjc_property_appraiser
+  source_name: sjc_property_appraiser
+  title: TRIM Notices Mailed Mid-August by St. Johns County Property Appraiser
+  summary: St. Johns County Property Appraiser mailed Truth in Millage (TRIM) notices
+    to all property owners in mid-August 2025, showing proposed property values, proposed
+    millage rates, and rolled-back rates for FY2026, ahead of September budget hearings.
+  source_published_at: '2025-08-15'
+  topics:
+  - taxes_exemptions_trim_vab
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-BF-202508-0002
+  week_date: 2025-08-15
+  source_id: sjc_property_appraiser
+  source_name: sjc_property_appraiser
+  title: Notice of Certification of 2025 Tax Roll
+  summary: The St. Johns County Property Appraiser certified the 2025 tax roll, officially
+    establishing assessed values for all properties in the county for the FY2026 tax
+    year.
+  source_published_at: '2025-08-15'
+  topics:
+  - taxes_exemptions_trim_vab
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-BF-202508-0005
+  week_date: 2025-08-11
+  source_id: sjcsd_main_site
+  source_name: sjcsd_main_site
+  title: Hallowes Cove Academy Opens as St. Johns County's Newest K-8 School for 2025-2026
+  summary: Hallowes Cove Academy, St. Johns County School District's newest K-8 school,
+    opened its doors for the 2025-2026 school year. The school, led by Principal Jessley
+    Hathaway and featuring the Hurricanes mascot, serves students in grades K-8 with
+    extended day programs. The school's dedicated website and branding materials were
+    finalized in April 2025 ahead of the August opening.
+  source_published_at: '2025-08-11'
+  topics:
+  - education
+  - school_capacity
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-BF-202508-0007
+  week_date: 2025-08-15
+  source_id: sjcsd_news
+  source_name: sjcsd_news
+  title: SJCSD Releases Revised Attendance Zoning Proposal Following Community Feedback
+  summary: St. Johns County School District released a revised attendance zoning proposal
+    after receiving community input on initial boundary recommendations. The revised
+    proposal addresses concerns from affected neighborhoods and adjusts proposed zone
+    lines for schools serving the Silverleaf and Nocatee growth corridors.
+  source_published_at: '2025-08-15'
+  topics:
+  - education
+  - school_capacity
+  sensitivity: low
+  review_status: verified

@@ -1,0 +1,22 @@
+month: 2026-07
+weeks: 4
+new_subjects:
+- Bala's Pizza (SilverLeaf second location)
+- SilverLeaf weather/emergency events
+- SilverLeaf K-8 School (School QQ)
+- CR 16A access road
+- NW Sector development pipeline (SilverLeaf area)
+- County 2050 Comprehensive Plan
+- County community services (rural resource center)
+- SR 207 corridor roadwork (Kings Estate / Hilltop)
+search_profiles:
+- Bala's Pizza (SilverLeaf second location)
+- CR 16A access road
+aliases:
+- value: Magnolia Oaks Academy
+  target: SilverLeaf K-8 School (School QQ)
+lanes: []
+timeline_events: 2
+editor_gaps: 11
+false_positives: 0
+findings: 8

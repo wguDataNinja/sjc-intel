@@ -1,0 +1,95 @@
+# Hermes backtest provenance manifest — hermes-sjc-v1
+
+# Anchors the full 66-week Hermes-operated historical replay to a precise
+# input/output state. Created 2026-08-08 during the pre-commit reconciliation
+# (Tasks 27-30 + geographic-registry pass). See reports/30 and
+# final/HERMES_BACKTEST_FINAL_REPORT.md.
+
+run_identity: hermes-sjc-v1
+run_kind: hermes_operated_historical
+period:
+  start: "2025-05-05"
+  end: "2026-08-03"
+  cadence_weeks: 1
+weeks_completed: 66
+
+# ---------------------------------------------------------------------------
+# Input state. The full replay executed on an uncommitted working tree that
+# contained Tasks 27-30 plus the geographic-registry pass. The tree was NOT
+# byte-frozen at run time, so this manifest cannot retroactively byte-prove
+# the exact dirty tree that Hermes saw; it anchors the strongest defensible
+# CURRENT representation of those inputs (verified unchanged since the run)
+# and the earliest known HEAD. Treat these hashes as the authoritative input
+# fingerprint going forward.
+# ---------------------------------------------------------------------------
+base_head: 7f986ba5cadaf2a41e2fc0aa1c377adbfa5fe3af
+input_state_note: >
+  The run executed on a dirty tree containing uncommitted Tasks 27-30 and the
+  geographic-registry pass. No evidence of post-run edits exists. The hashes
+  below fingerprint the current input files; because the run is not
+  deterministically reproducible (LLM reasoning), the exact per-week outputs
+  cannot be re-derived from these inputs alone.
+
+pilot_weeks:
+  - "2025-05-05"
+  - "2025-08-18"
+  - "2025-09-15"
+  - "2025-12-01"
+  - "2026-03-23"
+  - "2026-06-22"
+  - "2026-07-20"
+
+input_hashes:
+  config.yaml: 4614f8741018bdcb
+  seed.yaml: 7aa4196c5fc07378
+  feed/summary.yaml: 35773712ea769a12
+  feed/overrides.yaml: 622cf111bc4974f0
+  feed/weeks_combined_sha256: cef71d069c608b92
+  scripts/hermes_backtest.py: e1a6096d58115822
+  prompts/hermes_historical_weekly_task.md: 52c630d337dde795
+
+# ---------------------------------------------------------------------------
+# Run configuration (snapshot from config.yaml).
+# ---------------------------------------------------------------------------
+run_parameters:
+  budgets:
+    max_model_calls_per_week: 12
+    max_feed_scan_sources: 30
+    max_search_profiles_executed_per_week: 6
+    max_research_escalations_per_week: 2
+    max_research_queries_per_escalation: 6
+    max_proposal_attempts_per_subject_per_week: 1
+    max_retries: 2
+  simulated_acceptance:
+    policy: evaluator_accepts_evidence_backed_conservative
+    allow_sensitivity: ["low"]
+    reject_sensitivity: ["medium", "high"]
+    max_accepted_per_week: 12
+    reviewer: hermes-simulated-evaluator
+  present_day_search:
+    enabled: false
+
+# ---------------------------------------------------------------------------
+# Output anchors (the durable results committed with this manifest).
+# ---------------------------------------------------------------------------
+output_hashes:
+  final/comparison.yaml: 63d52cbee2ef4a47
+  final/HERMES_BACKTEST_FINAL_REPORT.md: 5b9df9c293bf4536
+
+output_summary:
+  resident_coverage_recall: 0.933
+  findings_total: 68
+  accepted_proposals_total: 97
+  editor_gaps_total: 168
+  search_profiles_created: 18
+  lanes_created: 6
+  aliases_learned: ["Magnolia Oaks Academy -> SilverLeaf K-8 School (School QQ)"]
+  weeks_completed: 66
+  subjects_missed:
+    - "First Coast Expressway / I-95 access (no dated feed evidence)"
+    - "school zoning / attendance boundaries (evaluator stop-set, unmatchable)"
+
+# Generated-output policy: the 59 full-run weekly reasoning directories are
+# LLM output and are gitignored (see .gitignore weeks rule); only the 7 pilot
+# weeks are versioned as the reproducible proof. Monthly syntheses, publication
+# snapshots, and this final comparison/report are durable summaries.

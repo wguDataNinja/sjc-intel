@@ -1,0 +1,62 @@
+week_start: '2025-09-01'
+week_end: '2025-09-07'
+entries:
+- item_id: SJC-BF-202509-0001
+  week_date: 2025-09-03
+  source_id: sjc_bcc
+  source_name: sjc_bcc
+  title: 'First Public Hearing: FY2026 Tentative Budget and Proposed Millage Rates'
+  summary: St. Johns County Board of County Commissioners held the first of two required
+    public hearings on September 3, 2025 at 5:01 PM to present the tentative FY2026
+    budget of $1.8 billion and proposed millage rates, including the first property
+    tax rate reduction since FY2021.
+  source_published_at: '2025-09-03'
+  topics:
+  - taxes_exemptions_trim_vab
+  - general_government
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-BF-202509-0018
+  week_date: 2025-09-03
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: 'Inside SJC Episode 6: Storm Debris Cleanup'
+  summary: St. Johns County released Inside SJC Episode 6 covering storm debris cleanup
+    procedures, educating residents on how to properly prepare and dispose of storm
+    debris following tropical weather events during the active 2025 hurricane season.
+  source_published_at: '2025-09-03'
+  topics:
+  - emergency
+  - weather
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-BF-202509-0019
+  week_date: 2025-09-02
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: Notice of Intent to Apply for CDBG-DR Grant Funds (2023/2024 Storms)
+  summary: St. Johns County published a notice of intent to apply for Community Development
+    Block Grant-Disaster Recovery (CDBG-DR) funds through the Rebuild Florida 2023/2024
+    Storms Infrastructure Repair Program, with up to $400 million available for infrastructure
+    repairs following recent storm events.
+  source_published_at: '2025-09-02'
+  topics:
+  - emergency
+  - development
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-BF-202509-0005
+  week_date: 2025-09-01
+  source_id: sjcsd_main_site
+  source_name: sjcsd_main_site
+  title: Hallowes Cove Academy Welcomes First Students for Inaugural School Year
+  summary: Hallowes Cove Academy, St. Johns County School District's newest K-8 school,
+    welcomed its first cohort of students for the 2025-2026 school year in September.
+    Led by Principal Jessley Hathaway with the Hurricanes mascot, the school serves
+    grades K-8 with extended day programs in the Silverleaf area.
+  source_published_at: '2025-09-01'
+  topics:
+  - education
+  - school_capacity
+  sensitivity: low
+  review_status: verified

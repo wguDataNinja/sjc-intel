@@ -1,0 +1,122 @@
+week_start: '2025-08-04'
+week_end: '2025-08-10'
+entries:
+- item_id: SJC-BF-202508-0009
+  week_date: 2025-08-07
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: Precautionary Boil Water Notice for Sawmill Lakes in Ponte Vedra
+  summary: St. Johns County Utility Department issued a precautionary boil water notice
+    for 20 residents on Sawmill Lakes Blvd (addresses 128-179) in Ponte Vedra on August
+    7, 2025, due to equipment failure. Residents were notified via door tags. The
+    notice required boiling water for one minute before consumption and remained in
+    effect until laboratory tests confirmed safe drinking water, typically a minimum
+    of two days.
+  source_published_at: '2025-08-07'
+  topics:
+  - emergency_weather_fire_flood
+  - permits_construction
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-BF-202508-0010
+  week_date: 2025-08-09
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: Traffic Pattern Shift Scheduled for CR 210 Widening Project on Aug. 15
+  summary: St. Johns County announced a traffic pattern shift on County Road 210 as
+    part of the ongoing widening project. Beginning the night of Friday, Aug. 15,
+    2025, both westbound and eastbound lanes of CR 210 were transitioned from the
+    existing roadway to newly constructed roadway just east of Stone Creek Circle,
+    returning to the existing roadway at the intersection with Cimarrone Boulevard.
+  source_published_at: '2025-08-09'
+  topics:
+  - transportation
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-BF-202508-0011
+  week_date: 2025-08-08
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: County Encourages Alternate Access Points to Beachwalk During CR 210 Widening
+  summary: St. Johns County encouraged drivers accessing the Beachwalk community to
+    consider alternate routes during the ongoing County Road 210 widening project.
+    Motorists were reminded to use caution and follow posted signage.
+  source_published_at: '2025-08-08'
+  topics:
+  - transportation
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-BF-202508-0012
+  week_date: 2025-08-04
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: Intersection Improvements Advance at Pine Island Road and U.S. 1
+  summary: St. Johns County advanced a significant intersection improvement project
+    at Pine Island Road and U.S. 1, enhancing safety and traffic flow in the growing
+    southern corridor. The project was nearly complete by early August 2025.
+  source_published_at: '2025-08-04'
+  topics:
+  - transportation
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-BF-202508-0017
+  week_date: 2025-08-05
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: Update on Proposed Magic Beach Motel Demolition
+  summary: St. Johns County announced it would issue a demolition permit for the Magic
+    Beach Motel at 50 Vilano Road in accordance with state law. The property, constructed
+    in 1951 and designated in 2021 as a Significant Cultural Resource, is partially
+    located seaward of the Coastal Construction Control Line. The county stated it
+    was legally prohibited from denying or conditioning demolition.
+  source_published_at: '2025-08-05'
+  topics:
+  - permits_construction
+  - development
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-BF-202508-0018
+  week_date: 2025-08-04
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: Solomon Calhoun Community Center Field Upgrade Nearly Complete
+  summary: A major upgrade at Solomon Calhoun Community Center in St. Augustine was
+    nearing completion, with installation of an artificial turf field to support year-round
+    youth sports. The project represents a significant investment in community recreation
+    infrastructure.
+  source_published_at: '2025-08-04'
+  topics:
+  - development
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-BF-202508-0019
+  week_date: 2025-08-05
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: SJC Launches New Featured Projects Web Page to Enhance Government Transparency
+  summary: St. Johns County launched a new Featured Projects web page providing a
+    dynamic platform with updates, budget details, and visual progress on major county
+    projects. The page covers road widenings, infrastructure improvements, parks,
+    public safety facilities, and more, allowing residents to track project status.
+  source_published_at: '2025-08-05'
+  topics:
+  - general_government
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-BF-202508-0022
+  week_date: 2025-08-05
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: 'Inside SJC Episode 5: Notifying Residents Using Alert St. Johns Emergency
+    Notification System'
+  summary: St. Johns County launched Inside SJC Episode 5, highlighting how the county
+    notifies residents in real-time about possible threats to public safety using
+    Alert St. Johns — covering severe weather, unexpected road closures, water advisories,
+    missing persons, or evacuations. The episode educates residents on how to sign
+    up for emergency alerts.
+  source_published_at: '2025-08-05'
+  topics:
+  - emergency_weather_fire_flood
+  - public_safety_livability
+  sensitivity: low
+  review_status: verified

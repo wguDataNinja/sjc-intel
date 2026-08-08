@@ -1,0 +1,6 @@
+profile: "SilverLeaf grocery center / possible Harris Teeter"
+queries: ['"Harris Teeter" SilverLeaf']
+results:
+  - feed_id: SJC-SL-20260704-0005
+    title: "Two new supermarkets proposed, one in a SilverLeaf center"
+    matched: true

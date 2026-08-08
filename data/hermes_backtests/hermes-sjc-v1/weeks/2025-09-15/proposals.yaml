@@ -1,0 +1,30 @@
+- proposal_id: HP-20250915-MIL-SCHOOLQQ
+  type: milestone
+  subject: "SilverLeaf K-8 School (School QQ)"
+  simulated_week: "2025-09-15"
+  evidence: [{feed_id: SJC-BF-202509-0006, source_date: "2025-09-15"}]
+  anticipated_milestones: [construction]
+  rationale: "District confirms under-construction status for 2026-27 opening."
+  review_status: proposed
+- proposal_id: HP-20250915-ENT-BUDGET
+  type: entity
+  subject: "County FY2026 budget and property taxes"
+  simulated_week: "2025-09-15"
+  evidence: [{feed_id: SJC-BF-202509-0003, source_date: "2025-09-16"}]
+  resident_impact: "Property-tax direction affects every SilverLeaf household."
+  expected_duration: "annual cycle"
+  anticipated_milestones: [adoption]
+  proposed_searches: ['"St. Johns County" budget millage', '"TRIM" "St. Johns County"']
+  proposed_sources: [sjc_budget_transparency]
+  cost: 1
+  confidence: high
+  rationale: "Recurring annual budget/tax subject with household impact."
+  review_status: proposed
+- proposal_id: HP-20250915-TL-SCHOOLQQ
+  type: timeline_reconciliation
+  subject: "SilverLeaf K-8 School (School QQ)"
+  simulated_week: "2025-09-15"
+  evidence: [{feed_id: SJC-BF-202509-0006, source_date: "2025-09-15"}]
+  anticipated_milestones: [under_construction]
+  rationale: "Advance the school timeline with the under-construction milestone."
+  review_status: proposed

@@ -1,0 +1,12 @@
+- coverage_gap_id: CG-20250818-0001
+  coverage_lane: roads and mobility
+  subject: "CR 2209 connector"
+  resident_question: "When will the new SilverLeaf-to-IGP road open?"
+  current_state: "Construction began; opening date unknown."
+  why_this_is_a_gap: "Direct SilverLeaf access route deserves persistent milestone monitoring."
+  last_meaningful_update: "2025-08-20"
+  expected_next_milestone: "opening"
+  existing_search_profiles: []
+  recommended_research: "Follow county public works and FDOT."
+  recommended_priority: high
+  recommended_action: CREATE_ENTITY_PROPOSAL

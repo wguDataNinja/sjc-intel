@@ -1,0 +1,102 @@
+schema_version: "1.0"
+backtest_id: hermes-sjc-v1
+mode: hermes_operated_historical
+start: "2025-05-05"
+end: "2026-08-03"
+cadence_weeks: 1
+
+# Full-period replay instructions live in reports/30 (Task 30). The pilot weeks
+# below are the small proof sequence executed during preparation.
+pilot_weeks:
+  - "2025-05-05"
+  - "2025-08-18"
+  - "2025-09-15"
+  - "2025-12-01"
+  - "2026-03-23"
+  - "2026-06-22"
+  - "2026-07-20"
+
+# Budget and run controls (Task 30 §22). Hermes must not exceed these.
+budgets:
+  max_model_calls_per_week: 12
+  max_feed_scan_sources: 30
+  max_search_profiles_executed_per_week: 6
+  max_research_escalations_per_week: 2
+  max_research_queries_per_escalation: 6
+  max_proposal_attempts_per_subject_per_week: 1
+  max_retries: 2
+  stop_on_state_corruption: true
+  stop_on_leakage: true
+  stop_on_production_mutation: true
+
+# Simulated acceptance policy (Task 30 §11). Conservative rules approximating
+# what a human reviewer would approve. Publication/sensitive decisions excluded.
+simulated_acceptance:
+  policy: evaluator_accepts_evidence_backed_conservative
+  require_evidence: true
+  require_resident_impact: true
+  allow_sensitivity: ["low"]
+  reject_sensitivity: ["medium", "high"]
+  allow_identity_conflict: false
+  allow_duplicate_subject: false
+  max_accepted_per_week: 12
+  reviewer: hermes-simulated-evaluator
+
+# Present-day retrieval is OFF for the full replay by default. When enabled,
+# results must be date-cutoff filtered and labeled retrospective (never
+# historically reproducible evidence). Task 30 §6 / §9.
+present_day_search:
+  enabled: false
+  rule: "Retrospective search results may only be used as bounded research leads
+    with a publication cutoff at the simulated week end; they are recorded in
+    research.yaml as retrospective_evidence and are never treated as evidence
+    Hermes would have seen that week."
+
+# Hidden comparison set (Task 30 §12, §14). Hermes must never see this list.
+hidden_evaluator:
+  separated: true
+  access: "evaluate_hermes_backtest.py only; never written into a Hermes week packet"
+  subjects:
+    - subject: "School QQ / Magnolia Oaks Academy"
+      priority: high
+    - subject: "CR 2209 connector"
+      priority: high
+    - subject: "CR 210 widening"
+      priority: high
+    - subject: "SR 16 / International Golf Parkway improvements"
+      priority: high
+    - subject: "First Coast Expressway / I-95 access"
+      priority: high
+    - subject: "Baptist SilverLeaf campus"
+      priority: high
+    - subject: "Publix / Silverleaf Market"
+      priority: high
+    - subject: "SilverLeaf grocery center / possible Harris Teeter"
+      priority: high
+    - subject: "SR 207 Water Reclamation Facility"
+      priority: high
+    - subject: "Phase III water shortage / irrigation restrictions"
+      priority: high
+    - subject: "school zoning / attendance boundaries"
+      priority: medium
+    - subject: "hurricane preparedness"
+      priority: medium
+  lanes:
+    - subject: "schools and families"
+      kind: lane
+      priority: high
+    - subject: "roads and mobility"
+      kind: lane
+      priority: high
+    - subject: "retail and amenities"
+      kind: lane
+      priority: high
+    - subject: "healthcare and services"
+      kind: lane
+      priority: high
+    - subject: "utilities and household operations"
+      kind: lane
+      priority: high
+    - subject: "preparedness"
+      kind: lane
+      priority: medium

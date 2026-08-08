@@ -1,0 +1,65 @@
+- proposal_id: HP-20250818-ENT-CR2209
+  type: entity
+  subject: "CR 2209 connector"
+  simulated_week: "2025-08-18"
+  evidence: [{feed_id: SJC-BF-202508-0013, source_date: "2025-08-20"}]
+  resident_impact: "A direct SilverLeaf access route to IGP/I-95 changes the daily commute."
+  expected_duration: "multi-year"
+  anticipated_milestones: [traffic shift, opening, completion]
+  proposed_searches: ['"CR 2209" St. Johns', '"SilverLeaf Parkway" roadwork']
+  proposed_sources: [sjc_county_news, fdot_district_two_nflroads]
+  cost: 2
+  confidence: high
+  rationale: "Major corridor project directly serving SilverLeaf."
+  review_status: proposed
+- proposal_id: HP-20250818-SP-CR2209
+  type: search_profile
+  subject: "CR 2209 connector"
+  simulated_week: "2025-08-18"
+  evidence: [{feed_id: SJC-BF-202508-0013, source_date: "2025-08-20"}]
+  resident_impact: "Recurring profile keeps construction-to-opening milestones visible."
+  expected_duration: "multi-year"
+  proposed_searches: ['"CR 2209" St. Johns', '"International Golf Parkway" SilverLeaf']
+  cost: 2
+  confidence: high
+  rationale: "Monitor corridor construction and opening."
+  review_status: proposed
+- proposal_id: HP-20250818-ENT-SR16IGP
+  type: entity
+  subject: "SR 16 / International Golf Parkway improvements"
+  simulated_week: "2025-08-18"
+  evidence: [{feed_id: SJC-BF-202508-0020, source_date: "2025-08-22"}]
+  resident_impact: "SilverLeaf's western access and I-95 commute corridor."
+  expected_duration: "multi-year"
+  anticipated_milestones: [groundbreaking, completion]
+  proposed_searches: ['"SR 16" widening St. Johns', '"International Golf Parkway" improvements']
+  proposed_sources: [fdot_district_two_nflroads]
+  cost: 2
+  confidence: high
+  rationale: "Durable corridor subject for commute-impact monitoring."
+  review_status: proposed
+- proposal_id: HP-20250818-LANE-ROADS
+  type: coverage_lane
+  subject: "roads and mobility"
+  simulated_week: "2025-08-18"
+  evidence: [{feed_id: SJC-BF-202508-0013, source_date: "2025-08-20"}]
+  resident_impact: "Roads are a persistent commute concern."
+  rationale: "Durable editorial lane for roads and mobility."
+  review_status: proposed
+- proposal_id: HP-20250818-MIL-SCHOOLQQ
+  type: milestone
+  subject: "SilverLeaf K-8 School (School QQ)"
+  simulated_week: "2025-08-18"
+  evidence: [{feed_id: SJC-BF-202508-0008, source_date: "2025-08-20"}]
+  anticipated_milestones: [attendance boundaries]
+  milestone_due: {attendance boundaries: "2025-08-25"}
+  rationale: "Attendance zoning plans for 2025-26 finalized; boundary milestone realized."
+  review_status: proposed
+- proposal_id: HP-20250818-TL-CR2209
+  type: timeline_reconciliation
+  subject: "CR 2209 connector"
+  simulated_week: "2025-08-18"
+  evidence: [{feed_id: SJC-BF-202508-0013, source_date: "2025-08-20"}]
+  anticipated_milestones: [construction_started]
+  rationale: "Start the CR 2209 timeline at construction."
+  review_status: proposed

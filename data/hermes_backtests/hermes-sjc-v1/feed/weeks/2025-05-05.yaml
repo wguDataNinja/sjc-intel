@@ -1,0 +1,19 @@
+week_start: '2025-05-05'
+week_end: '2025-05-11'
+entries:
+- item_id: SJC-SL-20260704-0002
+  week_date: 2025-05-07
+  source_id: st_johns_citizen
+  source_name: St. Johns Citizen
+  title: 'Nailed it: St. Johns officials give sneak peek of new Silverleaf K-8 school'
+  summary: A new 190,000 sq. ft., three-story K-8 school in SilverLeaf reached its
+    structural milestone with a topping-out ceremony. The 73-classroom school will
+    serve ~1,500 students when it opens for the 2026–2027 school year, part of a district-wide
+    push to alleviate overcrowding — over 13,000 students countywide are currently
+    in portable classrooms.
+  source_published_at: '2025-05-07'
+  topics:
+  - development
+  - education
+  sensitivity: low
+  review_status: verified

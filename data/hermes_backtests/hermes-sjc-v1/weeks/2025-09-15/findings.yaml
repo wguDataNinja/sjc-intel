@@ -1,0 +1,20 @@
+- finding_id: F-20250915-0001
+  subject: "SilverLeaf K-8 School (School QQ)"
+  title: "SJCSD: School QQ under construction for 2026-2027; board reviews enrollment capacity"
+  summary: "The district confirmed Schools QQ (SilverLeaf) and RR are under construction for a 2026-2027 opening and reviewed enrollment and capacity needs for the growing corridor."
+  source: sjcsd_new_schools
+  source_date: "2025-09-15"
+  feed_id: SJC-BF-202509-0006
+  lane: schools and families
+  resident_importance: high
+  evidence: [{feed_id: SJC-BF-202509-0006, source_date: "2025-09-15"}]
+- finding_id: F-20250915-0002
+  subject: "County FY2026 budget and property taxes"
+  title: "County adopts $1.8B FY2026 budget with first property-tax rate cut since FY2021"
+  summary: "The county adopted a $1.8 billion FY2026 budget including the first property-tax rate reduction since FY2021; TRIM season hearings ran through September."
+  source: sjc_county_news
+  source_date: "2025-09-16"
+  feed_id: SJC-BF-202509-0003
+  lane: countywide household
+  resident_importance: high
+  evidence: [{feed_id: SJC-BF-202509-0003, source_date: "2025-09-16"}]

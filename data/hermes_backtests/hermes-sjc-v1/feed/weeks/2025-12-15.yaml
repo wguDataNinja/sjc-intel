@@ -1,0 +1,19 @@
+week_start: '2025-12-15'
+week_end: '2025-12-21'
+entries:
+- item_id: SJC-UTIL-20260603-0003
+  week_date: 2025-12-19
+  source_id: sjc_utility_department
+  source_name: St. Johns County Utility Department
+  title: $191 Million SR 207 Water Reclamation Facility Phase 2 Approved
+  summary: 'St. Johns County BOCC approved Phase 2 of the State Road 207 Water Reclamation
+    Facility Project, awarding a $191.8M design-build agreement with Jacobs Project
+    Management Co. for the new facility and associated improvements.
+
+    '
+  source_published_at: '2025-12-19'
+  topics:
+  - infrastructure
+  - county_government
+  sensitivity: low
+  review_status: verified

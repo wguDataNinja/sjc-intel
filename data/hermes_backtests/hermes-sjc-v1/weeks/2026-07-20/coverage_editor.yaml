@@ -1,0 +1,12 @@
+- coverage_gap_id: CG-20260720-0001
+  coverage_lane: schools and families
+  subject: "SilverLeaf K-8 School (School QQ) / Magnolia Oaks Academy"
+  resident_question: "When exactly does Magnolia Oaks Academy open, and what is the attendance zone?"
+  current_state: "Name confirmed; opening set for 2026-27."
+  why_this_is_a_gap: "Final opening date and zone are the remaining school questions."
+  last_meaningful_update: "2026-07-22"
+  expected_next_milestone: "opening"
+  existing_search_profiles: ["SilverLeaf K-8 School (School QQ)"]
+  recommended_research: "Confirm opening date from district."
+  recommended_priority: high
+  recommended_action: EXPECT_MILESTONE

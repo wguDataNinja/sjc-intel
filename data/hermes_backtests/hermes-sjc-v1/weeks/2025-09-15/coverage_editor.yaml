@@ -1,0 +1,12 @@
+- coverage_gap_id: CG-20250915-0001
+  coverage_lane: schools and families
+  subject: "SilverLeaf K-8 School (School QQ)"
+  resident_question: "Has the new school been named, and what is the attendance zone?"
+  current_state: "Under construction; naming process ongoing; opening 2026-27."
+  why_this_is_a_gap: "Naming and zone determine school assignments."
+  last_meaningful_update: "2025-09-15"
+  expected_next_milestone: "official naming"
+  existing_search_profiles: ["SilverLeaf K-8 School (School QQ)"]
+  recommended_research: "Follow district naming engagement."
+  recommended_priority: high
+  recommended_action: EXPECT_MILESTONE

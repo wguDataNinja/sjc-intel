@@ -1,0 +1,100 @@
+week_start: '2025-12-01'
+available_on: '2025-12-08'
+accepted:
+- proposal_id: HP-20251201-ENT-GROCERY
+  type: entity
+  subject: SilverLeaf grocery center / possible Harris Teeter
+  simulated_week: '2025-12-01'
+  evidence:
+  - feed_id: SJC-SL-20260704-0005
+    source_date: '2025-12-02'
+  resident_impact: A second major grocer in or near SilverLeaf changes grocery competition
+    and convenience.
+  expected_duration: multi-year
+  anticipated_milestones:
+  - approval
+  - construction
+  - opening
+  proposed_searches:
+  - '"Harris Teeter" SilverLeaf'
+  - '"SilverLeaf" supermarket'
+  - '"CR 210" grocery'
+  proposed_sources:
+  - sjc_pza_boards
+  cost: 2
+  confidence: medium
+  risks:
+  - Tenant (Harris Teeter) not confirmed by first-party source; may be another grocer.
+  rationale: Confirmed project (grocery-anchored center proposed) with unconfirmed
+    tenant; track as qualified subject.
+  review_status: accepted
+  reviewer: hermes-simulated-evaluator
+- proposal_id: HP-20251201-SP-GROCERY
+  type: search_profile
+  subject: SilverLeaf grocery center / possible Harris Teeter
+  simulated_week: '2025-12-01'
+  evidence:
+  - feed_id: SJC-SL-20260704-0005
+    source_date: '2025-12-02'
+  resident_impact: Keep tenant/approval/opening visible.
+  expected_duration: multi-year
+  proposed_searches:
+  - '"Harris Teeter" SilverLeaf'
+  - '"SilverLeaf Parkway" grocery'
+  - '"CR 16A" grocery SilverLeaf'
+  cost: 2
+  confidence: medium
+  rationale: Qualified subject profile with uncertainty-preserving queries.
+  review_status: accepted
+  reviewer: hermes-simulated-evaluator
+- proposal_id: HP-20251201-LANE-RETAIL
+  type: coverage_lane
+  subject: retail and amenities
+  simulated_week: '2025-12-01'
+  evidence:
+  - feed_id: SJC-SL-20260704-0005
+    source_date: '2025-12-02'
+  resident_impact: Retail growth is a persistent resident concern.
+  rationale: Durable editorial lane for retail and amenities.
+  review_status: accepted
+  reviewer: hermes-simulated-evaluator
+- proposal_id: HP-20251201-MIL-GROCERY
+  type: milestone
+  subject: SilverLeaf grocery center / possible Harris Teeter
+  simulated_week: '2025-12-01'
+  evidence:
+  - feed_id: SJC-SL-20260704-0005
+    source_date: '2025-12-02'
+  anticipated_milestones:
+  - approval
+  - construction
+  - opening
+  milestone_due:
+    approval: '2026-04-01'
+    construction: '2026-07-01'
+    opening: '2026-12-01'
+  rationale: Expected approval/construction/opening milestones.
+  review_status: accepted
+  reviewer: hermes-simulated-evaluator
+rejected: []
+accepted_ids:
+- HP-20251201-ENT-GROCERY
+- HP-20251201-SP-GROCERY
+- HP-20251201-LANE-RETAIL
+- HP-20251201-MIL-GROCERY
+rejected_ids: []
+findings:
+- finding_id: F-20251201-0001
+  subject: SilverLeaf grocery center / possible Harris Teeter
+  title: Two new supermarkets proposed for St. Johns County, one in a SilverLeaf center
+  summary: Two 61,000 sq ft Kroger-owned supermarkets are proposed, one at Veterans
+    Parkway/CR 210 West and one in a SilverLeaf shopping center. The reporting names
+    Harris Teeter, but the tenant is not officially confirmed by the company.
+  source: st_johns_citizen
+  source_date: '2025-12-02'
+  feed_id: SJC-SL-20260704-0005
+  lane: retail and amenities
+  resident_importance: high
+  evidence:
+  - feed_id: SJC-SL-20260704-0005
+    source_date: '2025-12-02'

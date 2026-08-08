@@ -1,0 +1,77 @@
+week_start: '2025-08-18'
+entries:
+- item_id: SJC-BF-202508-0013
+  week_date: 2025-08-20
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: County Road 2209 Roadway Expansion Underway in St. Johns County
+  summary: St. Johns County commenced construction on a major roadway expansion project
+    along County Road 2209, building a new four-lane corridor between Silverleaf Parkway
+    and State Road 16 to improve traffic flow in the northern part of the county.
+    The project supports long-term mobility needs and upholds the county's obligations
+    to FDOT to alleviate traffic challenges on I-95.
+  source_published_at: '2025-08-20'
+  topics:
+  - transportation
+  - development
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-BF-202508-0014
+  week_date: 2025-08-18
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: Marsh Landing Wastewater Plant Receives Major Electrical Upgrade
+  summary: St. Johns County moved forward with a critical infrastructure upgrade at
+    the Marsh Landing Wastewater Plant in Ponte Vedra. The electrical upgrade project
+    supports future growth and resilience, replacing aging electrical systems to improve
+    reliability and capacity at the facility.
+  source_published_at: '2025-08-18'
+  topics:
+  - permits_construction
+  - development
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-BF-202508-0020
+  week_date: 2025-08-22
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: State Road 16 Widening Project from International Golf Parkway to I-95 Public
+    Hearing
+  summary: FDOT hosted hybrid public hearings to discuss the proposed State Road 16
+    widening project from International Golf Parkway to I-95. A virtual public hearing
+    was held Aug. 26, 2025 and an in-person hearing on Aug. 28, 2025 at the World
+    Golf Village Renaissance, with registration available at nflroads.com.
+  source_published_at: '2025-08-22'
+  topics:
+  - transportation
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-BF-202508-0024
+  week_date: 2025-08-20
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: St. Johns County Appoints New Office of Management & Budget Director
+  summary: St. Johns County appointed Wade Schroeder as the new Office of Management
+    & Budget Director. Schroeder had served as the OMB Assistant Director since 2016.
+    The appointment was made during the Aug. 19, 2025 Board of County Commissioners
+    Regular Meeting.
+  source_published_at: '2025-08-20'
+  topics:
+  - general_government
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-BF-202508-0008
+  week_date: 2025-08-20
+  source_id: sjcsd_news
+  source_name: sjcsd_news
+  title: SJCSD Presents Final Attendance Zoning Plans for 2025-2026 School Year
+  summary: St. Johns County School District presented final attendance zoning plans
+    establishing school attendance boundaries for the 2025-2026 school year. The plans
+    incorporate adjustments for the opening of Hallowes Cove Academy and address capacity
+    needs across the district's growing areas including Silverleaf and Nocatee.
+  source_published_at: '2025-08-20'
+  topics:
+  - education
+  - school_capacity
+  sensitivity: low
+  review_status: verified

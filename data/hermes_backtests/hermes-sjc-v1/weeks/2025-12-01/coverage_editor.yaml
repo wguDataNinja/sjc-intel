@@ -1,0 +1,12 @@
+- coverage_gap_id: CG-20251201-0001
+  coverage_lane: retail and amenities
+  subject: "SilverLeaf grocery center / possible Harris Teeter"
+  resident_question: "Is a second grocer really coming to SilverLeaf, and when?"
+  current_state: "Project proposed and under review; tenant identity unconfirmed."
+  why_this_is_a_gap: "Grocery competition is high-value resident knowledge; identity ambiguity needs tracking."
+  last_meaningful_update: "2025-12-02"
+  expected_next_milestone: "approval"
+  existing_search_profiles: []
+  recommended_research: "Research escalation: confirm project vs tenant identity."
+  recommended_priority: high
+  recommended_action: CREATE_ENTITY_PROPOSAL

@@ -1,0 +1,18 @@
+week_start: '2025-10-27'
+week_end: '2025-11-02'
+entries:
+- item_id: SJC-SL-20260704-0004
+  week_date: 2025-10-28
+  source_id: st_johns_citizen
+  source_name: St. Johns Citizen
+  title: 'Road relief: Here''s your first look at St. Johns County''s newest highway'
+  summary: County Road 2209 opened October 28, 2025, connecting International Golf
+    Parkway to SilverLeaf Parkway with a four-lane divided roadway spanning three
+    miles. The new route aims to relieve congestion in the rapidly growing area, particularly
+    around Tocoi Creek High School which serves over 2,700 students.
+  source_published_at: '2025-10-28'
+  topics:
+  - infrastructure
+  - transportation
+  sensitivity: low
+  review_status: verified

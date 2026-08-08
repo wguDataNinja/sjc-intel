@@ -1,0 +1,21 @@
+week_start: '2025-11-24'
+week_end: '2025-11-30'
+entries:
+- item_id: SJC-SJSO-20260603-0004
+  week_date: 2025-11-25
+  source_id: sjso_news_stories
+  source_name: St. Johns County Sheriff's Office
+  title: Arrest made in connection to the 2023 double murders of Cody Bennett and
+    Tre' Lyons
+  summary: 'SJSO arrested Derrick Walden, 43, on two counts of first-degree murder
+    for the 2023 shooting deaths of Cody Bennett, 21, and Tre'' Lyons, 22, in West
+    Augustine. Walden was already serving a federal sentence on an unrelated firearm
+    charge and will be transported to Florida to face the murder charges.
+
+    '
+  source_published_at: '2025-11-25T12:00:00Z'
+  topics:
+  - public_safety
+  - crime
+  sensitivity: high
+  review_status: verified

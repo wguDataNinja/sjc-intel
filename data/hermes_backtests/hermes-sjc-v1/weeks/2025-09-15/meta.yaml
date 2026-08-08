@@ -1,0 +1,5 @@
+backtest_id: hermes-sjc-v1
+week_start: '2025-09-15'
+week_end: '2025-09-21'
+status: completed
+visible_state_cutoff: '2025-09-15'

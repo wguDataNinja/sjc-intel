@@ -1,0 +1,9 @@
+profile: "SilverLeaf K-8 School (School QQ)"
+queries: ['"School QQ" St. Johns', '"SilverLeaf" K-8 school']
+results:
+  - feed_id: SJC-BF-202509-0006
+    title: "SJCSD Provides Construction Update on K-8 Schools QQ and RR"
+    matched: true
+  - feed_id: SJC-BF-202509-0007
+    title: "SJCSD School Board Reviews Enrollment Data and Capacity Needs"
+    matched: true

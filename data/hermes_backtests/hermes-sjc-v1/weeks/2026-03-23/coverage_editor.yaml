@@ -1,0 +1,12 @@
+- coverage_gap_id: CG-20260323-0001
+  coverage_lane: retail and amenities
+  subject: "Publix / Silverleaf Market"
+  resident_question: "What else is opening around the new Publix?"
+  current_state: "Publix open; center tenant mix growing."
+  why_this_is_a_gap: "Anchor-adjacent retail growth is daily-life change."
+  last_meaningful_update: "2026-03-26"
+  expected_next_milestone: "tenant announcements"
+  existing_search_profiles: []
+  recommended_research: "Monitor center tenant reporting."
+  recommended_priority: medium
+  recommended_action: ADD_SEARCH_PROFILE

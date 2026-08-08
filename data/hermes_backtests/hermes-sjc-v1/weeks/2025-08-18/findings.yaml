@@ -1,0 +1,30 @@
+- finding_id: F-20250818-0001
+  subject: "CR 2209 connector"
+  title: "County starts CR 2209 four-lane expansion between SilverLeaf Parkway and SR 16"
+  summary: "The county began constructing a new four-lane corridor along CR 2209 between SilverLeaf Parkway and State Road 16 to relieve congestion and support SilverLeaf growth."
+  source: sjc_county_news
+  source_date: "2025-08-20"
+  feed_id: SJC-BF-202508-0013
+  lane: roads and mobility
+  resident_importance: high
+  evidence: [{feed_id: SJC-BF-202508-0013, source_date: "2025-08-20"}]
+- finding_id: F-20250818-0002
+  subject: "SR 16 / International Golf Parkway improvements"
+  title: "FDOT holds SR 16 widening hearings; county breaks ground on SR 16/IGP improvements"
+  summary: "FDOT held public hearings on widening SR 16 from IGP to I-95, and the county broke ground on $25M SR 16/IGP intersection improvements."
+  source: sjc_county_news
+  source_date: "2025-08-22"
+  feed_id: SJC-BF-202508-0020
+  lane: roads and mobility
+  resident_importance: high
+  evidence: [{feed_id: SJC-BF-202508-0020, source_date: "2025-08-22"}]
+- finding_id: F-20250818-0003
+  subject: "SilverLeaf K-8 School (School QQ)"
+  title: "SJCSD finalizes 2025-26 attendance zoning plans"
+  summary: "The district finalized attendance zoning plans for 2025-26, incorporating growth in SilverLeaf and Nocatee."
+  source: sjcsd_news
+  source_date: "2025-08-20"
+  feed_id: SJC-BF-202508-0008
+  lane: schools and families
+  resident_importance: medium
+  evidence: [{feed_id: SJC-BF-202508-0008, source_date: "2025-08-20"}]

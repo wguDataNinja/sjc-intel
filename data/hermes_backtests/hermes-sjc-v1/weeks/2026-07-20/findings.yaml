@@ -1,0 +1,20 @@
+- finding_id: F-20260720-0001
+  subject: "SilverLeaf K-8 School (School QQ)"
+  title: "Magnolia Oaks Academy set to open in SilverLeaf for 2026-2027"
+  summary: "The district's SilverLeaf K-8 campus is now named Magnolia Oaks Academy and is set to open for the 2026-2027 school year. This reconciles the placeholder School QQ / SilverLeaf K-8 with the official name."
+  source: news4jax
+  source_date: "2026-07-22"
+  feed_id: OV-20260722-MAGNOLIA
+  lane: schools and families
+  resident_importance: high
+  evidence: [{feed_id: OV-20260722-MAGNOLIA, source_date: "2026-07-22"}]
+- finding_id: F-20260720-0002
+  subject: "CR 16A access road"
+  title: "CR 16A closures and detours for upcoming weekends"
+  summary: "County Road 16A, a SilverLeaf access road, will close with detours over consecutive July/August weekends."
+  source: sjc_county_news
+  source_date: "2026-07-20"
+  feed_id: SJC-CN-20260802-0001
+  lane: roads and mobility
+  resident_importance: high
+  evidence: [{feed_id: SJC-CN-20260802-0001, source_date: "2026-07-20"}]

@@ -1,0 +1,82 @@
+week_start: '2025-09-15'
+week_end: '2025-09-21'
+entries:
+- item_id: SJC-BF-202509-0002
+  week_date: 2025-09-16
+  source_id: sjc_bcc
+  source_name: sjc_bcc
+  title: 'Second Public Hearing: Final FY2026 Budget Adoption and Millage Rate Resolution'
+  summary: St. Johns County Board of County Commissioners held the second public hearing
+    and final adoption of the FY2026 budget on September 16, 2025 at 5:01 PM, approving
+    the $1.8 billion budget with property tax reduction, the first such reduction
+    since FY2021.
+  source_published_at: '2025-09-16'
+  topics:
+  - taxes_exemptions_trim_vab
+  - general_government
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-BF-202509-0003
+  week_date: 2025-09-16
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: 'Press Release: SJC Adopts $1.8 Billion FY2026 Budget with Historic Property
+    Tax Reduction'
+  summary: St. Johns County issued a press release announcing the Board of County
+    Commissioners' adoption of the $1.8 billion FY2026 budget, highlighted by the
+    first property tax rate reduction since FY2021, historic investments in public
+    safety, infrastructure, and quality of life projects.
+  source_published_at: '2025-09-16'
+  topics:
+  - general_government
+  - taxes_exemptions_trim_vab
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-BF-202509-0015
+  week_date: 2025-09-17
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: Proposed Updates to Impact Fees
+  summary: St. Johns County proposed updates to impact fees, including the introduction
+    of a new conservation impact fee and affordable housing discounts, designed to
+    align fees with current growth and infrastructure costs.
+  source_published_at: '2025-09-17'
+  topics:
+  - development
+  - government
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-BF-202509-0007
+  week_date: 2025-09-15
+  source_id: sjcsd_main_site
+  source_name: sjcsd_main_site
+  title: SJCSD School Board Reviews Enrollment Data and Capacity Needs for Growing
+    Areas
+  summary: St. Johns County School District board members reviewed fall enrollment
+    data and capacity utilization across the district during the first month of the
+    2025-2026 school year. The review informed planning for attendance zone adjustments
+    and future school construction priorities, particularly in the Silverleaf and
+    Nocatee corridors where enrollment continues to outpace projections.
+  source_published_at: '2025-09-15'
+  topics:
+  - education
+  - school_capacity
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-BF-202509-0006
+  week_date: 2025-09-15
+  source_id: sjcsd_new_schools
+  source_name: sjcsd_new_schools
+  title: SJCSD Provides Construction Update on K-8 Schools QQ and RR in Silverleaf
+    and Nocatee
+  summary: 'St. Johns County School District provided an update on two new K-8 schools
+    under construction: School QQ in the Silverleaf DRI (Parcel 29C) and School RR
+    in Nocatee''s Seabrook area (formerly Snowden Village). Both schools have a capacity
+    of approximately 1,500 students each and are projected to open for the 2026-2027
+    school year.'
+  source_published_at: '2025-09-15'
+  topics:
+  - education
+  - school_capacity
+  sensitivity: low
+  review_status: verified

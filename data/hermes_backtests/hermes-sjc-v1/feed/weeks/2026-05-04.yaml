@@ -1,0 +1,36 @@
+week_start: '2026-05-04'
+week_end: '2026-05-10'
+entries:
+- item_id: SJC-BF-202605-0020
+  week_date: 2026-05-05
+  source_id: sjso_news_stories
+  source_name: St. Johns County Sheriff's Office
+  title: SJSO Lifesaving Rescue Highlights Programs for Vulnerable Individuals
+  summary: 'A lifesaving rescue by SJSO highlighted the importance of programs designed
+    to locate vulnerable individuals and prevent future emergencies, including Project
+    Lifesaver.
+
+    '
+  source_published_at: '2026-05-05'
+  topics:
+  - public_safety
+  sensitivity: medium
+  review_status: pending_review
+- item_id: SJC-SJSO-20260603-0002
+  week_date: 2026-05-05
+  source_id: sjso_news_stories
+  source_name: St. Johns County Sheriff's Office
+  title: Lifesaving rescue highlights the importance of local programs in place to
+    locate vulnerable individuals and prevent future emergencies
+  summary: 'SJSO deputies rescued an autistic juvenile who wandered from his home
+    and was found struggling to stay afloat in a pond. The family subsequently enrolled
+    in Project Lifesaver, K9 Scent Kit, and SAFE Program — free SJSO services for
+    families with vulnerable individuals.
+
+    '
+  source_published_at: '2026-05-05T12:00:00Z'
+  topics:
+  - public_safety
+  - health_wellness
+  sensitivity: low
+  review_status: verified

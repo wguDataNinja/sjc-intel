@@ -1,0 +1,10 @@
+- finding_id: F-20260323-0001
+  subject: "Publix / Silverleaf Market"
+  title: "SilverLeaf's mega Publix opens at 1975 SilverLeaf Parkway"
+  summary: "A 55,701 sq ft Publix — one of the chain's largest — opened at 1975 SilverLeaf Parkway, anchoring the Silverleaf Market shopping center with pharmacy, bakery, and prepared foods."
+  source: st_johns_citizen
+  source_date: "2026-03-26"
+  feed_id: SJC-SL-20260704-0001
+  lane: retail and amenities
+  resident_importance: high
+  evidence: [{feed_id: SJC-SL-20260704-0001, source_date: "2026-03-26"}]

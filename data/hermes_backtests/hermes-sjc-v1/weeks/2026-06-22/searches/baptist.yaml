@@ -1,0 +1,6 @@
+profile: "Baptist SilverLeaf campus"
+queries: ['"Baptist SilverLeaf" campus']
+results:
+  - feed_id: SJC-SL-20260807-0002
+    title: "Baptist Health opens SilverLeaf outpatient medical campus"
+    matched: true

@@ -1,0 +1,56 @@
+week_start: '2025-09-29'
+week_end: '2025-10-05'
+entries:
+- item_id: SJC-BF-202509-0012
+  week_date: 2025-09-29
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: SJC Advances Manhole Rehabilitation Program
+  summary: St. Johns County Utility Department advanced its manhole rehabilitation
+    program, replacing aging infrastructure to reduce inflow and infiltration and
+    improve wastewater system reliability countywide.
+  source_published_at: '2025-09-29'
+  topics:
+  - utility
+  - development
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-BF-202509-0014
+  week_date: 2025-09-29
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: Raised Pavement Markers Replacement Program
+  summary: St. Johns County continued its Raised Pavement Markers Replacement Program,
+    installing new reflective markers on county roads to improve nighttime visibility
+    and driving safety.
+  source_published_at: '2025-09-29'
+  topics:
+  - transportation
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-BF-202509-0016
+  week_date: 2025-09-29
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: Hastings Community Center and Library Set to Open Spring 2026
+  summary: St. Johns County announced that the new Hastings Community Center and Library
+    was on track to open in Spring 2026, providing a combined community and library
+    facility for the historic agricultural community.
+  source_published_at: '2025-09-29'
+  topics:
+  - development
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-BF-202509-0004
+  week_date: 2025-09-30
+  source_id: sjc_tax_collector
+  source_name: sjc_tax_collector
+  title: Tax Collector Begins Mailing FY2026 Property Tax Bills
+  summary: Following adoption of the FY2026 budget and millage rates on September
+    16, 2025, the St. Johns County Tax Collector prepared and mailed property tax
+    bills based on the certified tax roll and adopted millage rates.
+  source_published_at: '2025-09-30'
+  topics:
+  - taxes_exemptions_trim_vab
+  sensitivity: low
+  review_status: pending_review

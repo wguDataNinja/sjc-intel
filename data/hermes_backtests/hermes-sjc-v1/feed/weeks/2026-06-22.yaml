@@ -1,0 +1,420 @@
+week_start: '2026-06-22'
+week_end: '2026-06-28'
+entries:
+- item_id: SJC-SL-20260807-0002
+  week_date: 2026-06-23
+  source_id: baptist_health
+  source_name: baptist_health
+  title: Baptist SilverLeaf outpatient medical campus now open
+  summary: Baptist Health opened its first-phase outpatient medical campus in SilverLeaf
+    on June 23, 2026, adding hospital-grade outpatient care (imaging, labs, physician
+    offices and an emergency center component) to the community. The campus was permitted
+    for $16.8 million in January 2025 and received approval for a helipad addition
+    in April 2026. Baptist Health is the facility operator and a first-party source
+    for its own campus.
+  source_published_at: '2026-06-23'
+  topics:
+  - health_wellness
+  - economic_development
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-CN-20260626-0001
+  week_date: 2026-06-23
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: SJC's Largest-Ever Capital Improvement Project Now Serving Residents
+  summary: St. Johns County's $191.8 million SR 207 Water Reclamation Facility is
+    now operational, protecting water resources and expanding reclaimed water capacity.
+  source_published_at: '2026-06-23'
+  topics:
+  - infrastructure
+  - environment
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-CN-20260626-0002
+  week_date: 2026-06-22
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: Railroad Crossing Maintenance to Temporarily Close West King Street and Kinlaw
+    Road
+  summary: Railroad crossing maintenance will temporarily close the W. King Street
+    and Kinlaw Road crossings to all traffic, including vehicles, bicycles, and pedestrians.
+  source_published_at: '2026-06-22'
+  topics:
+  - transportation
+  - infrastructure
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-CN-20260626-0003
+  week_date: 2026-06-24
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: Local Businesses Invited to Join the Library Card Sign-Up Month Discount
+    Program
+  summary: St. Johns County Public Library invites local businesses to register for
+    the Library Card Sign-Up Month discount program. Deadline August 3 for marketing
+    materials.
+  source_published_at: '2026-06-24'
+  topics:
+  - library
+  - community_events
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-CN-20260626-0004
+  week_date: 2026-06-25
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: SJC Highlights Special Bond Between Recycling Driver and Three-Year-Old Resident
+  summary: Video showcases the heartwarming friendship between a local family and
+    an FCC Environmental Services recycling driver.
+  source_published_at: '2026-06-25'
+  topics:
+  - community_events
+  sensitivity: low
+  review_status: rejected_noise
+- item_id: SJC-NBOR-20260626-0001
+  week_date: 2026-06-26
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: Comcast
+  summary: 'ROW permit: Comcast — Fiber cable'
+  source_published_at: 6/22/2026
+  topics:
+  - infrastructure
+  - environment
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-NBOR-20260626-0002
+  week_date: 2026-06-26
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: ZVAR 2026000011 Bargfrede Shed (PRIDE 2601876)
+  summary: 'Public hearing: ZVAR 2026000011 Bargfrede Shed (PRIDE 2601876) — Request
+    for a Zoning Variance to Section 2.02.04.A.1 of the Land Development Code to allow
+    for a detached accessory structure to be 3` in lieu of the '
+  source_published_at: 6/18/2026
+  topics:
+  - development
+  - county_government
+  - public_notices
+  sensitivity: medium
+  review_status: verified
+- item_id: SJC-NBOR-20260626-0003
+  week_date: 2026-06-26
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: ZVAR 2026000019 Aspinwall Variance
+  summary: 'Public hearing: ZVAR 2026000019 Aspinwall Variance — Request for a Zoning
+    Variance to Section 6.01.03.C.3 & 2.02.04.B.16.E of the Land Development Code
+    to allow for a second Front Yard setback of ten (10'
+  source_published_at: 6/18/2026
+  topics:
+  - development
+  - county_government
+  - public_notices
+  sensitivity: medium
+  review_status: verified
+- item_id: SJC-NBOR-20260626-0004
+  week_date: 2026-06-26
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: ZVAR 2025000027 Tatum Variance
+  summary: 'Public hearing: ZVAR 2025000027 Tatum Variance — Request for a Zoning
+    Variance to Table 6.01 of the Land Development Code to allow for a Front Yard
+    setback of ten (10) feet in lieu of the required tw'
+  source_published_at: 6/18/2026
+  topics:
+  - development
+  - county_government
+  - public_notices
+  sensitivity: medium
+  review_status: verified
+- item_id: SJC-NBOR-20260626-0005
+  week_date: 2026-06-26
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: Comcast
+  summary: 'ROW permit: Comcast — new power supply'
+  source_published_at: 6/16/2026
+  topics:
+  - infrastructure
+  - environment
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-NBOR-20260626-0006
+  week_date: 2026-06-26
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: Comcast
+  summary: 'ROW permit: Comcast — Fiber cable'
+  source_published_at: 6/16/2026
+  topics:
+  - infrastructure
+  - environment
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-NBOR-20260626-0007
+  week_date: 2026-06-26
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: City of St Augustine
+  summary: 'ROW permit: City of St Augustine — New service'
+  source_published_at: 6/16/2026
+  topics:
+  - development
+  - infrastructure
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-NBOR-20260626-0008
+  week_date: 2026-06-26
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: Beaches Energy
+  summary: 'ROW permit: Beaches Energy — service'
+  source_published_at: 6/16/2026
+  topics:
+  - infrastructure
+  - environment
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-NBOR-20260626-0009
+  week_date: 2026-06-26
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: AT&T
+  summary: 'ROW permit: AT&T — fiber cable'
+  source_published_at: 6/16/2026
+  topics:
+  - development
+  - infrastructure
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-NBOR-20260626-0010
+  week_date: 2026-06-26
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: JEA
+  summary: 'ROW permit: JEA — new service'
+  source_published_at: 6/16/2026
+  topics:
+  - infrastructure
+  - environment
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-NBOR-20260626-0011
+  week_date: 2026-06-26
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: Comcast
+  summary: 'ROW permit: Comcast — Span replacement'
+  source_published_at: 6/16/2026
+  topics:
+  - infrastructure
+  - environment
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-NBOR-20260626-0012
+  week_date: 2026-06-26
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: FPL
+  summary: 'ROW permit: FPL — Pole replacement'
+  source_published_at: 6/16/2026
+  topics:
+  - infrastructure
+  - environment
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-NBOR-20260626-0013
+  week_date: 2026-06-26
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: Farrell Marine
+  summary: 'ROW permit: Farrell Marine — Lane closure for concrete truck'
+  source_published_at: 6/16/2026
+  topics:
+  - transportation
+  - infrastructure
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-NBOR-20260626-0014
+  week_date: 2026-06-26
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: MAJMOD 2025000011 Golfway Centre PUD
+  summary: 'Public hearing: MAJMOD 2025000011 Golfway Centre PUD — Request for a Major
+    Modification to the Golfway Centre PUD (Ordinance 1997-67, as amended) to revise
+    the MDP Map and MDP Text to allow the remaining d'
+  source_published_at: 6/16/2026
+  topics:
+  - development
+  - county_government
+  - public_notices
+  sensitivity: medium
+  review_status: verified
+- item_id: SJC-NBOR-20260626-0015
+  week_date: 2026-06-26
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: Scott Waite
+  summary: 'ROW permit: Scott Waite — Temp power'
+  source_published_at: 6/16/2026
+  topics:
+  - development
+  - infrastructure
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-NBOR-20260626-0016
+  week_date: 2026-06-26
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: REZ 2026000002 177 Surfside Avenue (146820-0000)
+  summary: 'Public hearing: REZ 2026000002 177 Surfside Avenue (146820-0000) — Request
+    to rezone approximately 0.75 acres of land from Commercial Highway and Tourist
+    (CHT) to Residential, Single-Family (RS-3).'
+  source_published_at: 6/16/2026
+  topics:
+  - development
+  - county_government
+  - public_notices
+  sensitivity: medium
+  review_status: verified
+- item_id: SJC-NBOR-20260626-0017
+  week_date: 2026-06-26
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: REZ 2026000001 3025 Old Moultrie Road
+  summary: 'Public hearing: REZ 2026000001 3025 Old Moultrie Road — Request to rezone
+    approximately one (1) acre of land from Open Rural (OR) to Residential, Single-Family
+    (RS-3).'
+  source_published_at: 6/16/2026
+  topics:
+  - development
+  - county_government
+  - public_notices
+  sensitivity: medium
+  review_status: verified
+- item_id: SJC-NBOR-20260626-0018
+  week_date: 2026-06-26
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: Terracon
+  summary: 'ROW permit: Terracon — Geo Tech exploration'
+  source_published_at: 6/12/2026
+  topics:
+  - development
+  - infrastructure
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-NBOR-20260626-0019
+  week_date: 2026-06-26
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: P&G Construction
+  summary: 'ROW permit: P&G Construction — Bulkhead'
+  source_published_at: 6/12/2026
+  topics:
+  - development
+  - infrastructure
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-NBOR-20260626-0020
+  week_date: 2026-06-26
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: JEA
+  summary: 'ROW permit: JEA — Water actuator valve'
+  source_published_at: 6/12/2026
+  topics:
+  - infrastructure
+  - environment
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-NBOR-20260626-0021
+  week_date: 2026-06-26
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: Comcast
+  summary: 'ROW permit: Comcast — Under Ground cable'
+  source_published_at: 6/12/2026
+  topics:
+  - infrastructure
+  - environment
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-NBOR-20260626-0022
+  week_date: 2026-06-26
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: Comcast
+  summary: 'ROW permit: Comcast — replacing damaged cable'
+  source_published_at: 6/12/2026
+  topics:
+  - infrastructure
+  - environment
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-NBOR-20260626-0023
+  week_date: 2026-06-26
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: Comcast
+  summary: 'ROW permit: Comcast — Replace UG span'
+  source_published_at: 6/12/2026
+  topics:
+  - infrastructure
+  - environment
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-NBOR-20260626-0024
+  week_date: 2026-06-26
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: AT&T
+  summary: 'ROW permit: AT&T — Fiber cable'
+  source_published_at: 6/12/2026
+  topics:
+  - development
+  - infrastructure
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-NBOR-20260626-0025
+  week_date: 2026-06-26
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: AT&T
+  summary: 'ROW permit: AT&T — Cable/Fiber'
+  source_published_at: 6/12/2026
+  topics:
+  - development
+  - infrastructure
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-SJSO-20260626-0001
+  week_date: 2026-06-22
+  source_id: sjso_news_stories
+  source_name: sjso_news_stories
+  title: Two St. Johns County Inmates Charged for Planning Escape from Jail
+  summary: Two St. Johns County inmates have been charged for allegedly planning an
+    escape from the county jail. Investigation ongoing.
+  source_published_at: '2026-06-22'
+  topics:
+  - public_safety
+  - crime
+  sensitivity: medium
+  review_status: verified
+- item_id: SJC-SJSO-20260802-0001
+  week_date: 2026-06-22
+  source_id: sjso_news_stories
+  source_name: sjso_news_stories
+  title: Two St. Johns County Inmates Charged for Planning Attempt to Escape from
+    Jail
+  summary: Two St. Johns County inmates charged for planning an attempt to escape
+    from jail. Charges relate to an alleged escape plan by two inmates.
+  source_published_at: '2026-06-22T21:13:44Z'
+  topics:
+  - public_safety
+  - crime
+  - sjso
+  sensitivity: high
+  review_status: pending_review

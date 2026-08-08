@@ -1,0 +1,25 @@
+month: 2025-08
+weeks: 4
+new_subjects:
+- CR 210 widening
+- Pine Island Road / U.S. 1 intersection improvements
+- County featured projects tracker
+- Alert St. Johns emergency notifications
+- County utility boil-water notices
+- County FY2026 budget and property taxes
+- Hallowes Cove Academy (new SJCSD school)
+- SilverLeaf area school attendance zoning
+- County utility infrastructure (smart meters)
+- CR 2209 connector
+- SR 16 / International Golf Parkway improvements
+- SilverLeaf K-8 School (School QQ)
+search_profiles:
+- CR 210 widening
+- CR 2209 connector
+aliases: []
+lanes:
+- roads and mobility
+timeline_events: 6
+editor_gaps: 13
+false_positives: 1
+findings: 15

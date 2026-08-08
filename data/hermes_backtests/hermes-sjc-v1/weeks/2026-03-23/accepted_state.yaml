@@ -1,0 +1,75 @@
+week_start: '2026-03-23'
+available_on: '2026-03-30'
+accepted:
+- proposal_id: HP-20260323-ENT-PUBLIX
+  type: entity
+  subject: Publix / Silverleaf Market
+  simulated_week: '2026-03-23'
+  evidence:
+  - feed_id: SJC-SL-20260704-0001
+    source_date: '2026-03-26'
+  resident_impact: The neighborhood grocery anchor is now open.
+  expected_duration: ongoing
+  anticipated_milestones:
+  - opened
+  - tenant announcements
+  proposed_searches:
+  - '"SilverLeaf" Publix'
+  - '"Silverleaf Market" tenants'
+  proposed_sources:
+  - st_johns_citizen
+  cost: 1
+  confidence: high
+  rationale: Durable retail anchor subject with tenant-growth follow-up.
+  review_status: accepted
+  reviewer: hermes-simulated-evaluator
+- proposal_id: HP-20260323-SP-PUBLIX
+  type: search_profile
+  subject: Publix / Silverleaf Market
+  simulated_week: '2026-03-23'
+  evidence:
+  - feed_id: SJC-SL-20260704-0001
+    source_date: '2026-03-26'
+  resident_impact: Track center tenants and outparcel growth.
+  expected_duration: ongoing
+  proposed_searches:
+  - '"Silverleaf Market" tenants'
+  - '"SilverLeaf Parkway" retail'
+  cost: 1
+  confidence: high
+  rationale: Profile for tenant/center evolution.
+  review_status: accepted
+  reviewer: hermes-simulated-evaluator
+- proposal_id: HP-20260323-TL-PUBLIX
+  type: timeline_reconciliation
+  subject: Publix / Silverleaf Market
+  simulated_week: '2026-03-23'
+  evidence:
+  - feed_id: SJC-SL-20260704-0001
+    source_date: '2026-03-26'
+  anticipated_milestones:
+  - opened
+  rationale: Record the opening on the retail timeline.
+  review_status: accepted
+  reviewer: hermes-simulated-evaluator
+rejected: []
+accepted_ids:
+- HP-20260323-ENT-PUBLIX
+- HP-20260323-SP-PUBLIX
+- HP-20260323-TL-PUBLIX
+rejected_ids: []
+findings:
+- finding_id: F-20260323-0001
+  subject: Publix / Silverleaf Market
+  title: SilverLeaf's mega Publix opens at 1975 SilverLeaf Parkway
+  summary: A 55,701 sq ft Publix — one of the chain's largest — opened at 1975 SilverLeaf
+    Parkway, anchoring the Silverleaf Market shopping center with pharmacy, bakery,
+    and prepared foods.
+  source: st_johns_citizen
+  source_date: '2026-03-26'
+  feed_id: SJC-SL-20260704-0001
+  lane: retail and amenities
+  resident_importance: high
+  evidence:
+  - feed_id: SJC-SL-20260704-0001
+    source_date: '2026-03-26'

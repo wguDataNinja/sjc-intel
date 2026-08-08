@@ -1,0 +1,112 @@
+week_start: '2025-05-05'
+available_on: '2025-05-12'
+accepted:
+- proposal_id: HP-20250505-ENT-SCHOOLQQ
+  type: entity
+  subject: SilverLeaf K-8 School (School QQ)
+  simulated_week: '2025-05-05'
+  evidence:
+  - feed_id: SJC-SL-20260704-0002
+    source_date: '2025-05-07'
+  resident_impact: The neighborhood school opening and attendance boundary are top
+    resident questions for the next two years.
+  expected_duration: multi-year
+  anticipated_milestones:
+  - naming
+  - attendance boundaries
+  - opening
+  proposed_searches:
+  - '"School QQ" St. Johns'
+  - '"SilverLeaf" K-8 school'
+  proposed_sources:
+  - sjc_school_district
+  cost: 2
+  confidence: high
+  risks:
+  - school name not yet announced; attendance zone unknown
+  rationale: Durable construction milestone for the most neighborhood-specific school
+    project.
+  review_status: accepted
+  reviewer: hermes-simulated-evaluator
+- proposal_id: HP-20250505-SP-SCHOOLQQ
+  type: search_profile
+  subject: SilverLeaf K-8 School (School QQ)
+  simulated_week: '2025-05-05'
+  evidence:
+  - feed_id: SJC-SL-20260704-0002
+    source_date: '2025-05-07'
+  resident_impact: Recurring searches keep the school opening, naming, and zoning
+    visible.
+  expected_duration: multi-year
+  proposed_searches:
+  - '"School QQ" St. Johns'
+  - '"SilverLeaf" K-8 school'
+  cost: 2
+  confidence: high
+  rationale: Profile to monitor construction -> naming -> opening milestones.
+  review_status: accepted
+  reviewer: hermes-simulated-evaluator
+- proposal_id: HP-20250505-LANE-SCHOOLS
+  type: coverage_lane
+  subject: schools and families
+  simulated_week: '2025-05-05'
+  evidence:
+  - feed_id: SJC-SL-20260704-0002
+    source_date: '2025-05-07'
+  resident_impact: School capacity and openings are a persistent resident concern.
+  rationale: A durable editorial lane for school and family coverage.
+  review_status: accepted
+  reviewer: hermes-simulated-evaluator
+- proposal_id: HP-20250505-MIL-SCHOOLQQ
+  type: milestone
+  subject: SilverLeaf K-8 School (School QQ)
+  simulated_week: '2025-05-05'
+  evidence:
+  - feed_id: SJC-SL-20260704-0002
+    source_date: '2025-05-07'
+  anticipated_milestones:
+  - naming
+  - attendance boundaries
+  - opening
+  milestone_due:
+    naming: '2025-10-01'
+    attendance boundaries: '2026-02-01'
+    opening: '2026-08-15'
+  rationale: Expected naming, boundary, and opening milestones for the new K-8.
+  review_status: accepted
+  reviewer: hermes-simulated-evaluator
+- proposal_id: HP-20250505-TL-SCHOOLQQ
+  type: timeline_reconciliation
+  subject: SilverLeaf K-8 School (School QQ)
+  simulated_week: '2025-05-05'
+  evidence:
+  - feed_id: SJC-SL-20260704-0002
+    source_date: '2025-05-07'
+  anticipated_milestones:
+  - topping-out
+  rationale: Start the school construction timeline at its structural milestone.
+  review_status: accepted
+  reviewer: hermes-simulated-evaluator
+rejected: []
+accepted_ids:
+- HP-20250505-ENT-SCHOOLQQ
+- HP-20250505-SP-SCHOOLQQ
+- HP-20250505-LANE-SCHOOLS
+- HP-20250505-MIL-SCHOOLQQ
+- HP-20250505-TL-SCHOOLQQ
+rejected_ids: []
+findings:
+- finding_id: F-20250505-0001
+  subject: SilverLeaf K-8 School (School QQ)
+  title: SilverLeaf K-8 school tops out ahead of 2026-27 opening
+  summary: A 190,000 sq ft, three-story K-8 school (73 classrooms, ~1,500 students)
+    in the SilverLeaf DRI reached its structural topping-out milestone and is expected
+    to open for the 2026-2027 school year.
+  source: st_johns_citizen
+  source_date: '2025-05-07'
+  feed_id: SJC-SL-20260704-0002
+  lane: schools and families
+  resident_importance: high
+  evidence:
+  - feed_id: SJC-SL-20260704-0002
+    source_date: '2025-05-07'

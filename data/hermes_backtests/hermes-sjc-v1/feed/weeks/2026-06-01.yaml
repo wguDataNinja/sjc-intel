@@ -1,0 +1,67 @@
+week_start: '2026-06-01'
+week_end: '2026-06-07'
+entries:
+- item_id: SJC-EM-20260626-0001
+  week_date: 2026-06-01
+  source_id: sjc_emergency_management
+  source_name: sjc_emergency_management
+  title: Residents Urged to Prepare as 2026 Atlantic Hurricane Season Begins
+  summary: St. Johns County Emergency Management urges residents to prepare for the
+    2026 Atlantic Hurricane Season, which began June 1. Highlights simple steps to
+    protect lives and property.
+  source_published_at: '2026-06-01'
+  topics:
+  - public_safety
+  - emergency_alerts
+  - environment
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-UTIL-20260603-0004
+  week_date: 2026-06-03
+  source_id: sjc_utility_department
+  source_name: St. Johns County Utility Department
+  title: $4.6 Million Utilities Lab Ribbon-Cutting and Open House
+  summary: 'St. Johns County celebrated completion of the new $4.6 million Utilities
+    Lab with a ribbon-cutting ceremony. The lab features corrosion-resistant cabinets,
+    walk-in cooler for sample storage, lab sinks with de-ionized water, and backup
+    generator.
+
+    '
+  source_published_at: null
+  topics:
+  - infrastructure
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-UTIL-20260603-0005
+  week_date: 2026-06-03
+  source_id: sjc_utility_department
+  source_name: St. Johns County Utility Department
+  title: Utility Department Water Service Line Material Inventory
+  summary: 'St. Johns County Utility Department is conducting a water service line
+    material inventory to identify pipe materials as part of the EPA Community Lead-Safe
+    Hub initiative. Customers may be contacted for access to inspect service lines.
+
+    '
+  source_published_at: null
+  topics:
+  - infrastructure
+  - health_wellness
+  sensitivity: low
+  review_status: verified
+- item_id: SJC-SL-20260704-0006
+  week_date: 2026-06-01
+  source_id: st_johns_citizen
+  source_name: St. Johns Citizen
+  title: 'Exclusive: Here''s what coming to new Nocatee retail center across from
+    water park'
+  summary: An Ascension St. Vincent's primary care center is planned for a six-storefront
+    commercial strip along Crosswater Parkway in Nocatee, directly across from Splash
+    Water Park. The center will occupy three of the six units, providing adult and
+    pediatric care including physicals, screenings, and treatment for minor illnesses
+    and injuries.
+  source_published_at: '2026-06-01'
+  topics:
+  - development
+  - healthcare
+  sensitivity: low
+  review_status: verified

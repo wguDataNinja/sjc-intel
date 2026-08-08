@@ -1,0 +1,74 @@
+week_start: '2026-07-06'
+week_end: '2026-07-12'
+entries:
+- item_id: SJC-SL-20260706-0001
+  week_date: 2026-07-06
+  source_id: st_johns_citizen
+  source_name: St. Johns Citizen
+  title: Man charged in connection with SilverLeaf murder case faces ICE detainer
+  summary: 'St. Johns Citizen reports that a man charged in connection with the SilverLeaf
+    murder case faces an ICE detainer. URL verified 2026-08-02: article exists (actual
+    title: ''Man charged in Silverleaf shooting case has ICE detainer'').'
+  source_published_at: null
+  topics:
+  - crime
+  - public_safety
+  sensitivity: high
+  review_status: pending_review
+- item_id: SJC-SL-20260706-0002
+  week_date: 2026-07-06
+  source_id: st_johns_citizen
+  source_name: St. Johns Citizen
+  title: Man Charged with Shooting Three at SilverLeaf Construction Site, Killing
+    One, Identified by Police
+  summary: 'St. Johns Citizen reports that a man has been charged with shooting three
+    people at a SilverLeaf construction site, killing one, and has been identified
+    by police. URL verified 2026-08-02: article exists (title matches).'
+  source_published_at: null
+  topics:
+  - crime
+  - public_safety
+  sensitivity: high
+  review_status: pending_review
+- item_id: SJC-SL-20260706-0003
+  week_date: 2026-07-06
+  source_id: st_johns_citizen
+  source_name: St. Johns Citizen
+  title: Suspected lightning strike zaps St. Augustine home in SilverLeaf
+  summary: St. Johns Citizen reports a suspected lightning strike at a home in SilverLeaf.
+    Low-sensitivity weather/emergency item. Article URL not resolved during discovery;
+    date not yet verified.
+  source_published_at: null
+  topics:
+  - emergency
+  - environment
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-SL-20260706-0004
+  week_date: 2026-07-06
+  source_id: st_johns_citizen
+  source_name: St. Johns Citizen
+  title: Officials give update on 6-year-old airlifted out of Silverleaf amenities
+    center over the weekend
+  summary: 'St. Johns Citizen reports that officials gave an update on a 6-year-old
+    who was airlifted out of the Silverleaf amenities center over the weekend. URL
+    verified 2026-08-02: article exists (title matches).'
+  source_published_at: null
+  topics:
+  - public_safety
+  - health_wellness
+  sensitivity: high
+  review_status: pending_review
+- item_id: SJC-SL-20260706-0005
+  week_date: 2026-07-06
+  source_id: st_johns_citizen
+  source_name: St. Johns Citizen
+  title: St. Johns Pizza favorite Bala's close to opening second location in Silverleaf
+  summary: St. Johns Citizen reports that Bala's, a local pizza favorite, is close
+    to opening a second location in Silverleaf. Article URL not resolved during discovery;
+    location not yet verified.
+  source_published_at: null
+  topics:
+  - development
+  sensitivity: low
+  review_status: pending_review

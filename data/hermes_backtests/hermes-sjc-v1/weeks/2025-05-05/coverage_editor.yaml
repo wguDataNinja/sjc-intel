@@ -1,0 +1,12 @@
+- coverage_gap_id: CG-20250505-0001
+  coverage_lane: schools and families
+  subject: "SilverLeaf K-8 School (School QQ)"
+  resident_question: "Which school will my kids attend, and when does the new SilverLeaf school open?"
+  current_state: "Topping-out milestone published; no name or attendance zone yet."
+  why_this_is_a_gap: "The neighborhood school is the single most important resident subject; not yet persistently monitored."
+  last_meaningful_update: "2025-05-07"
+  expected_next_milestone: "official naming"
+  existing_search_profiles: []
+  recommended_research: "Track district new-school pages weekly."
+  recommended_priority: high
+  recommended_action: CREATE_ENTITY_PROPOSAL

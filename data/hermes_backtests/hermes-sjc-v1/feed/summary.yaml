@@ -1,0 +1,5 @@
+weeks: 66
+total_entries: 224
+note: Derived from the dated production corpus (intel_items + monthly backfill) placed
+  in each simulated publication week. This is the historically reproducible evidence
+  layer; it is not a claim to reproduce historical search rankings (Task 30 §6/§9).

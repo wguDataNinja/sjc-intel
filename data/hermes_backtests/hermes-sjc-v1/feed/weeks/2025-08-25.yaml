@@ -1,0 +1,36 @@
+week_start: '2025-08-25'
+week_end: '2025-08-31'
+entries:
+- item_id: SJC-BF-202508-0016
+  week_date: 2025-08-28
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: SJC Coastal Management to Present on Shore Protection Project Easements
+  summary: St. Johns County Coastal Management staff presented to the City of St.
+    Augustine Beach Commission on Sept. 4, 2025 regarding perpetual easements necessary
+    for the continuation of the St. Johns County Shore Protection Project — a long-standing
+    partnership between the county and U.S. Army Corps of Engineers providing vital
+    beach nourishment to protect coastal infrastructure, properties, and habitats.
+  source_published_at: '2025-08-28'
+  topics:
+  - emergency_weather_fire_flood
+  - development
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-BF-202508-0021
+  week_date: 2025-08-29
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: County Celebrates Start of SR 16 and International Golf Parkway Improvements
+    Project with Groundbreaking Ceremony
+  summary: St. Johns County officials held a groundbreaking ceremony at the intersection
+    of SR 16 and International Golf Parkway on Aug. 25, 2025 to celebrate the start
+    of improvements to the intersection. The $25 million project, led by SJC Public
+    Works, will expand SR 16 from two lanes to four lanes, including drainage upgrades,
+    sidewalks, and a traffic signal.
+  source_published_at: '2025-08-29'
+  topics:
+  - transportation
+  - development
+  sensitivity: low
+  review_status: verified

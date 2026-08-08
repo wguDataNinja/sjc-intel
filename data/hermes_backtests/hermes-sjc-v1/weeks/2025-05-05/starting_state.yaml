@@ -1,0 +1,66 @@
+available_on: '2025-05-05'
+sources:
+- source_id: sjc_county_news
+  name: St. Johns County government news
+  kind: official
+- source_id: sjc_school_district
+  name: St. Johns County School District
+  kind: official
+- source_id: sjcsd_news
+  name: St. Johns County School District — news
+  kind: official
+- source_id: sjcsd_main_site
+  name: St. Johns County School District — school pages
+  kind: official
+- source_id: sjcsd_new_schools
+  name: St. Johns County School District — new school construction
+  kind: official
+- source_id: sjc_property_appraiser
+  name: County Property Appraiser
+  kind: official
+- source_id: sjc_tax_collector
+  name: County Tax Collector
+  kind: official
+- source_id: sjc_budget_transparency
+  name: County budget and transparency
+  kind: official
+- source_id: sjc_utility_department
+  name: St. Johns County Utility Department
+  kind: official
+- source_id: sjc_nbor_public_notices
+  name: County public notices (NBOR)
+  kind: official
+- source_id: sjc_bcc_calendar
+  name: County Commission calendar
+  kind: official
+- source_id: sjc_pza_boards
+  name: Planning and Zoning boards
+  kind: official
+- source_id: sjc_emergency_management
+  name: County Emergency Management
+  kind: official
+- source_id: sjrwmd_watering_restrictions
+  name: SJRWMD watering restrictions
+  kind: official
+- source_id: fdot_district_two_nflroads
+  name: FDOT District Two / NFLRoads
+  kind: official
+- source_id: nws_jacksonville
+  name: National Weather Service Jacksonville
+  kind: official
+- source_id: st_johns_citizen
+  name: St. Johns Citizen (local news)
+  kind: local_media
+entities:
+- id: seed-community-silverleaf
+  label: SilverLeaf master-planned community
+  aliases: []
+  available_on: '2025-05-05'
+  notes: General context only; no resident subject claims seeded.
+search_profiles: []
+lanes: []
+milestones: []
+timelines: []
+accepted_proposals: []
+rejected_proposals: []
+last_week: null

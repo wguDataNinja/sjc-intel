@@ -1,0 +1,412 @@
+week_start: '2026-07-27'
+week_end: '2026-08-02'
+entries:
+- item_id: SJC-CN-20260802-0002
+  week_date: 2026-07-31
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: Daily's Withdraws Comprehensive Plan Amendment Application from August 4
+    BCC Agenda
+  summary: Daily's has withdrawn its comprehensive plan amendment application from
+    the August 4 BCC agenda. The item will not be considered at the upcoming Board
+    of County Commissioners meeting.
+  source_published_at: '2026-07-31T20:16:36Z'
+  topics:
+  - rezoning_comp_plan_dri
+  - county_government
+  - development
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-CN-20260802-0003
+  week_date: 2026-07-31
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: S.E.A. Community Help Resource Center Opens to Serve Rural St. Johns County
+  summary: S.E.A. Community Help Resource Center opens to serve rural St. Johns County.
+    New resource center providing community help services to rural residents.
+  source_published_at: '2026-07-31T16:32:16Z'
+  topics:
+  - community_services
+  - county_government
+  - quality_of_life
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-CN-20260802-0004
+  week_date: 2026-07-29
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: Clerk's Office Expands Public Access with New Service Center
+  summary: Clerk's Office expands public access with a new service center. The new
+    center increases public access to Clerk of Court services.
+  source_published_at: '2026-07-29T12:33:31Z'
+  topics:
+  - county_government
+  - public_services
+  - community_services
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-NBOR-20260802-0001
+  week_date: 2026-08-02
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: CPA(SS) 2025000011 Moseley Property
+  summary: 'Public hearing: CPA(SS) 2025000011 Moseley Property — Request for a Small-Scale
+    Comprehensive Plan Amendment to change the Future Land Use Map designation of
+    approximately 16 acres of land from Rural/Silv'
+  source_published_at: 8/6/2026
+  topics:
+  - development
+  - county_government
+  - public_notices
+  sensitivity: medium
+  review_status: pending_review
+- item_id: SJC-NBOR-20260802-0002
+  week_date: 2026-08-02
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: 'NW Sector Community Meeting: CPA(SS)2025-07 & MAJMOD 2025-08 Bartram Grove'
+  summary: 'Public hearing: NW Sector Community Meeting: CPA(SS)2025-07 & MAJMOD 2025-08
+    Bartram Grove — The requested applications propose to: (1) modify the Bartram
+    Park DRI 2001-139 (as amended, 2019-166) to add 42.3 acres+/- located on the south
+    side '
+  source_published_at: 8/5/2026
+  topics:
+  - development
+  - county_government
+  - public_notices
+  sensitivity: medium
+  review_status: pending_review
+- item_id: SJC-NBOR-20260802-0003
+  week_date: 2026-08-02
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: CPA(SS) 2025000013 Daily´s Place
+  summary: 'Public hearing: CPA(SS) 2025000013 Daily´s Place — A request for a Small-Scale
+    Comprehensive Plan Amendment to change the Future Land Use Map designation of
+    approximately 7.7 acres of land, located at '
+  source_published_at: 8/4/2026
+  topics:
+  - development
+  - county_government
+  - public_notices
+  sensitivity: medium
+  review_status: pending_review
+- item_id: SJC-NBOR-20260802-0004
+  week_date: 2026-08-02
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: PVZVAR 2026000004 110 Overlook Drive
+  summary: PVZVAR 2026000004 110 Overlook Drive — Request for a Zoning Variance to
+    Section III.B.1 of the Ponte Vedra Zoning District Regulations (PVZDR) to allow
+    for a side setback of 1 foot 8 inches
+  source_published_at: 8/3/2026
+  topics:
+  - development
+  - county_government
+  - public_notices
+  sensitivity: medium
+  review_status: pending_review
+- item_id: SJC-NBOR-20260802-0005
+  week_date: 2026-08-02
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: MAJMOD 2026000007 Our Lady Star of the Sea PUD
+  summary: MAJMOD 2026000007 Our Lady Star of the Sea PUD — Request for a Major Modification
+    to the Our Lady Star of the Sea PUD (Ordinance 2011-30, as amended) to allow for
+    the redevelopment of the administrat
+  source_published_at: 8/3/2026
+  topics:
+  - development
+  - county_government
+  - public_notices
+  sensitivity: medium
+  review_status: pending_review
+- item_id: SJC-NBOR-20260802-0006
+  week_date: 2026-08-02
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: Comcast
+  summary: 'ROW permit: Comcast — replacing damaged cable'
+  source_published_at: 7/30/2026
+  topics:
+  - infrastructure
+  - environment
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-NBOR-20260802-0007
+  week_date: 2026-08-02
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: 'NW Sector Meeting: CPA(SS) 2026-05&SUPMAJ 2026-08 Little Florence Fish Camp'
+  summary: 'Public hearing: NW Sector Meeting: CPA(SS) 2026-05&SUPMAJ 2026-08 Little
+    Florence Fish Camp — The Community Meeting will be held on Thursday, July 30,
+    2026, from 6 PM to 7 PM at the Chandler Oaks Barn, 490 Chandler Oaks Lane, St.
+    Augustine, FL '
+  source_published_at: 7/30/2026
+  topics:
+  - development
+  - county_government
+  - public_notices
+  sensitivity: medium
+  review_status: pending_review
+- item_id: SJC-NBOR-20260802-0008
+  week_date: 2026-08-02
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: ZVAR 2026000023 5025 Alta Vista Avenue
+  summary: 'Public hearing: ZVAR 2026000023 5025 Alta Vista Avenue — Request for a
+    Zoning Variance to Sections 2.02.04.B.12.a(4) and 2.02.04.B.12.b(2) of the Land
+    Development Code to allow for the cumulative height of a'
+  source_published_at: 7/23/2026
+  topics:
+  - development
+  - county_government
+  - public_notices
+  sensitivity: medium
+  review_status: pending_review
+- item_id: SJC-NBOR-20260802-0009
+  week_date: 2026-08-02
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: ZVAR 2026000020 Velkovich AFU
+  summary: 'Public hearing: ZVAR 2026000020 Velkovich AFU — Request for a Zoning Variance
+    to Section 2.02.04.B.26 of the Land Development Code to allow for the construction
+    of an Accessory Family Unit that will'
+  source_published_at: 7/23/2026
+  topics:
+  - development
+  - county_government
+  - public_notices
+  sensitivity: medium
+  review_status: pending_review
+- item_id: SJC-NBOR-20260802-0010
+  week_date: 2026-08-02
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: ZVAR 2026000017 Jackson Residence
+  summary: 'Public hearing: ZVAR 2026000017 Jackson Residence — Request for a Zoning
+    Variance to Table 6.01 of the Land Development Code to allow for a Front Yard
+    setback of twenty (20) feet in lieu of the required'
+  source_published_at: 7/23/2026
+  topics:
+  - development
+  - county_government
+  - public_notices
+  sensitivity: medium
+  review_status: pending_review
+- item_id: SJC-NBOR-20260802-0011
+  week_date: 2026-08-02
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: ZVAR 2026000016 5068 A1A S (Pool)
+  summary: 'Public hearing: ZVAR 2026000016 5068 A1A S (Pool) — Request for a Zoning
+    Variance to Table 6.01 of the Land Development Code to allow for a second Front
+    Yard setback of ten (10) feet in lieu of the requ'
+  source_published_at: 7/23/2026
+  topics:
+  - development
+  - county_government
+  - public_notices
+  sensitivity: medium
+  review_status: pending_review
+- item_id: SJC-NBOR-20260802-0012
+  week_date: 2026-08-02
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: ZVAR 2026000014 Edgerton Exterior Stair Installation
+  summary: 'Public hearing: ZVAR 2026000014 Edgerton Exterior Stair Installation —
+    Request for a Zoning Variance to Table 6.01 of the Land Development Code to allow
+    for a reduced Side Yard setback of five (5) feet in lieu of the requ'
+  source_published_at: 7/23/2026
+  topics:
+  - development
+  - county_government
+  - public_notices
+  sensitivity: medium
+  review_status: pending_review
+- item_id: SJC-NBOR-20260802-0013
+  week_date: 2026-08-02
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: SUPMAJ 2026000009 Colee Cove Tower
+  summary: 'Public hearing: SUPMAJ 2026000009 Colee Cove Tower — Request for a Special
+    Use Permit, pursuant to Section 2.03.26 of the Land Development Code, to allow
+    for the construction of a 199-foot monopole tower'
+  source_published_at: 7/23/2026
+  topics:
+  - development
+  - infrastructure
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-NBOR-20260802-0014
+  week_date: 2026-08-02
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: SUPMAJ 2025000029 St. Thomas Island Parkway Cell Tower
+  summary: 'Public hearing: SUPMAJ 2025000029 St. Thomas Island Parkway Cell Tower
+    — Request for a Special Use Permit, pursuant to Section 2.03.26 of the Land Development
+    Code, to allow for the construction of a 180-foot monopole tower'
+  source_published_at: 7/23/2026
+  topics:
+  - development
+  - infrastructure
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-NBOR-20260802-0015
+  week_date: 2026-08-02
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: REZ 2026000012 St. Augustine Airport East
+  summary: 'Public hearing: REZ 2026000012 St. Augustine Airport East — Request to
+    rezone approximately 23 acres of land from Open Rural (OR) to Airport Development
+    (AD).'
+  source_published_at: 7/23/2026
+  topics:
+  - development
+  - county_government
+  - public_notices
+  sensitivity: medium
+  review_status: pending_review
+- item_id: SJC-NBOR-20260802-0016
+  week_date: 2026-08-02
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: NBR - FY 26 ST AUGUSTINE SHORES AREA - DRAINAGE IMPROVEMENTS
+  summary: 'ROW permit: NBR - FY 26 ST AUGUSTINE SHORES AREA - DRAINAGE IMPROVEMENTS
+    — Project Location: Deltona Boulevard Lily Road Alhambra Avenue Graciela Circle
+    Project Description: Removal of existing corrugated metal pipe drainage '
+  source_published_at: 7/23/2026
+  topics:
+  - transportation
+  - infrastructure
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-NBOR-20260802-0017
+  week_date: 2026-08-02
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: NBR - TREASURE BEACH - FY 26 PAVEMENT IMPROVEMENTS
+  summary: 'ROW permit: NBR - TREASURE BEACH - FY 26 PAVEMENT IMPROVEMENTS — Project
+    Location: Jellison Road Villa Verda Road Rojo Road Madison Street Puebla Road
+    Ajo Road Escambia Street Hildago Road Rio Royalle Road Costanero'
+  source_published_at: 7/23/2026
+  topics:
+  - transportation
+  - infrastructure
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-NBOR-20260802-0018
+  week_date: 2026-08-02
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: ARC 2026000006 Ponte Vedra Lodge  Club (Rotunda Roof)
+  summary: ARC 2026000006 Ponte Vedra Lodge  Club (Rotunda Roof) — Requesting design
+    approval from the Ponte Vedra ARC to allow standing seam metal roof colors as
+    an alternative to the previously approved remodel of t
+  source_published_at: 7/22/2026
+  topics:
+  - development
+  - infrastructure
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-NBOR-20260802-0019
+  week_date: 2026-08-02
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: ARC 2026000004 Our Lady Star of the Sea Church
+  summary: ARC 2026000004 Our Lady Star of the Sea Church — Requesting design approval
+    from the Ponte Vedra ARC for a new building that will be used for pre-school,
+    formation, and administrative uses. The resid
+  source_published_at: 7/22/2026
+  topics:
+  - development
+  - infrastructure
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-NBOR-20260802-0020
+  week_date: 2026-08-02
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: ARC 2026000002 Upperline Health
+  summary: ARC 2026000002 Upperline Health — Requesting design approval from the Ponte
+    Vedra ARC for a new illuminated wall sign.
+  source_published_at: 7/22/2026
+  topics:
+  - development
+  - infrastructure
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-NBOR-20260802-0021
+  week_date: 2026-08-02
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: NZVAR 2026000015 Coddington Driveway
+  summary: 'Public hearing: NZVAR 2026000015 Coddington Driveway — Request for a Non-Zoning
+    Variance to Section 6.04.05.C.1 and Table 6.03 of the Land Development Code to
+    allow for a Single-Family Driveway Width of 26'
+  source_published_at: 7/21/2026
+  topics:
+  - development
+  - county_government
+  - public_notices
+  sensitivity: medium
+  review_status: pending_review
+- item_id: SJC-NBOR-20260802-0022
+  week_date: 2026-08-02
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: NZVAR 2026000014 Herlth SFR
+  summary: 'Public hearing: NZVAR 2026000014 Herlth SFR — Request for Non-Zoning Variance
+    to Section 6.04.07.B.1 of the Land Development Code to allow an additional dwelling
+    unit to take access from an easeme'
+  source_published_at: 7/21/2026
+  topics:
+  - development
+  - county_government
+  - public_notices
+  sensitivity: medium
+  review_status: pending_review
+- item_id: SJC-NBOR-20260802-0023
+  week_date: 2026-08-02
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: NZVAR 2026000009 5325 Porter Road Extension
+  summary: 'Public hearing: NZVAR 2026000009 5325 Porter Road Extension — Request
+    for Non-Zoning Variance to Section 6.04.07.B.1 of the Land Development Code to
+    allow an additional dwelling unit to take access from an easeme'
+  source_published_at: 7/21/2026
+  topics:
+  - development
+  - county_government
+  - public_notices
+  sensitivity: medium
+  review_status: pending_review
+- item_id: SJC-NBOR-20260802-0024
+  week_date: 2026-08-02
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: NBR - KINGS ESTATE RD & HILLTOP RD - ROADWAY IMPROVEMENTS
+  summary: 'ROW permit: NBR - KINGS ESTATE RD & HILLTOP RD - ROADWAY IMPROVEMENTS
+    — Project Location: Hilltop Road between SR 207 and Kings Estate Road St Augustine,
+    FL 32086 Project Description: Hilltop Road between SR 207 and Kings '
+  source_published_at: 7/21/2026
+  topics:
+  - development
+  - infrastructure
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-NBOR-20260802-0025
+  week_date: 2026-08-02
+  source_id: sjc_nbor_public_notices
+  source_name: St. Johns County Neighborhood Bill of Rights
+  title: MAJMOD 2023000011 Canopy Shores
+  summary: 'Public hearing: MAJMOD 2023000011 Canopy Shores — Request for a Major
+    Modification to the St. Augustine Shores PUD (ORD. 1974-16, as amended) to convert
+    the allowed use for approximately 2.8 acres of '
+  source_published_at: 7/21/2026
+  topics:
+  - development
+  - county_government
+  - public_notices
+  sensitivity: medium
+  review_status: pending_review

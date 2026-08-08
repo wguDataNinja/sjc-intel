@@ -1,0 +1,30 @@
+week_start: '2026-07-20'
+week_end: '2026-07-26'
+entries:
+- item_id: OV-20260722-MAGNOLIA
+  week_date: 2026-07-22
+  source_id: news4jax
+  source_name: News4JAX
+  title: Magnolia Oaks Academy set to open doors in SilverLeaf community for 2026-2027
+    school year
+  summary: St. Johns County School District's new SilverLeaf K-8 campus, now named
+    Magnolia Oaks Academy, is set to open for the 2026-2027 school year.
+  source_published_at: '2026-07-22'
+  topics:
+  - education
+  sensitivity: low
+  review_status: historical_override
+- item_id: SJC-CN-20260802-0001
+  week_date: 2026-07-20
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: County Road 16A Closures and Detours for Next Two Weekends
+  summary: County Road 16A closures and detours scheduled for the next two weekends
+    (three July/August weekends per URL slug). Travelers should expect detours during
+    the announced closure periods.
+  source_published_at: '2026-07-20T17:00:00Z'
+  topics:
+  - transportation
+  - infrastructure
+  sensitivity: low
+  review_status: verified

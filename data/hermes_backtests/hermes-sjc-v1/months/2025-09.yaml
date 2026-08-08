@@ -1,0 +1,25 @@
+month: 2025-09
+weeks: 5
+new_subjects:
+- County FY2026 budget and property taxes
+- Hallowes Cove Academy (new SJCSD school)
+- Hurricane and emergency preparedness
+- County storm recovery infrastructure funding
+- County utility infrastructure (water main repairs)
+- Pine Island Road / U.S. 1 intersection improvements
+- SilverLeaf K-8 School (School QQ)
+- School RR (Nocatee K-8)
+- Four Mile Road / SR 16 intersection improvements
+- County utility infrastructure (wastewater)
+- County road maintenance (pavement markers)
+search_profiles:
+- Hurricane and emergency preparedness
+- Four Mile Road / SR 16 intersection improvements
+aliases: []
+lanes:
+- preparedness
+- utilities and household operations
+timeline_events: 7
+editor_gaps: 13
+false_positives: 0
+findings: 14

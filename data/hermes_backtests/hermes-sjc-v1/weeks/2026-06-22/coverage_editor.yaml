@@ -1,0 +1,12 @@
+- coverage_gap_id: CG-20260622-0001
+  coverage_lane: healthcare and services
+  subject: "Baptist SilverLeaf campus"
+  resident_question: "What services does the new SilverLeaf medical campus offer?"
+  current_state: "Outpatient campus opened; services list not fully verified."
+  why_this_is_a_gap: "Healthcare access is a top resident concern."
+  last_meaningful_update: "2026-06-23"
+  expected_next_milestone: "expansion / helipad"
+  existing_search_profiles: []
+  recommended_research: "Verify services on Baptist facility page."
+  recommended_priority: high
+  recommended_action: CREATE_ENTITY_PROPOSAL

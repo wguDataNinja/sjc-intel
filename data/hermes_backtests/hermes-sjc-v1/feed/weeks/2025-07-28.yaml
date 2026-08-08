@@ -1,0 +1,45 @@
+week_start: '2025-07-28'
+week_end: '2025-08-03'
+entries:
+- item_id: SJC-BF-202508-0003
+  week_date: 2025-08-01
+  source_id: sjc_budget_transparency
+  source_name: sjc_budget_transparency
+  title: FY2026 Budget Workbooks and Proposed Millage Rates Published Online
+  summary: St. Johns County published the FY2026 proposed budget workbooks, including
+    proposed millage rates and rolled-back rates, on the county budget transparency
+    website for public review ahead of September hearings.
+  source_published_at: '2025-08-01'
+  topics:
+  - taxes_exemptions_trim_vab
+  - general_government
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-BF-202508-0004
+  week_date: 2025-08-01
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: FY2026 Budget Calendar Published Including Public Hearing Dates
+  summary: 'St. Johns County published the FY2026 budget calendar including key dates:
+    first public hearing for tentative budget on September 3, 2025, and second public
+    hearing for final adoption on September 16, 2025, both at 5:01 PM.'
+  source_published_at: '2025-08-01'
+  topics:
+  - general_government
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-BF-202508-0006
+  week_date: 2025-08-01
+  source_id: sjcsd_news
+  source_name: sjcsd_news
+  title: SJCSD Publishes Attendance Zoning Presentation for 2025-2026 School Year
+  summary: St. Johns County School District published an attendance zoning presentation
+    on its news site outlining proposed attendance boundary adjustments for the upcoming
+    school year. The presentation covers zoning changes necessitated by the opening
+    of Hallowes Cove Academy and continued growth in Silverleaf and Nocatee areas.
+  source_published_at: '2025-08-01'
+  topics:
+  - education
+  - school_capacity
+  sensitivity: low
+  review_status: verified

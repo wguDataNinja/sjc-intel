@@ -1,0 +1,17 @@
+week_start: '2025-12-01'
+week_end: '2025-12-07'
+entries:
+- item_id: SJC-SL-20260704-0005
+  week_date: 2025-12-02
+  source_id: st_johns_citizen
+  source_name: St. Johns Citizen
+  title: St. Johns County is getting two new supermarkets — and they're not Publix
+  summary: Two 61,000 sq. ft. supermarkets from a Kroger-owned chain (identified as
+    Harris Teeter) are proposed for St. Johns County — one at Veterans Parkway and
+    CR 210 West and another in a SilverLeaf shopping center. The applications represent
+    the first major non-Publix grocery competition in the area.
+  source_published_at: '2025-12-02'
+  topics:
+  - development
+  sensitivity: low
+  review_status: verified

@@ -1,0 +1,23 @@
+month: 2026-06
+weeks: 5
+new_subjects:
+- Hurricane and emergency preparedness
+- County utility infrastructure (utilities lab)
+- County utility water service line inventory
+- Ascension St. Vincent's primary care (Nocatee Crosswater)
+- Baptist SilverLeaf campus
+- SR 207 Water Reclamation Facility
+- East Peyton Parkway traffic signals
+- NW Sector development (Colee Cove tower)
+- County utility infrastructure (water plants)
+search_profiles:
+- Ascension St. Vincent's primary care (Nocatee Crosswater)
+- Baptist SilverLeaf campus
+aliases: []
+lanes:
+- healthcare and services
+- utilities and household operations
+timeline_events: 1
+editor_gaps: 12
+false_positives: 0
+findings: 9

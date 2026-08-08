@@ -1,0 +1,32 @@
+week_start: '2025-09-22'
+week_end: '2025-09-28'
+entries:
+- item_id: SJC-BF-202509-0013
+  week_date: 2025-09-26
+  source_id: sjc_county_news
+  source_name: sjc_county_news
+  title: Open House on Four Mile Road / SR 16 Intersection Improvements
+  summary: St. Johns County hosted a public open house to present plans for the Four
+    Mile Road and SR 16 intersection improvements, including a new left-turn lane
+    and signalization upgrades to enhance safety.
+  source_published_at: '2025-09-26'
+  topics:
+  - transportation
+  sensitivity: low
+  review_status: pending_review
+- item_id: SJC-BF-202509-0008
+  week_date: 2025-09-25
+  source_id: web_discovery
+  source_name: web_discovery
+  title: SJCSD Begins Community Engagement for Naming and Mascot Selection of Schools
+    QQ and RR
+  summary: 'St. Johns County School District initiated community engagement for the
+    naming and mascot selection of two new K-8 schools: School QQ in Silverleaf and
+    School RR in Nocatee. Virtual meetings were held to gather input from residents
+    on school names and mascots for the schools projected to open for the 2026-2027
+    school year.'
+  source_published_at: '2025-09-25'
+  topics:
+  - education
+  sensitivity: low
+  review_status: verified

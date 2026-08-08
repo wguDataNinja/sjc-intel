@@ -1,0 +1,251 @@
+available_on: '2025-05-05'
+sources:
+- source_id: sjc_county_news
+  name: St. Johns County government news
+  kind: official
+- source_id: sjc_school_district
+  name: St. Johns County School District
+  kind: official
+- source_id: sjcsd_news
+  name: St. Johns County School District — news
+  kind: official
+- source_id: sjcsd_main_site
+  name: St. Johns County School District — school pages
+  kind: official
+- source_id: sjcsd_new_schools
+  name: St. Johns County School District — new school construction
+  kind: official
+- source_id: sjc_property_appraiser
+  name: County Property Appraiser
+  kind: official
+- source_id: sjc_tax_collector
+  name: County Tax Collector
+  kind: official
+- source_id: sjc_budget_transparency
+  name: County budget and transparency
+  kind: official
+- source_id: sjc_utility_department
+  name: St. Johns County Utility Department
+  kind: official
+- source_id: sjc_nbor_public_notices
+  name: County public notices (NBOR)
+  kind: official
+- source_id: sjc_bcc_calendar
+  name: County Commission calendar
+  kind: official
+- source_id: sjc_pza_boards
+  name: Planning and Zoning boards
+  kind: official
+- source_id: sjc_emergency_management
+  name: County Emergency Management
+  kind: official
+- source_id: sjrwmd_watering_restrictions
+  name: SJRWMD watering restrictions
+  kind: official
+- source_id: fdot_district_two_nflroads
+  name: FDOT District Two / NFLRoads
+  kind: official
+- source_id: nws_jacksonville
+  name: National Weather Service Jacksonville
+  kind: official
+- source_id: st_johns_citizen
+  name: St. Johns Citizen (local news)
+  kind: local_media
+entities:
+- id: seed-community-silverleaf
+  label: SilverLeaf master-planned community
+  aliases: []
+  available_on: '2025-05-05'
+  notes: General context only; no resident subject claims seeded.
+- id: HP-20250505-ENT-SCHOOLQQ
+  label: SilverLeaf K-8 School (School QQ)
+  aliases:
+  - value: Magnolia Oaks Academy
+    first_seen: '2026-07-20'
+  available_on: '2025-05-05'
+  evidence:
+  - feed_id: SJC-SL-20260704-0002
+    source_date: '2025-05-07'
+- id: HP-20250818-ENT-CR2209
+  label: CR 2209 connector
+  aliases: []
+  available_on: '2025-08-18'
+  evidence:
+  - feed_id: SJC-BF-202508-0013
+    source_date: '2025-08-20'
+- id: HP-20250818-ENT-SR16IGP
+  label: SR 16 / International Golf Parkway improvements
+  aliases: []
+  available_on: '2025-08-18'
+  evidence:
+  - feed_id: SJC-BF-202508-0020
+    source_date: '2025-08-22'
+- id: HP-20250915-ENT-BUDGET
+  label: County FY2026 budget and property taxes
+  aliases: []
+  available_on: '2025-09-15'
+  evidence:
+  - feed_id: SJC-BF-202509-0003
+    source_date: '2025-09-16'
+- id: HP-20251201-ENT-GROCERY
+  label: SilverLeaf grocery center / possible Harris Teeter
+  aliases: []
+  available_on: '2025-12-01'
+  evidence:
+  - feed_id: SJC-SL-20260704-0005
+    source_date: '2025-12-02'
+- id: HP-20260323-ENT-PUBLIX
+  label: Publix / Silverleaf Market
+  aliases: []
+  available_on: '2026-03-23'
+  evidence:
+  - feed_id: SJC-SL-20260704-0001
+    source_date: '2026-03-26'
+- id: HP-20260622-ENT-BAPTIST
+  label: Baptist SilverLeaf campus
+  aliases: []
+  available_on: '2026-06-22'
+  evidence:
+  - feed_id: SJC-SL-20260807-0002
+    source_date: '2026-06-23'
+- id: HP-20260622-ENT-WRF
+  label: SR 207 Water Reclamation Facility
+  aliases: []
+  available_on: '2026-06-22'
+  evidence:
+  - feed_id: SJC-CN-20260626-0001
+    source_date: '2026-06-23'
+- id: HP-20260720-ENT-CR16A
+  label: CR 16A access road
+  aliases: []
+  available_on: '2026-07-20'
+  evidence:
+  - feed_id: SJC-CN-20260802-0001
+    source_date: '2026-07-20'
+search_profiles:
+- subject: SilverLeaf K-8 School (School QQ)
+  queries:
+  - '"School QQ" St. Johns'
+  - '"SilverLeaf" K-8 school'
+  budget: 2
+  available_on: '2025-05-05'
+- subject: CR 2209 connector
+  queries:
+  - '"CR 2209" St. Johns'
+  - '"International Golf Parkway" SilverLeaf'
+  budget: 2
+  available_on: '2025-08-18'
+- subject: SilverLeaf grocery center / possible Harris Teeter
+  queries:
+  - '"Harris Teeter" SilverLeaf'
+  - '"SilverLeaf Parkway" grocery'
+  - '"CR 16A" grocery SilverLeaf'
+  budget: 2
+  available_on: '2025-12-01'
+- subject: Publix / Silverleaf Market
+  queries:
+  - '"Silverleaf Market" tenants'
+  - '"SilverLeaf Parkway" retail'
+  budget: 1
+  available_on: '2026-03-23'
+- subject: Baptist SilverLeaf campus
+  queries:
+  - '"Baptist SilverLeaf" campus'
+  - '"Baptist Health" SilverLeaf'
+  budget: 2
+  available_on: '2026-06-22'
+- subject: CR 16A access road
+  queries:
+  - '"CR 16A" SilverLeaf'
+  budget: 1
+  available_on: '2026-07-20'
+lanes:
+- schools and families
+- roads and mobility
+- retail and amenities
+- healthcare and services
+- utilities and household operations
+milestones:
+- subject: SilverLeaf K-8 School (School QQ)
+  expected:
+  - naming
+  - attendance boundaries
+  - opening
+  milestone_due:
+    naming: '2025-10-01'
+    attendance boundaries: '2026-02-01'
+    opening: '2026-08-15'
+  available_on: '2025-05-05'
+- subject: SilverLeaf K-8 School (School QQ)
+  expected:
+  - attendance boundaries
+  milestone_due:
+    attendance boundaries: '2025-08-25'
+  available_on: '2025-08-18'
+- subject: SilverLeaf K-8 School (School QQ)
+  expected:
+  - construction
+  milestone_due: {}
+  available_on: '2025-09-15'
+- subject: SilverLeaf grocery center / possible Harris Teeter
+  expected:
+  - approval
+  - construction
+  - opening
+  milestone_due:
+    approval: '2026-04-01'
+    construction: '2026-07-01'
+    opening: '2026-12-01'
+  available_on: '2025-12-01'
+- subject: SilverLeaf K-8 School (School QQ)
+  expected:
+  - official_naming
+  - opening
+  milestone_due:
+    opening: '2026-08-15'
+  available_on: '2026-07-20'
+timelines:
+- subject: SilverLeaf K-8 School (School QQ)
+  event: topping-out
+  available_on: '2025-05-05'
+- subject: CR 2209 connector
+  event: construction_started
+  available_on: '2025-08-18'
+- subject: SilverLeaf K-8 School (School QQ)
+  event: under_construction
+  available_on: '2025-09-15'
+- subject: Publix / Silverleaf Market
+  event: opened
+  available_on: '2026-03-23'
+- subject: SilverLeaf K-8 School (School QQ)
+  event: official_naming
+  available_on: '2026-07-20'
+accepted_proposals:
+- HP-20250505-ENT-SCHOOLQQ
+- HP-20250505-SP-SCHOOLQQ
+- HP-20250505-LANE-SCHOOLS
+- HP-20250505-MIL-SCHOOLQQ
+- HP-20250505-TL-SCHOOLQQ
+- HP-20250818-ENT-CR2209
+- HP-20250818-SP-CR2209
+- HP-20250818-ENT-SR16IGP
+- HP-20250818-LANE-ROADS
+- HP-20250818-MIL-SCHOOLQQ
+- HP-20250818-TL-CR2209
+- HP-20250915-MIL-SCHOOLQQ
+- HP-20250915-ENT-BUDGET
+- HP-20250915-TL-SCHOOLQQ
+- HP-20251201-ENT-GROCERY
+- HP-20251201-SP-GROCERY
+- HP-20251201-LANE-RETAIL
+- HP-20251201-MIL-GROCERY
+- HP-20260323-ENT-PUBLIX
+- HP-20260323-SP-PUBLIX
+- HP-20260323-TL-PUBLIX
+- HP-20260622-ENT-BAPTIST
+- HP-20260622-SP-BAPTIST
+- HP-20260622-ENT-WRF
+- HP-20260622-LANE-HEALTH
+- HP-20260622-LANE-UTIL
+rejected_proposals: []
+last_week: '2026-06-22'
