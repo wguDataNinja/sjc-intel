@@ -1,6 +1,6 @@
 # SJC_Intel Backlog
 
-Last updated: 2026-08-06
+Last updated: 2026-08-07
 
 Status values: `todo`, `in_progress`, `blocked`, `done`, `deferred`.
 
@@ -115,12 +115,14 @@ Status values: `todo`, `in_progress`, `blocked`, `done`, `deferred`.
 |----|-------|--------|----------|--------------|-------------|-------------|
 | PUB-001 | Define public product name | deferred | low | editorial pipeline | Buddy | Decide later |
 | PUB-002 | Build newsletter/website pipeline | deferred | low | review/corrections workflow | future | Not in current scope |
+| PUB-003 | Replace item-by-item release default with policy classification | done | high | verified corpus + Task 20 editorial evidence | sjc-intel-architect | Task 27: `docs/PUBLICATION_POLICY.md`; local seven-item release `SJC-REL-2026-08-002`; no deployment performed |
+| PUB-004 | Add concrete SilverLeaf/corridor relevance signals to remaining archival candidates | todo | high | DIR-001, source/canonical verification | sjc-intel-architect | Resolve the 69 research exceptions and 51 human-review exceptions surfaced by Task 27; do not bulk-promote pending records |
 
 ## Product Direction / Planning (from 2026-07-06 planning session)
 
 | ID | Title | Status | Priority | Dependencies | Owner/Agent | Next Action |
 |----|-------|--------|----------|--------------|-------------|-------------|
-| DIR-001 | Create SilverLeaf geographic registry | todo | **critical** | none | sjc-intel-architect | Research authoritative SilverLeaf boundary sources; draft registry schema |
+| DIR-001 | Create SilverLeaf geographic registry | in_progress | **critical** | none | sjc-intel-architect | Evidence-and-scope registry completed 2026-08-08 (`registry/silverleaf_scope.yaml`, `docs/silverleaf_geographic_registry.md`); acquire and review authoritative versioned geometry before closing. |
 | DIR-002 | Design three-lane architecture doc | todo | high | DIR-001 | sjc-intel-architect | Draft durable/live/investigation lane boundaries and data flow |
 | DIR-003 | Investigate FHP incident page data source | todo | high | none | sjc-intel-architect | Determine whether structured JSON endpoint or browser automation required |
 | DIR-004 | Investigate FL511 incident and camera integration | todo | high | none | sjc-intel-architect | Document permitted integration methods and rate limits |
@@ -128,9 +130,9 @@ Status values: `todo`, `in_progress`, `blocked`, `done`, `deferred`.
 | DIR-006 | Design agentic investigation framework | todo | medium | DIR-002 | sjc-intel-architect | Search trigger, evidence extraction, reconciliation, review gate boundaries |
 | DIR-007 | Design coordinate-based geographic filtering | todo | medium | DIR-001 | sjc-intel-architect | Point-in-polygon test, corridor proximity, PostGIS requirements |
 | DIR-008 | Research PostGIS readiness for current PG schema | todo | medium | none | sjc-intel-architect | Check whether PostGIS extension is available and what migrations are needed |
-| DIR-009 | Map SilverLeaf internal streets and entrances | todo | medium | DIR-001 | sjc-intel-architect | Compile from official plats, county GIS, and OSM |
-| DIR-010 | Identify schools serving SilverLeaf by school year | todo | medium | DIR-001 | sjc-intel-architect | Attendance zone maps, feeder patterns, school-year-effective relationships |
-| DIR-011 | Define I-95 and I-295 commute segments for monitoring | todo | medium | DIR-001 | sjc-intel-architect | Exact start/end anchors, exits, mile markers, direction |
+| DIR-009 | Map SilverLeaf internal streets and entrances | in_progress | medium | DIR-001 | sjc-intel-architect | Mobility scope registry now defines source-backed external segments and explicitly excludes unverified internal streets/entrances; acquire reviewed official plat/GIS inventory before mapping them. See `docs/silverleaf_mobility_scope.md`. |
+| DIR-010 | Identify schools serving SilverLeaf by school year | in_progress | medium | DIR-001 | sjc-intel-architect | 2026-27 Magnolia Oaks/K-8 QQ partial SilverLeaf service is source-backed in `registry/silverleaf_scope.yaml`; address-level assignments and future-year authority remain open. See `docs/silverleaf_school_service.md`. |
+| DIR-011 | Define I-95 and I-295 commute segments for monitoring | in_progress | medium | DIR-001 | sjc-intel-architect | Defined bounded SR 16–I-95 project interface only; generic I-95/I-295 monitoring remains excluded pending an approved incident-source and segment design. See `registry/silverleaf_mobility.yaml`. |
 | DIR-012 | Evaluate traffic API providers for congestion pilot | todo | low | none | Buddy | Compare TomTom/Google/Apple pricing, free tier, pilot feasibility |
 | DIR-013 | Design school sourcing expansion (athletics, activities, recognition) | todo | low | DIR-010 | sjc-intel-architect | Search templates for school sports, awards, student accomplishments |
 | DIR-014 | Research county GIS and parcel data availability | todo | low | none | sjc-intel-architect | Determine whether county provides GIS downloads or API |

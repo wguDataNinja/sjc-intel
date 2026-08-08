@@ -18,6 +18,52 @@ status:
   required: true
   allowed: [active, proposed, superseded]
 
+geographic_authority:
+  type: object
+  required: true
+  description: >
+    Official planning/geographic evidence that informs scope review. This is
+    not a geometry store. No coordinate, polygon, or point-containment claim
+    is permitted until a separately reviewed official geometry source exists.
+  fields:
+    status: {type: enum, allowed: [evidence_only, geometry_reviewed]}
+    canonical_geography:
+      type: array
+      items:
+        fields:
+          id: {type: string, required: true}
+          geography_kind: {type: enum, allowed: [legal_planning_area, editorial_scope]}
+          source_id: {type: string, required: true}
+          geometry_status: {type: enum, allowed: [no_geometry_loaded, reviewed_geometry_available]}
+    sources:
+      type: array
+      items:
+        fields:
+          id: {type: string, required: true}
+          authority: {type: string, required: true}
+          source_url: {type: URL, required: true}
+          source_type: {type: enum, allowed: [official_planning_document, official_gis_service, recorded_plat]}
+          retrieved_on: {type: string (ISO 8601), required: true}
+
+school_authority:
+  type: object
+  required: true
+  description: >
+    Official school-year-specific zoning evidence. A registry relationship is
+    not an individual address assignment; the district locator remains the
+    authority for individual families.
+  fields:
+    status: {type: enum, allowed: [active, stale, superseded]}
+    sources:
+      type: array
+      items:
+        fields:
+          id: {type: string, required: true}
+          authority: {type: string, required: true}
+          source_url: {type: URL, required: true}
+          source_type: {type: enum, allowed: [official_district_zoning_page, official_district_zoning_document, official_district_news]}
+          retrieved_on: {type: string (ISO 8601), required: true}
+
 last_updated:
   type: string (ISO 8601)
   required: true
@@ -86,6 +132,15 @@ schools:
       entity_id: {type: string}              # optional link to tracked_entities.yaml
       verification: {type: PROVENANCE, required: true}
       attendance_zone: {type: PROVENANCE}    # needs-review until DIR-010
+      attendance_service:
+        type: object
+        description: >
+          Optional partial service relationship. Must carry a school year,
+          source references, and address-assignment limitations.
+        fields:
+          school_year: {type: string, required: true}
+          source_ids: {type: array, required: true}
+          scope: {type: enum, allowed: [partial_silverleaf, communitywide_verified]}
 
 utilities:
   type: array

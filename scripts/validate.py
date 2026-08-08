@@ -302,6 +302,30 @@ def main():
     else:
         check("silverleaf_scope.yaml missing (optional)", True)
 
+    # 11. SilverLeaf mobility scope registry
+    print("\n11. SilverLeaf Mobility Scope Registry")
+    mobility_path = os.path.join(REPO_ROOT, "registry", "silverleaf_mobility.yaml")
+    mobility_schema = os.path.join(REPO_ROOT, "schemas", "silverleaf_mobility.schema.yaml")
+    check("registry/silverleaf_mobility.yaml exists", os.path.exists(mobility_path))
+    check("schemas/silverleaf_mobility.schema.yaml exists", os.path.exists(mobility_schema))
+    if os.path.exists(mobility_path):
+        try:
+            with open(mobility_path) as f:
+                mobility = yaml.safe_load(f)
+            check("silverleaf_mobility.yaml parses", True)
+            check(f"  mobility segments registered ({len(mobility.get('segments', []))})",
+                  bool(mobility.get("segments")))
+            import subprocess
+            sub = subprocess.run(
+                [sys.executable, os.path.join(REPO_ROOT, "scripts", "validate_silverleaf_mobility.py")],
+                capture_output=True, text=True)
+            check("  validate_silverleaf_mobility.py passes", sub.returncode == 0,
+                  sub.stdout.strip().splitlines()[-1] if sub.stdout else sub.stderr[:120])
+        except Exception as e:
+            check(f"silverleaf mobility validation failed: {e}", False)
+    else:
+        check("silverleaf_mobility.yaml missing (optional)", True)
+
     print(f"\n{'=' * 50}")
     print(f"Result: {'ALL PASSED' if exit_code == 0 else f'{exit_code} FAILURES'}")
     sys.exit(exit_code)

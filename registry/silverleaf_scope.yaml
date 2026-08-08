@@ -27,8 +27,127 @@
 
 schema_version: "1.0"
 status: active
-last_updated: "2026-08-04"
+last_updated: "2026-08-08"
 product: "SilverLeaf Brief"
+
+# -----------------------------------------------------------------------------
+# Authoritative geographic evidence — evidence, not a machine-readable boundary
+# -----------------------------------------------------------------------------
+# The SilverLeaf DRI/PUD is a legal/planning geography.  The SilverLeaf Brief
+# uses a narrower editorial relevance model below.  Neither is a substitute for
+# the other, and this file deliberately contains no geometry until an official,
+# versioned geometry source has been acquired and reviewed.
+geographic_authority:
+  status: evidence_only
+  canonical_geography:
+    - id: silverleaf_dri
+      name: "Silverleaf Development of Regional Impact"
+      geography_kind: legal_planning_area
+      verification: verified
+      source_id: SJC-DRIMOD-2024-01
+      summary: >
+        County planning material describes the Silverleaf DRI as approximately
+        8,884 acres in the Northwest Sector. It is generally north and south
+        of the planned First Coast Expressway, west of I-95, south and east of
+        CR 210 W, and south of SR 13 N to Trout Creek; it also includes a
+        separate western tract. This prose is orientation evidence only.
+      geometry_status: no_geometry_loaded
+      publication_use: >
+        Supports geographic context and source disambiguation only. It must
+        not be used to label an item "in SilverLeaf" by point containment.
+    - id: silverleaf_pud
+      name: "Silverleaf Planned Unit Development"
+      geography_kind: legal_planning_area
+      verification: verified
+      source_id: SJC-MAJMOD-2024-04
+      summary: >
+        County planning material identifies the Silverleaf PUD and its master
+        development-plan map. Individual parcels and later amendments may
+        change the legal development plan; this registry is not a parcel or
+        entitlement record.
+      geometry_status: no_geometry_loaded
+      publication_use: >
+        Supports review of planning applications that explicitly identify the
+        Silverleaf PUD. It does not establish a public-product boundary.
+  sources:
+    - id: SJC-DRIMOD-2024-01
+      authority: St. Johns County Planning and Zoning
+      source_url: "https://www.sjcfl.us/wp-content/uploads/2024/09/6.-drimod-2024-01-silverleaf-dri.pdf"
+      document_title: "DRIMOD 2024-01 Silverleaf DRI agenda item"
+      source_type: official_planning_document
+      retrieved_on: "2026-08-08"
+      supports: [legal_planning_context, orientation, approximate_dri_extent]
+      limitations: >
+        Contains a map series and narrative orientation, but no reviewed,
+        machine-readable geometry is stored in this repository.
+    - id: SJC-MAJMOD-2024-04
+      authority: St. Johns County Planning and Zoning
+      source_url: "https://www.sjcfl.us/wp-content/uploads/2024/09/7.-majmod-2024-04-silverleaf-pud.pdf"
+      document_title: "MAJMOD 2024-04 Silverleaf PUD agenda item"
+      source_type: official_planning_document
+      retrieved_on: "2026-08-08"
+      supports: [pud_identity, master_development_plan_context]
+      limitations: >
+        A planning-agenda record, not a versioned GIS boundary service or a
+        complete record of every later parcel amendment.
+    - id: SJC-COMP-PLAN-2050-LAND-USE
+      authority: St. Johns County
+      source_url: "https://www.sjcfl.us/wp-content/uploads/2026/06/A-Land-Use-2050.pdf"
+      document_title: "2050 Comprehensive Plan — Land Use"
+      source_type: official_planning_document
+      retrieved_on: "2026-08-08"
+      supports: [parcel_40_constraints, access_exclusion_context]
+      limitations: >
+        Supports named development constraints and edge-road exclusions; it
+        does not supply a product-ready SilverLeaf boundary.
+  prohibited_interpretations:
+    - "Do not derive coordinates, a polygon, or a precise boundary from prose, screenshots, or a georeferenced-looking PDF without a reviewed authoritative geometry source."
+    - "Do not equate the full DRI or PUD legal planning area with the SilverLeaf Brief editorial scope."
+    - "Do not infer school attendance zones, private-road access, or public route access from a planning map."
+  geometry_acquisition_gate:
+    required_before_geometry: >
+      Record the authoritative publisher, source URL or service endpoint,
+      layer/version/date, CRS, license/public-access status, acquisition date,
+      and a human review of what the geometry represents.
+    accepted_geometry_types: [official_gis_feature_service, recorded_plat_geometry, county-approved_boundary_dataset]
+    rejected_geometry_types: [hand_drawn_polygon, search_result_pin, vendor_marketing_map, inferred_envelope]
+
+# -----------------------------------------------------------------------------
+# School-service authority — school-year-specific and address-safe
+# -----------------------------------------------------------------------------
+# A school located in SilverLeaf is not automatically the assigned school for
+# every SilverLeaf address. Service relationships are limited to the district's
+# approved school-year authority and are never a substitute for its address
+# locator or an individual enrollment decision.
+school_authority:
+  status: active
+  sources:
+    - id: SJCSD-ZONING-2026-27
+      authority: St. Johns County School District
+      source_url: "https://www.stjohns.k12.fl.us/zoning/"
+      document_title: "Attendance Zone Information — 2026-2027"
+      source_type: official_district_zoning_page
+      retrieved_on: "2026-08-08"
+      supports: [current_zone_locator, approved_qq_zone_reference, school_year_context]
+    - id: SJCSD-QQ-PLAN-C-2026-27
+      authority: St. Johns County School District
+      source_url: "https://www.stjohns.k12.fl.us/zoning/wp-content/uploads/sites/44/2025/10/Attendance-Zoning-2026-2027-K-8-QQ_Plan-C-Modified.pdf"
+      document_title: "Attendance Zoning 2026-2027 K-8 QQ Plan C-Modified"
+      source_type: official_district_zoning_document
+      retrieved_on: "2026-08-08"
+      supports: [approved_qq_service_area, named_neighborhoods, transition_context]
+    - id: SJCSD-MAGNOLIA-OPENING-2026
+      authority: St. Johns County School District
+      source_url: "https://www.stjohns.k12.fl.us/news/silverleaf-school/"
+      document_title: "St. Johns County School District Opens First School in Silverleaf Community"
+      source_type: official_district_news
+      retrieved_on: "2026-08-08"
+      supports: [magnolia_identity, silverleaf_location, grade_span_2026_2027]
+  address_assignment_rule: >
+    The district attendance-zone locator is the current authority for an
+    individual address. Registry relationships are only a review aid and must
+    not be used to advise a family that a specific address is assigned to a
+    school.
 
 # -----------------------------------------------------------------------------
 # Canonical identity
@@ -155,18 +274,50 @@ roads:
 # -----------------------------------------------------------------------------
 schools:
   - id: ENT-EDU-SILVERLEAF-K8
-    name: "SilverLeaf K-8 School"
-    status: under_construction
+    name: "Magnolia Oaks Academy"
+    former_designations: ["K-8 School QQ", "SilverLeaf K-8 School"]
+    status: open_2026_2027
     entity_id: ENT-EDU-SILVERLEAF-K8
     verification: verified
-    attendance_zone: needs-review
-    attendance_zone_note: "official zone map not yet registered (DIR-010)"
-    evidence_source: "registry/tracked_entities.yaml ENT-EDU-SILVERLEAF-K8"
+    attendance_zone: verified_partial
+    attendance_service:
+      school_year: "2026-2027"
+      approved_on: "2025-11-18"
+      grade_span: [K, 1, 2, 3, 4, 5, 6, 7]
+      scope: partial_silverleaf
+      registered_neighborhoods:
+        - cherry_elm
+        - sl_elm_creek
+        - sl_silver_landing
+        - sl_silver_falls
+        - sl_silver_meadows
+        - sl_silverleaf_village
+        - sl_newbrook
+      district_named_areas_not_yet_registered:
+        - Aspire
+        - Elm Ridge
+        - Hartford
+        - Hammock Oaks
+        - "Parcels 14, 22, 23, 26, and 29"
+      source_ids: [SJCSD-ZONING-2026-27, SJCSD-QQ-PLAN-C-2026-27, SJCSD-MAGNOLIA-OPENING-2026]
+      limitations: >
+        The approved plan describes a portion of SilverLeaf. It is not a
+        community-wide assignment, does not resolve an individual address,
+        and must be rechecked for each future school year. The district's
+        separate 2026-2027 8th-grade locator applies to relevant eighth-grade
+        transition assignments.
+    evidence_source: "school_authority sources; registry/tracked_entities.yaml ENT-EDU-SILVERLEAF-K8"
   - id: tocoi_creek_high
     name: "Tocoi Creek High School"
-    status: serving_school_likely
-    verification: inferred
-    evidence_source: "CR 2209 connector evidence (registry/tracked_entities.yaml ENT-ROAD-CR-2209-CONNECTOR); attendance zone not confirmed"
+    status: attendance_relationship_unverified
+    verification: needs-review
+    attendance_zone: needs-review
+    attendance_zone_note: >
+      No school-year-specific district authority is registered that assigns a
+      SilverLeaf address or named neighborhood to Tocoi Creek High School.
+      Proximity, traffic context, and a town-hall location are not attendance
+      assignment evidence.
+    evidence_source: "No registered attendance-zone authority; retain only as a potential research subject."
   - id: sjc_school_district
     name: "St. Johns County School District"
     status: district_authority
@@ -294,7 +445,7 @@ inclusion_rules:
     rule: "Item is inside the SilverLeaf boundary or a registered SilverLeaf neighborhood."
     verification: editorial-policy
   - id: INC-02
-    rule: "Item affects a school serving SilverLeaf (SilverLeaf K-8; Tocoi Creek HS while inferred)."
+    rule: "Item affects a school with a school-year-specific registered SilverLeaf service relationship, or an explicitly identified SilverLeaf school."
     verification: editorial-policy
   - id: INC-03
     rule: "Item affects a major access/commute route (SilverLeaf Parkway, CR 16A, St. Johns Parkway/CR 2209, CR 210, SR 16, IGP)."
@@ -351,4 +502,4 @@ needs_review:
   - id: ENT-RETAIL-CR16A-SL-PKWY-GROCERY
     note: "Provisional center identity; formal name not verified."
   - id: tocoi_creek_high
-    note: "Serving-school status inferred; attendance zone authority missing (DIR-010)."
+    note: "No school-year-specific district authority supports a SilverLeaf attendance relationship; do not treat as serving school."

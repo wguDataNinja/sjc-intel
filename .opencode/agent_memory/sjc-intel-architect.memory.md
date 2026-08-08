@@ -1,46 +1,40 @@
 # sjc-intel-architect Memory
 
-Last updated: 2026-08-06
+Last updated: 2026-08-07
 
-## Current State
+## Current state
 
-- Phase: supervised, file-first local intelligence workflow with a static
-  SilverLeaf Brief MVP; no scheduler, deployment, or autonomous publication.
-- Current operational handoff: `README_INTERNAL.md` → `CURRENT_BRIEF.md` →
-  `docs/live_adaptive_operations.md` / `docs/human_review.md`.
-- Adaptive governance authority is versioned in `data/adaptive_discovery/`;
-  raw live runs and receipts remain transient in `runtime/adaptive_discovery/`.
-- `CURRENT_BRIEF.md`: pipeline HEALTHY; operator/overall NEEDS_REVIEW because
-  22 adaptive proposals are pending. No accepted adaptive records currently.
+- SJC_Intel is supervised and file-first. Canonical corpus/review authority is
+  local; no scheduler or autonomous publication exists.
+- `CURRENT_BRIEF.md` is generated from durable adaptive state and now also
+  summarizes the publication-policy exception counts.
+- Task 26 completed the supervised weekly adaptive cycle. Its final run is
+  `SJC-LIVE-20260807-2604`; current adaptive proposals are resolved there.
 
-## Weekly Hermes Path
+## Publication
 
-- Entry point: `docs/hermes_weekly_entrypoint.md`; worker prompt:
-  `prompts/sjc_weekly_ops_task.md`; task declaration:
-  `deploy/sjc-weekly-task.yaml` (`enabled: false`).
-- Initial weekly runner supports NBOR public notices and SJSO RSS. It writes an
-  isolated bundle only; human review/import owns corpus transitions.
-- Offline two-source simulation passed 2026-08-06: 27 candidates and verified
-  manifest/checksums. Do not enable a timer without explicit gate approval.
+- `docs/PUBLICATION_POLICY.md` is the authority for default publication.
+  `scripts/publication_policy.py` derives `AUTO_PUBLISHABLE`,
+  `NEEDS_HUMAN_REVIEW`, `NEEDS_MORE_RESEARCH`, or `EXCLUDE`; it never mutates
+  evidence, review state, or decisions.
+- Individual files in `data/publication_decisions/` are human exceptions,
+  corrections, and withdrawals rather than a per-item default gate.
+- Local `SJC-REL-2026-08-002` contains seven policy-selected items and records
+  `SJC-REL-2026-08-001` as rollback predecessor. It was generated locally;
+  no commit, push, or GitHub Pages deployment occurred in Task 27.
+- The next corpus-expansion work is not bulk publication: resolve the policy
+  exceptions by adding concrete relevance/canonical/source evidence for the
+  high-value historical candidates from Task 20.
 
-## Evidence and Website
+## Operations
 
-- Historical replay: `data/backtests/task22_replay/` spans 66 weekly windows;
-  final evaluation reports zero leakage violations. It is deterministic fixture
-  validation, not a claim of historical search-rank replay.
-- Static site: `site/` is generated from reviewed release
-  `SJC-REL-2026-08-001` (4 items, 13 routes). No host/deployment target chosen.
+- Weekly runner remains declared but disabled in `deploy/sjc-weekly-task.yaml`.
+  Ivy scheduler activation remains a separate privileged gate.
+- Keep live runs, source promotion, review-state changes, and deployment under
+  explicit scope. Never turn `pending_review` into `verified` by policy.
 
-## Active Blockers / Next Action
+## Latest evidence
 
-- Human review of 22 adaptive proposals in small evidence-backed groups;
-  strongest entity/search/timeline proposals first.
-- Scheduler, live weekly Hermes execution, source promotion, publication, and
-  deployment all require explicit Buddy approval.
-- Keep docs coherent: generic source-monitor tasks must state whether they are
-  direct-supervised or weekly-bundle mode.
-
-## Latest Logs
-
-- `logs/agents/sjc-intel-architect/2026-08-06_adaptive_governance_durability.md`
-- `logs/agents/sjc-intel-architect/2026-08-06_operational_readiness_audit.md`
+- `reports/26-codex-v1-finish-and-publish.md`
+- `reports/27-publication-policy-defaults.md`
+- `logs/agents/sjc-intel-architect/2026-08-07_publication-policy-defaults.md`

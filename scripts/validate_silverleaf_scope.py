@@ -23,6 +23,8 @@ ENTITIES_FILE = os.path.join(REPO_ROOT, "registry", "tracked_entities.yaml")
 
 PROVENANCE = {"verified", "inferred", "editorial-policy", "needs-review"}
 RELEVANCE_IDS = {"in_silverleaf", "near_silverleaf", "countywide_impact"}
+GEOGRAPHY_STATUSES = {"evidence_only", "geometry_reviewed"}
+GEOMETRY_STATUSES = {"no_geometry_loaded", "reviewed_geometry_available"}
 
 
 def load_yaml(path):
@@ -57,6 +59,77 @@ def validate():
     _check("schema_version present", bool(scope.get("schema_version")))
     _check("community.canonical_name present",
            bool((scope.get("community") or {}).get("canonical_name")))
+
+    # Geographic authority: planning evidence is intentionally separate from
+    # editorial relevance and must not silently become an inferred geometry.
+    geo = scope.get("geographic_authority") or {}
+    _check("geographic_authority present", bool(geo))
+    _check("geographic_authority status valid",
+           geo.get("status") in GEOGRAPHY_STATUSES, str(geo.get("status")))
+    geo_sources = {source.get("id"): source for source in geo.get("sources", [])
+                   if source.get("id")}
+    _check("geographic authority has official sources", len(geo_sources) >= 3,
+           f"found {len(geo_sources)}")
+    bad_geo_urls = [sid for sid, source in geo_sources.items()
+                    if not str(source.get("source_url", "")).startswith("https://www.sjcfl.us/")]
+    _check("geographic authority source URLs are official HTTPS county URLs",
+           not bad_geo_urls, str(bad_geo_urls))
+    required_geo_ids = {"SJC-DRIMOD-2024-01", "SJC-MAJMOD-2024-04",
+                        "SJC-COMP-PLAN-2050-LAND-USE"}
+    _check("required SilverLeaf geographic authorities present",
+           required_geo_ids <= set(geo_sources),
+           str(sorted(required_geo_ids - set(geo_sources))))
+    missing_geo_source_links = [record.get("id") for record in geo.get("canonical_geography", [])
+                                if record.get("source_id") not in geo_sources]
+    _check("canonical geography source links resolve", not missing_geo_source_links,
+           str(missing_geo_source_links))
+    bad_geometry_statuses = [record.get("id") for record in geo.get("canonical_geography", [])
+                             if record.get("geometry_status") not in GEOMETRY_STATUSES]
+    _check("canonical geography geometry statuses valid", not bad_geometry_statuses,
+           str(bad_geometry_statuses))
+    if geo.get("status") == "evidence_only":
+        nonempty_geometry = [record.get("id") for record in geo.get("canonical_geography", [])
+                             if record.get("geometry_status") != "no_geometry_loaded"]
+        _check("evidence-only authority has no asserted geometry", not nonempty_geometry,
+               str(nonempty_geometry))
+
+    # School assignment is address-sensitive. Validate that any stored
+    # relationship is school-year-bound and backed by the official district
+    # authority, rather than allowing proximity to imply attendance.
+    school_authority = scope.get("school_authority") or {}
+    _check("school_authority present", bool(school_authority))
+    school_sources = {source.get("id"): source
+                      for source in school_authority.get("sources", []) if source.get("id")}
+    _check("school authority has official district sources", len(school_sources) >= 3,
+           f"found {len(school_sources)}")
+    bad_school_urls = [sid for sid, source in school_sources.items()
+                       if not str(source.get("source_url", "")).startswith("https://www.stjohns.k12.fl.us/")]
+    _check("school authority source URLs are official district HTTPS URLs",
+           not bad_school_urls, str(bad_school_urls))
+    required_school_ids = {"SJCSD-ZONING-2026-27", "SJCSD-QQ-PLAN-C-2026-27",
+                           "SJCSD-MAGNOLIA-OPENING-2026"}
+    _check("required SilverLeaf school authorities present",
+           required_school_ids <= set(school_sources),
+           str(sorted(required_school_ids - set(school_sources))))
+    bad_attendance_service = []
+    for school in scope.get("schools", []):
+        service = school.get("attendance_service")
+        if not service:
+            continue
+        if not service.get("school_year"):
+            bad_attendance_service.append(f"{school.get('id')}: missing school_year")
+        if service.get("scope") not in {"partial_silverleaf", "communitywide_verified"}:
+            bad_attendance_service.append(f"{school.get('id')}: invalid scope {service.get('scope')}")
+        unresolved = [source_id for source_id in service.get("source_ids", [])
+                      if source_id not in school_sources]
+        if not service.get("source_ids"):
+            bad_attendance_service.append(f"{school.get('id')}: missing source_ids")
+        elif unresolved:
+            bad_attendance_service.append(f"{school.get('id')}: unresolved {unresolved}")
+        if not service.get("limitations"):
+            bad_attendance_service.append(f"{school.get('id')}: missing limitations")
+    _check("attendance services are year-bound and source-backed",
+           not bad_attendance_service, str(bad_attendance_service))
 
     # Provenance vocabulary everywhere it appears.
     provenance_fields = []
@@ -154,6 +227,8 @@ def validate():
         "developments": len(scope.get("developments", [])),
         "direct_roads": len(scope.get("roads", {}).get("direct_serving", [])),
         "adjacent_corridors": len(scope.get("roads", {}).get("adjacent_corridors", [])),
+        "geographic_authority_sources": len(geo_sources),
+        "school_authority_sources": len(school_sources),
         "needs_review": len(scope.get("needs_review", [])),
     }
 

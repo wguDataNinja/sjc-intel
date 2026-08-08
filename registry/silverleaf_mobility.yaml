@@ -1,0 +1,166 @@
+# =============================================================================
+# SJC_Intel — SilverLeaf Mobility Scope Registry
+# =============================================================================
+# Defines the source-backed road segments and notice-selection rules relevant to
+# SilverLeaf residents. This is an editorial monitoring scope, not a routing
+# engine, GIS network, access-rights determination, or live traffic feed.
+# =============================================================================
+
+schema_version: "1.0"
+status: active
+last_updated: "2026-08-08"
+scope_registry: "registry/silverleaf_scope.yaml"
+
+authority_sources:
+  - id: SJC-CR2209-OPEN-2025
+    authority: St. Johns County Public Works
+    source_url: "https://www.sjcfl.us/sjc-opens-county-road-2209-segment-silverleaf-international-golf-parkway/"
+    document_title: "SJC Opens $41 Million Segment of County Road 2209 Between Silverleaf Parkway and International Golf Parkway"
+    source_type: official_county_project_record
+    retrieved_on: "2026-08-08"
+  - id: SJC-CR2209-CENTRAL-2025
+    authority: St. Johns County Public Works
+    source_url: "https://www.sjcfl.us/county-road-2209-roadway-expansion-underway/"
+    document_title: "County Road 2209 Roadway Expansion Underway"
+    source_type: official_county_project_record
+    retrieved_on: "2026-08-08"
+  - id: SJC-SR16-IGP-2025
+    authority: St. Johns County Public Works
+    source_url: "https://www.sjcfl.us/sjc-groundbreaking-sr-16-international-golf-parkway-project/"
+    document_title: "County Celebrates Start of State Road 16 and International Golf Parkway Improvements Project"
+    source_type: official_county_project_record
+    retrieved_on: "2026-08-08"
+  - id: FDOT-SR16-IGP-I95-2025
+    authority: Florida Department of Transportation District Two
+    source_url: "https://nflroads.com/ProjectDetails?p=5615"
+    document_title: "SR 16 from IGP to I-95 PD&E Study"
+    source_type: official_state_project_record
+    retrieved_on: "2026-08-08"
+  - id: SJC-CR210-COMPLETE-2026
+    authority: St. Johns County Public Works
+    source_url: "https://www.sjcfl.us/cr-210-roadway-improvements-completed-2026/"
+    document_title: "CR 210 Roadway Improvements from I-95 to U.S. 1 Completed"
+    source_type: official_county_project_record
+    retrieved_on: "2026-08-08"
+
+# Segment endpoints are named intersections/project limits, not coordinates.
+# An endpoint must be treated as a textual scope anchor until DIR-007 obtains
+# reviewed geometry under the geographic-registry acquisition gate.
+segments:
+  - id: sl_cr2209_igp_to_silverleaf_parkway
+    name: "CR 2209 / St. Johns Parkway — International Golf Parkway to Silverleaf Parkway"
+    relationship: direct_access
+    road_owner_context: county_project
+    endpoints:
+      from: "International Golf Parkway"
+      to: "Silverleaf Parkway"
+    status: open
+    source_ids: [SJC-CR2209-OPEN-2025, SJC-CR2209-CENTRAL-2025]
+    linked_entity_id: ENT-ROAD-CR-2209-CONNECTOR
+    monitor_sources: [sjc_nbor_public_notices, sjc_transportation_infrastructure]
+    selection_rule: >
+      Include closures, detours, construction, signals, access-management
+      changes, or safety notices that name CR 2209, St. Johns Parkway,
+      International Golf Parkway, or Silverleaf Parkway and are tied to this
+      segment or its endpoints.
+    exclusions:
+      - "Do not infer that every CR 2209 notice lies on this segment."
+      - "Do not use this segment to assign a school or a specific commute route."
+
+  - id: sl_sr16_igp_to_cr2209
+    name: "SR 16 / International Golf Parkway / CR 2209 interface"
+    relationship: direct_connection_interface
+    road_owner_context: county_project
+    endpoints:
+      from: "International Golf Parkway"
+      to: "County Road 2209"
+    status: under_improvement
+    source_ids: [SJC-SR16-IGP-2025]
+    monitor_sources: [sjc_nbor_public_notices, sjc_transportation_infrastructure]
+    selection_rule: >
+      Include notices explicitly concerning the SR 16–IGP intersection or the
+      SR 16 improvements between IGP and CR 2209, including closures, detours,
+      signals, sidewalks, drainage, or construction phases.
+    exclusions:
+      - "Do not include a generic SR 16 notice outside the named interface without a concrete SilverLeaf connection."
+
+  - id: sl_sr16_igp_to_i95
+    name: "SR 16 — International Golf Parkway to I-95"
+    relationship: nearby_commute_corridor
+    road_owner_context: state_pde_study
+    endpoints:
+      from: "International Golf Parkway"
+      to: "I-95 (SR 9)"
+    status: study
+    source_ids: [FDOT-SR16-IGP-I95-2025]
+    monitor_sources: [fdot_district_two_nflroads, sjc_nbor_public_notices]
+    selection_rule: >
+      Include project decisions, public hearings, construction milestones, or
+      materially disruptive planned closures that explicitly concern the
+      5.9-mile IGP-to-I-95 study limits. Present it as a nearby corridor, not
+      an in-community road.
+    exclusions:
+      - "Do not include general I-95 incidents or all SR 16 incidents."
+      - "Do not state a completion date when the project authority lists TBD."
+
+  - id: sl_cr210_i95_to_us1_context
+    name: "CR 210 — I-95 to U.S. 1 contextual corridor"
+    relationship: contextual_only
+    road_owner_context: county_project
+    endpoints:
+      from: "I-95"
+      to: "U.S. 1"
+    status: completed_project_context
+    source_ids: [SJC-CR210-COMPLETE-2026]
+    monitor_sources: [sjc_transportation_infrastructure]
+    selection_rule: >
+      Retain as background or include only when an official record directly
+      connects the item to CR 2209/St. Johns Parkway, SilverLeaf access, or a
+      documented SilverLeaf household impact.
+    exclusions:
+      - "Do not auto-include generic CR 210 congestion, Beachwalk-only notices, or unrelated I-95-to-US-1 work."
+
+  - id: sl_i95_interface_context
+    name: "I-95 interface at SR 16"
+    relationship: contextual_only
+    road_owner_context: state_pde_study
+    endpoints:
+      from: "SR 16 project limit"
+      to: "I-95 (SR 9)"
+    status: study_context
+    source_ids: [FDOT-SR16-IGP-I95-2025]
+    monitor_sources: [fdot_district_two_nflroads]
+    selection_rule: >
+      Include only SR 16 project notices that expressly identify the I-95
+      interface. This exists to explain the SR 16 project endpoint, not to
+      monitor I-95 generally.
+    exclusions:
+      - "Never include a generic I-95 incident solely because SilverLeaf residents may use I-95."
+
+unknown_or_unverified:
+  - id: sl_internal_streets_and_entrances
+    status: not_registered
+    reason: >
+      No reviewed official GIS/plat dataset has been acquired for a complete
+      internal-street, entrance, and public/private-road inventory.
+    rule: >
+      A notice naming an internal street requires direct source evidence of a
+      SilverLeaf relationship before scope tagging; do not infer from a map,
+      a marketing subdivision, or text similarity.
+  - id: sl_fce_alignment_and_access
+    status: not_registered
+    reason: >
+      The repository tracks First Coast Expressway context, but this mobility
+      registry has no reviewed official segment/alignment that establishes a
+      SilverLeaf-specific incident-monitoring boundary.
+    rule: "Keep FCE as a separately sourced project subject until a bounded official segment is reviewed."
+
+operational_rules:
+  - id: MOB-01
+    rule: "A notice must name a registered segment, endpoint, linked entity, or a concrete documented SilverLeaf impact before it receives a SilverLeaf mobility relevance tag."
+  - id: MOB-02
+    rule: "Direct-access segments may support timely road notices; nearby and contextual segments require their relationship label in public-facing copy."
+  - id: MOB-03
+    rule: "Private/public road status is never inferred from a street name, plat-like map, or routing application."
+  - id: MOB-04
+    rule: "Live crash, congestion, camera, or emergency data is outside this registry and remains subject to DIR-003, DIR-004, and DIR-005 review gates."

@@ -271,10 +271,11 @@ tracked_entities:
     entity_type: "road_project"
     label: "CR 2209 Connector (IGP to SilverLeaf Parkway)"
     description: >
-      Three-mile, four-lane divided roadway connecting International Golf
-      Parkway to SilverLeaf Parkway. Opened October 28, 2025. Relieves
-      congestion around Tocoi Creek High School (2,700+ students) and
-      provides a direct SilverLeaf-to-IGP route.
+      County Road 2209 roadway segment connecting Silverleaf Parkway and
+      International Golf Parkway. County records identify it as an opened
+      four-lane divided connection and as part of the larger CR 2209 Central
+      Project. The exact resident mobility-selection rules are in
+      registry/silverleaf_mobility.yaml.
     lifecycle_status: "completed"
     priority: "high"
     communities:
@@ -289,12 +290,17 @@ tracked_entities:
       - '"County Road 2209"'
       - '"International Golf Parkway" SilverLeaf'
     sources:
-      - url: "https://sjcitizen.com/road-relief-heres-your-first-look-at-st-johns-countys-newest-highway/"
-        label: "Opening announcement"
-        source_id: "st_johns_citizen"
+      - url: "https://www.sjcfl.us/sjc-opens-county-road-2209-segment-silverleaf-international-golf-parkway/"
+        label: "County opening record"
+        source_id: "sjc_transportation_infrastructure"
+      - url: "https://www.sjcfl.us/county-road-2209-roadway-expansion-underway/"
+        label: "County central-project record"
+        source_id: "sjc_transportation_infrastructure"
     evidence_notes: >
-      Opened Oct 28, 2025 per St. Johns Citizen. County public works
-      record not independently verified.
+      County Public Works records provide the authority for the opened
+      Silverleaf Parkway–International Golf Parkway segment. Do not infer
+      that all CR 2209 work is on this segment or that it determines school
+      attendance.
     last_checked: "2026-07-04"
     tracked_since: "2026-07-04"
 

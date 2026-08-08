@@ -28,6 +28,37 @@ class TestScopeRegistry:
         assert result["status"] == "PASS", result["errors"]
         assert result["errors"] == []
 
+    def test_authoritative_geography_is_evidence_only_and_resolves(self):
+        scope = _load("registry/silverleaf_scope.yaml")
+        geo = scope["geographic_authority"]
+        assert geo["status"] == "evidence_only"
+        sources = {source["id"]: source for source in geo["sources"]}
+        assert {"SJC-DRIMOD-2024-01", "SJC-MAJMOD-2024-04",
+                "SJC-COMP-PLAN-2050-LAND-USE"} <= set(sources)
+        assert all(source["source_url"].startswith("https://www.sjcfl.us/")
+                   for source in sources.values())
+        assert all(record["source_id"] in sources
+                   for record in geo["canonical_geography"])
+        assert all(record["geometry_status"] == "no_geometry_loaded"
+                   for record in geo["canonical_geography"])
+
+    def test_school_service_is_year_bound_partial_and_source_backed(self):
+        scope = _load("registry/silverleaf_scope.yaml")
+        sources = {source["id"]: source for source in scope["school_authority"]["sources"]}
+        assert {"SJCSD-ZONING-2026-27", "SJCSD-QQ-PLAN-C-2026-27",
+                "SJCSD-MAGNOLIA-OPENING-2026"} <= set(sources)
+        magnolia = next(school for school in scope["schools"]
+                       if school["id"] == "ENT-EDU-SILVERLEAF-K8")
+        service = magnolia["attendance_service"]
+        assert service["school_year"] == "2026-2027"
+        assert service["scope"] == "partial_silverleaf"
+        assert set(service["source_ids"]) <= set(sources)
+        assert "individual address" in service["limitations"].lower()
+        tocoi = next(school for school in scope["schools"]
+                     if school["id"] == "tocoi_creek_high")
+        assert tocoi["verification"] == "needs-review"
+        assert "unverified" in tocoi["status"]
+
     def test_provenance_vocabulary(self):
         scope = _load("registry/silverleaf_scope.yaml")
         fields = []
@@ -81,7 +112,26 @@ class TestScopeRegistry:
 
     def test_no_gis_or_boundary_claims(self):
         scope = _load("registry/silverleaf_scope.yaml")
-        text = yaml.safe_dump(scope).lower()
-        for token in ("polygon", "latitude", "longitude", "coordinates", "acreage boundary"):
-            assert token not in text, token
+        # The registry may describe why a future polygon/coordinate is not
+        # available, but an evidence-only registry must not carry geometry.
+        forbidden_geometry_keys = {
+            "polygon", "latitude", "longitude", "coordinates", "coordinate",
+            "geometry", "geojson", "wkt",
+        }
+
+        def walk(value):
+            if isinstance(value, dict):
+                for key, child in value.items():
+                    assert (key.lower() not in forbidden_geometry_keys
+                            or key == "geometry_status"), key
+                    walk(child)
+            elif isinstance(value, list):
+                for child in value:
+                    walk(child)
+
+        walk(scope)
+        geo = scope["geographic_authority"]
+        assert geo["status"] == "evidence_only"
+        assert all(record["geometry_status"] == "no_geometry_loaded"
+                   for record in geo["canonical_geography"])
         assert "no official boundary" in str(scope.get("roads", {}).get("boundary_notes", "")).lower()
