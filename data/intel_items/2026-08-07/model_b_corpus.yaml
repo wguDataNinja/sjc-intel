@@ -1,0 +1,211 @@
+source_id: "silverleaf_discovery"
+fetched_at: "2026-08-07T12:00:00Z"
+source_url: "https://www.stjohns.k12.fl.us/newschools/"
+total_items: 5
+items:
+  - item_id: "SJC-SL-20260807-0001"
+    title: "Magnolia Oaks Academy — new SilverLeaf K-8 school opens for 2026-2027"
+    summary: "St. Johns County School District lists Magnolia Oaks Academy as the new K-8 school serving the SilverLeaf DRI (Parcel 29C), which the district confirms remains under construction. Local reporting (News4JAX, Action News Jax) says the campus is set to open for the 2026-2027 school year with about 1,500 students across 73 classrooms. The school was previously tracked under the placeholder names School QQ and SilverLeaf K-8."
+    source_id: "sjcsd_new_schools"
+    source_url: "https://www.stjohns.k12.fl.us/newschools/"
+    source_published_at: "2026-08-07"
+    discovered_at: "2026-08-07T12:00:00Z"
+    discovered_by: "sjc-intel-architect (Task 29)"
+    topics:
+      - education
+      - development
+    communities:
+      - silverleaf
+    geographic_scope: "single_community"
+    urgency: "ongoing"
+    verification_status: "cross_referenced"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: "St. Johns County School District new-schools page lists K-8 School QQ (SilverLeaf DRI, Parcel 29C) as Under Construction; the district school directory lists Magnolia Oaks Academy. News4JAX and Action News Jax (2026-07-22) report the campus opens for the 2026-2027 school year."
+    review_status: "verified"
+    primary_topic: "education"
+    interest_tags:
+      - "schools"
+      - "development_watch"
+      - "property_values"
+    resident_relevance:
+      summary: "SilverLeaf families get their own K-8 school for the 2026-2027 year, ending long bus routes and relieving portable-classroom crowding."
+      affected_audiences:
+        - "residents"
+        - "families"
+        - "homeowners"
+      why_it_matters: "The opening may change attendance zones and shorten school commutes for SilverLeaf households; the final opening date and attendance boundary are the top school questions."
+      confidence: "high"
+      inference_notes: "District directory lists Magnolia Oaks Academy and the new-schools page confirms School QQ (SilverLeaf DRI, Parcel 29C) is under construction; cross-referenced with News4JAX and Action News Jax 2026-07-22 reporting."
+    taxonomy_gap: null
+    human_review_required: false
+    tracked_entity_ids:
+      - "ENT-EDU-SILVERLEAF-K8"
+    created_at: "2026-08-07T12:00:00Z"
+    reviewer_notes: "Model B capture (Task 29). Canonical identity School QQ -> SilverLeaf K-8 -> Magnolia Oaks Academy per SJCSD directory + News4JAX/Action News Jax 2026-07-22. Opening date/zone needs final district confirmation."
+
+  - item_id: "SJC-SL-20260807-0002"
+    title: "Baptist SilverLeaf outpatient medical campus now open"
+    summary: "Baptist Health opened its first-phase outpatient medical campus in SilverLeaf on June 23, 2026, adding hospital-grade outpatient care (imaging, labs, physician offices and an emergency center component) to the community. The campus was permitted for $16.8 million in January 2025 and received approval for a helipad addition in April 2026. Baptist Health is the facility operator and a first-party source for its own campus."
+    source_id: "baptist_health"
+    source_url: "https://www.baptistjax.com/"
+    source_published_at: "2026-06-23"
+    discovered_at: "2026-08-07T12:00:00Z"
+    discovered_by: "sjc-intel-architect (Task 29)"
+    topics:
+      - health_wellness
+      - economic_development
+    communities:
+      - silverleaf
+    geographic_scope: "single_community"
+    urgency: "ongoing"
+    verification_status: "cross_referenced"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: "News4JAX, The Business Journals, JaxToday, and the Jacksonville Daily Record (2026-06-22) report Baptist Health opened its first-phase SilverLeaf outpatient medical campus June 23, 2026; the campus received a $16.8M permit (Jan 2025) and helipad approval (Apr 2026)."
+    review_status: "verified"
+    primary_topic: "health_wellness"
+    interest_tags:
+      - "healthcare"
+      - "development_watch"
+    resident_relevance:
+      summary: "SilverLeaf residents now have an outpatient medical campus inside the community instead of driving to Jacksonville or St. Augustine for routine care."
+      affected_audiences:
+        - "residents"
+        - "homeowners"
+        - "families"
+      why_it_matters: "Closer access to Baptist outpatient services and emergency-adjacent care is a significant household convenience; a helipad approval signals the campus can support air-transport when needed."
+      confidence: "high"
+      inference_notes: "Opening 2026-06-23 cross-referenced across News4JAX, Jacksonville Daily Record, JaxToday, and The Business Journals; permit ($16.8M) and helipad details from Jacksonville Daily Record; Baptist Health is first-party operator."
+    taxonomy_gap: null
+    human_review_required: false
+    tracked_entity_ids:
+      - "ENT-HEALTH-BAPTIST-SILVERLEAF"
+    created_at: "2026-08-07T12:00:00Z"
+    reviewer_notes: "Model B capture (Task 29). Registered Baptist Health as first-party source; milestone cross-referenced across four independent outlets."
+
+  - item_id: "SJC-SL-20260807-0003"
+    title: "First Coast Expressway — St. Johns County final phase and I-95 access"
+    summary: "FDOT's First Coast Expressway (SR 23) is being built in segments; the remaining St. Johns County work reached the public-hearing stage in January 2026 and FDOT targets full completion by 2030. When complete, the toll expressway gives northwestern St. Johns County, including SilverLeaf, a new north-south alternative to I-95, and construction has required temporary St. Johns Parkway detours. Status as of early August 2026: final-phase work underway."
+    source_id: "fdot_district_two_nflroads"
+    source_url: "https://www.fdot.gov/info/moredot/districts/dist2.shtm"
+    source_published_at: "2026-08-07"
+    discovered_at: "2026-08-07T12:00:00Z"
+    discovered_by: "sjc-intel-architect (Task 29)"
+    topics:
+      - transportation
+      - infrastructure
+    communities:
+      - silverleaf
+    geographic_scope: "multi_community"
+    urgency: "ongoing"
+    verification_status: "cross_referenced"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: "Jacksonville Daily Record (2026-01-27) reports FDOT set an open house in St. Johns County for the First Coast Expressway final phase; Action News Jax reports the expressway is on track to fully open in 2030 and that St. Johns Parkway detours accompany construction."
+    review_status: "verified"
+    primary_topic: "transportation"
+    interest_tags:
+      - "commute"
+      - "infrastructure"
+    resident_relevance:
+      summary: "A completed First Coast Expressway would give SilverLeaf households a second fast route toward Jacksonville, reducing dependence on I-95."
+      affected_audiences:
+        - "residents"
+        - "commuters"
+      why_it_matters: "SilverLeaf's commute options and access to I-95 will change as the expressway completes; residents should expect detours on St. Johns Parkway during final-phase construction."
+      confidence: "high"
+      inference_notes: "Public-hearing milestone (Jacksonville Daily Record 2026-01-27), detour reporting (Action News Jax), and 2030 completion target (Action News Jax/FDOT) cross-referenced; framed with explicit 'status as of' dating."
+    taxonomy_gap: null
+    human_review_required: false
+    tracked_entity_ids: []
+    created_at: "2026-08-07T12:00:00Z"
+    reviewer_notes: "Model B capture (Task 29). Durable context item with explicit date/status framing; FDOT page is the stable official source URL."
+
+  - item_id: "SJC-SL-20260807-0004"
+    title: "CR 210 widening completed in time for the 2026-2027 school year"
+    summary: "The county's multi-year CR 210 widening project reached a major completion milestone ahead of the 2026-2027 school year, with local reporting (News4JAX) indicating the new roadway opened before the first day of school. The project had shifted traffic onto newly built lanes in August 2025 as part of the widening through northern St. Johns County."
+    source_id: "sjc_county_news"
+    source_url: "https://www.sjcfl.us/featured-projects/"
+    source_published_at: "2026-08-07"
+    discovered_at: "2026-08-07T12:00:00Z"
+    discovered_by: "sjc-intel-architect (Task 29)"
+    topics:
+      - transportation
+      - infrastructure
+    communities:
+      - cr_210_corridor
+    geographic_scope: "multi_community"
+    urgency: "ongoing"
+    verification_status: "cross_referenced"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: "News4JAX (Aug 2026) reports the CR 210 widening is expected to open ahead of the St. Johns County school year; the county's own 2025 notices (Aug 2025 traffic shift) document the widening work that this milestone completes."
+    review_status: "verified"
+    primary_topic: "transportation"
+    interest_tags:
+      - "commute"
+      - "road_construction"
+    resident_relevance:
+      summary: "A completed, widened CR 210 improves the east-west commute and school-run capacity that SilverLeaf households use toward the coast and I-95."
+      affected_audiences:
+        - "residents"
+        - "commuters"
+      why_it_matters: "CR 210 is one of the county's busiest east-west corridors; the completed widening relieves congestion for SilverLeaf commuters."
+      confidence: "high"
+      inference_notes: "Completion milestone per News4JAX (Aug 2026) cross-referenced with the county's own 2025 traffic-shift notices (SJC-BF-202508-0010); county Featured Projects page is the stable official source URL."
+    taxonomy_gap: null
+    human_review_required: false
+    tracked_entity_ids: []
+    created_at: "2026-08-07T12:00:00Z"
+    reviewer_notes: "Model B capture (Task 29). Completion milestone current; links to the CR 210 widening timeline."
+
+  - item_id: "SJC-SL-20260807-0005"
+    title: "Silverleaf Market — Publix-anchored center adds outparcels and tenants"
+    summary: "The Publix-anchored shopping center known as Silverleaf Market is adding outparcel buildings, with reporting that planning for additional structures advanced in August 2026. Nearby retail activity at the center includes plans for a Fifth Third Bank (reported October 2025 and advancing April 2026) and new food tenants M Shack and Natural Greens (reported July 2026). Tenant-by-tenant timing is not yet confirmed."
+    source_id: "jax_daily_record"
+    source_url: "https://www.jaxdailyrecord.com/"
+    source_published_at: "2026-08-06"
+    discovered_at: "2026-08-07T12:00:00Z"
+    discovered_by: "sjc-intel-architect (Task 29)"
+    topics:
+      - development
+      - economic_development
+    communities:
+      - silverleaf
+    geographic_scope: "single_community"
+    urgency: "ongoing"
+    verification_status: "cross_referenced"
+    sensitivity: "low"
+    recommended_channels:
+      - "website_review_queue"
+      - "weekly_brief_candidate"
+    raw_excerpt: "Jacksonville Daily Record (2026-08-06) reports Silverleaf Market is planning outparcel buildings; earlier reporting covers a planned Fifth Third Bank (Oct 2025, advancing Apr 2026) and The Business Journals (2026-07-20) reports M Shack and Natural Greens joining the SilverLeaf retail lineup."
+    review_status: "verified"
+    primary_topic: "development"
+    interest_tags:
+      - "shopping"
+      - "development_watch"
+    resident_relevance:
+      summary: "Silverleaf Market is the community's Publix-anchored retail center; its outparcel buildings and new tenants change the everyday shopping and dining mix for residents."
+      affected_audiences:
+        - "residents"
+        - "homeowners"
+      why_it_matters: "New bank and restaurant tenants plus outparcel construction are visible neighborhood change; the center's growth is directly useful household knowledge."
+      confidence: "high"
+      inference_notes: "Outparcel planning (Jacksonville Daily Record 2026-08-06) and tenant reports (Jacksonville Daily Record, The Business Journals) cross-referenced; timing remains conditional."
+    taxonomy_gap: null
+    human_review_required: false
+    tracked_entity_ids:
+      - "ENT-RETAIL-SILVERLEAF-MARKET"
+      - "ENT-RETAIL-PUBLIX-SILVERLEAF"
+    created_at: "2026-08-07T12:00:00Z"
+    reviewer_notes: "Model B capture (Task 29). Local media (JDR + Business Journals corroborate); conditional wording required for tenant timing."

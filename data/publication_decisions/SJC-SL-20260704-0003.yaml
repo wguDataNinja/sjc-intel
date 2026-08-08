@@ -1,0 +1,41 @@
+# =============================================================================
+# SJC_Intel — Publication Decision
+# =============================================================================
+# Explicit human decision per docs/publication_release_contract.md.
+# Never marks an item published; release membership is a separate act.
+# =============================================================================
+
+schema_version: '1.0'
+item_id: SJC-SL-20260704-0003
+publication_status: approved
+reviewer: Buddy
+decision_timestamp: '2026-08-07T10:04:34Z'
+rationale: Model B (Task 29). Beach Valley Mini Golf proposed for DRC review; outcome
+  unconfirmed; qualified posture.
+origin_review_status: verified
+silverleaf_relevance:
+  decision: included
+  rationale: Model B (Task 29). Beach Valley Mini Golf proposed for DRC review; outcome
+    unconfirmed; qualified posture.
+  place_ids:
+  - silverleaf
+  entity_ids:
+  - ENT-REC-BEACH-VALLEY-MINI-GOLF
+release_eligible: true
+source_attribution_confirmed: true
+withdrawn: false
+withdrawal_reason: null
+superseded_by: null
+relevance: in_silverleaf
+role: browse
+qualified: true
+qualified_label: Approval pending
+display_topic: local_business
+lifecycle: proposed
+lifecycle_label: Proposed
+history:
+- status: approved
+  reviewer: Buddy
+  timestamp: '2026-08-07T10:04:34Z'
+  rationale: Model B (Task 29). Beach Valley Mini Golf proposed for DRC review; outcome
+    unconfirmed; qualified posture.

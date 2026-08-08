@@ -1,0 +1,47 @@
+# Product-side editorial inputs for CURRENT_PUBLICATION_PLAN.md (Task 29).
+# Human-maintained editorial state that the plan generator merges with the
+# derived release state. Review/update after each weekly cycle.
+editorial_summary:
+  - "SilverLeaf Brief now publishes the full resident corpus: schools, roads, retail, healthcare, utilities, and preparedness."
+  - "Latest carries 10 current updates; Browse holds durable context; timelines tell the history of major subjects."
+  - "Qualified uncertainty is preserved (e.g., the possible-Harris-Teeter grocery center publishes as tenant-unconfirmed)."
+  - "Crime, minors, allegations, and private information remain excluded or human-gated."
+
+category_gaps:
+  schools_community: "Attendance-zone map authority (DIR-010) still pending."
+  roads_traffic: "SR 16 widening 2026 follow-up milestone not yet captured."
+  local_business: "Tenant-level timing is reporting-based; verify before any 'opened' claim."
+  utilities_water: "No SilverLeaf-area boil-water notices captured; seasonal."
+  emergency_preparedness: "Small but complete; add only when a real storm threat exists."
+
+ready_next:
+  - "SJC-BF-202509-0007 enrollment/capacity — official SJCSD context; add to Browse after copy review."
+  - "FY2026 budget / tax-cut timeline — ready once a public 'Government & Taxes' topic decision is made."
+  - "SJC-BF-202509-0015 impact fees — same topic decision required."
+  - "Hallowes Cove school arc — merge 5 records into one context timeline."
+
+needs_source_check:
+  - "SJC-SL-20260706-0005 (Bala's second location) — recorded URL returns 404; locate a working article URL."
+  - "Magnolia Oaks opening date and final attendance-zone boundary — confirm from SJCSD."
+  - "SR 16 widening current 2026 status — check FDOT/nflroads."
+  - "First Coast Expressway exact segment/toll timing — check FDOT."
+  - "Silverleaf Market tenant opening dates (M Shack, Natural Greens, Fifth Third) — verify."
+
+qualified_notes:
+  - "Possible Harris Teeter center: project confirmed under county review; tenant NOT confirmed by first-party source."
+
+exclusions:
+  - "Crime/arrest/minor incidents (SilverLeaf shooting, ICE detainer, airlifted child) — safety gate."
+  - "NBOR ROW utility permits and non-SilverLeaf rezonings — no resident relevance."
+  - "BCC boilerplate resolutions and coastal/Ponte Vedra utilities — out of scope."
+  - "Expired event notices (chlorine burnout, application deadlines) — never republished as current."
+
+coverage_gaps:
+  - "Baptist SilverLeaf campus expansion beyond first phase (services, helipad timing) — lead-only."
+  - "Current FCE milestone beyond public-hearing stage — lead-only."
+  - "Retail tenants' opening dates — reporting-only."
+  - "FY2027 TRIM/budget season (Aug-Sep 2026) — not yet captured."
+
+next_release:
+  - "Resolve Needs-source-check items, promote Ready-next Browse items, then build the next release."
+  - "Keep Latest to genuinely current items; move anything stale into Browse/timeline."

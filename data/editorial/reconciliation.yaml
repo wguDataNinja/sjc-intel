@@ -1,0 +1,51 @@
+# Bounded review-backlog reconciliation (Task 29, Model B activation).
+# Only low-risk, evidence-backed resident items are verified here. Sensitive
+# crime/minor items and items requiring source checks are intentionally absent.
+items:
+  # Schools & Families
+  - item_id: SJC-BF-202509-0006
+    reason: "SJCSD new-schools page confirms K-8 School QQ (SilverLeaf DRI, Parcel 29C) under construction"
+  - item_id: SJC-BF-202509-0008
+    reason: "SJCSD naming/mascot community engagement for Schools QQ/RR is source-backed"
+  - item_id: SJC-BF-202508-0005
+    reason: "Hallowes Cove Academy official school site confirms opening"
+  - item_id: SJC-BF-202508-0006
+    reason: "SJCSD news site confirms attendance-zoning presentation"
+  - item_id: SJC-BF-202508-0007
+    reason: "SJCSD news site confirms revised attendance-zoning proposal"
+  - item_id: SJC-BF-202508-0008
+    reason: "SJCSD news site confirms final attendance-zoning plans"
+  - item_id: SJC-BF-202509-0005
+    reason: "Hallowes Cove Academy site confirms first students for inaugural year"
+  - item_id: SJC-BF-202605-0008
+    reason: "SJCSD news confirms St. Johns Compass program launch"
+  - item_id: SJC-BF-202605-0011
+    reason: "SJCSD news confirms half-cent surtax and one-mill funding"
+  # Roads & Mobility
+  - item_id: SJC-BF-202508-0013
+    reason: "County press release confirms CR 2209 roadway expansion underway"
+  - item_id: SJC-BF-202508-0020
+    reason: "County/FDOT confirms SR 16 widening public hearings"
+  - item_id: SJC-BF-202508-0021
+    reason: "County confirms SR 16/International Golf Parkway groundbreaking"
+  - item_id: SJC-BF-202508-0010
+    reason: "County confirms CR 210 widening traffic shift"
+  - item_id: SJC-BF-202508-0011
+    reason: "County confirms Beachwalk alternate-access guidance during CR 210 widening"
+  # Government / budget
+  - item_id: SJC-BF-202509-0003
+    reason: "County press release confirms $1.8B FY2026 budget adoption with tax-rate cut"
+  - item_id: SJC-BF-202509-0001
+    reason: "County confirms first FY2026 tentative-budget hearing"
+  - item_id: SJC-BF-202509-0002
+    reason: "County confirms final FY2026 budget adoption hearing"
+  # Utilities & preparedness
+  - item_id: SJC-BF-202605-0005
+    reason: "SJRWMD confirms one-day-per-week Phase III irrigation rule"
+  - item_id: SJC-BF-202508-0022
+    reason: "County confirms Alert St. Johns emergency notification system"
+  - item_id: SJC-BF-202605-0021
+    reason: "County Emergency Management confirms hurricane-season preparedness messaging"
+  # Development / zoning context
+  - item_id: SJC-BF-202509-0015
+    reason: "County confirms proposed updates to impact fees"

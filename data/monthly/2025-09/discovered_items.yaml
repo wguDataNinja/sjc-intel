@@ -18,7 +18,7 @@ items:
       - "website_review_queue"
       - "weekly_brief_candidate"
     raw_excerpt: "The first public hearing for the tentative FY2026 budget was held on September 3, 2025 at 5:01 PM. The proposed budget includes $1.8 billion in spending with historic investments in public safety, infrastructure, and quality of life."
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "taxes_exemptions_trim_vab"
     interest_tags:
       - "budget"
@@ -56,7 +56,7 @@ items:
       - "website_review_queue"
       - "weekly_brief_candidate"
     raw_excerpt: "SJC Adopts $1.8 Billion Fiscal Year 2026 Budget with Historic Investments, Property Tax Reduction, and Public Safety Expansion — the first property tax rate reduction since FY2021."
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "taxes_exemptions_trim_vab"
     interest_tags:
       - "budget"
@@ -94,7 +94,7 @@ items:
       - "website_review_queue"
       - "weekly_brief_candidate"
     raw_excerpt: "SJC Adopts $1.8 Billion Fiscal Year 2026 Budget with Historic Investments, Property Tax Reduction, and Public Safety Expansion — the first property tax rate reduction since FY2021."
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "general_government"
     interest_tags:
       - "budget"
@@ -171,7 +171,7 @@ items:
       - "website_review_queue"
       - "weekly_brief_candidate"
     raw_excerpt: "Hallowes Cove Academy — Mr. Jessley Hathaway, Principal. Students in grades K-5 use Clever and students in grades 6-8 use Schoology. Hallowes Cove Hurricanes. Extended Day & Afterschool Activities."
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "school_capacity"
     interest_tags:
       - "schools"
@@ -213,7 +213,7 @@ items:
       - "website_review_queue"
       - "weekly_brief_candidate"
     raw_excerpt: "K-8 School QQ — Location: SilverLeaf DRI (Parcel 29C). Prototype with approx. 1500 Student Capacity. Projected Completion for 2026-2027 SY. K-8 School RR — Location: Nocatee DRI – Seabrook (formerly Snowden Village). Prototype with approx. 1500 Student Capacity. Projected Completion for 2026-2027 SY."
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "school_capacity"
     interest_tags:
       - "schools"
@@ -293,7 +293,7 @@ items:
     recommended_channels:
       - "website_review_queue"
     raw_excerpt: "St. Johns County School District discussing names, mascots for new schools. School QQ (Silverleaf): Microsoft Teams meeting. School RR (Nocatee): Microsoft Teams meeting."
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "education"
     interest_tags:
       - "schools"
@@ -572,7 +572,7 @@ items:
       - "website_review_queue"
       - "weekly_brief_candidate"
     raw_excerpt: "Proposed updates to St. Johns County impact fees include a new conservation impact fee and affordable housing discounts."
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "development"
     interest_tags:
       - "impact_fees"

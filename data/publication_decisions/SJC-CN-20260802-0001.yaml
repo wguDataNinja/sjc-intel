@@ -34,3 +34,4 @@ public_why_override: The closure may affect travel between SilverLeaf and destin
 event_date: '2026-08-07'
 event_date_label: Closure starts
 display_topic: roads_traffic
+role: latest

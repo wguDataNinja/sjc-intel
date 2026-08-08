@@ -242,7 +242,7 @@ items:
       source_type: "government_website"
       accessed_at: "2026-06-03T23:00:00Z"
       url: "https://www.sjrwmd.com/permitting/"
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "environment"
     interest_tags:
       - "utility_impact"
@@ -391,7 +391,7 @@ items:
       source_type: "government_website"
       accessed_at: "2026-06-03T23:00:00Z"
       url: "https://www.stjohns.k12.fl.us/"
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "education"
     interest_tags:
       - "quality_of_life"
@@ -541,7 +541,7 @@ items:
       source_type: "government_website"
       accessed_at: "2026-06-03T23:00:00Z"
       url: "https://www.stjohns.k12.fl.us/"
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "education"
     interest_tags:
       - "cost_impact"
@@ -1023,7 +1023,7 @@ items:
       source_type: "government_website"
       accessed_at: "2026-06-03T23:00:00Z"
       url: "https://www.sjcfl.us/departments/emergency-mgmt/"
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "public_safety"
     interest_tags:
       - "emergency_awareness"

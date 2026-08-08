@@ -1,0 +1,36 @@
+# =============================================================================
+# SJC_Intel — Publication Decision
+# =============================================================================
+# Explicit human decision per docs/publication_release_contract.md.
+# Never marks an item published; release membership is a separate act.
+# =============================================================================
+
+schema_version: '1.0'
+item_id: SJC-BF-202605-0011
+publication_status: approved
+reviewer: Buddy
+decision_timestamp: '2026-08-07T10:04:31Z'
+rationale: Model B (Task 29). Half-cent surtax + one mill fund county schools; durable
+  funding context.
+origin_review_status: verified
+silverleaf_relevance:
+  decision: included
+  rationale: Model B (Task 29). Half-cent surtax + one mill fund county schools; durable
+    funding context.
+  place_ids:
+  - countywide
+  entity_ids: []
+release_eligible: true
+source_attribution_confirmed: true
+withdrawn: false
+withdrawal_reason: null
+superseded_by: null
+relevance: countywide_impact
+role: browse
+display_topic: schools_community
+history:
+- status: approved
+  reviewer: Buddy
+  timestamp: '2026-08-07T10:04:31Z'
+  rationale: Model B (Task 29). Half-cent surtax + one mill fund county schools; durable
+    funding context.

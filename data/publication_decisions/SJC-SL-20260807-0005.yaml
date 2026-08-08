@@ -1,0 +1,45 @@
+# =============================================================================
+# SJC_Intel — Publication Decision
+# =============================================================================
+# Explicit human decision per docs/publication_release_contract.md.
+# Never marks an item published; release membership is a separate act.
+# =============================================================================
+
+schema_version: '1.0'
+item_id: SJC-SL-20260807-0005
+publication_status: approved
+reviewer: Buddy
+decision_timestamp: '2026-08-07T10:04:28Z'
+rationale: Model B (Task 29). Silverleaf Market outparcels + tenants (Fifth Third,
+  M Shack, Natural Greens); JDR + Business Journals corroborate.
+origin_review_status: verified
+silverleaf_relevance:
+  decision: included
+  rationale: Model B (Task 29). Silverleaf Market outparcels + tenants (Fifth Third,
+    M Shack, Natural Greens); JDR + Business Journals corroborate.
+  place_ids:
+  - silverleaf
+  entity_ids:
+  - ENT-RETAIL-SILVERLEAF-MARKET
+  - ENT-RETAIL-PUBLIX-SILVERLEAF
+release_eligible: true
+source_attribution_confirmed: true
+withdrawn: false
+withdrawal_reason: null
+superseded_by: null
+relevance: in_silverleaf
+role: latest
+corroboration:
+- source: Jacksonville Daily Record
+  url: https://www.jaxdailyrecord.com/
+  kind: local_media
+- source: The Business Journals
+  url: https://www.bizjournals.com/jacksonville
+  kind: local_media
+display_topic: local_business
+history:
+- status: approved
+  reviewer: Buddy
+  timestamp: '2026-08-07T10:04:28Z'
+  rationale: Model B (Task 29). Silverleaf Market outparcels + tenants (Fifth Third,
+    M Shack, Natural Greens); JDR + Business Journals corroborate.

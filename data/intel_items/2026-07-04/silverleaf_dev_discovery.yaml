@@ -29,7 +29,9 @@ items:
       source_type: "local_media"
       accessed_at: "2026-07-04T08:00:00Z"
       url: "https://sjcitizen.com/heres-your-first-look-at-silverleafs-new-55000-sq-ft-mega-publix/"
-    review_status: "pending_review"
+    review_status: "verified"
+    tracked_entity_ids:
+      - "ENT-RETAIL-PUBLIX-SILVERLEAF"
     primary_topic: "development"
     interest_tags:
       - "development_watch"
@@ -74,7 +76,9 @@ items:
       source_type: "local_media"
       accessed_at: "2026-07-04T08:15:00Z"
       url: "https://sjcitizen.com/nailed-it-st-johns-officials-give-sneak-peek-of-new-silverleaf-k-8-school/"
-    review_status: "pending_review"
+    review_status: "verified"
+    tracked_entity_ids:
+      - "ENT-EDU-SILVERLEAF-K8"
     primary_topic: "education"
     interest_tags:
       - "development_watch"
@@ -118,7 +122,9 @@ items:
       source_type: "local_media"
       accessed_at: "2026-07-04T08:30:00Z"
       url: "https://sjcitizen.com/fore-major-new-2-acre-recreational-attraction-proposed-for-silverleaf-by-husband-and-wife-team/"
-    review_status: "pending_review"
+    review_status: "verified"
+    tracked_entity_ids:
+      - "ENT-REC-BEACH-VALLEY-MINI-GOLF"
     primary_topic: "development"
     interest_tags:
       - "development_watch"
@@ -163,7 +169,9 @@ items:
       source_type: "local_media"
       accessed_at: "2026-07-04T08:45:00Z"
       url: "https://sjcitizen.com/road-relief-heres-your-first-look-at-st-johns-countys-newest-highway/"
-    review_status: "pending_review"
+    review_status: "verified"
+    tracked_entity_ids:
+      - "ENT-ROAD-CR-2209-CONNECTOR"
     primary_topic: "transportation"
     interest_tags:
       - "development_watch"
@@ -207,7 +215,10 @@ items:
       source_type: "local_media"
       accessed_at: "2026-07-04T09:00:00Z"
       url: "https://sjcitizen.com/st-johns-county-is-getting-two-new-supermarkets-and-theyre-not-publix/"
-    review_status: "pending_review"
+    review_status: "verified"
+    tracked_entity_ids:
+      - "ENT-RETAIL-HARRIS-TEETER-SILVERLEAF"
+      - "ENT-RETAIL-CR16A-SL-PKWY-GROCERY"
     primary_topic: "development"
     interest_tags:
       - "development_watch"
@@ -252,7 +263,10 @@ items:
       source_type: "local_media"
       accessed_at: "2026-07-04T09:15:00Z"
       url: "https://sjcitizen.com/exclusive-heres-what-coming-to-new-nocatee-retail-center-across-from-water-park/"
-    review_status: "pending_review"
+    review_status: "verified"
+    tracked_entity_ids:
+      - "ENT-HEALTH-ASCENSION-NOCATEE"
+      - "ENT-MIXED-NOCATEE-CROSSWATER"
     primary_topic: "development"
     interest_tags:
       - "development_watch"

@@ -1,0 +1,239 @@
+# Model B editorial manifest (Task 29). Approved by Buddy; implements the
+# recommended Model B publication set from Task 28. Roles:
+#   latest   = current/recent/active change (Home briefing)
+#   browse   = durable resident knowledge
+#   context  = background supporting another item or timeline
+#   timeline = merged history of one durable subject
+# Corroboration kinds: official | first_party | local_media.
+# Safety-sensitive records are intentionally absent from this manifest.
+decisions:
+
+  # ---------------------------------------------------------------------------
+  # LATEST — current/recent/active
+  # ---------------------------------------------------------------------------
+  - item_id: SJC-SL-20260807-0001
+    role: latest
+    display_topic: schools_community
+    relevance: in_silverleaf
+    lifecycle: under_construction
+    lifecycle_label: Opening for 2026-27
+    rationale: "Model B (Task 29). Magnolia Oaks Academy opens for 2026-27; official SJCSD + News4JAX/Action News Jax cross-reference. Top neighborhood school story."
+  - item_id: SJC-BF-202605-0008
+    role: latest
+    display_topic: schools_community
+    relevance: countywide_impact
+    rationale: "Model B (Task 29). St. Johns Compass family program launches Aug 2026; SJCSD official source."
+  - item_id: SJC-SL-20260807-0004
+    role: latest
+    display_topic: roads_traffic
+    relevance: near_silverleaf
+    lifecycle: completed
+    lifecycle_label: Completed
+    rationale: "Model B (Task 29). CR 210 widening completed ahead of the 2026-27 school year; News4JAX cross-referenced with county 2025 shift notices."
+  - item_id: SJC-SL-20260807-0002
+    role: latest
+    display_topic: local_business
+    relevance: in_silverleaf
+    lifecycle: completed
+    lifecycle_label: Open
+    rationale: "Model B (Task 29). Baptist SilverLeaf outpatient campus opened 2026-06-23; first-party operator + four independent outlets cross-reference."
+  - item_id: SJC-SL-20260807-0005
+    role: latest
+    display_topic: local_business
+    relevance: in_silverleaf
+    rationale: "Model B (Task 29). Silverleaf Market outparcels + tenants (Fifth Third, M Shack, Natural Greens); JDR + Business Journals corroborate."
+    corroboration:
+      - source: Jacksonville Daily Record
+        url: https://www.jaxdailyrecord.com/
+        kind: local_media
+      - source: The Business Journals
+        url: https://www.bizjournals.com/jacksonville
+        kind: local_media
+
+  # ---------------------------------------------------------------------------
+  # SCHOOLS — Browse / context / timeline
+  # ---------------------------------------------------------------------------
+  - item_id: SJC-BF-202509-0006
+    role: timeline
+    display_topic: schools_community
+    relevance: in_silverleaf
+    lifecycle: under_construction
+    lifecycle_label: Under construction
+    rationale: "Model B (Task 29). K-8 School QQ construction milestone; part of the Magnolia Oaks timeline."
+  - item_id: SJC-SL-20260704-0002
+    role: timeline
+    display_topic: schools_community
+    relevance: in_silverleaf
+    rationale: "Model B (Task 29). K-8 topping-out milestone; merged into the Magnolia Oaks timeline."
+    corroboration:
+      - source: St. Johns Citizen
+        url: https://sjcitizen.com/
+        kind: local_media
+  - item_id: SJC-BF-202509-0008
+    role: timeline
+    display_topic: schools_community
+    relevance: in_silverleaf
+    rationale: "Model B (Task 29). School QQ/RR naming and mascot engagement; part of the Magnolia Oaks timeline."
+  - item_id: SJC-BF-202508-0005
+    role: browse
+    display_topic: schools_community
+    relevance: near_silverleaf
+    rationale: "Model B (Task 29). Hallowes Cove Academy opened; nearby school context for SilverLeaf families."
+  - item_id: SJC-BF-202508-0006
+    role: browse
+    display_topic: schools_community
+    relevance: countywide_impact
+    rationale: "Model B (Task 29). Attendance-zoning presentation context for the 2025-26 boundary-setting arc."
+  - item_id: SJC-BF-202508-0007
+    role: browse
+    display_topic: schools_community
+    relevance: countywide_impact
+    rationale: "Model B (Task 29). Revised attendance-zoning proposal context for the 2025-26 boundary-setting arc."
+  - item_id: SJC-BF-202508-0008
+    role: browse
+    display_topic: schools_community
+    relevance: countywide_impact
+    rationale: "Model B (Task 29). Final attendance-zoning plans for 2025-26; context for future boundary changes."
+  - item_id: SJC-BF-202509-0005
+    role: browse
+    display_topic: schools_community
+    relevance: near_silverleaf
+    rationale: "Model B (Task 29). Hallowes Cove welcomes first students; school-capacity context."
+  - item_id: SJC-BF-202605-0011
+    role: browse
+    display_topic: schools_community
+    relevance: countywide_impact
+    rationale: "Model B (Task 29). Half-cent surtax + one mill fund county schools; durable funding context."
+
+  # ---------------------------------------------------------------------------
+  # ROADS — Browse / context / timeline
+  # ---------------------------------------------------------------------------
+  - item_id: SJC-BF-202508-0013
+    role: timeline
+    display_topic: roads_traffic
+    relevance: in_silverleaf
+    rationale: "Model B (Task 29). CR 2209 construction began Aug 2025; merged into the CR 2209 timeline."
+  - item_id: SJC-SL-20260704-0004
+    role: timeline
+    display_topic: roads_traffic
+    relevance: in_silverleaf
+    lifecycle: completed
+    lifecycle_label: Completed
+    rationale: "Model B (Task 29). CR 2209 connector opened Oct 2025; county construction item corroborates."
+    corroboration:
+      - source: St. Johns County
+        url: https://www.sjcfl.us/
+        kind: official
+  - item_id: SJC-BF-202508-0020
+    role: timeline
+    display_topic: roads_traffic
+    relevance: near_silverleaf
+    rationale: "Model B (Task 29). SR 16 widening public hearings (Aug 2025); SR 16 corridor timeline."
+  - item_id: SJC-BF-202508-0021
+    role: timeline
+    display_topic: roads_traffic
+    relevance: near_silverleaf
+    rationale: "Model B (Task 29). SR 16/IGP $25M groundbreaking (Aug 2025); SR 16 corridor timeline."
+  - item_id: SJC-BF-202508-0010
+    role: timeline
+    display_topic: roads_traffic
+    relevance: near_silverleaf
+    rationale: "Model B (Task 29). CR 210 widening traffic shift (Aug 2025); CR 210 timeline."
+  - item_id: SJC-BF-202508-0011
+    role: context
+    display_topic: roads_traffic
+    relevance: near_silverleaf
+    rationale: "Model B (Task 29). Beachwalk alternate-access guidance during CR 210 widening."
+  - item_id: SJC-SL-20260807-0003
+    role: browse
+    display_topic: roads_traffic
+    relevance: near_silverleaf
+    rationale: "Model B (Task 29). First Coast Expressway final-phase context with explicit 2030 target and status-as-of dating."
+    corroboration:
+      - source: Jacksonville Daily Record
+        url: https://www.jaxdailyrecord.com/
+        kind: local_media
+      - source: Action News Jax
+        url: https://www.actionnewsjax.com/
+        kind: local_media
+
+  # ---------------------------------------------------------------------------
+  # RETAIL / HEALTHCARE — Browse / context / timeline
+  # ---------------------------------------------------------------------------
+  - item_id: SJC-SL-20260704-0001
+    role: timeline
+    display_topic: local_business
+    relevance: in_silverleaf
+    lifecycle: completed
+    lifecycle_label: Completed
+    rationale: "Model B (Task 29). Mega Publix opened Mar 2026; Publix first-party + four outlets corroborate; Publix/Silverleaf Market timeline."
+    corroboration:
+      - source: Publix
+        url: https://corporate.publix.com/
+        kind: first_party
+      - source: News4JAX
+        url: https://www.news4jax.com/
+        kind: local_media
+      - source: Jacksonville Daily Record
+        url: https://www.jaxdailyrecord.com/
+        kind: local_media
+  - item_id: SJC-SL-20260704-0005
+    role: browse
+    display_topic: local_business
+    relevance: in_silverleaf
+    lifecycle: proposed
+    lifecycle_label: Proposed
+    qualified: true
+    qualified_label: Tenant unconfirmed
+    rationale: "Model B (Task 29). Grocery-anchored center under county review at CR 16A/SilverLeaf Parkway; Harris Teeter-size plans reported but tenant NOT confirmed; qualified posture."
+    corroboration:
+      - source: Jacksonville Daily Record
+        url: https://www.jaxdailyrecord.com/
+        kind: local_media
+  - item_id: SJC-SL-20260704-0003
+    role: browse
+    display_topic: local_business
+    relevance: in_silverleaf
+    lifecycle: proposed
+    lifecycle_label: Proposed
+    qualified: true
+    qualified_label: Approval pending
+    rationale: "Model B (Task 29). Beach Valley Mini Golf proposed for DRC review; outcome unconfirmed; qualified posture."
+  - item_id: SJC-SL-20260704-0006
+    role: browse
+    display_topic: local_business
+    relevance: near_silverleaf
+    lifecycle: under_construction
+    lifecycle_label: Under construction
+    qualified: true
+    qualified_label: Tenant timeline unconfirmed
+    rationale: "Model B (Task 29). Nocatee Crosswater retail / Ascension St. Vincent's primary care; adjacent-only relevance, tenant buildout timing unconfirmed."
+  - item_id: SJC-BF-202605-0005
+    role: browse
+    display_topic: utilities_water
+    relevance: countywide_impact
+    rationale: "Model B (Task 29). SJRWMD one-day-per-week Phase III irrigation rule; supports the water-shortage subject."
+  - item_id: SJC-UTIL-20260603-0003
+    role: timeline
+    display_topic: utilities_water
+    relevance: countywide_impact
+    rationale: "Model B (Task 29). SR 207 WRF Phase 2 approval milestone; merged with the operational serving item into one timeline."
+
+  # ---------------------------------------------------------------------------
+  # UTILITIES / PREPAREDNESS — context
+  # ---------------------------------------------------------------------------
+  - item_id: SJC-UTIL-20260603-0004
+    role: browse
+    display_topic: utilities_water
+    relevance: countywide_impact
+    rationale: "Model B (Task 29). Utilities lab completion; water-quality testing context."
+  - item_id: SJC-BF-202508-0022
+    role: browse
+    display_topic: emergency_preparedness
+    relevance: countywide_impact
+    rationale: "Model B (Task 29). Alert St. Johns notification system; durable preparedness context."
+  - item_id: SJC-BF-202605-0021
+    role: browse
+    display_topic: emergency_preparedness
+    relevance: countywide_impact
+    rationale: "Model B (Task 29). Hurricane-season preparedness messaging; supports the published preparedness item."

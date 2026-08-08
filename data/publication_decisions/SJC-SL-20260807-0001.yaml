@@ -1,0 +1,40 @@
+# =============================================================================
+# SJC_Intel — Publication Decision
+# =============================================================================
+# Explicit human decision per docs/publication_release_contract.md.
+# Never marks an item published; release membership is a separate act.
+# =============================================================================
+
+schema_version: '1.0'
+item_id: SJC-SL-20260807-0001
+publication_status: approved
+reviewer: Buddy
+decision_timestamp: '2026-08-07T10:04:27Z'
+rationale: Model B (Task 29). Magnolia Oaks Academy opens for 2026-27; official SJCSD
+  + News4JAX/Action News Jax cross-reference. Top neighborhood school story.
+origin_review_status: verified
+silverleaf_relevance:
+  decision: included
+  rationale: Model B (Task 29). Magnolia Oaks Academy opens for 2026-27; official
+    SJCSD + News4JAX/Action News Jax cross-reference. Top neighborhood school story.
+  place_ids:
+  - silverleaf
+  entity_ids:
+  - ENT-EDU-SILVERLEAF-K8
+release_eligible: true
+source_attribution_confirmed: true
+withdrawn: false
+withdrawal_reason: null
+superseded_by: null
+relevance: in_silverleaf
+role: latest
+display_topic: schools_community
+lifecycle: under_construction
+lifecycle_label: Opening for 2026-27
+public_title_override: Magnolia Oaks Academy set to open for the 2026-2027 school year
+history:
+- status: approved
+  reviewer: Buddy
+  timestamp: '2026-08-07T10:04:27Z'
+  rationale: Model B (Task 29). Magnolia Oaks Academy opens for 2026-27; official
+    SJCSD + News4JAX/Action News Jax cross-reference. Top neighborhood school story.

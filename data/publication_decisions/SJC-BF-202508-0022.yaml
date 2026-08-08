@@ -1,0 +1,35 @@
+# =============================================================================
+# SJC_Intel — Publication Decision
+# =============================================================================
+# Explicit human decision per docs/publication_release_contract.md.
+# Never marks an item published; release membership is a separate act.
+# =============================================================================
+
+schema_version: '1.0'
+item_id: SJC-BF-202508-0022
+publication_status: approved
+reviewer: Buddy
+decision_timestamp: '2026-08-07T10:04:35Z'
+rationale: Model B (Task 29). Alert St. Johns notification system; durable preparedness
+  context.
+origin_review_status: verified
+silverleaf_relevance:
+  decision: included
+  rationale: Model B (Task 29). Alert St. Johns notification system; durable preparedness
+    context.
+  place_ids: []
+  entity_ids: []
+release_eligible: true
+source_attribution_confirmed: true
+withdrawn: false
+withdrawal_reason: null
+superseded_by: null
+relevance: countywide_impact
+role: browse
+display_topic: emergency_preparedness
+history:
+- status: approved
+  reviewer: Buddy
+  timestamp: '2026-08-07T10:04:35Z'
+  rationale: Model B (Task 29). Alert St. Johns notification system; durable preparedness
+    context.

@@ -1,0 +1,43 @@
+# =============================================================================
+# SJC_Intel — Publication Decision
+# =============================================================================
+# Explicit human decision per docs/publication_release_contract.md.
+# Never marks an item published; release membership is a separate act.
+# =============================================================================
+
+schema_version: '1.0'
+item_id: SJC-SL-20260704-0004
+publication_status: approved
+reviewer: Buddy
+decision_timestamp: '2026-08-07T10:04:32Z'
+rationale: Model B (Task 29). CR 2209 connector opened Oct 2025; county construction
+  item corroborates.
+origin_review_status: verified
+silverleaf_relevance:
+  decision: included
+  rationale: Model B (Task 29). CR 2209 connector opened Oct 2025; county construction
+    item corroborates.
+  place_ids:
+  - silverleaf
+  entity_ids:
+  - ENT-ROAD-CR-2209-CONNECTOR
+release_eligible: true
+source_attribution_confirmed: true
+withdrawn: false
+withdrawal_reason: null
+superseded_by: null
+relevance: in_silverleaf
+role: timeline
+corroboration:
+- source: St. Johns County
+  url: https://www.sjcfl.us/
+  kind: official
+display_topic: roads_traffic
+lifecycle: completed
+lifecycle_label: Completed
+history:
+- status: approved
+  reviewer: Buddy
+  timestamp: '2026-08-07T10:04:32Z'
+  rationale: Model B (Task 29). CR 2209 connector opened Oct 2025; county construction
+    item corroborates.

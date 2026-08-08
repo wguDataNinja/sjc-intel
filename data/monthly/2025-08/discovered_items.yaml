@@ -167,7 +167,7 @@ items:
       - "website_review_queue"
       - "weekly_brief_candidate"
     raw_excerpt: "Hallowes Cove Academy — Welcome to Hallowes Cove Academy. Principal Mr. Jessley Hathaway. Students in grades K-5 use Clever and students in grades 6-8 use Schoology. Hallowes Cove Hurricanes."
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "school_capacity"
     interest_tags:
       - "schools"
@@ -206,7 +206,7 @@ items:
     recommended_channels:
       - "website_review_queue"
     raw_excerpt: "Attendance Zoning Presentation — St. Johns County School District attendance zoning presentation covering proposed boundary adjustments for the 2025-2026 school year."
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "school_capacity"
     interest_tags:
       - "schools"
@@ -245,7 +245,7 @@ items:
       - "website_review_queue"
       - "weekly_brief_candidate"
     raw_excerpt: "Revised Attendance Zoning Proposal — St. Johns County School District revised attendance zoning proposal incorporating community feedback on proposed boundary changes."
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "school_capacity"
     interest_tags:
       - "schools"
@@ -286,7 +286,7 @@ items:
       - "website_review_queue"
       - "weekly_brief_candidate"
     raw_excerpt: "Attendance Zoning Plans — St. Johns County School District final attendance zoning plans establishing school boundaries for the upcoming academic year."
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "school_capacity"
     interest_tags:
       - "schools"
@@ -365,7 +365,7 @@ items:
     recommended_channels:
       - "website_review_queue"
     raw_excerpt: "As part of the ongoing County Road 210 widening project, St. Johns County will implement a traffic pattern shift on the night of Friday, Aug. 15. Beginning that evening, both westbound and eastbound lanes of CR 210 will transition from the existing roadway to the newly constructed roadway just east of Stone Creek Circle."
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "transportation"
     interest_tags:
       - "road_construction"
@@ -403,7 +403,7 @@ items:
     recommended_channels:
       - "website_review_queue"
     raw_excerpt: "St. Johns County is encouraging drivers accessing Beachwalk to consider alternate access points due to construction activities related to the ongoing County Road 210 widening project."
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "transportation"
     interest_tags:
       - "road_construction"
@@ -481,7 +481,7 @@ items:
       - "website_review_queue"
       - "weekly_brief_candidate"
     raw_excerpt: "Major corridor project will ease congestion from County Road 210 to State Road 16. A major roadway expansion project is in progress along County Road 2209, where St. Johns County is constructing a new four-lane corridor between Silverleaf Parkway and State Road 16."
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "transportation"
     interest_tags:
       - "road_construction"
@@ -751,7 +751,7 @@ items:
       - "website_review_queue"
       - "weekly_brief_candidate"
     raw_excerpt: "The Florida Department of Transportation (FDOT) will host hybrid public hearings to discuss the proposed State Road 16 widening project from International Golf Parkway to I-95. A virtual public hearing will be held Tuesday, Aug. 26, 2025 at 5:30 p.m. An in-person public hearing will be held Thursday, Aug. 28 at 4:30 p.m."
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "transportation"
     interest_tags:
       - "sr_16"
@@ -792,7 +792,7 @@ items:
       - "website_review_queue"
       - "weekly_brief_candidate"
     raw_excerpt: "Project includes road widening, drainage upgrades, sidewalks, and traffic signal. On Aug. 25, St. Johns County officials and staff held a groundbreaking ceremony at the intersection of State Road 16 and International Golf Parkway to celebrate the start of improvements."
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "transportation"
     interest_tags:
       - "sr_16"
@@ -832,7 +832,7 @@ items:
       - "website_review_queue"
       - "weekly_brief_candidate"
     raw_excerpt: "This episode gives viewers the opportunity to learn how the county can notify residents in real-time about possible threats to public safety using Alert St. Johns. Anything from severe weather, unexpected road closures, water advisories, missing persons, or evacuations."
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "emergency_weather_fire_flood"
     interest_tags:
       - "emergency_notification"

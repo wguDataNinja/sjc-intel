@@ -1,0 +1,42 @@
+# =============================================================================
+# SJC_Intel — Publication Decision
+# =============================================================================
+# Explicit human decision per docs/publication_release_contract.md.
+# Never marks an item published; release membership is a separate act.
+# =============================================================================
+
+schema_version: '1.0'
+item_id: SJC-SL-20260704-0006
+publication_status: approved
+reviewer: Buddy
+decision_timestamp: '2026-08-07T10:04:34Z'
+rationale: Model B (Task 29). Nocatee Crosswater retail / Ascension St. Vincent's
+  primary care; adjacent-only relevance, tenant buildout timing unconfirmed.
+origin_review_status: verified
+silverleaf_relevance:
+  decision: included
+  rationale: Model B (Task 29). Nocatee Crosswater retail / Ascension St. Vincent's
+    primary care; adjacent-only relevance, tenant buildout timing unconfirmed.
+  place_ids:
+  - nocatee
+  entity_ids:
+  - ENT-HEALTH-ASCENSION-NOCATEE
+  - ENT-MIXED-NOCATEE-CROSSWATER
+release_eligible: true
+source_attribution_confirmed: true
+withdrawn: false
+withdrawal_reason: null
+superseded_by: null
+relevance: near_silverleaf
+role: browse
+qualified: true
+qualified_label: Tenant timeline unconfirmed
+display_topic: local_business
+lifecycle: under_construction
+lifecycle_label: Under construction
+history:
+- status: approved
+  reviewer: Buddy
+  timestamp: '2026-08-07T10:04:34Z'
+  rationale: Model B (Task 29). Nocatee Crosswater retail / Ascension St. Vincent's
+    primary care; adjacent-only relevance, tenant buildout timing unconfirmed.
