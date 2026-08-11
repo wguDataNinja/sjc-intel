@@ -1,6 +1,6 @@
 # SJC_Intel Backlog
 
-Last updated: 2026-08-07
+Last updated: 2026-08-09
 
 Status values: `todo`, `in_progress`, `blocked`, `done`, `deferred`.
 
@@ -116,7 +116,7 @@ Status values: `todo`, `in_progress`, `blocked`, `done`, `deferred`.
 | PUB-001 | Define public product name | deferred | low | editorial pipeline | Buddy | Decide later |
 | PUB-002 | Build newsletter/website pipeline | deferred | low | review/corrections workflow | future | Not in current scope |
 | PUB-003 | Replace item-by-item release default with policy classification | done | high | verified corpus + Task 20 editorial evidence | sjc-intel-architect | Task 27: `docs/PUBLICATION_POLICY.md`; local seven-item release `SJC-REL-2026-08-002`; no deployment performed |
-| PUB-004 | Add concrete SilverLeaf/corridor relevance signals to remaining archival candidates | todo | high | DIR-001, source/canonical verification | sjc-intel-architect | Resolve the 69 research exceptions and 51 human-review exceptions surfaced by Task 27; do not bulk-promote pending records |
+| PUB-004 | Add concrete SilverLeaf/corridor relevance signals to remaining archival candidates | done | high | DIR-001, source/canonical verification | sjc-intel-architect | Task 33: 32 low-risk official records reconciled to verified; 6 new verified corpus items; 48 AUTO_PUBLISHABLE; Release 004 candidate built locally (not deployed). Remaining human-review (79) and research (75) items are genuine gates/non-SilverLeaf, not routine debt. |
 
 ## Product Direction / Planning (from 2026-07-06 planning session)
 
@@ -137,3 +137,10 @@ Status values: `todo`, `in_progress`, `blocked`, `done`, `deferred`.
 | DIR-013 | Design school sourcing expansion (athletics, activities, recognition) | todo | low | DIR-010 | sjc-intel-architect | Search templates for school sports, awards, student accomplishments |
 | DIR-014 | Research county GIS and parcel data availability | todo | low | none | sjc-intel-architect | Determine whether county provides GIS downloads or API |
 | DIR-015 | Retire or update stale planning docs for new direction | todo | low | DIR-001 | sjc-intel-architect | Review discovery_loops.md, monitor specs, and source registry for alignment |
+
+## Production Workflow / Corpus (Task 33, 2026-08-09)
+
+| ID | Title | Status | Priority | Dependencies | Owner/Agent | Next Action |
+|----|-------|--------|----------|--------------|-------------|-------------|
+| OPS-001 | Harden production Hermes workflow (acceptance asymmetry, evaluator matcher, entity/proposal dedupe, stale-milestone escalation, FDOT/FCE coverage, Model B prompt alignment) | done | high | none | sjc-intel-architect | Implemented Task 33 with regression tests; production weekly sequence documented in `docs/hermes_weekly_entrypoint.md`. |
+| OPS-002 | Run first supervised weekly production cycle and finalize/publish Release 004 | todo | high | OPS-001 | sjc-intel-architect | Task 34: import/review a real weekly run, resolve genuine exceptions (79 human-review + 75 research), finalize Release 004, deploy only if authorized. |
