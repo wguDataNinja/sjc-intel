@@ -1318,3 +1318,49 @@ resolutions:
   next_search_date: null
   summary: evidence insufficient for acceptance
   generated_at: '2026-08-07T06:34:19Z'
+- proposal_id: LIVE-018896df8f8c
+  subject: Magnolia Oaks Academy
+  research_trigger:
+    geographic_conflict:
+    - no location recorded; resident relevance depends on location
+    material_importance: true
+  questions_to_resolve: []
+  queries_run:
+  - '"Magnolia Oaks Academy" St. Johns'
+  sources_checked:
+  - news.google.com
+  confirmed_facts: []
+  strong_inferences: []
+  conflicting_evidence: []
+  unresolved_questions: []
+  recommended_canonical_name: null
+  recommended_aliases: []
+  recommended_state: null
+  recommended_action: DEFER
+  confidence: 0.4
+  next_search_date: null
+  summary: evidence insufficient for acceptance
+  generated_at: '2026-08-11T10:02:51Z'
+- proposal_id: LIVE-1bfcde62608c
+  subject: Magnolia Oaks Academy
+  research_trigger:
+    geographic_conflict:
+    - no location recorded; resident relevance depends on location
+    material_importance: true
+  questions_to_resolve: []
+  queries_run:
+  - '"Magnolia Oaks Academy" St. Johns'
+  sources_checked:
+  - news.google.com
+  confirmed_facts: []
+  strong_inferences: []
+  conflicting_evidence: []
+  unresolved_questions: []
+  recommended_canonical_name: null
+  recommended_aliases: []
+  recommended_state: null
+  recommended_action: DEFER
+  confidence: 0.4
+  next_search_date: null
+  summary: evidence insufficient for acceptance
+  generated_at: '2026-08-11T10:02:52Z'

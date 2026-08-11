@@ -1,147 +1,147 @@
 mode: supervised-live-pilot
-generated_at: '2026-08-07T06:33:38Z'
+generated_at: '2026-08-11T10:02:52Z'
 overall_health: HEALTHY
 components:
   known_source_capture:
     status: HEALTHY
-    last_success: '2026-08-07T06:33:38Z'
+    last_success: '2026-08-11T10:02:52Z'
     last_failure: null
-    evidence_artifact: runtime/adaptive_discovery/runs/SJC-LIVE-20260807-2604/run.yaml
+    evidence_artifact: runtime/adaptive_discovery/runs/SJC-LIVE-20260811-0001/run.yaml
     freshness_threshold_hours: 168
     failure_count: 0
     warning_count: 0
     action_required: null
   live_search:
     status: HEALTHY
-    last_success: '2026-08-07T06:33:38Z'
+    last_success: '2026-08-11T10:02:52Z'
     last_failure: null
-    evidence_artifact: runtime/adaptive_discovery/runs/SJC-LIVE-20260807-2604/run.yaml
+    evidence_artifact: runtime/adaptive_discovery/runs/SJC-LIVE-20260811-0001/run.yaml
     freshness_threshold_hours: 168
     failure_count: 0
     warning_count: 0
     action_required: null
   normalization:
     status: HEALTHY
-    last_success: '2026-08-07T06:33:38Z'
+    last_success: '2026-08-11T10:02:52Z'
     last_failure: null
-    evidence_artifact: runtime/adaptive_discovery/runs/SJC-LIVE-20260807-2604/run.yaml
+    evidence_artifact: runtime/adaptive_discovery/runs/SJC-LIVE-20260811-0001/run.yaml
     freshness_threshold_hours: 168
     failure_count: 0
     warning_count: 0
     action_required: null
   dedupe:
     status: HEALTHY
-    last_success: '2026-08-07T06:33:38Z'
+    last_success: '2026-08-11T10:02:52Z'
     last_failure: null
-    evidence_artifact: runtime/adaptive_discovery/runs/SJC-LIVE-20260807-2604/run.yaml
+    evidence_artifact: runtime/adaptive_discovery/runs/SJC-LIVE-20260811-0001/run.yaml
     freshness_threshold_hours: 168
     failure_count: 0
     warning_count: 0
     action_required: null
   identity_reconciliation:
     status: HEALTHY
-    last_success: '2026-08-07T06:33:38Z'
+    last_success: '2026-08-11T10:02:52Z'
     last_failure: null
-    evidence_artifact: runtime/adaptive_discovery/runs/SJC-LIVE-20260807-2604/run.yaml
+    evidence_artifact: runtime/adaptive_discovery/runs/SJC-LIVE-20260811-0001/run.yaml
     freshness_threshold_hours: 168
     failure_count: 0
     warning_count: 0
     action_required: null
   strategist:
     status: HEALTHY
-    last_success: '2026-08-07T06:33:38Z'
+    last_success: '2026-08-11T10:02:52Z'
     last_failure: null
-    evidence_artifact: runtime/adaptive_discovery/runs/SJC-LIVE-20260807-2604/run.yaml
+    evidence_artifact: runtime/adaptive_discovery/runs/SJC-LIVE-20260811-0001/run.yaml
     freshness_threshold_hours: 168
     failure_count: 0
     warning_count: 0
     action_required: null
   editor:
     status: HEALTHY
-    last_success: '2026-08-07T06:33:38Z'
+    last_success: '2026-08-11T10:02:52Z'
     last_failure: null
-    evidence_artifact: runtime/adaptive_discovery/runs/SJC-LIVE-20260807-2604/run.yaml
+    evidence_artifact: runtime/adaptive_discovery/runs/SJC-LIVE-20260811-0001/run.yaml
     freshness_threshold_hours: 168
     failure_count: 0
     warning_count: 0
     action_required: null
   evaluator:
     status: HEALTHY
-    last_success: '2026-08-07T06:33:38Z'
+    last_success: '2026-08-11T10:02:52Z'
     last_failure: null
-    evidence_artifact: runtime/adaptive_discovery/runs/SJC-LIVE-20260807-2604/run.yaml
+    evidence_artifact: runtime/adaptive_discovery/runs/SJC-LIVE-20260811-0001/run.yaml
     freshness_threshold_hours: 168
     failure_count: 0
     warning_count: 0
     action_required: null
   proposal_storage:
     status: HEALTHY
-    last_success: '2026-08-07T06:33:38Z'
+    last_success: '2026-08-11T10:02:52Z'
     last_failure: null
-    evidence_artifact: runtime/adaptive_discovery/runs/SJC-LIVE-20260807-2604/run.yaml
+    evidence_artifact: runtime/adaptive_discovery/runs/SJC-LIVE-20260811-0001/run.yaml
     freshness_threshold_hours: 168
     failure_count: 0
     warning_count: 0
     action_required: null
   proposal_review:
     status: HEALTHY
-    last_success: '2026-08-07T06:33:38Z'
+    last_success: '2026-08-11T10:02:52Z'
     last_failure: null
-    evidence_artifact: runtime/adaptive_discovery/runs/SJC-LIVE-20260807-2604/run.yaml
+    evidence_artifact: runtime/adaptive_discovery/runs/SJC-LIVE-20260811-0001/run.yaml
     freshness_threshold_hours: 168
     failure_count: 0
     warning_count: 0
     action_required: null
   timeline_state:
     status: HEALTHY
-    last_success: '2026-08-07T06:33:38Z'
+    last_success: '2026-08-11T10:02:52Z'
     last_failure: null
-    evidence_artifact: runtime/adaptive_discovery/runs/SJC-LIVE-20260807-2604/run.yaml
+    evidence_artifact: runtime/adaptive_discovery/runs/SJC-LIVE-20260811-0001/run.yaml
     freshness_threshold_hours: 168
     failure_count: 0
     warning_count: 0
     action_required: null
   milestones:
     status: HEALTHY
-    last_success: '2026-08-07T06:33:38Z'
+    last_success: '2026-08-11T10:02:52Z'
     last_failure: null
-    evidence_artifact: runtime/adaptive_discovery/runs/SJC-LIVE-20260807-2604/run.yaml
+    evidence_artifact: runtime/adaptive_discovery/runs/SJC-LIVE-20260811-0001/run.yaml
     freshness_threshold_hours: 168
     failure_count: 0
     warning_count: 0
     action_required: null
   coverage_health:
     status: HEALTHY
-    last_success: '2026-08-07T06:33:38Z'
+    last_success: '2026-08-11T10:02:52Z'
     last_failure: null
-    evidence_artifact: runtime/adaptive_discovery/runs/SJC-LIVE-20260807-2604/run.yaml
+    evidence_artifact: runtime/adaptive_discovery/runs/SJC-LIVE-20260811-0001/run.yaml
     freshness_threshold_hours: 168
     failure_count: 0
     warning_count: 0
     action_required: null
   publication_candidate_handoff:
     status: HEALTHY
-    last_success: '2026-08-07T06:33:38Z'
+    last_success: '2026-08-11T10:02:52Z'
     last_failure: null
-    evidence_artifact: runtime/adaptive_discovery/runs/SJC-LIVE-20260807-2604/run.yaml
+    evidence_artifact: runtime/adaptive_discovery/runs/SJC-LIVE-20260811-0001/run.yaml
     freshness_threshold_hours: 168
     failure_count: 0
     warning_count: 0
     action_required: null
   report_generation:
     status: HEALTHY
-    last_success: '2026-08-07T06:33:38Z'
+    last_success: '2026-08-11T10:02:52Z'
     last_failure: null
-    evidence_artifact: runtime/adaptive_discovery/runs/SJC-LIVE-20260807-2604/run.yaml
+    evidence_artifact: runtime/adaptive_discovery/runs/SJC-LIVE-20260811-0001/run.yaml
     freshness_threshold_hours: 168
     failure_count: 0
     warning_count: 0
     action_required: null
   state_persistence:
     status: HEALTHY
-    last_success: '2026-08-07T06:33:38Z'
+    last_success: '2026-08-11T10:02:52Z'
     last_failure: null
-    evidence_artifact: runtime/adaptive_discovery/runs/SJC-LIVE-20260807-2604/run.yaml
+    evidence_artifact: runtime/adaptive_discovery/runs/SJC-LIVE-20260811-0001/run.yaml
     freshness_threshold_hours: 168
     failure_count: 0
     warning_count: 0

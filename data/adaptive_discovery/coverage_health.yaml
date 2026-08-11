@@ -1,6 +1,6 @@
 mode: supervised-live-pilot
-generated_at: '2026-08-07T06:33:38Z'
-run_id: SJC-LIVE-20260807-2604
+generated_at: '2026-08-11T10:02:52Z'
+run_id: SJC-LIVE-20260811-0001
 fresh:
 - Baptist SilverLeaf campus
 - CR 2209 connector
@@ -12,6 +12,7 @@ stale:
 - CR 2209 connector
 - First Coast Expressway access
 - Publix at Silverleaf Market
+- SilverLeaf grocery center — possible Harris Teeter
 missed_milestones: []
 no_yield_queries:
 - '"CR 16A" grocery SilverLeaf'

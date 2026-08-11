@@ -1,1 +1,124 @@
-proposals: []
+proposals:
+- proposal_id: LIVE-95de8a8e1879
+  type: timeline_reconciliation
+  subject: Publix at Silverleaf Market
+  mode: supervised-live-pilot
+  run_id: SJC-LIVE-20260811-0001
+  evidence:
+  - url: https://news.google.com/rss/articles/CBMirAFBVV95cUxOQ2d3VzJSckcwd3RMektxdWlPdEQyVGFTMlBJRWg4T3lISUNXVDlIU00tSE5JeVYyMEIzY3RGNG1Tb0NiSTEwZWUydEF5c25IT0JOVEdSSHpVUzlZeVJvMHhNTDFjcjhtcHd6dXNIdTc2NnNneEE0eHN4TWJFQmhMMzhxTThXeXFaUG5JRjg0ZTZ2V1ZUZDRyTnRfTXlwcm5iZDRna0Foc0pBV19x?oc=5
+    title: Publix opens new store in St. Augustine, Florida - Publix
+    date: '2026-03-26T07:00:00Z'
+    query_id: SJC-LIVE-20260811-0001-Q06
+  evidence_date: '2026-03-26T07:00:00Z'
+  source_authority: media_lead
+  resident_importance: medium
+  resident_impact: Potentially relevant to SilverLeaf residents; human verification
+    required.
+  expected_benefit: persistent follow-up in the isolated adaptive state
+  cost_or_budget: 1
+  risk: RSS result/identity may be incomplete or duplicate
+  uncertainty: identity_unconfirmed
+  proposed_searches:
+  - '"Publix at Silverleaf Market" St. Johns'
+  proposed_timeline_state: milestone_unspecified
+  recommendation: accept_candidate
+  proposed_state_transition: isolated adaptive state only; never canonical registry
+  status: pending_human_review
+  created_at: '2026-08-11T10:02:40Z'
+  evaluator:
+    decision: accepted
+    rationale: shape valid, evidence present
+    run_id: SJC-LIVE-20260811-0001
+- proposal_id: LIVE-67772ec07c67
+  type: timeline_reconciliation
+  subject: Baptist SilverLeaf campus
+  mode: supervised-live-pilot
+  run_id: SJC-LIVE-20260811-0001
+  evidence:
+  - url: https://news.google.com/rss/articles/CBMi1AFBVV95cUxNWlRnYVNwSXJQRmk3UDEybm1BNDFzOWxHckdYX1huUGZRZHZhUTBPaDRUTHN2cXk5MWFqbFpUbzYzYVVLN1RBU0pVUjZkU1VTVFZOVHBXQmdRQzJDTVZrS2dkSnJwd09IYUJ4QzVZcnNRVy10UVJOR3psQXpnazBQS3JUbklFMGhSekUxZVVPdE5oNHN3WldOc3pnOGlPUzhweHJRVDN3aDNtNkdTWTBHMU14RHJGNHFKamRFcGxJZ0dHRHZyMWkwanFpMHdkUlRrTkdtUQ?oc=5
+    title: Baptist Health opens SilverLeaf outpatient medical campus to serve growing
+      St. Johns County - News4JAX
+    date: '2026-06-22T07:00:00Z'
+    query_id: SJC-LIVE-20260811-0001-Q11
+  evidence_date: '2026-06-22T07:00:00Z'
+  source_authority: media_lead
+  resident_importance: low
+  resident_impact: Potentially relevant to SilverLeaf residents; human verification
+    required.
+  expected_benefit: persistent follow-up in the isolated adaptive state
+  cost_or_budget: 1
+  risk: RSS result/identity may be incomplete or duplicate
+  uncertainty: identity_unconfirmed
+  proposed_searches:
+  - '"Baptist SilverLeaf campus" St. Johns'
+  proposed_timeline_state: milestone_unspecified
+  recommendation: accept_candidate
+  proposed_state_transition: isolated adaptive state only; never canonical registry
+  status: pending_human_review
+  created_at: '2026-08-11T10:02:40Z'
+  evaluator:
+    decision: accepted
+    rationale: shape valid, evidence present
+    run_id: SJC-LIVE-20260811-0001
+- proposal_id: LIVE-d149ebe299cd
+  type: timeline_reconciliation
+  subject: First Coast Expressway access
+  mode: supervised-live-pilot
+  run_id: SJC-LIVE-20260811-0001
+  evidence:
+  - url: https://news.google.com/rss/articles/CBMiwAFBVV95cUxQRV9sanhEaU1ydGIzenpzOC10RXBFZFdyYjNfTkllMGdsZ1hnQWo4TDBtdXdieW1LMkNCSFhFNC1hNkVXd0xOR1BKWGFRYWoxWmdyZFY2ZmZ6ZXd0OGVEUjFScHRFWTRNMkxCWWgxLUVpS2N3aUxlQzBWc0k0dFA0X1Rxd195MDI3a2VHem1WNEU5YTdSa282M3lmc1AyZ0ZteDNDRU5iUXhpZFh0Yk5lcDl5cjAtV19LaGdfOFBkdHI?oc=5
+    title: Next phase of First Coast Expressway begins taking shape in St. Johns County
+      - News4JAX
+    date: '2025-04-16T07:00:00Z'
+    query_id: SJC-LIVE-20260811-0001-Q16
+  evidence_date: '2025-04-16T07:00:00Z'
+  source_authority: media_lead
+  resident_importance: high
+  resident_impact: Potentially relevant to SilverLeaf residents; human verification
+    required.
+  expected_benefit: persistent follow-up in the isolated adaptive state
+  cost_or_budget: 1
+  risk: RSS result/identity may be incomplete or duplicate
+  uncertainty: identity_unconfirmed
+  proposed_searches:
+  - '"First Coast Expressway access" St. Johns'
+  proposed_timeline_state: milestone_unspecified
+  recommendation: pending_research
+  proposed_state_transition: isolated adaptive state only; never canonical registry
+  status: pending_human_review
+  created_at: '2026-08-11T10:02:40Z'
+  evaluator:
+    decision: accepted
+    rationale: shape valid, evidence present
+    run_id: SJC-LIVE-20260811-0001
+- proposal_id: LIVE-d52075d2692f
+  type: timeline_reconciliation
+  subject: CR 2209 connector
+  mode: supervised-live-pilot
+  run_id: SJC-LIVE-20260811-0001
+  evidence:
+  - url: https://news.google.com/rss/articles/CBMijgFBVV95cUxQaEVFbFF4NlpnWkRSNk5vTkR0clZNQWFOUHNvZ1VvQUtZTnNBWEVvLWJsTTYtYVlUUXl5MGtCNjFTWW1qRWJ6Y2Y4ZlN0eFAwR3BIUVFadUN5d2ZocWN1VWZ4NG9jTm51a3JJZWpJTTZVTjR6dndBU3diYzN3VHFIdDBVXzFrTElERTF4MUhB?oc=5
+    title: Hybrid Public Meetings Scheduled on CR 210 and CR 2209 Intersection Improvements
+      - St. Johns County
+    date: '2026-03-31T07:00:00Z'
+    query_id: SJC-LIVE-20260811-0001-Q17
+  evidence_date: '2026-03-31T07:00:00Z'
+  source_authority: media_lead
+  resident_importance: low
+  resident_impact: Potentially relevant to SilverLeaf residents; human verification
+    required.
+  expected_benefit: persistent follow-up in the isolated adaptive state
+  cost_or_budget: 1
+  risk: RSS result/identity may be incomplete or duplicate
+  uncertainty: identity_unconfirmed
+  proposed_searches:
+  - '"CR 2209 connector" St. Johns'
+  proposed_timeline_state: milestone_unspecified
+  recommendation: accept_candidate
+  proposed_state_transition: isolated adaptive state only; never canonical registry
+  status: pending_human_review
+  created_at: '2026-08-11T10:02:40Z'
+  evaluator:
+    decision: accepted
+    rationale: shape valid, evidence present
+    run_id: SJC-LIVE-20260811-0001
