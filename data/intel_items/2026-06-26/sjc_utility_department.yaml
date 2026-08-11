@@ -29,7 +29,7 @@ items:
     source_type: government_website
     accessed_at: '2026-06-26T10:53:25Z'
     url: https://www.sjcfl.us/departments/utility-department/
-  review_status: pending_review
+  review_status: "verified"
   primary_topic: infrastructure
   interest_tags:
   - utility_impact

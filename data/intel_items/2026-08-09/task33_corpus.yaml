@@ -1,0 +1,313 @@
+source_id: silverleaf_discovery
+fetched_at: '2026-08-09T12:00:00Z'
+source_url: https://www.sjcfl.us/
+total_items: 6
+items:
+- item_id: SJC-SL-20260809-0001
+  title: Magnolia Oaks Academy opens Aug. 10 with 1,300 students — K-8 school in Silverleaf
+  summary: SJCSD confirms Magnolia Oaks Academy will welcome 1,300 students on its
+    first day, Aug. 10, 2026, serving kindergarten through seventh grade in its first
+    year. The district opened the doors announcement (July 22, 2026) confirms the
+    school is the first in the Silverleaf community. The 2026-27 attendance plan for
+    K-8 School QQ (Magnolia Oaks) was approved by the School Board Nov. 18, 2025 and
+    the district's attendance-zone locator is live.
+  source_id: sjcsd_new_schools
+  source_url: https://www.stjohns.k12.fl.us/news/silverleaf-school/
+  source_published_at: '2026-07-22'
+  discovered_at: '2026-08-09T12:00:00Z'
+  discovered_by: sjc-intel-architect (Task 33)
+  topics:
+  - education
+  communities:
+  - silverleaf
+  geographic_scope: single_community
+  urgency: ongoing
+  verification_status: cross_referenced
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: 'SJCSD news (2026-07-22): ''MOA will welcome 1,300 students on the
+    first day of school, Aug. 10.'' K-8 school in Silverleaf serving K-7 in 2026-27.
+    Attendance Zoning page confirms K-8 QQ Plan C-Modified approved 11/18/25 and a
+    2026-27 attendance-zone locator is live.'
+  review_status: verified
+  primary_topic: education
+  interest_tags:
+  - schools
+  - development_watch
+  resident_relevance:
+    summary: SilverLeaf families have a firm opening date and confirmed first-year
+      grade span for their new neighborhood K-8 school.
+    affected_audiences:
+    - residents
+    - families
+    - homeowners
+    why_it_matters: Aug. 10 first day, K-7 grade span, and the live attendance-zone
+      locator answer the top school questions for SilverLeaf households for 2026-27.
+    confidence: high
+    inference_notes: First-party SJCSD announcements (opening, 1,300 students, K-7)
+      cross-referenced with the approved K-8 QQ Plan C-Modified and the live 2026-27
+      attendance-zone locator.
+  taxonomy_gap: null
+  human_review_required: false
+  tracked_entity_ids:
+  - ENT-EDU-SILVERLEAF-K8
+  created_at: '2026-08-09T12:00:00Z'
+  reviewer_notes: 'Task 33: resolved the opening-date and grade-span source check
+    from the plan with first-party SJCSD evidence; zone-locator authority retained.'
+- item_id: SJC-SL-20260809-0002
+  title: Baptist Health SilverLeaf — Orthopedics opening August 2026, Emergency Center
+    opening September 2026
+  summary: 'Baptist Health''s SilverLeaf Medical Campus (8595 St. Johns Parkway) is
+    expanding: Baptist Orthopedics opens August 2026 and the adult/pediatric Emergency
+    Center opens September 2026, adding 24/7 emergency care to the campus''s existing
+    primary care, cardiology, lab, and rehab services.'
+  source_id: baptist_health
+  source_url: https://www.baptistjax.com/locations/baptist-silverleaf-medical-campus
+  source_published_at: '2026-08-09'
+  discovered_at: '2026-08-09T12:00:00Z'
+  discovered_by: sjc-intel-architect (Task 33)
+  topics:
+  - health_wellness
+  - economic_development
+  communities:
+  - silverleaf
+  geographic_scope: single_community
+  urgency: ongoing
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: 'Baptist Health campus page (retrieved 2026-08-09): ''Orthopedics —
+    OPENING AUGUST 2026''; ''Adult & Pediatric Emergency Room (ER) — OPENING SEPTEMBER
+    2026''. Address 8595 St. Johns Parkway.'
+  review_status: verified
+  primary_topic: health_wellness
+  interest_tags:
+  - healthcare
+  - development_watch
+  resident_relevance:
+    summary: SilverLeaf households gain on-campus orthopedics and 24/7 emergency care
+      within the community by fall 2026.
+    affected_audiences:
+    - residents
+    - homeowners
+    - families
+    why_it_matters: An emergency center inside SilverLeaf shortens critical care access;
+      orthopedics adds a common specialty without driving to Jacksonville.
+    confidence: high
+    inference_notes: First-party Baptist Health campus page is the source for both
+      opening windows; milestone dates presented as published by the operator.
+  taxonomy_gap: null
+  human_review_required: false
+  tracked_entity_ids:
+  - ENT-HEALTH-BAPTIST-SILVERLEAF
+  created_at: '2026-08-09T12:00:00Z'
+  reviewer_notes: 'Task 33: first-party Baptist Health expansion milestones; advances
+    the Baptist timeline beyond the first-phase opening.'
+- item_id: SJC-SL-20260809-0003
+  title: First Coast Expressway final segment under construction — $205M contract,
+    completion late 2030/early 2031
+  summary: FDOT's final St. Johns County segment of the First Coast Expressway — from
+    I-95 to east of CR 2209 (St. Johns Parkway) — is under construction with a $205
+    million contract awarded to Mastec Civil LLC. FDOT lists construction start in
+    early 2026 and expected completion in late 2030/early 2031. A hybrid construction
+    open house was held Feb. 3, 2026 at World Golf Village.
+  source_id: fdot_district_two_nflroads
+  source_url: https://nflroads.com/ProjectDetails?p=5639
+  source_published_at: '2026-08-09'
+  discovered_at: '2026-08-09T12:00:00Z'
+  discovered_by: sjc-intel-architect (Task 33)
+  topics:
+  - transportation
+  - infrastructure
+  communities:
+  - silverleaf
+  geographic_scope: multi_community
+  urgency: ongoing
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  raw_excerpt: 'FDOT/NFLRoads project page p=5639 (retrieved 2026-08-09): ''First
+    Coast Expressway – I-95 to East of CR 2209''; Mastec Civil LLC, $205 million contract;
+    project start early 2026; expected completion late 2030/early 2031; hybrid construction
+    open house Feb 3, 2026.'
+  review_status: verified
+  primary_topic: transportation
+  interest_tags:
+  - commute
+  - infrastructure
+  resident_relevance:
+    summary: The expressway segment that would give SilverLeaf a new north-south alternative
+      to I-95 is now in construction with an official contract and completion window.
+    affected_audiences:
+    - residents
+    - commuters
+    why_it_matters: The toll expressway changes SilverLeaf commute options; I-95/CR
+      2209/CR 16A lane-closure restrictions during construction affect the surrounding
+      road network.
+    confidence: high
+    inference_notes: Official FDOT/NFLRoads project page (source of record) with explicit
+      contract, cost, and schedule; county hosted the Feb 3, 2026 construction open
+      house.
+  taxonomy_gap: null
+  human_review_required: false
+  tracked_entity_ids: []
+  created_at: '2026-08-09T12:00:00Z'
+  reviewer_notes: 'Task 33: FCE promoted from public-hearing-stage context to an under-construction
+    project subject with official schedule and cost.'
+- item_id: SJC-SL-20260809-0004
+  title: FY2027 county budget and TRIM — recommended budget presented, first hearing
+    Sept. 3
+  summary: 'St. Johns County''s FY2027 budget cycle is underway: the Recommended Budget
+    was presented July 21, 2026, proposed millage (ceiling) rates were set, and the
+    first public hearing to adopt the FY2027 budget is set for Sept. 3, 2026 at 5:01
+    p.m. TRIM notices reflecting proposed property taxes are mailed in mid-August.'
+  source_id: sjc_budget_transparency
+  source_url: https://www.sjcfl.us/2027-budget/
+  source_published_at: '2026-07-21'
+  discovered_at: '2026-08-09T12:00:00Z'
+  discovered_by: sjc-intel-architect (Task 33)
+  topics:
+  - budget_millage
+  - taxes
+  communities:
+  - countywide
+  geographic_scope: county_wide
+  urgency: ongoing
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  raw_excerpt: 'County FY2027 Budget page (retrieved 2026-08-09): Recommended Budget
+    presented 7/21/2026; first public hearing 9/3/2026 at 5:01 PM; TRIM notices mailed
+    mid-August with proposed millage rates.'
+  review_status: verified
+  primary_topic: budget_millage
+  interest_tags:
+  - cost_impact
+  - taxes
+  resident_relevance:
+    summary: FY2027 is the budget season that sets next year's county tax rate; TRIM
+      notices in mid-August are the official notice of proposed property taxes for
+      every SilverLeaf household.
+    affected_audiences:
+    - residents
+    - homeowners
+    why_it_matters: The September hearings and mid-August TRIM mailings are the county's
+      annual tax-decision cycle; homeowners can act before final adoption.
+    confidence: high
+    inference_notes: Official county Office of Management and Budget page is the source;
+      dates are explicit public-hearing and mailing dates.
+  taxonomy_gap: null
+  human_review_required: false
+  tracked_entity_ids: []
+  created_at: '2026-08-09T12:00:00Z'
+  reviewer_notes: 'Task 33: FY2027 TRIM/budget season captured from official county
+    source; closes the plan''s FY2027 gap.'
+- item_id: SJC-SL-20260809-0005
+  title: Courtney Vista Drive improvements complete — new direct link between CR 2209
+    and Silverleaf Parkway
+  summary: St. Johns County completed Courtney Vista Drive improvements in about nine
+    months, ahead of the projected 12-month timeline, creating a more direct route
+    between County Road 2209 and Silverleaf Parkway and supporting safe access to
+    the newly opened Magnolia Oaks Academy. The county encourages traffic awareness
+    as the school year begins.
+  source_id: sjc_county_news
+  source_url: https://www.sjcfl.us/courtney-vista-drive-improvements-enhance-access-magnolia-oaks-academy/
+  source_published_at: '2026-08-05'
+  discovered_at: '2026-08-09T12:00:00Z'
+  discovered_by: sjc-intel-architect (Task 33)
+  topics:
+  - transportation
+  - infrastructure
+  communities:
+  - silverleaf
+  geographic_scope: single_community
+  urgency: ongoing
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  - weekly_brief_candidate
+  raw_excerpt: 'County news (2026-08-05): ''Courtney Vista Drive improvements completed
+    ahead of schedule, enhancing access between County Road 2209 and Silverleaf Parkway...
+    completed in approximately nine months, well ahead of the originally projected
+    12-month timeline.'''
+  review_status: verified
+  primary_topic: transportation
+  interest_tags:
+  - commute
+  - road_construction
+  resident_relevance:
+    summary: A completed roadway link inside/near SilverLeaf improves commutes and
+      emergency access and serves the new school.
+    affected_audiences:
+    - residents
+    - commuters
+    - families
+    why_it_matters: A more direct CR 2209-to-Silverleaf Parkway route is a visible
+      local improvement tied to the school opening and the school-run season.
+    confidence: high
+    inference_notes: Official county news release is the source; completion is stated
+      by Public Works.
+  taxonomy_gap: null
+  human_review_required: false
+  tracked_entity_ids:
+  - ENT-ROAD-CR-2209-CONNECTOR
+  created_at: '2026-08-09T12:00:00Z'
+  reviewer_notes: 'Task 33: official county completion record; adds a current Latest-capable
+    item to the roads lane and CR 2209 timeline.'
+- item_id: SJC-SL-20260809-0006
+  title: SR 16 RCUT intersection improvements — new traffic patterns at Stratton Boulevard
+    and Industry Center Road expected mid-to-late September
+  summary: St. Johns County Public Works is finishing FDOT-recommended Restricted
+    Crossing U-Turn (RCUT) intersection improvements on SR 16 at Stratton Boulevard
+    and Industry Center Road. Signalized U-turns replace unsignalized left turns,
+    with additional turn lanes, new signals, and two new pedestrian crosswalks; the
+    new traffic pattern is expected to start mid-to-late September.
+  source_id: sjc_county_news
+  source_url: https://www.sjcfl.us/traffic-pattern-changes-sr-16-stratton-blvd-industry-center-rd/
+  source_published_at: '2026-08-06'
+  discovered_at: '2026-08-09T12:00:00Z'
+  discovered_by: sjc-intel-architect (Task 33)
+  topics:
+  - transportation
+  - infrastructure
+  communities:
+  - sr_16_corridor
+  geographic_scope: multi_community
+  urgency: ongoing
+  verification_status: source_confirmed
+  sensitivity: low
+  recommended_channels:
+  - website_review_queue
+  raw_excerpt: 'County news (2026-08-06): ''New traffic patterns will replace unsignalized
+    left turns from Stratton Boulevard and Industry Center Road with signalized U-turns...
+    expected to start in mid-to-late September.'''
+  review_status: verified
+  primary_topic: transportation
+  interest_tags:
+  - commute
+  - road_construction
+  resident_relevance:
+    summary: SR 16 is a corridor SilverLeaf commuters use toward I-95 and the outlet
+      mall; these RCUT safety improvements change how the intersections operate.
+    affected_audiences:
+    - residents
+    - commuters
+    why_it_matters: A changed traffic pattern on a commute corridor is a practical
+      'what to expect' for drivers using SR 16 near the World Golf Village/outlet
+      area.
+    confidence: high
+    inference_notes: Official county news release is the source; presented as a nearby-corridor
+      improvement, not an in-community road.
+  taxonomy_gap: null
+  human_review_required: false
+  tracked_entity_ids: []
+  created_at: '2026-08-09T12:00:00Z'
+  reviewer_notes: 'Task 33: official county project record for the SR 16 corridor;
+    refreshes the SR 16 timeline with a 2026 milestone.'

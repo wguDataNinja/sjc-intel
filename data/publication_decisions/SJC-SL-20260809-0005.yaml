@@ -1,0 +1,38 @@
+# =============================================================================
+# SJC_Intel — Publication Decision
+# =============================================================================
+# Explicit human decision per docs/publication_release_contract.md.
+# Never marks an item published; release membership is a separate act.
+# =============================================================================
+
+schema_version: '1.0'
+item_id: SJC-SL-20260809-0005
+publication_status: approved
+reviewer: sjc-intel-architect (Task 33)
+decision_timestamp: '2026-08-09T04:18:49Z'
+rationale: 'Task 33: county Public Works confirms Courtney Vista Drive completed ahead
+  of schedule, linking CR 2209 and Silverleaf Parkway.'
+origin_review_status: verified
+silverleaf_relevance:
+  decision: included
+  rationale: direct CR 2209/Silverleaf Parkway link
+  place_ids:
+  - silverleaf
+  entity_ids:
+  - ENT-ROAD-CR-2209-CONNECTOR
+release_eligible: true
+source_attribution_confirmed: true
+withdrawn: false
+withdrawal_reason: null
+superseded_by: null
+relevance: in_silverleaf
+role: latest
+display_topic: roads_traffic
+lifecycle: completed
+lifecycle_label: Completed
+history:
+- status: approved
+  reviewer: sjc-intel-architect (Task 33)
+  timestamp: '2026-08-09T04:18:49Z'
+  rationale: 'Task 33: county Public Works confirms Courtney Vista Drive completed
+    ahead of schedule, linking CR 2209 and Silverleaf Parkway.'

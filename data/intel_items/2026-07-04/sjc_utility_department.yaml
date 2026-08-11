@@ -31,7 +31,7 @@ items:
     source_type: government_website
     accessed_at: '2026-07-04T03:48:19Z'
     url: https://www.sjcfl.us/departments/utility-department/
-  review_status: pending_review
+  review_status: "verified"
   primary_topic: infrastructure
   interest_tags:
   - utility_impact
@@ -76,7 +76,7 @@ items:
     source_type: government_website
     accessed_at: '2026-07-04T03:48:19Z'
     url: https://www.sjcfl.us/departments/utility-department/
-  review_status: pending_review
+  review_status: "verified"
   primary_topic: county_government
   interest_tags:
   - cost_impact

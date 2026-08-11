@@ -1,0 +1,37 @@
+# =============================================================================
+# SJC_Intel — Publication Decision
+# =============================================================================
+# Explicit human decision per docs/publication_release_contract.md.
+# Never marks an item published; release membership is a separate act.
+# =============================================================================
+
+schema_version: '1.0'
+item_id: SJC-SL-20260809-0006
+publication_status: approved
+reviewer: sjc-intel-architect (Task 33)
+decision_timestamp: '2026-08-09T04:18:54Z'
+rationale: 'Task 33: county confirms SR 16 RCUT traffic-pattern change at Stratton
+  Blvd/Industry Center Rd starting mid-to-late Sep.'
+origin_review_status: verified
+silverleaf_relevance:
+  decision: included
+  rationale: SR 16 corridor near SilverLeaf
+  place_ids:
+  - sr_16_corridor
+  entity_ids: []
+release_eligible: true
+source_attribution_confirmed: true
+withdrawn: false
+withdrawal_reason: null
+superseded_by: null
+relevance: near_silverleaf
+role: browse
+display_topic: roads_traffic
+lifecycle: under_construction
+lifecycle_label: Traffic change Sept 2026
+history:
+- status: approved
+  reviewer: sjc-intel-architect (Task 33)
+  timestamp: '2026-08-09T04:18:54Z'
+  rationale: 'Task 33: county confirms SR 16 RCUT traffic-pattern change at Stratton
+    Blvd/Industry Center Rd starting mid-to-late Sep.'

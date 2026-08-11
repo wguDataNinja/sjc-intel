@@ -17,7 +17,7 @@ items:
       - "website_review_queue"
       - "weekly_brief_candidate"
     raw_excerpt: "TRIM notices are mailed in August of each year to all property owners. The notice includes the proposed property value, proposed millage rates, and the rolled-back rate as defined by Florida law."
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "taxes_exemptions_trim_vab"
     interest_tags:
       - "property_taxes"
@@ -52,7 +52,7 @@ items:
     recommended_channels:
       - "website_review_queue"
     raw_excerpt: "Notice of Certification of Tax Roll — The certified tax roll establishes the assessed values used for calculating property taxes for the fiscal year."
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "taxes_exemptions_trim_vab"
     interest_tags:
       - "property_taxes"
@@ -90,7 +90,7 @@ items:
       - "website_review_queue"
       - "weekly_brief_candidate"
     raw_excerpt: "SJC Adopts $1.8 Billion Fiscal Year 2026 Budget with Historic Investments, Property Tax Reduction, and Public Safety Expansion."
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "taxes_exemptions_trim_vab"
     interest_tags:
       - "budget"
@@ -126,7 +126,7 @@ items:
     recommended_channels:
       - "website_review_queue"
     raw_excerpt: "FY2026 Budget Calendar: First Public Hearing Sep 3, 2025 at 5:01pm; Second Public Hearing Sep 16, 2025 at 5:01pm."
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "general_government"
     interest_tags:
       - "budget"

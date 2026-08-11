@@ -1,0 +1,38 @@
+# =============================================================================
+# SJC_Intel — Publication Decision
+# =============================================================================
+# Explicit human decision per docs/publication_release_contract.md.
+# Never marks an item published; release membership is a separate act.
+# =============================================================================
+
+schema_version: '1.0'
+item_id: SJC-SL-20260809-0001
+publication_status: approved
+reviewer: sjc-intel-architect (Task 33)
+decision_timestamp: '2026-08-09T04:18:09Z'
+rationale: 'Task 33: SJCSD first-party opening announcement resolves opening date/grade
+  span source check; 1,300 students, first day Aug 10, K-7.'
+origin_review_status: verified
+silverleaf_relevance:
+  decision: included
+  rationale: in Silverleaf community
+  place_ids:
+  - silverleaf
+  entity_ids:
+  - ENT-EDU-SILVERLEAF-K8
+release_eligible: true
+source_attribution_confirmed: true
+withdrawn: false
+withdrawal_reason: null
+superseded_by: null
+relevance: in_silverleaf
+role: latest
+display_topic: schools_community
+lifecycle: under_construction
+lifecycle_label: Opening Aug 10
+history:
+- status: approved
+  reviewer: sjc-intel-architect (Task 33)
+  timestamp: '2026-08-09T04:18:09Z'
+  rationale: 'Task 33: SJCSD first-party opening announcement resolves opening date/grade
+    span source check; 1,300 students, first day Aug 10, K-7.'

@@ -1,0 +1,29 @@
+# =============================================================================
+# SJC_Intel — Publication Decision
+# =============================================================================
+# Explicit human decision per docs/publication_release_contract.md.
+# Never marks an item published; release membership is a separate act.
+# =============================================================================
+
+schema_version: '1.0'
+item_id: SJC-SL-20260809-0004
+publication_status: deferred
+reviewer: sjc-intel-architect (Task 33)
+decision_timestamp: '2026-08-09T04:18:44Z'
+rationale: FY2027 TRIM/budget evidence captured and verified; awaiting Buddy's public
+  Government & Taxes topic decision before release (standing plan gate).
+origin_review_status: verified
+silverleaf_relevance:
+  decision: included
+  rationale: countywide household tax impact
+  place_ids:
+  - countywide
+  entity_ids: []
+release_eligible: false
+withdrawn: false
+history:
+- status: deferred
+  reviewer: sjc-intel-architect (Task 33)
+  timestamp: '2026-08-09T04:18:44Z'
+  rationale: FY2027 TRIM/budget evidence captured and verified; awaiting Buddy's public
+    Government & Taxes topic decision before release (standing plan gate).

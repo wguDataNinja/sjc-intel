@@ -1,0 +1,124 @@
+# Task 33 — review-backlog reconciliation manifest (PUB-004 evidence work).
+#
+# Every item listed here is: pending_review -> verified, and each one:
+#   - is from an official/first-party registered source;
+#   - has verification_status: source_confirmed;
+#   - is low-sensitivity with no human_review_required flag;
+#   - carries a concrete resident-relevance signal (SilverLeaf/corridor
+#     community, countywide household impact, or a tracked entity);
+#   - is individually listed with a reason (no bulk promotion).
+#
+# Sensitive items (SJSO crime, minor-involved incidents, ICE detainer, arrest
+# clusters) are intentionally absent and remain pending_review human gates.
+# BCC boilerplate resolutions and non-SilverLeaf NBOR permits are also absent;
+# they are not evidence-verified here.
+items:
+  # --- FY2026 budget / tax arc (official; countywide household impact) ---
+  - item_id: SJC-BF-202508-0001
+    review_status: verified
+    reason: "official property-appraiser TRIM record; countywide household tax impact"
+  - item_id: SJC-BF-202508-0002
+    review_status: verified
+    reason: "official 2025 tax-roll certification record; countywide household impact"
+  - item_id: SJC-BF-202508-0003
+    review_status: verified
+    reason: "official FY2026 budget-workbook publication; countywide household impact"
+  - item_id: SJC-BF-202508-0004
+    review_status: verified
+    reason: "official FY2026 budget calendar with hearing dates; countywide household impact"
+  - item_id: SJC-BF-202509-0004
+    review_status: verified
+    reason: "official tax-collector FY2026 bill-mailing record; countywide household impact"
+
+  # --- SJCSD official school/capacity records (resident-relevant) ---
+  - item_id: SJC-BF-202509-0007
+    review_status: verified
+    reason: "official SJCSD enrollment/capacity review; direct school-capacity relevance"
+  - item_id: SJC-BF-202605-0013
+    review_status: verified
+    reason: "official SJCSD district-wide 'A' grade; countywide school relevance"
+  - item_id: SJC-BF-202605-0015
+    review_status: verified
+    reason: "official SJCSD STAR awards; school-community relevance"
+  - item_id: SJC-BF-202605-0014
+    review_status: verified
+    reason: "official SJCSD Board meeting record; countywide school governance context"
+
+  # --- Roads / corridor official records (nearby corridor relevance) ---
+  - item_id: SJC-BF-202509-0011
+    review_status: verified
+    reason: "official traffic-signal completion at U.S. 1/Pine Island; corridor context"
+  - item_id: SJC-BF-202509-0013
+    review_status: verified
+    reason: "official Four Mile Road/SR 16 intersection open house; SR 16 corridor relevance"
+  - item_id: SJC-BF-202509-0012
+    review_status: verified
+    reason: "official manhole rehabilitation program; countywide infrastructure relevance"
+  - item_id: SJC-BF-202509-0014
+    review_status: verified
+    reason: "official raised-pavement-marker program; countywide road-safety relevance"
+
+  # --- Utility / water official records (countywide household operations) ---
+  - item_id: SJC-UD-20260626-0001
+    review_status: verified
+    reason: "official utilities 2025 annual report; countywide water-system relevance"
+  - item_id: SJC-UD-20260704-0001
+    review_status: verified
+    reason: "official $1.6M utility capital improvement completion; countywide water relevance"
+  - item_id: SJC-UD-20260704-0002
+    review_status: verified
+    reason: "official utility-department Moody's rating; countywide water-finance relevance"
+  - item_id: SJC-BF-202605-0006
+    review_status: verified
+    reason: "official chlorine-burnout maintenance notice; countywide water-system relevance"
+
+  # --- County news with countywide/resident relevance ---
+  - item_id: SJC-CN-20260802-0002
+    review_status: verified
+    reason: "official county record: Daily's withdraws CPA application; countywide dev context"
+  - item_id: SJC-CN-20260802-0003
+    review_status: verified
+    reason: "official county record: S.E.A. Community Help Resource Center; countywide services"
+  - item_id: SJC-CN-20260802-0004
+    review_status: verified
+    reason: "official county record: Clerk's new service center; countywide access context"
+  - item_id: SJC-BF-202605-0002
+    review_status: verified
+    reason: "official county record: summer reading program; countywide family relevance"
+  - item_id: SJC-BF-202605-0003
+    review_status: verified
+    reason: "official county record: surplus auction; countywide household context"
+  - item_id: SJC-BF-202509-0018
+    review_status: verified
+    reason: "official Inside SJC storm-debris episode; preparedness context"
+  - item_id: SJC-BF-202509-0019
+    review_status: verified
+    reason: "official CDBG-DR grant intent; recovery/preparedness context"
+
+  # --- SilverLeaf-adjacent / NW Sector NBOR official records ---
+  - item_id: SJC-NBOR-20260704-0020
+    review_status: verified
+    reason: "official NW Sector community meeting (Colee Cove Tower); SilverLeaf-adjacent"
+  - item_id: SJC-NBOR-20260802-0013
+    review_status: verified
+    reason: "official SUPMAJ Colee Cove Tower; SilverLeaf-adjacent NW Sector"
+  - item_id: SJC-NBOR-20260802-0002
+    review_status: verified
+    reason: "official NW Sector meeting (Bartram Grove CPA/MAJMOD); SilverLeaf-adjacent"
+  - item_id: SJC-NBOR-20260802-0007
+    review_status: verified
+    reason: "official NW Sector meeting (Little Florence Fish Camp); SilverLeaf-adjacent"
+  - item_id: SJC-NBOR-20260704-0019
+    review_status: verified
+    reason: "official East Peyton Pkwy traffic-light activation; corridor relevance"
+  - item_id: SJC-NBOR-20260704-0001
+    review_status: verified
+    reason: "official St. Thomas Island Pkwy cell tower; adjacent development context"
+  - item_id: SJC-NBOR-20260802-0014
+    review_status: verified
+    reason: "official St. Thomas Island Pkwy cell tower (repeat); adjacent context"
+
+  # --- BCC agenda item with concrete resident scope ---
+  - item_id: SJC-BCC-20260120-0011
+    review_status: verified
+    reason: "BCC resolution with concrete scope; verified as official record (classification still gates release)"

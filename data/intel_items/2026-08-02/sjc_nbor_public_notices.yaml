@@ -885,7 +885,7 @@ items:
     source_type: government_website
     accessed_at: '2026-08-02T13:02:01Z'
     url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
-  review_status: pending_review
+  review_status: verified
   primary_topic: development
   interest_tags:
   - development_watch
@@ -950,7 +950,7 @@ items:
     source_type: government_website
     accessed_at: '2026-08-02T13:02:01Z'
     url: https://webapp.sjcfl.us/webnews/NBRscreend.aspx
-  review_status: pending_review
+  review_status: verified
   primary_topic: development
   interest_tags:
   - development_watch

@@ -130,7 +130,7 @@ items:
     recommended_channels:
       - "website_review_queue"
     raw_excerpt: "The St. Johns County Tax Collector's office collects property taxes based on the millage rates adopted by the Board of County Commissioners. Tax bills are mailed in the fall following budget adoption."
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "taxes_exemptions_trim_vab"
     interest_tags:
       - "property_taxes"
@@ -254,7 +254,7 @@ items:
     recommended_channels:
       - "website_review_queue"
     raw_excerpt: "Attendance Zoning — St. Johns County School District attendance zoning page providing boundary information and school zone maps for all district schools."
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "school_capacity"
     interest_tags:
       - "schools"
@@ -418,7 +418,7 @@ items:
       - "website_review_queue"
       - "weekly_brief_candidate"
     raw_excerpt: "The new traffic signal at U.S. 1 and Pine Island Road is now fully operational as of Sept. 8. The intersection improvement project, led by St. Johns County, invested $2.8 million to add turning lanes and a new traffic signal."
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "transportation"
     interest_tags:
       - "road_construction"
@@ -457,7 +457,7 @@ items:
     recommended_channels:
       - "website_review_queue"
     raw_excerpt: "St. Johns County continues to advance its manhole rehabilitation program, replacing aging infrastructure to improve wastewater system reliability."
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "permits_construction"
     interest_tags:
       - "infrastructure"
@@ -495,7 +495,7 @@ items:
       - "website_review_queue"
       - "weekly_brief_candidate"
     raw_excerpt: "St. Johns County will host a public open house to share plans for the Four Mile Road and State Road 16 intersection improvements."
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "transportation"
     interest_tags:
       - "road_construction"
@@ -533,7 +533,7 @@ items:
     recommended_channels:
       - "website_review_queue"
     raw_excerpt: "St. Johns County is continuing its Raised Pavement Markers Replacement Program, installing new reflective markers on county roads."
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "transportation"
     interest_tags:
       - "road_safety"
@@ -691,7 +691,7 @@ items:
       - "website_review_queue"
       - "weekly_brief_candidate"
     raw_excerpt: "Inside SJC Episode 6 covers storm debris cleanup, educating residents on proper preparation and disposal after tropical weather events."
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "emergency_weather_fire_flood"
     interest_tags:
       - "storm_debris"
@@ -731,7 +731,7 @@ items:
       - "website_review_queue"
       - "weekly_brief_candidate"
     raw_excerpt: "Notice of intent to apply for CDBG-DR funds for the 2023 & 2024 Storms Infrastructure Repair Program. Up to $400 million available."
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "emergency_weather_fire_flood"
     interest_tags:
       - "grant"

@@ -1,0 +1,33 @@
+# =============================================================================
+# SJC_Intel — Publication Decision
+# =============================================================================
+# Explicit human decision per docs/publication_release_contract.md.
+# Never marks an item published; release membership is a separate act.
+# =============================================================================
+
+schema_version: '1.0'
+item_id: SJC-CN-20260802-0003
+publication_status: approved
+reviewer: sjc-intel-architect (Task 33)
+decision_timestamp: '2026-08-09T04:23:25Z'
+rationale: 'Task 33: reconciled official record; durable browse context.'
+origin_review_status: verified
+silverleaf_relevance:
+  decision: included
+  rationale: S.E.A. Community Help Resource Center countywide service context
+  place_ids:
+  - rural_sjc
+  entity_ids: []
+release_eligible: true
+source_attribution_confirmed: true
+withdrawn: false
+withdrawal_reason: null
+superseded_by: null
+relevance: countywide_impact
+role: browse
+display_topic: utilities_water
+history:
+- status: approved
+  reviewer: sjc-intel-architect (Task 33)
+  timestamp: '2026-08-09T04:23:25Z'
+  rationale: 'Task 33: reconciled official record; durable browse context.'

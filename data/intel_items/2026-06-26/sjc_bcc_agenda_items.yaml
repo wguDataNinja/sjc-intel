@@ -698,7 +698,7 @@ items:
     source_type: government_website
     accessed_at: '2026-06-26T08:07:51Z'
     url: https://stjohnsclerk.com/board-records/agendas/
-  review_status: pending_review
+  review_status: "verified"
   primary_topic: transportation
   interest_tags:
   - traffic_impact

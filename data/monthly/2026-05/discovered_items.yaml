@@ -92,7 +92,7 @@ items:
       source_type: "government_website"
       accessed_at: "2026-06-03T23:00:00Z"
       url: "https://www.sjcfl.us/news/"
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "library"
     interest_tags:
       - "community_event"
@@ -141,7 +141,7 @@ items:
       source_type: "government_website"
       accessed_at: "2026-06-03T23:00:00Z"
       url: "https://www.sjcfl.us/news/"
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "county_government"
     interest_tags:
       - "cost_impact"
@@ -292,7 +292,7 @@ items:
       source_type: "government_website"
       accessed_at: "2026-06-03T23:00:00Z"
       url: "https://www.sjcfl.us/departments/utility-department/"
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "infrastructure"
     interest_tags:
       - "utility_impact"
@@ -639,7 +639,7 @@ items:
       source_type: "government_website"
       accessed_at: "2026-06-03T23:00:00Z"
       url: "https://www.stjohns.k12.fl.us/"
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "education"
     interest_tags:
       - "property_values"
@@ -688,7 +688,7 @@ items:
       source_type: "government_website"
       accessed_at: "2026-06-03T23:00:00Z"
       url: "https://www.boarddocs.com/fl/stjohns/Board.nsf/Public"
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "education"
     interest_tags:
       - "quality_of_life"
@@ -733,7 +733,7 @@ items:
       source_type: "government_website"
       accessed_at: "2026-06-03T23:00:00Z"
       url: "https://www.stjohns.k12.fl.us/"
-    review_status: "pending_review"
+    review_status: "verified"
     primary_topic: "education"
     interest_tags:
       - "quality_of_life"

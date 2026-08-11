@@ -67,7 +67,7 @@ items:
   recommended_channels:
   - website_review_queue
   - weekly_brief_candidate
-  review_status: pending_review
+  review_status: "verified"
   primary_topic: rezoning_comp_plan_dri
   interest_tags:
   - development_watch
@@ -101,7 +101,7 @@ items:
   recommended_channels:
   - website_review_queue
   - weekly_brief_candidate
-  review_status: pending_review
+  review_status: "verified"
   primary_topic: community_services
   interest_tags:
   - quality_of_life
@@ -134,7 +134,7 @@ items:
   recommended_channels:
   - website_review_queue
   - weekly_brief_candidate
-  review_status: pending_review
+  review_status: "verified"
   primary_topic: county_government
   interest_tags:
   - quality_of_life

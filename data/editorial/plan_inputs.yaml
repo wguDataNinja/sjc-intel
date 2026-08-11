@@ -1,34 +1,33 @@
-# Product-side editorial inputs for CURRENT_PUBLICATION_PLAN.md (Task 29).
+# Product-side editorial inputs for CURRENT_PUBLICATION_PLAN.md (Task 29;
+# refreshed Task 33).
 # Human-maintained editorial state that the plan generator merges with the
 # derived release state. Review/update after each weekly cycle.
 editorial_summary:
-  - "SilverLeaf Brief now publishes the full resident corpus: schools, roads, retail, healthcare, utilities, and preparedness."
-  - "Latest carries 10 current updates; Browse holds durable context; timelines tell the history of major subjects."
+  - "SilverLeaf Brief now publishes a deepened resident corpus: schools, roads, retail, healthcare, utilities, preparedness, and the FY2027 tax season."
+  - "Latest carries the current August-2026 developments (Magnolia Oaks opening, Baptist expansion, Courtney Vista Drive, CR 210 completion); Browse holds durable context; timelines tell the history of major subjects."
   - "Qualified uncertainty is preserved (e.g., the possible-Harris-Teeter grocery center publishes as tenant-unconfirmed)."
   - "Crime, minors, allegations, and private information remain excluded or human-gated."
 
 category_gaps:
-  schools_community: "Attendance-zone map authority (DIR-010) still pending."
-  roads_traffic: "SR 16 widening 2026 follow-up milestone not yet captured."
+  schools_community: "Magnolia Oaks opening date and grade span now confirmed (Aug 10, K-7); address-level assignment remains via the SJCSD zone locator (DIR-010)."
+  roads_traffic: "SR 16 RCUT traffic-pattern change (mid-late Sep 2026) captured; FCE construction milestone now official with cost/schedule."
   local_business: "Tenant-level timing is reporting-based; verify before any 'opened' claim."
   utilities_water: "No SilverLeaf-area boil-water notices captured; seasonal."
   emergency_preparedness: "Small but complete; add only when a real storm threat exists."
 
 ready_next:
+  - "FY2027 TRIM/budget season captured (verified corpus) — awaits Buddy's public 'Government & Taxes' topic decision before release."
   - "SJC-BF-202509-0007 enrollment/capacity — official SJCSD context; add to Browse after copy review."
-  - "FY2026 budget / tax-cut timeline — ready once a public 'Government & Taxes' topic decision is made."
-  - "SJC-BF-202509-0015 impact fees — same topic decision required."
   - "Hallowes Cove school arc — merge 5 records into one context timeline."
 
 needs_source_check:
-  - "SJC-SL-20260706-0005 (Bala's second location) — recorded URL returns 404; locate a working article URL."
-  - "Magnolia Oaks opening date and final attendance-zone boundary — confirm from SJCSD."
-  - "SR 16 widening current 2026 status — check FDOT/nflroads."
-  - "First Coast Expressway exact segment/toll timing — check FDOT."
-  - "Silverleaf Market tenant opening dates (M Shack, Natural Greens, Fifth Third) — verify."
+  - "SR 16 widening (IGP-to-I-95 PD&E) current 2026 status beyond RCUT — check FDOT/nflroads project page p=5615."
+  - "Silverleaf Market tenant opening dates (M Shack, Natural Greens, Fifth Third) — verify before 'opened' claims."
+  - "Bala's current open/closed status — article located and verified; opening finality to confirm with operator."
 
 qualified_notes:
   - "Possible Harris Teeter center: project confirmed under county review; tenant NOT confirmed by first-party source."
+  - "Bala's second location: reported near-opening; opening finality presented as reported, not operator-confirmed."
 
 exclusions:
   - "Crime/arrest/minor incidents (SilverLeaf shooting, ICE detainer, airlifted child) — safety gate."
@@ -37,11 +36,11 @@ exclusions:
   - "Expired event notices (chlorine burnout, application deadlines) — never republished as current."
 
 coverage_gaps:
-  - "Baptist SilverLeaf campus expansion beyond first phase (services, helipad timing) — lead-only."
-  - "Current FCE milestone beyond public-hearing stage — lead-only."
-  - "Retail tenants' opening dates — reporting-only."
-  - "FY2027 TRIM/budget season (Aug-Sep 2026) — not yet captured."
+  - "FY2027 budget/tax topic decision (Government & Taxes) pending before budget content can publish."
+  - "Silverleaf Market tenant opening dates — reporting-only."
+  - "Live incident lane (crashes, real-time road closures) remains a separate future lane."
+  - "School-zone address-level authority (DIR-010) pending district GIS/locator review."
 
 next_release:
-  - "Resolve Needs-source-check items, promote Ready-next Browse items, then build the next release."
+  - "Release 004 candidate built and validated locally (48 items, 75 routes) from the hardened workflow; not deployed."
   - "Keep Latest to genuinely current items; move anything stale into Browse/timeline."
