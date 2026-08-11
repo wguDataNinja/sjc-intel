@@ -464,7 +464,22 @@ accepted:
       rationale: shape valid, evidence present
       run_id: SJC-LIVE-20260806-0202
     decision_id: DEC-7b98f070560c
-  milestones: []
+  milestones:
+  - subject: Magnolia Oaks Academy
+    milestone_due: '2026-08-10'
+    expected: First day of school (Aug 10)
+    proposal_id: MSN-T33-MOA
+    proposal: '2026-08-09'
+  - subject: Baptist SilverLeaf campus
+    milestone_due: '2026-09-01'
+    expected: Emergency Center opens (Sep 2026)
+    proposal_id: MSN-T33-BAP
+    proposal: '2026-08-09'
+  - subject: First Coast Expressway access
+    milestone_due: '2030-12-31'
+    expected: Final segment completion (late 2030/early 2031)
+    proposal_id: MSN-T33-FCE
+    proposal: '2026-08-09'
   timelines:
   - proposal_id: LIVE-833d0d9beed7
     type: timeline_reconciliation

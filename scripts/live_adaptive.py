@@ -226,6 +226,37 @@ def active_search_queries(root=DURABLE):
     return queries
 
 
+def _overdue_milestones(state, run):
+    """Return accepted-subject milestones whose due date has passed without a
+    fresh finding (Task 33, defect #5: stale-subject escalation).
+
+    An expected milestone is overdue when its ``milestone_due`` date is before
+    the run cutoff and the subject did not produce a fresh normalized finding
+    this cycle. The editor recommends SEARCH_NOW so the subject is not quietly
+    left stale; it never invents progress.
+    """
+    milestones = state.get("accepted", {}).get("milestones", [])
+    if not milestones:
+        return []
+    cutoff = dt.date.fromisoformat(run.get("completed_at", "")[:10]) if run.get("completed_at") else dt.date.today()
+    fresh = {x.get("subject") for x in run.get("normalized_findings", [])}
+    overdue = []
+    for m in milestones:
+        subject = m.get("subject")
+        due = m.get("milestone_due") or m.get("expected")
+        if isinstance(due, dict):
+            due = due.get("date")
+        if not subject or not due:
+            continue
+        try:
+            due_date = dt.date.fromisoformat(str(due)[:10])
+        except (ValueError, TypeError):
+            continue
+        if due_date < cutoff and subject not in fresh:
+            overdue.append((subject, due_date))
+    return overdue
+
+
 def resident_coverage_editor(run, root=DURABLE):
     """Independent editorial QA: identify resident questions coverage misses.
 
@@ -270,6 +301,24 @@ def resident_coverage_editor(run, root=DURABLE):
                 "existing_search_profiles": [], "recommended_research": [], "recommended_priority": "medium",
                 "recommended_action": "ADD_SEARCH_PROFILE",
             })
+    # Stale-milestone escalation: an expected milestone that has passed without
+    # fresh coverage triggers a SEARCH_NOW recommendation rather than silence.
+    for subject, due in _overdue_milestones(state, run):
+        findings.append({
+            "coverage_gap_id": "COV-" + hashlib.sha256(f"{run['run_id']}|{subject}|stale".encode()).hexdigest()[:12],
+            "coverage_lane": next((p.get("lane") for p in profiles.values()
+                                   if p.get("subject") == subject), "unassigned"),
+            "subject": subject,
+            "resident_question": f"An expected milestone for {subject} was due {due.isoformat()}; has it happened?",
+            "current_state": f"expected milestone due {due.isoformat()} passed without confirmed coverage",
+            "why_this_is_a_gap": "expected milestone is overdue and the subject has not advanced in the corpus",
+            "last_meaningful_update": None,
+            "expected_next_milestone": "SEARCH_NOW to confirm whether the milestone occurred",
+            "existing_search_profiles": profiles.get(subject, {}).get("queries") or [],
+            "recommended_research": [f'"{subject}"'],
+            "recommended_priority": material_importance_value(subject),
+            "recommended_action": "SEARCH_NOW",
+        })
     output = {"run_id": run["run_id"], "generated_at": run["completed_at"], "findings": findings}
     return output
 
@@ -313,14 +362,27 @@ def evaluate_proposals(proposals, state, pending, run_id):
     It never sees the strategist's reasoning as an oracle; it checks evidence
     presence, subject/type uniqueness against pending and accepted state, and
     that no publication state is referenced. Returns (accepted, rejected).
+
+    Acceptance is type-aware (Task 33, defect #1): a proposal recreating an
+    already-tracked entity is rejected as a duplicate, but a search_profile for
+    an entity-first subject is a legitimate later update and is accepted.
     """
     existing = _all_pending_subjects(pending)
+    existing_pairs = {(x["type"], x["subject"]) for x in pending["proposals"]}
     # Accepted records use `subject`; older fixture records may use `label`.
     # Consider every accepted bucket so a new proposal cannot recreate an
     # accepted profile, lane, timeline, alias, or entity.
-    for values in state.get("accepted", {}).values():
+    BUCKET_TO_TYPE = {"entities": "entity", "search_profiles": "search_profile",
+                      "lanes": "coverage_lane", "timelines": "timeline_reconciliation",
+                      "milestones": "milestone", "aliases": "alias"}
+    accepted_pairs = set()
+    for bucket, values in state.get("accepted", {}).items():
         for record in values if isinstance(values, list) else []:
-            existing.add(record.get("subject") or record.get("label"))
+            subj = record.get("subject") or record.get("label")
+            if not subj:
+                continue
+            existing.add(subj)
+            accepted_pairs.add((BUCKET_TO_TYPE.get(bucket, bucket.rstrip("s")), subj))
     existing.discard(None)
     accepted, rejected = [], []
     seen = set()
@@ -331,8 +393,13 @@ def evaluate_proposals(proposals, state, pending, run_id):
             reasons.append("missing evidence")
         if key in seen:
             reasons.append("duplicate proposal")
-        if p["subject"] in existing or key in seen:
-            reasons.append("subject already tracked or proposed")
+        # Entity recreation for an already-tracked subject is a duplicate.
+        # Other proposal types (search_profile, milestone, timeline) advance an
+        # existing subject and are allowed when the exact pair is not present.
+        if p["type"] == "entity" and p["subject"] in existing:
+            reasons.append("entity already tracked or proposed")
+        elif key in existing_pairs or key in accepted_pairs:
+            reasons.append("proposal already tracked or proposed")
         seen.add(key)
         if reasons:
             p["evaluator"] = {"decision": "rejected", "rationale": "; ".join(reasons), "run_id": run_id}
@@ -589,7 +656,8 @@ def review(proposal_id, action, reviewer, rationale, root=DURABLE, dry_run=False
         p["decision_id"] = result["decision_id"]
         if action == "accept":
             bucket = {"entity": "entities", "search_profile": "search_profiles",
-                      "coverage_lane": "lanes", "timeline_reconciliation": "timelines"}.get(p["type"])
+                      "coverage_lane": "lanes", "timeline_reconciliation": "timelines",
+                      "milestone": "milestones"}.get(p["type"])
             if not bucket:
                 raise ValueError("unsupported accepted type")
             state["accepted"][bucket].append(p)

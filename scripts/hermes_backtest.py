@@ -216,10 +216,20 @@ def visible_state(backtest_id: str, week_start: dt.date) -> dict:
     return state
 
 
+def _normalized_label(value):
+    """Normalize an entity label for idempotent dedupe."""
+    return re.sub(r"\s+", " ", str(value or "").strip().lower())
+
+
 def apply_proposal(state: dict, p: dict) -> None:
     kind, subject = p["type"], p["subject"]
     avail = p.get("available_on", p.get("simulated_week"))
     if kind == "entity":
+        if any(_normalized_label(e["label"]) == _normalized_label(subject)
+               for e in state["entities"]):
+            # Idempotent by normalized label: prefer the existing entity over
+            # creating a second record for the same identity (Task 32 defect #3).
+            return
         state["entities"].append({"id": p["proposal_id"], "label": subject,
                                   "aliases": [], "available_on": avail,
                                   "evidence": p.get("evidence", [])})
@@ -228,6 +238,9 @@ def apply_proposal(state: dict, p: dict) -> None:
             if e["label"] == p.get("target"):
                 e.setdefault("aliases", []).append({"value": subject, "first_seen": avail})
     elif kind == "search_profile":
+        if any(_normalized_label(s.get("subject")) == _normalized_label(subject)
+               for s in state["search_profiles"]):
+            return
         state["search_profiles"].append({"subject": subject,
                                          "queries": p.get("proposed_searches", []),
                                          "budget": p.get("cost", 1),
@@ -360,11 +373,13 @@ def ingest_week(backtest_id: str, week_start: str) -> dict:
         reasons = []
         if p.get("evidence_error"):
             reasons.append(p["evidence_error"])
-        # Duplicate-subject rejection applies to durable tracking proposals only.
-        # Milestone and timeline updates for an already-tracked subject are
-        # legitimate advances of that subject's history.
-        if p["type"] in ("entity", "search_profile") and p["subject"] in labels:
-            reasons.append("duplicate subject already tracked")
+        # Duplicate-subject rejection applies to entity creation only. An
+        # entity-first subject may later gain a search profile, milestone, or
+        # timeline update without being treated as a duplicate (Task 32 defect
+        # #1 / acceptance asymmetry); those proposals advance an existing
+        # subject's history rather than recreating it.
+        if p["type"] == "entity" and p["subject"] in labels:
+            reasons.append("duplicate entity already tracked")
         if p["type"] == "alias" and p.get("target") not in labels:
             reasons.append("alias target not visible")
         if _is_sensitive(" ".join([str(p.get("subject", "")), str(p.get("rationale", ""))]),
@@ -419,13 +434,82 @@ def ingest_week(backtest_id: str, week_start: str) -> dict:
 # Hidden evaluation
 # --------------------------------------------------------------------------- #
 
+# Contextual evaluator matching (Task 33, defect #2).
+#
+# The old matcher stopped every generic token ("school", "zoning",
+# "attendance", "boundaries", "water", ...), which made whole subjects
+# unmatchable ("school zoning / attendance boundaries" had zero surviving
+# keywords) while the bare token "water" produced false "found" marks for
+# unrelated boil-water notices. The repaired matcher uses explicit alias
+# phrases first, then falls back to distinctive tokens only after generic
+# cross-subject tokens are removed.
+GENERIC_TOKENS = {
+    "the", "and", "or", "of", "for", "to", "a", "an", "silverleaf",
+    "silverleaf's", "possible", "center", "connector", "access", "facility",
+    "campus", "improvements", "shortage", "restrictions", "widening",
+    "cr", "sr", "igp", "us", "rd", "ct", "st", "school", "county",
+}
+
+
 def _subject_keywords(subject: str) -> list[str]:
-    stop = {"the", "and", "or", "of", "for", "to", "a", "an", "silverleaf",
-            "possible", "center", "academy", "school", "connector", "access",
-            "facility", "campus", "widening", "improvements", "shortage",
-            "restrictions", "zoning", "attendance", "boundaries",
-            "cr", "sr", "igp", "us", "rd", "ct", "st"}
-    return [k for k in re.findall(r"[A-Za-z0-9\-]{2,}", subject.lower()) if k not in stop]
+    """Distinctive matching tokens for a hidden-evaluator subject.
+
+    Generic/ambiguous tokens (``school``, ``water``, ``cr``/``sr`` prefixes,
+    ``zoning`` alone) are removed only when the subject still has other
+    distinctive tokens; if every token would be generic, the full name tokens
+    are kept so medium-priority subjects remain matchable (defect #2).
+    """
+    low = re.sub(r"[^a-z0-9\- ]", " ", subject.lower())
+    tokens = [k for k in re.findall(r"[a-z0-9\-]{2,}", low) if k not in GENERIC_TOKENS]
+    if not tokens:
+        # Whole-subject stop-list overreach: retain the subject's own tokens so
+        # "school zoning / attendance boundaries" stays matchable.
+        tokens = [k for k in re.findall(r"[a-z0-9\-]{2,}", low)]
+    # Distinctive phrase-level aliases improve precision for collision-prone
+    # subjects (e.g., "water reclamation", "water shortage", "zoning").
+    aliases = []
+    phrase_pairs = (
+        ("water reclamation", "reclamation"),
+        ("water shortage", "shortage"),
+        ("irrigation restrictions", "irrigation"),
+        ("attendance boundaries", "attendance"),
+        ("attendance zoning", "attendance"),
+        ("school zoning", "zoning"),
+        ("international golf parkway", "golf parkway"),
+    )
+    for phrase, token in phrase_pairs:
+        if phrase in low and token not in tokens:
+            tokens.append(token)
+    return tokens
+
+
+def _token_hit(kws, hay):
+    """A distinctive-token hit requires a majority (ceil 2/3) of tokens.
+
+    This is the contextual fix for defect #2: the bare token ``water`` alone
+    (1 of 5 Phase III tokens) must not mark a subject found, while a tracked
+    subject whose tokens survive the generic stop-list (e.g. "school zoning /
+    attendance boundaries") matches when a majority of its distinctive tokens
+    are present in the haystack.
+    """
+    if not kws:
+        return False
+    require = max(1, -(-len(kws) * 2 // 3))  # ceil(2/3)
+    return sum(1 for k in kws if k in hay) >= require
+
+
+def _alias_terms(subject: str) -> list[str]:
+    """Alias phrases that identify a subject without generic-token collisions."""
+    low = re.sub(r"[^a-z0-9\- ]", " ", subject.lower())
+    terms = []
+    for phrase in ("magnolia oaks", "first coast expressway", "cr 2209", "cr 210",
+                   "sr 16", "baptist", "publix", "harris teeter", "silverleaf market",
+                   "silverleaf grocery", "grocery center", "international golf parkway",
+                   "water reclamation", "phase iii", "hurricane", "attendance zoning",
+                   "school zoning", "academy", "elementary", "middle school"):
+        if phrase in low:
+            terms.append(phrase)
+    return terms
 
 
 def evaluate_week(backtest_id: str, week_start: str) -> dict:
@@ -452,11 +536,17 @@ def evaluate_week(backtest_id: str, week_start: str) -> dict:
     lane_targets = [x["subject"] for x in hidden.get("lanes", []) if x.get("priority") == "high"]
 
     def hit(subject):
+        aliases = _alias_terms(subject)
         kws = _subject_keywords(subject)
-        if not kws:
+        if not kws and not aliases:
             return False
         hay = " ".join(list(known_subjects) + list(promoted) + list(profiles)).lower()
-        return any(k in hay for k in kws)
+        # A precise alias phrase is the strongest signal and never a collision.
+        if any(a in hay for a in aliases):
+            return True
+        # Otherwise a majority of the distinctive tokens must appear to avoid a
+        # bare "water"/"school" single-token false positive (defect #2).
+        return _token_hit(kws, hay)
 
     found_subjects = [t for t in subject_targets if hit(t)]
     missed = [t for t in subject_targets if not hit(t)]
@@ -537,11 +627,15 @@ def evaluate_all(backtest_id: str, as_of: str | None = None) -> dict:
                 aliases.append({"value": p["subject"], "target": p.get("target"),
                                 "week": meta["week_start"]})
 
-    haystack = " ".join(list(known_subjects) + list(promoted) + list(profiles)).lower()
-
     def hit(subject):
+        aliases = _alias_terms(subject)
         kws = _subject_keywords(subject)
-        return bool(kws) and any(k in haystack for k in kws)
+        if not kws and not aliases:
+            return False
+        hay = " ".join(list(known_subjects) + list(promoted) + list(profiles)).lower()
+        if any(a in hay for a in aliases):
+            return True
+        return _token_hit(kws, hay)
 
     found_subjects = [t for t in subject_targets if hit(t)]
     missed_subjects = [t for t in subject_targets if not hit(t)]
