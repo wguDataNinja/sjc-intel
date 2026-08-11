@@ -1,7 +1,8 @@
 # Hermes weekly entry point
 
 **Purpose:** This is the first file a weekly Hermes orchestrator reads. It
-defines the bounded weekly worker run and the handoff to a human reviewer.
+defines the bounded weekly worker run, the authoritative production
+supervised-cycle sequence, and the handoff to a human reviewer.
 
 **Current state:** The weekly task declaration is `enabled: false`. There is no
 active scheduler and no authority here to enable one. A human may authorize a
@@ -30,6 +31,48 @@ Neither workflow publishes, changes a canonical registry, or changes the
 website. Do not merge their state stores or treat a discovery lead as an
 editorially reviewed item.
 
+## Authoritative production sequence (Task 33)
+
+The supervised weekly cycle on the SJC side follows the sequence proven by the
+66-week Hermes production backtest (Task 30), which is the operating contract
+for *production* — the simulation-specific acceptance and hidden-evaluation
+mechanics from the replay are NOT copied into production:
+
+1. **Known-source capture** — run the approved monitors (NBOR + SJSO initial
+   pilot; county news when scripted) and normalize meaningful items.
+2. **Active targeted searches** — execute the accepted recurring search
+   profiles from `data/adaptive_discovery/accepted_state.yaml` (bounded,
+   receipt-backed).
+3. **Bounded discovery** — scan for resident-relevant items not yet covered by
+   a known subject. Resident lens: *If I lived in SilverLeaf this week, what
+   important local change would I want to know about?*
+4. **Normalize + resident relevance** — structure findings with lane,
+   resident importance, and evidence; classify resident impact.
+5. **Identity/alias reconciliation** — prefer the existing entity, then
+   alias/update, then timeline update. Do not recreate a tracked entity.
+6. **Ambiguity/conflict detection → bounded research escalation** — identity
+   uncertainty, geographic conflict, stale evidence, conflicting sources, or
+   material resident importance trigger bounded research BEFORE human review.
+7. **Resident Coverage Strategist** — decide what to track going forward;
+   propose durable subjects, aliases, sources, profiles, milestones,
+   timelines, lanes.
+8. **Resident Coverage Editor** — separate editorial QA for missing/stale/
+   overdue coverage (including stale-milestone escalation). It does not
+   search or approve.
+9. **Independent evaluation** — the evaluator validates evidence shape,
+   dedupe, and isolation. It never approves its own research. An
+   `ACCEPT_QUALIFIED` subject is tracked with explicit uncertainty.
+10. **Human review** — one proposal/item at a time via `docs/human_review.md`.
+11. **Model B editorial classification** — assign editorial roles
+    (`latest`/`browse`/`context`/`timeline`), qualified posture, and recorded
+    corroboration for non-official sources per `docs/PUBLICATION_POLICY.md`.
+    Roles are human decisions, never inferred from recency.
+12. **Adaptive-state-to-corpus normalization** — an accepted subject that
+    produces meaningful evidence becomes a candidate intel item through normal
+    review/classification; it must not remain lead-only.
+13. **Regenerate** `CURRENT_PUBLICATION_PLAN.md` (product-side editorial
+    state) and `CURRENT_BRIEF.md` (operational health).
+
 ## Research escalation
 
 Before an ambiguous adaptive proposal reaches a human, the workflow runs
@@ -50,6 +93,12 @@ an update that is missing, stale, weakly tracked, or under-researched. It
 creates structured gap findings and recommends bounded next actions only; it
 does not search, accept, or edit state. The weekly run retains its output with
 the evidence artifact, and `CURRENT_BRIEF.md` surfaces the material gaps.
+
+**Stale-milestone escalation (Task 33, defect #5):** an accepted subject whose
+expected milestone has passed without fresh coverage triggers a `SEARCH_NOW`
+finding, so important subjects (school opening, road milestone, hospital
+service, shopping-center tenant) are not quietly left stale. The editor never
+invents progress — it only asks that the milestone be confirmed or refuted.
 
 ## Product-side editorial state (publication plan)
 

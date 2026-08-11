@@ -111,6 +111,9 @@ reproducible/transient execution artifacts:
   It does not search or approve recommendations. Its structured gap findings
   live at `runtime/adaptive_discovery/runs/<run_id>/resident_coverage_editor.yaml`
   and return through the normal research/evaluator/human-review path.
+  It includes **stale-milestone escalation** (Task 33): an accepted subject
+  whose expected milestone has passed without fresh coverage triggers a
+  `SEARCH_NOW` finding so important subjects are not quietly left stale.
 - Stop on budget breach, provider/source failure, sensitive material, or lack
   of source evidence.
 

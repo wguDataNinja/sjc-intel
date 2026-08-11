@@ -37,6 +37,13 @@ Per source, follow `prompts/known_source_monitor_task.md` for fetch, extraction,
 classification, and sensitivity rules. Normalize output to the candidate
 contract in `docs/weekly_operational_contract.md` §3.2.
 
+When FDOT District Two / NFLRoads project pages are in the approved monitor
+list, use the pinned project-page anchors in the `fdot_district_two_nflroads`
+source record (First Coast Expressway final segment `p=5639`; SR 16 IGP-to-I-95
+PD&E `p=5615`). Project-page captures are official source context; treat FCE as
+a nearby corridor subject, never as a SilverLeaf-owned road, and never imply a
+direct SilverLeaf interchange without official evidence.
+
 ## 4. Discovery profile (Stage B)
 
 Use the discovery profile named in the envelope (default `registry/search_profiles.yaml`
@@ -97,6 +104,22 @@ Allowed actions are `SEARCH_NOW`, `ADD_SEARCH_PROFILE`, `REFRESH_SOURCE`,
 `NO_ACTION`, and `ESCALATE_TO_HUMAN`. The editor must not search, approve, or
 apply its own recommendations; they go through the normal strategist,
 research-escalation, independent-evaluator, and human-review gates.
+
+An accepted subject whose expected milestone has passed without fresh coverage
+must be escalated with `SEARCH_NOW` (stale-milestone escalation, Task 33); the
+editor asks that the milestone be confirmed or refuted and never invents
+progress.
+
+## 4.3 Model B publication fields (handoff only)
+
+The worker never assigns publication state. But candidate items and the
+editor's findings should carry the evidence the Model B reviewer will need
+(`docs/PUBLICATION_POLICY.md`): the editorial product role
+(`latest`/`browse`/`context`/`timeline`) is a human decision, qualified posture
+is explicit ("tenant unconfirmed", "approval pending"), and local-media items
+need recorded corroboration (official/first-party source, or two independent
+outlets) before default publication. Normalize candidates so the human review
+step can decide roles, qualification, and corroboration without re-research.
 
 ## 5. Data you may read
 
