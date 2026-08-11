@@ -197,6 +197,45 @@ profiles:
       6 months, this profile expires (review before expiry).
 
   # --------------------------------------------------------------------------
+  # First Coast Expressway (FDOT project subject)
+  # --------------------------------------------------------------------------
+  # Official project-page monitoring plus bounded recurring discovery. FCE is a
+  # nearby commute corridor, not a SilverLeaf-owned road; never imply a direct
+  # SilverLeaf interchange without official evidence.
+
+  - profile_id: "sl_fce_fdot"
+    display_name: "First Coast Expressway — FDOT final segment"
+    enabled: true
+    tier: "active"
+    cadence: "weekly"
+    entity_ids: []
+    include_descendants: false
+    query_templates:
+      - '"First Coast Expressway" "St. Johns"'
+      - '"First Coast Expressway" "CR 2209"'
+      - '"First Coast Expressway" I-95 construction'
+      - '"First Coast Expressway" "St. Johns Parkway"'
+    additional_terms:
+      - "SR 23"
+      - "toll"
+      - "open house"
+      - "lane closure"
+    provisional_terms: []
+    exclude_terms:
+      - "accident"
+      - "crash"
+    preferred_domains:
+      - "nflroads.com"
+      - "fdot.gov"
+      - "sjcfl.us"
+    date_window_days: 90
+    notes: >
+      FDOT final-segment project page (https://nflroads.com/ProjectDetails?p=5639)
+      is the stable official source; the county hosts construction open-house
+      event notices. Crash/incident content is excluded (live-incident lane is
+      separate future work).
+
+  # --------------------------------------------------------------------------
   # Shoppes of St. Johns Parkway (Adjacent)
   # --------------------------------------------------------------------------
   # Adjacent/direct-impact relationship. Not inside SilverLeaf.

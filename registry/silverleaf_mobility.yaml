@@ -36,6 +36,12 @@ authority_sources:
     document_title: "SR 16 from IGP to I-95 PD&E Study"
     source_type: official_state_project_record
     retrieved_on: "2026-08-08"
+  - id: FDOT-FCE-I95-CR2209-2026
+    authority: Florida Department of Transportation District Two
+    source_url: "https://nflroads.com/ProjectDetails?p=5639"
+    document_title: "First Coast Expressway — I-95 to East of CR 2209 (final St. Johns County segment)"
+    source_type: official_state_project_record
+    retrieved_on: "2026-08-08"
   - id: SJC-CR210-COMPLETE-2026
     authority: St. Johns County Public Works
     source_url: "https://www.sjcfl.us/cr-210-roadway-improvements-completed-2026/"
@@ -103,6 +109,26 @@ segments:
       - "Do not include general I-95 incidents or all SR 16 incidents."
       - "Do not state a completion date when the project authority lists TBD."
 
+  - id: sl_fce_final_segment_context
+    name: "First Coast Expressway — I-95 to east of CR 2209 (project subject)"
+    relationship: nearby_commute_corridor
+    road_owner_context: state_construction_project
+    endpoints:
+      from: "I-95"
+      to: "east of CR 2209 (St. Johns Parkway)"
+    status: under_construction
+    source_ids: [FDOT-FCE-I95-CR2209-2026]
+    monitor_sources: [fdot_district_two_nflroads]
+    selection_rule: >
+      Include official project milestones, construction open houses, lane
+      closure restrictions, contract awards, and schedule changes that
+      expressly concern the First Coast Expressway final segment. Present it as
+      a nearby corridor/project, not an in-community road, and never imply a
+      direct SilverLeaf interchange without official evidence.
+    exclusions:
+      - "Do not monitor generic I-95 incidents or all expressway traffic."
+      - "Do not present the expressway as a SilverLeaf-owned or -specific road."
+
   - id: sl_cr210_i95_to_us1_context
     name: "CR 210 — I-95 to U.S. 1 contextual corridor"
     relationship: contextual_only
@@ -150,9 +176,10 @@ unknown_or_unverified:
   - id: sl_fce_alignment_and_access
     status: not_registered
     reason: >
-      The repository tracks First Coast Expressway context, but this mobility
-      registry has no reviewed official segment/alignment that establishes a
-      SilverLeaf-specific incident-monitoring boundary.
+      The repository tracks First Coast Expressway project context via the
+      FDOT final-segment project record, but this mobility registry has no
+      reviewed official alignment/access segment that establishes a
+      SilverLeaf-specific live-incident monitoring boundary.
     rule: "Keep FCE as a separately sourced project subject until a bounded official segment is reviewed."
 
 operational_rules:

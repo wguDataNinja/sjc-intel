@@ -42,6 +42,11 @@ not enough to make every incident on that route a SilverLeaf product item.
 - [The County’s completed CR 210 project record](https://www.sjcfl.us/cr-210-roadway-improvements-completed-2026/)
   supports background context but does not establish every CR 210 notice as
   SilverLeaf-relevant.
+- [FDOT’s First Coast Expressway final segment project record](https://nflroads.com/ProjectDetails?p=5639)
+  documents the I-95 to east of CR 2209 segment: $205M contract (Mastec Civil
+  LLC), early-2026 start, late-2030/early-2031 expected completion, and I-95 /
+  CR 2209 / CR 16A lane-closure restrictions. It is a nearby project subject,
+  not a SilverLeaf-owned road; no direct SilverLeaf interchange claim is made.
 
 ## Notice-selection procedure
 

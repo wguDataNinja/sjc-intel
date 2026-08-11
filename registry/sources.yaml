@@ -926,8 +926,10 @@ sources:
       - public_notices
     communities: []
     notes: >
-      Treat as transportation stack with nflroads.com companion.
-      Promoted from CAND-SRC-0019.
+      Treat as transportation stack with nflroads.com companion. Project-page
+      monitoring anchors (Task 33): First Coast Expressway final segment
+      https://nflroads.com/ProjectDetails?p=5639 and SR 16 IGP-to-I-95 PD&E
+      https://nflroads.com/ProjectDetails?p=5615. Promoted from CAND-SRC-0019.
     discovered_at: "2026-06-03T12:00:00Z"
     discovered_by: "deep-research-extraction"
 
