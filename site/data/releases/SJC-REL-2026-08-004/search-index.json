@@ -1,0 +1,768 @@
+{
+  "environment": "real",
+  "items": [
+    {
+      "entities": [
+        "ENT-HEALTH-BAPTIST-SILVERLEAF"
+      ],
+      "id": "SJC-SL-20260809-0002",
+      "places": [
+        "silverleaf"
+      ],
+      "source": "baptist health",
+      "source_date": "2026-08-09",
+      "summary": "baptist health s silverleaf medical campus 8595 st johns parkway is expanding baptist orthopedics opens august 2026 and the adult pediatric emergency center opens september 2026 adding 24 7 emergency care to the campus s existing primary care cardiology lab and rehab services",
+      "title": "baptist health silverleaf orthopedics opening august 2026 emergency center opening september 2026",
+      "tokens": "baptist health silverleaf orthopedics opening august 2026 emergency center opening september 2026 baptist health s silverleaf medical campus 8595 st johns parkway is expanding baptist orthopedics opens august 2026 and the adult pediatric emergency center opens september 2026 adding 24 7 emergency care to the campus s existing primary care cardiology lab and rehab services an emergency center inside silverleaf shortens critical care access orthopedics adds a common specialty without driving to jacksonville local business silverleaf baptist silverleaf medical campus baptist health",
+      "topics": [
+        "local_business"
+      ],
+      "why_it_matters": "an emergency center inside silverleaf shortens critical care access orthopedics adds a common specialty without driving to jacksonville"
+    },
+    {
+      "entities": [],
+      "id": "SJC-SL-20260809-0003",
+      "places": [
+        "silverleaf"
+      ],
+      "source": "fdot district two and nflroads",
+      "source_date": "2026-08-09",
+      "summary": "fdot s final st johns county segment of the first coast expressway from i 95 to east of cr 2209 st johns parkway is under construction with a 205 million contract awarded to mastec civil llc fdot lists construction start in early 2026 and expected completion in late 2030 early 2031 a hybrid construction open house was held feb 3 2026 at world golf village",
+      "title": "first coast expressway final segment under construction 205m contract completion late 2030 early 2031",
+      "tokens": "first coast expressway final segment under construction 205m contract completion late 2030 early 2031 fdot s final st johns county segment of the first coast expressway from i 95 to east of cr 2209 st johns parkway is under construction with a 205 million contract awarded to mastec civil llc fdot lists construction start in early 2026 and expected completion in late 2030 early 2031 a hybrid construction open house was held feb 3 2026 at world golf village the toll expressway changes silverleaf commute options i 95 cr 2209 cr 16a lane closure restrictions during construction affect the surrounding road network roads traffic silverleaf fdot district two and nflroads",
+      "topics": [
+        "roads_traffic"
+      ],
+      "why_it_matters": "the toll expressway changes silverleaf commute options i 95 cr 2209 cr 16a lane closure restrictions during construction affect the surrounding road network"
+    },
+    {
+      "entities": [
+        "ENT-EDU-SILVERLEAF-K8"
+      ],
+      "id": "SJC-SL-20260807-0001",
+      "places": [
+        "silverleaf"
+      ],
+      "source": "sjc school district new schools",
+      "source_date": "2026-08-07",
+      "summary": "st johns county school district lists magnolia oaks academy as the new k 8 school serving the silverleaf dri parcel 29c which the district confirms remains under construction local reporting news4jax action news jax says the campus is set to open for the 2026 2027 school year with about 1 500 students across 73 classrooms the school was previously tracked under the placeholder names school qq and silverleaf k 8",
+      "title": "magnolia oaks academy set to open for the 2026 2027 school year",
+      "tokens": "magnolia oaks academy set to open for the 2026 2027 school year st johns county school district lists magnolia oaks academy as the new k 8 school serving the silverleaf dri parcel 29c which the district confirms remains under construction local reporting news4jax action news jax says the campus is set to open for the 2026 2027 school year with about 1 500 students across 73 classrooms the school was previously tracked under the placeholder names school qq and silverleaf k 8 the opening may change attendance zones and shorten school commutes for silverleaf households the final opening date and attendance boundary are the top school questions schools community silverleaf silverleaf k 8 school sjc school district new schools",
+      "topics": [
+        "schools_community"
+      ],
+      "why_it_matters": "the opening may change attendance zones and shorten school commutes for silverleaf households the final opening date and attendance boundary are the top school questions"
+    },
+    {
+      "entities": [],
+      "id": "SJC-SL-20260807-0003",
+      "places": [
+        "silverleaf"
+      ],
+      "source": "fdot district two and nflroads",
+      "source_date": "2026-08-07",
+      "summary": "fdot s first coast expressway sr 23 is being built in segments the remaining st johns county work reached the public hearing stage in january 2026 and fdot targets full completion by 2030 when complete the toll expressway gives northwestern st johns county including silverleaf a new north south alternative to i 95 and construction has required temporary st johns parkway detours status as of early august 2026 final phase work underway",
+      "title": "first coast expressway st johns county final phase and i 95 access",
+      "tokens": "first coast expressway st johns county final phase and i 95 access fdot s first coast expressway sr 23 is being built in segments the remaining st johns county work reached the public hearing stage in january 2026 and fdot targets full completion by 2030 when complete the toll expressway gives northwestern st johns county including silverleaf a new north south alternative to i 95 and construction has required temporary st johns parkway detours status as of early august 2026 final phase work underway silverleaf s commute options and access to i 95 will change as the expressway completes residents should expect detours on st johns parkway during final phase construction roads traffic silverleaf fdot district two and nflroads",
+      "topics": [
+        "roads_traffic"
+      ],
+      "why_it_matters": "silverleaf s commute options and access to i 95 will change as the expressway completes residents should expect detours on st johns parkway during final phase construction"
+    },
+    {
+      "entities": [],
+      "id": "SJC-SL-20260807-0004",
+      "places": [
+        "cr_210_corridor"
+      ],
+      "source": "st johns county",
+      "source_date": "2026-08-07",
+      "summary": "the county s multi year cr 210 widening project reached a major completion milestone ahead of the 2026 2027 school year with local reporting news4jax indicating the new roadway opened before the first day of school the project had shifted traffic onto newly built lanes in august 2025 as part of the widening through northern st johns county",
+      "title": "cr 210 widening completed in time for the 2026 2027 school year",
+      "tokens": "cr 210 widening completed in time for the 2026 2027 school year the county s multi year cr 210 widening project reached a major completion milestone ahead of the 2026 2027 school year with local reporting news4jax indicating the new roadway opened before the first day of school the project had shifted traffic onto newly built lanes in august 2025 as part of the widening through northern st johns county cr 210 is one of the county s busiest east west corridors the completed widening relieves congestion for silverleaf commuters roads traffic cr 210 corridor st johns county",
+      "topics": [
+        "roads_traffic"
+      ],
+      "why_it_matters": "cr 210 is one of the county s busiest east west corridors the completed widening relieves congestion for silverleaf commuters"
+    },
+    {
+      "entities": [
+        "ENT-RETAIL-SILVERLEAF-MARKET",
+        "ENT-RETAIL-PUBLIX-SILVERLEAF"
+      ],
+      "id": "SJC-SL-20260807-0005",
+      "places": [
+        "silverleaf"
+      ],
+      "source": "jacksonville daily record",
+      "source_date": "2026-08-06",
+      "summary": "the publix anchored shopping center known as silverleaf market is adding outparcel buildings with reporting that planning for additional structures advanced in august 2026 nearby retail activity at the center includes plans for a fifth third bank reported october 2025 and advancing april 2026 and new food tenants m shack and natural greens reported july 2026 tenant by tenant timing is not yet confirmed",
+      "title": "silverleaf market publix anchored center adds outparcels and tenants",
+      "tokens": "silverleaf market publix anchored center adds outparcels and tenants the publix anchored shopping center known as silverleaf market is adding outparcel buildings with reporting that planning for additional structures advanced in august 2026 nearby retail activity at the center includes plans for a fifth third bank reported october 2025 and advancing april 2026 and new food tenants m shack and natural greens reported july 2026 tenant by tenant timing is not yet confirmed new bank and restaurant tenants plus outparcel construction are visible neighborhood change the center s growth is directly useful household knowledge local business silverleaf silverleaf market silverleaf mega publix jacksonville daily record",
+      "topics": [
+        "local_business"
+      ],
+      "why_it_matters": "new bank and restaurant tenants plus outparcel construction are visible neighborhood change the center s growth is directly useful household knowledge"
+    },
+    {
+      "entities": [],
+      "id": "SJC-SL-20260809-0006",
+      "places": [
+        "sr_16_corridor"
+      ],
+      "source": "st johns county",
+      "source_date": "2026-08-06",
+      "summary": "st johns county public works is finishing fdot recommended restricted crossing u turn rcut intersection improvements on sr 16 at stratton boulevard and industry center road signalized u turns replace unsignalized left turns with additional turn lanes new signals and two new pedestrian crosswalks the new traffic pattern is expected to start mid to late september",
+      "title": "sr 16 rcut intersection improvements new traffic patterns at stratton boulevard and industry center road expected mid to late september",
+      "tokens": "sr 16 rcut intersection improvements new traffic patterns at stratton boulevard and industry center road expected mid to late september st johns county public works is finishing fdot recommended restricted crossing u turn rcut intersection improvements on sr 16 at stratton boulevard and industry center road signalized u turns replace unsignalized left turns with additional turn lanes new signals and two new pedestrian crosswalks the new traffic pattern is expected to start mid to late september a changed traffic pattern on a commute corridor is a practical what to expect for drivers using sr 16 near the world golf village outlet area roads traffic sr 16 corridor st johns county",
+      "topics": [
+        "roads_traffic"
+      ],
+      "why_it_matters": "a changed traffic pattern on a commute corridor is a practical what to expect for drivers using sr 16 near the world golf village outlet area"
+    },
+    {
+      "entities": [
+        "ENT-ROAD-CR-2209-CONNECTOR"
+      ],
+      "id": "SJC-SL-20260809-0005",
+      "places": [
+        "silverleaf"
+      ],
+      "source": "st johns county",
+      "source_date": "2026-08-05",
+      "summary": "st johns county completed courtney vista drive improvements in about nine months ahead of the projected 12 month timeline creating a more direct route between county road 2209 and silverleaf parkway and supporting safe access to the newly opened magnolia oaks academy the county encourages traffic awareness as the school year begins",
+      "title": "courtney vista drive improvements complete new direct link between cr 2209 and silverleaf parkway",
+      "tokens": "courtney vista drive improvements complete new direct link between cr 2209 and silverleaf parkway st johns county completed courtney vista drive improvements in about nine months ahead of the projected 12 month timeline creating a more direct route between county road 2209 and silverleaf parkway and supporting safe access to the newly opened magnolia oaks academy the county encourages traffic awareness as the school year begins a more direct cr 2209 to silverleaf parkway route is a visible local improvement tied to the school opening and the school run season roads traffic silverleaf cr 2209 connector igp to silverleaf parkway st johns county",
+      "topics": [
+        "roads_traffic"
+      ],
+      "why_it_matters": "a more direct cr 2209 to silverleaf parkway route is a visible local improvement tied to the school opening and the school run season"
+    },
+    {
+      "entities": [],
+      "id": "SJC-CN-20260802-0003",
+      "places": [
+        "rural_sjc"
+      ],
+      "source": "st johns county",
+      "source_date": "2026-07-31",
+      "summary": "s e a community help resource center opens to serve rural st johns county new resource center providing community help services to rural residents",
+      "title": "s e a community help resource center opens to serve rural st johns county",
+      "tokens": "s e a community help resource center opens to serve rural st johns county s e a community help resource center opens to serve rural st johns county new resource center providing community help services to rural residents a community help resource center opened to serve rural st johns county residents utilities water rural sjc st johns county",
+      "topics": [
+        "utilities_water"
+      ],
+      "why_it_matters": "a community help resource center opened to serve rural st johns county residents"
+    },
+    {
+      "entities": [],
+      "id": "SJC-CN-20260802-0004",
+      "places": [],
+      "source": "st johns county",
+      "source_date": "2026-07-29",
+      "summary": "clerk s office expands public access with a new service center the new center increases public access to clerk of court services",
+      "title": "clerk s office expands public access with new service center",
+      "tokens": "clerk s office expands public access with new service center clerk s office expands public access with a new service center the new center increases public access to clerk of court services the clerk s office expanded public access with a new service center utilities water st johns county",
+      "topics": [
+        "utilities_water"
+      ],
+      "why_it_matters": "the clerk s office expanded public access with a new service center"
+    },
+    {
+      "entities": [
+        "ENT-EDU-SILVERLEAF-K8"
+      ],
+      "id": "SJC-SL-20260809-0001",
+      "places": [
+        "silverleaf"
+      ],
+      "source": "sjc school district new schools",
+      "source_date": "2026-07-22",
+      "summary": "sjcsd confirms magnolia oaks academy will welcome 1 300 students on its first day aug 10 2026 serving kindergarten through seventh grade in its first year the district opened the doors announcement july 22 2026 confirms the school is the first in the silverleaf community the 2026 27 attendance plan for k 8 school qq magnolia oaks was approved by the school board nov 18 2025 and the district s attendance zone locator is live",
+      "title": "magnolia oaks academy opens aug 10 with 1 300 students k 8 school in silverleaf",
+      "tokens": "magnolia oaks academy opens aug 10 with 1 300 students k 8 school in silverleaf sjcsd confirms magnolia oaks academy will welcome 1 300 students on its first day aug 10 2026 serving kindergarten through seventh grade in its first year the district opened the doors announcement july 22 2026 confirms the school is the first in the silverleaf community the 2026 27 attendance plan for k 8 school qq magnolia oaks was approved by the school board nov 18 2025 and the district s attendance zone locator is live aug 10 first day k 7 grade span and the live attendance zone locator answer the top school questions for silverleaf households for 2026 27 schools community silverleaf silverleaf k 8 school sjc school district new schools",
+      "topics": [
+        "schools_community"
+      ],
+      "why_it_matters": "aug 10 first day k 7 grade span and the live attendance zone locator answer the top school questions for silverleaf households for 2026 27"
+    },
+    {
+      "entities": [],
+      "id": "SJC-CN-20260802-0001",
+      "places": [],
+      "source": "st johns county",
+      "source_date": "2026-07-20",
+      "summary": "county road 16a is scheduled to close between timberwolf trail and river reach parkway from 8 p m friday august 7 through 5 a m monday august 10 for first coast expressway pipe installation drivers will be detoured via state roads 16 and 13",
+      "title": "county road 16a weekend closure scheduled august 7 10",
+      "tokens": "county road 16a weekend closure scheduled august 7 10 county road 16a is scheduled to close between timberwolf trail and river reach parkway from 8 p m friday august 7 through 5 a m monday august 10 for first coast expressway pipe installation drivers will be detoured via state roads 16 and 13 the closure may affect travel between silverleaf and destinations east of the community during the weekend roads traffic st johns county",
+      "topics": [
+        "roads_traffic"
+      ],
+      "why_it_matters": "the closure may affect travel between silverleaf and destinations east of the community during the weekend"
+    },
+    {
+      "entities": [],
+      "id": "SJC-UD-20260704-0001",
+      "places": [],
+      "source": "st johns county utility department",
+      "source_date": "2026-07-04",
+      "summary": "completed capital project 1 6m improvement at plantation water treatment plant",
+      "title": "st johns county completes 1 6 million capital improvement project at plantation water treatment plant",
+      "tokens": "st johns county completes 1 6 million capital improvement project at plantation water treatment plant completed capital project 1 6m improvement at plantation water treatment plant st johns county completes 1 6 million capital improvement project at plantation water treatment plant utilities water st johns county utility department",
+      "topics": [
+        "utilities_water"
+      ],
+      "why_it_matters": "st johns county completes 1 6 million capital improvement project at plantation water treatment plant"
+    },
+    {
+      "entities": [],
+      "id": "SJC-UD-20260704-0002",
+      "places": [],
+      "source": "st johns county utility department",
+      "source_date": "2026-07-04",
+      "summary": "utility department received high moody s rating for strong financial management",
+      "title": "st johns county utility department earns high moody s rating reflecting strong financial management",
+      "tokens": "st johns county utility department earns high moody s rating reflecting strong financial management utility department received high moody s rating for strong financial management st johns county utility department earns high moody s rating reflecting strong financial management utilities water st johns county utility department",
+      "topics": [
+        "utilities_water"
+      ],
+      "why_it_matters": "st johns county utility department earns high moody s rating reflecting strong financial management"
+    },
+    {
+      "entities": [],
+      "id": "SJC-CN-20260626-0001",
+      "places": [],
+      "source": "st johns county",
+      "source_date": "2026-06-23",
+      "summary": "st johns county s 191 8 million sr 207 water reclamation facility is now operational protecting water resources and expanding reclaimed water capacity",
+      "title": "sjc s largest ever capital improvement project now serving residents",
+      "tokens": "sjc s largest ever capital improvement project now serving residents st johns county s 191 8 million sr 207 water reclamation facility is now operational protecting water resources and expanding reclaimed water capacity expanded reclaimed water capacity supports growth and drought resilience largest single infrastructure investment in county history utilities water st johns county",
+      "topics": [
+        "utilities_water"
+      ],
+      "why_it_matters": "expanded reclaimed water capacity supports growth and drought resilience largest single infrastructure investment in county history"
+    },
+    {
+      "entities": [
+        "ENT-HEALTH-BAPTIST-SILVERLEAF"
+      ],
+      "id": "SJC-SL-20260807-0002",
+      "places": [
+        "silverleaf"
+      ],
+      "source": "baptist health",
+      "source_date": "2026-06-23",
+      "summary": "baptist health opened its first phase outpatient medical campus in silverleaf on june 23 2026 adding hospital grade outpatient care imaging labs physician offices and an emergency center component to the community the campus was permitted for 16 8 million in january 2025 and received approval for a helipad addition in april 2026 baptist health is the facility operator and a first party source for its own campus",
+      "title": "baptist silverleaf outpatient medical campus now open",
+      "tokens": "baptist silverleaf outpatient medical campus now open baptist health opened its first phase outpatient medical campus in silverleaf on june 23 2026 adding hospital grade outpatient care imaging labs physician offices and an emergency center component to the community the campus was permitted for 16 8 million in january 2025 and received approval for a helipad addition in april 2026 baptist health is the facility operator and a first party source for its own campus closer access to baptist outpatient services and emergency adjacent care is a significant household convenience a helipad approval signals the campus can support air transport when needed local business silverleaf baptist silverleaf medical campus baptist health",
+      "topics": [
+        "local_business"
+      ],
+      "why_it_matters": "closer access to baptist outpatient services and emergency adjacent care is a significant household convenience a helipad approval signals the campus can support air transport when needed"
+    },
+    {
+      "entities": [],
+      "id": "SJC-UTIL-20260603-0004",
+      "places": [],
+      "source": "st johns county utility department",
+      "source_date": "2026-06-03",
+      "summary": "st johns county celebrated completion of the new 4 6 million utilities lab with a ribbon cutting ceremony the lab features corrosion resistant cabinets walk in cooler for sample storage lab sinks with de ionized water and backup generator",
+      "title": "4 6 million utilities lab ribbon cutting and open house",
+      "tokens": "4 6 million utilities lab ribbon cutting and open house st johns county celebrated completion of the new 4 6 million utilities lab with a ribbon cutting ceremony the lab features corrosion resistant cabinets walk in cooler for sample storage lab sinks with de ionized water and backup generator improved water testing lab supports water quality monitoring and compliance indirect benefit to all county water customers utilities water st johns county utility department",
+      "topics": [
+        "utilities_water"
+      ],
+      "why_it_matters": "improved water testing lab supports water quality monitoring and compliance indirect benefit to all county water customers"
+    },
+    {
+      "entities": [],
+      "id": "SJC-UTIL-20260603-0005",
+      "places": [],
+      "source": "st johns county utility department",
+      "source_date": "2026-06-03",
+      "summary": "the county utility is inventorying water service line materials under the epa community lead safe hub program customers may be contacted to allow an inspection of the pipe from the street to the home",
+      "title": "utility department water service line material inventory",
+      "tokens": "utility department water service line material inventory the county utility is inventorying water service line materials under the epa community lead safe hub program customers may be contacted to allow an inspection of the pipe from the street to the home the inventory is intended to identify service line materials and determine whether any further action is needed some county utility customers may be contacted to allow an inspection between the street and the home utilities water st johns county utility department",
+      "topics": [
+        "utilities_water"
+      ],
+      "why_it_matters": "the inventory is intended to identify service line materials and determine whether any further action is needed some county utility customers may be contacted to allow an inspection between the street and the home"
+    },
+    {
+      "entities": [],
+      "id": "SJC-EM-20260626-0001",
+      "places": [
+        "countywide"
+      ],
+      "source": "st johns county emergency management",
+      "source_date": "2026-06-01",
+      "summary": "st johns county emergency management urges residents to prepare for the 2026 atlantic hurricane season which began june 1 highlights simple steps to protect lives and property",
+      "title": "residents urged to prepare as 2026 atlantic hurricane season begins",
+      "tokens": "residents urged to prepare as 2026 atlantic hurricane season begins st johns county emergency management urges residents to prepare for the 2026 atlantic hurricane season which began june 1 highlights simple steps to protect lives and property hurricane season began june 1 residents should review household plans confirm their evacuation zone and sign up for alert st johns emergency preparedness countywide st johns county emergency management",
+      "topics": [
+        "emergency_preparedness"
+      ],
+      "why_it_matters": "hurricane season began june 1 residents should review household plans confirm their evacuation zone and sign up for alert st johns"
+    },
+    {
+      "entities": [
+        "ENT-HEALTH-ASCENSION-NOCATEE",
+        "ENT-MIXED-NOCATEE-CROSSWATER"
+      ],
+      "id": "SJC-SL-20260704-0006",
+      "places": [
+        "nocatee"
+      ],
+      "source": "st johns citizen",
+      "source_date": "2026-06-01",
+      "summary": "an ascension st vincent s primary care center is planned for a six storefront commercial strip along crosswater parkway in nocatee directly across from splash water park the center will occupy three of the six units providing adult and pediatric care including physicals screenings and treatment for minor illnesses and injuries",
+      "title": "exclusive here s what coming to new nocatee retail center across from water park",
+      "tokens": "exclusive here s what coming to new nocatee retail center across from water park an ascension st vincent s primary care center is planned for a six storefront commercial strip along crosswater parkway in nocatee directly across from splash water park the center will occupy three of the six units providing adult and pediatric care including physicals screenings and treatment for minor illnesses and injuries brings accessible healthcare directly into nocatee s commercial core making routine checkups and minor medical care more convenient for residents local business nocatee ascension st vincent s nocatee nocatee crosswater retail center st johns citizen",
+      "topics": [
+        "local_business"
+      ],
+      "why_it_matters": "brings accessible healthcare directly into nocatee s commercial core making routine checkups and minor medical care more convenient for residents"
+    },
+    {
+      "entities": [],
+      "id": "SJC-BF-202605-0008",
+      "places": [
+        "countywide"
+      ],
+      "source": "st johns county school district",
+      "source_date": "2026-05-26",
+      "summary": "st johns county school district announced st johns compass a new program launching august 2026 to expand access to high quality public education for eligible students",
+      "title": "sjcsd launches st johns compass program for august 2026",
+      "tokens": "sjcsd launches st johns compass program for august 2026 st johns county school district announced st johns compass a new program launching august 2026 to expand access to high quality public education for eligible students new educational options may affect school choice decisions for families program details to be clarified before august launch schools community countywide st johns county school district",
+      "topics": [
+        "schools_community"
+      ],
+      "why_it_matters": "new educational options may affect school choice decisions for families program details to be clarified before august launch"
+    },
+    {
+      "entities": [],
+      "id": "SJC-BF-202605-0015",
+      "places": [
+        "countywide"
+      ],
+      "source": "st johns county school district",
+      "source_date": "2026-05-26",
+      "summary": "st johns county school district held the star awards 2026 recognizing outstanding students teachers and staff across the district",
+      "title": "sjcsd star awards 2026",
+      "tokens": "sjcsd star awards 2026 st johns county school district held the star awards 2026 recognizing outstanding students teachers and staff across the district recognition of educational excellence reinforces quality of local schools and community pride schools community countywide st johns county school district",
+      "topics": [
+        "schools_community"
+      ],
+      "why_it_matters": "recognition of educational excellence reinforces quality of local schools and community pride"
+    },
+    {
+      "entities": [],
+      "id": "SJC-BF-202605-0021",
+      "places": [
+        "countywide"
+      ],
+      "source": "st johns county emergency management",
+      "source_date": "2026-05-26",
+      "summary": "st johns county emergency management began hurricane season preparedness messaging in may 2026 ahead of the june 1 start of hurricane season promoting awareness alerts and readiness",
+      "title": "sjc emergency management hurricane season preparedness messaging",
+      "tokens": "sjc emergency management hurricane season preparedness messaging st johns county emergency management began hurricane season preparedness messaging in may 2026 ahead of the june 1 start of hurricane season promoting awareness alerts and readiness annual hurricane preparedness push residents should review plans sign up for alert st johns and know their evacuation zone before a storm threatens emergency preparedness countywide st johns county emergency management",
+      "topics": [
+        "emergency_preparedness"
+      ],
+      "why_it_matters": "annual hurricane preparedness push residents should review plans sign up for alert st johns and know their evacuation zone before a storm threatens"
+    },
+    {
+      "entities": [],
+      "id": "SJC-BF-202605-0013",
+      "places": [
+        "countywide"
+      ],
+      "source": "st johns county school district",
+      "source_date": "2026-05-21",
+      "summary": "st johns county schools maintained an a grade as reported by the ponte vedra recorder and referenced by the school district on may 21",
+      "title": "sjcsd maintains a grade district wide achievement",
+      "tokens": "sjcsd maintains a grade district wide achievement st johns county schools maintained an a grade as reported by the ponte vedra recorder and referenced by the school district on may 21 top school grades support property values and attract families to the area confirms continued high quality education for sjc students schools community countywide st johns county school district",
+      "topics": [
+        "schools_community"
+      ],
+      "why_it_matters": "top school grades support property values and attract families to the area confirms continued high quality education for sjc students"
+    },
+    {
+      "entities": [],
+      "id": "SJC-BF-202605-0011",
+      "places": [
+        "countywide"
+      ],
+      "source": "st johns county school district",
+      "source_date": "2026-05-18",
+      "summary": "st johns county voters approved continuing the half cent sales surtax for school capital outlay and adding one mill of operating millage to preserve educational programs during the november 2024 election impact continues into 2026",
+      "title": "community support for sjcsd half cent sales surtax and one mill confirmed",
+      "tokens": "community support for sjcsd half cent sales surtax and one mill confirmed st johns county voters approved continuing the half cent sales surtax for school capital outlay and adding one mill of operating millage to preserve educational programs during the november 2024 election impact continues into 2026 half cent sales surtax and one mill property tax continue funding school operations and construction affects both taxpayers and the quality of local schools schools community countywide st johns county school district",
+      "topics": [
+        "schools_community"
+      ],
+      "why_it_matters": "half cent sales surtax and one mill property tax continue funding school operations and construction affects both taxpayers and the quality of local schools"
+    },
+    {
+      "entities": [],
+      "id": "SJC-BF-202605-0014",
+      "places": [
+        "countywide"
+      ],
+      "source": "school board boarddocs",
+      "source_date": "2026-05-12",
+      "summary": "st johns county school board held a regular meeting on may 12 2026 video archive available agenda items included budget operations and policy matters",
+      "title": "sjcsd school board meeting may 12 2026",
+      "tokens": "sjcsd school board meeting may 12 2026 st johns county school board held a regular meeting on may 12 2026 video archive available agenda items included budget operations and policy matters school board meetings set policy approve budgets and make decisions affecting all sjc schools and families schools community countywide school board boarddocs",
+      "topics": [
+        "schools_community"
+      ],
+      "why_it_matters": "school board meetings set policy approve budgets and make decisions affecting all sjc schools and families"
+    },
+    {
+      "entities": [],
+      "id": "SJC-BF-202605-0005",
+      "places": [
+        "countywide"
+      ],
+      "source": "sjrwmd permitting and watering restrictions",
+      "source_date": "2026-05-11",
+      "summary": "sjrwmd phase iii extreme water shortage effective may 11 residential watering limited to one day per week between 8 a m and 6 p m reclaimed water exempt extreme drought d3 conditions cited",
+      "title": "sjrwmd phase iii extreme water shortage one day per week irrigation",
+      "tokens": "sjrwmd phase iii extreme water shortage one day per week irrigation sjrwmd phase iii extreme water shortage effective may 11 residential watering limited to one day per week between 8 a m and 6 p m reclaimed water exempt extreme drought d3 conditions cited mandatory irrigation limits affect all properties with landscaping reclaimed water users exempt penalties for non compliance utilities water countywide sjrwmd permitting and watering restrictions",
+      "topics": [
+        "utilities_water"
+      ],
+      "why_it_matters": "mandatory irrigation limits affect all properties with landscaping reclaimed water users exempt penalties for non compliance"
+    },
+    {
+      "entities": [],
+      "id": "SJC-UTIL-20260603-0001",
+      "places": [],
+      "source": "st johns county utility department",
+      "source_date": "2026-05-11",
+      "summary": "the phase iii extreme water shortage remains in effect outdoor irrigation is limited to one day per week and is prohibited 8 a m 6 p m reclaimed water irrigation is not included in the schedule",
+      "title": "phase iii extreme water shortage declaration active",
+      "tokens": "phase iii extreme water shortage declaration active the phase iii extreme water shortage remains in effect outdoor irrigation is limited to one day per week and is prohibited 8 a m 6 p m reclaimed water irrigation is not included in the schedule silverleaf households using potable water for irrigation must follow the one day per week schedule and avoid watering between 8 a m and 6 p m properties using reclaimed water are exempt from the one day schedule utilities water st johns county utility department",
+      "topics": [
+        "utilities_water"
+      ],
+      "why_it_matters": "silverleaf households using potable water for irrigation must follow the one day per week schedule and avoid watering between 8 a m and 6 p m properties using reclaimed water are exempt from the one day schedule"
+    },
+    {
+      "entities": [
+        "ENT-REC-BEACH-VALLEY-MINI-GOLF"
+      ],
+      "id": "SJC-SL-20260704-0003",
+      "places": [
+        "silverleaf"
+      ],
+      "source": "st johns citizen",
+      "source_date": "2026-04-08",
+      "summary": "beach valley mini golf a 36 hole mini golf course with a clubhouse pavilions and parking has been proposed on 2 acres in silverleaf the husband and wife developer team michael and bridgette goolsby would lease the land from the hutson companies pending county development review committee approval",
+      "title": "fore major new 2 acre recreational attraction proposed for silverleaf by husband and wife team",
+      "tokens": "fore major new 2 acre recreational attraction proposed for silverleaf by husband and wife team beach valley mini golf a 36 hole mini golf course with a clubhouse pavilions and parking has been proposed on 2 acres in silverleaf the husband and wife developer team michael and bridgette goolsby would lease the land from the hutson companies pending county development review committee approval adds an on site recreational option for families and contributes to silverleaf s desirability as a self contained master planned community with amenities local business silverleaf beach valley mini golf st johns citizen",
+      "topics": [
+        "local_business"
+      ],
+      "why_it_matters": "adds an on site recreational option for families and contributes to silverleaf s desirability as a self contained master planned community with amenities"
+    },
+    {
+      "entities": [
+        "ENT-RETAIL-PUBLIX-SILVERLEAF"
+      ],
+      "id": "SJC-SL-20260704-0001",
+      "places": [
+        "silverleaf"
+      ],
+      "source": "st johns citizen",
+      "source_date": "2026-03-26",
+      "summary": "a massive new publix one of the chain s largest at 55 701 sq ft has opened at 1975 silverleaf parkway giving silverleaf residents a full service grocery with specialty departments including a pours caf serving beer and wine a scratch bakery custom cut meats fresh seafood a full service pharmacy and prepared food stations",
+      "title": "here s your first look at silverleaf s new 55 000 sq ft mega publix",
+      "tokens": "here s your first look at silverleaf s new 55 000 sq ft mega publix a massive new publix one of the chain s largest at 55 701 sq ft has opened at 1975 silverleaf parkway giving silverleaf residents a full service grocery with specialty departments including a pours caf serving beer and wine a scratch bakery custom cut meats fresh seafood a full service pharmacy and prepared food stations adds daily grocery shopping convenience within walking driving distance of silverleaf homes with specialty food and beverage options that function as a local gathering spot local business silverleaf silverleaf mega publix st johns citizen",
+      "topics": [
+        "local_business"
+      ],
+      "why_it_matters": "adds daily grocery shopping convenience within walking driving distance of silverleaf homes with specialty food and beverage options that function as a local gathering spot"
+    },
+    {
+      "entities": [],
+      "id": "SJC-UD-20260626-0001",
+      "places": [],
+      "source": "st johns county utility department",
+      "source_date": "2026-03-12",
+      "summary": "the st johns county utilities department published its 2025 annual report highlighting fiscal responsibility reliable service delivery environmental stewardship and long term infrastructure planning key 2025 projects include hastings water treatment plant improvements northwest water reclamation facility expansion wellfield expansion projects and wastewater process upgrades on state road 16 the report notes residential utility bills remain approximately 10 percent below the regional average",
+      "title": "sjc utilities 2025 annual report published",
+      "tokens": "sjc utilities 2025 annual report published the st johns county utilities department published its 2025 annual report highlighting fiscal responsibility reliable service delivery environmental stewardship and long term infrastructure planning key 2025 projects include hastings water treatment plant improvements northwest water reclamation facility expansion wellfield expansion projects and wastewater process upgrades on state road 16 the report notes residential utility bills remain approximately 10 percent below the regional average annual report confirms residential rates remain approximately 10 percent below regional average major infrastructure projects sr 207 wrf hastings wtp improvements may affect future rates and service reliability reclaimed water expansion benefits residents with irrigation needs utilities water st johns county utility department",
+      "topics": [
+        "utilities_water"
+      ],
+      "why_it_matters": "annual report confirms residential rates remain approximately 10 percent below regional average major infrastructure projects sr 207 wrf hastings wtp improvements may affect future rates and service reliability reclaimed water expansion benefits residents with irrigation needs"
+    },
+    {
+      "entities": [],
+      "id": "SJC-UTIL-20260603-0003",
+      "places": [],
+      "source": "st johns county utility department",
+      "source_date": "2025-12-19",
+      "summary": "st johns county bocc approved phase 2 of the state road 207 water reclamation facility project awarding a 191 8m design build agreement with jacobs project management co for the new facility and associated improvements",
+      "title": "191 million sr 207 water reclamation facility phase 2 approved",
+      "tokens": "191 million sr 207 water reclamation facility phase 2 approved st johns county bocc approved phase 2 of the state road 207 water reclamation facility project awarding a 191 8m design build agreement with jacobs project management co for the new facility and associated improvements large scale water reclamation infrastructure supports continued growth in the sr 207 corridor and southern st johns county construction timeline and rate impacts are not yet specified utilities water st johns county utility department",
+      "topics": [
+        "utilities_water"
+      ],
+      "why_it_matters": "large scale water reclamation infrastructure supports continued growth in the sr 207 corridor and southern st johns county construction timeline and rate impacts are not yet specified"
+    },
+    {
+      "entities": [
+        "ENT-RETAIL-HARRIS-TEETER-SILVERLEAF",
+        "ENT-RETAIL-CR16A-SL-PKWY-GROCERY"
+      ],
+      "id": "SJC-SL-20260704-0005",
+      "places": [
+        "silverleaf"
+      ],
+      "source": "st johns citizen",
+      "source_date": "2025-12-02",
+      "summary": "two 61 000 sq ft supermarkets from a kroger owned chain identified as harris teeter are proposed for st johns county one at veterans parkway and cr 210 west and another in a silverleaf shopping center the applications represent the first major non publix grocery competition in the area",
+      "title": "st johns county is getting two new supermarkets and they re not publix",
+      "tokens": "st johns county is getting two new supermarkets and they re not publix two 61 000 sq ft supermarkets from a kroger owned chain identified as harris teeter are proposed for st johns county one at veterans parkway and cr 210 west and another in a silverleaf shopping center the applications represent the first major non publix grocery competition in the area grocery competition typically means better prices and selection for residents plus the convenience of a second supermarket location within silverleaf itself local business silverleaf harris teeter silverleaf cr 16a and silverleaf parkway grocery center st johns citizen",
+      "topics": [
+        "local_business"
+      ],
+      "why_it_matters": "grocery competition typically means better prices and selection for residents plus the convenience of a second supermarket location within silverleaf itself"
+    },
+    {
+      "entities": [
+        "ENT-ROAD-CR-2209-CONNECTOR"
+      ],
+      "id": "SJC-SL-20260704-0004",
+      "places": [
+        "silverleaf"
+      ],
+      "source": "st johns citizen",
+      "source_date": "2025-10-28",
+      "summary": "county road 2209 opened october 28 2025 connecting international golf parkway to silverleaf parkway with a four lane divided roadway spanning three miles the new route aims to relieve congestion in the rapidly growing area particularly around tocoi creek high school which serves over 2 700 students",
+      "title": "road relief here s your first look at st johns county s newest highway",
+      "tokens": "road relief here s your first look at st johns county s newest highway county road 2209 opened october 28 2025 connecting international golf parkway to silverleaf parkway with a four lane divided roadway spanning three miles the new route aims to relieve congestion in the rapidly growing area particularly around tocoi creek high school which serves over 2 700 students directly improves daily commute times for silverleaf residents heading to i 95 world golf village and western st johns county employment centers roads traffic silverleaf cr 2209 connector igp to silverleaf parkway st johns citizen",
+      "topics": [
+        "roads_traffic"
+      ],
+      "why_it_matters": "directly improves daily commute times for silverleaf residents heading to i 95 world golf village and western st johns county employment centers"
+    },
+    {
+      "entities": [],
+      "id": "SJC-BF-202509-0014",
+      "places": [],
+      "source": "st johns county",
+      "source_date": "2025-09-29",
+      "summary": "st johns county continued its raised pavement markers replacement program installing new reflective markers on county roads to improve nighttime visibility and driving safety",
+      "title": "raised pavement markers replacement program",
+      "tokens": "raised pavement markers replacement program st johns county continued its raised pavement markers replacement program installing new reflective markers on county roads to improve nighttime visibility and driving safety well maintained pavement markers are critical for safe nighttime driving especially on rural and unlit county roads roads traffic st johns county",
+      "topics": [
+        "roads_traffic"
+      ],
+      "why_it_matters": "well maintained pavement markers are critical for safe nighttime driving especially on rural and unlit county roads"
+    },
+    {
+      "entities": [],
+      "id": "SJC-BF-202509-0008",
+      "places": [
+        "silverleaf",
+        "nocatee"
+      ],
+      "source": "web discovery backfill",
+      "source_date": "2025-09-25",
+      "summary": "st johns county school district initiated community engagement for the naming and mascot selection of two new k 8 schools school qq in silverleaf and school rr in nocatee virtual meetings were held to gather input from residents on school names and mascots for the schools projected to open for the 2026 2027 school year",
+      "title": "sjcsd begins community engagement for naming and mascot selection of schools qq and rr",
+      "tokens": "sjcsd begins community engagement for naming and mascot selection of schools qq and rr st johns county school district initiated community engagement for the naming and mascot selection of two new k 8 schools school qq in silverleaf and school rr in nocatee virtual meetings were held to gather input from residents on school names and mascots for the schools projected to open for the 2026 2027 school year school names and mascots establish community identity and school culture for decades to come community input ensures the schools reflect local heritage and values schools community silverleaf nocatee web discovery backfill",
+      "topics": [
+        "schools_community"
+      ],
+      "why_it_matters": "school names and mascots establish community identity and school culture for decades to come community input ensures the schools reflect local heritage and values"
+    },
+    {
+      "entities": [],
+      "id": "SJC-BF-202509-0006",
+      "places": [
+        "silverleaf",
+        "nocatee"
+      ],
+      "source": "sjc school district new schools",
+      "source_date": "2025-09-15",
+      "summary": "st johns county school district provided an update on two new k 8 schools under construction school qq in the silverleaf dri parcel 29c and school rr in nocatee s seabrook area formerly snowden village both schools have a capacity of approximately 1 500 students each and are projected to open for the 2026 2027 school year",
+      "title": "sjcsd provides construction update on k 8 schools qq and rr in silverleaf and nocatee",
+      "tokens": "sjcsd provides construction update on k 8 schools qq and rr in silverleaf and nocatee st johns county school district provided an update on two new k 8 schools under construction school qq in the silverleaf dri parcel 29c and school rr in nocatee s seabrook area formerly snowden village both schools have a capacity of approximately 1 500 students each and are projected to open for the 2026 2027 school year these schools will relieve enrollment pressure on existing schools in the northwest and northeast growth corridors when they open for the 2026 2027 school year schools community silverleaf nocatee sjc school district new schools",
+      "topics": [
+        "schools_community"
+      ],
+      "why_it_matters": "these schools will relieve enrollment pressure on existing schools in the northwest and northeast growth corridors when they open for the 2026 2027 school year"
+    },
+    {
+      "entities": [],
+      "id": "SJC-BF-202509-0005",
+      "places": [
+        "hallowes_cove",
+        "silverleaf"
+      ],
+      "source": "sjc school district main site",
+      "source_date": "2025-09-01",
+      "summary": "hallowes cove academy st johns county school district s newest k 8 school welcomed its first cohort of students for the 2025 2026 school year in september led by principal jessley hathaway with the hurricanes mascot the school serves grades k 8 with extended day programs in the silverleaf area",
+      "title": "hallowes cove academy welcomes first students for inaugural school year",
+      "tokens": "hallowes cove academy welcomes first students for inaugural school year hallowes cove academy st johns county school district s newest k 8 school welcomed its first cohort of students for the 2025 2026 school year in september led by principal jessley hathaway with the hurricanes mascot the school serves grades k 8 with extended day programs in the silverleaf area the school s opening reduces overcrowding at nearby schools and provides a modern educational facility for families in one of florida s fastest growing counties schools community hallowes cove silverleaf sjc school district main site",
+      "topics": [
+        "schools_community"
+      ],
+      "why_it_matters": "the school s opening reduces overcrowding at nearby schools and provides a modern educational facility for families in one of florida s fastest growing counties"
+    },
+    {
+      "entities": [],
+      "id": "SJC-BF-202508-0021",
+      "places": [],
+      "source": "st johns county",
+      "source_date": "2025-08-29",
+      "summary": "st johns county officials held a groundbreaking ceremony at the intersection of sr 16 and international golf parkway on aug 25 2025 to celebrate the start of improvements to the intersection the 25 million project led by sjc public works will expand sr 16 from two lanes to four lanes including drainage upgrades sidewalks and a traffic signal",
+      "title": "county celebrates start of sr 16 and international golf parkway improvements project with groundbreaking ceremony",
+      "tokens": "county celebrates start of sr 16 and international golf parkway improvements project with groundbreaking ceremony st johns county officials held a groundbreaking ceremony at the intersection of sr 16 and international golf parkway on aug 25 2025 to celebrate the start of improvements to the intersection the 25 million project led by sjc public works will expand sr 16 from two lanes to four lanes including drainage upgrades sidewalks and a traffic signal this 25 million project is a major investment in transportation infrastructure that will improve one of the busiest intersections in western st johns county supporting continued growth roads traffic st johns county",
+      "topics": [
+        "roads_traffic"
+      ],
+      "why_it_matters": "this 25 million project is a major investment in transportation infrastructure that will improve one of the busiest intersections in western st johns county supporting continued growth"
+    },
+    {
+      "entities": [],
+      "id": "SJC-BF-202508-0020",
+      "places": [],
+      "source": "st johns county",
+      "source_date": "2025-08-22",
+      "summary": "fdot hosted hybrid public hearings to discuss the proposed state road 16 widening project from international golf parkway to i 95 a virtual public hearing was held aug 26 2025 and an in person hearing on aug 28 2025 at the world golf village renaissance with registration available at nflroads com",
+      "title": "state road 16 widening project from international golf parkway to i 95 public hearing",
+      "tokens": "state road 16 widening project from international golf parkway to i 95 public hearing fdot hosted hybrid public hearings to discuss the proposed state road 16 widening project from international golf parkway to i 95 a virtual public hearing was held aug 26 2025 and an in person hearing on aug 28 2025 at the world golf village renaissance with registration available at nflroads com sr 16 is a primary arterial serving rapid growth in western st johns county widening from two to four lanes will significantly improve traffic flow for thousands of daily commuters roads traffic st johns county",
+      "topics": [
+        "roads_traffic"
+      ],
+      "why_it_matters": "sr 16 is a primary arterial serving rapid growth in western st johns county widening from two to four lanes will significantly improve traffic flow for thousands of daily commuters"
+    },
+    {
+      "entities": [],
+      "id": "SJC-BF-202508-0008",
+      "places": [],
+      "source": "sjc school district news",
+      "source_date": "2025-08-20",
+      "summary": "st johns county school district presented final attendance zoning plans establishing school attendance boundaries for the 2025 2026 school year the plans incorporate adjustments for the opening of hallowes cove academy and address capacity needs across the district s growing areas including silverleaf and nocatee",
+      "title": "sjcsd presents final attendance zoning plans for 2025 2026 school year",
+      "tokens": "sjcsd presents final attendance zoning plans for 2025 2026 school year st johns county school district presented final attendance zoning plans establishing school attendance boundaries for the 2025 2026 school year the plans incorporate adjustments for the opening of hallowes cove academy and address capacity needs across the district s growing areas including silverleaf and nocatee final attendance zones determine school eligibility for students and affect planning for families with school aged children particularly in areas experiencing rezoning due to new school openings schools community sjc school district news",
+      "topics": [
+        "schools_community"
+      ],
+      "why_it_matters": "final attendance zones determine school eligibility for students and affect planning for families with school aged children particularly in areas experiencing rezoning due to new school openings"
+    },
+    {
+      "entities": [],
+      "id": "SJC-BF-202508-0013",
+      "places": [
+        "silverleaf"
+      ],
+      "source": "st johns county",
+      "source_date": "2025-08-20",
+      "summary": "st johns county commenced construction on a major roadway expansion project along county road 2209 building a new four lane corridor between silverleaf parkway and state road 16 to improve traffic flow in the northern part of the county the project supports long term mobility needs and upholds the county s obligations to fdot to alleviate traffic challenges on i 95",
+      "title": "county road 2209 roadway expansion underway in st johns county",
+      "tokens": "county road 2209 roadway expansion underway in st johns county st johns county commenced construction on a major roadway expansion project along county road 2209 building a new four lane corridor between silverleaf parkway and state road 16 to improve traffic flow in the northern part of the county the project supports long term mobility needs and upholds the county s obligations to fdot to alleviate traffic challenges on i 95 this is a major corridor project that will transform transportation in the fastest growing area of the county connecting two major east west routes cr 210 and sr 16 and relieving i 95 congestion roads traffic silverleaf st johns county",
+      "topics": [
+        "roads_traffic"
+      ],
+      "why_it_matters": "this is a major corridor project that will transform transportation in the fastest growing area of the county connecting two major east west routes cr 210 and sr 16 and relieving i 95 congestion"
+    },
+    {
+      "entities": [],
+      "id": "SJC-BF-202508-0007",
+      "places": [],
+      "source": "sjc school district news",
+      "source_date": "2025-08-15",
+      "summary": "st johns county school district released a revised attendance zoning proposal after receiving community input on initial boundary recommendations the revised proposal addresses concerns from affected neighborhoods and adjusts proposed zone lines for schools serving the silverleaf and nocatee growth corridors",
+      "title": "sjcsd releases revised attendance zoning proposal following community feedback",
+      "tokens": "sjcsd releases revised attendance zoning proposal following community feedback st johns county school district released a revised attendance zoning proposal after receiving community input on initial boundary recommendations the revised proposal addresses concerns from affected neighborhoods and adjusts proposed zone lines for schools serving the silverleaf and nocatee growth corridors revised boundaries directly impact school assignments and may affect property values and daily commutes for families in affected neighborhoods schools community sjc school district news",
+      "topics": [
+        "schools_community"
+      ],
+      "why_it_matters": "revised boundaries directly impact school assignments and may affect property values and daily commutes for families in affected neighborhoods"
+    },
+    {
+      "entities": [],
+      "id": "SJC-BF-202508-0005",
+      "places": [
+        "hallowes_cove",
+        "silverleaf"
+      ],
+      "source": "sjc school district main site",
+      "source_date": "2025-08-11",
+      "summary": "hallowes cove academy st johns county school district s newest k 8 school opened its doors for the 2025 2026 school year the school led by principal jessley hathaway and featuring the hurricanes mascot serves students in grades k 8 with extended day programs the school s dedicated website and branding materials were finalized in april 2025 ahead of the august opening",
+      "title": "hallowes cove academy opens as st johns county s newest k 8 school for 2025 2026",
+      "tokens": "hallowes cove academy opens as st johns county s newest k 8 school for 2025 2026 hallowes cove academy st johns county school district s newest k 8 school opened its doors for the 2025 2026 school year the school led by principal jessley hathaway and featuring the hurricanes mascot serves students in grades k 8 with extended day programs the school s dedicated website and branding materials were finalized in april 2025 ahead of the august opening this new school relieves enrollment pressure on existing schools in the northwest st johns county corridor and offers a new educational option for families in the rapidly developing silverleaf area schools community hallowes cove silverleaf sjc school district main site",
+      "topics": [
+        "schools_community"
+      ],
+      "why_it_matters": "this new school relieves enrollment pressure on existing schools in the northwest st johns county corridor and offers a new educational option for families in the rapidly developing silverleaf area"
+    },
+    {
+      "entities": [],
+      "id": "SJC-BF-202508-0010",
+      "places": [],
+      "source": "st johns county",
+      "source_date": "2025-08-09",
+      "summary": "st johns county announced a traffic pattern shift on county road 210 as part of the ongoing widening project beginning the night of friday aug 15 2025 both westbound and eastbound lanes of cr 210 were transitioned from the existing roadway to newly constructed roadway just east of stone creek circle returning to the existing roadway at the intersection with cimarrone boulevard",
+      "title": "traffic pattern shift scheduled for cr 210 widening project on aug 15",
+      "tokens": "traffic pattern shift scheduled for cr 210 widening project on aug 15 st johns county announced a traffic pattern shift on county road 210 as part of the ongoing widening project beginning the night of friday aug 15 2025 both westbound and eastbound lanes of cr 210 were transitioned from the existing roadway to newly constructed roadway just east of stone creek circle returning to the existing roadway at the intersection with cimarrone boulevard the traffic pattern shift affected all drivers using cr 210 a major east west arterial in northern st johns county during a key phase of the widening project roads traffic st johns county",
+      "topics": [
+        "roads_traffic"
+      ],
+      "why_it_matters": "the traffic pattern shift affected all drivers using cr 210 a major east west arterial in northern st johns county during a key phase of the widening project"
+    },
+    {
+      "entities": [],
+      "id": "SJC-BF-202508-0011",
+      "places": [
+        "nocatee"
+      ],
+      "source": "st johns county",
+      "source_date": "2025-08-08",
+      "summary": "st johns county encouraged drivers accessing the beachwalk community to consider alternate routes during the ongoing county road 210 widening project motorists were reminded to use caution and follow posted signage",
+      "title": "county encourages alternate access points to beachwalk during cr 210 widening",
+      "tokens": "county encourages alternate access points to beachwalk during cr 210 widening st johns county encouraged drivers accessing the beachwalk community to consider alternate routes during the ongoing county road 210 widening project motorists were reminded to use caution and follow posted signage the cr 210 widening project is one of the largest road infrastructure projects in the county affecting daily commutes for thousands of residents in northern st johns county roads traffic nocatee st johns county",
+      "topics": [
+        "roads_traffic"
+      ],
+      "why_it_matters": "the cr 210 widening project is one of the largest road infrastructure projects in the county affecting daily commutes for thousands of residents in northern st johns county"
+    },
+    {
+      "entities": [],
+      "id": "SJC-BF-202508-0022",
+      "places": [],
+      "source": "st johns county",
+      "source_date": "2025-08-05",
+      "summary": "st johns county launched inside sjc episode 5 highlighting how the county notifies residents in real time about possible threats to public safety using alert st johns covering severe weather unexpected road closures water advisories missing persons or evacuations the episode educates residents on how to sign up for emergency alerts",
+      "title": "inside sjc episode 5 notifying residents using alert st johns emergency notification system",
+      "tokens": "inside sjc episode 5 notifying residents using alert st johns emergency notification system st johns county launched inside sjc episode 5 highlighting how the county notifies residents in real time about possible threats to public safety using alert st johns covering severe weather unexpected road closures water advisories missing persons or evacuations the episode educates residents on how to sign up for emergency alerts the emergency notification system is a critical tool for public safety enabling residents to receive real time alerts about threats and take appropriate protective actions emergency preparedness st johns county",
+      "topics": [
+        "emergency_preparedness"
+      ],
+      "why_it_matters": "the emergency notification system is a critical tool for public safety enabling residents to receive real time alerts about threats and take appropriate protective actions"
+    },
+    {
+      "entities": [],
+      "id": "SJC-BF-202508-0006",
+      "places": [],
+      "source": "sjc school district news",
+      "source_date": "2025-08-01",
+      "summary": "st johns county school district published an attendance zoning presentation on its news site outlining proposed attendance boundary adjustments for the upcoming school year the presentation covers zoning changes necessitated by the opening of hallowes cove academy and continued growth in silverleaf and nocatee areas",
+      "title": "sjcsd publishes attendance zoning presentation for 2025 2026 school year",
+      "tokens": "sjcsd publishes attendance zoning presentation for 2025 2026 school year st johns county school district published an attendance zoning presentation on its news site outlining proposed attendance boundary adjustments for the upcoming school year the presentation covers zoning changes necessitated by the opening of hallowes cove academy and continued growth in silverleaf and nocatee areas attendance boundary changes determine school assignments for thousands of students particularly in fast growing areas like silverleaf and nocatee where new schools are opening schools community sjc school district news",
+      "topics": [
+        "schools_community"
+      ],
+      "why_it_matters": "attendance boundary changes determine school assignments for thousands of students particularly in fast growing areas like silverleaf and nocatee where new schools are opening"
+    }
+  ],
+  "release_id": "SJC-REL-2026-08-004",
+  "schema_version": "1.0"
+}

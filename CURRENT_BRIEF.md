@@ -1,24 +1,24 @@
 # SJC_Intel Current Brief
-**Generated:** 2026-08-07T07:01:14Z
+**Generated:** 2026-08-09T04:42:34Z
 **Mode:** supervised-live-pilot
 **Run ID:** SJC-LIVE-20260807-2604
-**Repository SHA:** 7f986ba5cadaf2a41e2fc0aa1c377adbfa5fe3af
+**Repository SHA:** 87a09597d53ef6b993a60efa5ab52ba85bf6d036
 **Data cutoff:** 2026-08-07T06:33:38Z
 **Pipeline health:** HEALTHY
 **Operator status:** CLEAR
 **Overall status:** HEALTHY
-**Publication status:** Exception-based policy active: 7 auto-publishable; 51 require human review; 69 require more research; 65 excluded. No deployment occurs automatically.
+**Publication status:** Exception-based policy active: 48 auto-publishable; 79 require human review; 75 require more research; 65 excluded. No deployment occurs automatically.
 **Scheduler status:** SJC is ready for supervised weekly operation; Ivy scheduler activation remains a separate privileged gate.
 **Deployment status:** GitHub Pages deployment is verified at https://wgudataninja.github.io/sjc-intel/.
 
-Latest immutable snapshot: [reports/briefs/20260807T070114Z.md](<reports/briefs/20260807T070114Z.md>). Latest run: [runtime/adaptive_discovery/runs/SJC-LIVE-20260807-2604/run.yaml](<runtime/adaptive_discovery/runs/SJC-LIVE-20260807-2604/run.yaml>). Pending proposals: [data/adaptive_discovery/pending_proposals.yaml](<data/adaptive_discovery/pending_proposals.yaml>). Decisions: [data/adaptive_discovery/decisions.yaml](<data/adaptive_discovery/decisions.yaml>). Accepted state: [data/adaptive_discovery/accepted_state.yaml](<data/adaptive_discovery/accepted_state.yaml>). Health: [data/adaptive_discovery/health.yaml](<data/adaptive_discovery/health.yaml>). Coverage: [data/adaptive_discovery/coverage_health.yaml](<data/adaptive_discovery/coverage_health.yaml>). Research resolutions: [data/adaptive_discovery/research_resolutions.yaml](<data/adaptive_discovery/research_resolutions.yaml>). Task record: [Task 25](reports/25-proposal-resolution-and-research-escalation.md). Public SilverLeaf Brief: [site/browse](site/browse/index.html).
+Latest immutable snapshot: [reports/briefs/20260809T044234Z.md](<reports/briefs/20260809T044234Z.md>). Latest run: [runtime/adaptive_discovery/runs/SJC-LIVE-20260807-2604/run.yaml](<runtime/adaptive_discovery/runs/SJC-LIVE-20260807-2604/run.yaml>). Pending proposals: [data/adaptive_discovery/pending_proposals.yaml](<data/adaptive_discovery/pending_proposals.yaml>). Decisions: [data/adaptive_discovery/decisions.yaml](<data/adaptive_discovery/decisions.yaml>). Accepted state: [data/adaptive_discovery/accepted_state.yaml](<data/adaptive_discovery/accepted_state.yaml>). Health: [data/adaptive_discovery/health.yaml](<data/adaptive_discovery/health.yaml>). Coverage: [data/adaptive_discovery/coverage_health.yaml](<data/adaptive_discovery/coverage_health.yaml>). Research resolutions: [data/adaptive_discovery/research_resolutions.yaml](<data/adaptive_discovery/research_resolutions.yaml>). Task record: [Task 25](reports/25-proposal-resolution-and-research-escalation.md). Public SilverLeaf Brief: [site/browse](site/browse/index.html).
 
 ## Executive summary
 - 49 normalized live-search findings and 0 new pending adaptive proposals from `SJC-LIVE-20260807-2604` (22 evaluator-rejected).
 - Pipeline health: **HEALTHY**; operator status: **CLEAR**.
 - No registry, review-queue, publication-decision, or public-release mutation occurred.
-- Buddy attention: 0 pending proposal(s); 18 accepted adaptive state records.
-- Publication policy: 7 auto-publishable; 51 human-review exceptions; 69 research exceptions.
+- Buddy attention: 0 pending proposal(s); 21 accepted adaptive state records.
+- Publication policy: 48 auto-publishable; 79 human-review exceptions; 75 research exceptions.
 
 ## Pipeline health
 | Component | Status | Evidence | Action |
@@ -44,7 +44,7 @@ Last successful run: `SJC-LIVE-20260807-2604` at 2026-08-07T06:33:38Z. Next expe
 
 ## What changed since the previous brief
 - New findings: 49; new pending proposals: 0; total pending: 0.
-- Accepted adaptive production state: 18 records; no canonical registry changes.
+- Accepted adaptive production state: 21 records; no canonical registry changes.
 - New failures: none recorded.
 - Evaluator-rejected proposals: 22 (see run artifact for reasons).
 
@@ -92,7 +92,7 @@ Last successful run: `SJC-LIVE-20260807-2604` at 2026-08-07T06:33:38Z. Next expe
 
 ## Remaining decisions
 - No pending adaptive proposals; no routine research decision remains for Buddy.
-- Publication exceptions: 51 need human review; 69 need more research; 65 are excluded. Routine auto-publishable items do not need one-by-one approval.
+- Publication exceptions: 79 need human review; 75 need more research; 65 are excluded. Routine auto-publishable items do not need one-by-one approval.
 
 ## Active search profiles
 - **Baptist SilverLeaf campus**: "Baptist SilverLeaf campus" St. Johns
@@ -103,9 +103,10 @@ Last successful run: `SJC-LIVE-20260807-2604` at 2026-08-07T06:33:38Z. Next expe
 - **SilverLeaf grocery center — possible Harris Teeter**: "SilverLeaf" "Harris Teeter", "SilverLeaf Parkway" grocery, "CR 16A" grocery SilverLeaf, "Silverleaf Retail Marketplace", "SilverLeaf grocery center"
 
 ## Publication opportunities
-- `7` canonical items currently classify as `AUTO_PUBLISHABLE` under `docs/PUBLICATION_POLICY.md`; a named release remains a local build until an authorized deployment.
-- `51` exceptions need human review and `69` need more research; the classifier, not a blanket manual-release gate, supplies their reasons.
+- `48` canonical items currently classify as `AUTO_PUBLISHABLE` under `docs/PUBLICATION_POLICY.md`; a named release remains a local build until an authorized deployment.
+- `79` exceptions need human review and `75` need more research; the classifier, not a blanket manual-release gate, supplies their reasons.
 - Any live finding still needs source verification and corpus review before it can enter a public release.
+- Product-side editorial state (what the site contains, ready-next, coverage gaps): [CURRENT_PUBLICATION_PLAN.md](CURRENT_PUBLICATION_PLAN.md).
 
 ## Risks and failures
 - Mode is `supervised-live-pilot`, not autonomous production. Google News RSS provides discovery leads, not primary evidence.
@@ -132,4 +133,4 @@ python3 scripts/research_adaptive_proposal.py resolve --proposal-id <ID> --query
 - Receipt set: `runtime/adaptive_discovery/runs/SJC-LIVE-20260807-2604/receipts.yaml`
 - Durable governance state: `data/adaptive_discovery/accepted_state.yaml`, `data/adaptive_discovery/pending_proposals.yaml`, `data/adaptive_discovery/decisions.yaml`, `data/adaptive_discovery/coverage_health.yaml`, `data/adaptive_discovery/research_resolutions.yaml`
 - Derived pipeline health: `data/adaptive_discovery/health.yaml`
-- Git: `7f986ba5cadaf2a41e2fc0aa1c377adbfa5fe3af`
+- Git: `87a09597d53ef6b993a60efa5ab52ba85bf6d036`

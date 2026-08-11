@@ -1,0 +1,2144 @@
+{
+  "created_at": "2026-08-09T04:41:39Z",
+  "dimensions": {
+    "display_topics": {
+      "emergency_preparedness": {
+        "description": "Hurricane season, alerts, and household readiness guidance.",
+        "label": "Emergency Preparedness"
+      },
+      "local_business": {
+        "description": "Retail, dining, and services opening or changing in the area.",
+        "label": "Local Business"
+      },
+      "roads_traffic": {
+        "description": "Road closures, construction, detours, and commute impacts.",
+        "label": "Roads & Traffic"
+      },
+      "schools_community": {
+        "description": "Schools, community facilities, and neighborhood life.",
+        "label": "Schools & Community"
+      },
+      "utilities_water": {
+        "description": "Drinking water, sewer, reclaimed water, and utility notices.",
+        "label": "Utilities & Water"
+      }
+    },
+    "entities": {
+      "ENT-EDU-SILVERLEAF-K8": {
+        "description": "New 190,000 sq. ft., three-story K-8 school in SilverLeaf with 73 classrooms serving approximately 1,500 students. Part of district strategy to reduce overcrowding (13,000+ students currently in portables).",
+        "label": "SilverLeaf K-8 School",
+        "lifecycle": "under_construction",
+        "lifecycle_label": "Under construction"
+      },
+      "ENT-HEALTH-ASCENSION-NOCATEE": {
+        "description": "Ascension St. Vincent's primary care center planned for a six-storefront commercial strip on Crosswater Parkway in Nocatee, across from Splash Water Park. Will occupy three units with adult and pediatric care.",
+        "label": "Ascension St. Vincent's — Nocatee",
+        "lifecycle": "proposed",
+        "lifecycle_label": "Proposed"
+      },
+      "ENT-HEALTH-BAPTIST-SILVERLEAF": {
+        "description": "Medical campus in SilverLeaf operated by Baptist Health, a major regional healthcare system. Includes an emergency center component. Classified as medical campus (healthcare_facility) rather than hospital unless evidence supports hospital-level inpatient or surgical services.",
+        "label": "Baptist SilverLeaf Medical Campus",
+        "lifecycle": "tracked",
+        "lifecycle_label": "Tracked"
+      },
+      "ENT-MIXED-NOCATEE-CROSSWATER": {
+        "description": "Six-storefront commercial strip on Crosswater Parkway in Nocatee, across from Splash Water Park. Anchored by Ascension St. Vincent's primary care (3 units). Additional retail tenants pending.",
+        "label": "Nocatee Crosswater Retail Center",
+        "lifecycle": "under_construction",
+        "lifecycle_label": "Under construction"
+      },
+      "ENT-REC-BEACH-VALLEY-MINI-GOLF": {
+        "description": "Proposed 36-hole miniature golf course on 2 acres in SilverLeaf, near SilverLeaf Drive and St. Johns Parkway. Includes clubhouse, pavilions, and parking. Developed by Michael and Bridgette Goolsby, leasing from The Hutson Companies.",
+        "label": "Beach Valley Mini Golf",
+        "lifecycle": "proposed",
+        "lifecycle_label": "Proposed"
+      },
+      "ENT-RETAIL-CR16A-SL-PKWY-GROCERY": {
+        "description": "Grocery-anchored shopping center at or near the intersection of CR 16A and SilverLeaf Parkway. Formal center name not yet verified. This is a provisional descriptive identity — do not treat as a confirmed legal name.",
+        "label": "CR 16A and SilverLeaf Parkway Grocery Center",
+        "lifecycle": "proposed",
+        "lifecycle_label": "Proposed"
+      },
+      "ENT-RETAIL-HARRIS-TEETER-SILVERLEAF": {
+        "description": "Proposed 61,000 sq. ft. Harris Teeter (Kroger-owned) supermarket in a SilverLeaf shopping center. Would be the first major non-Publix grocery competition in the area.",
+        "label": "Harris Teeter — SilverLeaf",
+        "lifecycle": "proposed",
+        "lifecycle_label": "Proposed"
+      },
+      "ENT-RETAIL-PUBLIX-SILVERLEAF": {
+        "description": "55,701 sq. ft. Publix at 1975 SilverLeaf Parkway — one of the chain's largest stores. Features Pours beer/wine café, scratch bakery, custom meats, seafood, full-service pharmacy, and prepared food stations.",
+        "label": "SilverLeaf Mega Publix",
+        "lifecycle": "completed",
+        "lifecycle_label": "Completed"
+      },
+      "ENT-RETAIL-SILVERLEAF-MARKET": {
+        "description": "Publix-anchored shopping center in SilverLeaf. Publix is the identity-defining anchor tenant. May be the center containing the Publix at 1975 SilverLeaf Parkway (ENT-RETAIL-PUBLIX-SILVERLEAF) — relationship to be verified.",
+        "label": "Silverleaf Market",
+        "lifecycle": "tracked",
+        "lifecycle_label": "Tracked"
+      },
+      "ENT-ROAD-CR-2209-CONNECTOR": {
+        "description": "County Road 2209 roadway segment connecting Silverleaf Parkway and International Golf Parkway. County records identify it as an opened four-lane divided connection and as part of the larger CR 2209 Central Project. The exact resident mobility-selection rules are in registry/silverleaf_mobility.yaml.",
+        "label": "CR 2209 Connector (IGP to SilverLeaf Parkway)",
+        "lifecycle": "completed",
+        "lifecycle_label": "Completed"
+      }
+    },
+    "places": {
+      "countywide": {
+        "label": "Countywide",
+        "type": "countywide"
+      },
+      "cr_210_corridor": {
+        "label": "CR 210 Corridor",
+        "type": "corridor"
+      },
+      "hallowes_cove": {
+        "label": "Hallowes Cove",
+        "type": "master_planned_community"
+      },
+      "nocatee": {
+        "label": "Nocatee",
+        "type": "master_planned_community"
+      },
+      "rural_sjc": {
+        "label": "rural_sjc"
+      },
+      "silverleaf": {
+        "label": "SilverLeaf",
+        "type": "master_planned_community"
+      },
+      "sr_16_corridor": {
+        "label": "SR 16 Corridor",
+        "type": "corridor"
+      }
+    },
+    "relevance": {
+      "countywide_impact": {
+        "label": "Countywide impact"
+      },
+      "in_silverleaf": {
+        "label": "In SilverLeaf"
+      },
+      "near_silverleaf": {
+        "label": "Near SilverLeaf"
+      }
+    },
+    "sources": {
+      "baptist_health": {
+        "name": "Baptist Health",
+        "source_kind": "wordpress_blog",
+        "source_type": "Government / agency website",
+        "url": "https://www.baptistjax.com/"
+      },
+      "fdot_district_two_nflroads": {
+        "name": "FDOT District Two and NFLRoads",
+        "source_kind": "government_portal",
+        "source_type": "government_portal",
+        "url": "https://www.fdot.gov/info/moredot/districts/dist2.shtm"
+      },
+      "jax_daily_record": {
+        "name": "Jacksonville Daily Record",
+        "source_kind": "local_media",
+        "source_type": "Local news",
+        "url": "https://www.jaxdailyrecord.com/"
+      },
+      "sjc_county_news": {
+        "name": "St. Johns County",
+        "source_kind": "County news release",
+        "source_type": "Government / agency website",
+        "url": "https://www.sjcfl.us/news/"
+      },
+      "sjc_emergency_management": {
+        "name": "St. Johns County Emergency Management",
+        "source_kind": "Emergency-management guidance",
+        "source_type": "government_portal",
+        "url": "https://www.sjcfl.us/departments/emergency-mgmt/"
+      },
+      "sjc_school_district": {
+        "name": "St. Johns County School District",
+        "source_kind": "School district update",
+        "source_type": "wordpress_portal",
+        "url": "https://www.stjohns.k12.fl.us/"
+      },
+      "sjc_utility_department": {
+        "name": "St. Johns County Utility Department",
+        "source_kind": "Utility notice",
+        "source_type": "government_portal",
+        "url": "https://www.sjcfl.us/departments/utility-department/"
+      },
+      "sjcsd_boarddocs": {
+        "name": "School Board BoardDocs",
+        "source_kind": "government_portal",
+        "source_type": "government_portal",
+        "url": "https://www.boarddocs.com/fl/stjohns/Board.nsf/Public"
+      },
+      "sjcsd_main_site": {
+        "name": "SJC School District — main site",
+        "source_kind": "wordpress_portal",
+        "source_type": "wordpress_portal",
+        "url": "https://www.stjohns.k12.fl.us/"
+      },
+      "sjcsd_new_schools": {
+        "name": "SJC School District — new schools",
+        "source_kind": "government_portal",
+        "source_type": "government_portal",
+        "url": "https://www.stjohns.k12.fl.us/newschools/"
+      },
+      "sjcsd_news": {
+        "name": "SJC School District — news",
+        "source_kind": "wordpress_portal",
+        "source_type": "wordpress_portal",
+        "url": "https://www.stjohns.k12.fl.us/news/"
+      },
+      "sjrwmd_watering_restrictions": {
+        "name": "SJRWMD Permitting and Watering Restrictions",
+        "source_kind": "government_portal",
+        "source_type": "government_portal",
+        "url": "https://www.sjrwmd.com/permitting/"
+      },
+      "st_johns_citizen": {
+        "name": "St. Johns Citizen",
+        "source_kind": "Local news",
+        "source_type": "Local news",
+        "url": "https://sjcitizen.com/"
+      },
+      "web_discovery": {
+        "name": "Web discovery (backfill)",
+        "source_kind": "wordpress_blog",
+        "source_type": "Government / agency website",
+        "url": "https://www.sjcfl.us/"
+      }
+    }
+  },
+  "environment": "real",
+  "generator_revision": "silverleaf-brief-export-1.0",
+  "items": [
+    {
+      "display_topic": "local_business",
+      "entity_ids": [
+        "ENT-HEALTH-BAPTIST-SILVERLEAF"
+      ],
+      "lifecycle": "under_construction",
+      "lifecycle_label": "Expanding",
+      "place_ids": [
+        "silverleaf"
+      ],
+      "public_item_id": "SJC-SL-20260809-0002",
+      "published_date": "2026-08-09",
+      "related_item_ids": [
+        "SJC-SL-20260807-0002",
+        "SJC-SL-20260807-0005",
+        "SJC-UTIL-20260603-0005"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "in_silverleaf",
+      "role": "timeline",
+      "sensitivity_display": "none",
+      "source_date": "2026-08-09",
+      "source_name": "Baptist Health",
+      "source_url": "https://www.baptistjax.com/locations/baptist-silverleaf-medical-campus",
+      "summary": "Baptist Health's SilverLeaf Medical Campus (8595 St. Johns Parkway) is expanding: Baptist Orthopedics opens August 2026 and the adult/pediatric Emergency Center opens September 2026, adding 24/7 emergency care to the campus's existing primary care, cardiology, lab, and rehab services.",
+      "title": "Baptist Health SilverLeaf — Orthopedics opening August 2026, Emergency Center opening September 2026",
+      "topic_ids": [
+        "health_wellness",
+        "economic_development"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "An emergency center inside SilverLeaf shortens critical care access; orthopedics adds a common specialty without driving to Jacksonville."
+    },
+    {
+      "display_topic": "roads_traffic",
+      "entity_ids": [],
+      "lifecycle": "under_construction",
+      "lifecycle_label": "Under construction",
+      "place_ids": [
+        "silverleaf"
+      ],
+      "public_item_id": "SJC-SL-20260809-0003",
+      "published_date": "2026-08-09",
+      "related_item_ids": [
+        "SJC-SL-20260807-0003",
+        "SJC-BF-202508-0011",
+        "SJC-BF-202508-0010",
+        "SJC-BF-202508-0013",
+        "SJC-BF-202508-0020",
+        "SJC-BF-202508-0021",
+        "SJC-BF-202509-0014",
+        "SJC-CN-20260626-0001",
+        "SJC-CN-20260802-0001",
+        "SJC-SL-20260809-0005",
+        "SJC-SL-20260809-0006",
+        "SJC-SL-20260807-0004",
+        "SJC-UTIL-20260603-0003",
+        "SJC-UD-20260626-0001",
+        "SJC-UTIL-20260603-0001",
+        "SJC-UTIL-20260603-0004",
+        "SJC-UTIL-20260603-0005",
+        "SJC-UD-20260704-0001",
+        "SJC-BF-202605-0005",
+        "SJC-SL-20260704-0004",
+        "SJC-SL-20260704-0001"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "near_silverleaf",
+      "role": "timeline",
+      "sensitivity_display": "none",
+      "source_date": "2026-08-09",
+      "source_name": "FDOT District Two and NFLRoads",
+      "source_url": "https://nflroads.com/ProjectDetails?p=5639",
+      "summary": "FDOT's final St. Johns County segment of the First Coast Expressway — from I-95 to east of CR 2209 (St. Johns Parkway) — is under construction with a $205 million contract awarded to Mastec Civil LLC. FDOT lists construction start in early 2026 and expected completion in late 2030/early 2031. A hybrid construction open house was held Feb. 3, 2026 at World Golf Village.",
+      "title": "First Coast Expressway final segment under construction — $205M contract, completion late 2030/early 2031",
+      "topic_ids": [
+        "transportation",
+        "infrastructure"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "The toll expressway changes SilverLeaf commute options; I-95/CR 2209/CR 16A lane-closure restrictions during construction affect the surrounding road network."
+    },
+    {
+      "display_topic": "schools_community",
+      "entity_ids": [
+        "ENT-EDU-SILVERLEAF-K8"
+      ],
+      "lifecycle": "under_construction",
+      "lifecycle_label": "Opening for 2026-27",
+      "place_ids": [
+        "silverleaf"
+      ],
+      "public_item_id": "SJC-SL-20260807-0001",
+      "published_date": "2026-08-07",
+      "related_item_ids": [
+        "SJC-SL-20260807-0005",
+        "SJC-BF-202508-0013",
+        "SJC-BF-202508-0021",
+        "SJC-BF-202605-0011",
+        "SJC-BF-202605-0013",
+        "SJC-BF-202605-0008",
+        "SJC-BF-202605-0015",
+        "SJC-BF-202605-0014",
+        "SJC-BF-202508-0005",
+        "SJC-BF-202509-0005",
+        "SJC-BF-202509-0006",
+        "SJC-SL-20260809-0001",
+        "SJC-BF-202508-0006",
+        "SJC-BF-202508-0007",
+        "SJC-BF-202508-0008",
+        "SJC-SL-20260704-0005",
+        "SJC-SL-20260704-0001",
+        "SJC-SL-20260704-0003",
+        "SJC-SL-20260704-0006",
+        "SJC-BF-202509-0008"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "in_silverleaf",
+      "role": "latest",
+      "sensitivity_display": "none",
+      "source_date": "2026-08-07",
+      "source_name": "SJC School District — new schools",
+      "source_url": "https://www.stjohns.k12.fl.us/newschools/",
+      "summary": "St. Johns County School District lists Magnolia Oaks Academy as the new K-8 school serving the SilverLeaf DRI (Parcel 29C), which the district confirms remains under construction. Local reporting (News4JAX, Action News Jax) says the campus is set to open for the 2026-2027 school year with about 1,500 students across 73 classrooms. The school was previously tracked under the placeholder names School QQ and SilverLeaf K-8.",
+      "title": "Magnolia Oaks Academy set to open for the 2026-2027 school year",
+      "topic_ids": [
+        "education",
+        "development"
+      ],
+      "verification_display": "Cross-referenced with another source",
+      "why_it_matters": "The opening may change attendance zones and shorten school commutes for SilverLeaf households; the final opening date and attendance boundary are the top school questions."
+    },
+    {
+      "display_topic": "roads_traffic",
+      "entity_ids": [],
+      "place_ids": [
+        "silverleaf"
+      ],
+      "public_item_id": "SJC-SL-20260807-0003",
+      "published_date": "2026-08-07",
+      "related_item_ids": [
+        "SJC-SL-20260809-0003",
+        "SJC-BF-202508-0011",
+        "SJC-BF-202508-0010",
+        "SJC-BF-202508-0013",
+        "SJC-BF-202508-0020",
+        "SJC-BF-202508-0021",
+        "SJC-BF-202509-0014",
+        "SJC-CN-20260626-0001",
+        "SJC-CN-20260802-0001",
+        "SJC-SL-20260809-0005",
+        "SJC-SL-20260809-0006",
+        "SJC-SL-20260807-0004",
+        "SJC-UTIL-20260603-0003",
+        "SJC-UD-20260626-0001",
+        "SJC-UTIL-20260603-0001",
+        "SJC-UTIL-20260603-0004",
+        "SJC-UTIL-20260603-0005",
+        "SJC-UD-20260704-0001",
+        "SJC-BF-202605-0005",
+        "SJC-SL-20260704-0004",
+        "SJC-SL-20260704-0001"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "near_silverleaf",
+      "role": "browse",
+      "sensitivity_display": "none",
+      "source_date": "2026-08-07",
+      "source_name": "FDOT District Two and NFLRoads",
+      "source_url": "https://www.fdot.gov/info/moredot/districts/dist2.shtm",
+      "summary": "FDOT's First Coast Expressway (SR 23) is being built in segments; the remaining St. Johns County work reached the public-hearing stage in January 2026 and FDOT targets full completion by 2030. When complete, the toll expressway gives northwestern St. Johns County, including SilverLeaf, a new north-south alternative to I-95, and construction has required temporary St. Johns Parkway detours. Status as of early August 2026: final-phase work underway.",
+      "title": "First Coast Expressway — St. Johns County final phase and I-95 access",
+      "topic_ids": [
+        "transportation",
+        "infrastructure"
+      ],
+      "verification_display": "Cross-referenced with another source",
+      "why_it_matters": "SilverLeaf's commute options and access to I-95 will change as the expressway completes; residents should expect detours on St. Johns Parkway during final-phase construction."
+    },
+    {
+      "display_topic": "roads_traffic",
+      "entity_ids": [],
+      "lifecycle": "completed",
+      "lifecycle_label": "Completed",
+      "place_ids": [
+        "cr_210_corridor"
+      ],
+      "public_item_id": "SJC-SL-20260807-0004",
+      "published_date": "2026-08-07",
+      "related_item_ids": [
+        "SJC-SL-20260807-0003",
+        "SJC-SL-20260809-0003",
+        "SJC-BF-202508-0011",
+        "SJC-BF-202508-0010",
+        "SJC-BF-202508-0013",
+        "SJC-BF-202508-0020",
+        "SJC-BF-202508-0021",
+        "SJC-BF-202509-0014",
+        "SJC-CN-20260626-0001",
+        "SJC-CN-20260802-0001",
+        "SJC-SL-20260809-0005",
+        "SJC-SL-20260809-0006",
+        "SJC-UTIL-20260603-0003",
+        "SJC-UD-20260626-0001",
+        "SJC-UTIL-20260603-0001",
+        "SJC-UTIL-20260603-0004",
+        "SJC-UTIL-20260603-0005",
+        "SJC-UD-20260704-0001",
+        "SJC-BF-202605-0005",
+        "SJC-SL-20260704-0004",
+        "SJC-SL-20260704-0001"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "near_silverleaf",
+      "role": "latest",
+      "sensitivity_display": "none",
+      "source_date": "2026-08-07",
+      "source_name": "St. Johns County",
+      "source_url": "https://www.sjcfl.us/featured-projects/",
+      "summary": "The county's multi-year CR 210 widening project reached a major completion milestone ahead of the 2026-2027 school year, with local reporting (News4JAX) indicating the new roadway opened before the first day of school. The project had shifted traffic onto newly built lanes in August 2025 as part of the widening through northern St. Johns County.",
+      "title": "CR 210 widening completed in time for the 2026-2027 school year",
+      "topic_ids": [
+        "transportation",
+        "infrastructure"
+      ],
+      "verification_display": "Cross-referenced with another source",
+      "why_it_matters": "CR 210 is one of the county's busiest east-west corridors; the completed widening relieves congestion for SilverLeaf commuters."
+    },
+    {
+      "display_topic": "local_business",
+      "entity_ids": [
+        "ENT-RETAIL-SILVERLEAF-MARKET",
+        "ENT-RETAIL-PUBLIX-SILVERLEAF"
+      ],
+      "place_ids": [
+        "silverleaf"
+      ],
+      "public_item_id": "SJC-SL-20260807-0005",
+      "published_date": "2026-08-07",
+      "related_item_ids": [
+        "SJC-SL-20260807-0002",
+        "SJC-SL-20260809-0002",
+        "SJC-BF-202508-0013",
+        "SJC-BF-202508-0021",
+        "SJC-SL-20260807-0001",
+        "SJC-SL-20260704-0005",
+        "SJC-SL-20260704-0001",
+        "SJC-SL-20260704-0003",
+        "SJC-SL-20260704-0006"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "in_silverleaf",
+      "role": "latest",
+      "sensitivity_display": "none",
+      "source_date": "2026-08-06",
+      "source_name": "Jacksonville Daily Record",
+      "source_url": "https://www.jaxdailyrecord.com/",
+      "summary": "The Publix-anchored shopping center known as Silverleaf Market is adding outparcel buildings, with reporting that planning for additional structures advanced in August 2026. Nearby retail activity at the center includes plans for a Fifth Third Bank (reported October 2025 and advancing April 2026) and new food tenants M Shack and Natural Greens (reported July 2026). Tenant-by-tenant timing is not yet confirmed.",
+      "title": "Silverleaf Market — Publix-anchored center adds outparcels and tenants",
+      "topic_ids": [
+        "development",
+        "economic_development"
+      ],
+      "verification_display": "Cross-referenced with another source",
+      "why_it_matters": "New bank and restaurant tenants plus outparcel construction are visible neighborhood change; the center's growth is directly useful household knowledge."
+    },
+    {
+      "display_topic": "roads_traffic",
+      "entity_ids": [],
+      "lifecycle": "under_construction",
+      "lifecycle_label": "Traffic change Sept 2026",
+      "place_ids": [
+        "sr_16_corridor"
+      ],
+      "public_item_id": "SJC-SL-20260809-0006",
+      "published_date": "2026-08-09",
+      "related_item_ids": [
+        "SJC-SL-20260807-0003",
+        "SJC-SL-20260809-0003",
+        "SJC-BF-202508-0011",
+        "SJC-BF-202508-0010",
+        "SJC-BF-202508-0013",
+        "SJC-BF-202508-0020",
+        "SJC-BF-202508-0021",
+        "SJC-BF-202509-0014",
+        "SJC-CN-20260626-0001",
+        "SJC-CN-20260802-0001",
+        "SJC-SL-20260809-0005",
+        "SJC-SL-20260807-0004",
+        "SJC-UTIL-20260603-0003",
+        "SJC-UD-20260626-0001",
+        "SJC-UTIL-20260603-0001",
+        "SJC-UTIL-20260603-0004",
+        "SJC-UTIL-20260603-0005",
+        "SJC-UD-20260704-0001",
+        "SJC-BF-202605-0005",
+        "SJC-SL-20260704-0004",
+        "SJC-SL-20260704-0001"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "near_silverleaf",
+      "role": "browse",
+      "sensitivity_display": "none",
+      "source_date": "2026-08-06",
+      "source_name": "St. Johns County",
+      "source_url": "https://www.sjcfl.us/traffic-pattern-changes-sr-16-stratton-blvd-industry-center-rd/",
+      "summary": "St. Johns County Public Works is finishing FDOT-recommended Restricted Crossing U-Turn (RCUT) intersection improvements on SR 16 at Stratton Boulevard and Industry Center Road. Signalized U-turns replace unsignalized left turns, with additional turn lanes, new signals, and two new pedestrian crosswalks; the new traffic pattern is expected to start mid-to-late September.",
+      "title": "SR 16 RCUT intersection improvements — new traffic patterns at Stratton Boulevard and Industry Center Road expected mid-to-late September",
+      "topic_ids": [
+        "transportation",
+        "infrastructure"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "A changed traffic pattern on a commute corridor is a practical 'what to expect' for drivers using SR 16 near the World Golf Village/outlet area."
+    },
+    {
+      "display_topic": "roads_traffic",
+      "entity_ids": [
+        "ENT-ROAD-CR-2209-CONNECTOR"
+      ],
+      "lifecycle": "completed",
+      "lifecycle_label": "Completed",
+      "place_ids": [
+        "silverleaf"
+      ],
+      "public_item_id": "SJC-SL-20260809-0005",
+      "published_date": "2026-08-09",
+      "related_item_ids": [
+        "SJC-SL-20260807-0003",
+        "SJC-SL-20260809-0003",
+        "SJC-BF-202508-0011",
+        "SJC-BF-202508-0010",
+        "SJC-BF-202508-0013",
+        "SJC-BF-202508-0020",
+        "SJC-BF-202508-0021",
+        "SJC-BF-202509-0014",
+        "SJC-CN-20260626-0001",
+        "SJC-CN-20260802-0001",
+        "SJC-SL-20260809-0006",
+        "SJC-SL-20260807-0004",
+        "SJC-UTIL-20260603-0003",
+        "SJC-UD-20260626-0001",
+        "SJC-UTIL-20260603-0001",
+        "SJC-UTIL-20260603-0004",
+        "SJC-UTIL-20260603-0005",
+        "SJC-UD-20260704-0001",
+        "SJC-BF-202605-0005",
+        "SJC-SL-20260704-0004",
+        "SJC-SL-20260704-0001"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "in_silverleaf",
+      "role": "latest",
+      "sensitivity_display": "none",
+      "source_date": "2026-08-05",
+      "source_name": "St. Johns County",
+      "source_url": "https://www.sjcfl.us/courtney-vista-drive-improvements-enhance-access-magnolia-oaks-academy/",
+      "summary": "St. Johns County completed Courtney Vista Drive improvements in about nine months, ahead of the projected 12-month timeline, creating a more direct route between County Road 2209 and Silverleaf Parkway and supporting safe access to the newly opened Magnolia Oaks Academy. The county encourages traffic awareness as the school year begins.",
+      "title": "Courtney Vista Drive improvements complete — new direct link between CR 2209 and Silverleaf Parkway",
+      "topic_ids": [
+        "transportation",
+        "infrastructure"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "A more direct CR 2209-to-Silverleaf Parkway route is a visible local improvement tied to the school opening and the school-run season."
+    },
+    {
+      "display_topic": "utilities_water",
+      "entity_ids": [],
+      "place_ids": [
+        "rural_sjc"
+      ],
+      "public_item_id": "SJC-CN-20260802-0003",
+      "published_date": "2026-08-09",
+      "related_item_ids": [
+        "SJC-CN-20260802-0004",
+        "SJC-UTIL-20260603-0003",
+        "SJC-UD-20260626-0001",
+        "SJC-UD-20260704-0001",
+        "SJC-UD-20260704-0002",
+        "SJC-BF-202605-0014"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "countywide_impact",
+      "role": "browse",
+      "sensitivity_display": "none",
+      "source_date": "2026-07-31",
+      "source_name": "St. Johns County",
+      "source_url": "https://www.sjcfl.us/sea-community-help-resource-center-opens-to-serve-rural-sjc/",
+      "summary": "S.E.A. Community Help Resource Center opens to serve rural St. Johns County. New resource center providing community help services to rural residents.",
+      "title": "S.E.A. Community Help Resource Center Opens to Serve Rural St. Johns County",
+      "topic_ids": [
+        "community_services",
+        "county_government",
+        "quality_of_life"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "A community help resource center opened to serve rural St. Johns County residents."
+    },
+    {
+      "display_topic": "utilities_water",
+      "entity_ids": [],
+      "place_ids": [],
+      "public_item_id": "SJC-CN-20260802-0004",
+      "published_date": "2026-08-09",
+      "related_item_ids": [
+        "SJC-CN-20260802-0003",
+        "SJC-UTIL-20260603-0003",
+        "SJC-UD-20260626-0001",
+        "SJC-UD-20260704-0001",
+        "SJC-UD-20260704-0002",
+        "SJC-BF-202605-0014"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "countywide_impact",
+      "role": "browse",
+      "sensitivity_display": "none",
+      "source_date": "2026-07-29",
+      "source_name": "St. Johns County",
+      "source_url": "https://www.sjcfl.us/clerks-office-new-service-center-2026/",
+      "summary": "Clerk's Office expands public access with a new service center. The new center increases public access to Clerk of Court services.",
+      "title": "Clerk's Office Expands Public Access with New Service Center",
+      "topic_ids": [
+        "county_government",
+        "public_services",
+        "community_services"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "The Clerk's Office expanded public access with a new service center."
+    },
+    {
+      "display_topic": "schools_community",
+      "entity_ids": [
+        "ENT-EDU-SILVERLEAF-K8"
+      ],
+      "lifecycle": "under_construction",
+      "lifecycle_label": "Opening Aug 10",
+      "place_ids": [
+        "silverleaf"
+      ],
+      "public_item_id": "SJC-SL-20260809-0001",
+      "published_date": "2026-08-09",
+      "related_item_ids": [
+        "SJC-BF-202605-0011",
+        "SJC-BF-202605-0013",
+        "SJC-BF-202605-0008",
+        "SJC-BF-202605-0015",
+        "SJC-BF-202605-0014",
+        "SJC-BF-202508-0005",
+        "SJC-BF-202509-0005",
+        "SJC-BF-202509-0006",
+        "SJC-SL-20260807-0001",
+        "SJC-BF-202508-0006",
+        "SJC-BF-202508-0007",
+        "SJC-BF-202508-0008",
+        "SJC-BF-202509-0008"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "in_silverleaf",
+      "role": "latest",
+      "sensitivity_display": "none",
+      "source_date": "2026-07-22",
+      "source_name": "SJC School District — new schools",
+      "source_url": "https://www.stjohns.k12.fl.us/news/silverleaf-school/",
+      "summary": "SJCSD confirms Magnolia Oaks Academy will welcome 1,300 students on its first day, Aug. 10, 2026, serving kindergarten through seventh grade in its first year. The district opened the doors announcement (July 22, 2026) confirms the school is the first in the Silverleaf community. The 2026-27 attendance plan for K-8 School QQ (Magnolia Oaks) was approved by the School Board Nov. 18, 2025 and the district's attendance-zone locator is live.",
+      "title": "Magnolia Oaks Academy opens Aug. 10 with 1,300 students — K-8 school in Silverleaf",
+      "topic_ids": [
+        "education"
+      ],
+      "verification_display": "Cross-referenced with another source",
+      "why_it_matters": "Aug. 10 first day, K-7 grade span, and the live attendance-zone locator answer the top school questions for SilverLeaf households for 2026-27."
+    },
+    {
+      "display_topic": "roads_traffic",
+      "entity_ids": [],
+      "event_date": "2026-08-07",
+      "event_date_label": "Closure starts",
+      "place_ids": [],
+      "public_item_id": "SJC-CN-20260802-0001",
+      "published_date": "2026-08-05",
+      "related_item_ids": [
+        "SJC-SL-20260807-0003",
+        "SJC-SL-20260809-0003",
+        "SJC-BF-202508-0011",
+        "SJC-BF-202508-0010",
+        "SJC-BF-202508-0013",
+        "SJC-BF-202508-0020",
+        "SJC-BF-202508-0021",
+        "SJC-BF-202509-0014",
+        "SJC-CN-20260626-0001",
+        "SJC-SL-20260809-0005",
+        "SJC-SL-20260809-0006",
+        "SJC-SL-20260807-0004",
+        "SJC-UTIL-20260603-0003",
+        "SJC-UD-20260626-0001",
+        "SJC-UTIL-20260603-0001",
+        "SJC-UTIL-20260603-0004",
+        "SJC-UTIL-20260603-0005",
+        "SJC-UD-20260704-0001",
+        "SJC-BF-202605-0005",
+        "SJC-SL-20260704-0004",
+        "SJC-SL-20260704-0001"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "near_silverleaf",
+      "role": "latest",
+      "sensitivity_display": "none",
+      "source_date": "2026-07-20",
+      "source_name": "St. Johns County",
+      "source_url": "https://www.sjcfl.us/county-road-16a-closures-detours-three-july-august-weekends/",
+      "summary": "County Road 16A is scheduled to close between Timberwolf Trail and River Reach Parkway from 8 p.m. Friday, August 7, through 5 a.m. Monday, August 10, for First Coast Expressway pipe installation. Drivers will be detoured via State Roads 16 and 13.",
+      "title": "County Road 16A Weekend Closure Scheduled August 7–10",
+      "topic_ids": [
+        "transportation",
+        "infrastructure"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "The closure may affect travel between SilverLeaf and destinations east of the community during the weekend."
+    },
+    {
+      "display_topic": "utilities_water",
+      "entity_ids": [],
+      "place_ids": [],
+      "public_item_id": "SJC-UD-20260704-0001",
+      "published_date": "2026-08-09",
+      "related_item_ids": [
+        "SJC-SL-20260807-0003",
+        "SJC-SL-20260809-0003",
+        "SJC-CN-20260626-0001",
+        "SJC-CN-20260802-0001",
+        "SJC-CN-20260802-0004",
+        "SJC-CN-20260802-0003",
+        "SJC-SL-20260809-0005",
+        "SJC-SL-20260809-0006",
+        "SJC-SL-20260807-0004",
+        "SJC-UTIL-20260603-0003",
+        "SJC-UD-20260626-0001",
+        "SJC-UTIL-20260603-0001",
+        "SJC-UTIL-20260603-0004",
+        "SJC-UTIL-20260603-0005",
+        "SJC-UD-20260704-0002",
+        "SJC-BF-202605-0014",
+        "SJC-BF-202605-0005",
+        "SJC-SL-20260704-0004",
+        "SJC-SL-20260704-0001"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "countywide_impact",
+      "role": "browse",
+      "sensitivity_display": "none",
+      "source_date": "2026-07-04",
+      "source_name": "St. Johns County Utility Department",
+      "source_url": "https://www.sjcfl.us/departments/utility-department/",
+      "summary": "Completed capital project: $1.6M improvement at Plantation Water Treatment Plant.",
+      "title": "St. Johns County Completes $1.6 Million Capital Improvement Project at Plantation Water Treatment Plant",
+      "topic_ids": [
+        "infrastructure",
+        "county_government"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "St. Johns County Completes $1.6 Million Capital Improvement Project at Plantation Water Treatment Plant"
+    },
+    {
+      "display_topic": "utilities_water",
+      "entity_ids": [],
+      "place_ids": [],
+      "public_item_id": "SJC-UD-20260704-0002",
+      "published_date": "2026-08-09",
+      "related_item_ids": [
+        "SJC-CN-20260802-0004",
+        "SJC-CN-20260802-0003",
+        "SJC-UTIL-20260603-0003",
+        "SJC-UD-20260626-0001",
+        "SJC-UD-20260704-0001",
+        "SJC-BF-202605-0014"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "countywide_impact",
+      "role": "browse",
+      "sensitivity_display": "none",
+      "source_date": "2026-07-04",
+      "source_name": "St. Johns County Utility Department",
+      "source_url": "https://www.sjcfl.us/departments/utility-department/",
+      "summary": "Utility Department received high Moody's rating for strong financial management.",
+      "title": "St. Johns County Utility Department Earns High Moody's Rating, Reflecting Strong Financial Management",
+      "topic_ids": [
+        "county_government"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "St. Johns County Utility Department Earns High Moody's Rating, Reflecting Strong Financial Management"
+    },
+    {
+      "display_topic": "utilities_water",
+      "entity_ids": [],
+      "place_ids": [],
+      "public_item_id": "SJC-CN-20260626-0001",
+      "published_date": "2026-08-07",
+      "related_item_ids": [
+        "SJC-SL-20260807-0003",
+        "SJC-SL-20260809-0003",
+        "SJC-CN-20260802-0001",
+        "SJC-SL-20260809-0005",
+        "SJC-SL-20260809-0006",
+        "SJC-SL-20260807-0004",
+        "SJC-BF-202605-0021",
+        "SJC-EM-20260626-0001",
+        "SJC-UTIL-20260603-0003",
+        "SJC-UD-20260626-0001",
+        "SJC-UTIL-20260603-0001",
+        "SJC-UTIL-20260603-0004",
+        "SJC-UTIL-20260603-0005",
+        "SJC-UD-20260704-0001",
+        "SJC-BF-202605-0005",
+        "SJC-SL-20260704-0004",
+        "SJC-SL-20260704-0001"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "countywide_impact",
+      "role": "latest",
+      "sensitivity_display": "none",
+      "source_date": "2026-06-23",
+      "source_name": "St. Johns County",
+      "source_url": "https://www.sjcfl.us/news/",
+      "summary": "St. Johns County's $191.8 million SR 207 Water Reclamation Facility is now operational, protecting water resources and expanding reclaimed water capacity.",
+      "title": "SJC's Largest-Ever Capital Improvement Project Now Serving Residents",
+      "topic_ids": [
+        "infrastructure",
+        "environment"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "Expanded reclaimed water capacity supports growth and drought resilience. Largest single infrastructure investment in county history."
+    },
+    {
+      "display_topic": "local_business",
+      "entity_ids": [
+        "ENT-HEALTH-BAPTIST-SILVERLEAF"
+      ],
+      "lifecycle": "completed",
+      "lifecycle_label": "Open",
+      "place_ids": [
+        "silverleaf"
+      ],
+      "public_item_id": "SJC-SL-20260807-0002",
+      "published_date": "2026-08-07",
+      "related_item_ids": [
+        "SJC-SL-20260809-0002",
+        "SJC-SL-20260807-0005",
+        "SJC-UTIL-20260603-0005"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "in_silverleaf",
+      "role": "latest",
+      "sensitivity_display": "none",
+      "source_date": "2026-06-23",
+      "source_name": "Baptist Health",
+      "source_url": "https://www.baptistjax.com/",
+      "summary": "Baptist Health opened its first-phase outpatient medical campus in SilverLeaf on June 23, 2026, adding hospital-grade outpatient care (imaging, labs, physician offices and an emergency center component) to the community. The campus was permitted for $16.8 million in January 2025 and received approval for a helipad addition in April 2026. Baptist Health is the facility operator and a first-party source for its own campus.",
+      "title": "Baptist SilverLeaf outpatient medical campus now open",
+      "topic_ids": [
+        "health_wellness",
+        "economic_development"
+      ],
+      "verification_display": "Cross-referenced with another source",
+      "why_it_matters": "Closer access to Baptist outpatient services and emergency-adjacent care is a significant household convenience; a helipad approval signals the campus can support air-transport when needed."
+    },
+    {
+      "display_topic": "utilities_water",
+      "entity_ids": [],
+      "place_ids": [],
+      "public_item_id": "SJC-UTIL-20260603-0004",
+      "published_date": "2026-08-07",
+      "related_item_ids": [
+        "SJC-SL-20260807-0003",
+        "SJC-SL-20260809-0003",
+        "SJC-CN-20260626-0001",
+        "SJC-CN-20260802-0001",
+        "SJC-SL-20260809-0005",
+        "SJC-SL-20260809-0006",
+        "SJC-SL-20260807-0004",
+        "SJC-UTIL-20260603-0003",
+        "SJC-UD-20260626-0001",
+        "SJC-UTIL-20260603-0001",
+        "SJC-UTIL-20260603-0005",
+        "SJC-UD-20260704-0001",
+        "SJC-BF-202605-0005",
+        "SJC-SL-20260704-0004",
+        "SJC-SL-20260704-0001"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "countywide_impact",
+      "role": "browse",
+      "sensitivity_display": "none",
+      "source_date": "2026-06-03",
+      "source_name": "St. Johns County Utility Department",
+      "source_url": "https://www.sjcfl.us/departments/utility-department/",
+      "summary": "St. Johns County celebrated completion of the new $4.6 million Utilities Lab with a ribbon-cutting ceremony. The lab features corrosion-resistant cabinets, walk-in cooler for sample storage, lab sinks with de-ionized water, and backup generator.\n",
+      "title": "$4.6 Million Utilities Lab Ribbon-Cutting and Open House",
+      "topic_ids": [
+        "infrastructure"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "Improved water testing lab supports water quality monitoring and compliance. Indirect benefit to all county water customers.\n"
+    },
+    {
+      "display_topic": "utilities_water",
+      "entity_ids": [],
+      "place_ids": [],
+      "public_item_id": "SJC-UTIL-20260603-0005",
+      "published_date": "2026-08-05",
+      "related_item_ids": [
+        "SJC-SL-20260807-0002",
+        "SJC-SL-20260809-0002",
+        "SJC-SL-20260807-0003",
+        "SJC-SL-20260809-0003",
+        "SJC-CN-20260626-0001",
+        "SJC-CN-20260802-0001",
+        "SJC-SL-20260809-0005",
+        "SJC-SL-20260809-0006",
+        "SJC-SL-20260807-0004",
+        "SJC-UTIL-20260603-0003",
+        "SJC-UD-20260626-0001",
+        "SJC-UTIL-20260603-0001",
+        "SJC-UTIL-20260603-0004",
+        "SJC-UD-20260704-0001",
+        "SJC-BF-202605-0005",
+        "SJC-SL-20260704-0004",
+        "SJC-SL-20260704-0001"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "countywide_impact",
+      "role": "latest",
+      "sensitivity_display": "none",
+      "source_date": "2026-06-03",
+      "source_name": "St. Johns County Utility Department",
+      "source_url": "https://www.sjcfl.us/departments/utility-department/",
+      "summary": "The county utility is inventorying water service line materials under the EPA Community Lead-Safe Hub program. Customers may be contacted to allow an inspection of the pipe from the street to the home.",
+      "title": "Utility Department Water Service Line Material Inventory",
+      "topic_ids": [
+        "infrastructure",
+        "health_wellness"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "The inventory is intended to identify service-line materials and determine whether any further action is needed. Some county utility customers may be contacted to allow an inspection between the street and the home."
+    },
+    {
+      "display_topic": "emergency_preparedness",
+      "entity_ids": [],
+      "place_ids": [
+        "countywide"
+      ],
+      "public_item_id": "SJC-EM-20260626-0001",
+      "published_date": "2026-08-05",
+      "related_item_ids": [
+        "SJC-CN-20260626-0001",
+        "SJC-BF-202605-0021",
+        "SJC-UTIL-20260603-0001",
+        "SJC-BF-202605-0005"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "countywide_impact",
+      "role": "latest",
+      "sensitivity_display": "none",
+      "source_date": "2026-06-01",
+      "source_name": "St. Johns County Emergency Management",
+      "source_url": "https://www.sjcfl.us/departments/emergency-mgmt/",
+      "summary": "St. Johns County Emergency Management urges residents to prepare for the 2026 Atlantic Hurricane Season, which began June 1. Highlights simple steps to protect lives and property.",
+      "title": "Residents Urged to Prepare as 2026 Atlantic Hurricane Season Begins",
+      "topic_ids": [
+        "public_safety",
+        "emergency_alerts",
+        "environment"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "Hurricane season began June 1. Residents should review household plans, confirm their evacuation zone, and sign up for Alert St. Johns."
+    },
+    {
+      "display_topic": "local_business",
+      "entity_ids": [
+        "ENT-HEALTH-ASCENSION-NOCATEE",
+        "ENT-MIXED-NOCATEE-CROSSWATER"
+      ],
+      "lifecycle": "under_construction",
+      "lifecycle_label": "Under construction",
+      "place_ids": [
+        "nocatee"
+      ],
+      "public_item_id": "SJC-SL-20260704-0006",
+      "published_date": "2026-08-07",
+      "qualified": true,
+      "qualified_label": "Tenant timeline unconfirmed",
+      "related_item_ids": [
+        "SJC-SL-20260807-0005",
+        "SJC-BF-202508-0013",
+        "SJC-BF-202508-0021",
+        "SJC-SL-20260807-0001",
+        "SJC-SL-20260704-0005",
+        "SJC-SL-20260704-0001",
+        "SJC-SL-20260704-0003"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "near_silverleaf",
+      "role": "browse",
+      "sensitivity_display": "none",
+      "source_date": "2026-06-01",
+      "source_name": "St. Johns Citizen",
+      "source_url": "https://sjcitizen.com/exclusive-heres-what-coming-to-new-nocatee-retail-center-across-from-water-park/",
+      "summary": "An Ascension St. Vincent's primary care center is planned for a six-storefront commercial strip along Crosswater Parkway in Nocatee, directly across from Splash Water Park. The center will occupy three of the six units, providing adult and pediatric care including physicals, screenings, and treatment for minor illnesses and injuries.",
+      "title": "Exclusive: Here's what coming to new Nocatee retail center across from water park",
+      "topic_ids": [
+        "development",
+        "healthcare"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "Brings accessible healthcare directly into Nocatee's commercial core, making routine checkups and minor medical care more convenient for residents."
+    },
+    {
+      "display_topic": "schools_community",
+      "entity_ids": [],
+      "place_ids": [
+        "countywide"
+      ],
+      "public_item_id": "SJC-BF-202605-0008",
+      "published_date": "2026-08-07",
+      "related_item_ids": [
+        "SJC-BF-202605-0011",
+        "SJC-BF-202605-0013",
+        "SJC-BF-202605-0015",
+        "SJC-BF-202605-0014",
+        "SJC-BF-202508-0005",
+        "SJC-BF-202509-0005",
+        "SJC-BF-202509-0006",
+        "SJC-SL-20260809-0001",
+        "SJC-SL-20260807-0001",
+        "SJC-BF-202508-0006",
+        "SJC-BF-202508-0007",
+        "SJC-BF-202508-0008",
+        "SJC-BF-202509-0008"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "countywide_impact",
+      "role": "latest",
+      "sensitivity_display": "none",
+      "source_date": "2026-05-26",
+      "source_name": "St. Johns County School District",
+      "source_url": "https://www.stjohns.k12.fl.us/",
+      "summary": "St. Johns County School District announced St. Johns Compass, a new program launching August 2026 to expand access to high-quality public education for eligible students.\n",
+      "title": "SJCSD Launches St. Johns Compass Program for August 2026",
+      "topic_ids": [
+        "education"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "New educational options may affect school choice decisions for families. Program details to be clarified before August launch.\n"
+    },
+    {
+      "display_topic": "schools_community",
+      "entity_ids": [],
+      "place_ids": [
+        "countywide"
+      ],
+      "public_item_id": "SJC-BF-202605-0015",
+      "published_date": "2026-08-09",
+      "related_item_ids": [
+        "SJC-BF-202605-0011",
+        "SJC-BF-202605-0013",
+        "SJC-BF-202605-0008",
+        "SJC-BF-202605-0014",
+        "SJC-BF-202508-0005",
+        "SJC-BF-202509-0005",
+        "SJC-BF-202509-0006",
+        "SJC-SL-20260809-0001",
+        "SJC-SL-20260807-0001",
+        "SJC-BF-202508-0006",
+        "SJC-BF-202508-0007",
+        "SJC-BF-202508-0008",
+        "SJC-BF-202509-0008"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "countywide_impact",
+      "role": "browse",
+      "sensitivity_display": "none",
+      "source_date": "2026-05-26",
+      "source_name": "St. Johns County School District",
+      "source_url": "https://www.stjohns.k12.fl.us/",
+      "summary": "St. Johns County School District held the STAR Awards 2026, recognizing outstanding students, teachers, and staff across the district.\n",
+      "title": "SJCSD STAR Awards 2026",
+      "topic_ids": [
+        "education"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "Recognition of educational excellence reinforces quality of local schools and community pride.\n"
+    },
+    {
+      "display_topic": "emergency_preparedness",
+      "entity_ids": [],
+      "place_ids": [
+        "countywide"
+      ],
+      "public_item_id": "SJC-BF-202605-0021",
+      "published_date": "2026-08-07",
+      "related_item_ids": [
+        "SJC-CN-20260626-0001",
+        "SJC-EM-20260626-0001",
+        "SJC-UTIL-20260603-0001",
+        "SJC-BF-202605-0005"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "countywide_impact",
+      "role": "browse",
+      "sensitivity_display": "none",
+      "source_date": "2026-05-26",
+      "source_name": "St. Johns County Emergency Management",
+      "source_url": "https://www.sjcfl.us/departments/emergency-mgmt/",
+      "summary": "St. Johns County Emergency Management began hurricane season preparedness messaging in May 2026 ahead of the June 1 start of hurricane season, promoting awareness, alerts, and readiness.\n",
+      "title": "SJC Emergency Management — Hurricane Season Preparedness Messaging",
+      "topic_ids": [
+        "public_safety",
+        "emergency_alerts",
+        "environment"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "Annual hurricane preparedness push. Residents should review plans, sign up for Alert St. Johns, and know their evacuation zone before a storm threatens.\n"
+    },
+    {
+      "display_topic": "schools_community",
+      "entity_ids": [],
+      "place_ids": [
+        "countywide"
+      ],
+      "public_item_id": "SJC-BF-202605-0013",
+      "published_date": "2026-08-09",
+      "related_item_ids": [
+        "SJC-BF-202605-0011",
+        "SJC-BF-202605-0008",
+        "SJC-BF-202605-0015",
+        "SJC-BF-202605-0014",
+        "SJC-BF-202508-0005",
+        "SJC-BF-202509-0005",
+        "SJC-BF-202509-0006",
+        "SJC-SL-20260809-0001",
+        "SJC-SL-20260807-0001",
+        "SJC-BF-202508-0006",
+        "SJC-BF-202508-0007",
+        "SJC-BF-202508-0008",
+        "SJC-BF-202509-0008"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "countywide_impact",
+      "role": "browse",
+      "sensitivity_display": "none",
+      "source_date": "2026-05-21",
+      "source_name": "St. Johns County School District",
+      "source_url": "https://www.stjohns.k12.fl.us/",
+      "summary": "St. Johns County schools maintained an 'A' grade, as reported by the Ponte Vedra Recorder and referenced by the school district on May 21.\n",
+      "title": "SJCSD Maintains 'A' Grade — District-Wide Achievement",
+      "topic_ids": [
+        "education"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "Top school grades support property values and attract families to the area. Confirms continued high-quality education for SJC students.\n"
+    },
+    {
+      "display_topic": "schools_community",
+      "entity_ids": [],
+      "place_ids": [
+        "countywide"
+      ],
+      "public_item_id": "SJC-BF-202605-0011",
+      "published_date": "2026-08-07",
+      "related_item_ids": [
+        "SJC-BF-202605-0013",
+        "SJC-BF-202605-0008",
+        "SJC-BF-202605-0015",
+        "SJC-BF-202605-0014",
+        "SJC-BF-202508-0005",
+        "SJC-BF-202509-0005",
+        "SJC-BF-202509-0006",
+        "SJC-SL-20260809-0001",
+        "SJC-SL-20260807-0001",
+        "SJC-BF-202508-0006",
+        "SJC-BF-202508-0007",
+        "SJC-BF-202508-0008",
+        "SJC-BF-202509-0008"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "countywide_impact",
+      "role": "browse",
+      "sensitivity_display": "none",
+      "source_date": "2026-05-18",
+      "source_name": "St. Johns County School District",
+      "source_url": "https://www.stjohns.k12.fl.us/",
+      "summary": "St. Johns County voters approved continuing the half-cent sales surtax for school capital outlay and adding one mill of operating millage to preserve educational programs during the November 2024 election. Impact continues into 2026.\n",
+      "title": "Community Support for SJCSD Half-Cent Sales Surtax and One Mill Confirmed",
+      "topic_ids": [
+        "education",
+        "taxes"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "Half-cent sales surtax and one-mill property tax continue funding school operations and construction. Affects both taxpayers and the quality of local schools.\n"
+    },
+    {
+      "display_topic": "schools_community",
+      "entity_ids": [],
+      "place_ids": [
+        "countywide"
+      ],
+      "public_item_id": "SJC-BF-202605-0014",
+      "published_date": "2026-08-09",
+      "related_item_ids": [
+        "SJC-CN-20260802-0004",
+        "SJC-CN-20260802-0003",
+        "SJC-BF-202605-0011",
+        "SJC-BF-202605-0013",
+        "SJC-BF-202605-0008",
+        "SJC-BF-202605-0015",
+        "SJC-UTIL-20260603-0003",
+        "SJC-UD-20260626-0001",
+        "SJC-UD-20260704-0001",
+        "SJC-UD-20260704-0002",
+        "SJC-BF-202508-0005",
+        "SJC-BF-202509-0005",
+        "SJC-BF-202509-0006",
+        "SJC-SL-20260809-0001",
+        "SJC-SL-20260807-0001",
+        "SJC-BF-202508-0006",
+        "SJC-BF-202508-0007",
+        "SJC-BF-202508-0008",
+        "SJC-BF-202509-0008"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "countywide_impact",
+      "role": "browse",
+      "sensitivity_display": "none",
+      "source_date": "2026-05-12",
+      "source_name": "School Board BoardDocs",
+      "source_url": "https://www.boarddocs.com/fl/stjohns/Board.nsf/Public",
+      "summary": "St. Johns County School Board held a regular meeting on May 12, 2026. Video archive available. Agenda items included budget, operations, and policy matters.\n",
+      "title": "SJCSD School Board Meeting — May 12, 2026",
+      "topic_ids": [
+        "education",
+        "county_government"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "School Board meetings set policy, approve budgets, and make decisions affecting all SJC schools and families.\n"
+    },
+    {
+      "display_topic": "utilities_water",
+      "entity_ids": [],
+      "place_ids": [
+        "countywide"
+      ],
+      "public_item_id": "SJC-BF-202605-0005",
+      "published_date": "2026-08-07",
+      "related_item_ids": [
+        "SJC-SL-20260807-0003",
+        "SJC-SL-20260809-0003",
+        "SJC-CN-20260626-0001",
+        "SJC-CN-20260802-0001",
+        "SJC-SL-20260809-0005",
+        "SJC-SL-20260809-0006",
+        "SJC-SL-20260807-0004",
+        "SJC-BF-202605-0021",
+        "SJC-EM-20260626-0001",
+        "SJC-UTIL-20260603-0003",
+        "SJC-UD-20260626-0001",
+        "SJC-UTIL-20260603-0001",
+        "SJC-UTIL-20260603-0004",
+        "SJC-UTIL-20260603-0005",
+        "SJC-UD-20260704-0001",
+        "SJC-SL-20260704-0004",
+        "SJC-SL-20260704-0001"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "countywide_impact",
+      "role": "browse",
+      "sensitivity_display": "reviewed_sensitive",
+      "source_date": "2026-05-11",
+      "source_name": "SJRWMD Permitting and Watering Restrictions",
+      "source_url": "https://www.sjrwmd.com/permitting/",
+      "summary": "SJRWMD Phase III Extreme Water Shortage effective May 11. Residential watering limited to one day per week between 8 a.m. and 6 p.m. Reclaimed water exempt. Extreme Drought (D3) conditions cited.\n",
+      "title": "SJRWMD Phase III Extreme Water Shortage — One-Day-Per-Week Irrigation",
+      "topic_ids": [
+        "environment",
+        "infrastructure",
+        "emergency_alerts"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "Mandatory irrigation limits affect all properties with landscaping. Reclaimed water users exempt. Penalties for non-compliance.\n"
+    },
+    {
+      "display_topic": "utilities_water",
+      "entity_ids": [],
+      "place_ids": [],
+      "public_item_id": "SJC-UTIL-20260603-0001",
+      "published_date": "2026-08-05",
+      "related_item_ids": [
+        "SJC-SL-20260807-0003",
+        "SJC-SL-20260809-0003",
+        "SJC-CN-20260626-0001",
+        "SJC-CN-20260802-0001",
+        "SJC-SL-20260809-0005",
+        "SJC-SL-20260809-0006",
+        "SJC-SL-20260807-0004",
+        "SJC-BF-202605-0021",
+        "SJC-EM-20260626-0001",
+        "SJC-UTIL-20260603-0003",
+        "SJC-UD-20260626-0001",
+        "SJC-UTIL-20260603-0004",
+        "SJC-UTIL-20260603-0005",
+        "SJC-UD-20260704-0001",
+        "SJC-BF-202605-0005",
+        "SJC-SL-20260704-0004",
+        "SJC-SL-20260704-0001"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "countywide_impact",
+      "role": "latest",
+      "sensitivity_display": "reviewed_sensitive",
+      "source_date": "2026-05-11",
+      "source_name": "St. Johns County Utility Department",
+      "source_url": "https://www.sjcfl.us/departments/utility-department/",
+      "summary": "The Phase III Extreme Water Shortage remains in effect: outdoor irrigation is limited to one day per week and is prohibited 8 a.m.-6 p.m. Reclaimed-water irrigation is not included in the schedule.",
+      "title": "Phase III Extreme Water Shortage Declaration — Active",
+      "topic_ids": [
+        "environment",
+        "infrastructure",
+        "emergency_alerts"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "SilverLeaf households using potable water for irrigation must follow the one-day-per-week schedule and avoid watering between 8 a.m. and 6 p.m. Properties using reclaimed water are exempt from the one-day schedule."
+    },
+    {
+      "display_topic": "local_business",
+      "entity_ids": [
+        "ENT-REC-BEACH-VALLEY-MINI-GOLF"
+      ],
+      "lifecycle": "proposed",
+      "lifecycle_label": "Proposed",
+      "place_ids": [
+        "silverleaf"
+      ],
+      "public_item_id": "SJC-SL-20260704-0003",
+      "published_date": "2026-08-07",
+      "qualified": true,
+      "qualified_label": "Approval pending",
+      "related_item_ids": [
+        "SJC-SL-20260807-0005",
+        "SJC-BF-202508-0013",
+        "SJC-BF-202508-0021",
+        "SJC-SL-20260807-0001",
+        "SJC-SL-20260704-0005",
+        "SJC-SL-20260704-0001",
+        "SJC-SL-20260704-0006"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "in_silverleaf",
+      "role": "browse",
+      "sensitivity_display": "none",
+      "source_date": "2026-04-08",
+      "source_name": "St. Johns Citizen",
+      "source_url": "https://sjcitizen.com/fore-major-new-2-acre-recreational-attraction-proposed-for-silverleaf-by-husband-and-wife-team/",
+      "summary": "Beach Valley Mini Golf, a 36-hole mini-golf course with a clubhouse, pavilions, and parking, has been proposed on 2 acres in SilverLeaf. The husband-and-wife developer team Michael and Bridgette Goolsby would lease the land from The Hutson Companies, pending county Development Review Committee approval.",
+      "title": "Fore! Major new 2-acre recreational attraction proposed for SilverLeaf by husband and wife team",
+      "topic_ids": [
+        "development"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "Adds an on-site recreational option for families and contributes to SilverLeaf's desirability as a self-contained master-planned community with amenities."
+    },
+    {
+      "display_topic": "local_business",
+      "entity_ids": [
+        "ENT-RETAIL-PUBLIX-SILVERLEAF"
+      ],
+      "lifecycle": "completed",
+      "lifecycle_label": "Completed",
+      "place_ids": [
+        "silverleaf"
+      ],
+      "public_item_id": "SJC-SL-20260704-0001",
+      "published_date": "2026-08-07",
+      "related_item_ids": [
+        "SJC-SL-20260807-0003",
+        "SJC-SL-20260809-0003",
+        "SJC-SL-20260807-0005",
+        "SJC-BF-202508-0013",
+        "SJC-BF-202508-0021",
+        "SJC-CN-20260626-0001",
+        "SJC-CN-20260802-0001",
+        "SJC-SL-20260809-0005",
+        "SJC-SL-20260809-0006",
+        "SJC-SL-20260807-0004",
+        "SJC-UTIL-20260603-0003",
+        "SJC-UD-20260626-0001",
+        "SJC-UTIL-20260603-0001",
+        "SJC-UTIL-20260603-0004",
+        "SJC-UTIL-20260603-0005",
+        "SJC-UD-20260704-0001",
+        "SJC-SL-20260807-0001",
+        "SJC-BF-202605-0005",
+        "SJC-SL-20260704-0004",
+        "SJC-SL-20260704-0005",
+        "SJC-SL-20260704-0003",
+        "SJC-SL-20260704-0006"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "in_silverleaf",
+      "role": "timeline",
+      "sensitivity_display": "none",
+      "source_date": "2026-03-26",
+      "source_name": "St. Johns Citizen",
+      "source_url": "https://sjcitizen.com/heres-your-first-look-at-silverleafs-new-55000-sq-ft-mega-publix/",
+      "summary": "A massive new Publix — one of the chain's largest at 55,701 sq. ft. — has opened at 1975 SilverLeaf Parkway, giving SilverLeaf residents a full-service grocery with specialty departments including a Pours café serving beer and wine, a scratch bakery, custom-cut meats, fresh seafood, a full-service pharmacy, and prepared food stations.",
+      "title": "Here's your first look at SilverLeaf's new 55,000 sq. ft. mega Publix",
+      "topic_ids": [
+        "development",
+        "infrastructure"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "Adds daily grocery shopping convenience within walking/driving distance of SilverLeaf homes, with specialty food and beverage options that function as a local gathering spot."
+    },
+    {
+      "display_topic": "utilities_water",
+      "entity_ids": [],
+      "place_ids": [],
+      "public_item_id": "SJC-UD-20260626-0001",
+      "published_date": "2026-08-09",
+      "related_item_ids": [
+        "SJC-SL-20260807-0003",
+        "SJC-SL-20260809-0003",
+        "SJC-CN-20260626-0001",
+        "SJC-CN-20260802-0001",
+        "SJC-CN-20260802-0004",
+        "SJC-CN-20260802-0003",
+        "SJC-SL-20260809-0005",
+        "SJC-SL-20260809-0006",
+        "SJC-SL-20260807-0004",
+        "SJC-UTIL-20260603-0003",
+        "SJC-UTIL-20260603-0001",
+        "SJC-UTIL-20260603-0004",
+        "SJC-UTIL-20260603-0005",
+        "SJC-UD-20260704-0001",
+        "SJC-UD-20260704-0002",
+        "SJC-BF-202605-0014",
+        "SJC-BF-202605-0005",
+        "SJC-SL-20260704-0004",
+        "SJC-SL-20260704-0001"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "countywide_impact",
+      "role": "browse",
+      "sensitivity_display": "none",
+      "source_date": "2026-03-12",
+      "source_name": "St. Johns County Utility Department",
+      "source_url": "https://www.sjcfl.us/departments/utility-department/",
+      "summary": "The St. Johns County Utilities Department published its 2025 Annual Report, highlighting fiscal responsibility, reliable service delivery, environmental stewardship, and long-term infrastructure planning. Key 2025 projects include Hastings Water Treatment Plant improvements, Northwest Water Reclamation Facility expansion, wellfield expansion projects, and wastewater process upgrades on State Road 16. The report notes residential utility bills remain approximately 10 percent below the regional average.",
+      "title": "SJC Utilities 2025 Annual Report Published",
+      "topic_ids": [
+        "infrastructure",
+        "county_government"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "Annual report confirms residential rates remain approximately 10 percent below regional average. Major infrastructure projects (SR 207 WRF, Hastings WTP improvements) may affect future rates and service reliability. Reclaimed water expansion benefits residents with irrigation needs."
+    },
+    {
+      "display_topic": "utilities_water",
+      "entity_ids": [],
+      "place_ids": [],
+      "public_item_id": "SJC-UTIL-20260603-0003",
+      "published_date": "2026-08-07",
+      "related_item_ids": [
+        "SJC-SL-20260807-0003",
+        "SJC-SL-20260809-0003",
+        "SJC-CN-20260626-0001",
+        "SJC-CN-20260802-0001",
+        "SJC-CN-20260802-0004",
+        "SJC-CN-20260802-0003",
+        "SJC-SL-20260809-0005",
+        "SJC-SL-20260809-0006",
+        "SJC-SL-20260807-0004",
+        "SJC-UD-20260626-0001",
+        "SJC-UTIL-20260603-0001",
+        "SJC-UTIL-20260603-0004",
+        "SJC-UTIL-20260603-0005",
+        "SJC-UD-20260704-0001",
+        "SJC-UD-20260704-0002",
+        "SJC-BF-202605-0014",
+        "SJC-BF-202605-0005",
+        "SJC-SL-20260704-0004",
+        "SJC-SL-20260704-0001"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "countywide_impact",
+      "role": "timeline",
+      "sensitivity_display": "none",
+      "source_date": "2025-12-19",
+      "source_name": "St. Johns County Utility Department",
+      "source_url": "https://www.sjcfl.us/departments/utility-department/",
+      "summary": "St. Johns County BOCC approved Phase 2 of the State Road 207 Water Reclamation Facility Project, awarding a $191.8M design-build agreement with Jacobs Project Management Co. for the new facility and associated improvements.\n",
+      "title": "$191 Million SR 207 Water Reclamation Facility Phase 2 Approved",
+      "topic_ids": [
+        "infrastructure",
+        "county_government"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "Large-scale water reclamation infrastructure supports continued growth in the SR 207 corridor and southern St. Johns County. Construction timeline and rate impacts are not yet specified.\n"
+    },
+    {
+      "display_topic": "local_business",
+      "entity_ids": [
+        "ENT-RETAIL-HARRIS-TEETER-SILVERLEAF",
+        "ENT-RETAIL-CR16A-SL-PKWY-GROCERY"
+      ],
+      "lifecycle": "proposed",
+      "lifecycle_label": "Proposed",
+      "place_ids": [
+        "silverleaf"
+      ],
+      "public_item_id": "SJC-SL-20260704-0005",
+      "published_date": "2026-08-07",
+      "qualified": true,
+      "qualified_label": "Tenant unconfirmed",
+      "related_item_ids": [
+        "SJC-SL-20260807-0005",
+        "SJC-BF-202508-0013",
+        "SJC-BF-202508-0021",
+        "SJC-SL-20260807-0001",
+        "SJC-SL-20260704-0001",
+        "SJC-SL-20260704-0003",
+        "SJC-SL-20260704-0006"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "in_silverleaf",
+      "role": "browse",
+      "sensitivity_display": "none",
+      "source_date": "2025-12-02",
+      "source_name": "St. Johns Citizen",
+      "source_url": "https://sjcitizen.com/st-johns-county-is-getting-two-new-supermarkets-and-theyre-not-publix/",
+      "summary": "Two 61,000 sq. ft. supermarkets from a Kroger-owned chain (identified as Harris Teeter) are proposed for St. Johns County — one at Veterans Parkway and CR 210 West and another in a SilverLeaf shopping center. The applications represent the first major non-Publix grocery competition in the area.",
+      "title": "St. Johns County is getting two new supermarkets — and they're not Publix",
+      "topic_ids": [
+        "development"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "Grocery competition typically means better prices and selection for residents, plus the convenience of a second supermarket location within SilverLeaf itself."
+    },
+    {
+      "display_topic": "roads_traffic",
+      "entity_ids": [
+        "ENT-ROAD-CR-2209-CONNECTOR"
+      ],
+      "lifecycle": "completed",
+      "lifecycle_label": "Completed",
+      "place_ids": [
+        "silverleaf"
+      ],
+      "public_item_id": "SJC-SL-20260704-0004",
+      "published_date": "2026-08-07",
+      "related_item_ids": [
+        "SJC-SL-20260807-0003",
+        "SJC-SL-20260809-0003",
+        "SJC-BF-202508-0011",
+        "SJC-BF-202508-0010",
+        "SJC-BF-202508-0013",
+        "SJC-BF-202508-0020",
+        "SJC-BF-202508-0021",
+        "SJC-BF-202509-0014",
+        "SJC-CN-20260626-0001",
+        "SJC-CN-20260802-0001",
+        "SJC-SL-20260809-0005",
+        "SJC-SL-20260809-0006",
+        "SJC-SL-20260807-0004",
+        "SJC-UTIL-20260603-0003",
+        "SJC-UD-20260626-0001",
+        "SJC-UTIL-20260603-0001",
+        "SJC-UTIL-20260603-0004",
+        "SJC-UTIL-20260603-0005",
+        "SJC-UD-20260704-0001",
+        "SJC-BF-202605-0005",
+        "SJC-SL-20260704-0001"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "in_silverleaf",
+      "role": "timeline",
+      "sensitivity_display": "none",
+      "source_date": "2025-10-28",
+      "source_name": "St. Johns Citizen",
+      "source_url": "https://sjcitizen.com/road-relief-heres-your-first-look-at-st-johns-countys-newest-highway/",
+      "summary": "County Road 2209 opened October 28, 2025, connecting International Golf Parkway to SilverLeaf Parkway with a four-lane divided roadway spanning three miles. The new route aims to relieve congestion in the rapidly growing area, particularly around Tocoi Creek High School which serves over 2,700 students.",
+      "title": "Road relief: Here's your first look at St. Johns County's newest highway",
+      "topic_ids": [
+        "infrastructure",
+        "transportation"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "Directly improves daily commute times for SilverLeaf residents heading to I-95, World Golf Village, and western St. Johns County employment centers."
+    },
+    {
+      "display_topic": "roads_traffic",
+      "entity_ids": [],
+      "place_ids": [],
+      "public_item_id": "SJC-BF-202509-0014",
+      "published_date": "2026-08-09",
+      "related_item_ids": [
+        "SJC-SL-20260807-0003",
+        "SJC-SL-20260809-0003",
+        "SJC-BF-202508-0011",
+        "SJC-BF-202508-0010",
+        "SJC-BF-202508-0013",
+        "SJC-BF-202508-0020",
+        "SJC-BF-202508-0021",
+        "SJC-CN-20260802-0001",
+        "SJC-SL-20260809-0005",
+        "SJC-SL-20260809-0006",
+        "SJC-SL-20260807-0004",
+        "SJC-SL-20260704-0004"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "countywide_impact",
+      "role": "browse",
+      "sensitivity_display": "none",
+      "source_date": "2025-09-29",
+      "source_name": "St. Johns County",
+      "source_url": "https://www.sjcfl.us/raised-pavement-markers-replacement-program/",
+      "summary": "St. Johns County continued its Raised Pavement Markers Replacement Program, installing new reflective markers on county roads to improve nighttime visibility and driving safety.",
+      "title": "Raised Pavement Markers Replacement Program",
+      "topic_ids": [
+        "transportation"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "Well-maintained pavement markers are critical for safe nighttime driving, especially on rural and unlit county roads."
+    },
+    {
+      "display_topic": "schools_community",
+      "entity_ids": [],
+      "place_ids": [
+        "silverleaf",
+        "nocatee"
+      ],
+      "public_item_id": "SJC-BF-202509-0008",
+      "published_date": "2026-08-07",
+      "related_item_ids": [
+        "SJC-BF-202605-0011",
+        "SJC-BF-202605-0013",
+        "SJC-BF-202605-0008",
+        "SJC-BF-202605-0015",
+        "SJC-BF-202605-0014",
+        "SJC-BF-202508-0005",
+        "SJC-BF-202509-0005",
+        "SJC-BF-202509-0006",
+        "SJC-SL-20260809-0001",
+        "SJC-SL-20260807-0001",
+        "SJC-BF-202508-0006",
+        "SJC-BF-202508-0007",
+        "SJC-BF-202508-0008"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "in_silverleaf",
+      "role": "timeline",
+      "sensitivity_display": "none",
+      "source_date": "2025-09-25",
+      "source_name": "Web discovery (backfill)",
+      "source_url": "https://www.stjohns.k12.fl.us/news/st-johns-county-school-district-discussing-names-mascots-for-new-schools/",
+      "summary": "St. Johns County School District initiated community engagement for the naming and mascot selection of two new K-8 schools: School QQ in Silverleaf and School RR in Nocatee. Virtual meetings were held to gather input from residents on school names and mascots for the schools projected to open for the 2026-2027 school year.",
+      "title": "SJCSD Begins Community Engagement for Naming and Mascot Selection of Schools QQ and RR",
+      "topic_ids": [
+        "education"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "School names and mascots establish community identity and school culture for decades to come. Community input ensures the schools reflect local heritage and values."
+    },
+    {
+      "display_topic": "schools_community",
+      "entity_ids": [],
+      "lifecycle": "under_construction",
+      "lifecycle_label": "Under construction",
+      "place_ids": [
+        "silverleaf",
+        "nocatee"
+      ],
+      "public_item_id": "SJC-BF-202509-0006",
+      "published_date": "2026-08-07",
+      "related_item_ids": [
+        "SJC-BF-202605-0011",
+        "SJC-BF-202605-0013",
+        "SJC-BF-202605-0008",
+        "SJC-BF-202605-0015",
+        "SJC-BF-202605-0014",
+        "SJC-BF-202508-0005",
+        "SJC-BF-202509-0005",
+        "SJC-SL-20260809-0001",
+        "SJC-SL-20260807-0001",
+        "SJC-BF-202508-0006",
+        "SJC-BF-202508-0007",
+        "SJC-BF-202508-0008",
+        "SJC-BF-202509-0008"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "in_silverleaf",
+      "role": "timeline",
+      "sensitivity_display": "none",
+      "source_date": "2025-09-15",
+      "source_name": "SJC School District — new schools",
+      "source_url": "https://www.stjohns.k12.fl.us/newschools/",
+      "summary": "St. Johns County School District provided an update on two new K-8 schools under construction: School QQ in the Silverleaf DRI (Parcel 29C) and School RR in Nocatee's Seabrook area (formerly Snowden Village). Both schools have a capacity of approximately 1,500 students each and are projected to open for the 2026-2027 school year.",
+      "title": "SJCSD Provides Construction Update on K-8 Schools QQ and RR in Silverleaf and Nocatee",
+      "topic_ids": [
+        "education",
+        "school_capacity"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "These schools will relieve enrollment pressure on existing schools in the northwest and northeast growth corridors when they open for the 2026-2027 school year."
+    },
+    {
+      "display_topic": "schools_community",
+      "entity_ids": [],
+      "place_ids": [
+        "hallowes_cove",
+        "silverleaf"
+      ],
+      "public_item_id": "SJC-BF-202509-0005",
+      "published_date": "2026-08-07",
+      "related_item_ids": [
+        "SJC-BF-202605-0011",
+        "SJC-BF-202605-0013",
+        "SJC-BF-202605-0008",
+        "SJC-BF-202605-0015",
+        "SJC-BF-202605-0014",
+        "SJC-BF-202508-0005",
+        "SJC-BF-202509-0006",
+        "SJC-SL-20260809-0001",
+        "SJC-SL-20260807-0001",
+        "SJC-BF-202508-0006",
+        "SJC-BF-202508-0007",
+        "SJC-BF-202508-0008",
+        "SJC-BF-202509-0008"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "near_silverleaf",
+      "role": "browse",
+      "sensitivity_display": "none",
+      "source_date": "2025-09-01",
+      "source_name": "SJC School District — main site",
+      "source_url": "https://www-hca.stjohns.k12.fl.us/",
+      "summary": "Hallowes Cove Academy, St. Johns County School District's newest K-8 school, welcomed its first cohort of students for the 2025-2026 school year in September. Led by Principal Jessley Hathaway with the Hurricanes mascot, the school serves grades K-8 with extended day programs in the Silverleaf area.",
+      "title": "Hallowes Cove Academy Welcomes First Students for Inaugural School Year",
+      "topic_ids": [
+        "education",
+        "school_capacity"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "The school's opening reduces overcrowding at nearby schools and provides a modern educational facility for families in one of Florida's fastest-growing counties."
+    },
+    {
+      "display_topic": "roads_traffic",
+      "entity_ids": [],
+      "place_ids": [],
+      "public_item_id": "SJC-BF-202508-0021",
+      "published_date": "2026-08-07",
+      "related_item_ids": [
+        "SJC-SL-20260807-0003",
+        "SJC-SL-20260809-0003",
+        "SJC-SL-20260807-0005",
+        "SJC-BF-202508-0011",
+        "SJC-BF-202508-0010",
+        "SJC-BF-202508-0013",
+        "SJC-BF-202508-0020",
+        "SJC-BF-202509-0014",
+        "SJC-CN-20260802-0001",
+        "SJC-SL-20260809-0005",
+        "SJC-SL-20260809-0006",
+        "SJC-SL-20260807-0004",
+        "SJC-SL-20260807-0001",
+        "SJC-SL-20260704-0004",
+        "SJC-SL-20260704-0005",
+        "SJC-SL-20260704-0001",
+        "SJC-SL-20260704-0003",
+        "SJC-SL-20260704-0006"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "near_silverleaf",
+      "role": "timeline",
+      "sensitivity_display": "none",
+      "source_date": "2025-08-29",
+      "source_name": "St. Johns County",
+      "source_url": "https://www.sjcfl.us/sjc-groundbreaking-sr-16-international-golf-parkway-project/",
+      "summary": "St. Johns County officials held a groundbreaking ceremony at the intersection of SR 16 and International Golf Parkway on Aug. 25, 2025 to celebrate the start of improvements to the intersection. The $25 million project, led by SJC Public Works, will expand SR 16 from two lanes to four lanes, including drainage upgrades, sidewalks, and a traffic signal.",
+      "title": "County Celebrates Start of SR 16 and International Golf Parkway Improvements Project with Groundbreaking Ceremony",
+      "topic_ids": [
+        "transportation",
+        "development"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "This $25 million project is a major investment in transportation infrastructure that will improve one of the busiest intersections in western St. Johns County, supporting continued growth."
+    },
+    {
+      "display_topic": "roads_traffic",
+      "entity_ids": [],
+      "place_ids": [],
+      "public_item_id": "SJC-BF-202508-0020",
+      "published_date": "2026-08-07",
+      "related_item_ids": [
+        "SJC-SL-20260807-0003",
+        "SJC-SL-20260809-0003",
+        "SJC-BF-202508-0011",
+        "SJC-BF-202508-0010",
+        "SJC-BF-202508-0013",
+        "SJC-BF-202508-0021",
+        "SJC-BF-202509-0014",
+        "SJC-CN-20260802-0001",
+        "SJC-SL-20260809-0005",
+        "SJC-SL-20260809-0006",
+        "SJC-SL-20260807-0004",
+        "SJC-SL-20260704-0004"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "near_silverleaf",
+      "role": "timeline",
+      "sensitivity_display": "none",
+      "source_date": "2025-08-22",
+      "source_name": "St. Johns County",
+      "source_url": "https://www.sjcfl.us/sr-16-widening-project-from-igp-to-i-95-public-hearing/",
+      "summary": "FDOT hosted hybrid public hearings to discuss the proposed State Road 16 widening project from International Golf Parkway to I-95. A virtual public hearing was held Aug. 26, 2025 and an in-person hearing on Aug. 28, 2025 at the World Golf Village Renaissance, with registration available at nflroads.com.",
+      "title": "State Road 16 Widening Project from International Golf Parkway to I-95 Public Hearing",
+      "topic_ids": [
+        "transportation"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "SR 16 is a primary arterial serving rapid growth in western St. Johns County. Widening from two to four lanes will significantly improve traffic flow for thousands of daily commuters."
+    },
+    {
+      "display_topic": "schools_community",
+      "entity_ids": [],
+      "place_ids": [],
+      "public_item_id": "SJC-BF-202508-0008",
+      "published_date": "2026-08-07",
+      "related_item_ids": [
+        "SJC-BF-202605-0011",
+        "SJC-BF-202605-0013",
+        "SJC-BF-202605-0008",
+        "SJC-BF-202605-0015",
+        "SJC-BF-202605-0014",
+        "SJC-BF-202508-0005",
+        "SJC-BF-202509-0005",
+        "SJC-BF-202509-0006",
+        "SJC-SL-20260809-0001",
+        "SJC-SL-20260807-0001",
+        "SJC-BF-202508-0006",
+        "SJC-BF-202508-0007",
+        "SJC-BF-202509-0008"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "countywide_impact",
+      "role": "browse",
+      "sensitivity_display": "none",
+      "source_date": "2025-08-20",
+      "source_name": "SJC School District — news",
+      "source_url": "https://www.stjohns.k12.fl.us/news/attendance-zoning-plans/",
+      "summary": "St. Johns County School District presented final attendance zoning plans establishing school attendance boundaries for the 2025-2026 school year. The plans incorporate adjustments for the opening of Hallowes Cove Academy and address capacity needs across the district's growing areas including Silverleaf and Nocatee.",
+      "title": "SJCSD Presents Final Attendance Zoning Plans for 2025-2026 School Year",
+      "topic_ids": [
+        "education",
+        "school_capacity"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "Final attendance zones determine school eligibility for students and affect planning for families with school-aged children, particularly in areas experiencing rezoning due to new school openings."
+    },
+    {
+      "display_topic": "roads_traffic",
+      "entity_ids": [],
+      "place_ids": [
+        "silverleaf"
+      ],
+      "public_item_id": "SJC-BF-202508-0013",
+      "published_date": "2026-08-07",
+      "related_item_ids": [
+        "SJC-SL-20260807-0003",
+        "SJC-SL-20260809-0003",
+        "SJC-SL-20260807-0005",
+        "SJC-BF-202508-0011",
+        "SJC-BF-202508-0010",
+        "SJC-BF-202508-0020",
+        "SJC-BF-202508-0021",
+        "SJC-BF-202509-0014",
+        "SJC-CN-20260802-0001",
+        "SJC-SL-20260809-0005",
+        "SJC-SL-20260809-0006",
+        "SJC-SL-20260807-0004",
+        "SJC-SL-20260807-0001",
+        "SJC-SL-20260704-0004",
+        "SJC-SL-20260704-0005",
+        "SJC-SL-20260704-0001",
+        "SJC-SL-20260704-0003",
+        "SJC-SL-20260704-0006"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "in_silverleaf",
+      "role": "timeline",
+      "sensitivity_display": "none",
+      "source_date": "2025-08-20",
+      "source_name": "St. Johns County",
+      "source_url": "https://www.sjcfl.us/sjc-county-road-2209-roadway-expansion-underway/",
+      "summary": "St. Johns County commenced construction on a major roadway expansion project along County Road 2209, building a new four-lane corridor between Silverleaf Parkway and State Road 16 to improve traffic flow in the northern part of the county. The project supports long-term mobility needs and upholds the county's obligations to FDOT to alleviate traffic challenges on I-95.",
+      "title": "County Road 2209 Roadway Expansion Underway in St. Johns County",
+      "topic_ids": [
+        "transportation",
+        "development"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "This is a major corridor project that will transform transportation in the fastest-growing area of the county, connecting two major east-west routes (CR 210 and SR 16) and relieving I-95 congestion."
+    },
+    {
+      "display_topic": "schools_community",
+      "entity_ids": [],
+      "place_ids": [],
+      "public_item_id": "SJC-BF-202508-0007",
+      "published_date": "2026-08-07",
+      "related_item_ids": [
+        "SJC-BF-202605-0011",
+        "SJC-BF-202605-0013",
+        "SJC-BF-202605-0008",
+        "SJC-BF-202605-0015",
+        "SJC-BF-202605-0014",
+        "SJC-BF-202508-0005",
+        "SJC-BF-202509-0005",
+        "SJC-BF-202509-0006",
+        "SJC-SL-20260809-0001",
+        "SJC-SL-20260807-0001",
+        "SJC-BF-202508-0006",
+        "SJC-BF-202508-0008",
+        "SJC-BF-202509-0008"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "countywide_impact",
+      "role": "browse",
+      "sensitivity_display": "none",
+      "source_date": "2025-08-15",
+      "source_name": "SJC School District — news",
+      "source_url": "https://www.stjohns.k12.fl.us/news/revised-attendance-zoning-proposal/",
+      "summary": "St. Johns County School District released a revised attendance zoning proposal after receiving community input on initial boundary recommendations. The revised proposal addresses concerns from affected neighborhoods and adjusts proposed zone lines for schools serving the Silverleaf and Nocatee growth corridors.",
+      "title": "SJCSD Releases Revised Attendance Zoning Proposal Following Community Feedback",
+      "topic_ids": [
+        "education",
+        "school_capacity"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "Revised boundaries directly impact school assignments and may affect property values and daily commutes for families in affected neighborhoods."
+    },
+    {
+      "display_topic": "schools_community",
+      "entity_ids": [],
+      "place_ids": [
+        "hallowes_cove",
+        "silverleaf"
+      ],
+      "public_item_id": "SJC-BF-202508-0005",
+      "published_date": "2026-08-07",
+      "related_item_ids": [
+        "SJC-BF-202605-0011",
+        "SJC-BF-202605-0013",
+        "SJC-BF-202605-0008",
+        "SJC-BF-202605-0015",
+        "SJC-BF-202605-0014",
+        "SJC-BF-202509-0005",
+        "SJC-BF-202509-0006",
+        "SJC-SL-20260809-0001",
+        "SJC-SL-20260807-0001",
+        "SJC-BF-202508-0006",
+        "SJC-BF-202508-0007",
+        "SJC-BF-202508-0008",
+        "SJC-BF-202509-0008"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "near_silverleaf",
+      "role": "browse",
+      "sensitivity_display": "none",
+      "source_date": "2025-08-11",
+      "source_name": "SJC School District — main site",
+      "source_url": "https://www-hca.stjohns.k12.fl.us/",
+      "summary": "Hallowes Cove Academy, St. Johns County School District's newest K-8 school, opened its doors for the 2025-2026 school year. The school, led by Principal Jessley Hathaway and featuring the Hurricanes mascot, serves students in grades K-8 with extended day programs. The school's dedicated website and branding materials were finalized in April 2025 ahead of the August opening.",
+      "title": "Hallowes Cove Academy Opens as St. Johns County's Newest K-8 School for 2025-2026",
+      "topic_ids": [
+        "education",
+        "school_capacity"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "This new school relieves enrollment pressure on existing schools in the northwest St. Johns County corridor and offers a new educational option for families in the rapidly developing Silverleaf area."
+    },
+    {
+      "display_topic": "roads_traffic",
+      "entity_ids": [],
+      "place_ids": [],
+      "public_item_id": "SJC-BF-202508-0010",
+      "published_date": "2026-08-07",
+      "related_item_ids": [
+        "SJC-SL-20260807-0003",
+        "SJC-SL-20260809-0003",
+        "SJC-BF-202508-0011",
+        "SJC-BF-202508-0013",
+        "SJC-BF-202508-0020",
+        "SJC-BF-202508-0021",
+        "SJC-BF-202509-0014",
+        "SJC-CN-20260802-0001",
+        "SJC-SL-20260809-0005",
+        "SJC-SL-20260809-0006",
+        "SJC-SL-20260807-0004",
+        "SJC-SL-20260704-0004"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "near_silverleaf",
+      "role": "timeline",
+      "sensitivity_display": "none",
+      "source_date": "2025-08-09",
+      "source_name": "St. Johns County",
+      "source_url": "https://www.sjcfl.us/traffic-pattern-shift-scheduled-cr-210-widening-project-aug-15/",
+      "summary": "St. Johns County announced a traffic pattern shift on County Road 210 as part of the ongoing widening project. Beginning the night of Friday, Aug. 15, 2025, both westbound and eastbound lanes of CR 210 were transitioned from the existing roadway to newly constructed roadway just east of Stone Creek Circle, returning to the existing roadway at the intersection with Cimarrone Boulevard.",
+      "title": "Traffic Pattern Shift Scheduled for CR 210 Widening Project on Aug. 15",
+      "topic_ids": [
+        "transportation"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "The traffic pattern shift affected all drivers using CR 210, a major east-west arterial in northern St. Johns County, during a key phase of the widening project."
+    },
+    {
+      "display_topic": "roads_traffic",
+      "entity_ids": [],
+      "place_ids": [
+        "nocatee"
+      ],
+      "public_item_id": "SJC-BF-202508-0011",
+      "published_date": "2026-08-07",
+      "related_item_ids": [
+        "SJC-SL-20260807-0003",
+        "SJC-SL-20260809-0003",
+        "SJC-BF-202508-0010",
+        "SJC-BF-202508-0013",
+        "SJC-BF-202508-0020",
+        "SJC-BF-202508-0021",
+        "SJC-BF-202509-0014",
+        "SJC-CN-20260802-0001",
+        "SJC-SL-20260809-0005",
+        "SJC-SL-20260809-0006",
+        "SJC-SL-20260807-0004",
+        "SJC-SL-20260704-0004"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "near_silverleaf",
+      "role": "context",
+      "sensitivity_display": "none",
+      "source_date": "2025-08-08",
+      "source_name": "St. Johns County",
+      "source_url": "https://www.sjcfl.us/sjc-encourages-alternate-access-points-to-beachwalk-during-cr-210-widening/",
+      "summary": "St. Johns County encouraged drivers accessing the Beachwalk community to consider alternate routes during the ongoing County Road 210 widening project. Motorists were reminded to use caution and follow posted signage.",
+      "title": "County Encourages Alternate Access Points to Beachwalk During CR 210 Widening",
+      "topic_ids": [
+        "transportation"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "The CR 210 widening project is one of the largest road infrastructure projects in the county, affecting daily commutes for thousands of residents in northern St. Johns County."
+    },
+    {
+      "display_topic": "emergency_preparedness",
+      "entity_ids": [],
+      "place_ids": [],
+      "public_item_id": "SJC-BF-202508-0022",
+      "published_date": "2026-08-07",
+      "related_item_ids": [],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "countywide_impact",
+      "role": "browse",
+      "sensitivity_display": "none",
+      "source_date": "2025-08-05",
+      "source_name": "St. Johns County",
+      "source_url": "https://www.sjcfl.us/inside-sjc-episode-5/",
+      "summary": "St. Johns County launched Inside SJC Episode 5, highlighting how the county notifies residents in real-time about possible threats to public safety using Alert St. Johns — covering severe weather, unexpected road closures, water advisories, missing persons, or evacuations. The episode educates residents on how to sign up for emergency alerts.",
+      "title": "Inside SJC Episode 5: Notifying Residents Using Alert St. Johns Emergency Notification System",
+      "topic_ids": [
+        "emergency_weather_fire_flood",
+        "public_safety_livability"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "The emergency notification system is a critical tool for public safety, enabling residents to receive real-time alerts about threats and take appropriate protective actions."
+    },
+    {
+      "display_topic": "schools_community",
+      "entity_ids": [],
+      "place_ids": [],
+      "public_item_id": "SJC-BF-202508-0006",
+      "published_date": "2026-08-07",
+      "related_item_ids": [
+        "SJC-BF-202605-0011",
+        "SJC-BF-202605-0013",
+        "SJC-BF-202605-0008",
+        "SJC-BF-202605-0015",
+        "SJC-BF-202605-0014",
+        "SJC-BF-202508-0005",
+        "SJC-BF-202509-0005",
+        "SJC-BF-202509-0006",
+        "SJC-SL-20260809-0001",
+        "SJC-SL-20260807-0001",
+        "SJC-BF-202508-0007",
+        "SJC-BF-202508-0008",
+        "SJC-BF-202509-0008"
+      ],
+      "release_id": "SJC-REL-2026-08-004",
+      "relevance": "countywide_impact",
+      "role": "browse",
+      "sensitivity_display": "none",
+      "source_date": "2025-08-01",
+      "source_name": "SJC School District — news",
+      "source_url": "https://www.stjohns.k12.fl.us/news/attendance-zoning-presentation/",
+      "summary": "St. Johns County School District published an attendance zoning presentation on its news site outlining proposed attendance boundary adjustments for the upcoming school year. The presentation covers zoning changes necessitated by the opening of Hallowes Cove Academy and continued growth in Silverleaf and Nocatee areas.",
+      "title": "SJCSD Publishes Attendance Zoning Presentation for 2025-2026 School Year",
+      "topic_ids": [
+        "education",
+        "school_capacity"
+      ],
+      "verification_display": "Confirmed from source",
+      "why_it_matters": "Attendance boundary changes determine school assignments for thousands of students, particularly in fast-growing areas like Silverleaf and Nocatee where new schools are opening."
+    }
+  ],
+  "prior_release_id": "SJC-REL-2026-08-003",
+  "published_at": "2026-08-09T04:41:39Z",
+  "release_id": "SJC-REL-2026-08-004",
+  "schema_version": "1.0",
+  "source_corpus_input_identity": "755ffd97cb66578727186572d1581af8f65d2ac6d340cf8f203c04e6f5118a83",
+  "status": "published"
+}

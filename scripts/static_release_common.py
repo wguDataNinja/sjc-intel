@@ -251,7 +251,8 @@ def _check_conditional_wording(record, result):
                      record.get("why_it_matters") or ""])
     conditional = ("proposed", "planned", "expected", "may", "would", "could",
                    "scheduled", "intends", "seeking", "under review", "targeting",
-                   "pending", "subject to", "close to", "in the works")
+                   "pending", "subject to", "close to", "in the works",
+                   "opens", "opening", "under construction")
     if not any(word in copy.lower() for word in conditional):
         result.warnings.append(
             f"lifecycle is '{record.get('lifecycle')}' but copy lacks conditional "
